@@ -1,0 +1,78 @@
+#!/usr/bin/env node
+
+const parseArgs = require('minimist')
+const chalk = require('chalk')
+
+const args = process.argv.slice(2)
+const argv = parseArgs(args, {
+  alias: {
+    h: 'help',
+  },
+  boolean: ['h']
+})
+
+if (argv.help) {
+  console.log(`
+  Description
+  Get details on the icon set config
+
+  Usage
+    $ just-icons get [<name|key>]
+
+  Options
+    --help, -h     Displays this message
+  `)
+  process.exit(0)
+}
+
+const Configstore = require('configstore')
+const Figma = require('figma-api')
+const camelCase = require('lodash.camelcase')
+const inquirer = require('inquirer')
+
+const pkg = require('../package.json')
+
+const conf = new Configstore(pkg.name)
+const { _: [set] } = argv
+
+;(async () => {
+  const sets = conf.all
+
+  console.log()
+
+  if (!set && sets && Object.keys(sets).length) {
+    const choices = Object.entries(sets)
+      .map(([set, { key, file: { curr: { name } } }]) => ({ key, name }))
+      .map(({ name }) => name)
+    const questions = [{
+      type: 'list',
+      name: 'name',
+      message: 'Select an icon set to print config',
+      choices,
+    }]
+
+    const answers = await inquirer.prompt(questions)
+    console.log()
+    const name = camelCase(answers.name)
+    const setConfig = sets[name]
+    console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.file.curr.name}`)
+    console.log(`  ${chalk.cyan`File Key`}:      ${setConfig.key}`)
+    console.log(`  ${chalk.cyan`Access Token`}:  ${setConfig.token}`)
+    console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${setConfig.key}`)
+  } else if (set) {
+    const setConfig = sets[set]
+    if (setConfig) {
+      console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.file.curr.name}`)
+      console.log(`  ${chalk.cyan`File Key`}:      ${setConfig.key}`)
+      console.log(`  ${chalk.cyan`Access Token`}:  ${setConfig.token}`)
+      console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${setConfig.key}`)
+    } else {
+      console.log(`  Can't find the icon set with that name or key`)
+    }
+  } else {
+    console.log('  No icon sets have been configured')
+    console.log('  Run "just-icons add" to configure a new icon set')
+  }
+  console.log()
+  process.exit(0)
+})();

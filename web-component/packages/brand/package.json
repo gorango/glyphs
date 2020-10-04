@@ -1,0 +1,38 @@
+{
+  "name": "@just-icons/brand-icon",
+  "version": "0.0.1",
+  "description": "Brand Icons",
+  "homepage": "https://icons.fyi/dir?set=brand",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorango/just-icons.git"
+  },
+  "author": "Goran Spasojevic <goran@icons.fyi> (https://github.com/gorango)",
+  "keywords": [
+    "svg",
+    "icons",
+    "icon set",
+    "web icons",
+    "path icons",
+    "svg paths",
+    "web component"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/custom-elements/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/just-icon/just-icon.js",
+  "files": [
+    "data/",
+    "dist/",
+    "loader/",
+    "svg/"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gorango/just-icons/issues"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@just-icons/cli",
+  "version": "0.0.1",
+  "description": "CLI to extract icons from Figma",
+  "main": "index.js",
+  "bin": {
+    "icons": "./bin/just-icons"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorango/just-icons-cli.git"
+  },
+  "keywords": [
+    "icons",
+    "js"
+  ],
+  "author": "Goran Spasojevic <gospaso@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gorango/just-icons-cli/issues"
+  },
+  "homepage": "https://icons.fyi/cli/introduction",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "cli-progress": "^3.8.2",
+    "clui": "^0.3.6",
+    "color-convert": "^2.0.1",
+    "configstore": "^5.0.1",
+    "diff": "^4.0.2",
+    "figlet": "^1.5.0",
+    "figma-api": "^1.5.5",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.19",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.kebabcase": "^4.1.1",
+    "minimist": "^1.2.5",
+    "pretty": "^2.0.0",
+    "prompts": "^2.3.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "svgo": "^1.3.2",
+    "svgson": "^4.1.0",
+    "update-notifier": "^4.1.1"
+  },
+  "license": "MIT"
+}

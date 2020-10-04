@@ -1,0 +1,17 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M24 17L56 17V23L24 23V17Z" fill="#FF9100" stroke="#FF9100" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="fill-orange stroke-orange" />
+  <path d="M40 17L40 13" stroke="#FF9100" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-orange" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M20 23L60 23L60 67H20L20 23Z" fill="#606060" class="fill-grey" />
+  <path d="M60 23H61.5C61.5 22.1716 60.8284 21.5 60 21.5V23ZM20 23V21.5C19.1716 21.5 18.5 22.1716 18.5 23H20ZM60 67V68.5C60.8284 68.5 61.5 67.8284 61.5 67H60ZM20 67H18.5C18.5 67.8284 19.1716 68.5 20 68.5V67ZM18 21.5C17.1716 21.5 16.5 22.1716 16.5 23C16.5 23.8284 17.1716 24.5 18 24.5V21.5ZM62 24.5C62.8284 24.5 63.5 23.8284 63.5 23C63.5 22.1716 62.8284 21.5 62 21.5V24.5ZM18 65.5C17.1716 65.5 16.5 66.1716 16.5 67C16.5 67.8284 17.1716 68.5 18 68.5V65.5ZM20 68.5C20.8284 68.5 21.5 67.8284 21.5 67C21.5 66.1716 20.8284 65.5 20 65.5V68.5ZM60 65.5C59.1716 65.5 58.5 66.1716 58.5 67C58.5 67.8284 59.1716 68.5 60 68.5V65.5ZM62 68.5C62.8284 68.5 63.5 67.8284 63.5 67C63.5 66.1716 62.8284 65.5 62 65.5V68.5ZM60 21.5L20 21.5V24.5L60 24.5V21.5ZM61.5 67L61.5 23H58.5L58.5 67H61.5ZM20 68.5H60V65.5H20V68.5ZM18.5 23L18.5 67H21.5L21.5 23H18.5ZM18 24.5L62 24.5V21.5L18 21.5V24.5ZM18 68.5H20V65.5H18V68.5ZM60 68.5H62V65.5H60V68.5Z" fill="#606060" class="fill-grey" />
+  <path d="M43 53H37C35.8954 53 35 53.8954 35 55V67H45V55C45 53.8954 44.1046 53 43 53Z" fill="#FFC200" stroke="#FFC200" stroke-width="3" stroke-linecap="round" class="fill-yellow stroke-yellow" />
+  <path d="M28 29V35" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M28 41V47" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M28 53V59" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M36 29V35" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M36 41V47" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M44 29V35" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M44 41V47" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M52 29V35" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M52 41V47" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M52 53V59" stroke="#FFC200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+</svg>

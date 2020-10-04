@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+console.log()
+console.log(
+  require('fs').readFileSync(
+    require('path').join(__dirname, '../assets/logo.art'),
+    'utf8'
+  )
+)
+console.log('  Running @just-icons/cli v' + require('../package.json').version)
+
+console.log(`
+  Example usage
+    $ just-icons <command> <options>
+
+  Help for a command
+    $ just-icons <command> --help
+    $ just-icons <command> -h
+
+  Options
+    --version, -v Print Just Icons CLI version
+
+  Commands
+    add, a        Configure a new icon set
+    remove, r     Remove an existing icon set config
+    get, g        Get details on the icon set config
+    list, l       List configured icon sets
+    sync, s       Sync an icon set to the current directory
+    help, h       Display this message
+`)

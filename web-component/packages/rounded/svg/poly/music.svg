@@ -1,0 +1,8 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M32 50L32 14" stroke="#7B61FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-purple" />
+  <ellipse cx="23" cy="50" rx="9" ry="7" fill="#84D3FF" stroke="#84D3FF" stroke-width="3" stroke-linejoin="round" class="fill-blue stroke-blue" />
+  <path d="M66 58L66 22" stroke="#7B61FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-purple" />
+  <ellipse cx="57" cy="58" rx="9" ry="7" fill="#84D3FF" stroke="#84D3FF" stroke-width="3" stroke-linejoin="round" class="fill-blue stroke-blue" />
+  <path d="M32 24L66 32" stroke="#7B61FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-purple" />
+  <path d="M32 14L66 22" stroke="#7B61FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="stroke-purple" />
+</svg>

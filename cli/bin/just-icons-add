@@ -1,0 +1,117 @@
+#!/usr/bin/env node
+
+const parseArgs = require('minimist')
+const chalk = require('chalk')
+
+const args = process.argv.slice(2)
+const argv = parseArgs(args, {
+  alias: {
+    k: 'key',
+    t: 'token',
+    r: 'replace',
+    h: 'help'
+  },
+  boolean: ['r', 'h'],
+  string: ['k', 't']
+})
+
+if (argv.help) {
+  console.log(`
+  Description
+  Add a new icon set config. Options that are not supplied as arguments will be prompted.
+
+  Usage
+    $ just-icons add [--key <file-key> --token <access-token>]
+
+  Options
+    --key, -k      File key for the Figma file
+    --token, -t    Personal access token from Figma
+    --replace, -r  Overwrite any existing configuration for <name> or <key>
+    --help, -h     Displays this message
+  `)
+  process.exit(0)
+}
+
+const Configstore = require('configstore')
+const Figma = require('figma-api')
+const camelCase = require('lodash.camelcase')
+const inquirer = require('inquirer')
+
+const pkg = require('../package.json')
+
+const conf = new Configstore(pkg.name)
+let { key, token, replace } = argv
+
+;(async () => {
+  const sets = conf.all
+
+  if (!(key && token)) {
+    if (sets) {
+      const firstSet = Object.values(sets)[0] || {}
+      token = firstSet.token
+    }
+
+    const validate = (input) => !!(input && input.length) || 'Input value is required'
+
+    const questions = [{
+      type: 'input',
+      name: 'key',
+      message: 'Figma File Key:',
+      default: key,
+      validate
+    }, {
+      type: 'input',
+      name: 'token',
+      message: 'Figma Personal Access Token:',
+      default: token,
+      validate
+    }]
+
+    console.log()
+    console.log('  Add a new icon set config by providing a file key and access token from Figma')
+    console.log('  Instructions can be found at https://icons.fyi/docs/cli')
+    console.log()
+    const answers = await inquirer.prompt(questions)
+    key = answers.key
+    token = answers.token
+  }
+
+  if (token && key) {
+    if (sets) {
+      const [setEntries] = Object.entries(sets).filter(([name, { key: k }]) => k === key)
+      const name = setEntries && setEntries[0]
+      // .reduce((found, { key: k }) => found || k === key, false) || false
+      if (name && !replace) {
+        console.log()
+        console.log(`  Configuration with that file key already exists: "${name}"`)
+        console.log()
+        process.exit(0)
+      }
+    }
+
+    const api = new Figma.Api({ personalAccessToken: token })
+    const file = await api.getFile(key).catch(err => {
+      const error = err.toJSON()
+      console.log()
+      console.log(' ', error.message)
+      console.log()
+      process.exit(0)
+    })
+
+    const name = camelCase(file.name)
+    conf.set(name, {
+      key,
+      token
+    })
+    conf.set(`${name}.file.curr`, file)
+    console.log()
+    console.log(`  Successfully configured "${file.name}"`)
+  } else {
+    console.log()
+    console.log('  Operation failed')
+    console.log('  File key and access token are required to continue')
+  }
+  console.log()
+  // vuadSjKf4P4foe0E5rCURn
+  // 17696-2b5ff56c-5d52-4d38-9f18-09d5b7aabeae
+})();

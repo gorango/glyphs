@@ -1,0 +1,9 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path opacity="0.25" d="M34.4985 26.693L36.4354 26.1945L35.4384 22.3207L33.5015 22.8192L34.4985 26.693ZM46.4985 22.8192L44.5616 22.3207L43.5646 26.1945L45.5015 26.693L46.4985 22.8192ZM62 50V52H66V50H62ZM14 50V52H18V50H14ZM18 48C18 37.7516 25.0093 29.1353 34.4985 26.693L33.5015 22.8192C22.2879 25.7054 14 35.8823 14 48H18ZM45.5015 26.693C54.9907 29.1353 62 37.7516 62 48H66C66 35.8823 57.7121 25.7054 46.4985 22.8192L45.5015 26.693ZM62 48V50H66V48H62ZM18 50V48H14V50H18Z" fill="currentColor" />
+  <path opacity="0.25" d="M14 22H12V26H14V22ZM34 26H36V22H34V26ZM46 22H44V26H46V22ZM66 26H68V22H66V26ZM14 26L34 26V22L14 22V26ZM46 26L66 26V22L46 22V26Z" fill="currentColor" />
+  <rect x="58" y="50" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+  <rect x="10" y="50" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+  <rect x="34" y="18" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+  <circle cx="10" cy="24" r="4" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+  <circle cx="70" cy="24" r="4" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+</svg>

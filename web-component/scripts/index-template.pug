@@ -1,0 +1,41 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0')
+  title Icons Cheetsheet
+  script(type='module' src='/build/rounded-icon.esm.js')
+  script(nomodule='' src='/build/rounded-icon.js')
+  link(href='https://unpkg.com/tailwindcss/dist/tailwind.min.css', rel='stylesheet')
+
+body
+  main
+    nav.sticky.top-0.z-20.bg-white.w-full.p-2.space-x-3.flex.flex-no-wrap
+      .flex-1
+      .flex-1.flex.justify-center.space-x-3
+        each variant in variants
+          button.flex.items-center.p-1.bg-grey-100.border-2.border-gray-300(
+            onmouseover=`handleMouseOver('${variant}')`
+          )
+            rounded-icon.text-3xl(name=icon, variant=variant)
+      .flex-1
+
+    section
+      each icons, category in categories
+        div.my-6
+          div.sticky.z-10.bg-white.w-full.p-2(style='top: 60px')
+            h5.text-lg.text-center.capitalize= category
+          div.flex.flex-wrap.justify-center.mb-6.py-4
+            each name in icons
+              div.flex.items-center.flex-col.rounded-lg.border-2.border-gray-200.w-24.m-3
+                div.w-full.p-1.text-center
+                  .truncate.text-xs.text-gray-500(title=name)= name
+                rounded-icon.layout-icon.text-5xl(name=name)
+
+  script(variants=variants).
+    const variants = JSON.parse(document.currentScript.getAttribute('variants'))
+
+    function handleMouseOver (variant) {
+      document.querySelectorAll('rounded-icon.layout-icon').forEach(el => {
+        el.variant = variant
+      })
+    }

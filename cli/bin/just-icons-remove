@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+
+const parseArgs = require('minimist')
+const chalk = require('chalk')
+
+const args = process.argv.slice(2)
+const argv = parseArgs(args, {
+  alias: {
+    h: 'help'
+  },
+  boolean: ['a', 'h']
+})
+
+if (argv.help || !args.length) {
+  console.log(`
+  Description
+  Remove an existing icon set config by name
+
+  Usage
+    $ just-icons remove <name|key>
+
+  Options
+    --help, -h    Displays this message
+  `)
+  process.exit(0)
+}
+
+const Configstore = require('configstore')
+const pkg = require('../package.json')
+
+const conf = new Configstore(pkg.name)
+const sets = conf.all
+const { _: [set] } = argv
+
+console.log()
+if (sets) {
+  const exists = !!conf.get(set)
+  if (exists) {
+    conf.delete(set)
+    console.log(`  Config for "${set}" set has been removed`)
+  } else {
+    console.log(`  No configuration with the name "${set}"`)
+  }
+} else {
+  console.log(`  No icons sets have been configured`)
+}
+console.log()

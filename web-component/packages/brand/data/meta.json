@@ -1,0 +1,45 @@
+{
+  "categories": {
+    "design": [
+      "justIcons",
+      "figma",
+      "sketch",
+      "zeplin",
+      "invision",
+      "dribbble",
+      "behance"
+    ],
+    "code": [
+      "node",
+      "nodeJs",
+      "pwa",
+      "webComponents",
+      "stencil",
+      "github"
+    ],
+    "communication": [
+      "discord",
+      "discordFull"
+    ],
+    "platform": [
+      "github"
+    ],
+    "tech": [
+      "chrome",
+      "firefox",
+      "google"
+    ],
+    "finance": [
+      "applePay",
+      "amex",
+      "mastercard",
+      "paypal",
+      "visa"
+    ]
+  },
+  "variants": [
+    "poly",
+    "solid",
+    "path"
+  ]
+}

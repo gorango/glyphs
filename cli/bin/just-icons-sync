@@ -1,0 +1,112 @@
+#!/usr/bin/env node
+
+const parseArgs = require('minimist')
+const chalk = require('chalk')
+
+const args = process.argv.slice(2)
+const argv = parseArgs(args, {
+  alias: {
+    i: 'ignore',
+    c: 'config',
+    d: 'data',
+    s: 'svg',
+    h: 'help'
+  },
+  boolean: ['i', 'h'],
+  string: ['c', 'd', 's']
+})
+
+if (argv.help) {
+  console.log(`
+  Description
+  Sync a configured icon set to the current directory.
+
+  Usage
+    $ just-icons sync [<name|key> --config <file-path> --data <data-folder> --svg <svg-folder>]
+
+  Options
+    --ignore, -i   Ignore unchanged icons (improves perf)
+    --config, -c   Path to config file
+    --data, -d     Output folder for icon-set data
+    --svg, -s      Output folder for SVGs
+    --help, -h     Displays this message
+  `)
+  process.exit(0)
+}
+
+const Progress = require('cli-progress')
+const Configstore = require('configstore')
+const Figma = require('figma-api')
+const camelCase = require('lodash.camelcase')
+const inquirer = require('inquirer')
+const pkg = require('../package.json')
+
+;(async () => {
+  const progress = new Progress.SingleBar({
+    format: '|' + chalk.cyan('{bar}') + '| {percentage}% || {stage}',
+    barCompleteChar: '\u2588',
+    barIncompleteChar: '\u2591',
+    hideCursor: true
+  }, Progress.Presets.shades_classic)
+
+  const conf = new Configstore(pkg.name)
+  const sets = conf.all
+  let { _: [name], config } = argv
+
+  if (!name) {
+    if (sets && Object.keys(sets).length) {
+      if (Object.keys(sets).length > 1) {
+        const choices = Object.entries(sets)
+          .map(([set, { key, file: { curr: { name } } }]) => ({ key, name }))
+          .map(({ name }) => name)
+        const questions = [{
+          type: 'list',
+          name: 'name',
+          message: 'Select the icon set to sync',
+          choices,
+        }]
+
+        console.log()
+        const answers = await inquirer.prompt(questions)
+        console.log()
+        name = camelCase(answers.name)
+      } else {
+        console.log()
+        name = Object.keys(sets)[0]
+        const set = sets[name]
+        console.log(`  Syncing "${set.file.curr.name}" set to the current folder`)
+        console.log()
+      }
+    }
+  }
+
+  const mergedArgs = {
+    ignore: false,
+    data: 'data',
+    svg: 'svg',
+    name,
+    ...config,
+    ...argv
+  }
+
+  const parse = require('../lib/sync/parse')
+  const download = require('../lib/sync/download')
+  const categories = require('../lib/sync/categories')
+
+  const run = async () => {
+    await parse(mergedArgs, progress).catch(handleError)
+    await download(mergedArgs, progress).catch(handleError)
+    await categories(mergedArgs, progress).catch(handleError)
+    console.log()
+    process.exit(0)
+  }
+
+  run()
+
+})();
+
+function handleError (err) {
+  console.log(err.message)
+  console.log(err)
+  process.exit(1)
+}

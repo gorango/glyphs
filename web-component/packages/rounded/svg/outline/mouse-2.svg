@@ -1,0 +1,3 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M38 10C28.0589 10 20 18.0589 20 28V52C20 61.9411 28.0589 70 38 70H42C51.9411 70 60 61.9411 60 52V28C60 18.0589 51.9411 10 42 10H38ZM38 14C30.268 14 24 20.268 24 28H38V14ZM24 32V52C24 59.732 30.268 66 38 66H42C49.732 66 56 59.732 56 52V32H24ZM56 28C56 20.268 49.732 14 42 14V28H56Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

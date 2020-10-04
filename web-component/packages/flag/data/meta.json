@@ -1,0 +1,14 @@
+{
+  "categories": {
+    "northAmerica": [
+      "canada",
+      "mexico",
+      "unitedStatesOfAmerica"
+    ]
+  },
+  "variants": [
+    "rectangle",
+    "square",
+    "circle"
+  ]
+}

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M52 28V20C52 17.7909 50.2091 16 48 16H32C29.7909 16 28 17.7909 28 20V28" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M60 28C64.4183 28 68 31.5817 68 36V62C68 63.1046 67.1046 64 66 64H14C12.8954 64 12 63.1046 12 62V36C12 31.5817 15.5817 28 20 28H60Z" fill="#D33131" stroke="#D33131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="fill-red stroke-red" />
+  <path d="M12 46H68" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M28 41V49" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path d="M52 41V49" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+</svg>

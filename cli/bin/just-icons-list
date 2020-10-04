@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+const parseArgs = require('minimist')
+const chalk = require('chalk')
+
+const args = process.argv.slice(2)
+const argv = parseArgs(args, {
+  alias: {
+    a: 'available',
+    h: 'help'
+  },
+  boolean: ['a', 'h']
+})
+
+if (argv.help) {
+  console.log(`
+  Description
+  List configured icon sets
+
+  Usage
+    $ just-icons list [--available]
+
+  Options
+    --available, -a  Show available (installable) icon sets
+                       Community-maintained
+    --help, -h       Displays this message
+  `)
+  process.exit(0)
+}
+
+const Configstore = require('configstore')
+const pkg = require('../package.json')
+
+const conf = new Configstore(pkg.name)
+const sets = conf.all
+
+console.log()
+if (!sets || !Object.keys(sets).length) {
+  console.log('  No icon sets have been configured')
+  console.log('  Run "just-icons add" to configure a new icon set')
+} else {
+  Object.entries(sets).forEach(([set, { key, file: { curr: { name } } }]) => {
+    console.log('-', name, chalk.blueBright`https://figma.com/file/${key}`)
+  })
+  console.log()
+  console.log('  Run "just-icons sync" to export a set to the current folder')
+}
+console.log()

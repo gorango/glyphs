@@ -1,0 +1,7 @@
+<svg viewBox="0 0 120 80" fill="none">
+  <rect width="120" height="80" fill="white" class="fill-white" />
+  <rect width="30" height="80" fill="#FF0000" class="fill-red" />
+  <rect x="90" width="30" height="80" fill="#FF0000" class="fill-red" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M59.7685 15L65.9093 23.1824L70.4586 21.7919L66.5809 38.8791L66.6232 39.0182L71.509 31.1767L73.2233 34.455L80.5798 33.3595L80.5799 33.3596L79.4954 40.7904L82.7402 42.5217L70.1315 50.5352L71.7685 55.9091L59.7685 52.6564L47.7685 55.9091L49.3935 50.5745L36.7269 42.5522L40.0289 40.7904L38.9443 33.3595L46.3009 34.455L48.0456 31.1187L52.552 38.3766L48.769 21.6973L53.6278 23.1824L59.7685 15Z" fill="#FF0000" class="fill-red" />
+  <path d="M59.7686 40.7578L59.7687 65.0002" stroke="#FF0000" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" class="stroke-red" />
+</svg>
