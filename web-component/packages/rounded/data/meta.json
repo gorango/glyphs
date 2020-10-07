@@ -336,6 +336,7 @@
       "plug1",
       "printer",
       "camera",
+      "polaroid",
       "video",
       "headphones",
       "microphone",
@@ -354,6 +355,7 @@
     ],
     "multimedia": [
       "camera",
+      "polaroid",
       "video",
       "film",
       "headphones",

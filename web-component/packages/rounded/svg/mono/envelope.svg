@@ -1,4 +1,4 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect opacity="0.25" x="12" y="22" width="56" height="36" rx="2" fill="currentColor" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M67.8925 25.069C67.7 25.8878 67.2521 26.6333 66.6017 27.1908L45.2049 45.531C42.209 48.0989 37.7881 48.0989 34.7922 45.531L13.3954 27.1909C12.7464 26.6346 12.2991 25.8911 12.106 25.0746C12.5212 23.3085 14.107 21.9937 15.9999 21.9937L63.9999 21.9937C65.8908 21.9937 67.4752 23.3057 67.8925 25.069Z" fill="currentColor" />
+  <rect opacity="0.25" x="12" y="22" width="56" height="36" rx="4" fill="currentColor" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M64.2245 22C66.3291 22.1165 67.9999 23.86 67.9999 25.9938V26.0001L40 50L12 26V25.9695C12.0126 23.8468 13.6787 22.116 15.7754 22L64.2245 22Z" fill="currentColor" />
 </svg>

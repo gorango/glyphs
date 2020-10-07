@@ -1,0 +1,68 @@
+:host {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+
+  contain: strict;
+  box-sizing: content-box !important;
+}
+
+.icon-inner,
+svg {
+  display: block;
+  overflow: visible;
+
+  height: 100%;
+  width: 100%;
+}
+
+/*
+ * Icon Flip
+ */
+
+:host(.flip-h),
+:host(.flip-x) {
+  transform: scaleX(-1);
+}
+
+:host(.flip-v),
+:host(.flip-y) {
+  transform: scaleY(-1);
+}
+
+:host(.flip-a),
+:host(.flip-xy),
+:host(.flip-yx),
+:host(.flip-hv),
+:host(.flip-vh) {
+  transform: scale(-1);
+}
+
+/*
+ * Icon Rotations
+ */
+
+:host(.n) .icon-inner,
+:host(.r0) .icon-inner { transform: rotate(0); }
+:host(.ne) .icon-inner,
+:host(.r45) .icon-inner { transform: rotate(45deg); }
+:host(.e) .icon-inner,
+:host(.r90) .icon-inner { transform: rotate(90deg); }
+:host(.se) .icon-inner,
+:host(.r135) .icon-inner { transform: rotate(135deg); }
+:host(.s) .icon-inner,
+:host(.r180) .icon-inner { transform: rotate(180deg); }
+:host(.sw) .icon-inner,
+:host(.r-135) .icon-inner { transform: rotate(-135deg); }
+:host(.w) .icon-inner,
+:host(.r-90) .icon-inner { transform: rotate(-90deg); }
+:host(.nw) .icon-inner,
+:host(.r-45) .icon-inner { transform: rotate(-45deg); }
+
+/*
+ * Icon Stroke
+ */
+
+:host(.lcr) svg path { stroke-linecap: round }
+:host(.lcs) svg path { stroke-linecap: square }
+

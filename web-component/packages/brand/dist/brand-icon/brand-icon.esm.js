@@ -1,0 +1,1 @@
+import{p as a,b as t}from"./p-e6324175.js";(()=>{const t=import.meta.url,e={};return""!==t&&(e.resourcesUrl=new URL(".",t).href),a(e)})().then(a=>t([["p-df285e0a",[[1,"brand-icon",{ariaLabel:[1537,"aria-label"],flip:[1],name:[1],src:[1],icon:[8],size:[1],rotate:[1],variant:[1],strokeWidth:[8,"stroke-width"],svgContent:[32],components:[32]}]]]],a));

@@ -1,0 +1,1 @@
+import{p as a,b as t}from"./p-3fc088f9.js";(()=>{const t=import.meta.url,o={};return""!==t&&(o.resourcesUrl=new URL(".",t).href),a(o)})().then(a=>t([["p-aaaa0240",[[1,"flag-icon",{ariaLabel:[1537,"aria-label"],flip:[1],name:[1],src:[1],icon:[8],size:[1],rotate:[1],variant:[1],strokeWidth:[8,"stroke-width"],svgContent:[32],components:[32]}]]]],a));

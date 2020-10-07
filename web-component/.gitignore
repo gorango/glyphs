@@ -1,8 +1,8 @@
-dist/
-www/
-loader/
-svg/
-data/
+/dist/
+/www/
+/loader/
+/svg/
+/data/
 
 *~
 *.sw[mnpcod]

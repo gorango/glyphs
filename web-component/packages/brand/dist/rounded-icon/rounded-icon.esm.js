@@ -1,0 +1,1 @@
+import{p as t,b as o}from"./p-8d7c77b1.js";(()=>{const o=import.meta.url,r={};return""!==o&&(r.resourcesUrl=new URL(".",o).href),t(r)})().then(t=>o([["p-2fb684fd",[[1,"rounded-icon",{ariaLabel:[1537,"aria-label"],flip:[1],name:[1],src:[1],icon:[8],size:[1],rotate:[1],variant:[1],strokeWidth:[8,"stroke-width"],svgContent:[32],components:[32]}]]]],t));
