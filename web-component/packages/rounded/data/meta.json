@@ -63,10 +63,16 @@
       "users1",
       "userCircle",
       "userComment",
+      "skull",
+      "skull1",
+      "brain",
       "heart",
+      "heart1",
       "heartbreak",
       "heartbeat",
+      "heartHands",
       "eye",
+      "eyeLashes",
       "eye1",
       "shoePrint",
       "footPrint",
@@ -79,7 +85,9 @@
       "male",
       "female",
       "restroom",
-      "elevator"
+      "elevator",
+      "crown",
+      "crown1"
     ],
     "place": [
       "house",
