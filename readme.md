@@ -1,6 +1,6 @@
 # Just Icons
 
-> Fully customizable icon sets and web components designed for use in software applications.
+> Enabling icon sets in Figma to be packaged for use in web applications
 
 ## Docs
 
@@ -8,6 +8,5 @@
 
 ## License
 
-Copyright (c) Goran Spasojevic
+[MIT](https://github.com/gorango/just-icons/blob/main/license) © [Goran Spasojevic](https://github.com/gorango)
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License)

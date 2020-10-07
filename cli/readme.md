@@ -13,9 +13,7 @@ npm install --global .
 
 After installing, run `icons` to view options available and instructions for using the interfacre
 
-```bash
-$ icons
-
+```
       _           _     ___
      | |_   _ ___| |_  |_ _|___ ___  _ __  ___
   _  | | | | / __| __|  | |/ __/ _ \| '_ \/ __|

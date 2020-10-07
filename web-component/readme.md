@@ -1,8 +1,6 @@
-# Just Icons
+# Icons Web Component
 
 A growing set of SVG icons that can be used with a single universal [web component](https://www.webcomponents.org/). Lightweight, flexible, framework-agnostic, and MIT-licensed open source.
-
-**500 icons, 5 variants, 24 categories.**
 
 Search and explore [icons.fyi](https://icons.fyi).
 
@@ -42,7 +40,7 @@ The `just-icon` component is a [web component](https://www.webcomponents.org/) b
 Add the following `script` tag to your page to enable the web component.
 
 ```html
-<script src="https://unpkg.com/@just-icons/just-icon"></script>
+<script src="https://unpkg.com/@just-icons/rounded-icon/dist/rounded-icon/rounded-icon.esm.js"></script>
 ```
 
 ### NPM
