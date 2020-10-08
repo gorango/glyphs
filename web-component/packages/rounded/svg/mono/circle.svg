@@ -1,4 +1,4 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <circle opacity="0.25" cx="40" cy="40" r="28" fill="currentColor" stroke="currentColor" stroke-width="4" />
-  <circle cx="40.0742" cy="40" r="16" fill="currentColor" stroke="currentColor" stroke-width="2.28571" />
+  <circle opacity="0.25" cx="40" cy="40" r="28" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="40.0742" cy="40" r="16" fill="currentColor" stroke="currentColor" stroke-width="2.28571" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
