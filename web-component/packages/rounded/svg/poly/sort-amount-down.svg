@@ -1,6 +1,6 @@
 <svg viewBox="0 0 80 80" fill="none">
   <path d="M22 55C22 56.1046 21.1046 57 20 57C18.8954 57 18 56.1046 18 55L22 55ZM18 16C18 14.8954 18.8954 14 20 14C21.1046 14 22 14.8954 22 16H18ZM18 55L18 16H22L22 55L18 55Z" fill="#AEEE52" class="fill-green" />
-  <path d="M25.818 55L14.182 55C13.0078 55 12.4197 56.4197 13.25 57.25L18.5858 62.5858C19.3668 63.3668 20.6332 63.3668 21.4142 62.5858L26.75 57.25C27.5803 56.4197 26.9923 55 25.818 55Z" fill="#7AC70C" stroke="#7AC70C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="fill-green stroke-green" />
+  <path d="M25.818 55L14.182 55C13.0078 55 12.4197 56.4197 13.25 57.25L18.5858 62.5858C19.3668 63.3668 20.6332 63.3668 21.4142 62.5858L26.75 57.25C27.5803 56.4197 26.9923 55 25.818 55Z" fill="#7AC70C" stroke="#7AC70C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="fill-green stroke-green" />
   <path d="M37 22H45" stroke="#7AC70C" stroke-width="4" stroke-linecap="round" class="stroke-green" />
   <path d="M37 34H53" stroke="#7AC70C" stroke-width="4" stroke-linecap="round" class="stroke-green" />
   <path d="M37 46L61 46" stroke="#7AC70C" stroke-width="4" stroke-linecap="round" class="stroke-green" />

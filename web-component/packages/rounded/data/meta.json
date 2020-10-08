@@ -324,8 +324,12 @@
       "notePad1",
       "noteClipboard",
       "noteSticky",
+      "scroll",
       "paperclip",
-      "edit"
+      "edit",
+      "box",
+      "box1",
+      "boxOpen"
     ],
     "multimedia": [
       "camera",
@@ -429,7 +433,9 @@
       "dollarSign",
       "dollarBill",
       "dollarBills",
-      "dollarBillWave"
+      "dollarBillWave",
+      "shoppingCart",
+      "shoppingCart1"
     ],
     "weather": [
       "fahrenheit",
