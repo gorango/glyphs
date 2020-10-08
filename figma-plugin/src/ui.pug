@@ -1,0 +1,30 @@
+div.flex-col
+    div.flex-row.px-4.py-3
+        a.text-black.font-medium.mr-2 Select
+        a.text-gray-500.font-medium.mr-2 Flatten
+        a.text-gray-500.font-medium.mr-2 Description
+    hr.w-full.border-gray-300
+    div.flex.flex-no-wrap.p-4
+        div.flex-auto
+            input#selectionTarget.w-full.border.border-gray-300.rounded.p-2(placeholder="Target")
+        button#selectChildren.ml-2.flex-auto.px-3.py-2.bg-blue-500.text-white.rounded Children
+        button#selectAll.ml-2.flex-auto.px-3.py-2.bg-blue-500.text-white.rounded All
+    div.flex.px-4.mt-4.w-full
+        button#frame.mr-2.px-3.py-2.border.rounded Frame
+        button#flatten.mr-2.px-3.py-2.border.rounded Flatten
+        button#union.mr-2.px-3.py-2.border.rounded Union
+        button#center.mr-2.px-3.py-2.border.rounded Center
+    div.flex.px-4.mt-4.w-full
+        button#next.mr-2.px-3.py-2.border.rounded Next
+        //- button#copy.mr-2.px-3.py-2.border.rounded Copy
+        //- button#paste.mr-2.px-3.py-2.border.rounded Paste
+        button#visibility.mr-2.px-3.py-2.border.rounded Toggle
+        button#hidden.mr-2.px-3.py-2.border.rounded Hidden
+        button#remove.mr-2.px-3.py-2.border.rounded Remove
+    div.flex.flex-no-wrap.p-4
+        div.flex-auto.pr-2
+            input#cloneTarget.w-full.border.border-gray-300.rounded.p-2(placeholder="Target")
+        button#clone.flex-auto.px-3.py-2.bg-blue-500.text-white.rounded Clone
+    div.flex.flex-no-wrap.p-4
+        button#sort.mr-2.px-3.py-2.border.rounded Sort
+        button#flattenAll.mr-2.px-3.py-2.border.rounded Flatten All
