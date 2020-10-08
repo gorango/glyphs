@@ -3,6 +3,7 @@
 /loader/
 /svg/
 /data/
+/src/index.html
 
 *~
 *.sw[mnpcod]
