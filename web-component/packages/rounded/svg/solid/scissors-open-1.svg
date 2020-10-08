@@ -1,6 +1,6 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M30.3652 60.5591L56.3652 15.5258" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M29.8643 61.4268C27.9313 64.7749 23.6502 65.922 20.3022 63.989C16.9541 62.056 15.807 57.7749 17.74 54.4268L18.74 52.6948C20.673 49.3467 24.9541 48.1996 28.3022 50.1326C31.6502 52.0656 32.7973 56.3467 30.8643 59.6948L29.8643 61.4268Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M50.3638 60.5591L24.3638 15.5258" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M50.8647 61.4268C52.7977 64.7749 57.0788 65.922 60.4268 63.989C63.7749 62.056 64.922 57.7749 62.989 54.4268L61.989 52.6948C60.056 49.3467 55.7749 48.1996 52.4268 50.1326C49.0788 52.0656 47.9317 56.3467 49.8647 59.6948L50.8647 61.4268Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M30.752 60.5588L56.752 15.5255" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M30.2511 61.4266C28.3181 64.7746 24.0369 65.9218 20.6889 63.9888V63.9888C17.3408 62.0558 16.1937 57.7746 18.1267 54.4266L19.1267 52.6945C21.0597 49.3465 25.3408 48.1994 28.6889 50.1324V50.1324C32.0369 52.0654 33.1841 56.3465 31.2511 59.6945L30.2511 61.4266Z" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M50.7505 60.5588L24.7505 15.5255" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M51.2514 61.4266C53.1844 64.7746 57.4655 65.9218 60.8136 63.9888V63.9888C64.1616 62.0558 65.3087 57.7746 63.3757 54.4266L62.3757 52.6945C60.4427 49.3465 56.1616 48.1994 52.8136 50.1324V50.1324C49.4655 52.0654 48.3184 56.3465 50.2514 59.6945L51.2514 61.4266Z" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

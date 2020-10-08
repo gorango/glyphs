@@ -1,8 +1,8 @@
 <svg viewBox="0 0 80 80" fill="none">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 27H16.3431C17.404 27 18.4214 26.5786 19.1716 25.8284L22.6569 22.3431C24.1571 20.8429 26.192 20 28.3137 20H32.6863C34.6307 20 36.5021 20.7078 37.956 21.9808C37.861 22.0639 37.7678 22.1495 37.6765 22.2374L30.8703 28.7916C28.4701 31.1029 28.4339 34.9339 30.7901 37.2901C33.1152 39.6152 36.8848 39.6152 39.2099 37.2901L41.5 35L57.4643 47.4167C58.5978 48.2983 58.8241 49.9217 57.9749 51.0796L56.3655 53.2744C54.8785 55.3021 52.5145 56.5 50 56.5L48.8866 57.6134C47.6786 58.8214 46.0403 59.5 44.332 59.5C42.8252 59.5 41.3661 58.9717 40.2085 58.0071L39 57L38.2981 57.7019C36.8267 59.1733 34.8309 60 32.75 60C30.6691 60 28.6733 59.1733 27.2019 57.7019L19.6716 50.1716C18.9214 49.4214 17.904 49 16.8431 49H4V27Z" fill="#FF9100" class="fill-orange" />
   <path d="M63.6569 27H76V49H60H59.5L41.5 35L39.2099 37.2901C36.8848 39.6152 33.1152 39.6152 30.7901 37.2901C28.4339 34.9339 28.4701 31.1029 30.8703 28.7916L37.6765 22.2374C39.1672 20.802 41.1562 20 43.2256 20H51.6863C53.808 20 55.8429 20.8429 57.3431 22.3431L60.8284 25.8284C61.5786 26.5786 62.596 27 63.6569 27Z" fill="#FFC200" class="fill-yellow" />
-  <rect x="4" y="27.0586" width="8" height="22" fill="#F4F4F4" stroke="#F4F4F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="fill-white stroke-white" />
-  <rect x="68" y="27.0586" width="8" height="22" fill="#F4F4F4" stroke="#F4F4F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="fill-white stroke-white" />
+  <rect x="4" y="27.0586" width="8" height="22" fill="#F4F4F4" stroke="#F4F4F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="fill-white stroke-white" />
+  <rect x="68" y="27.0586" width="8" height="22" fill="#F4F4F4" stroke="#F4F4F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="fill-white stroke-white" />
   <rect x="6" y="43" width="4" height="4" rx="2" fill="#606060" class="fill-grey" />
   <rect x="70" y="43" width="4" height="4" rx="2" fill="#606060" class="fill-grey" />
 </svg>

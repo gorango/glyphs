@@ -6,7 +6,7 @@
   <g opacity="0.25">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M74 64V28L54 36L54 64H74Z" fill="currentColor" />
   </g>
-  <path d="M13 26L31 26" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-  <path opacity="0.5" d="M40 41H48" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-  <path opacity="0.5" d="M60 41H68" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M13 26L31 26" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path opacity="0.5" d="M40 41H48" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path opacity="0.5" d="M60 41H68" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
