@@ -16,13 +16,13 @@ svg {
   width: 100%;
 }
 
-.path, .outline, .solid, .mono {
+.path, .bold, .mono, .line {
   & > svg *[stroke] {
     stroke: currentColor;
   }
 }
 
-.path, .outline, .solid, .mono {
+.path, .bold, .mono, .line {
   & > svg *[fill] {
     fill: currentColor;
   }

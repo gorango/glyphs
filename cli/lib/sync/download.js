@@ -9,7 +9,7 @@ const { createDir, saveSVG, saveJSON, getColor } = require('./util')
 const {fill} = require('lodash')
 
 const conf = new Configstore(require('../../package.json').name)
-const REPLACE_CURRENT_COLOR = ['path', 'stroke', 'outline', 'solid', 'fill', 'mono', 'duo']
+const REPLACE_CURRENT_COLOR = ['path', 'stroke', 'outline', 'line', 'solid', 'bold', 'fill', 'mono', 'duo']
 
 module.exports = async function ({ name: set, svg: svgDir, data: dataDir }, progress) {
   const iconSet = await conf.get(set)

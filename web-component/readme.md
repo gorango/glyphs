@@ -72,7 +72,7 @@ To get started, you only need to provide the `name` attribute on the `just-icon`
 
 ### Variant
 
-Available variants are `path`, `outline`, `solid`, `mono`, and `poly`.
+Available variants are `path`, `bold`, `mono`, `poly`, and `line`.
 
 ```html
 <just-icon name="arrow" variant="mono"></just-icon>
