@@ -504,7 +504,9 @@
       "leaf",
       "mapleLeaf",
       "apple",
+      "mushroom",
       "spa",
+      "cannabis",
       "fire",
       "fire1",
       "burn",
@@ -547,6 +549,7 @@
       "stopHand",
       "yieldSign",
       "directions",
+      "mapSigns",
       "arrowTurn",
       "planeDeparture",
       "planeArrival"
@@ -584,7 +587,8 @@
       "ambulance",
       "noteClipboard",
       "noteMedical",
-      "pharmacy"
+      "pharmacy",
+      "cannabis"
     ],
     "tool": [
       "wrench",
