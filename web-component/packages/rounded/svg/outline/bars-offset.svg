@@ -1,5 +1,5 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M14 22C14 20.8954 14.8954 20 16 20H64C65.1046 20 66 20.8954 66 22C66 23.1046 65.1046 24 64 24H16C14.8954 24 14 23.1046 14 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M22 40C22 38.8954 22.8955 38 24 38H72C73.1046 38 74 38.8954 74 40C74 41.1046 73.1046 42 72 42H24C22.8955 42 22 41.1046 22 40Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M16 56C14.8954 56 14 56.8954 14 58C14 59.1046 14.8954 60 16 60H64C65.1046 60 66 59.1046 66 58C66 56.8954 65.1046 56 64 56H16Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M10 22C10 20.8954 10.8954 20 12 20H49.7143C50.8189 20 51.7143 20.8954 51.7143 22C51.7143 23.1046 50.8189 24 49.7143 24H12C10.8954 24 10 23.1046 10 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M62 40C62 38.8954 61.1046 38 60 38H22.2857C21.1812 38 20.2857 38.8954 20.2857 40C20.2857 41.1046 21.1812 42 22.2857 42H60C61.1046 42 62 41.1046 62 40Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M12 56C10.8954 56 10 56.8954 10 58C10 59.1046 10.8954 60 12 60H49.7143C50.8189 60 51.7143 59.1046 51.7143 58C51.7143 56.8954 50.8189 56 49.7143 56H12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
