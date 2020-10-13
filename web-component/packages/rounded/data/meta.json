@@ -509,12 +509,6 @@
     "weather": [
       "fahrenheit",
       "celsius",
-      "temperature",
-      "temperatureHot",
-      "temperatureCold",
-      "cloud",
-      "cloud1",
-      "smoke",
       "bolt",
       "bolt1",
       "moon",
@@ -533,7 +527,13 @@
       "waves",
       "waves1",
       "fog",
-      "fog1"
+      "fog1",
+      "temperature",
+      "temperatureHot",
+      "temperatureCold",
+      "smoke",
+      "cloud",
+      "cloud1"
     ],
     "nature": [
       "tree",
