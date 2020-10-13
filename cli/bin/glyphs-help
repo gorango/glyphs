@@ -7,15 +7,15 @@ console.log(
     'utf8'
   )
 )
-console.log('  Running @just-icons/cli v' + require('../package.json').version)
+console.log('  Running @glyphs/cli v' + require('../package.json').version)
 
 console.log(`
   Example usage
-    $ just-icons <command> <options>
+    $ glyphs <command> <options>
 
   Help for a command
-    $ just-icons <command> --help
-    $ just-icons <command> -h
+    $ glyphs <command> --help
+    $ glyphs <command> -h
 
   Options
     --version, -v Print Just Icons CLI version

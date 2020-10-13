@@ -61,4 +61,4 @@ else {
   cmd = 'help'
 }
 
-require(`./just-icons-${cmd}`)
+require(`./glyphs-${cmd}`)

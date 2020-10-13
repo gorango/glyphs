@@ -22,7 +22,7 @@ if (argv.help) {
   Sync a configured icon set to the current directory.
 
   Usage
-    $ just-icons sync [<name|key> --config <file-path> --data <data-folder> --svg <svg-folder>]
+    $ glyphs sync [<name|key> --config <file-path> --data <data-folder> --svg <svg-folder>]
 
   Options
     --ignore, -i   Ignore unchanged icons (improves perf)

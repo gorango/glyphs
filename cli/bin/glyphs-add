@@ -21,7 +21,7 @@ if (argv.help) {
   Add a new icon set config. Options that are not supplied as arguments will be prompted.
 
   Usage
-    $ just-icons add [--key <file-key> --token <access-token>]
+    $ glyphs add [--key <file-key> --token <access-token>]
 
   Options
     --key, -k      File key for the Figma file

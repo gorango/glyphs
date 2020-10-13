@@ -5,7 +5,7 @@ Command line interface to synchronize icons from Figma to local project director
 ## Install
 
 ```bash
-cd path/to/just-icons/cli
+cd path/to/glyphs/cli
 npm install --global .
 ```
 
@@ -14,20 +14,20 @@ npm install --global .
 After installing, run `icons` to view options available and instructions for using the interfacre
 
 ```
-      _           _     ___
-     | |_   _ ___| |_  |_ _|___ ___  _ __  ___
-  _  | | | | / __| __|  | |/ __/ _ \| '_ \/ __|
- | |_| | |_| \__ \ |_   | | (_| (_) | | | \__ \
-  \___/ \__,_|___/\__| |___\___\___/|_| |_|___/
+   _____ _         _
+  |   __| |_ _ ___| |_ ___
+  |  |  | | | | . |   |_ -|
+  |_____|_|_  |  _|_|_|___|
+          |___|_|
 
-  Running @just-icons/cli v0.0.1
+  Running @glyphs/cli v0.0.1
 
   Example usage
-    $ just-icons <command> <options>
+    $ glyphs <command> <options>
 
   Help for a command
-    $ just-icons <command> --help
-    $ just-icons <command> -h
+    $ glyphs <command> --help
+    $ glyphs <command> -h
 
   Options
     --version, -v Print Just Icons CLI version

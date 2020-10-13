@@ -18,7 +18,7 @@ if (argv.help) {
   List configured icon sets
 
   Usage
-    $ just-icons list [--available]
+    $ glyphs list [--available]
 
   Options
     --available, -a  Show available (installable) icon sets
@@ -37,12 +37,12 @@ const sets = conf.all
 console.log()
 if (!sets || !Object.keys(sets).length) {
   console.log('  No icon sets have been configured')
-  console.log('  Run "just-icons add" to configure a new icon set')
+  console.log('  Run "glyphs add" to configure a new icon set')
 } else {
   Object.entries(sets).forEach(([set, { key, file: { curr: { name } } }]) => {
     console.log('-', name, chalk.blueBright`https://figma.com/file/${key}`)
   })
   console.log()
-  console.log('  Run "just-icons sync" to export a set to the current folder')
+  console.log('  Run "glyphs sync" to export a set to the current folder')
 }
 console.log()

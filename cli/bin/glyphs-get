@@ -17,7 +17,7 @@ if (argv.help) {
   Get details on the icon set config
 
   Usage
-    $ just-icons get [<name|key>]
+    $ glyphs get [<name|key>]
 
   Options
     --help, -h     Displays this message
@@ -71,7 +71,7 @@ const { _: [set] } = argv
     }
   } else {
     console.log('  No icon sets have been configured')
-    console.log('  Run "just-icons add" to configure a new icon set')
+    console.log('  Run "glyphs add" to configure a new icon set')
   }
   console.log()
   process.exit(0)

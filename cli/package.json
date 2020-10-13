@@ -1,15 +1,15 @@
 {
-  "name": "@just-icons/cli",
+  "name": "@glyphs/cli",
   "version": "0.0.1",
   "description": "CLI to extract icons from Figma",
   "main": "index.js",
   "bin": {
-    "icons": "./bin/just-icons"
+    "glyphs": "./bin/glyphs"
   },
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gorango/just-icons-cli.git"
+    "url": "git+https://github.com/gorango/glyphs.git"
   },
   "keywords": [
     "icons",
@@ -17,7 +17,7 @@
   ],
   "author": "Goran Spasojevic <gospaso@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gorango/just-icons-cli/issues"
+    "url": "https://github.com/gorango/glyphs/issues"
   },
   "homepage": "https://icons.fyi/cli/introduction",
   "dependencies": {
