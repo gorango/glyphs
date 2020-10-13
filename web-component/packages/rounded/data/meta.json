@@ -556,16 +556,18 @@
       "binoculars1"
     ],
     "home": [
-      "house",
-      "garage",
-      "key",
-      "heart",
-      "mailbox",
-      "loveseat",
-      "sofa",
       "door",
       "doorOpen",
-      "doorOpen1"
+      "doorOpen1",
+      "key",
+      "house",
+      "loveseat",
+      "sofa",
+      "bed",
+      "bedEmpty",
+      "bedBunk",
+      "mailbox",
+      "garage"
     ],
     "transport": [
       "bike",
