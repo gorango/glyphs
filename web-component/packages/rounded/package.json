@@ -1,6 +1,6 @@
 {
-  "name": "@glyphs/rounded-icon",
-  "version": "0.0.21",
+  "name": "@glyphs/rounded",
+  "version": "0.0.1",
   "description": "Rounded Icons",
   "homepage": "https://glyphs.fyi/dir?set=rounded",
   "repository": {
@@ -14,6 +14,7 @@
     "icon set",
     "web icons",
     "path icons",
+    "rounded icons",
     "svg paths",
     "web component"
   ],
@@ -24,7 +25,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/just-icon/just-icon.js",
+  "unpkg": "dist/rounded-icon/rounded-icon.js",
   "files": [
     "data/",
     "dist/",

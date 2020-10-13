@@ -1,5 +1,5 @@
 {
-  "name": "@glyphs/flag-icon",
+  "name": "@glyphs/flags",
   "version": "0.0.1",
   "description": "Flag Icons",
   "homepage": "https://glyphs.fyi/dir?set=flag",
@@ -14,6 +14,7 @@
     "icon set",
     "web icons",
     "path icons",
+    "flag icons",
     "svg paths",
     "web component"
   ],
@@ -24,7 +25,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/just-icon/just-icon.js",
+  "unpkg": "dist/flag-icon/flag-icon.js",
   "files": [
     "data/",
     "dist/",
