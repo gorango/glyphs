@@ -5,13 +5,12 @@ Command line interface to synchronize icons from Figma to local project director
 ## Install
 
 ```bash
-cd path/to/glyphs/cli
-npm install --global .
+npm install --global @glyphs/cli
 ```
 
 ## Usage
 
-After installing, run `icons` to view options available and instructions for using the interfacre
+After installing, run `glyphs` to view options available and instructions for using the interfacre
 
 ```
    _____ _         _

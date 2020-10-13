@@ -1,7 +1,7 @@
 {
   "name": "@glyphs/cli",
   "version": "0.0.1",
-  "description": "CLI to extract icons from Figma",
+  "description": "Extract Glyphs icons from Figma",
   "main": "index.js",
   "bin": {
     "glyphs": "./bin/glyphs"
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/gorango/glyphs/issues"
   },
-  "homepage": "https://glyphs.fyi/cli/introduction",
+  "homepage": "https://glyphs.fyi/cli",
   "dependencies": {
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
