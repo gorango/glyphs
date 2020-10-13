@@ -1,7 +1,7 @@
 {
   "categories": {
     "design": [
-      "justIcons",
+      "icons",
       "figma",
       "sketch",
       "zeplin",
@@ -22,24 +22,47 @@
       "discordFull"
     ],
     "platform": [
-      "github"
+      "github",
+      "npm"
     ],
     "tech": [
       "chrome",
       "firefox",
       "google"
     ],
-    "finance": [
+    "payment": [
       "applePay",
       "amex",
       "mastercard",
       "paypal",
-      "visa"
+      "visa",
+      "jcb",
+      "giropay",
+      "ideal",
+      "bancontact",
+      "unionPay",
+      "sepa",
+      "amazonPay",
+      "sofort",
+      "klarna",
+      "yandex",
+      "qiwi",
+      "alipay",
+      "weChat",
+      "etherium",
+      "bitcoin",
+      "bitpay",
+      "payPal",
+      "stripe",
+      "skrill",
+      "googlePay",
+      "discover",
+      "dinersClub"
     ]
   },
   "variants": [
-    "poly",
-    "solid",
+    "color",
+    "bold",
     "path"
   ]
 }

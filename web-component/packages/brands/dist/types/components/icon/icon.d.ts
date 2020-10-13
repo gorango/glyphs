@@ -28,7 +28,7 @@ export declare class Icon {
   /**
    * The size of the icon in CSS units
    */
-  size: string;
+  size: any;
   /**
    * Apply a ratation on the icon
    * Available options are:

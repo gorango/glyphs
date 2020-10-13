@@ -10,7 +10,7 @@ export class Icon {
     /**
      * The size of the icon in CSS units
      */
-    this.size = '2rem';
+    this.size = null;
     /**
      * The variant name of the icon set to apply
      */
@@ -49,13 +49,55 @@ export class Icon {
     }
   }
   render() {
+    const rotation = (value) => {
+      if (isNaN(value)) {
+        return {
+          n: 0,
+          nne: 22.5,
+          ne: 45,
+          ene: 67.5,
+          e: 90,
+          ese: 112.5,
+          se: 135,
+          sse: 157.5,
+          s: 180,
+          ssw: 202.5,
+          sw: 225,
+          wsw: 247.5,
+          w: 270,
+          wnw: 292.5,
+          nw: 315,
+          nnw: 337.5
+        }[value];
+      }
+      return value;
+    };
+    const fontSize = this.size || 'auto';
+    const strokeWidth = this.strokeWidth;
+    const stroke = 'inherit';
+    const rotate = this.rotate && !['0', 'n'].includes(this.rotate) && `rotate(${rotation(this.rotate)}deg)`;
+    const scale = this.flip && {
+      v: 'scaleX',
+      x: 'scaleX',
+      h: 'scaleY',
+      y: 'scaleY',
+      a: 'scale',
+      xy: 'scale',
+      yx: 'scale',
+      hv: 'scale',
+      vh: 'scale'
+    }[this.flip] + '(-1)';
+    const transform = (rotate && scale) ? `${rotate} ${scale}` : ((rotate || scale) || '');
     return (h(Host, { role: "img", class: Object.assign(Object.assign({}, (this.flip && {
         [`flip-${this.flip}`]: true
       })), (this.rotate && {
         [this.rotate]: true,
-      })), style: Object.assign({ fontSize: this.size }, (['path', 'stroke', 'outline'].includes(this.variant) && {
-        strokeWidth: `${this.strokeWidth}`
-      })) }, ((Build.isBrowser && this.svgContent)
+      })), style: {
+        fontSize,
+        strokeWidth,
+        stroke,
+        transform
+      } }, ((Build.isBrowser && this.svgContent)
       ? h("div", { class: "icon-inner", innerHTML: this.svgContent })
       : h("div", { class: "icon-inner" }))));
   }
@@ -154,11 +196,11 @@ export class Icon {
       "reflect": false
     },
     "size": {
-      "type": "string",
+      "type": "any",
       "mutable": false,
       "complexType": {
-        "original": "string",
-        "resolved": "string",
+        "original": "any",
+        "resolved": "any",
         "references": {}
       },
       "required": false,
@@ -169,7 +211,7 @@ export class Icon {
       },
       "attribute": "size",
       "reflect": false,
-      "defaultValue": "'2rem'"
+      "defaultValue": "null"
     },
     "rotate": {
       "type": "string",
