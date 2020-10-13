@@ -1,0 +1,29 @@
+:host {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+
+  contain: strict;
+  box-sizing: content-box !important;
+}
+
+.icon-inner,
+svg {
+  display: block;
+  overflow: visible;
+
+  height: 100%;
+  width: 100%;
+}
+
+.path, .bold, .mono, .line {
+  & > svg *[stroke] {
+    stroke: currentColor;
+  }
+}
+
+.path, .bold, .mono, .line {
+  & > svg *[fill] {
+    fill: currentColor;
+  }
+}
