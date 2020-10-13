@@ -30,7 +30,7 @@ export namespace Components {
         /**
           * The size of the icon in CSS units
          */
-        "size": string;
+        "size": any;
         /**
           * Specifies the exact `src` of an SVG file to use.
          */
@@ -81,7 +81,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon in CSS units
          */
-        "size"?: string;
+        "size"?: any;
         /**
           * Specifies the exact `src` of an SVG file to use.
          */
