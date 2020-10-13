@@ -255,8 +255,8 @@
       "scissorsOpen1",
       "copy",
       "copy1",
-      "paste",
       "copy2",
+      "paste",
       "history",
       "replay",
       "arrowRound",
@@ -555,6 +555,18 @@
       "binoculars",
       "binoculars1"
     ],
+    "home": [
+      "house",
+      "garage",
+      "key",
+      "heart",
+      "mailbox",
+      "loveseat",
+      "sofa",
+      "door",
+      "doorOpen",
+      "doorOpen1"
+    ],
     "transport": [
       "bike",
       "kickScooter",
@@ -563,6 +575,7 @@
       "scooterSide",
       "car",
       "carSide",
+      "raceCar",
       "van",
       "pickupTruck",
       "truck",
