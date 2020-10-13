@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/gorango/glyphs/issues"
   },
-  "homepage": "https://icons.fyi/cli/introduction",
+  "homepage": "https://glyphs.fyi/cli/introduction",
   "dependencies": {
     "chalk": "^4.1.0",
     "clear": "^0.1.0",

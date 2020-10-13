@@ -18,7 +18,7 @@ console.log(`
     $ glyphs <command> -h
 
   Options
-    --version, -v Print Just Icons CLI version
+    --version, -v Print Glyphs CLI version
 
   Commands
     add, a        Configure a new icon set

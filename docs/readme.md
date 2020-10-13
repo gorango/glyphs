@@ -1,3 +1,3 @@
-# Just Icons Docs
+# Glyphs Docs
 
 > Coming soon...

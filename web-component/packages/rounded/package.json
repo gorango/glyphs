@@ -1,13 +1,13 @@
 {
-  "name": "@just-icons/rounded-icon",
+  "name": "@glyphs/rounded-icon",
   "version": "0.0.21",
   "description": "Rounded Icons",
-  "homepage": "https://icons.fyi/dir?set=rounded",
+  "homepage": "https://glyphs.fyi/dir?set=rounded",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gorango/just-icons.git"
+    "url": "git+https://github.com/gorango/glyphs.git"
   },
-  "author": "Goran Spasojevic <goran@icons.fyi> (https://github.com/gorango)",
+  "author": "Goran Spasojevic <goran@glyphs.fyi> (https://github.com/gorango)",
   "keywords": [
     "svg",
     "icons",
@@ -33,6 +33,6 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gorango/just-icons/issues"
+    "url": "https://github.com/gorango/glyphs/issues"
   }
 }

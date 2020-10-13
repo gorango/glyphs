@@ -69,7 +69,7 @@ let { key, token, replace } = argv
 
     console.log()
     console.log('  Add a new icon set config by providing a file key and access token from Figma')
-    console.log('  Instructions can be found at https://icons.fyi/docs/cli')
+    console.log('  Instructions can be found at https://glyphs.fyi/docs/cli')
     console.log()
     const answers = await inquirer.prompt(questions)
     key = answers.key

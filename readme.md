@@ -1,12 +1,12 @@
-# Just Icons
+# Glyphs
 
 > Enabling icon sets in Figma to be packaged for use in web applications
 
 ## Docs
 
-[https://icons.fyi/docs](https://icons.fyi/docs)
+[https://glyphs.fyi/docs](https://glyphs.fyi/docs)
 
 ## License
 
-[MIT](https://github.com/gorango/just-icons/blob/main/license) © [Goran Spasojevic](https://github.com/gorango)
+[MIT](https://github.com/gorango/glyphs/blob/main/license) © [Goran Spasojevic](https://github.com/gorango)
 

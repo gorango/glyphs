@@ -1,4 +1,4 @@
-# Just Icons CLI
+# Glyphs CLI
 
 Command line interface to synchronize icons from Figma to local project directories.
 
@@ -30,7 +30,7 @@ After installing, run `icons` to view options available and instructions for usi
     $ glyphs <command> -h
 
   Options
-    --version, -v Print Just Icons CLI version
+    --version, -v Print Glyphs CLI version
 
   Commands
     add, a        Configure a new icon set

@@ -71,7 +71,7 @@ module.exports = async function ({ name: set, svg: svgDir, data: dataDir }, prog
 
             components[name].variants[variant] = {
               id: components[name].variants[variant],
-              source: `https://www.figma.com/file/${fileKey}/icons.fyi?node-id=${id}`,
+              source: `https://www.figma.com/file/${fileKey}?node-id=${id}`,
               url,
               svg
             }

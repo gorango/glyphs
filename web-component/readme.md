@@ -2,7 +2,7 @@
 
 A growing set of SVG icons that can be used with a single universal [web component](https://www.webcomponents.org/). Lightweight, flexible, framework-agnostic, and MIT-licensed open source.
 
-Search and explore [icons.fyi](https://icons.fyi).
+Search and explore [glyphs.fyi](https://glyphs.fyi).
 
 ![](svg/poly/hand.svg)
 ![](svg/poly/person.svg)
@@ -40,7 +40,7 @@ The `just-icon` component is a [web component](https://www.webcomponents.org/) b
 Add the following `script` tag to your page to enable the web component.
 
 ```html
-<script src="https://unpkg.com/@just-icons/rounded-icon/dist/rounded-icon/rounded-icon.esm.js"></script>
+<script src="https://unpkg.com/@glyphs/rounded-icon/dist/rounded-icon/rounded-icon.esm.js"></script>
 ```
 
 ### NPM
@@ -48,7 +48,7 @@ Add the following `script` tag to your page to enable the web component.
 If you are using a build system for your project or if you just want to access the SVGs, you can install the package from NPM.
 
 ```
-npm install @just-icons/core
+npm install @glyphs/core
 ```
 
 #### Framework Integration
@@ -125,4 +125,4 @@ npm run test
 
 ## License
 
-Just Icons is licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Glyphs is licensed under the [MIT license](https://opensource.org/licenses/MIT).
