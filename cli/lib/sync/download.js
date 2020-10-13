@@ -40,7 +40,7 @@ module.exports = async function ({ name: set, svg: svgDir, data: dataDir }, prog
         ids,
         format: 'svg',
         use_absolute_bounds: true,
-        // svg_simplify_stroke: true
+        svg_simplify_stroke: true
       }
       const { images, err } = await api.getImage(fileKey, getImageConfig).catch(err => ({ err: err.message }))
       if (err) {
