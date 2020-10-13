@@ -33,7 +33,7 @@ ___
 
 ## Installation
 
-The `just-icon` component is a [web component](https://www.webcomponents.org/) built with [Stencil](https://stenciljs.com/), so it is easy to use in any modern browser environment. And it only takes a few lines of additional code to integrate with Vue, React, Angular, or any other web framework.
+The `svg-icon` component is a [web component](https://www.webcomponents.org/) built with [Stencil](https://stenciljs.com/), so it is easy to use in any modern browser environment. And it only takes a few lines of additional code to integrate with Vue, React, Angular, or any other web framework.
 
 ### CDN
 
@@ -57,17 +57,17 @@ Follow [this short guide](https://stenciljs.com/docs/overview) to quickly integr
 
 ## Usage
 
-The `just-icon` web component is an easy and performant way to use icons in your app. The component will dynamically load an SVG for each icon. Only visible icons are loaded and icons which are not in view do not take up any additional resources from the browser.
+The `svg-icon` web component is an easy and performant way to use icons in your app. The component will dynamically load an SVG for each icon. Only visible icons are loaded and icons which are not in view do not take up any additional resources from the browser.
 
 Read the [icon component properties](src/components/icon/readme.md) to understand all of the options available. The following are a few common use-cases.
 
 ### Basic
 
-To get started, you only need to provide the `name` attribute on the `just-icon` component.
+To get started, you only need to provide the `name` attribute on the `svg-icon` component.
 
 
 ```html
-<just-icon name="heart"></just-icon>
+<svg-icon name="heart"></svg-icon>
 ```
 
 ### Variant
@@ -75,7 +75,7 @@ To get started, you only need to provide the `name` attribute on the `just-icon`
 Available variants are `path`, `bold`, `mono`, `poly`, and `line`.
 
 ```html
-<just-icon name="arrow" variant="mono"></just-icon>
+<svg-icon name="arrow" variant="mono"></svg-icon>
 ```
 
 ### Rotate
@@ -86,7 +86,7 @@ Or using navigational headings: `ne`, `e`, `se`, `s`, `sw`, `w`, `nw`, `n`
 _Coming Soon: 8 additional steps of 25 degrees_
 
 ```html
-<just-icon name="arrow-solid-curve" rotate="90"></just-icon>
+<svg-icon name="arrow-solid-curve" rotate="90"></svg-icon>
 ```
 
 ### Flip
@@ -94,7 +94,7 @@ _Coming Soon: 8 additional steps of 25 degrees_
 Flips can be achieved across the `"v"`ertical or `"y"` axis and the `"h"`orizontal or `"x"` axis. The two can also be combined (like `"xy"`, `"hv"`).
 
 ```html
-<just-icon name="hand" flip="x"></just-icon>
+<svg-icon name="hand" flip="x"></svg-icon>
 ```
 
 ### Stroke-Width
@@ -102,7 +102,7 @@ Flips can be achieved across the `"v"`ertical or `"y"` axis and the `"h"`orizont
 This property only works when the `variant` is set to `path`, or when the `variant` property is excluded.
 
 ```html
-<just-icon name="arrow" stroke-width="1.2"></just-icon>
+<svg-icon name="arrow" stroke-width="1.2"></svg-icon>
 ```
 
 ## Developing

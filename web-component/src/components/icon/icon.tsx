@@ -6,7 +6,7 @@ import * as components from '../../../data/components.json'
 import { variants } from '../../../data/meta.json'
 
 @Component({
-  tag: 'rounded-icon',
+  tag: 'svg-icon',
   styleUrl: 'icon.css',
   shadow: true
 })
