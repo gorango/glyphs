@@ -18,7 +18,8 @@
       "droplet",
       "shield",
       "shield1",
-      "shield2"
+      "shield2",
+      "shapes"
     ],
     "arrow": [
       "caret",
@@ -249,6 +250,7 @@
     ],
     "editor": [
       "edit",
+      "edit1",
       "save",
       "save1",
       "trash",
@@ -312,8 +314,11 @@
       "pen1",
       "pen",
       "edit",
+      "edit1",
+      "palette",
       "icons",
       "icons1",
+      "shapes",
       "ruler",
       "rulerCombined",
       "rulerTrinangle",
@@ -323,7 +328,6 @@
       "stamp",
       "bandage",
       "bandage1",
-      "palette",
       "adjust",
       "adjust1",
       "aperture",

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M33 23C33 29.6274 27.6274 35 21 35C14.3726 35 9 29.6274 9 23C9 16.3726 14.3726 11 21 11C27.6274 11 33 16.3726 33 23Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M47.1003 13.1724L66.8993 32.9713" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M66.8993 13.1724L47.1003 32.9713" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M32.5212 56.1374C33.1819 56.5227 33.1819 57.4772 32.5212 57.8626L11.5018 70.1239C10.8361 70.5123 10 70.0321 10 69.2613L10 44.7387C10 43.9679 10.8361 43.4877 11.5018 43.8761L32.5212 56.1374Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M45 46C45 45.4477 45.4477 45 46 45H68C68.5523 45 69 45.4477 69 46V68C69 68.5523 68.5523 69 68 69H46C45.4477 69 45 68.5523 45 68V46Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
