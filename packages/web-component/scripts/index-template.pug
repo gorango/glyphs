@@ -3,8 +3,8 @@ head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0')
   title Icons Cheetsheet
-  script(type='module' src='/build/svg-icon.esm.js')
-  script(nomodule='' src='/build/svg-icon.js')
+  script(type='module' src='/build/glyph-icon.esm.js')
+  script(nomodule='' src='/build/glyph-icon.js')
   link(href='https://unpkg.com/tailwindcss/dist/tailwind.min.css', rel='stylesheet')
 
 body
@@ -16,7 +16,7 @@ body
           button.flex.items-center.p-1.bg-grey-100.border-2.border-gray-300(
             onmouseover=`handleMouseOver('${variant}')`
           )
-            svg-icon.text-3xl(name=icon, variant=variant)
+            glyph-icon.text-3xl(name=icon, variant=variant)
       .flex-1
 
     section
@@ -29,13 +29,13 @@ body
               div.flex.items-center.flex-col.rounded-lg.border-2.border-gray-200.w-24.m-3
                 div.w-full.p-1.text-center
                   .truncate.text-xs.text-gray-500(title=name)= name
-                svg-icon.layout-icon.text-5xl(name=name)
+                glyph-icon.layout-icon.text-5xl(name=name)
 
   script(variants=variants).
     const variants = JSON.parse(document.currentScript.getAttribute('variants'))
 
     function handleMouseOver (variant) {
-      document.querySelectorAll('svg-icon.layout-icon').forEach(el => {
+      document.querySelectorAll('glyph-icon.layout-icon').forEach(el => {
         el.variant = variant
       })
     }

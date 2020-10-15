@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'svg-icon',
+  namespace: 'glyph-icon',
   srcDir: 'src',
   preamble: 'Glyphs - Built with Stencil',
   taskQueue: 'async',
