@@ -1,5 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path d="M32 40L12 54L12 40L12 26L32 40Z" fill="#1CB0F6" class="fill-blue" />
-  <path d="M48 40L68 54L68 40L68 26L48 40Z" fill="#7AC70C" class="fill-green" />
-  <path d="M40 16L40 64.1" stroke="#FF00FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.01 8" class="stroke-purple" />
-</svg>

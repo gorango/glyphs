@@ -1,0 +1,7 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M33 30C31.3431 30 30 31.3431 30 33V35C30 36.6569 31.3431 38 33 38H35C36.6569 38 38 36.6569 38 35V33C38 31.3431 36.6569 30 35 30H33Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M45 30C43.3431 30 42 31.3431 42 33V35C42 36.6569 43.3431 38 45 38H47C48.6569 38 50 36.6569 50 35V33C50 31.3431 48.6569 30 47 30H45Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M33 42C31.3431 42 30 43.3431 30 45V47C30 48.6569 31.3431 50 33 50H35C36.6569 50 38 48.6569 38 47V45C38 43.3431 36.6569 42 35 42H33Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M45 42C43.3431 42 42 43.3431 42 45V47C42 48.6569 43.3431 50 45 50H47C48.6569 50 50 48.6569 50 47V45C50 43.3431 48.6569 42 47 42H45Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 28C2 24.6863 4.68629 22 8 22H72C75.3137 22 78 24.6863 78 28V52C78 55.3137 75.3137 58 72 58H8C4.68629 58 2 55.3137 2 52V28ZM8 26H22V54H8C6.89543 54 6 53.1046 6 52V28C6 26.8954 6.89543 26 8 26ZM54 54H26V26H54V54ZM58 54V26H72C73.1046 26 74 26.8954 74 28V52C74 53.1046 73.1046 54 72 54H58Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M32 40L12 54L12 40L12 26L32 40Z" fill="currentColor" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M48 40L68 54L68 40L68 26L48 40Z" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M40 16L40 64.1" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.01 8" />
+</svg>

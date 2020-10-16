@@ -1,0 +1,4 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M34 21L46 21V15L34 15V21ZM45 20V26L51 26V20H45ZM35 26V20H29V26H35ZM46 21C45.4477 21 45 20.5523 45 20H51C51 17.2386 48.7614 15 46 15V21ZM34 15C31.2386 15 29 17.2386 29 20H35C35 20.5523 34.5523 21 34 21V15Z" fill="currentColor" />
+  <rect x="14" y="26" width="52" height="36" rx="2" fill="currentColor" />
+</svg>

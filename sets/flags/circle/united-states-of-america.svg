@@ -1,0 +1,23 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <rect width="80" height="80" rx="40" fill="white" class="fill-white" />
+  </mask>
+  <g mask="url(#mask0)">
+    <path d="M80 0H0V80H80V0Z" fill="white" class="fill-white" />
+    <path d="M80 0H0V8H80V0Z" fill="#BB133E" class="fill-red" />
+    <path d="M80 36H0V44H80V36Z" fill="#BB133E" class="fill-red" />
+    <path d="M80 18H0V26H80V18Z" fill="#BB133E" class="fill-red" />
+    <path d="M80 54H0V62H80V54Z" fill="#BB133E" class="fill-red" />
+    <path d="M80 72H0V80H80V72Z" fill="#BB133E" class="fill-red" />
+    <path d="M40 0H0V44H40V0Z" fill="#002664" class="fill-blue" />
+    <path d="M8 5L8.89806 7.76393H11.8042L9.45308 9.47214L10.3511 12.2361L8 10.5279L5.64886 12.2361L6.54692 9.47214L4.19577 7.76393H7.10194L8 5Z" fill="white" class="fill-white" />
+    <path d="M8 18L8.89806 20.7639H11.8042L9.45308 22.4721L10.3511 25.2361L8 23.5279L5.64886 25.2361L6.54692 22.4721L4.19577 20.7639H7.10194L8 18Z" fill="white" class="fill-white" />
+    <path d="M8 31L8.89806 33.7639H11.8042L9.45308 35.4721L10.3511 38.2361L8 36.5279L5.64886 38.2361L6.54692 35.4721L4.19577 33.7639H7.10194L8 31Z" fill="white" class="fill-white" />
+    <path d="M20 5L20.8981 7.76393H23.8042L21.4531 9.47214L22.3511 12.2361L20 10.5279L17.6489 12.2361L18.5469 9.47214L16.1958 7.76393H19.1019L20 5Z" fill="white" class="fill-white" />
+    <path d="M20 18L20.8981 20.7639H23.8042L21.4531 22.4721L22.3511 25.2361L20 23.5279L17.6489 25.2361L18.5469 22.4721L16.1958 20.7639H19.1019L20 18Z" fill="white" class="fill-white" />
+    <path d="M20 31L20.8981 33.7639H23.8042L21.4531 35.4721L22.3511 38.2361L20 36.5279L17.6489 38.2361L18.5469 35.4721L16.1958 33.7639H19.1019L20 31Z" fill="white" class="fill-white" />
+    <path d="M32 5L32.8981 7.76393H35.8042L33.4531 9.47214L34.3511 12.2361L32 10.5279L29.6489 12.2361L30.5469 9.47214L28.1958 7.76393H31.1019L32 5Z" fill="white" class="fill-white" />
+    <path d="M32 18L32.8981 20.7639H35.8042L33.4531 22.4721L34.3511 25.2361L32 23.5279L29.6489 25.2361L30.5469 22.4721L28.1958 20.7639H31.1019L32 18Z" fill="white" class="fill-white" />
+    <path d="M32 31L32.8981 33.7639H35.8042L33.4531 35.4721L34.3511 38.2361L32 36.5279L29.6489 38.2361L30.5469 35.4721L28.1958 33.7639H31.1019L32 31Z" fill="white" class="fill-white" />
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M13 64V16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M19 16L67 22V42L19 48V16Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M13 22H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M13 42H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M27 17V47" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M43 19V45" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M59 21V43" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

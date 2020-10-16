@@ -1,6 +1,6 @@
 # Glyphs
 
-> Enabling icon sets in Figma to be packaged for use in web applications
+> Complete Icons Design System from Figma to Web Components
 
 ## Docs
 

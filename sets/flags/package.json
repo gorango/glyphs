@@ -1,0 +1,18 @@
+{
+  "name": "@glyphs/flags",
+  "version": "0.0.5",
+  "description": "Flags Icons",
+  "homepage": "https://glyphs.fyi/dir?set=flags",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorango/glyphs.git"
+  },
+  "author": "Goran Spasojevic <goran@glyphs.fyi> (https://github.com/gorango)",
+  "keywords": ["svg", "icons", "icon set", "svg paths", "web icons", "path icons", "flags", "flags icons", "color icons"],
+  "main": "components.json",
+  "unpkg": "components.json",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gorango/glyphs/issues"
+  }
+}

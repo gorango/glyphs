@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M29 18C29 16.3431 27.6569 15 26 15C24.3431 15 23 16.3431 23 18V23H29V18ZM29 29L29 51L51 51V57L26 57C24.3431 57 23 55.6569 23 54L23 29H29ZM57 57V51H62C63.6569 51 65 52.3431 65 54C65 55.6569 63.6569 57 62 57H57Z" fill="#84D3FF" class="fill-blue" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M54 65C52.3431 65 51 63.6569 51 62L51 29L18 29C16.3431 29 15 27.6569 15 26C15 24.3431 16.3431 23 18 23L54 23C55.6569 23 57 24.3431 57 26L57 62C57 63.6569 55.6569 65 54 65Z" fill="#1CB0F6" class="fill-blue" />
+  <path d="M26 54L62 18" stroke="#7B61FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-purple" />
+</svg>

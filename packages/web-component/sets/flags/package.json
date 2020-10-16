@@ -1,7 +1,7 @@
 {
-  "name": "@glyphs/flags",
-  "version": "0.0.3",
-  "description": "Flag Icons",
+  "name": "@glyphs/wc-flags",
+  "version": "0.0.1",
+  "description": "Flag Icons Universal Web Component",
   "homepage": "https://glyphs.fyi/dir?set=flag",
   "repository": {
     "type": "git",
@@ -28,9 +28,7 @@
   "unpkg": "dist/flag-icon/flag-icon.js",
   "files": [
     "data/",
-    "dist/",
-    "loader/",
-    "svg/"
+    "loader/"
   ],
   "license": "MIT",
   "bugs": {

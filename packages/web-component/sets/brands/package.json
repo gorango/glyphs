@@ -1,7 +1,7 @@
 {
-  "name": "@glyphs/brands",
-  "version": "0.0.2",
-  "description": "Brand Icons",
+  "name": "@glyphs/wc-brands",
+  "version": "0.0.1",
+  "description": "Brand Icons Universal Web Component",
   "homepage": "https://glyphs.fyi/dir?set=brand",
   "repository": {
     "type": "git",
@@ -28,9 +28,7 @@
   "unpkg": "dist/brand-icon/brand-icon.js",
   "files": [
     "data/",
-    "dist/",
-    "loader/",
-    "svg/"
+    "loader/"
   ],
   "license": "MIT",
   "bugs": {

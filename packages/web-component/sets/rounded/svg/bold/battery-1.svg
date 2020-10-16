@@ -1,5 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <rect x="12" y="28" width="56" height="32" rx="2" fill="currentColor" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 22C35 20.8954 34.1046 20 33 20H21C19.8954 20 19 20.8954 19 22V23.5C19 24.6046 19.8954 25.5 21 25.5H33C34.1046 25.5 35 24.6046 35 23.5V22Z" fill="currentColor" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M61 22C61 20.8954 60.1046 20 59 20H47C45.8954 20 45 20.8954 45 22V23.5C45 24.6046 45.8954 25.5 47 25.5H59C60.1046 25.5 61 24.6046 61 23.5V22Z" fill="currentColor" />
-</svg>

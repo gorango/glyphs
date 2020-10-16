@@ -1,0 +1,7 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M19 16L67 22V42L19 48L19 16Z" fill="#F4F4F4" stroke="#F4F4F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="fill-white stroke-white" />
+  <path d="M13 16L13 64" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-grey" />
+  <path d="M13 22H19" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-grey" />
+  <path d="M13 42H19" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-grey" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M23 47.5L23 16.5L31 17.5L31 46.5L23 47.5ZM47 44.5L39 45.5L39 18.5L47 19.5V44.5ZM63 42.5L55 43.5V20.5L63 21.5L63 42.5Z" fill="#D33131" class="fill-red" />
+</svg>

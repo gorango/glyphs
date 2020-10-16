@@ -1,7 +1,7 @@
 {
-  "name": "@glyphs/rounded",
-  "version": "0.0.6",
-  "description": "Rounded Icons",
+  "name": "@glyphs/wc-rounded",
+  "version": "0.0.1",
+  "description": "Rounded Icons Universal Web Component",
   "homepage": "https://glyphs.fyi/dir?set=rounded",
   "repository": {
     "type": "git",
@@ -27,10 +27,8 @@
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/rounded-icon/rounded-icon.js",
   "files": [
-    "data/",
     "dist/",
-    "loader/",
-    "svg/"
+    "loader/"
   ],
   "license": "MIT",
   "bugs": {

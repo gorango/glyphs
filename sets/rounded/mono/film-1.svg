@@ -1,0 +1,19 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <g opacity="0.25">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M58 16L22 16L22 64H58L58 16Z" fill="currentColor" />
+    <path d="M22 16V14C20.8954 14 20 14.8954 20 16H22ZM58 16H60C60 14.8954 59.1046 14 58 14V16ZM22 64H20C20 65.1046 20.8954 66 22 66V64ZM58 64V66C59.1046 66 60 65.1046 60 64H58ZM58 42C59.1046 42 60 41.1046 60 40C60 38.8954 59.1046 38 58 38V42ZM22 38C20.8954 38 20 38.8954 20 40C20 41.1046 20.8954 42 22 42V38ZM22 18L58 18V14L22 14V18ZM24 64L24 16H20L20 64H24ZM58 62L22 62V66H58V62ZM56 16L56 64H60L60 16H56ZM58 38L22 38V42L58 42V38Z" fill="currentColor" />
+  </g>
+  <path d="M12 16L12 64M22 16L22 64" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M12 16L22 16" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M22 28L12 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M22 40H12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M22 52H12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M22 64H12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 16L58 64M68 16V64" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 16L68 16" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M68 28L58 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M68 40H58" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M68 52H58" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M68 64H58" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M22 16V14C20.8954 14 20 14.8954 20 16H22ZM58 16H60C60 14.8954 59.1046 14 58 14V16ZM22 64H20C20 65.1046 20.8954 66 22 66V64ZM58 64V66C59.1046 66 60 65.1046 60 64H58ZM58 42C59.1046 42 60 41.1046 60 40C60 38.8954 59.1046 38 58 38V42ZM22 38C20.8954 38 20 38.8954 20 40C20 41.1046 20.8954 42 22 42V38ZM22 18L58 18V14L22 14V18ZM24 64L24 16H20L20 64H24ZM58 62L22 62V66H58V62ZM56 16L56 64H60L60 16H56ZM58 38L22 38V42L58 42V38Z" fill="currentColor" />
+</svg>

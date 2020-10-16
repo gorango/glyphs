@@ -1,0 +1,10 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M10 58H22V70H10V58Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M16 58V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M10 10H22V22H10V10Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 16H22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 10H70V22H58V10Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M64 22V58" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 58H70V70H58V58Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 64H22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

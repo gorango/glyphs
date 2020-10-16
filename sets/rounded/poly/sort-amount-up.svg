@@ -1,0 +1,8 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M22 25C22 23.8954 21.1046 23 20 23C18.8954 23 18 23.8954 18 25L22 25ZM18 64C18 65.1046 18.8954 66 20 66C21.1046 66 22 65.1046 22 64H18ZM18 25L18 64H22L22 25L18 25Z" fill="#AEEE52" class="fill-green" />
+  <path d="M25.818 25L14.182 25C13.0078 25 12.4197 23.5803 13.25 22.75L18.5858 17.4142C19.3668 16.6332 20.6332 16.6332 21.4142 17.4142L26.75 22.75C27.5803 23.5803 26.9923 25 25.818 25Z" fill="#7AC70C" stroke="#7AC70C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="fill-green stroke-green" />
+  <path d="M37 22H45" stroke="#7AC70C" stroke-width="4" stroke-linecap="round" class="stroke-green" />
+  <path d="M37 34H53" stroke="#7AC70C" stroke-width="4" stroke-linecap="round" class="stroke-green" />
+  <path d="M37 46L61 46" stroke="#7AC70C" stroke-width="4" stroke-linecap="round" class="stroke-green" />
+  <path d="M37 58L69 58" stroke="#7AC70C" stroke-width="4" stroke-linecap="round" class="stroke-green" />
+</svg>
