@@ -1,0 +1,46 @@
+{
+  "name": "glyphs.fyi",
+  "description": "Website, directory & docs for the Glyphs design system",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "nuxt",
+    "gen": "nuxt generate",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "yarn lint:js"
+  },
+  "dependencies": {
+    "@glyphs/brands": "^0.0.3",
+    "@glyphs/flags": "^0.0.5",
+    "@glyphs/rounded": "^0.0.7",
+    "@nuxt/content": "^1.10.0",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.groupby": "^4.6.0",
+    "lodash.kebabcase": "^4.1.1",
+    "nuxt": "^2.14.7",
+    "prism-themes": "^1.4.1",
+    "prismjs": "^1.22.0",
+    "v-clipboard": "^2.2.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.0",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^3.0.0",
+    "@nuxtjs/google-fonts": "^1.1.0",
+    "@nuxtjs/pwa": "^3.2.2",
+    "@nuxtjs/svg": "^0.1.12",
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "@tailwindcss/typography": "^0.2.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "nuxt-ackee": "^2.0.0",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "svgson": "^4.1.0"
+  }
+}
