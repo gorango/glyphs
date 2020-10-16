@@ -1,8 +1,8 @@
 {
-  "name": "@glyphs/wc-flags",
-  "version": "0.0.1",
-  "description": "Flag Icons Universal Web Component",
-  "homepage": "https://glyphs.fyi/dir?set=flag",
+  "name": "@glyphs/rounded-icon",
+  "version": "0.1.0",
+  "description": "Rounded Icons Universal Web Component",
+  "homepage": "https://glyphs.fyi/dir?set=rounded",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gorango/glyphs.git"
@@ -14,7 +14,7 @@
     "icon set",
     "web icons",
     "path icons",
-    "flag icons",
+    "rounded icons",
     "svg paths",
     "web component"
   ],
@@ -25,9 +25,9 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/flag-icon/flag-icon.js",
+  "unpkg": "dist/rounded-icon/rounded-icon.js",
   "files": [
-    "data/",
+    "dist/",
     "loader/"
   ],
   "license": "MIT",
