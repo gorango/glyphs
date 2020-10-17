@@ -14,7 +14,7 @@
               svg-icon.mr-3(name='book-open', size='1.5rem', stroke-width='5')
               span Documentation
           //- a.py-2.px-4.shadow-md.bg-white.dark_bg-gray-700.hover_bg-gray-200.dark_hover_bg-gray-900.text-gray-800.dark_text-white.border-2.border-transparent.rounded-lg.text-lg(
-          //-   href='https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7/glyphs?node-id=0%3A1',
+          //-   href='https://www.figma.com/community/file/899031264835768805',
           //-   target='_blank'
           //- )
             .flex.items-center

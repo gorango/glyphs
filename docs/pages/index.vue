@@ -2,12 +2,12 @@
   .overflow-x-hidden
     section.flex.w-full.mx-auto.mt-16(style='max-width: 1440px')
       .flex-1.p-4.flex.items-center
-        .flex.space-x-2
+        .flex.space-x-2(style='max-width: 600px')
             div.text-gray-700.dark_text-gray-500
               div.my-2.font-black.text-4xl.dark_text-gray-400
                 | The Mightiest Icons on the Web
-              //- div.text-center.mt-8.font-light.text-2xl.dark_text-gray-400
-                | A truly open source toolkit for creating and #[br] maintaining large icon sets
+              div.mt-8.pl-4.font-light.text-2xl.dark_text-gray-400
+                | A truly open source toolkit for creating and maintaining large icon sets in Figma
               //- p.text-2xl.font-light May just be the mightiest set of icons on the web
 
               .my-8
@@ -75,7 +75,7 @@
                 'bg-white hover_bg-gray-200 text-gray-800': $colorMode.value === 'light',
                 'bg-gray-900 hover_bg-gray-1000 text-white': $colorMode.value === 'dark'
               }`
-              href='https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7',
+              href='https://www.figma.com/community/file/899031264835768805',
               target='_blank'
             )
               svg-icon.mr-3(set='brands', name='figma', size='1.5rem', variant='color')

@@ -28,7 +28,7 @@
                   :ref='icon.name',
                   set='rounded',
                   :name='icon.name',
-                  variant='poly',
+                  variant='path',
                   @mouseenter='hover = icon.name'
                   :transition='true',
                   :offset='icon.offset || null',
