@@ -147,7 +147,7 @@ export default {
         await this.$nextTick()
       }
       if (val.q) {
-        this.$refs.search.value = val.q
+        this.$refs.search.value = val.q.toLowerCase()
       } else {
         this.$refs.search.value = ''
       }
