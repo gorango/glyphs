@@ -610,7 +610,7 @@ export default {
       const variant = this.previewVariant || this.variant
       const icon = component && component.variants[variant]
       if (icon) {
-        const blob = new Blob([variant.svg], { type: 'image/svg+xml' })
+        const blob = new Blob([icon.svg], { type: 'image/svg+xml' })
         const link = document.createElement('a')
         link.href = URL.createObjectURL(blob)
         link.download = `${kebabCase(this.icon)}_${variant}`
