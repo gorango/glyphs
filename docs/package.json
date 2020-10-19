@@ -30,7 +30,6 @@
     "@nuxtjs/color-mode": "^2.0.0",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^3.0.0",
-    "@nuxtjs/google-fonts": "^1.1.0",
     "@nuxtjs/pwa": "^3.2.2",
     "@nuxtjs/svg": "^0.1.12",
     "@nuxtjs/tailwindcss": "^3.1.0",

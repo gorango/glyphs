@@ -16,7 +16,7 @@
         //-   @leave='onIconLeave'
         //- )
         .flex.flex-col.flex-1.p-4.space-y-8.items-center
-          template(v-for='icon in icons[category].slice(0, 7)')
+          template(v-for='icon in icons[category].slice(0, 8)')
             template(v-if='icon')
               router-link.rounded-lg.p-1.border-2.border-transparent.flex.items-center.justify-center(
                 :key='icon.name',

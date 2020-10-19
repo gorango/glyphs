@@ -13,7 +13,8 @@ export default {
   },
   css: [
     '@/assets/css/main.css',
-    '@/assets/css/scrollbar.css'
+    '@/assets/css/scrollbar.css',
+    '@/assets/fonts/fonts.css'
   ],
   plugins: [
     '@/plugins/init.js',
@@ -30,7 +31,6 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
     '@nuxtjs/color-mode',
-    '@nuxtjs/google-fonts',
     '@nuxtjs/svg',
     '@nuxtjs/pwa',
     'nuxt-ackee'
@@ -68,11 +68,6 @@ export default {
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css'
       }
-    }
-  },
-  googleFonts: {
-    families: {
-      Inter: [300, 500, 700, 900]
     }
   },
   ackee: {

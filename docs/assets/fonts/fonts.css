@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('./inter/inter-300.woff2') format('woff2'),
+       url('./inter/inter-300.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('./inter/inter-500.woff2') format('woff2'),
+       url('./inter/inter-500.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./inter/inter-700.woff2') format('woff2'),
+       url('./inter/inter-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('./inter/inter-900.woff2') format('woff2'),
+       url('./inter/inter-900.woff') format('woff');
+}
