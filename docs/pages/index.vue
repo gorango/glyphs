@@ -6,8 +6,9 @@
             div.text-gray-700.dark_text-gray-500
               div.my-2.font-black.text-4xl.dark_text-gray-400
                 | The Mightiest Icons on the Web
-              div.mt-8.pl-4.font-light.text-2xl.dark_text-gray-400
-                | A truly open source toolkit for creating and maintaining large icon sets in Figma
+              div.pl-2.mt-8.font-light.text-2xl.dark_text-gray-400
+                | A complete design system for creating and maintaining large icon sets in Figma
+                //- | A truly open source design system for creating and maintaining large icon sets in Figma
               //- p.text-2xl.font-light May just be the mightiest set of icons on the web
 
               .my-8

@@ -15,7 +15,7 @@ Head on to the Glyphs official website: [https://glyphs.fyi/docs](https://glyphs
 
 Please make sure to read the [Contributing Guide](./contributing.md) before making a pull request.
 
-Thank you to all the people who already [contributed to Glyphs](https://github.com/quasarframework/quasar/graphs/contributors).
+<!-- Thank you to all the people who already [contributed to Glyphs](https://github.com/gorango/glyphs/graphs/contributors). -->
 
 ## Semver
 Glyphs is following [Semantic Versioning 2.0](https://semver.org/).
