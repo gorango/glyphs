@@ -3,6 +3,9 @@
     :value='constrainedValue',
     @mousedown='handleMouseDown',
     @keypress='handleInput',
+    @keydown.esc='handleChange({ target: { value: 0 } })',
+    @keydown='toggleShift($event, true)',
+    @keyup='toggleShift($event, false)',
     @keydown.up='handleKeyCodeUp',
     @keydown.down='handleKeyCodeDown',
     @change='handleChange'
@@ -44,6 +47,7 @@ export default {
 
   data: () => ({
     isMouseDown: false,
+    isShiftDown: false,
     initialMouse: null,
     internalValue: 0
   }),
@@ -76,13 +80,13 @@ export default {
   methods: {
     // constrains a number to not exceed the min/max
     // decimals: rounding precision
-    constrain (value, min, max, decimals) {
-      decimals = typeof decimals !== 'undefined' ? decimals : 0
+    constrain (value) {
+      const decimals = typeof this.decimals !== 'undefined' ? this.decimals : 0
 
-      if (min !== undefined && max !== undefined) {
-        return this.round(Math.min(Math.max(parseFloat(value), min), max), decimals)
+      if (this.min !== undefined && this.max !== undefined) {
+        return this.round(Math.min(Math.max(parseFloat(value), this.min), this.max), decimals)
       } else {
-        return value
+        return this.round(value, decimals)
       }
     },
 
@@ -91,8 +95,7 @@ export default {
       return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals)
     },
 
-    handleInput  (event) {
-      // console.log(event)
+    handleInput (event) {
       if (event.keyCode === 13) {
         this.handleChange(event)
       }
@@ -103,21 +106,22 @@ export default {
     },
 
     handleChange  (event) {
-      this.internalValue = isNaN(parseFloat(event.target.value)) ? 0 : parseFloat(event.target.value)
+      const newValue = isNaN(parseFloat(event.target.value)) ? 0 : parseFloat(event.target.value)
+      this.internalValue = this.constrain(newValue)
       this.$emit('input', this.internalValue)
     },
 
     handleKeyCodeUp  (event) {
       event.preventDefault()
-      const newValue = this.internalValue + parseFloat(this.steps)
-      this.internalValue = this.constrain(newValue, this.min, this.max, this.decimals)
+      const newValue = this.internalValue + parseFloat(this.isShiftDown ? 45 : this.steps)
+      this.internalValue = this.constrain(newValue)
       this.$emit('input', this.internalValue)
     },
 
     handleKeyCodeDown  (event) {
       event.preventDefault()
-      const newValue = this.internalValue - parseFloat(this.steps)
-      this.internalValue = this.constrain(newValue, this.min, this.max, this.decimals)
+      const newValue = this.internalValue - parseFloat(this.isShiftDown ? 45 : this.steps)
+      this.internalValue = this.constrain(newValue)
       this.$emit('input', this.internalValue)
     },
 
@@ -154,12 +158,18 @@ export default {
     handleMouseMove (event) {
       // scrub if the mouse is being pressed
       if (this.mouseDown) {
-        const steps = parseFloat(this.steps)
-        const newValue = this.initialValue + (((event.clientX - this.initialMouse.x) / this.friction) * steps)
-        this.internalValue = this.constrain(newValue, this.min, this.max, this.decimals)
+        const steps = this.isShiftDown ? 45 : parseFloat(this.steps)
+        const friction = this.friction
+        const newValue = this.initialValue + (((event.clientX - this.initialMouse.x) / friction) * steps)
+        this.internalValue = this.constrain(newValue)
 
-        // if (this.internalValue !== this.initialValue) {}
         this.$emit('input', this.internalValue)
+      }
+    },
+
+    toggleShift (event, activate) {
+      if (event.key === 'Shift') {
+        this.isShiftDown = activate
       }
     }
   }
