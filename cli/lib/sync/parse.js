@@ -54,7 +54,7 @@ async function parseFile (file, set, ignore) {
     .reduce((obj, [id, { name, description }]) => ({
       ...obj,
       ...(
-        !name.includes('/')
+        !name.startsWith('_') && !name.includes('/')
           ? {
             [getName(name)]: {
               id,
@@ -78,8 +78,6 @@ async function parseFile (file, set, ignore) {
   // populate core components with child data
   const variants = []
   file.document.children.filter(({ name }) => ['icons'].includes(name.toLowerCase())).forEach(page => page.children.forEach(categoryFrame => {
-  // })
-  // file.document.children.find(({ name }) => name === 'Source').children.forEach(categoryFrame => {
     const category = categoryFrame.name.toLowerCase()
     if (categoryFrame.type !== 'FRAME' || !categoryFrame.children) {
       return
@@ -97,10 +95,7 @@ async function parseFile (file, set, ignore) {
     })
   }))
   conf.set(`${set}.variants`, variants)
-  // populate core components with child data
   file.document.children.filter(({ name }) => ['icons'].includes(name.toLowerCase())).forEach(page => page.children.forEach(categoryFrame => {
-  // })
-  // file.document.children.find(({ name }) => name === 'Source').children.forEach(categoryFrame => {
     const category = categoryFrame.name.toLowerCase()
     if (categoryFrame.type !== 'FRAME' || !categoryFrame.children) {
       return
@@ -109,13 +104,13 @@ async function parseFile (file, set, ignore) {
       const componentName = getName(componentVariant.name, true)
       const component = components[componentName]
       if (componentName in components) {
-        if (!componentVariant.name.includes('/')) {
+        if (!componentVariant.name.startsWith('_') && !componentVariant.name.includes('/')) {
           // indicate source category for multiple components
           components[componentName].categories[(category.toLowerCase())] = componentVariant.type === 'COMPONENT'
           // combine terms from ancestor components with children
           const isInheritableComponent = node => node.type === 'INSTANCE' && getName(node.name) in components
           const inheritedComponents = findAll(componentVariant, isInheritableComponent)
-            .filter(node => !node.name.includes('/'))
+            .filter(node => !node.name.startsWith('_') && !node.name.includes('/'))
             .map(({ name }) => getName(name))
             .reduce((arr, node) => arr.includes(node) ? arr : [...arr, node], [])
           if (inheritedComponents.length) {

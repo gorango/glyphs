@@ -17,11 +17,11 @@ module.exports = async function ({ name: set, data: dataDir }, progress) {
   const icons = file.document.children.filter(({ name }) => ['icons'].includes(name.toLowerCase()))
   const frames = icons.reduce((arr, { children }) => [...arr, ...children], [])
   const categories = frames.reduce((obj, frame) => {
-    const target = '_ /'
     const types = ['COMPONENT', 'INSTANCE']
-    const children = (frame.children || [])
-    .filter(({ name, type }) => types.includes(type) && !name.includes('/'))
+    const children = (frame.children || []).filter(({ name, type }) => types.includes(type) && !name.startsWith('_') && !name.includes('/'))
+
     if (!children.length) { return obj }
+
     return {
       ...obj,
       [camelCase(frame.name.trim())]: children
