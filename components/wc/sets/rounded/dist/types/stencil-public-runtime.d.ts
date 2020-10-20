@@ -209,6 +209,7 @@ export declare const State: StateDecorator;
  */
 export declare const Watch: WatchDecorator;
 export declare type ResolutionHandler = (elm: HTMLElement) => string | undefined | null;
+export declare type ErrorHandler = (err: any, element?: HTMLElement) => void;
 /**
  * `setMode()` is used for libraries which provide multiple "modes" for styles.
  */
@@ -267,6 +268,11 @@ export declare function writeTask(task: RafCallback): void;
  * For further information: https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing
  */
 export declare function readTask(task: RafCallback): void;
+/**
+ * `setErrorHandler()` can be used to inject a custom global error handler.
+ * Unhandled exception raised while rendering, during event handling, or lifecycles will trigger the custom event handler.
+ */
+export declare const setErrorHandler: (handler: ErrorHandler) => void;
 /**
  * This file gets copied to all distributions of stencil component collections.
  * - no imports
@@ -430,19 +436,27 @@ export declare const Fragment: FunctionalComponent<{}>;
  */
 export declare namespace h {
     function h(sel: any): VNode;
-    function h(sel: Node, data: VNodeData): VNode;
-    function h(sel: any, data: VNodeData): VNode;
+    function h(sel: Node, data: VNodeData | null): VNode;
+    function h(sel: any, data: VNodeData | null): VNode;
     function h(sel: any, text: string): VNode;
     function h(sel: any, children: Array<VNode | undefined | null>): VNode;
-    function h(sel: any, data: VNodeData, text: string): VNode;
-    function h(sel: any, data: VNodeData, children: Array<VNode | undefined | null>): VNode;
-    function h(sel: any, data: VNodeData, children: VNode): VNode;
+    function h(sel: any, data: VNodeData | null, text: string): VNode;
+    function h(sel: any, data: VNodeData | null, children: Array<VNode | undefined | null>): VNode;
+    function h(sel: any, data: VNodeData | null, children: VNode): VNode;
     namespace JSX {
         interface IntrinsicElements extends LocalJSX.IntrinsicElements, JSXBase.IntrinsicElements {
             [tagName: string]: any;
         }
     }
 }
+export declare function h(sel: any): VNode;
+export declare function h(sel: Node, data: VNodeData | null): VNode;
+export declare function h(sel: any, data: VNodeData | null): VNode;
+export declare function h(sel: any, text: string): VNode;
+export declare function h(sel: any, children: Array<VNode | undefined | null>): VNode;
+export declare function h(sel: any, data: VNodeData | null, text: string): VNode;
+export declare function h(sel: any, data: VNodeData | null, children: Array<VNode | undefined | null>): VNode;
+export declare function h(sel: any, data: VNodeData | null, children: VNode): VNode;
 export interface VNode {
     $flags$: number;
     $tag$: string | number | Function;

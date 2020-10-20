@@ -101,7 +101,7 @@ export class Icon {
       ? h("div", { class: "icon-inner", innerHTML: this.svgContent })
       : h("div", { class: "icon-inner" }))));
   }
-  static get is() { return "rounded-icon"; }
+  static get is() { return "glyph-icon"; }
   static get encapsulation() { return "shadow"; }
   static get originalStyleUrls() { return {
     "$": ["icon.css"]
