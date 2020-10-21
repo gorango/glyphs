@@ -2,7 +2,7 @@
   .overflow-x-hidden
     section.flex.w-full.mx-auto.mt-16(style='max-width: 1440px')
       .flex-1.p-4.flex.items-center
-        .flex.space-x-2(style='max-width: 600px')
+        .flex.space-x-2.mx-auto(style='max-width: 600px')
             div.text-gray-700.dark_text-gray-500
               div.my-2.font-black.text-4xl.dark_text-gray-400
                 | The Mightiest Icons on the Web
@@ -13,49 +13,49 @@
 
               .my-8
 
-              div.my-4.p-2.text-xl.flex.items-center(
+              div.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap(
                 href='#figma',
-                style='width: max-content'
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='brands', name='figma', variant='color')
                 span Thousands of editable icons #[span.text-black.dark_text-gray-300 designed in Figma]
+                //- .flex-auto
                 //- svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='180')
 
-              div.my-4.p-2.text-xl.flex.items-center(
+              div.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap(
                 href='#web',
-                style='width: max-content'
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='brands', name='web-components', variant='color')
                 span #[span.text-black.dark_text-gray-300 Web components] for use with any application
+                //- .flex-auto
                 //- svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='180')
 
-              div.my-4.p-2.text-xl.flex.items-center(
+              div.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap(
                 href='#cli',
-                style='width: max-content'
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='laptop', variant='poly')
                 span #[span.text-black.dark_text-gray-300 CLI utility] to download SVGs from Figma
+                //- .flex-auto
                 //- svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='180')
 
-              a.my-4.p-2.text-xl.flex.items-center.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+              a.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
                 @click='focusSearch(); $router.push("dir")',
-                style='width: max-content',
                 :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='search', variant='poly')
                 span Categorized & tagged for easy #[span.text-black.dark_text-gray-300 search]
+                .flex-auto
                 svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='90')
 
-              router-link.my-4.p-2.text-xl.flex.items-center.rounded-lg.shadow-md.transition-all.duration-300(
+              router-link.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300(
                 to='docs',
-                style='width: max-content',
                 :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='note-pad', variant='poly')
                 span Growing #[span.text-black.dark_text-gray-300 documentation] and guides
+                .flex-auto
                 svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='90')
 
-      landing-icons
+      landing-icons.hidden.xl_block
 
     div.py-6
       div.bg-center.bg-repeat-x(
@@ -109,3 +109,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.feature-line {
+  width: max-content
+}
+
+@media (max-width: 640px) {
+  .feature-line {
+    width: auto
+  }
+}
+</style>
