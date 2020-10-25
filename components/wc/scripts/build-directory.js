@@ -2,7 +2,7 @@ const pug = require('pug')
 const fs = require('fs')
 const path = require('path')
 
-const { categories, variants } = require('../data/meta.json')
+const { categories, variants } = require('../../../sets/rounded/meta.json')
 
 const icon = Object.values(categories)[0][0]
 

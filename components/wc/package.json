@@ -26,7 +26,6 @@
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/glyph-icon/glyph-icon.js",
   "files": [
-    "data/",
     "dist/",
     "loader/"
   ],
