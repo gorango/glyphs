@@ -3,9 +3,9 @@
     :value='constrainedValue',
     @mousedown='handleMouseDown',
     @keypress='handleInput',
-    @keydown.esc='handleChange({ target: { value: 0 } })',
-    @keydown='toggleShift($event, true)',
-    @keyup='toggleShift($event, false)',
+    @keydown.esc='handleChange({ target: { value: initialValue } })',
+    @keydown='handleShift($event, true)',
+    @keyup='handleShift($event, false)',
     @keydown.up='handleKeyCodeUp',
     @keydown.down='handleKeyCodeDown',
     @change='handleChange'
@@ -39,6 +39,10 @@ export default {
       type: [String, Number],
       default: undefined
     },
+    shift: {
+      type: [String, Number],
+      default: undefined
+    },
     friction: {
       type: [Number],
       default: 1
@@ -48,6 +52,7 @@ export default {
   data: () => ({
     isMouseDown: false,
     isShiftDown: false,
+    initialValue: null,
     initialMouse: null,
     internalValue: 0
   }),
@@ -75,6 +80,7 @@ export default {
 
   mounted () {
     this.internalValue = parseFloat(this.value)
+    this.initialValue = this.internalValue
   },
 
   methods: {
@@ -111,16 +117,22 @@ export default {
       this.$emit('input', this.internalValue)
     },
 
+    handleShift (event, activate) {
+      if (event.key === 'Shift' && this.shift) {
+        this.isShiftDown = activate
+      }
+    },
+
     handleKeyCodeUp  (event) {
       event.preventDefault()
-      const newValue = this.internalValue + parseFloat(this.isShiftDown ? 45 : this.steps)
+      const newValue = this.internalValue + parseFloat(this.isShiftDown ? this.shift : this.steps)
       this.internalValue = this.constrain(newValue)
       this.$emit('input', this.internalValue)
     },
 
     handleKeyCodeDown  (event) {
       event.preventDefault()
-      const newValue = this.internalValue - parseFloat(this.isShiftDown ? 45 : this.steps)
+      const newValue = this.internalValue - parseFloat(this.isShiftDown ? this.shift : this.steps)
       this.internalValue = this.constrain(newValue)
       this.$emit('input', this.internalValue)
     },
@@ -137,7 +149,7 @@ export default {
       }
 
       // remember the initial value
-      this.initialValue = this.internalValue
+      this._initialDragValue = this.internalValue
 
       // register global event handlers because now we are not bound to the component anymore
       document.addEventListener('mousemove', this.handleMouseMove)
@@ -146,7 +158,7 @@ export default {
       document.addEventListener('mouseup', this.handleMouseUp)
     },
 
-    handleMouseUp ($event) {
+    handleMouseUp (event) {
       // disable scrubbing
       this.mouseDown = false
 
@@ -158,18 +170,16 @@ export default {
     handleMouseMove (event) {
       // scrub if the mouse is being pressed
       if (this.mouseDown) {
-        const steps = this.isShiftDown ? 45 : parseFloat(this.steps)
-        const friction = this.friction
-        const newValue = this.initialValue + (((event.clientX - this.initialMouse.x) / friction) * steps)
+        let steps = parseFloat(this.steps)
+        let newValue = this._initialDragValue + (((event.clientX - this.initialMouse.x) / this.friction) * steps)
+
+        if (this.shift && this.isShiftDown) {
+          steps = this.shift
+          newValue = Math.round(newValue / steps) * steps
+        }
+
         this.internalValue = this.constrain(newValue)
-
         this.$emit('input', this.internalValue)
-      }
-    },
-
-    toggleShift (event, activate) {
-      if (event.key === 'Shift') {
-        this.isShiftDown = activate
       }
     }
   }
