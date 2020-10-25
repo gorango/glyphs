@@ -2,8 +2,8 @@ import { Build, Component, Element, Host, Prop, State, Watch, h } from '@stencil
 import camelCase from 'lodash.camelcase';
 import { getName } from './utils';
 // @ts-ignore
-import * as components from '../../../data/components.json';
-import { variants } from '../../../data/meta.json';
+import * as components from '../../../../../sets/rounded/components.json';
+import { variants } from '../../../../../sets/rounded/meta.json';
 export class Icon {
   constructor() {
     this.components = components;
@@ -101,7 +101,7 @@ export class Icon {
       ? h("div", { class: "icon-inner", innerHTML: this.svgContent })
       : h("div", { class: "icon-inner" }))));
   }
-  static get is() { return "glyph-icon"; }
+  static get is() { return "rounded-icon"; }
   static get encapsulation() { return "shadow"; }
   static get originalStyleUrls() { return {
     "$": ["icon.css"]

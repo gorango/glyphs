@@ -1,1 +1,0 @@
-import{p as t,b as a}from"./p-99283242.js";(()=>{const a=import.meta.url,o={};return""!==a&&(o.resourcesUrl=new URL(".",a).href),t(o)})().then((t=>a([["p-9fbcd3b6",[[1,"glyph-icon",{ariaLabel:[1537,"aria-label"],flip:[1],name:[1],src:[1],icon:[8],size:[8],rotate:[1],variant:[1],strokeWidth:[8,"stroke-width"],svgContent:[32],components:[32]}]]]],t)));
