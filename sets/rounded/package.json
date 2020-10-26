@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/rounded",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Rounded Icons",
   "homepage": "https://glyphs.fyi/dir?set=rounded",
   "repository": {
@@ -8,7 +8,16 @@
     "url": "git+https://github.com/gorango/glyphs.git"
   },
   "author": "Goran Spasojevic <goran@glyphs.fyi> (https://github.com/gorango)",
-  "keywords": ["svg", "icons", "icon set", "svg paths", "web icons", "path icons", "rounded icons", "color icons"],
+  "keywords": [
+    "svg",
+    "icons",
+    "icon set",
+    "svg paths",
+    "web icons",
+    "path icons",
+    "rounded icons",
+    "color icons"
+  ],
   "main": "components.json",
   "unpkg": "components.json",
   "license": "MIT",
