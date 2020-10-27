@@ -25,13 +25,15 @@ module.exports = async function ({ name: set, data: dataDir }, progress) {
     return {
       ...obj,
       [camelCase(frame.name.trim())]: children
-      .map(component => camelCase(component.name.trim()))
-      .filter((name, i, arr) => arr.indexOf(name) === i) // filter out duplicates
+        .map(component => camelCase(component.name.trim()))
+        .filter((name, i, arr) => arr.indexOf(name) === i) // filter out duplicates
     }
   }, {})
+  const unique = Object.values(categories).reduce((arr, category) => [...arr, ...new Set(category)], []).length
   const meta = {
-    categories,
-    variants
+    unique,
+    variants,
+    categories
   }
   await saveJSON(`${dataDir}/meta`, meta)
   progress.update(100, {

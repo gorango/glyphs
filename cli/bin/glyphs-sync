@@ -91,12 +91,12 @@ const pkg = require('../package.json')
 
   const parse = require('../lib/sync/parse')
   const download = require('../lib/sync/download')
-  const categories = require('../lib/sync/categories')
+  const meta = require('../lib/sync/meta')
 
   const run = async () => {
     await parse(mergedArgs, progress).catch(handleError)
     await download(mergedArgs, progress).catch(handleError)
-    await categories(mergedArgs, progress).catch(handleError)
+    await meta(mergedArgs, progress).catch(handleError)
     console.log()
     process.exit(0)
   }
