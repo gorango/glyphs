@@ -1,4 +1,12 @@
 {
+  "unique": 609,
+  "variants": [
+    "path",
+    "bold",
+    "poly",
+    "mono",
+    "outline"
+  ],
   "categories": {
     "shape": [
       "circle",
@@ -144,15 +152,18 @@
     ],
     "location": [
       "locationArrow",
-      "mapMarker",
-      "mapMarker1",
+      "compass",
+      "crosshairs",
+      "crosshairs1",
       "turnSign",
       "uTurnSign",
       "map",
       "streetView",
-      "arrowsRoute",
-      "route",
       "mapSigns",
+      "mapMarker",
+      "mapMarker1",
+      "mapMarker2",
+      "mapMarkerLine",
       "pin",
       "pin1",
       "flag",
@@ -160,6 +171,10 @@
       "pennant",
       "pennant1",
       "windsock",
+      "arrowsRoute",
+      "route",
+      "path",
+      "path1",
       "binoculars",
       "binoculars1",
       "layerGroup",
@@ -564,6 +579,7 @@
       "palmTree",
       "seedling",
       "leaf",
+      "leaf1",
       "mapleLeaf",
       "apple",
       "mushroom",
@@ -758,12 +774,5 @@
       "times",
       "asterisk"
     ]
-  },
-  "variants": [
-    "path",
-    "bold",
-    "poly",
-    "mono",
-    "outline"
-  ]
+  }
 }
