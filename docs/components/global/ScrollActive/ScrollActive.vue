@@ -11,7 +11,7 @@ import {
   pushHashToUrl,
   getSectionSelector,
   getSectionIdFromElement
-} from './utils'
+} from './scroll-utils'
 export default {
   props: {
     /**
