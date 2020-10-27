@@ -105,6 +105,9 @@ module.exports = async function ({ name: set, svg: svgDir, data: dataDir }, prog
       removeUnused(svg)
       if (REPLACE_CURRENT_COLOR.includes(variant)) {
         applyCurrentColor(svg)
+        if (['path', 'stroke', 'line', 'outline'].includes(variant)) {
+          removeStrokeWidths(svg)
+        }
       } else {
         applyColorVars(svg)
       }
@@ -119,6 +122,15 @@ module.exports = async function ({ name: set, svg: svgDir, data: dataDir }, prog
       delete node.attributes.width
       delete node.attributes.height
       delete node.attributes.xmlns
+    }
+  }
+
+  function removeStrokeWidths (node) {
+    if (node.children) {
+      node.children.forEach(removeStrokeWidths)
+    }
+    if ('stroke-width' in node.attributes) {
+      delete node.attributes['stroke-width']
     }
   }
 
