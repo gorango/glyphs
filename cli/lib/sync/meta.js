@@ -29,7 +29,7 @@ module.exports = async function ({ name: set, data: dataDir }, progress) {
         .filter((name, i, arr) => arr.indexOf(name) === i) // filter out duplicates
     }
   }, {})
-  const unique = Object.values(categories).reduce((arr, category) => [...arr, ...new Set(category)], []).length
+  const unique = [...new Set(Object.values(categories).reduce((arr, icons) => arr.concat(icons), []))].length
   const meta = {
     unique,
     variants,
