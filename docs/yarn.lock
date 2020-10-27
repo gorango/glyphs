@@ -862,10 +862,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@eslint/eslintrc@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.2.0.tgz#bc7e3c4304d4c8720968ccaee793087dfb5fe6b4"
-  integrity sha512-+cIGPCBdLCzqxdtwppswP+zTsH9BOIGzAeKfBIbtb4gW/giMlfMwP0HUSFfhzh20f9u8uZ8hOp62+4GPquTbwQ==
+"@eslint/eslintrc@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.2.1.tgz#f72069c330461a06684d119384435e12a5d76e3c"
+  integrity sha512-XRUeBZ5zBWLYgSANMpThFddrZZkEbGHgUdt5UJjZfnlN9BGCiUBrf+nvbRupSjMvqzwnQN0qwCmOxITt1cfywA==
   dependencies:
     ajv "^6.12.4"
     debug "^4.1.1"
@@ -896,10 +896,10 @@
   resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.0.5.tgz#af19e90fbace0f8ee5613d7bb549213f0894451b"
   integrity sha512-3bBEaHQI2+wKTENeOjfBRFkXcyQoHrncxQUxGRTl4iCBN3Br19zLXNWsYFTX9KeRWbVlbRFck98E4127Z2gT2Q==
 
-"@glyphs/rounded@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@glyphs/rounded/-/rounded-0.1.3.tgz#00bdcc18b6e5fbb17e631aa5126b7446a4b767f9"
-  integrity sha512-poOHbwj9J/mZE8+ReY7bWOl2wllIPziT2gni582aVdxIurLWYgaDo5+8PjAbcbQkjJsX4E0HZfIh899adNx59Q==
+"@glyphs/rounded@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@glyphs/rounded/-/rounded-0.1.4.tgz#b0ac935e8200c3fd3f3919927978bfab5ee68d44"
+  integrity sha512-FzoOJqtyEsJxtjBY3gdjtVvnDaNLRMWNolBkedXMbU73lLCKrsv3B/NMqr39O90mrAExkFjIuTE0Im+At4TjUw==
 
 "@lokidb/full-text-search@^2.1.0":
   version "2.1.0"
@@ -4156,13 +4156,13 @@ eslint-webpack-plugin@^2.1.0:
     micromatch "^4.0.2"
     schema-utils "^2.7.0"
 
-eslint@^7.12.0:
-  version "7.12.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.12.0.tgz#7b6a85f87a9adc239e979bb721cde5ce0dc27da6"
-  integrity sha512-n5pEU27DRxCSlOhJ2rO57GDLcNsxO0LPpAbpFdh7xmcDmjmlGUfoyrsB3I7yYdQXO5N3gkSTiDrPSPNFiiirXA==
+eslint@^7.12.1:
+  version "7.12.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.12.1.tgz#bd9a81fa67a6cfd51656cdb88812ce49ccec5801"
+  integrity sha512-HlMTEdr/LicJfN08LB3nM1rRYliDXOmfoO4vj39xN6BLpFzF00hbwBoqHk8UcJ2M/3nlARZWy/mslvGEuZFvsg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
-    "@eslint/eslintrc" "^0.2.0"
+    "@eslint/eslintrc" "^0.2.1"
     ajv "^6.10.0"
     chalk "^4.0.0"
     cross-spawn "^7.0.2"
