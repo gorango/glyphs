@@ -1,19 +1,17 @@
 <template lang="pug">
   .overflow-x-hidden
-    section.flex.w-full.mx-auto.mt-16(style='max-width: 1440px')
-      .flex-1.p-4.flex.items-center
+    section.flex.w-full.mx-auto.mt-12.sm_mt-16(style='max-width: 1440px')
+      .flex-1.p-2.sm_p-4.flex.items-center
         .flex.space-x-2.mx-auto(style='max-width: 600px')
             div.text-gray-700.dark_text-gray-500
-              div.my-2.font-black.text-4xl.dark_text-gray-400
+              div.my-2.font-black.text-3xl.sm_text-4xl.dark_text-gray-400
                 | The Mightiest Icons on the Web
-              div.pl-2.mt-8.font-light.text-2xl.dark_text-gray-400
+              div.pl-2.sm_my-8.font-light.text-xl.sm_text-2xl.dark_text-gray-400
                 | A complete design system for creating and maintaining large icon sets in Figma
                 //- | A truly open source design system for creating and maintaining large icon sets in Figma
               //- p.text-2xl.font-light May just be the mightiest set of icons on the web
 
-              .my-8
-
-              div.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap(
+              div.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap(
                 href='#figma',
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='brands', name='figma', variant='color')
@@ -21,7 +19,7 @@
                 //- .flex-auto
                 //- svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='180')
 
-              div.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap(
+              div.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap(
                 href='#web',
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='brands', name='web-components', variant='color')
@@ -29,7 +27,7 @@
                 //- .flex-auto
                 //- svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='180')
 
-              div.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap(
+              div.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap(
                 href='#cli',
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='laptop', variant='poly')
@@ -37,7 +35,7 @@
                 //- .flex-auto
                 //- svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='180')
 
-              a.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+              a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
                 @click='focusSearch(); $router.push("dir")',
                 :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
@@ -46,7 +44,7 @@
                 .flex-auto
                 svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='90')
 
-              router-link.feature-line.my-4.p-2.text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300(
+              router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300(
                 to='docs',
                 :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )

@@ -2,25 +2,26 @@
 .flex
     //- client-only
     .flex.mx-auto.w-full(:style='!expandLayout && "max-width: 1440px"')
-      div.pt-3.flex.flex-col.sticky.self-start(class='w-64', style='top: 72px; max-height: calc(100vh - 72px)')
+      div.hidden.md_flex.flex-col.sticky.self-start.bg-gray-100.dark_bg-gray-800.pt-3.w-64(style='top: 72px; max-height: calc(100vh - 72px)')
         .px-4
-          p.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Icon Set
+          p.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600.whitespace-no-wrap Set
+          //- dir-set-picker(v-model='showSelect')
           div.relative(v-click-outside='hideSet')
             a.cursor-pointer.w-full.px-2.py-1.rounded-lg.border-2.border-gray-500.dark_border-gray-700.border-transparent.flex.items-center.outline-none(
               :class=`{
                 'bg-gray-900 hover_bg-gray-800': $colorMode.value === 'dark',
                 'bg-gray-200 hover_bg-gray-300': $colorMode.value === 'light',
               }`,
-              :style='selectSet && "border-bottom-color: transparent"',
+              :style='showSelect && "border-bottom-color: transparent"',
               tabindex='0',
-              @click='selectSet = !selectSet'
+              @click='showSelect = !showSelect'
             )
-              //- @focusout='selectSet = false'
+              //- @focusout='showSelect = false'
               span.capitalize {{ selectedSet.label }}
               span.text-gray-600.ml-2 ({{ selectedSet.count }})
               .flex-auto
-              svg-icon.text-3xl(set='rounded', name='caret', :rotate='selectSet ? "0" : "180"')
-            template(v-if='selectSet')
+              svg-icon.text-3xl(set='rounded', name='caret', :rotate='showSelect ? "0" : "180"')
+            template(v-if='showSelect')
               .absolute.top-0.overflow-hidden.inset-x-0.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-500.dark_border-gray-700.flex.flex-col.z-10(
               )
                 template(v-for='option in setsSelection')
@@ -67,8 +68,11 @@
               //- .flex-auto
               //- span.text-xs.ml-2.text-gray-500.rounded-lg.px-1 {{ icons[category].length }}
 
-      section.flex-1.flex.flex-col
-        nav.p-3.bg-gray-100.dark_bg-gray-800.px-4.w-full.flex.z-20.sticky.self-start(style='top: 72px')
+      section.flex-1.flex.flex-col.relative
+        div.lg-hidden.mr-6.fixed.z-20.p-1.pl-5
+          button.w-8.h-8.p-1.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700.flex.items-center
+            svg-icon(name='bars-offset', size='1.5rem')
+        nav.flex.p-3.bg-gray-100.dark_bg-gray-800.px-4.w-full.z-20.sticky.self-start(style='top: 72px')
           div.mr-6
             p.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Variants
             .flex.space-x-2(:class='activeColor && `text-${activeColor}-500 dark_text-${activeColor}-400`')
@@ -89,7 +93,7 @@
                     :variant='variant',
                     :stroke-width='variant === "outline" ? 1 : null'
                   )
-          div.mr-6
+          div.hidden.sm_block.mr-6
             div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Size
             .flex.space-x-2
               input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
@@ -101,7 +105,7 @@
                 steps='2',
                 :friction='10',
               )
-          div.mr-6(v-if='["path", "outline"].includes(variant)')
+          div.hidden.sm_block.mr-6(v-if='["path", "outline"].includes(variant)')
             div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Stroke
             .flex.space-x-2
               input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
@@ -113,7 +117,7 @@
                 steps='0.1',
                 :friction='10',
               )
-          div.mr-6(v-click-outside='hideColor')
+          div.hidden.sm_block.mr-6(v-click-outside='hideColor')
             div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Color
             .relative
               button.p-1.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.flex.items-center.outline-none(
@@ -145,7 +149,7 @@
           div.w-full.relative
             template(v-for='children, category in icons')
                 div.flex.flex-wrap.justify-center.items-start.p-4.pt-0(:ref='`category.${category}`')
-                  div.pb-2.w-full.bg-gray-100.dark_bg-gray-800.z-10.text-center.sticky.self-start(style='top: 166px', :id='category')
+                  div.category-headline.py-1.w-full.bg-gray-100.dark_bg-gray-800.z-10.text-center.sticky.self-start(:id='category')
                     template(v-if='!$route.query.q')
                       h4.text-lg.w-full.text-gray-700.dark_text-gray-400.capitalize.my-1.mx-1 {{ category }}
                     template(v-else)
@@ -153,7 +157,7 @@
                   template(v-for='child in children')
                     template(v-if='child && child.variants')
                       .mt-3.flex.flex-col.p-3.m-1.cursor-pointer.rounded-lg.border-2.w-full(
-                        @click='resetPreview(); $router.push({ query: { ...$route.query, i: child.name } })',
+                        @click='selectIcon(child)',
                         :class=`{
                           'bg-gray-200 dark_bg-gray-900 hover_bg-gray-200 dark_hover_bg-gray-900 border-gray-400 dark_border-gray-1000': child.name === icon,
                           'bg-gray-100 dark_bg-gray-800 hover_bg-gray-200 dark_hover_bg-gray-900 border-gray-300 dark_border-gray-700': child.name !== icon,
@@ -165,145 +169,18 @@
                           p.text-xs.truncate {{ kebabCase(child.name) }}
 
       client-only
-        aside.pt-3.overflow-y-scroll.px-6.pb-6.w-full.sticky.self-start(
-          style='top: 72px; max-height: calc(100vh - 72px); width: 384px; max-width: 384px'
+        dir-icon(
+          :components='components',
+          :icon='icon',
+          :set='set',
+          :stroke='stroke',
+          :variant='variant',
+          :selectedSet='selectedSet',
+          :activeColor='activeColor',
+          :previewVariant='previewVariant',
+          @handleStrokeWidth='handleStrokeWidth',
+          @resetPreview='resetPreview',
         )
-          div.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Icon Name
-          .flex.space-x-2.mt-2
-            .flex.items-center.justify-between.w-full.p-2.pl-4.bg-gray-200.dark_bg-gray-900.rounded-lg.border-2.border-gray-300.dark_border-gray-700
-              span.text-md(ref='iconName') {{ kebabCase(icon) }}
-              .flex-auto
-              template(v-if='copy.name')
-                div.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600.mr-3 Copied
-              button.flex.items-center.justify-center.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.text-gray-700.dark_text-gray-400.cursor-pointer(
-                title='Copy to clipboard',
-                @click='copyToClipboard(kebabCase(icon), "name")',
-              )
-                svg-icon(name='copy', size='1.5em')
-
-          .flex.mt-2.justify-center.relative(:class='activeColor && `text-${activeColor}-500 dark_text-${activeColor}-400`')
-            .absolute.top-0.right-0.p-2
-              template(v-if='components[icon]')
-                a.mb-2.flex.items-center.justify-center.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.text-gray-700.dark_text-gray-400.cursor-pointer(
-                  title='View in Figma',
-                  target='_blank',
-                  :href='`https://figma.com/file/${figmaIds[set]}?node-id=${components[icon].variants[variant].id}`',
-                )
-                  svg-icon(set='brands', name='figma', variant='color', size='1.5rem')
-              button.mb-2.flex.items-center.justify-center.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.text-gray-700.dark_text-gray-400.cursor-pointer(
-                title='Download SVG',
-                @click='downloadIcon',
-              )
-                svg-icon(name='arrow-line-end', rotate='180', size='1.5rem')
-              //- router-link.mb-2.flex.items-center.justify-center.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.text-gray-700.dark_text-gray-400.cursor-pointer(
-              //-   :to='`/dir/${kebabCase(icon)}`'
-              //-   title='Icon Page'
-              //- )
-                svg-icon(name='arrow-external', size='1.5em')
-            template(v-if='previewVariant === "figma"')
-              div.relative.overflow-hidden.rounded-lg.w-full(style='padding-top: 256px')
-                iframe.absolute.inset-0.w-full.h-full(:src='`https://www.figma.com/embed?embed_host=astra&url=${components[icon].variants[variant].source}`')
-            template(v-else)
-              svg-icon.selected-icon(
-                :class=`{
-                  'invisible': iconEnter
-                }`,
-                :set='set',
-                ref='selectedIcon',
-                :name='kebabCase(icon)',
-                :variant='previewVariant || variant',
-                size='16rem',
-                :transition='!iconEnter',
-                :flip='previewFlip',
-                :offset='previewOffset',
-                :rotate='previewRotate',
-                :stroke-width='stroke'
-              )
-
-          div.mt-4.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Search Terms
-          div.flex-auto.flex.flex-wrap.items-center.mt-2(v-if='components[icon]')
-            template(v-for='term, i in components[icon].terms')
-              nuxt-link.text-gray-700.dark_text-gray-300.text-xs(
-                :to='{ query: Object.entries($route.query).filter(([key]) => !["q", "c"].includes(key)).reduce((obj, [key, val]) => ({ ...obj, [key]: val }), { q: term }) }'
-              )
-                span.hover_opacity-100.hover_underline(
-                  :class='(!$route.query.q || ($route.query.q && !($route.query.q.includes(term) || term.includes($route.query.q)))) ? "opacity-75" : "underline"'
-                ) {{ term }}
-                template(v-if='i !== components[icon].terms.length - 1')
-                  | ,&nbsp;
-          div.mt-4.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Categories
-          template(v-if='components[icon]')
-            div.flex.text-sm
-              template(v-for='category in components[icon].categories')
-                nuxt-link.px-2.py-1.mr-2.capitalize.bg-gray-200.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.text-gray-700.dark_text-gray-400(
-                  tag='button',
-                  :to='{ query: Object.entries($route.query).filter(([key]) => !["q", "c"].includes(key)).reduce((obj, [key, val]) => ({ ...obj, [key]: val }), { c: category }) }'
-                )
-                  | {{ category }}
-          .flex.mt-4.mb-2
-            div.mr-3
-              div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Flip
-              .flex.space-x-2
-                button.p-1.flex.items-center.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700(@click='handleFlip("y")')
-                  svg-icon.self-center(name='flip-1', variant='path', size='2rem', :rotate='previewRotate + 90')
-                button.p-1.flex.items-center.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700(@click='handleFlip("x")')
-                  svg-icon.self-center(name='flip-1', variant='path', size='2rem', :rotate='previewRotate')
-            div.mr-3(v-if='["path", "outline", "mono", "poly", "solid", "bold"].includes(variant)')
-              div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Rotate
-              input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
-                style='cursor: col-resize; height: 44px',
-                :value='previewRotate',
-                @input='handleRotate',
-                steps='1',
-                :friction='1',
-              )
-            div.mr-3(v-if='["path", "outline"].includes(variant)')
-              div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Stroke
-              input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
-                style='cursor: col-resize; height: 44px',
-                :value='stroke',
-                @input='handleStrokeWidth',
-                :min='0.5',
-                :max='6',
-                steps='0.1',
-                :friction='15',
-              )
-            div.mr-3(v-if='["path"].includes(variant)')
-              div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Dash
-              input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
-                style='cursor: col-resize; height: 44px',
-                :value='previewOffset',
-                @input='previewOffset = $event',
-                :min='-2',
-                :max='2',
-                steps='0.1',
-                :friction='20',
-              )
-          div.mt-6.mb-2
-            div.flex.space-x-3
-              a.cursor-pointer.hover_underline.text-xs(@click='showCode = false', :class='showCode ? "text-gray-500 dark_text-gray-600" : "text-gray-700 dark_text-gray-400"') HTML
-              a.cursor-pointer.hover_underline.text-xs(@click='showCode = true', :class='showCode ? "text-gray-700 dark_text-gray-400" : "text-gray-500 dark_text-gray-600"') SVG
-              //- .flex-auto
-              //- span.text-sm.tracking-wider Copy Code
-
-            .flex.relative.mt-2
-              div.w-full.rounded-lg.bg-gray-200.dark_bg-gray-900.text-gray-800.dark_text-gray-300.border-2.border-gray-300.dark_border-gray-700.relative(
-                ref='code',
-              )
-                .absolute.top-0.right-0.p-2.pb-4.flex.items-center.z-20
-                  template(v-if='copy.code')
-                    div.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600.mr-3 Copied
-                  button.flex.items-center.justify-center.bg-gray-900.hover_bg-gray-1000.rounded-lg.border-2.border-gray-600.text-gray-400.cursor-pointer(
-                    title='Copy to clipboard',
-                    @click='copyCode',
-                  )
-                    svg-icon(name='copy', size='1.5em')
-                prism(lang='html', :code='showCode ? components[icon].variants[previewVariant || variant].svg : htmlCode')
-
-          div.my-3(v-if='!showCode')
-            router-link.hover_underline.text-gray-500.dark_text-gray-600.flex.items-center(to='docs/web/getting-started')
-              svg-icon.mr-1(name='question-circle', size='1.5rem', stroke-width='5')
-              | Web component docs
 </template>
 
 <script>
@@ -320,33 +197,16 @@ const components = {
   brands: require('@glyphs/brands'),
   flags: require('@glyphs/flags')
 }
-const figmaIds = {
-  rounded: '2TsY9yqFso1zrvF8LNcVE7',
-  brands: 'vuadSjKf4P4foe0E5rCURn',
-  flags: 'VyB7exNgbMB7EmOwAFF9jZ'
-}
 
 export default {
   data: () => ({
-    figmaIds,
     expandLayout: false,
     gridSize: 48,
     previewVariant: null,
-    previewFlip: null,
-    previewRotate: 0,
-    previewOffset: 0,
-    iconEnter: true,
-    rotate: null,
-    flip: null,
     scrollLoaded: false,
-    selectSet: false,
+    showSelect: false,
     shouldSort: false,
-    copy: {
-      name: false,
-      code: false
-    },
     showColor: false,
-    showCode: false,
     activeColor: null
   }),
 
@@ -427,28 +287,6 @@ export default {
           }
         }, {})
       return sorted
-    },
-    htmlCode () {
-      const start = `<${this.selectedSet.label}-icon\n  name="${this.kebabCase(this.icon)}"\n  variant="${this.previewVariant || this.variant}"`
-      const rotate = this.previewRotate ? `\n  rotate="${this.previewRotate}"` : ''
-      const flip = this.previewFlip ? `\n  flip="${this.previewFlip}"` : ''
-      const stroke = ['path', 'outline'].reduce((b, v) => b || [this.variant, this.previewVariant].includes(v), 0) ? `\n  stroke-width="${this.stroke}"` : ''
-      const end = `\n></${this.selectedSet.label}-icon>`
-      return start + (rotate && rotate) + (flip && flip) + (stroke && stroke) + end
-      //   br
-      //   span &nbsp;&nbsp;rotate=
-      //   span "${this.previewRotate}"
-      // template(v-if='previewFlip')
-      //   br
-      //   span &nbsp;&nbsp;flip=
-      //   span "${this.previewFlip}"
-      // template(v-if='["path", "outline"].reduce((b, v) => b || [variant, previewVariant].includes(v), 0)')
-      //   br
-      //   span &nbsp;&nbsp;stroke-width=
-      //   span "${this.stroke}"
-      // br
-      // span= '></'
-      //   | ${this.selectedSet.label}-icon>`
     }
   },
 
@@ -468,25 +306,18 @@ export default {
       },
       immediate: true
     },
-    '$route.query.i': {
-      handler (val) {
-        const variant = this.$route.query.v
-        if (variant && variant !== 'path') {
-          this.iconEnter = false
-          return
-        }
-        this.iconEnter = true
-        this.previewOffset = 1
-        setTimeout(() => {
-          this.iconEnter = false
-          this.previewOffset = 0
-        }, 500)
-      },
-      immediate: true
-    },
     '$route.query.s': {
       handler (val) {
         this.showRandomIcon()
+      }
+    },
+    '$route.fullPath': {
+      handler (val) {
+        // eslint-disable-next-line
+        const [_, query] = val.split('?')
+        if (!query) {
+          this.showRandomIcon()
+        }
       }
     }
   },
@@ -506,6 +337,10 @@ export default {
     debounce,
     kebabCase,
 
+    resetPreview () {
+      this.previewVariant = null
+    },
+
     showRandomIcon () {
       if (this.$route.query.i) {
         return
@@ -519,23 +354,33 @@ export default {
       this.$router.replace({ query: { ...this.$route.query, i: icon } })
     },
 
-    async injectShadowStyle () {
-      const selectedIcon = this.$refs.selectedIcon
-      const sheet = new CSSStyleSheet()
-      await sheet.replace('.icon-inner { transition: transform .2s ease }')
-      if (selectedIcon && selectedIcon.shadowRoot) {
-        selectedIcon.shadowRoot.adoptedStyleSheets = [
-          ...selectedIcon.shadowRoot.adoptedStyleSheets,
-          sheet
-        ]
+    selectIcon (icon) {
+      const { name } = icon
+      if (window.innerWidth < 1280) {
+        this.$router.push({ path: `/dir/${kebabCase(name)}`, query: { s: this.set, v: this.variant } })
+      } else {
+        this.resetPreview()
+        this.$router.push({ query: { ...this.$route.query, i: name } })
       }
     },
+
+    // async injectShadowStyle () {
+    //   const selectedIcon = this.$refs.selectedIcon
+    //   const sheet = new CSSStyleSheet()
+    //   await sheet.replace('.icon-inner { transition: transform .2s ease }')
+    //   if (selectedIcon && selectedIcon.shadowRoot) {
+    //     selectedIcon.shadowRoot.adoptedStyleSheets = [
+    //       ...selectedIcon.shadowRoot.adoptedStyleSheets,
+    //       sheet
+    //     ]
+    //   }
+    // },
 
     handleArticleScroll ({ target }) {
       target = document.body
 
       const categories = Object.entries(this.$refs).reduce((arr, [name, ref]) => name.startsWith('category') ? [...arr, ...ref] : arr, [])
-      const containerOffset = 166
+      const containerOffset = 164
       const containerHeight = window.innerHeight - containerOffset
 
       categories.forEach((category) => {
@@ -576,72 +421,6 @@ export default {
       })
     },
 
-    copyCode () {
-      const ref = this.$refs.code
-      const sel = window.getSelection()
-      const range = document.createRange()
-      range.selectNodeContents(ref)
-      sel.removeAllRanges()
-      sel.addRange(range)
-      const text = sel.toString()
-      this.copyToClipboard(text, 'code')
-      sel.removeAllRanges()
-    },
-
-    async copyToClipboard (text, type) {
-      if (!navigator.clipboard) {
-        fallbackCopyTextToClipboard(text)
-        success.call(this)
-        return
-      }
-      await navigator.clipboard.writeText(text)
-      success.call(this)
-
-      function success () {
-        this.copy[type] = true
-        setTimeout(() => {
-          this.copy[type] = false
-        }, 1500)
-      }
-    },
-
-    downloadIcon () {
-      const component = this.components[this.icon]
-      const variant = this.previewVariant || this.variant
-      const icon = component && component.variants[variant]
-      if (icon) {
-        const blob = new Blob([icon.svg], { type: 'image/svg+xml' })
-        const link = document.createElement('a')
-        link.href = URL.createObjectURL(blob)
-        link.download = `${kebabCase(this.icon)}_${variant}`
-        link.click()
-        URL.revokeObjectURL(link.href)
-      }
-    },
-
-    resetPreview () {
-      this.previewVariant = null
-      this.previewFlip = null
-      this.previewRotate = 0
-      const query = Object.keys(this.$route.query)
-        .filter(key => key !== 'w')
-        .reduce((obj, key) => ({ ...obj, [key]: this.$route.query[key] }), {})
-      this.$router.push({ query })
-    },
-
-    handleFlip (dir) {
-      const newFlip = this.previewFlip
-        ? this.previewFlip.includes(dir)
-          ? this.previewFlip.replace(dir, '')
-          : this.previewFlip + dir
-        : dir
-      this.previewFlip = newFlip
-    },
-
-    handleRotate: debounce(function (value) {
-      this.previewRotate = value
-    }, 5),
-
     handleGridSize: debounce(function (value) {
       this.gridSize = value
     }, 5),
@@ -668,14 +447,17 @@ export default {
     },
 
     hideSet () {
-      this.selectSet = false
+      // const ref = this.$refs
+      // console.log(ref)
+      // ref.hideSet()
+      this.showSelect = false
     },
 
     changeSet (set = {}) {
       const routeSet = this.$route.query.s
       if (set.count && routeSet !== set.label) {
         this.$router.push({ query: { s: set.label } })
-        this.selectSet = false
+        this.showSelect = false
       }
     }
   },
@@ -683,18 +465,6 @@ export default {
   head: {
     title: 'Directory'
   }
-}
-
-function fallbackCopyTextToClipboard (text) {
-  const textArea = document.createElement('textarea')
-  textArea.value = text
-  textArea.style.top = '0'
-  textArea.style.left = '0'
-  textArea.style.position = 'fixed'
-  document.body.appendChild(textArea)
-  textArea.focus()
-  textArea.select()
-  document.execCommand('copy')
 }
 </script>
 
@@ -713,4 +483,13 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: -405px 0 0 400px #A0AEC0;
 }
 /* .selected-icon { transition: transform 50ms ease } */
+
+.category-headline {
+  top: 164px
+}
+@media (max-width: 768px) {
+  .category-headline {
+    top: 72px
+  }
+}
 </style>

@@ -19,9 +19,9 @@ export default {
   plugins: [
     '@/plugins/init.js',
     '@/plugins/clipboard.client.js',
-    '@/plugins/click-outside.js'
-    // '@/plugins/icons.client.js',
-    // '@/plugins/router-sync.client.js'
+    '@/plugins/click-outside.js',
+    '@/plugins/router-sync.client.js',
+    '@/plugins/icons.client.js'
   ],
   components: true,
   modules: [

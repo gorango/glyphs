@@ -1,10 +1,10 @@
 <template lang="pug">
-  .flex.min-w-0.w-full
-    .flex-1.min-w-0.px-8.pt-6.pb-16
+  .flex.min-w-0.w-full.flex-col.lg_flex-row
+    .order-2.lg_order-1.flex-1.min-w-0.px-4.lg_px-8.pt-6.pb-16
       h1.mb-8.text-4xl.font-bold {{ document.title }}
       nuxt-content.prose.dark_prose-dark.docs(:document='document')
     template(v-if='document.toc && document.toc.length')
-      div.flex.flex-col.px-4.sticky.self-start(style='top: 72px; width: 16rem; min-width: 16rem')
+      div.order-1.lg_order-2.flex.flex-col.px-4.block.lg_sticky.self-start(style='top: 72px; width: 16rem; min-width: 16rem')
         h3.text-grey-900.uppercase.text-xs.tracking-wider.mt-4.mb-3 On this page
         template(v-for='link, i in document.toc')
           hr.border-gray-400.dark_border-gray-700.my-1(v-if='i && link.depth === 2')
