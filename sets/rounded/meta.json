@@ -522,7 +522,8 @@
       "shoppingCart1",
       "discount",
       "shoppingBag",
-      "tag"
+      "tag",
+      "store"
     ],
     "weather": [
       "fahrenheit",
@@ -532,6 +533,10 @@
       "moon",
       "sun",
       "sun1",
+      "sunrise",
+      "sunset",
+      "sunrise1",
+      "sunset1",
       "star",
       "sparkle",
       "sparkles",
