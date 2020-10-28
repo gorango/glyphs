@@ -1,8 +1,8 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M63.6421 29.5006L33.938 29.5006L42.7278 14.2761C45.172 14.5352 47.588 15.1435 49.8997 16.1011C56.0368 18.6431 60.9527 23.4448 63.6421 29.5006Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M60.9145 55.225L46.0625 29.5005H63.6422C64.6399 31.7467 65.3211 34.1432 65.6477 36.624C66.5147 43.2099 64.8143 49.868 60.9145 55.225Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M37.2729 65.7247L52.125 40.0002L60.9148 55.2247C59.4684 57.2119 57.7336 59 55.7484 60.5232C50.4784 64.5671 43.8621 66.4236 37.2729 65.7247Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M16.3589 50.5H46.063L37.2731 65.7245C34.8289 65.4654 32.413 64.8571 30.1012 63.8995C23.9642 61.3574 19.0482 56.5558 16.3589 50.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M19.0864 24.7764L33.9384 50.5008H16.3587C15.361 48.2546 14.6799 45.8582 14.3532 43.3773C13.4862 36.7915 15.1866 30.1333 19.0864 24.7764Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M42.7273 14.2761L27.8753 40.0006L19.0854 24.7761C20.5319 22.789 22.2667 21.0009 24.2519 19.4776C29.5219 15.4338 36.1382 13.5773 42.7273 14.2761Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M63.6421 29.5005L33.938 29.5005L42.7278 14.276C45.172 14.5351 47.588 15.1434 49.8997 16.101C56.0368 18.643 60.9527 23.4447 63.6421 29.5005Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M60.9145 55.2248L46.0625 29.5004H63.6422C64.6399 31.7466 65.3211 34.1431 65.6477 36.6239C66.5147 43.2097 64.8143 49.8679 60.9145 55.2248Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M37.2732 65.7246L52.1252 40.0001L60.9151 55.2246C59.4686 57.2117 57.7338 58.9999 55.7487 60.5231C50.4787 64.5669 43.8623 66.4234 37.2732 65.7246Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M16.3589 50.5001H46.063L37.2731 65.7246C34.8289 65.4655 32.413 64.8572 30.1012 63.8996C23.9642 61.3576 19.0482 56.5559 16.3589 50.5001Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M19.0861 24.7763L33.9382 50.5008H16.3585C15.3608 48.2545 14.6796 45.8581 14.353 43.3773C13.486 36.7914 15.1863 30.1332 19.0861 24.7763Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M42.7273 14.2762L27.8753 40.0007L19.0854 24.7762C20.5319 22.789 22.2667 21.0009 24.2519 19.4777C29.5219 15.4338 36.1382 13.5773 42.7273 14.2762Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
