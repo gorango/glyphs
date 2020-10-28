@@ -1,5 +1,5 @@
 {
-  "unique": 611,
+  "unique": 610,
   "variants": [
     "path",
     "poly",
@@ -24,7 +24,6 @@
       "droplet",
       "shield",
       "shield1",
-      "shield2",
       "shapes"
     ],
     "arrow": [
