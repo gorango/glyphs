@@ -210,7 +210,6 @@
       "mobile1"
     ],
     "system": [
-      "power",
       "battery",
       "battery100",
       "battery75",
@@ -229,13 +228,19 @@
       "volume1",
       "volume2",
       "volume3",
-      "grid",
       "mousePointer",
       "lock",
       "lockOpen",
       "lockOpen1",
       "key",
-      "cog"
+      "cog",
+      "power",
+      "grid",
+      "gridAdd",
+      "gridRemove",
+      "gridSm",
+      "gridLg",
+      "gridList"
     ],
     "alert": [
       "spinner",
@@ -375,11 +380,9 @@
       "bandage1",
       "adjust",
       "adjust1",
+      "exposure",
       "aperture",
       "image",
-      "images",
-      "image1",
-      "images1",
       "crop",
       "crop1",
       "flip",
@@ -399,13 +402,7 @@
       "layerFoward",
       "layerBackward",
       "layerFront",
-      "layerBack",
-      "grid",
-      "gridAdd",
-      "gridRemove",
-      "gridSm",
-      "gridLg",
-      "gridList"
+      "layerBack"
     ],
     "file": [
       "calendar",
@@ -427,6 +424,10 @@
       "noteClipboard",
       "noteSticky",
       "scroll",
+      "image",
+      "images",
+      "image1",
+      "images1",
       "paperclip",
       "edit",
       "box",
@@ -550,7 +551,10 @@
       "discount",
       "shoppingBag",
       "tag",
-      "store"
+      "store",
+      "box",
+      "box1",
+      "boxOpen"
     ],
     "weather": [
       "fahrenheit",
