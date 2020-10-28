@@ -1,6 +1,6 @@
 <svg viewBox="0 0 80 80" fill="none">
   <path d="M65.4615 43.9998L73 15.9998H17L24.5385 43.9998H65.4615Z" fill="#84D3FF" stroke="#84D3FF" stroke-width="4" stroke-linecap="square" class="fill-blue stroke-blue" />
   <path d="M7 8H14.8462L26.9616 53H62" stroke="#7B61FF" stroke-width="4" stroke-linecap="square" class="stroke-purple" />
-  <path d="M31 60L36.1962 63V69L31 72L25.8038 69V63L31 60Z" fill="#1CB0F6" stroke="#1CB0F6" stroke-width="4" stroke-linecap="square" class="fill-blue stroke-blue" />
-  <path d="M57 60L62.1962 63V69L57 72L51.8038 69V63L57 60Z" fill="#1CB0F6" stroke="#1CB0F6" stroke-width="4" stroke-linecap="square" class="fill-blue stroke-blue" />
+  <path d="M31 60L37 66L31 72L25 66L31 60Z" fill="#1CB0F6" stroke="#1CB0F6" stroke-width="4" stroke-linecap="square" class="fill-blue stroke-blue" />
+  <path d="M57 60L63 66L57 72L51 66L57 60Z" fill="#1CB0F6" stroke="#1CB0F6" stroke-width="4" stroke-linecap="square" class="fill-blue stroke-blue" />
 </svg>

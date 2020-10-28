@@ -1,5 +1,5 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M46.9282 57V64L40 68L33.0718 64V57H46.9282Z" fill="currentColor" />
-  <path opacity="0.25" fill-rule="evenodd" clip-rule="evenodd" d="M47 17H33L23 27L23 45.0006L16 52.0005L16 57H23L57 57H64V52.0005L57 45.0006L57 27L47 17Z" fill="currentColor" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M45 57L48 60L40 68L32 60L35 57H45Z" fill="currentColor" />
+  <path opacity="0.25" fill-rule="evenodd" clip-rule="evenodd" d="M46.9999 17L32.9999 17L22.9999 27L22.9999 45.0007L11.0004 57H15.9999H22.9999L56.9999 57H63.9999H68.9994L56.9999 45.0007L56.9999 27L46.9999 17Z" fill="currentColor" />
   <path d="M42 12H38V16.5V17H42V16.5V12Z" fill="currentColor" />
 </svg>
