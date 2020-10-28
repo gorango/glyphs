@@ -1,0 +1,17 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M23 16L57 16L57 64H23L23 16Z" fill="#606060" class="fill-grey" />
+  <path d="M57 16H59V14L57 14V16ZM23 16V14H21V16H23ZM57 64V66H59V64H57ZM23 64H21V66H23V64ZM20 62H18V66H20V62ZM23 66H25V62H23V66ZM57 62H55V66H57V62ZM60 66H62V62H60V66ZM20 14H18V18H20V14ZM60 18H62V14H60V18ZM57 14L23 14V18L57 18V14ZM59 64L59 16H55L55 64H59ZM23 66H57V62L23 62V66ZM21 16L21 64H25L25 16H21ZM20 66H23V62H20V66ZM57 66H60V62H57V66ZM20 18L60 18V14L20 14V18Z" fill="#606060" class="fill-grey" />
+  <path d="M34 56H46V64H34V56Z" fill="#FFC200" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="fill-yellow stroke-yellow" />
+  <path d="M31 23H33" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M39 23H41" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M47 23H49" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M31 31H33" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M39 31H41" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M47 31H49" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M31 39H33" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M39 39H41" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M47 39H49" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M31 47H33" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M39 47H41" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <path d="M47 47H49" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+</svg>

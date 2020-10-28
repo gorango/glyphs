@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M18 39.5L38 39.5L42 39.5L62 39.5" stroke="#7AC70C" stroke-width="4" stroke-linecap="square" class="stroke-green" />
+  <rect x="35" y="21" width="10" height="10" stroke="#AEEE52" stroke-width="4" stroke-linecap="square" class="stroke-green" />
+  <rect x="35" y="49" width="10" height="10" stroke="#AEEE52" stroke-width="4" stroke-linecap="square" class="stroke-green" />
+</svg>

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <rect x="4" y="31" width="28" height="22" fill="#F4F4F4" class="fill-white" />
+  <path d="M32 53H76V52.5V29H32V31V52.5V53Z" fill="#7B61FF" class="fill-purple" />
+  <path d="M4 19V53.186V61" stroke="#606060" stroke-width="4" stroke-linecap="square" class="stroke-grey" />
+  <path d="M76 53H4" stroke="#606060" stroke-width="4" stroke-linecap="square" class="stroke-grey" />
+  <path d="M76 53V61" stroke="#606060" stroke-width="4" stroke-linecap="square" class="stroke-grey" />
+</svg>

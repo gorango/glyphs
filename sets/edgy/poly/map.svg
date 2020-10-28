@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M10 23L30 15V57L10 65V23Z" fill="#FF9100" class="fill-orange" />
+  <path d="M50 23L30 15V57L50 65V23Z" fill="#D33131" class="fill-red" />
+  <path d="M50 23L70 15V57L50 65V23Z" fill="#FF9100" class="fill-orange" />
+</svg>

@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M30 13L18 13L18 69H62L62 13L50 13V17L30 17V13Z" fill="#FFC200" class="fill-yellow" />
+  <rect x="30" y="9" width="20" height="8" fill="#FF9100" class="fill-orange" />
+  <rect x="37" y="7" width="6" height="2" stroke="#FF9100" stroke-width="4" stroke-linecap="square" class="stroke-orange" />
+</svg>

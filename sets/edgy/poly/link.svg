@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M26 48L26 72L54 72L54 48" stroke="#1CB0F6" stroke-width="4" stroke-linecap="square" class="stroke-blue" />
+  <path d="M26 32L26 8L54 8L54 32" stroke="#1CB0F6" stroke-width="4" stroke-linecap="square" class="stroke-blue" />
+  <path d="M40 53L40 27" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+</svg>

@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path opacity="0.25" d="M42 19.0001V17.0001H38V19.0001H42ZM38 33.9787V35.9787H42V33.9787H38ZM42 34.0001V32.0001H38V34.0001H42ZM38 57.0001V59.0001H42V57.0001H38ZM38 19.0001V33.9787H42V19.0001H38ZM38 34.0001L38 57.0001H42L42 34.0001H38Z" fill="currentColor" />
+  <path d="M56 34L40 18L24 34" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path opacity="0.5" d="M24 65H56" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+</svg>

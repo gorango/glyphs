@@ -1,0 +1,6 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M16 34H34V16" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path d="M16 46H34V64" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path d="M64 34H46V16" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path d="M64 46H46V64" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+</svg>

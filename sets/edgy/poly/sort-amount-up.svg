@@ -1,0 +1,8 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M22 25L22 23L18 23V25L22 25ZM18 64L18 66H22L22 64H18ZM18 25L18 64H22L22 25L18 25Z" fill="#AEEE52" class="fill-green" />
+  <path d="M29 25L11 25L13.25 22.75L20 16L26.75 22.75L29 25Z" fill="#7AC70C" stroke="#7AC70C" stroke-width="4" stroke-linecap="square" class="fill-green stroke-green" />
+  <path d="M37 22H45" stroke="#7AC70C" stroke-width="4" stroke-linecap="square" class="stroke-green" />
+  <path d="M37 34H53" stroke="#7AC70C" stroke-width="4" stroke-linecap="square" class="stroke-green" />
+  <path d="M37 46L61 46" stroke="#7AC70C" stroke-width="4" stroke-linecap="square" class="stroke-green" />
+  <path d="M37 58L69 58" stroke="#7AC70C" stroke-width="4" stroke-linecap="square" class="stroke-green" />
+</svg>

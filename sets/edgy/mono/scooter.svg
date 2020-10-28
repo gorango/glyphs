@@ -1,0 +1,6 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M27.5 24.312L33.5 23.1055V23.9995H45.5V23.3066L50.5 24.312V30.8641V58.9995H42.5V47.9999H34.5V58.9995H27.5V30.8641V24.312Z" fill="currentColor" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M33.5 16H24.5H22.5V20H24.5H33.5V16ZM45.5 20H54.5H56.5V16H54.5H45.5V20Z" fill="currentColor" />
+  <rect x="34.5" y="48" width="8" height="20" fill="currentColor" />
+  <rect opacity="0.1" x="33.5" y="12" width="12" height="12" fill="currentColor" />
+</svg>

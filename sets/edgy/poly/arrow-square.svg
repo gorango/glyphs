@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <rect x="16" y="16" width="48" height="48" fill="#AEEE52" stroke="#7AC70C" stroke-width="4" stroke-linecap="square" class="fill-green stroke-green" />
+  <path d="M42 27.1213V25.1213L38 25.1213V27.1213L42 27.1213ZM38 36.9842V38.9842H42V36.9842H38ZM42 37.0001V35.0001H38V37.0001H42ZM38 54.0001V56.0001H42V54.0001H38ZM38 27.1213V36.9842H42V27.1213L38 27.1213ZM38 37.0001L38 54.0001H42L42 37.0001H38Z" fill="#FF9100" class="fill-orange" />
+  <path d="M52 37L40 25L28 37" stroke="#FF9100" stroke-width="4" stroke-linecap="square" class="stroke-orange" />
+</svg>

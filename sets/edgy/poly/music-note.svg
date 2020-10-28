@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M43 54L43 18" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+  <ellipse cx="34" cy="54" rx="9" ry="7" fill="#D33131" stroke="#D33131" stroke-width="4" stroke-linecap="square" class="fill-red stroke-red" />
+  <path d="M43 18L55.5059 36.5215L48.0373 44.4603L48 44.5" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
+</svg>

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M16 51.9648L44 51.9648" stroke="#84D3FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-blue" />
+  <path d="M16 27.9648L44 27.9648" stroke="#84D3FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-blue" />
+  <path d="M16 39.9648L64 39.9648" stroke="#1CB0F6" stroke-width="4" stroke-linecap="square" class="stroke-blue" />
+  <path d="M16 63.9648L64 63.9648" stroke="#1CB0F6" stroke-width="4" stroke-linecap="square" class="stroke-blue" />
+  <path d="M16 15.9648L64 15.9648" stroke="#1CB0F6" stroke-width="4" stroke-linecap="square" class="stroke-blue" />
+</svg>

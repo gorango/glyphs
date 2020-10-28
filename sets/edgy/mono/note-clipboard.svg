@@ -1,0 +1,13 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <g opacity="0.25">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 13L30 13V17L50 17V13L62 13L62 69H18L18 13Z" fill="currentColor" />
+    <path d="M30 13H32V11H30V13ZM18 13V11H16V13H18ZM30 17H28V19H30V17ZM50 17V19H52V17H50ZM50 13V11H48V13H50ZM62 13H64V11H62V13ZM62 69V71H64V69H62ZM18 69H16V71H18V69ZM30 11L18 11V15L30 15V11ZM32 17V13H28V17L32 17ZM50 15L30 15V19L50 19V15ZM48 13V17L52 17V13H48ZM62 11L50 11V15L62 15V11ZM64 69L64 13H60L60 69H64ZM18 71H62V67H18L18 71ZM16 13L16 69H20L20 13H16Z" fill="currentColor" />
+  </g>
+  <rect x="30" y="9" width="20" height="8" rx="4" fill="currentColor" />
+  <rect x="37" y="7" width="6" height="2" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path opacity="0.75" d="M28 25L52 25" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path opacity="0.75" d="M28 33H44" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path opacity="0.75" d="M28 41L52 41" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path opacity="0.75" d="M28 49H44" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path opacity="0.75" d="M28 57L52 57" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+</svg>

@@ -1,0 +1,6 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <rect opacity="0.5" x="12" y="12" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <rect x="44" y="12" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <rect x="12" y="44" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <rect opacity="0.5" x="44" y="44" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+</svg>

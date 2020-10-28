@@ -1,0 +1,6 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M26 44H54V57.2174V60H26V57.2174V44Z" fill="#7B61FF" class="fill-purple" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M60 16H20V36H26V44H54V36H60V16Z" fill="#84D3FF" class="fill-blue" />
+  <path d="M12 36H26V64H16V49L12 42.5V36Z" fill="#7B61FF" class="fill-purple" />
+  <path d="M68 36H54V64H64V49L68 42.5V36Z" fill="#7B61FF" class="fill-purple" />
+</svg>

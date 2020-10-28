@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <rect x="39.9412" y="6" width="48" height="48" transform="rotate(45 39.9412 6)" fill="#FFC200" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="fill-yellow stroke-yellow" />
+  <path d="M48.0522 36.4805H50.0522V32.4805H48.0522V36.4805ZM26.941 34.4805V32.4805H24.941V34.4805H26.941ZM24.941 51.2497V53.2497H28.941V51.2497H24.941ZM48.0522 32.4805H26.941V36.4805H48.0522V32.4805ZM24.941 34.4805V51.2497H28.941V34.4805H24.941Z" fill="#252525" class="fill-grey" />
+  <path d="M48.0523 43.7115L48.0523 25.25L50.2745 27.5577L56.9412 34.4808L50.2745 41.4038L48.0523 43.7115Z" fill="#252525" stroke="#252525" stroke-width="4" stroke-linecap="square" class="fill-grey stroke-grey" />
+</svg>

@@ -1,0 +1,6 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M31 12H49V27L40 37L31 27V12Z" fill="#1CB0F6" class="fill-blue" />
+  <path d="M68 31L68 49L53 49L43 40L53 31L68 31Z" fill="#1CB0F6" class="fill-blue" />
+  <path d="M31 68H49V53L40 43L31 53V68Z" fill="#1CB0F6" class="fill-blue" />
+  <path d="M12 31L12 49L27 49L37 40L27 31L12 31Z" fill="#1CB0F6" class="fill-blue" />
+</svg>

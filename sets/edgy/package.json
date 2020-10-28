@@ -1,0 +1,28 @@
+{
+  "name": "@glyphs/edgy",
+  "version": "0.0.1",
+  "description": "Edgy Icons",
+  "homepage": "https://glyphs.fyi/dir?set=edgy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorango/glyphs.git"
+  },
+  "author": "Goran Spasojevic <goran@glyphs.fyi> (https://github.com/gorango)",
+  "keywords": [
+    "svg",
+    "icons",
+    "icon set",
+    "svg paths",
+    "web icons",
+    "path icons",
+    "edgy icons",
+    "sharp icons",
+    "color icons"
+  ],
+  "main": "components.json",
+  "unpkg": "components.json",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gorango/glyphs/issues"
+  }
+}

@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <rect x="12" y="28" width="56" height="32" fill="#D33131" class="fill-red" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M35 20H19V27.5556V28H35V27.5556V20Z" fill="#FFC200" class="fill-yellow" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M61 20H45V27.5556V28H61V27.5556V20Z" fill="#FFC200" class="fill-yellow" />
+</svg>

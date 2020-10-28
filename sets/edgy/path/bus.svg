@@ -1,0 +1,10 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M18 59.8883V67.8883H27V59.8883H18Z" stroke="currentColor" stroke-linecap="square" />
+  <path d="M53 59.8883V67.8883H62V59.8883H53Z" stroke="currentColor" stroke-linecap="square" />
+  <path d="M16 26.8883H10V38.8883H16V26.8883Z" stroke="currentColor" stroke-linecap="square" />
+  <path d="M64 38.8883H70V26.8883H64V38.8883Z" stroke="currentColor" stroke-linecap="square" />
+  <path d="M64 17.6135V59.8883H16V17.6135L28.3569 12.1118H51.6431L64 17.6135Z" stroke="currentColor" stroke-linecap="square" />
+  <path d="M16 23.8883H64V41.8883H16V23.8883Z" stroke="currentColor" stroke-linecap="square" />
+  <path d="M22 47.8883H28V53.8883H22V47.8883Z" stroke="currentColor" stroke-linecap="square" />
+  <path d="M52 47.8883H58V53.8883H52V47.8883Z" stroke="currentColor" stroke-linecap="square" />
+</svg>

@@ -1,0 +1,6 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M26 44H54V57.2174V60H26V57.2174V44Z" fill="currentColor" />
+  <path opacity="0.25" fill-rule="evenodd" clip-rule="evenodd" d="M60 16H20V34H26H28V36V42H52V36V34H54H60V16ZM24 44V38H20V39.1304V44H24ZM60 39.1304V38H56V44H60V39.1304Z" fill="currentColor" />
+  <path d="M12 36H26V64H16V49L12 42.5V36Z" fill="currentColor" />
+  <path d="M68 36H54V64H64V49L68 42.5V36Z" fill="currentColor" />
+</svg>

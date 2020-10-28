@@ -1,0 +1,5 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path opacity="0.25" d="M43 54L43 18" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <ellipse cx="34" cy="54" rx="9" ry="7" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path d="M43 18L55.5059 36.5215L48.0373 44.4603L48 44.5" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+</svg>
