@@ -1,0 +1,1 @@
+import{p as t,b as a}from"./p-c4c02fac.js";(()=>{const a=import.meta.url,e={};return""!==a&&(e.resourcesUrl=new URL(".",a).href),t(e)})().then((t=>a([["p-0e0dc511",[[1,"edgy-icon",{ariaLabel:[1537,"aria-label"],flip:[1],name:[1],src:[1],icon:[8],size:[8],rotate:[1],variant:[1],strokeWidth:[8,"stroke-width"],svgContent:[32],components:[32]}]]]],t)));
