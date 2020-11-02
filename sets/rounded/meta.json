@@ -1,6 +1,6 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
-  "unique": 614,
+  "unique": 626,
   "variants": [
     "path",
     "bold",
@@ -588,7 +588,19 @@
       "temperatureCold",
       "smoke",
       "cloud",
-      "cloud1"
+      "cloud1",
+      "day",
+      "night",
+      "cloudy",
+      "cloudyMostly",
+      "cloudyPartly",
+      "sunnyMostly",
+      "lightning",
+      "lightning1",
+      "rain",
+      "rain1",
+      "sleet",
+      "snow"
     ],
     "nature": [
       "tree",
