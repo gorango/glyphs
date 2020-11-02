@@ -1,5 +1,6 @@
 {
-  "unique": 611,
+  "key": "2TsY9yqFso1zrvF8LNcVE7",
+  "unique": 614,
   "variants": [
     "path",
     "bold",
@@ -655,6 +656,7 @@
     "sign": [
       "restroom",
       "elevator",
+      "accessible",
       "hospitalSign",
       "stopSign",
       "stopHand",
@@ -688,6 +690,7 @@
       "gamepad",
       "dPad",
       "dPad1",
+      "trophy",
       "basketball",
       "tennisBall",
       "volleyball",
@@ -725,6 +728,7 @@
       "mallet",
       "toolbox",
       "cog",
+      "cog1",
       "cogs",
       "cogs1"
     ],

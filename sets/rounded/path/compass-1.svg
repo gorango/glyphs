@@ -3,8 +3,5 @@
   <path d="M54.1421 58.1421C46.3316 65.9526 33.6684 65.9526 25.8579 58.1421C18.0474 50.3316 18.0474 37.6684 25.8579 29.8579C33.6684 22.0474 46.3316 22.0474 54.1421 29.8579C61.9526 37.6684 61.9526 50.3316 54.1421 58.1421Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M47.8037 34.8832C48.6334 34.5276 49.4723 35.3665 49.1167 36.1963L44.1982 47.6729C44.097 47.9089 43.909 48.097 43.6729 48.1981L32.1963 53.1167C31.3666 53.4723 30.5277 52.6333 30.8833 51.8036L35.8018 40.327C35.903 40.091 36.091 39.9029 36.327 39.8018L47.8037 34.8832Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M44 12C44 14.2091 42.2091 16 40 16C37.7909 16 36 14.2091 36 12C36 9.79086 37.7909 8 40 8C42.2091 8 44 9.79086 44 12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M40.0028 28L40 24L39.9972 28H40.0028Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M56 43.9972V44.0028L60 44L56 43.9972Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M40.0028 60H39.9972L40 64L40.0028 60Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M24 44.0028V43.9972L20 44L24 44.0028Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M40 24L39.9972 28M56 43.9972L60 44M40.0028 60L40 64M24 43.9972L20 44" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
