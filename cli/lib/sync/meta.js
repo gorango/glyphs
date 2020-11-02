@@ -31,6 +31,7 @@ module.exports = async function ({ name: set, data: dataDir }, progress) {
   }, {})
   const unique = [...new Set(Object.values(categories).reduce((arr, icons) => arr.concat(icons), []))].length
   const meta = {
+    key: iconSet.key,
     unique,
     variants,
     categories
