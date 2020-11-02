@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.1.5...@glyphs/rounded-v0.1.6) (2020-11-02)
+
+
+### Features
+
+* **rounded:** add key to meta; add 3 new icons ([e23292c](https://github.com/gorango/glyphs/commit/e23292c96470432d69aa1d2cf473d958e5349c1e))
+
 ### [0.1.5](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.1.4...@glyphs/rounded-v0.1.5) (2020-10-28)
 
 
