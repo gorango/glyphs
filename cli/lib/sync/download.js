@@ -3,7 +3,7 @@ const Figma = require('figma-api')
 const Svgo = require('svgo')
 const pretty = require('pretty')
 const { parse, stringify } = require('svgson')
-const rp = require('request-promise')
+const rp = require('promise-request-retry')
 const camelCase = require('lodash.camelcase')
 const { createDir, saveSVG, saveJSON, getColor } = require('./util')
 const {fill} = require('lodash')
@@ -55,7 +55,11 @@ module.exports = async function ({ name: set, svg: svgDir, data: dataDir }, prog
       }
       const icons = await (
         await Promise.all(Object.entries(images)
-          .map(([id, url]) => rp(url)))
+          .map(([id, uri]) => rp({
+            uri,
+            retry: 2,
+            delay: 1000
+          })))
         )
         .reduce((p, body, i) => {
           return p.then(async obj => {
