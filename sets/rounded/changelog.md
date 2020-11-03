@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.1.6...@glyphs/rounded-v0.1.7) (2020-11-03)
+
+
+### Features
+
+* **rounded:** 12 new weather icons ([0944dc2](https://github.com/gorango/glyphs/commit/0944dc287fca69e8dd7fd292a7915054884eb01f))
+* **rounded:** add 12 business icons ([1e5efcb](https://github.com/gorango/glyphs/commit/1e5efcb4135ce7e5ca6a5193872c1afbc51448d7))
+
 ### [0.1.6](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.1.5...@glyphs/rounded-v0.1.6) (2020-11-02)
 
 
