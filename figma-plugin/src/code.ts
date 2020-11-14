@@ -20,14 +20,31 @@ const fns = {
     })
     figma.currentPage.selection = newSelection
     figma.viewport.scrollAndZoomIntoView(newSelection)
+    figma.notify(`${newSelection.length}`, {timeout: 4000})
   },
 
   selectAllFrames ({ value: query }) {
     const page = figma.currentPage
-    console.log(page)
-    const nodes: any = page.findAll(n => (n.type === 'FRAME' || n.type === 'COMPONENT' || n.type === 'INSTANCE') && n.name.startsWith(query))
+    let nodes: any
+    if (query) {
+      nodes = page.findAll(n => (n.type === 'FRAME' || n.type === 'COMPONENT' || n.type === 'INSTANCE') && n.name.startsWith(query))
+    } else {
+      nodes = page.findAll(n => n.type === 'COMPONENT' && !['_', '-', '*'].reduce((bool, char) => bool || n.name.startsWith(char), false))
+    }
     figma.currentPage.selection = [...figma.currentPage.selection, ...nodes]
     figma.viewport.scrollAndZoomIntoView(nodes)
+    figma.notify(`${nodes.length}`, {timeout: 4000})
+  },
+
+  selectRoots ({ value: query }) {
+    console.log()
+    const page = figma.currentPage
+    let nodes: any
+    nodes = page.findAll(n => (n.parent.type === 'FRAME' && n.type === 'COMPONENT') && n.name.startsWith('_'))
+    console.log(nodes)
+    figma.currentPage.selection = [...figma.currentPage.selection, ...nodes]
+    figma.viewport.scrollAndZoomIntoView(nodes)
+    figma.notify(`${nodes.length}`, {timeout: 4000})
   },
 
   cloneToTarget ({ value: target }) {
@@ -65,7 +82,10 @@ const fns = {
   frameSelected () {
     const selectedNodes: any = figma.currentPage.selection
     let newNodes = []
-    selectedNodes.forEach((node: FrameNode) => {
+    selectedNodes.forEach((node: any) => {
+      console.log(node)
+      console.log(node.relativeTransform)
+      // console.log(node.scaleFactor, node.rotation)
       const parent = node.parent
       const index = parent.children.findIndex(({ id }) => id === node.id)
       const newNode = figma.createFrame()
@@ -133,18 +153,27 @@ const fns = {
   toggleVisibility () {
     const selectedNodes: any = figma.currentPage.selection
     selectedNodes.forEach((node: any) => {
-      node.children.forEach((child: any) => {
-        child.visible = !child.visible
-      })
+      const allVisible = node.children.reduce((b, { visible }) => b && visible, true)
+      if (!allVisible) {
+        node.children.forEach((child: any) => {
+          child.visible = !child.visible
+        })
+      }
     })
   },
   
   centerChildren () {
     const selectedNodes: any = figma.currentPage.selection
     selectedNodes.forEach((node: any) => {
-      node.children.forEach((child) => {
+      node.children.forEach((child: any) => {
+        const rotation = child.rotation
+        child.rotation = 0
         child.x = (node.width - child.width) / 2
         child.y = (node.height - child.height) / 2
+        console.log(child)
+        setTimeout(() => {
+          child.rotation = rotation
+        }, 2000)
       })
     })
   },
@@ -180,6 +209,7 @@ const fns = {
   copySelected () {
     const selectedNodes = figma.currentPage.selection
   },
+  
   pasteCopy () {
     const selectedNodes = figma.currentPage.selection
   },
@@ -190,6 +220,19 @@ const fns = {
     selectedNodes.forEach((node: FrameNode) => {
       newSelection.push(node.parent)
       node.remove()
+    })
+    figma.currentPage.selection = newSelection
+  },
+  
+  selectVisible () {
+    const selectedNodes: any = figma.currentPage.selection
+    let newSelection = []
+    selectedNodes.forEach((node: FrameNode) => {
+      node.children.forEach((node: any) => {
+        if (node.visible) {
+          newSelection.push(node)
+        }
+      })
     })
     figma.currentPage.selection = newSelection
   },
@@ -236,16 +279,16 @@ const fns = {
     indices.sort(([an, ai, ax, ay], [bn, bi, bx, by]) => {
       const ydiff = ay - by
       const xdiff = ax - bx
-      if (Math.abs(xdiff) > 80) {
+      if (Math.abs(xdiff) > 40) {
         // console.log('y:', ydiff)
-        // if (Math.abs(ydiff) > 80) {
+        // if (Math.abs(ydiff) > 40) {
         //   return ydiff
         // }
         return xdiff
       }
-      if (Math.abs(ydiff) > 80) {
+      if (Math.abs(ydiff) > 40) {
         // console.log('x:', xdiff)
-        // if (Math.abs(xdiff) > 80) {
+        // if (Math.abs(xdiff) > 40) {
         //   return xdiff
         // }
         return ydiff
@@ -276,5 +319,26 @@ const fns = {
 
   cancel () {
     figma.closePlugin()
+  },
+
+  arrange () {
+    const selectedNodes: any = figma.currentPage.selection
+    const nodes = [...selectedNodes]
+    const chunkSize = 36
+    const gutter = 40
+    const chunks = Array(Math.ceil(nodes.length / chunkSize))
+      .fill(null)
+      .map((_, i) => i * chunkSize)
+      .map(start => nodes.slice(start, start + chunkSize))
+    const [ox, oy] = [nodes[0].x, nodes[0].y]
+    chunks.forEach((row, y) => {
+      row.forEach((node, x) => {
+        const nx = (x * ((node.width) + gutter)) + ox
+        const ny = (y * ((node.height) + gutter)) + oy
+        node.x = nx
+        node.y = ny
+      })
+    })
+    // figma.viewport.scrollAndZoomIntoView(selectedNodes)
   }
 }

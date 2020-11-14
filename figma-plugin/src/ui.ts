@@ -4,6 +4,7 @@ import './ui.css'
 
 const inputs = [
   ['selectChildren', 'selectionTarget', 'selectChildFrames'],
+  ['selectRoots', 'selectionTarget', 'selectRoots'],
   ['selectAll', 'selectionTarget', 'selectAllFrames'],
   ['clone', 'cloneTarget', 'cloneToTarget'],
 ]
@@ -27,13 +28,19 @@ const actions = [
   // ['paste', 'pasteCopy'],
   ['visibility', 'toggleVisibility'],
   ['hidden', 'selectHidden'],
+  ['visible', 'selectVisible'],
   ['remove', 'removeSelected'],
   ['sort', 'sortSelected'],
   ['flattenAll', 'flattenAll'],
+  ['arrange', 'arrange'],
 ]
 
 actions.forEach(([id, fn]) => {
-  document.getElementById(id).onclick = () => {
+  const el = document.getElementById(id)
+  if (!el) {
+    return
+  }
+  el.onclick = () => {
     parent.postMessage({ pluginMessage: { type: fn } }, '*')
   }
 })
