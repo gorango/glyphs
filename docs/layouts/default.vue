@@ -32,12 +32,6 @@
 
 <script>
 export default {
-  computed: {
-    bodyClass () {
-      return this.$store.state.menu.open ? ['h-screen lg_h-auto overflow-y-hidden lg_overflow-y-auto'] : []
-    }
-  },
-
   head () {
     return {
       titleTemplate: str => str ? `${str} | Glyphs` : 'Glyphs',
@@ -55,6 +49,12 @@ export default {
         { rel: 'icon', type: 'image/ico', href: 'favicon.ico' }
 
       ]
+    }
+  },
+
+  computed: {
+    bodyClass () {
+      return this.$store.state.menu.open ? ['h-screen lg_h-auto overflow-y-hidden lg_overflow-y-auto'] : []
     }
   }
 }

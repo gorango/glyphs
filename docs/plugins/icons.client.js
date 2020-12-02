@@ -1,4 +1,4 @@
-import Vue from 'vue'
+// import Vue from 'vue'
 
 // import { applyPolyfills as applyRounded, defineCustomElements as defineRounded } from '@glyphs/rounded/loader'
 // import { applyPolyfills as applyBrands, defineCustomElements as defineBrands } from '@glyphs/brands/loader'

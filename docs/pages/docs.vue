@@ -9,6 +9,10 @@
 export default {
   scrollToTop: true,
 
+  head: {
+    title: 'Docs'
+  },
+
   computed: {
     categories () {
       return this.$store.state.docs.categories
@@ -31,10 +35,6 @@ export default {
     redirect () {
       this.$router.replace('/docs/introduction')
     }
-  },
-
-  head: {
-    title: 'Docs'
   }
 }
 </script>

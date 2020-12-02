@@ -23,8 +23,6 @@
 export default {
   scrollToTop: true,
 
-  watchQuery: true,
-
   async asyncData ({ $content, store, app, params, error }) {
     const path = `/docs/${params.pathMatch || ''}`
     // const path = route.path
@@ -46,12 +44,6 @@ export default {
     }
   },
 
-  computed: {
-    categories () {
-      return this.$store.state.docs.categories
-    }
-  },
-
   head () {
     return {
       title: this.document.title,
@@ -65,7 +57,15 @@ export default {
         { hid: 'twitter:description', name: 'twitter:description', content: this.document.description }
       ]
     }
-  }
+  },
+
+  computed: {
+    categories () {
+      return this.$store.state.docs.categories
+    }
+  },
+
+  watchQuery: true
 }
 </script>
 

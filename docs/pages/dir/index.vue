@@ -212,12 +212,16 @@ export default {
     activeColor: null
   }),
 
+  head: {
+    title: 'Directory'
+  },
+
   computed: {
     setsSelection () {
       const res = Object.entries(components).map(([set, obj]) => {
         return { label: set, count: Object.keys(obj).length }
       })
-      res.splice(1, 0, { label: 'edgy' }, { label: 'simple' })
+      res.splice(2, 0, { label: 'simple' })
       return res
     },
     set () {
@@ -452,7 +456,9 @@ export default {
       // const ref = this.$refs
       // console.log(ref)
       // ref.hideSet()
-      this.showSelect = false
+      if (this.showSelect) {
+        this.showSelect = false
+      }
     },
 
     changeSet (set = {}) {
@@ -462,10 +468,6 @@ export default {
         this.showSelect = false
       }
     }
-  },
-
-  head: {
-    title: 'Directory'
   }
 }
 </script>
