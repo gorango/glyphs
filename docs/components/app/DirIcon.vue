@@ -191,8 +191,8 @@ export default {
     figmaIds,
     previewFlip: null,
     previewRotate: 0,
-    previewOffset: 0,
-    iconEnter: true,
+    previewOffset: null,
+    iconEnter: false,
     rotate: null,
     flip: null,
     copy: {
@@ -233,7 +233,9 @@ export default {
     '$route.query.i': {
       handler (val) {
         const variant = this.$route.query.v
-        if (variant && variant !== 'path') {
+        const set = this.$route.query.s
+        if ((variant && variant !== 'path') || set === 'edgy') {
+          this.previewOffset = null
           this.iconEnter = false
           return
         }
@@ -295,7 +297,7 @@ export default {
     },
 
     resetPreview () {
-      this.$emit('resetPreview')
+      // this.$emit('resetPreview')
       // this.previewVariant = null
       this.previewFlip = null
       this.previewRotate = 0
@@ -308,8 +310,8 @@ export default {
     handleFlip (dir) {
       const newFlip = this.previewFlip
         ? this.previewFlip.includes(dir)
-          ? this.previewFlip.replace(dir, '')
-          : this.previewFlip + dir
+          ? this.previewFlip.replace(dir, '') // eslint-disable-line
+          : this.previewFlip + dir // eslint-disable-line
         : dir
       this.previewFlip = newFlip
     },

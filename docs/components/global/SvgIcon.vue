@@ -212,9 +212,9 @@ svg {
   width: 100%;
 }
 
-.path path {
+/* .path path {
   stroke-linecap: round
-}
+} */
 
 .path, .outline, .solid, .bold, .mono {
   & > svg *[stroke] {
