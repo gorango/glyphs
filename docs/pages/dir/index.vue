@@ -137,13 +137,13 @@
                         @click='showColor = false',
                         :class='color ? `bg-${color}-500 hover_bg-${color}-700` : `bg-gray-800 dark_bg-gray-300`'
                       )
-          //- .flex-auto
-          //- div(v-if='isWideScreen')
-          //-   div.text-center.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Grid
-          //-   button.p-1.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.flex.items-center.outline-none(
-          //-     @click='expandLayout = !expandLayout'
-          //-   )
-          //-     rounded-icon(:name='expandLayout ? "arrows-compress-duo" : "arrows-expand-duo"', rotate='e', size='2rem', stroke-width='5')
+          .flex-auto
+          div.hidden.2xl_block
+            div.text-center.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Width
+            button.p-1.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.flex.items-center.outline-none(
+              @click='expandLayout = !expandLayout'
+            )
+              svg-icon(:name='expandLayout ? "arrows-compress-duo" : "arrows-expand-duo"', rotate='e', size='2rem', stroke-width='3')
 
         article(ref='article', :class='activeColor && `text-${activeColor}-500 dark_text-${activeColor}-400`')
           div.w-full.relative
@@ -170,6 +170,7 @@
 
       client-only
         dir-icon(
+          ref='icon',
           :components='components',
           :icon='icon',
           :set='set',
@@ -344,6 +345,7 @@ export default {
     kebabCase,
 
     resetPreview () {
+      this.$refs.icon.resetPreview()
       this.previewVariant = null
     },
 

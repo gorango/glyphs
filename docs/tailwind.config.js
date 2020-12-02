@@ -114,8 +114,11 @@ module.exports = {
       lg: '960px',
       // => @media (min-width: 1024px) { ... }
 
-      xl: '1280px'
+      xl: '1280px',
       // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1600px'
+      // => @media (min-width: 1600px) { ... }
     },
     extend: {
       fontFamily: {
