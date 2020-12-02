@@ -4,11 +4,13 @@ import Vue from 'vue'
 
 const meta = {
   rounded: require('@glyphs/rounded/meta.json'),
+  edgy: require('@glyphs/edgy/meta.json'),
   brands: require('@glyphs/brands/meta.json'),
   flags: require('@glyphs/flags/meta.json')
 }
 const components = {
   rounded: require('@glyphs/rounded'),
+  edgy: require('@glyphs/edgy'),
   brands: require('@glyphs/brands'),
   flags: require('@glyphs/flags')
 }
@@ -19,8 +21,6 @@ export const state = () => ({
 })
 
 export const mutations = {
-  // SET_CATEGORIES (state, categories) {
-  // }
   hideSet () {
     Vue.set(state, 'selectSet', false)
   }

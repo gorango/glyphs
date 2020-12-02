@@ -15,6 +15,7 @@ import kebabCase from 'lodash.kebabcase'
 
 const components = {
   rounded: require('@glyphs/rounded'),
+  edgy: require('@glyphs/edgy'),
   brands: require('@glyphs/brands'),
   flags: require('@glyphs/flags')
 }

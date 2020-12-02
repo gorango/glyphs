@@ -189,11 +189,13 @@ import debounce from 'lodash.debounce'
 
 const meta = {
   rounded: require('@glyphs/rounded/meta.json'),
+  edgy: require('@glyphs/edgy/meta.json'),
   brands: require('@glyphs/brands/meta.json'),
   flags: require('@glyphs/flags/meta.json')
 }
 const components = {
   rounded: require('@glyphs/rounded'),
+  edgy: require('@glyphs/edgy'),
   brands: require('@glyphs/brands'),
   flags: require('@glyphs/flags')
 }
