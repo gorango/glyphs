@@ -64,6 +64,7 @@ export default {
     }
   },
   content: {
+    liveEdit: false,
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css'
