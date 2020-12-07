@@ -1,32 +1,41 @@
 {
-  "name": "sandbox",
-  "version": "1.0.0",
-  "description": "",
-  "main": "code.js",
+  "name": "glyphs-utils",
+  "description": "Utility plugin for the Glyphs icon set design system",
+  "sideEffects": false,
   "scripts": {
-    "dev": "npx webpack --mode=development --watch",
-    "build": "npx webpack --mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "tailwindcss": "^1.4.6"
+    "build": "cross-env NODE_ENV=production webpack --mode=production --progress",
+    "dev": "webpack --mode=development --progress --watch"
   },
   "devDependencies": {
-    "@figma/plugin-typings": "^1.15.0",
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "css-loader": "^3.1.0",
+    "@figma/plugin-typings": "^1.19.0",
+    "add": "^2.0.6",
+    "autoprefixer": "^10.0.4",
+    "cross-env": "^7.0.3",
+    "css-loader": "^3.2.0",
+    "file-loader": "^6.2.0",
     "html-webpack-inline-source-plugin": "0.0.10",
     "html-webpack-plugin": "^3.2.0",
-    "postcss-loader": "^3.0.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.1.13",
+    "postcss-loader": "^4.1.0",
     "pug": "^3.0.0",
-    "pug-loader": "^2.4.0",
-    "style-loader": "^0.23.1",
-    "ts-loader": "^6.0.4",
-    "typescript": "^3.5.3",
-    "url-loader": "^2.1.0",
-    "webpack": "^4.38.0",
-    "webpack-cli": "^3.3.6"
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.3",
+    "unist-util-is": "^4.0.4",
+    "unist-util-visit": "^2.0.3",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "yarn": "^1.22.10"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "tailwindcss": "^2.0.1",
+    "vue": "^2.6.10",
+    "vuex": "^3.6.0"
   }
 }

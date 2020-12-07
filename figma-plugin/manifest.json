@@ -1,7 +1,7 @@
 {
-  "name": "Batch Ops",
-  "id": "738168449509241862",
+  "name": "Glyphs Utils",
+  "id": "758460130791334003",
   "api": "1.0.0",
-  "main": "dist/code.js",
-  "ui": "dist/ui.html"
+  "main": "build/main.js",
+  "ui": "build/ui.html"
 }
