@@ -9,7 +9,7 @@
           class='px-1.5',
           :disabled='!$store.state.selection',
           @click.native='$store.dispatch("post", { type })'
-        ) 
+        )
           template(v-if='icon === "eye"')
             Eye
           template(v-if='icon === "eye-slash"')

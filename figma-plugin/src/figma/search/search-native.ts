@@ -1,11 +1,11 @@
 async function search ({ query, append, children, /* variants */ }) {
   figma.ui.postMessage({ type: 'loading', value: true })
   await new Promise(resolve => setTimeout(resolve, 100))
-  
+
   const page = figma.currentPage
   const selection = append ? page.selection : []
   const types: any = ['PAGE', 'FRAME', 'COMPONENT', 'COMPONENT_SET', 'INSTANCE']
-  
+
   let variants = []
   const nodes = page.findAll(node => {
     const parent = !children ? true : page.selection.reduce((bool, selectedNode) => bool || node.parent === selectedNode, false)

@@ -32,7 +32,7 @@ export default {
     QuestionCircle,
     Button
   },
-  
+
   data: () => ({
     cols: 24,
     gutter: 80

@@ -23,7 +23,7 @@ export default {
     Actions,
     Arrange
   },
-  
+
   mounted () {
     window.addEventListener('keyup', event => {
       switch (event.key) {

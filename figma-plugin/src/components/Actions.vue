@@ -22,11 +22,11 @@ import Button from '../components/global/Button'
 
 export default {
   components: {
-    QuestionCircle, 
-    Play, 
+    QuestionCircle,
+    Play,
     Button,
   },
-  
+
   data: () => ({
     list: [{
       type: 'removeSelected',

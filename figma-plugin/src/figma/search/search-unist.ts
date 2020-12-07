@@ -4,11 +4,11 @@ import * as is from 'unist-util-is'
 async function search ({ query, append, children, /* variants */ }) {
   figma.ui.postMessage({ type: 'loading', value: true })
   await new Promise(resolve => setTimeout(resolve, 100))
-  
+
   const page = figma.currentPage
   const selection = append ? page.selection : []
   const nodes = []
-  
+
   visit(page, test, filter, true)
 
   function test (node) {
@@ -27,7 +27,7 @@ async function search ({ query, append, children, /* variants */ }) {
       found && nodes.push(found)
     }
   }
-  
+
   figma.currentPage.selection = [...selection, ...nodes]
   figma.viewport.scrollAndZoomIntoView(nodes)
   figma.ui.postMessage({ type: 'loading', value: false })

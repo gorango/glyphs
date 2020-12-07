@@ -1,4 +1,3 @@
-
 function selectHidden () {
   const selectedNodes: any = figma.currentPage.selection
   let newSelection = []
@@ -30,7 +29,7 @@ function selectNext () {
   let newSelection = []
   selection.forEach((node: any) => {
     const parent = node.parent
-    const selectedChildren = parent.findAll(({ id }) => 
+    const selectedChildren = parent.findAll(({ id }) =>
       selection.findIndex(({ id: _id }) => _id === id) > -1)
     if (selectedChildren.length > 1) {
       newSelection.push(parent.children[0])

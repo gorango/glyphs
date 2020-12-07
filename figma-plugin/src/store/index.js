@@ -18,7 +18,7 @@ export default new Vuex.Store({
       Vue.set(state, 'selection', selection)
     }
   },
-  
+
   actions: {
     post (store, { type, value }) {
       post(type, value)

@@ -35,7 +35,7 @@ module.exports = (env, argv) => ({
         exclude: /node_modules/,
         use: 'ts-loader'
       },
-      
+
       {
         test: /\.css$/,
         use: ['vue-style-loader', {
@@ -92,4 +92,4 @@ module.exports = (env, argv) => ({
     tls: 'empty',
     child_process: 'empty'
   }
-});
+})

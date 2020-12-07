@@ -1,12 +1,12 @@
 async function search ({ query, append, children, variants }) {
   figma.ui.postMessage({ type: 'loading', value: true })
   await new Promise(resolve => setTimeout(resolve, 100))
-  
+
   const page = figma.currentPage
   const selection = append ? page.selection : []
   const types: any = ['PAGE', 'FRAME', 'COMPONENT', 'COMPONENT_SET', 'INSTANCE']
   const nodes = []
-  
+
   if (children) {
     page.selection.forEach(node => visit(node))
   } else {
@@ -44,7 +44,7 @@ async function search ({ query, append, children, variants }) {
     const { id } = node.parent || {}
     return id === parent.id || (node.parent.parent && isChild(node.parent, parent))
   }
-  
+
   figma.currentPage.selection = [...selection, ...nodes]
   figma.viewport.scrollAndZoomIntoView(nodes)
   figma.ui.postMessage({ type: 'loading', value: false })

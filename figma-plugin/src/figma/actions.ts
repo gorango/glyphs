@@ -1,5 +1,3 @@
-import { component } from "node_modules/vue/types/umd"
-
 function removeSelected () {
   const selectedNodes: any = figma.currentPage.selection
   let newSelection = []
@@ -81,8 +79,8 @@ function variantsComponentSet (selectionChunk) {
       .map((node: any) => {
         let [[_, __, x], [___, ____, y]] = node.absoluteTransform
         return [
-          node, 
-          (x - (node.width / 2)), 
+          node,
+          (x - (node.width / 2)),
           (y - (node.height / 2))
         ]
       })
@@ -98,7 +96,7 @@ function variantsComponentSet (selectionChunk) {
     chunks.forEach(variantsComponentSet)
     return
   }
-  
+
   const firstComponent = [...selection].sort(({ y: y1 }, { y: y2 }) => y1 - y2)[0]
   console.log(firstComponent)
   const componentName: any = firstComponent.children[0].name
@@ -106,7 +104,7 @@ function variantsComponentSet (selectionChunk) {
   const parent = firstComponent.parent
   const insertIndex = parent.children.findIndex(({ id }) => id === firstComponent.id)
   const newComponents = []
-  
+
   selection.forEach((node, i) => {
     const component = figma.createComponent()
     component.resizeWithoutConstraints(node.width, node.height)
