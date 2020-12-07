@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es6",
     "typeRoots": [
-      "./node_modules/@types",
       "./node_modules/@figma"
-    ]
+    ],
+    "paths": {
+      "unist-util-visit": ["node_modules/unist-util-visit/index.js"],
+      "unist-util-is": ["node_modules/unist-util-is/index.js"],
+    }
   }
 }
