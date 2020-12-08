@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.0.3...@glyphs/cli-v0.0.4) (2020-12-08)
+
+
+### Features
+
+* **cli:** refactor config; upgrade to variants ([0620711](https://github.com/gorango/glyphs/commit/062071158b955898cd89df5a7edaa12844018700))
+
+
+### Bug Fixes
+
+* **cli:** add key to sets meta.json ([5cb15a6](https://github.com/gorango/glyphs/commit/5cb15a6e7984e8d688397c09a9bb0f6177e94daa))
+* **cli:** correct unique count ([136ae92](https://github.com/gorango/glyphs/commit/136ae92f3586569fb70722f7ca9879c9d5fafce8))
+* **cli:** handle dropped connections with promise-request-retry ([a3e33c9](https://github.com/gorango/glyphs/commit/a3e33c9e3e85af7ac50fd0db98bd0e6353512cd7))
+
 ### [0.0.3](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.0.2...@glyphs/cli-v0.0.3) (2020-10-27)
 
 

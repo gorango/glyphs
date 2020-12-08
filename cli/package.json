@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Extract Glyphs icons from Figma",
   "main": "index.js",
   "bin": {
