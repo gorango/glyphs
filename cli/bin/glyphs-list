@@ -6,10 +6,9 @@ const chalk = require('chalk')
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
   alias: {
-    a: 'available',
     h: 'help'
   },
-  boolean: ['a', 'h']
+  boolean: ['h']
 })
 
 if (argv.help) {
@@ -35,14 +34,17 @@ const conf = new Configstore(pkg.name)
 const sets = conf.all
 
 console.log()
+
 if (!sets || !Object.keys(sets).length) {
   console.log('  No icon sets have been configured')
   console.log('  Run "glyphs add" to configure a new icon set')
 } else {
-  Object.entries(sets).forEach(([set, { key, file: { curr: { name } } }]) => {
-    console.log('-', name, chalk.blueBright`https://figma.com/file/${key}`)
+  Object.entries(sets).forEach(([key, { name }]) => {
+    const padding = Array(Math.max(0, 14 - name.length)).fill(' ').join('')
+    console.log(`  ${chalk.cyan`${name}:`}${padding} https://figma.com/file/${key}`)
   })
   console.log()
   console.log('  Run "glyphs sync" to export a set to the current folder')
 }
+
 console.log()

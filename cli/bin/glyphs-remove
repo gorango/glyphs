@@ -8,16 +8,16 @@ const argv = parseArgs(args, {
   alias: {
     h: 'help'
   },
-  boolean: ['a', 'h']
+  boolean: ['h']
 })
 
-if (argv.help || !args.length) {
+if (argv.help) {
   console.log(`
   Description
   Remove an existing icon set config by name
 
   Usage
-    $ glyphs remove <name|key>
+    $ glyphs remove [<key>]
 
   Options
     --help, -h    Displays this message
@@ -26,22 +26,49 @@ if (argv.help || !args.length) {
 }
 
 const Configstore = require('configstore')
+const inquirer = require('inquirer')
+
 const pkg = require('../package.json')
 
 const conf = new Configstore(pkg.name)
-const sets = conf.all
-const { _: [set] } = argv
+const { _: [key] } = argv
 
-console.log()
-if (sets) {
-  const exists = !!conf.get(set)
-  if (exists) {
-    conf.delete(set)
-    console.log(`  Config for "${set}" set has been removed`)
+;(async () => {
+  const sets = conf.all
+
+  console.log()
+
+  if (!sets) {
+    console.log(`  No icons sets have been configured`)
   } else {
-    console.log(`  No configuration with the name "${set}"`)
+    if (!key) {
+      const choices = Object.entries(sets)
+        .map(([key, { name }]) => ({ value: key, name }))
+
+      const questions = [{
+        type: 'list',
+        name: 'name',
+        message: 'Select an icon set to remove',
+        choices,
+      }]
+
+      const answers = await inquirer.prompt(questions)
+      console.log()
+      remove(sets[answers.name])
+    } else {
+      const exists = !!conf.get(key)
+      if (exists) {
+        remove(sets[key])
+      } else {
+        console.log(`  No configuration with the key "${key}"`)
+      }
+    }
   }
-} else {
-  console.log(`  No icons sets have been configured`)
+  console.log()
+})()
+
+function remove (set) {
+  const { name, key } = set
+  conf.delete(key)
+  console.log(`  Config for "${name}" set has been removed`)
 }
-console.log()

@@ -17,7 +17,7 @@ if (argv.help) {
   Get details on the icon set config
 
   Usage
-    $ glyphs get [<name|key>]
+    $ glyphs get [<key>]
 
   Options
     --help, -h     Displays this message
@@ -33,17 +33,17 @@ const inquirer = require('inquirer')
 const pkg = require('../package.json')
 
 const conf = new Configstore(pkg.name)
-const { _: [set] } = argv
+const { _: [key] } = argv
 
 ;(async () => {
   const sets = conf.all
 
   console.log()
 
-  if (!set && sets && Object.keys(sets).length) {
+  if (!key && sets && Object.keys(sets).length) {
     const choices = Object.entries(sets)
-      .map(([set, { key, file: { curr: { name } } }]) => ({ key, name }))
-      .map(({ name }) => name)
+      .map(([key, { name }]) => ({ value: key, name }))
+
     const questions = [{
       type: 'list',
       name: 'name',
@@ -53,19 +53,19 @@ const { _: [set] } = argv
 
     const answers = await inquirer.prompt(questions)
     console.log()
-    const name = camelCase(answers.name)
-    const setConfig = sets[name]
-    console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.file.curr.name}`)
-    console.log(`  ${chalk.cyan`File Key`}:      ${setConfig.key}`)
+    const key = answers.name
+    const setConfig = sets[key]
+    console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.name}`)
+    console.log(`  ${chalk.cyan`File Key`}:      ${key}`)
     console.log(`  ${chalk.cyan`Access Token`}:  ${setConfig.token}`)
-    console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${setConfig.key}`)
-  } else if (set) {
-    const setConfig = sets[set]
+    console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${key}`)
+  } else if (key) {
+    const setConfig = sets[key]
     if (setConfig) {
-      console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.file.curr.name}`)
-      console.log(`  ${chalk.cyan`File Key`}:      ${setConfig.key}`)
+      console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.name}`)
+      console.log(`  ${chalk.cyan`File Key`}:      ${key}`)
       console.log(`  ${chalk.cyan`Access Token`}:  ${setConfig.token}`)
-      console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${setConfig.key}`)
+      console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${key}`)
     } else {
       console.log(`  Can't find the icon set with that name or key`)
     }

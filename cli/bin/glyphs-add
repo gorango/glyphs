@@ -34,7 +34,6 @@ if (argv.help) {
 
 const Configstore = require('configstore')
 const Figma = require('figma-api')
-const camelCase = require('lodash.camelcase')
 const inquirer = require('inquirer')
 
 const pkg = require('../package.json')
@@ -45,7 +44,7 @@ let { key, token, replace } = argv
 ;(async () => {
   const sets = conf.all
 
-  if (!(key && token)) {
+  if (!key || !token) {
     if (sets) {
       const firstSet = Object.values(sets)[0] || {}
       token = firstSet.token
@@ -76,7 +75,11 @@ let { key, token, replace } = argv
     token = answers.token
   }
 
-  if (token && key) {
+  if (!token || !key) {
+    console.log()
+    console.log('  Operation failed')
+    console.log('  File key and access token are required to continue')
+  } else {
     if (sets) {
       const [setEntries] = Object.entries(sets).filter(([name, { key: k }]) => k === key)
       const name = setEntries && setEntries[0]
@@ -98,20 +101,14 @@ let { key, token, replace } = argv
       process.exit(0)
     })
 
-    const name = camelCase(file.name)
-    conf.set(name, {
+    conf.set(key, {
+      token,
       key,
-      token
+      name: file.name
     })
-    conf.set(`${name}.file.curr`, file)
+    conf.set(`${key}.file.curr`, file)
     console.log()
     console.log(`  Successfully configured "${file.name}"`)
-  } else {
-    console.log()
-    console.log('  Operation failed')
-    console.log('  File key and access token are required to continue')
   }
   console.log()
-  // vuadSjKf4P4foe0E5rCURn
-  // 17696-2b5ff56c-5d52-4d38-9f18-09d5b7aabeae
-})();
+})()

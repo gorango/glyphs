@@ -22,7 +22,7 @@ if (argv.help) {
   Sync a configured icon set to the current directory.
 
   Usage
-    $ glyphs sync [<name|key> --config <file-path> --data <data-folder> --svg <svg-folder>]
+    $ glyphs sync [<key> --config <file-path> --data <data-folder> --svg <svg-folder>]
 
   Options
     --ignore, -i   Ignore unchanged icons (improves perf)
@@ -51,14 +51,14 @@ const pkg = require('../package.json')
 
   const conf = new Configstore(pkg.name)
   const sets = conf.all
-  let { _: [name], config } = argv
+  let { _: [key], config } = argv
 
-  if (!name) {
+  // If the key wasn't provided, promps the user for selection or input
+  if (!key) {
     if (sets && Object.keys(sets).length) {
       if (Object.keys(sets).length > 1) {
         const choices = Object.entries(sets)
-          .map(([set, { key, file: { curr: { name } } }]) => ({ key, name }))
-          .map(({ name }) => name)
+          .map(([key, { name }]) => ({ value: key, name }))
         const questions = [{
           type: 'list',
           name: 'name',
@@ -69,12 +69,12 @@ const pkg = require('../package.json')
         console.log()
         const answers = await inquirer.prompt(questions)
         console.log()
-        name = camelCase(answers.name)
+        key = answers.name
       } else {
         console.log()
-        name = Object.keys(sets)[0]
-        const set = sets[name]
-        console.log(`  Syncing "${set.file.curr.name}" set to the current folder`)
+        key = Object.keys(sets)[0]
+        const set = sets[key]
+        console.log(`  Syncing "${set.name}" set to the current folder`)
         console.log()
       }
     }
@@ -84,29 +84,24 @@ const pkg = require('../package.json')
     ignore: false,
     data: 'data',
     svg: 'svg',
-    name,
+    key,
     ...config,
     ...argv
   }
 
-  const parse = require('../lib/sync/parse')
-  const download = require('../lib/sync/download')
-  const meta = require('../lib/sync/meta')
+  const sync = require('../lib/sync')
 
   const run = async () => {
-    await parse(mergedArgs, progress).catch(handleError)
-    await download(mergedArgs, progress).catch(handleError)
-    await meta(mergedArgs, progress).catch(handleError)
+    await sync(mergedArgs, progress).catch(handleError)
     console.log()
     process.exit(0)
   }
 
   run()
-
-})();
+})()
 
 function handleError (err) {
   console.log(err.message)
-  console.log(err)
+  // console.log(err)
   process.exit(1)
 }

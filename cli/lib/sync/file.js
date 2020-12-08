@@ -1,32 +1,12 @@
 const fs = require('fs')
 const path = require('path')
 const util = require('util')
-const kebabCase = require('lodash.kebabcase')
-const convert = require('color-convert')
-
-const colors = require(path.join(__dirname, 'colors.json'))
+const { kebabCase } = require('lodash')
 
 module.exports = {
-  getColor,
   createDir,
   saveJSON,
   saveSVG
-}
-
-function getColor (hex) {
-  const colorName = hex.startsWith('#') ? convert.hex.keyword(hex) : hex
-
-  let name, fullName
-  Object.entries(colors).forEach(([category, colors]) => {
-    Object.entries(colors).forEach(([color, hex]) => {
-      if (!name && color.toLowerCase() === colorName) {
-        name = category.toLowerCase()
-        fullName = color.toLowerCase()
-      }
-    })
-  })
-
-  return [name, fullName]
 }
 
 async function createDir (dirName) {
