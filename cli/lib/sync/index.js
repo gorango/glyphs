@@ -123,6 +123,16 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
   const chunkSize = figmaLimit / meta.variants.length
   const chunks = Array(Math.ceil(components.length / chunkSize)).fill().map((_, i) => i * chunkSize).map(i => components.slice(i, i + chunkSize))
 
+  const iconsConfig = (findOne(page, ({ name }) => name === 'Config') || {}).children
+  let svgConfig
+  if (iconsConfig) {
+    svgConfig = iconsConfig.filter(({ type, name }) => type === 'INSTANCE' && name.includes('config')).map(node => {
+      const key = node.children.find(({ name }) => name === 'key').characters
+      const value = node.children.find(({ name }) => name === 'value').characters
+      return { [camelCase(key)]: value.split(',').map(i => i.toLowerCase().trim()) }
+    })
+  }
+
   let downloaded = 0
   progressVal = Math.max(progressVal, 10)
   progress.update(progressVal, { stage: `Setting up ${meta.total} icons...` })
@@ -151,7 +161,7 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
         return promise.then(async () => {
           const [id, url] = Object.entries(images)[i]
           const [name, variant] = idMap[id]
-          const svg = await processSvg(svgString, variant)
+          const svg = await processSvg(svgString, variant, svgConfig)
 
           saveSVG(name, svgDir, variant, svg)
           components[components.findIndex(({ name: n }) => n === name )].variants[variant] = svg

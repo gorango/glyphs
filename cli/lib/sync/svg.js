@@ -1,19 +1,22 @@
 const pretty = require('pretty')
 const { parse, stringify } = require('svgson')
 
-async function processSvg (svgString, variant) {
+async function processSvg (svgString, variant, svgConfig) {
   if (!svgString) {
     return null
   }
-  const REPLACE_CURRENT_COLOR = ['path', 'stroke', 'outline', 'line', 'solid', 'bold', 'fill', 'mono', 'duo']
-  const REMOVE_CODE = ['path', 'stroke', 'line', 'outline']
+  const configDefaults = {
+    replaceColor: [],
+    removeStroke: []
+  }
+  const { replaceColor, removeStroke } = { ...configDefaults, ...svgConfig }
   const svgNode = svgString ? await parse(svgString) : null
   removeUnused(svgNode)
-  if (REPLACE_CURRENT_COLOR.includes(variant)) {
+  if (replaceColor.includes(variant)) {
     applyCurrentColor(svgNode)
-    if (REMOVE_CODE.includes(variant)) {
-      removeStrokeWidths(svgNode)
-    }
+  }
+  if (removeStroke.includes(variant)) {
+    removeStrokeWidths(svgNode)
   }
   return pretty(stringify(svgNode))
 }
