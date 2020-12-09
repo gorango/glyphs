@@ -1,4 +1,4 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect x="24" y="12" width="32" height="56" rx="2" fill="#7B61FF" stroke="#7B61FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="fill-purple stroke-purple" />
-  <path d="M44 62H36" stroke="#84D3FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-blue" />
+  <rect x="24" y="12" width="32" height="56" rx="2" fill="#7B61FF" stroke="#7B61FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M44 62H36" stroke="#84D3FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

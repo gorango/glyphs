@@ -1,5 +1,5 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect x="33" y="12" width="14" height="56" rx="1" fill="#1CB0F6" class="fill-blue" />
-  <path d="M33 19.998L47 19.998" stroke="#FFC200" stroke-width="4" stroke-linejoin="round" class="stroke-yellow" />
-  <path d="M33 59.998H47" stroke="#FFC200" stroke-width="4" stroke-linejoin="round" class="stroke-yellow" />
+  <rect x="33" y="12" width="14" height="56" rx="1" fill="#1CB0F6" />
+  <path d="M33 19.998L47 19.998" stroke="#FFC200" stroke-width="4" stroke-linejoin="round" />
+  <path d="M33 59.998H47" stroke="#FFC200" stroke-width="4" stroke-linejoin="round" />
 </svg>

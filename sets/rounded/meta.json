@@ -1,12 +1,14 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
-  "unique": 643,
+  "name": "Rounded Glyphs",
+  "unique": 647,
+  "total": 3235,
   "variants": [
+    "duo",
     "path",
+    "outline",
     "bold",
-    "poly",
-    "mono",
-    "outline"
+    "poly"
   ],
   "categories": {
     "shape": [
@@ -253,6 +255,8 @@
       "exclamationTriangle",
       "questionCircle",
       "infoCircle",
+      "commentQuestion",
+      "commentExclamation",
       "lifeRing",
       "bell",
       "alarmClock",
@@ -661,6 +665,10 @@
       "scooter",
       "scooterSide",
       "car",
+      "carWash",
+      "carTilt",
+      "carBump",
+      "carCrash",
       "carSide",
       "raceCar",
       "van",
@@ -746,8 +754,8 @@
       "pill",
       "tablet",
       "pills",
-      "cannabis",
-      "microscope"
+      "microscope",
+      "cannabis"
     ],
     "tool": [
       "wrench",

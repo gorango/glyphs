@@ -1,9 +1,9 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M20 20V66C20 67.1046 20.8954 68 22 68H58C59.1046 68 60 67.1046 60 66V14C60 12.8954 59.1046 12 58 12H28L20 20Z" fill="#606060" class="fill-grey" />
-  <path d="M20 20L18.5858 18.5858C18.2107 18.9609 18 19.4696 18 20H20ZM28 12V10C27.4696 10 26.9609 10.2107 26.5858 10.5858L28 12ZM22 66V20H18V66H22ZM22 66H22H18C18 68.2091 19.7909 70 22 70V66ZM58 66H22V70H58V66ZM58 66V70C60.2091 70 62 68.2091 62 66H58ZM58 14V66H62V14H58ZM58 14H62C62 11.7909 60.2091 10 58 10V14ZM28 14H58V10H28V14ZM26.5858 10.5858L18.5858 18.5858L21.4142 21.4142L29.4142 13.4142L26.5858 10.5858Z" fill="#606060" class="fill-grey" />
-  <path d="M26 28V22" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
-  <path d="M33 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
-  <path d="M40 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
-  <path d="M47 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
-  <path d="M54 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="stroke-yellow" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M20 20V66C20 67.1046 20.8954 68 22 68H58C59.1046 68 60 67.1046 60 66V14C60 12.8954 59.1046 12 58 12H28L20 20Z" fill="#606060" />
+  <path d="M20 20L18.5858 18.5858C18.2107 18.9609 18 19.4696 18 20H20ZM28 12V10C27.4696 10 26.9609 10.2107 26.5858 10.5858L28 12ZM22 66V20H18V66H22ZM22 66H22H18C18 68.2091 19.7909 70 22 70V66ZM58 66H22V70H58V66ZM58 66V70C60.2091 70 62 68.2091 62 66H58ZM58 14V66H62V14H58ZM58 14H62C62 11.7909 60.2091 10 58 10V14ZM28 14H58V10H28V14ZM26.5858 10.5858L18.5858 18.5858L21.4142 21.4142L29.4142 13.4142L26.5858 10.5858Z" fill="#606060" />
+  <path d="M26 28V22" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M33 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M40 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M47 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M54 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

@@ -1,6 +1,6 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect x="24" y="12" width="32" height="56" rx="4" fill="#84D3FF" class="fill-blue" />
-  <path d="M24 60H56V20H24V60Z" fill="#7B61FF" class="fill-purple" />
-  <path d="M44 16H36" stroke="#F4F4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-white" />
-  <path d="M41 64H39" stroke="#F4F4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-white" />
+  <rect x="24" y="12" width="32" height="56" rx="4" fill="#84D3FF" />
+  <path d="M24 60H56V20H24V60Z" fill="#7B61FF" />
+  <path d="M44 16H36" stroke="#F4F4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M41 64H39" stroke="#F4F4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
