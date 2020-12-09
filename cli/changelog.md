@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.0.4...@glyphs/cli-v0.0.5) (2020-12-09)
+
+
+### Features
+
+* **cli:** enable get & sync with query ([95b0d07](https://github.com/gorango/glyphs/commit/95b0d0740ac6c69cc9f1d7cebe51616e0bcfbfb9))
+* **cli:** parse svg config from figma file ([94529e8](https://github.com/gorango/glyphs/commit/94529e8200aa25726ec7012a3271ff9fffedd201))
+
+
+### Bug Fixes
+
+* **cli:** fix sync config ([d727ad5](https://github.com/gorango/glyphs/commit/d727ad519b2c3c1c0e25beede300c920e4ca2ebf))
+
 ### [0.0.4](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.0.3...@glyphs/cli-v0.0.4) (2020-12-08)
 
 
