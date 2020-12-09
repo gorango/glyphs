@@ -1,9 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <g opacity="0.25">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M60 34L40 18L20 34L20 62L60 62L60 34Z" fill="currentColor" />
-    <path d="M60 34H62C62 33.3924 61.7238 32.8178 61.2494 32.4383L60 34ZM40 18L41.2494 16.4383C40.519 15.8539 39.481 15.8539 38.7506 16.4383L40 18ZM20 34L18.7506 32.4383C18.2762 32.8178 18 33.3924 18 34H20ZM20 62H18C18 63.1046 18.8954 64 20 64V62ZM60 62V64C61.1046 64 62 63.1046 62 62H60ZM61.2494 32.4383L41.2494 16.4383L38.7506 19.5617L58.7506 35.5617L61.2494 32.4383ZM38.7506 16.4383L18.7506 32.4383L21.2494 35.5617L41.2494 19.5617L38.7506 16.4383ZM18 34L18 62H22L22 34H18ZM20 64H60V60L20 60V64ZM62 62L62 34H58L58 62H62Z" fill="currentColor" />
-  </g>
-  <path d="M67.5 40L64.5 37.6L40 18L15.5 37.6L12.5 40" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M55 30V19H49V25.2L55 30Z" fill="currentColor" />
-  <rect opacity="0.5" x="34" y="38" width="12" height="12" rx="1" fill="currentColor" />
-</svg>
