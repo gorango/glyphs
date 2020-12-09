@@ -25,7 +25,7 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
   setInterval(() => {
     progressVal = progressVal + 1
     progress.update(progressVal)
-  }, 2000)
+  }, 3000)
 
   createDir(svgDir)
   createDir(dataDir)
@@ -126,11 +126,14 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
   const iconsConfig = (findOne(page, ({ name }) => name === 'Config') || {}).children
   let svgConfig
   if (iconsConfig) {
-    svgConfig = iconsConfig.filter(({ type, name }) => type === 'INSTANCE' && name.includes('config')).map(node => {
-      const key = node.children.find(({ name }) => name === 'key').characters
-      const value = node.children.find(({ name }) => name === 'value').characters
-      return { [camelCase(key)]: value.split(',').map(i => i.toLowerCase().trim()) }
-    })
+    svgConfig = iconsConfig
+      .filter(({ type, name, visibile }) => type === 'INSTANCE' && name.includes('config') && visibile !== false)
+      .map(node => {
+        const key = node.children.find(({ name }) => name === 'key').characters
+        const value = node.children.find(({ name }) => name === 'value').characters
+        return { [camelCase(key)]: value.split(',').map(i => i.toLowerCase().trim()) }
+      })
+      .reduce((obj, config) => ({ ...obj, ...config }), {})
   }
 
   let downloaded = 0
@@ -167,7 +170,7 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
           components[components.findIndex(({ name: n }) => n === name )].variants[variant] = svg
           downloaded++
           const newProgress = downloaded / meta.total * 80 + 10
-          progressVal = Math.max(progressVal, newProgress)
+          progressVal = Math.min(progressVal, newProgress)
           progress.update(progressVal, { stage: `${downloaded}/${meta.total} downloaded...` })
           return Promise.resolve()
         })
