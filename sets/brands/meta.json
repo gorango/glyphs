@@ -1,7 +1,17 @@
 {
+  "key": "vuadSjKf4P4foe0E5rCURn",
+  "name": "Brand Glyphs",
+  "unique": 25,
+  "total": 75,
+  "variants": [
+    "color",
+    "bold",
+    "path"
+  ],
   "categories": {
     "design": [
       "icons",
+      "glyphs",
       "figma",
       "sketch",
       "zeplin",
@@ -35,34 +45,7 @@
       "amex",
       "mastercard",
       "paypal",
-      "visa",
-      "jcb",
-      "giropay",
-      "ideal",
-      "bancontact",
-      "unionPay",
-      "sepa",
-      "amazonPay",
-      "sofort",
-      "klarna",
-      "yandex",
-      "qiwi",
-      "alipay",
-      "weChat",
-      "etherium",
-      "bitcoin",
-      "bitpay",
-      "payPal",
-      "stripe",
-      "skrill",
-      "googlePay",
-      "discover",
-      "dinersClub"
+      "visa"
     ]
-  },
-  "variants": [
-    "color",
-    "bold",
-    "path"
-  ]
+  }
 }
