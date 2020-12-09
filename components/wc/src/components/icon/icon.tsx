@@ -2,7 +2,7 @@ import { Build, Component, Element, Host, Prop, State, Watch, h } from '@stencil
 import camelCase from 'lodash.camelcase'
 import { getName } from './utils';
 // @ts-ignore
-import * as components from '../../../../../sets/rounded/components.json'
+import components from '../../../../../sets/rounded/components.json'
 import { variants } from '../../../../../sets/rounded/meta.json'
 
 @Component({
@@ -14,7 +14,6 @@ export class Icon {
   @Element() el!: HTMLElement;
 
   @State() private svgContent?: string;
-  @State() private components = components;
 
   /**
    * Specifies the label to use for accessibility. Defaults to the icon name.
@@ -92,9 +91,8 @@ export class Icon {
       if (this.variant === 'outline' && !this.strokeWidth) {
         this.strokeWidth = 1
       }
-      const component = this.components[camelCase(this.name)]
-      const icon = component.variants && component.variants[this.variant]
-      const svg = icon && icon.svg
+      const component = components.find(({ name }) => camelCase(this.name) === name)
+      const svg = component.variants && component.variants[this.variant]
       this.svgContent = svg
     }
 
