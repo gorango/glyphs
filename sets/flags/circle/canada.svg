@@ -1,12 +1,13 @@
 <svg viewBox="0 0 80 80" fill="none">
   <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
-    <rect width="80" height="80" rx="40" fill="white" class="fill-white" />
+    <rect width="80" height="80" rx="40" fill="white" />
   </mask>
   <g mask="url(#mask0)">
-    <rect width="80" height="80" fill="white" class="fill-white" />
-    <rect width="16" height="80" fill="#FF0000" class="fill-red" />
-    <rect x="64" width="16" height="80" fill="#FF0000" class="fill-red" />
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.8072 19L44.9245 25.8732L48.7156 24.7052L45.4841 39.0584L45.5195 39.1753L49.5909 32.5885L51.0195 35.3422L57.1499 34.422L57.15 34.4221L56.2462 40.664L58.9502 42.1182L48.443 48.8496L49.8072 53.3636L39.8072 50.6314L29.8072 53.3636L31.1613 48.8825L20.6059 42.1438L23.3575 40.664L22.4536 34.422L28.5842 35.3422L30.0381 32.5397L33.7934 38.6363L30.6409 24.6258L34.6899 25.8732L39.8072 19Z" fill="#FF0000" class="fill-red" />
-    <path d="M39.8071 40.6362L39.8073 60.9999" stroke="#FF0000" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" class="stroke-red" />
+    <g opacity="0.9">
+      <rect width="80" height="80" fill="#FF1A1A" />
+      <rect x="10" width="60" height="80" fill="white" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M39.7685 15L45.9093 23.1824L50.4586 21.7919L46.5809 38.8791L46.6232 39.0182L51.509 31.1767L53.2233 34.455L60.5798 33.3595L60.5799 33.3596L59.4954 40.7904L62.7402 42.5217L50.1315 50.5352L51.7685 55.9091L39.7685 52.6564L27.7685 55.9091L29.3935 50.5745L16.7269 42.5522L20.0289 40.7904L18.9443 33.3595L26.3009 34.455L28.0456 31.1187L32.552 38.3766L28.769 21.6973L33.6278 23.1824L39.7685 15Z" fill="#FF0000" />
+      <path d="M39.7686 40.7578L39.7687 65.0002" stroke="#FF0000" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+    </g>
   </g>
 </svg>

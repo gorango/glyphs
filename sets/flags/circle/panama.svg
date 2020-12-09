@@ -1,0 +1,19 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <rect width="80" height="80" rx="40" fill="white" />
+  </mask>
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
+      <path d="M100 0.0791016H-20V80.0774H100V0.0791016Z" fill="#F0F0F0" />
+      <path d="M40 40C40 40 40 59.9931 40 79.9991H-20V40H0.000858307C19.1252 40 40 40 40 40Z" fill="#0052B4" />
+      <path d="M100 0V39.9991H79.9991C58.7931 39.9991 40 39.9991 40 39.9991C40 39.9991 40 18.8297 40 0H100Z" fill="#D80027" />
+      <path d="M20 11L22.0206 17.2188H28.5595L23.2694 21.0623L25.2901 27.2812L20 23.4377L14.7099 27.2812L16.7306 21.0623L11.4405 17.2188H17.9794L20 11Z" fill="#0052B4" />
+      <path d="M60 51L62.0206 57.2188H68.5595L63.2694 61.0623L65.2901 67.2812L60 63.4377L54.7099 67.2812L56.7306 61.0623L51.4405 57.2188H57.9794L60 51Z" fill="#D80027" />
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <rect width="80" height="80" fill="white" />
+    </clipPath>
+  </defs>
+</svg>

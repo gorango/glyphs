@@ -1,7 +1,8 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect width="80" height="80" fill="white" class="fill-white" />
-  <rect width="20" height="80" fill="#FF0000" class="fill-red" />
-  <rect width="20" height="80" transform="matrix(-1 0 0 1 80 0)" fill="#FF0000" class="fill-red" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.8456 23L43.9395 28.5641L46.9723 27.6185L44.3872 39.2378L44.4154 39.3324L47.6726 34.0002L48.8155 36.2295L53.7198 35.4845L53.7199 35.4846L52.9968 40.5375L55.16 41.7148L46.7543 47.1639L47.8456 50.8182L39.8456 48.6063L31.8456 50.8182L32.9289 47.1906L24.4846 41.7355L26.6859 40.5375L25.9628 35.4845L30.8672 36.2295L32.0304 33.9607L35.0346 38.896L32.5126 27.5542L35.7518 28.5641L39.8456 23Z" fill="#FF0000" class="fill-red" />
-  <path d="M39.8457 40.5151L39.8458 57" stroke="#FF0000" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" class="stroke-red" />
+  <g opacity="0.9">
+    <rect width="80" height="80" fill="#FF1A1A" />
+    <rect x="10" width="60" height="80" fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.7685 15L45.9093 23.1824L50.4586 21.7919L46.5809 38.8791L46.6232 39.0182L51.509 31.1767L53.2233 34.455L60.5798 33.3595L60.5799 33.3596L59.4954 40.7904L62.7402 42.5217L50.1315 50.5352L51.7685 55.9091L39.7685 52.6564L27.7685 55.9091L29.3935 50.5745L16.7269 42.5522L20.0289 40.7904L18.9443 33.3595L26.3009 34.455L28.0456 31.1187L32.552 38.3766L28.769 21.6973L33.6278 23.1824L39.7685 15Z" fill="#FF0000" />
+    <path d="M39.7686 40.7578L39.7687 65.0002" stroke="#FF0000" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+  </g>
 </svg>

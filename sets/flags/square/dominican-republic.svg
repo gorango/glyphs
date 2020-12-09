@@ -1,0 +1,22 @@
+<svg viewBox="0 0 120 80" fill="none">
+  <rect x="20" width="34" height="31" fill="#002D62" />
+  <rect width="34" height="31" transform="matrix(-1 0 0 1 100 49)" fill="#002D62" />
+  <rect x="66" width="34" height="31" fill="#CE1126" />
+  <rect width="34" height="31" transform="matrix(-1 0 0 1 54 49)" fill="#CE1126" />
+  <rect y="31" width="120" height="18" fill="white" />
+  <rect x="69" width="80" height="18" transform="rotate(90 69 0)" fill="white" />
+  <path d="M69 40C69 44.9707 64.9707 49 60 49C55.0295 49 51 44.9707 51 40" stroke="#007926" stroke-width="2" />
+  <path d="M67.5 36.0232C65.8877 33.5982 63.1305 32 60 32C56.8696 32 54.1125 33.5982 52.5001 36.0232" stroke="#0052B4" />
+  <path d="M54.9375 35.5V41.1251C54.9375 43.921 57.2041 46.1876 60 46.1876C62.7959 46.1876 65.0625 43.921 65.0625 41.1251V35.5H54.9375Z" fill="#D80027" />
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="54" y="35" width="12" height="12">
+    <path d="M54.9375 35.5V41.1251C54.9375 43.921 57.2041 46.1876 60 46.1876C62.7959 46.1876 65.0625 43.921 65.0625 41.1251V35.5H54.9375Z" fill="#D80027" />
+  </mask>
+  <g mask="url(#mask0)">
+    <rect x="52" y="35" width="7" height="5" fill="#002D62" />
+    <rect width="8" height="6" transform="matrix(-1 0 0 1 69 41)" fill="#002D62" />
+    <rect x="61" y="35" width="8" height="5" fill="#CE1126" />
+    <rect width="7" height="6" transform="matrix(-1 0 0 1 59 41)" fill="#CE1126" />
+    <rect x="54" y="39.5" width="12" height="2" fill="white" />
+    <rect x="61" y="35" width="12" height="2" transform="rotate(90 61 35)" fill="white" />
+  </g>
+</svg>

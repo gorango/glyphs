@@ -1,0 +1,12 @@
+<svg viewBox="0 0 120 80" fill="none">
+  <rect width="120" height="80" fill="#CE1126" />
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="80">
+    <path d="M120 0H0L60 80L120 0Z" fill="white" />
+  </mask>
+  <g mask="url(#mask0)">
+    <rect y="49" width="120" height="31" fill="white" />
+    <rect y="31" width="120" height="18" fill="#0072C6" />
+    <rect width="120" height="31" fill="black" />
+  </g>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M83 31H39L47.3998 27.3558L41.9474 20L51.0439 21.0439L50 11.9474L57.3558 17.3998L61 9L64.6442 17.3998L72 11.9474L70.9561 21.0439L80.0526 20L74.6002 27.3558L83 31Z" fill="#FCD116" />
+</svg>

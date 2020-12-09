@@ -1,0 +1,11 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <rect width="80" height="80" rx="40" fill="white" />
+  </mask>
+  <g mask="url(#mask0)">
+    <rect width="80" height="80" fill="white" />
+    <rect width="80" height="14" fill="#002B7F" />
+    <rect y="66" width="80" height="14" fill="#002B7F" />
+    <rect y="26" width="80" height="28" fill="#CE1126" />
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <rect width="80" height="80" rx="40" fill="white" />
+  </mask>
+  <g mask="url(#mask0)">
+    <rect width="80" height="80" fill="white" />
+    <rect width="80" height="16" fill="#002A8F" />
+    <rect y="64" width="80" height="16" fill="#002A8F" />
+    <rect y="32" width="80" height="16" fill="#002A8F" />
+    <path d="M0 0V80L69 40L0 0Z" fill="#CF142B" />
+    <path d="M21 28L23.6942 36.2918H32.4127L25.3593 41.4164L28.0534 49.7082L21 44.5836L13.9466 49.7082L16.6407 41.4164L9.58732 36.2918H18.3058L21 28Z" fill="white" />
+  </g>
+</svg>
