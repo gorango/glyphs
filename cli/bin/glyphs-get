@@ -17,7 +17,7 @@ if (argv.help) {
   Get details on the icon set config
 
   Usage
-    $ glyphs get [<key>]
+    $ glyphs get [<key|name>]
 
   Options
     --help, -h     Displays this message
@@ -33,14 +33,14 @@ const inquirer = require('inquirer')
 const pkg = require('../package.json')
 
 const conf = new Configstore(pkg.name)
-const { _: [key] } = argv
+const { _: [query] } = argv
 
 ;(async () => {
   const sets = conf.all
 
   console.log()
 
-  if (!key && sets && Object.keys(sets).length) {
+  if (!query && sets && Object.keys(sets).length) {
     const choices = Object.entries(sets)
       .map(([key, { name }]) => ({ value: key, name }))
 
@@ -59,13 +59,13 @@ const { _: [key] } = argv
     console.log(`  ${chalk.cyan`File Key`}:      ${key}`)
     console.log(`  ${chalk.cyan`Access Token`}:  ${setConfig.token}`)
     console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${key}`)
-  } else if (key) {
-    const setConfig = sets[key]
+  } else if (query) {
+    const setConfig = query in sets ? sets[query] : Object.values(sets).find(({ name }) => name.toLowerCase().includes(query.toLowerCase()))
     if (setConfig) {
       console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.name}`)
-      console.log(`  ${chalk.cyan`File Key`}:      ${key}`)
+      console.log(`  ${chalk.cyan`File Key`}:      ${setConfig.key}`)
       console.log(`  ${chalk.cyan`Access Token`}:  ${setConfig.token}`)
-      console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${key}`)
+      console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${setConfig.key}`)
     } else {
       console.log(`  Can't find the icon set with that name or key`)
     }
