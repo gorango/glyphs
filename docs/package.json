@@ -9,6 +9,7 @@
     "start": "nuxt start",
     "export": "nuxt export",
     "serve": "nuxt serve",
+    "ncu": "npx npm-check-updates && yarn",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js"
   },
@@ -23,26 +24,26 @@
     "lodash.debounce": "^4.0.8",
     "lodash.groupby": "^4.6.0",
     "lodash.kebabcase": "^4.1.1",
-    "nuxt": "^2.14.7",
+    "nuxt": "^2.14.11",
     "prism-themes": "^1.5.0",
     "prismjs": "^1.22.0",
     "v-clipboard": "^2.2.3",
     "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^2.0.0",
+    "@nuxtjs/color-mode": "^2.0.2",
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.1",
-    "@nuxtjs/pwa": "^3.2.2",
+    "@nuxtjs/pwa": "^3.3.2",
     "@nuxtjs/svg": "^0.1.12",
-    "@nuxtjs/tailwindcss": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^3.3.3",
     "@tailwindcss/typography": "0.2.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.14.0",
+    "eslint": "^7.15.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "nuxt-ackee": "^2.0.0",
     "pug": "^3.0.0",
-    "pug-plain-loader": "^1.0.0",
+    "pug-plain-loader": "^1.1.0",
     "svgson": "^4.1.0"
   }
 }
