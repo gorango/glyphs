@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.1.8...@glyphs/rounded-v0.1.9) (2020-12-10)
+
+
+### Features
+
+* **rounded:** add 4 new icons ([d191c11](https://github.com/gorango/glyphs/commit/d191c114a028fc151cefc256e333d638765b02bc))
+* **rounded:** sync w cli-v0.0.5; 6 new icons; 1 new set ([8fb482d](https://github.com/gorango/glyphs/commit/8fb482d10a0fe870675bba7f1d37983d9f47e365))
+* **sets:** upgrade files to use variants ([41bc57e](https://github.com/gorango/glyphs/commit/41bc57e9674ecd83e701653330dc1c293a821618)), closes [#10](https://github.com/gorango/glyphs/issues/10)
+
+
+### Bug Fixes
+
+* **rounded:** remove mono variants ([f4b5ca4](https://github.com/gorango/glyphs/commit/f4b5ca4f300dfad1d7ab50633aad34462eba1561))
+
 ### [0.1.8](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.1.7...@glyphs/rounded-v0.1.8) (2020-11-26)
 
 

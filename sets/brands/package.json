@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/brands",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Brands Icons",
   "homepage": "https://glyphs.fyi/dir?set=brands",
   "repository": {
@@ -8,7 +8,17 @@
     "url": "git+https://github.com/gorango/glyphs.git"
   },
   "author": "Goran Spasojevic <goran@glyphs.fyi> (https://github.com/gorango)",
-  "keywords": ["svg", "icons", "icon set", "svg paths", "web icons", "path icons", "brands", "brands icons", "color icons"],
+  "keywords": [
+    "svg",
+    "icons",
+    "icon set",
+    "svg paths",
+    "web icons",
+    "path icons",
+    "brands",
+    "brands icons",
+    "color icons"
+  ],
   "main": "components.json",
   "unpkg": "components.json",
   "license": "MIT",
