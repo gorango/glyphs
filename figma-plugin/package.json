@@ -1,5 +1,6 @@
 {
   "name": "glyphs-utils",
+  "version": "0.0.1",
   "description": "Utility plugin for the Glyphs icon set design system",
   "sideEffects": false,
   "scripts": {
