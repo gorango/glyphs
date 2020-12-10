@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { post } from '../utils/figma'
 
 Vue.use(Vuex)
 
@@ -21,7 +20,7 @@ export default new Vuex.Store({
 
   actions: {
     post (store, { type, value }) {
-      post(type, value)
+      parent.postMessage({ pluginMessage: { type, value } }, '*')
     }
   }
 })

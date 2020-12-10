@@ -41,14 +41,11 @@ export default {
       type: 'frameChildren',
       label: 'Frame selected children'
     }, {
-      type: 'variantsComponentSet',
-      label: 'Create component set from variants'
+      type: 'unionSelected',
+      label: 'Union selected layers'
     }, {
       type: 'newComponentSet',
       label: 'Create new component set from main'
-    }, {
-      type: 'unionSelected',
-      label: 'Union selected layers'
     }, {
       type: 'centerChildren',
       label: 'Align children to parents’ centers'

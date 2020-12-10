@@ -70,63 +70,13 @@ function frameChildren (name = 'duo') {
   figma.notify(`Duplicated ${newNodes.length} icons to paths.`, {timeout: 4000})
 }
 
-function variantsComponentSet (selectionChunk) {
-  const selection: any = selectionChunk || figma.currentPage.selection
-
-  const size = 3
-  if (selection.length > size) {
-    const sortedNodes = selection
-      .map((node: any) => {
-        let [[_, __, x], [___, ____, y]] = node.absoluteTransform
-        return [
-          node,
-          (x - (node.width / 2)),
-          (y - (node.height / 2))
-        ]
-      })
-      .sort(([an, ax, ay], [bn, bx, by]) => {
-        const ydiff = ay - by
-        const xdiff = ax - bx
-        if (Math.abs(xdiff) > 40) return xdiff
-        if (Math.abs(ydiff) > 40) return ydiff
-        return 0
-      })
-      .map(([node]) => node)
-    const chunks = Array(sortedNodes.length / size).fill(null).map((_, i) => i * size).map(start => sortedNodes.slice(start, start + size))
-    chunks.forEach(variantsComponentSet)
-    return
-  }
-
-  const firstComponent = [...selection].sort(({ y: y1 }, { y: y2 }) => y1 - y2)[0]
-  console.log(firstComponent)
-  const componentName: any = firstComponent.children[0].name
-  const position = { x: firstComponent.x, y: firstComponent.y }
-  const parent = firstComponent.parent
-  const insertIndex = parent.children.findIndex(({ id }) => id === firstComponent.id)
-  const newComponents = []
-
-  selection.forEach((node, i) => {
-    const component = figma.createComponent()
-    component.resizeWithoutConstraints(node.width, node.height)
-    component.x = firstComponent.x
-    component.y = firstComponent.y + (i * 100)
-    component.name = node.name.split('/')[0].trim()
-    component.appendChild(node)
-    // node.parent.insertChild(0, component)
-    newComponents.push(component)
+function unionSelected () {
+  const selectedNodes: any = figma.currentPage.selection
+  selectedNodes.forEach((node: any) => {
+    console.log(node)
+    const union = figma.union([node], node.parent, node.parent.children.findIndex(({ id }) => id === node.id))
+    figma.currentPage.selection = [union]
   })
-
-  // figma.currentPage.selection = newComponents
-  const componentSetNode: any = figma.combineAsVariants(newComponents, parent, insertIndex)
-  componentSetNode.name = componentName
-  componentSetNode.x = position.x
-  componentSetNode.y = position.y
-  // componentSetNode.layoutMode = 'VERTICAL'
-  // componentSetNode.layoutMode = 'VERTICAL'
-  // componentSetNode.itemSpacing = 20
-  figma.currentPage.selection = componentSetNode.children
-  centerChildren()
-  sortSelected()
 }
 
 function newComponentSet () {
@@ -151,31 +101,6 @@ function newComponentSet () {
   figma.currentPage.selection = componentSet.children
   centerChildren()
   figma.currentPage.selection = [componentSet]
-}
-
-function unionSelected () {
-  const selectedNodes: any = figma.currentPage.selection
-  selectedNodes.forEach((node: any) => {
-    const parent = node.parent
-    const insertIndex = parent.children.findIndex(({ id }) => id === node.id)
-    // figma.union([node], node.parent, node.parent.children.findIndex(({ id }) => id === node.id))
-    const frame: FrameNode = figma.createFrame()
-    frame.resizeWithoutConstraints(node.width, node.height)
-    frame.backgrounds = []
-    frame.x = node.x
-    frame.y = node.y
-    frame.appendChild(node)
-    // node.constraints = 'SCALE'
-    console.log(node.constraints)
-    node.constraints = {
-      horizontal: 'SCALE',
-      vertical: 'SCALE'
-    }
-    node.x = 0
-    node.y = 0
-    // console.log(parent.name)
-    parent.insertChild(insertIndex, frame)
-  })
 }
 
 function centerChildren () {
@@ -236,9 +161,8 @@ export default {
   toggleVisibility,
   flattenChildren,
   frameChildren,
-  variantsComponentSet,
-  newComponentSet,
   unionSelected,
+  newComponentSet,
   centerChildren,
   sortSelected,
 }

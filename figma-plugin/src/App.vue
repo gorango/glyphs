@@ -14,7 +14,6 @@ import Search from './components/Search'
 import Target from './components/Target'
 import Actions from './components/Actions'
 import Arrange from './components/Arrange'
-import { post } from './utils/figma'
 
 export default {
   components: {
@@ -28,7 +27,7 @@ export default {
     window.addEventListener('keyup', event => {
       switch (event.key) {
         case 'Escape':
-          post('cancel')
+          parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
           break;
       }
     })
