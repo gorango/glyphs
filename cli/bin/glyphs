@@ -19,14 +19,7 @@ const commands = [
 let cmd = process.argv[2]
 
 if (cmd && cmd.length === 1) {
-  const mapToCmd = {
-    a: 'add',
-    r: 'remove',
-    g: 'get',
-    l: 'list',
-    s: 'sync',
-    h: 'help'
-  }
+  const mapToCmd = commands.reduce((obj, command) => ({ [command[0]]: command }), {})
   cmd = mapToCmd[cmd]
 }
 

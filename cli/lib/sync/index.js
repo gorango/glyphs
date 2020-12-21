@@ -215,4 +215,6 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
 
   progress.update(100, { stage: 'Done' })
   progress.stop()
+
+  return Promise.resolve()
 }

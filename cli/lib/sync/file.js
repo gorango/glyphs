@@ -10,8 +10,9 @@ module.exports = {
 }
 
 async function createDir (dirName) {
-  if (!fs.existsSync(dirName)) {
-    return util.promisify(fs.mkdir)(path.join(process.cwd(), dirName))
+  const dirPath = path.join(process.cwd(), dirName)
+  if (!fs.existsSync(dirPath)) {
+    return util.promisify(fs.mkdir)(dirPath)
   }
 }
 
