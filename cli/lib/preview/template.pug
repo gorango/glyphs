@@ -1,0 +1,74 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0')
+  title Icons Preview
+  link(href='https://unpkg.com/tailwindcss/dist/tailwind.min.css', rel='stylesheet')
+  style.
+    .icon { inline-display: block; width: 1em; height: 1em; contain: strict; box-sizing: content-box; }
+    .icon svg { display: block; width: 100%; height: 100%; }
+    .icon:not(.active) { display: none; }
+
+body
+  main
+    nav.sticky.top-0.z-20.bg-white.w-full.p-2.space-x-3.flex.flex-no-wrap
+      .flex-1
+      .flex-1.flex.justify-center.space-x-3
+        each variant in variants
+          button.flex.rounded-lg.items-center.p-1.bg-grey-100.border-2.border-gray-300(
+            onmouseenter=`handleMouseEnter('${variant}')`,
+            onmouseleave='handleMouseLeave()'
+          )
+            - var svg = components.find(({ name }) => name === first).variants[variant]
+            div.icon.text-3xl.active !{svg}
+      .flex-1
+    section
+      each icons, category in categories
+        div.my-6
+          div.sticky.z-10.bg-white.w-full.p-2(style='top: 58px')
+            h5.text-lg.text-center.capitalize= category
+          div.flex.flex-wrap.justify-center.mt-2.mb-6.py-4
+            each name in icons
+              div.flex.items-center.flex-col.rounded-lg.border-2.border-gray-200.w-24.m-3.pb-2
+                div.w-full.p-1.text-center
+                  .truncate.text-xs.text-gray-500(title=name)= name
+                - var variants = components.find(({ name: n }) => n === name).variants
+                each svg, variant in variants
+                  div.icon.text-5xl(class=variant) !{svg}
+
+  script.
+    const variants = '#{variants}'.split(',')
+    let variant = variants[0]
+    let interval
+
+    if (variants[1]) {
+      startInterval()
+    }
+
+    function startInterval () {
+      interval = setInterval(cycleVariants, 500)
+    }
+
+    function stopInterval () {
+      clearInterval(interval)
+    }
+
+    cycleVariants()
+    function cycleVariants () {
+      document.querySelectorAll('.icon:not(.text-3xl)').forEach(el => el.classList.remove('active'))
+      document.querySelectorAll(`.icon.${variant}`).forEach(el => el.classList.add('active'))
+      const curr = variants.indexOf(variant)
+      const next = curr === variants.length - 1 ? 0 : curr + 1
+      variant = variants[next]
+    }
+
+    function handleMouseEnter (v) {
+      stopInterval()
+      variant = v
+      document.querySelectorAll('.icon:not(.text-3xl)').forEach(el => el.classList.remove('active'))
+      document.querySelectorAll(`.icon.${variant}`).forEach(el => el.classList.add('active'))
+    }
+
+    function handleMouseLeave () {
+      startInterval()
+    }

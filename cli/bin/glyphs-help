@@ -26,5 +26,6 @@ console.log(`
     get, g        Get details on the icon set config
     list, l       List configured icon sets
     sync, s       Sync an icon set to the current directory
+    preview, p    Preview a local icon set in the browser
     help, h       Display this message
 `)

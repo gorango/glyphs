@@ -31,6 +31,7 @@
     "minimist": "^1.2.5",
     "pretty": "^2.0.0",
     "promise-request-retry": "^1.0.2",
+    "pug": "^3.0.0",
     "svgson": "^4.1.0",
     "update-notifier": "^5.0.1"
   },

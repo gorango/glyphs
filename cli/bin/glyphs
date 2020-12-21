@@ -13,6 +13,7 @@ const commands = [
   'get',
   'list',
   'sync',
+  'preview',
   'help'
 ]
 

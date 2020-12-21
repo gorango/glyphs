@@ -1,0 +1,68 @@
+#!/usr/bin/env node
+
+const parseArgs = require('minimist')
+const chalk = require('chalk')
+
+const args = process.argv.slice(2)
+const argv = parseArgs(args, {
+  alias: {
+    h: 'help'
+  }
+})
+
+if (argv.help) {
+  console.log(`
+  Description
+  Preview a local icon set in the browser. Options that are not supplied as arguments will be prompted.
+
+  Usage
+    $ glyphs preview [<data-dir>]
+
+  Options
+    --help, -h     Displays this message
+  `)
+  process.exit()
+}
+
+const fs = require('fs')
+const path = require('path')
+const Configstore = require('configstore')
+const inquirer = require('inquirer')
+
+const preview = require('../lib/preview')
+const pkg = require('../package.json')
+
+const conf = new Configstore(pkg.name)
+const { _: [data] } = argv
+
+;(async () => {
+  const configs = conf.all
+  const hasConfig = Object.keys(configs).length
+
+  if (!data) {
+    const dataDir = path.join(process.cwd(), 'data')
+    if (fs.existsSync(dataDir)) {
+      await preview(dataDir)
+      process.exit()
+    } else {
+      printError()
+      process.exit(1)
+    }
+  }
+
+  const dataDir = path.join(process.cwd(), data)
+  if (fs.existsSync(dataDir)) {
+    await preview(dataDir)
+    process.exit()
+  } else {
+    printError(data)
+    process.exit(1)
+  }
+})()
+
+function printError (data='data') {
+  console.log()
+  console.log(`  No "${data}" folder found in current directory`)
+  console.log(`  Provide the "data" folder location as an argument to "glyphs preview"`)
+  console.log()
+}
