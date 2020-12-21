@@ -33,7 +33,7 @@ if (argv.help) {
 
 const Configstore = require('configstore')
 const Figma = require('figma-api')
-const camelCase = require('lodash.camelcase')
+const { camelCase } = require('lodash')
 const inquirer = require('inquirer')
 const pkg = require('../package.json')
 
