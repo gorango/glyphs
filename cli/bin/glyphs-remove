@@ -22,7 +22,7 @@ if (argv.help) {
   Options
     --help, -h    Displays this message
   `)
-  process.exit(0)
+  process.exit()
 }
 
 const Configstore = require('configstore')
@@ -34,15 +34,16 @@ const conf = new Configstore(pkg.name)
 const { _: [key] } = argv
 
 ;(async () => {
-  const sets = conf.all
+  const configs = conf.all
+  const hasConfig = Object.keys(configs).length
 
   console.log()
 
-  if (!sets) {
-    console.log(`  No icons sets have been configured`)
+  if (!hasConfig) {
+    console.log(`  No icons files have been configured`)
   } else {
     if (!key) {
-      const choices = Object.entries(sets)
+      const choices = Object.entries(configs)
         .map(([key, { name }]) => ({ value: key, name }))
 
       const questions = [{
@@ -54,11 +55,11 @@ const { _: [key] } = argv
 
       const answers = await inquirer.prompt(questions)
       console.log()
-      remove(sets[answers.name])
+      remove(configs[answers.name])
     } else {
       const exists = !!conf.get(key)
       if (exists) {
-        remove(sets[key])
+        remove(configs[key])
       } else {
         console.log(`  No configuration with the key "${key}"`)
       }

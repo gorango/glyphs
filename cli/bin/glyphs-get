@@ -22,7 +22,7 @@ if (argv.help) {
   Options
     --help, -h     Displays this message
   `)
-  process.exit(0)
+  process.exit()
 }
 
 const Configstore = require('configstore')
@@ -36,31 +36,44 @@ const conf = new Configstore(pkg.name)
 const { _: [query] } = argv
 
 ;(async () => {
-  const sets = conf.all
+  const configs = conf.all
+  const hasConfig = Object.keys(configs).length
 
   console.log()
 
-  if (!query && sets && Object.keys(sets).length) {
-    const choices = Object.entries(sets)
-      .map(([key, { name }]) => ({ value: key, name }))
-
-    const questions = [{
-      type: 'list',
-      name: 'name',
-      message: 'Select an icon set to print config',
-      choices,
-    }]
-
-    const answers = await inquirer.prompt(questions)
+  if (!hasConfig) {
+    console.log('  No icon files have been configured')
+    console.log('  Run "glyphs add" to configure a new icon file')
     console.log()
-    const key = answers.name
-    const setConfig = sets[key]
+    process.exit(1)
+  }
+
+  if (!query && hasConfig) {
+    let key
+    const choices = Object.entries(configs).map(([key, { name }]) => ({ value: key, name }))
+
+    if (Object.keys(configs).length === 1) {
+      key = choices[0].value
+    } else {
+      const questions = [{
+        type: 'list',
+        name: 'name',
+        message: 'Select an icon set to print config',
+        choices,
+      }]
+
+      const answers = await inquirer.prompt(questions)
+      console.log()
+      key = answers.name
+    }
+
+    const setConfig = configs[key]
     console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.name}`)
     console.log(`  ${chalk.cyan`File Key`}:      ${key}`)
     console.log(`  ${chalk.cyan`Access Token`}:  ${setConfig.token}`)
     console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${key}`)
   } else if (query) {
-    const setConfig = query in sets ? sets[query] : Object.values(sets).find(({ name }) => name.toLowerCase().includes(query.toLowerCase()))
+    const setConfig = query in configs ? configs[query] : Object.values(configs).find(({ name }) => name.toLowerCase().includes(query.toLowerCase()))
     if (setConfig) {
       console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.name}`)
       console.log(`  ${chalk.cyan`File Key`}:      ${setConfig.key}`)
@@ -69,10 +82,7 @@ const { _: [query] } = argv
     } else {
       console.log(`  Can't find the icon set with that name or key`)
     }
-  } else {
-    console.log('  No icon sets have been configured')
-    console.log('  Run "glyphs add" to configure a new icon set')
   }
   console.log()
-  process.exit(0)
+  process.exit()
 })();

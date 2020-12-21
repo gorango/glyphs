@@ -37,7 +37,7 @@ if (cmd) {
   else {
     if (cmd === '-v' || cmd === '--version') {
       console.log(require('../package.json').version)
-      process.exit(0)
+      process.exit()
     }
 
     const { warn } = require('../lib/utils/logger')

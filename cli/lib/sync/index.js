@@ -2,6 +2,8 @@ const Configstore = require('configstore')
 const Figma = require('figma-api')
 const { camelCase } = require('lodash')
 const rp = require('promise-request-retry')
+const chalk = require('chalk')
+const Progress = require('cli-progress')
 
 const { testName } = require('./name')
 const { findOne, findAll } = require('./node')
@@ -9,19 +11,29 @@ const { processSvg } = require('./svg')
 const { createDir, saveSVG, saveJSON } = require('./file')
 
 const conf = new Configstore('@glyphs/cli')
+const progress = new Progress.SingleBar({
+  format: '|' + chalk.cyan('{bar}') + '| {percentage}% || {stage}',
+  barCompleteChar: '\u2588',
+  barIncompleteChar: '\u2591',
+  hideCursor: true
+}, Progress.Presets.shades_classic)
 
-module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir }, progress) {
-  const set = conf.get(key)
-  const personalAccessToken = set.token
+module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) {
+  if (!key || !set) {
+    throw new Error('The file key and set name are required')
+  }
+
+  const fileConf = conf.get(key)
+  const personalAccessToken = fileConf.token
   const api = new Figma.Api({ personalAccessToken })
 
-  if (!set) {
-    console.log(`  Icon set "${key}" not found`)
+  if (!fileConf) {
+    console.log(`  File "${key}" not found`)
     process.exit(1)
   }
 
   let progressVal = 0
-  progress.start(100, 0, { stage: 'Starting up...' })
+  progress.start(100, 0)
   setInterval(() => {
     progressVal = progressVal + 1
     progress.update(progressVal)
@@ -32,20 +44,29 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
 
   progress.update(progressVal, { stage: 'Downloading Figma file...' })
 
-  const previousFile = conf.get(`${key}.file.curr`)
-  conf.set(`${key}.file.prev`, previousFile)
-  const currentFile = await api.getFile(key)
-  conf.set(`${key}.file.curr`, currentFile)
+  const file = await api.getFile(key)
+  const sets = file.document.children.filter(({ name }) => name.startsWith('->')).map(({ name }) => name.split(' ')[1])
+  conf.set(`${key}.sets`, sets)
+  conf.set(`${key}.name`, file.name)
+
+  if (!sets.includes(set)) {
+    console.log()
+    console.log(`  Can't find the icon set "${set}"`)
+    console.log()
+    process.exit(1)
+  }
 
   progressVal = Math.max(progressVal, 6)
   progress.update(progressVal, { stage: 'Parsing file...' })
 
-  const page = currentFile.document.children.find(({ name }) => name.toLowerCase() === 'icons')
+  const page = file.document.children.find(({ name }) => name.toLowerCase().includes(set.toLowerCase()))
 
-  const components = Object.entries(set.file.curr.components)
+  const components = Object.entries(file.components)
+    .filter(([id, { name }]) => testName(name))
+    .filter(([id, { name }]) => findOne(page, ({ name: n, id: i }) => n === name && i === id))
     .reduce((arr, [id, { name, description }]) => [
       ...arr,
-      ...(!testName(name) ? [] : [{
+      {
         name: camelCase(name),
         id,
         terms: {
@@ -77,11 +98,14 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
             console.log(name)
           }
         })()
-      }])
+      }
     ], [])
     .map((component, i, arr) => {
       const node = findOne(page, ({ id }) => id === component.id)
-      const inherited = findAll(node, ({ name, type }) => type === 'INSTANCE' && /^_[a-zA-Z]/.test(name))
+      if (!node) {
+        console.log(component)
+      }
+      const inherited = node && findAll(node, ({ name, type }) => type === 'INSTANCE' && /^_[a-zA-Z]/.test(name))
       if (inherited.length) {
         const terms = inherited.reduce((obj, component) => ({
           ...obj,
@@ -101,7 +125,7 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
 
   const meta = {
     key,
-    name: set.name,
+    name: set,
     unique: components.length,
     total: components.reduce((sum, { variants }) => sum + Object.keys(variants).length, 0),
     variants: [...new Set(components.reduce((arr, { variants }) => [...arr, ...Object.keys(variants)], []))],
@@ -118,12 +142,12 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
   }
 
   await saveJSON(`${dataDir}/meta`, meta)
+  meta.variants.forEach(variant => createDir(`${svgDir}/${variant}`))
 
-  const figmaLimit = 400
-  const chunkSize = figmaLimit / meta.variants.length
-  const chunks = Array(Math.ceil(components.length / chunkSize)).fill().map((_, i) => i * chunkSize).map(i => components.slice(i, i + chunkSize))
+  progressVal = Math.max(progressVal, 10)
+  progress.update(progressVal, { stage: `Setting up ${meta.total} icons...` })
 
-  const iconsConfig = (findOne(page, ({ name }) => name === 'Config') || {}).children
+  const iconsConfig = (findOne(page, ({ name, type }) => type === 'FRAME' && name === 'Config') || {}).children
   let svgConfig
   if (iconsConfig) {
     svgConfig = iconsConfig
@@ -136,11 +160,14 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
       .reduce((obj, config) => ({ ...obj, ...config }), {})
   }
 
-  let downloaded = 0
-  progressVal = Math.max(progressVal, 10)
-  progress.update(progressVal, { stage: `Setting up ${meta.total} icons...` })
+  const figmaLimit = 400
+  const chunkSize = figmaLimit / meta.variants.length
+  const chunks = Array(Math.ceil(components.length / chunkSize)).fill().map((_, i) => {
+    const start = i * chunkSize
+    return components.slice(start, start + chunkSize)
+  })
 
-  meta.variants.forEach(variant => createDir(`${svgDir}/${variant}`))
+  let downloaded = 0
 
   await chunks.reduce((promise, targets, i) => {
     return promise.then(async () => {
@@ -157,9 +184,11 @@ module.exports = async function sync ({ key, ignore, svg: svgDir, data: dataDir 
         return Promise.reject(err)
       }
 
-      const svgs = await Promise.all(Object.entries(images).map(([id, uri], i) => {
-        return rp({ uri, retry: 3, delay: 1000 })
-      }))
+      const svgs = await Promise.all(
+        Object.entries(images).map(([id, uri]) =>
+          rp({ uri, retry: 3, delay: 1000 })
+        )
+      )
       await svgs.reduce((promise, svgString, i) => {
         return promise.then(async () => {
           const [id, url] = Object.entries(images)[i]

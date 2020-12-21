@@ -29,7 +29,7 @@ if (argv.help) {
     --replace, -r  Overwrite any existing configuration for <name> or <key>
     --help, -h     Displays this message
   `)
-  process.exit(0)
+  process.exit()
 }
 
 const Configstore = require('configstore')
@@ -42,11 +42,12 @@ const conf = new Configstore(pkg.name)
 let { key, token, replace } = argv
 
 ;(async () => {
-  const sets = conf.all
+  const configs = conf.all
+  const hasConfig = Object.keys(configs).length
 
   if (!key || !token) {
-    if (sets) {
-      const firstSet = Object.values(sets)[0] || {}
+    if (hasConfig) {
+      const firstSet = Object.values(configs)[0] || {}
       token = firstSet.token
     }
 
@@ -80,15 +81,14 @@ let { key, token, replace } = argv
     console.log('  Operation failed')
     console.log('  File key and access token are required to continue')
   } else {
-    if (sets) {
-      const [setEntries] = Object.entries(sets).filter(([name, { key: k }]) => k === key)
+    if (hasConfig) {
+      const [setEntries] = Object.entries(configs).filter(([name, { key: k }]) => k === key)
       const name = setEntries && setEntries[0]
-      // .reduce((found, { key: k }) => found || k === key, false) || false
       if (name && !replace) {
         console.log()
         console.log(`  Configuration with that file key already exists: "${name}"`)
         console.log()
-        process.exit(0)
+        process.exit(1)
       }
     }
 
@@ -98,17 +98,23 @@ let { key, token, replace } = argv
       console.log()
       console.log(' ', error.message)
       console.log()
-      process.exit(0)
+      process.exit(1)
     })
+    const sets = file.document.children.filter(({ name }) => name.startsWith('->')).map(({ name }) => name.split(' ')[1])
 
     conf.set(key, {
       token,
       key,
-      name: file.name
+      name: file.name,
+      sets: sets
     })
-    conf.set(`${key}.file.curr`, file)
     console.log()
-    console.log(`  Successfully configured "${file.name}"`)
+    console.log(`  Successfully configured the "${file.name}" file`)
+    console.log()
+    console.log(`  You can run:`)
+    console.log(`    glyphs sync   - to export a set to your current folder`)
+    console.log(`    glyphs get    - to get the configuration settings for your file`)
+    console.log(`    glyphs remove - to remove the file from your config`)
   }
   console.log()
 })()

@@ -24,23 +24,25 @@ if (argv.help) {
                        Community-maintained
     --help, -h       Displays this message
   `)
-  process.exit(0)
+  process.exit()
 }
 
 const Configstore = require('configstore')
 const pkg = require('../package.json')
 
 const conf = new Configstore(pkg.name)
-const sets = conf.all
+const configs = conf.all
+const hasConfig = Object.keys(configs).length
 
 console.log()
 
-if (!sets || !Object.keys(sets).length) {
-  console.log('  No icon sets have been configured')
-  console.log('  Run "glyphs add" to configure a new icon set')
+if (!hasConfig) {
+  console.log('  No icon files have been configured')
+  console.log('  Run "glyphs add" to configure a new icon file')
 } else {
-  Object.entries(sets).forEach(([key, { name }]) => {
-    const padding = Array(Math.max(0, 14 - name.length)).fill(' ').join('')
+  const max = Object.entries(configs).reduce((len, [key, { name }]) => Math.max(len, name.length), 0)
+  Object.entries(configs).forEach(([key, { name }]) => {
+    const padding = Array(max - name.length).fill(' ').join('')
     console.log(`  ${chalk.cyan`${name}:`}${padding} https://figma.com/file/${key}`)
   })
   console.log()

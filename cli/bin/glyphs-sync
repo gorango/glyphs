@@ -1,19 +1,17 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
-const chalk = require('chalk')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
   alias: {
-    i: 'ignore',
-    c: 'config',
+    S: 'set',
     d: 'data',
     s: 'svg',
     h: 'help'
   },
-  boolean: ['i', 'h'],
-  string: ['c', 'd', 's']
+  boolean: ['h'],
+  string: ['S', 'd', 's']
 })
 
 if (argv.help) {
@@ -22,19 +20,17 @@ if (argv.help) {
   Sync a configured icon set to the current directory.
 
   Usage
-    $ glyphs sync [<key|name> --config <file-path> --data <data-folder> --svg <svg-folder>]
+    $ glyphs sync [<key|name> --set <set> --data <data-folder> --svg <svg-folder>]
 
   Options
-    --ignore, -i   Ignore unchanged icons (improves perf)
-    --config, -c   Path to config file
+    --set, -S      Name of icon set to sync
     --data, -d     Output folder for icon-set data
     --svg, -s      Output folder for SVGs
     --help, -h     Displays this message
   `)
-  process.exit(0)
+  process.exit()
 }
 
-const Progress = require('cli-progress')
 const Configstore = require('configstore')
 const Figma = require('figma-api')
 const camelCase = require('lodash.camelcase')
@@ -42,73 +38,94 @@ const inquirer = require('inquirer')
 const pkg = require('../package.json')
 
 ;(async () => {
-  const progress = new Progress.SingleBar({
-    format: '|' + chalk.cyan('{bar}') + '| {percentage}% || {stage}',
-    barCompleteChar: '\u2588',
-    barIncompleteChar: '\u2591',
-    hideCursor: true
-  }, Progress.Presets.shades_classic)
-
+  console.log()
   const conf = new Configstore(pkg.name)
-  const sets = conf.all
-  const { _: [query], config } = argv
+  const configs = conf.all
+  const hasConfig = Object.keys(configs).length
+  let { _: [query], set } = argv
   let key
 
-  // If the key wasn't provided, promps the user for selection or input
-  if (!query) {
-    if (sets && Object.keys(sets).length) {
-      if (Object.keys(sets).length > 1) {
-        const choices = Object.entries(sets)
-          .map(([key, { name }]) => ({ value: key, name }))
-        const questions = [{
-          type: 'list',
-          name: 'name',
-          message: 'Select the icon set to sync',
-          choices,
-        }]
-
-        console.log()
-        const answers = await inquirer.prompt(questions)
-        console.log()
-        key = answers.name
-      } else {
-        console.log()
-        key = Object.keys(sets)[0]
-        const set = sets[key]
-        console.log(`  Syncing "${set.name}" set to the current folder`)
-        console.log()
-      }
-    }
-  } else {
-    const setConfig = query in sets ? sets[query] : Object.values(sets).find(({ name }) => name.toLowerCase().includes(query.toLowerCase()))
-    key = setConfig.key
+  if (!hasConfig) {
     console.log()
-    console.log(`  Syncing "${setConfig.name}" set to the current folder`)
+    console.log(`  You haven't configured any files to sync`)
+    console.log(`  Run "glyphs sync" or "glyphs help" to get started`)
     console.log()
+    process.exit(1)
   }
 
-  const mergedArgs = {
-    ignore: false,
+  if (query) {
+    const fileConf = query in configs
+      ? configs[query]
+      : Object.values(configs).find(({ name }) =>
+        name.toLowerCase().includes(query.toLowerCase()))
+
+    if (fileConf) {
+      key = fileConf.key
+    } else {
+      console.log(`  No file containing "${query}" has been found in your config`)
+      console.log()
+      query = null
+    }
+  }
+
+  if (!query) {
+    if (Object.keys(configs).length > 1) {
+      const choices = Object.entries(configs)
+        .map(([key, { name }]) => ({ value: key, name }))
+      const questions = [{
+        type: 'list',
+        name: 'name',
+        message: 'Select the file to sync',
+        choices,
+      }]
+
+      const answers = await inquirer.prompt(questions)
+      key = answers.name
+    } else {
+      key = Object.keys(configs)[0]
+    }
+  }
+
+  const fileConf = configs[key]
+  const choices = fileConf.sets
+
+  if (!set) {
+    const questions = [{
+      type: 'list',
+      name: 'name',
+      message: `Select the icon set to sync from ${fileConf.name}`,
+      choices,
+    }]
+
+    const answers = await inquirer.prompt(questions)
+    set = answers.name
+    console.log()
+  } else {
+    set = choices.find(s => s.toLowerCase().includes(set.toLowerCase()))
+  }
+
+  const syncArgs = {
     data: 'data',
     svg: 'svg',
+    ...argv,
     key,
-    ...config,
-    ...argv
+    set
   }
 
   const sync = require('../lib/sync')
 
   const run = async () => {
-    await sync(mergedArgs, progress).catch(handleError)
+    await sync(syncArgs).catch(handleError)
     console.log()
-    process.exit(0)
+    process.exit()
   }
 
   run()
 })()
 
 function handleError (err) {
+  console.log
   console.log(err.message)
-  // console.log(err)
+  console.log(err)
   process.exit(1)
 }
