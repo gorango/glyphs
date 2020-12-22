@@ -1,7 +1,6 @@
 export declare class Icon {
   el: HTMLElement;
   private svgContent?;
-  private components;
   /**
    * Specifies the label to use for accessibility. Defaults to the icon name.
    */

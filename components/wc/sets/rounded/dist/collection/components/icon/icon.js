@@ -2,11 +2,10 @@ import { Build, Component, Element, Host, Prop, State, Watch, h } from '@stencil
 import camelCase from 'lodash.camelcase';
 import { getName } from './utils';
 // @ts-ignore
-import * as components from '../../../../../sets/rounded/components.json';
+import components from '../../../../../sets/rounded/components.json';
 import { variants } from '../../../../../sets/rounded/meta.json';
 export class Icon {
   constructor() {
-    this.components = components;
     /**
      * The size of the icon in CSS units
      */
@@ -36,9 +35,8 @@ export class Icon {
       if (this.variant === 'outline' && !this.strokeWidth) {
         this.strokeWidth = 1;
       }
-      const component = this.components[camelCase(this.name)];
-      const icon = component.variants && component.variants[this.variant];
-      const svg = icon && icon.svg;
+      const component = components.find(({ name }) => camelCase(this.name) === name);
+      const svg = component.variants && component.variants[this.variant];
       this.svgContent = svg;
     }
     if (!this.ariaLabel) {
@@ -268,8 +266,7 @@ export class Icon {
     }
   }; }
   static get states() { return {
-    "svgContent": {},
-    "components": {}
+    "svgContent": {}
   }; }
   static get elementRef() { return "el"; }
   static get watchers() { return [{
