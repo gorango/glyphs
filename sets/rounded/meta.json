@@ -4,11 +4,11 @@
   "unique": 654,
   "total": 3270,
   "variants": [
-    "duo",
     "path",
-    "outline",
     "bold",
-    "poly"
+    "poly",
+    "duo",
+    "outline"
   ],
   "categories": {
     "shape": [
