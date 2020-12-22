@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.2.1...@glyphs/rounded-v0.2.2) (2020-12-22)
+
+
+### Bug Fixes
+
+* **rounded:** tachometer variants broken render ([583e5e2](https://github.com/gorango/glyphs/commit/583e5e29a0a55058543055894284ecd5de07ebfe))
+
 ### [0.2.1](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.2.0...@glyphs/rounded-v0.2.1) (2020-12-22)
 
 
