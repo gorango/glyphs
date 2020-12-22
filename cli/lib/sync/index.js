@@ -123,12 +123,28 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
       }
     })
 
+  const setConfig = (() => {
+    const existingConfig = (findOne(page, ({ name, type }) => type === 'FRAME' && name === 'Config') || {}).children
+    return !existingConfig ? null : existingConfig
+      .filter(({ type, name, visibile }) => type === 'INSTANCE' && name.includes('config') && visibile !== false)
+      .map(node => {
+        const key = node.children.find(({ name }) => name === 'key').characters
+        const value = node.children.find(({ name }) => name === 'value').characters
+        return { [camelCase(key)]: value.split(',').map(i => i.toLowerCase().trim()) }
+      })
+      .reduce((obj, config) => ({ ...obj, ...config }), {})
+  })()
+
   const meta = {
     key,
     name: set,
     unique: components.length,
     total: components.reduce((sum, { variants }) => sum + Object.keys(variants).length, 0),
-    variants: [...new Set(components.reduce((arr, { variants }) => [...arr, ...Object.keys(variants)], []))],
+    variants: (() => {
+      return setConfig
+        ? setConfig.variants
+        : [...new Set(components.reduce((arr, { variants }) => [...arr, ...Object.keys(variants)], []))]
+    })(),
     categories: page.children.reduce((obj, frame) => {
       return {
         ...obj,
@@ -146,19 +162,6 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
 
   progressVal = Math.max(progressVal, 10)
   progress.update(progressVal, { stage: `Setting up ${meta.total} icons...` })
-
-  const iconsConfig = (findOne(page, ({ name, type }) => type === 'FRAME' && name === 'Config') || {}).children
-  let svgConfig
-  if (iconsConfig) {
-    svgConfig = iconsConfig
-      .filter(({ type, name, visibile }) => type === 'INSTANCE' && name.includes('config') && visibile !== false)
-      .map(node => {
-        const key = node.children.find(({ name }) => name === 'key').characters
-        const value = node.children.find(({ name }) => name === 'value').characters
-        return { [camelCase(key)]: value.split(',').map(i => i.toLowerCase().trim()) }
-      })
-      .reduce((obj, config) => ({ ...obj, ...config }), {})
-  }
 
   const figmaLimit = 400
   const chunkSize = figmaLimit / meta.variants.length
@@ -193,7 +196,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
         return promise.then(async () => {
           const [id, url] = Object.entries(images)[i]
           const [name, variant] = idMap[id]
-          const svg = await processSvg(svgString, variant, svgConfig)
+          const svg = await processSvg(svgString, variant, setConfig)
 
           saveSVG(name, svgDir, variant, svg)
           components[components.findIndex(({ name: n }) => n === name )].variants[variant] = svg
