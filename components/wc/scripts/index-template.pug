@@ -14,7 +14,7 @@ body
       .flex-1.flex.justify-center.space-x-3
         each variant in variants
           button.flex.items-center.p-1.bg-grey-100.border-2.border-gray-300(
-            onmouseover=`handleMouseOver('${variant}')`
+            onmouseenter=`handleMouseEnter('${variant}')`
           )
             rounded-icon.text-3xl(name=icon, variant=variant)
       .flex-1
@@ -31,11 +31,8 @@ body
                   .truncate.text-xs.text-gray-500(title=name)= name
                 rounded-icon.layout-icon.text-5xl(name=name)
 
-  script(variants=variants).
-    const variants = JSON.parse(document.currentScript.getAttribute('variants'))
-
-    function handleMouseOver (variant) {
-      document.querySelectorAll('rounded-icon.layout-icon').forEach(el => {
-        el.variant = variant
-      })
+  script.
+    function handleMouseEnter (v) {
+      variant = v
+      document.querySelectorAll('rounded-icon.layout-icon').forEach(el => el.variant = variant)
     }

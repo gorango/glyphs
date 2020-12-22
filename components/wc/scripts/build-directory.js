@@ -1,6 +1,6 @@
-const pug = require('pug')
 const fs = require('fs')
 const path = require('path')
+const pug = require('pug')
 
 const { categories, variants } = require('../../../sets/rounded/meta.json')
 
