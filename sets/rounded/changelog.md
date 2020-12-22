@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.2.0...@glyphs/rounded-v0.2.1) (2020-12-22)
+
+
+### Bug Fixes
+
+* **rounded:** toggle flattened variants ([6de48cc](https://github.com/gorango/glyphs/commit/6de48ccb801001670d9691a5a1306a40f67e5bc8))
+* **rounded:** update variants order for display ([04c2e51](https://github.com/gorango/glyphs/commit/04c2e51cd4148ab65c32a9e6e5f491c3cd1b08a6))
+
 ## [0.2.0](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.1.9...@glyphs/rounded-v0.2.0) (2020-12-22)
 
 
