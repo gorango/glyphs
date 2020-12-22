@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.6...@glyphs/flags-v0.0.7) (2020-12-22)
+
+
+### Features
+
+* **flags:** remove circle variant, merge figma file ([8b3ff98](https://github.com/gorango/glyphs/commit/8b3ff9854dd73507b0a0c91a42cc54de4ecd1a24))
+
 ### [0.0.5](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.3...@glyphs/flags-v0.0.5) (2020-12-10)
 
 

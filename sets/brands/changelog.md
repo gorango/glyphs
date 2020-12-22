@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.0.4...@glyphs/brands-v0.0.5) (2020-12-22)
+
+
+### Bug Fixes
+
+* **brands:** sync from new origin; merge figma file ([5fb1799](https://github.com/gorango/glyphs/commit/5fb1799ce7d288cd736b8951d0108f73a0a7a868))
+
 ### [0.0.4](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.3...@glyphs/flags-v0.0.4) (2020-12-10)
 
 
