@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.0.5...@glyphs/cli-v0.1.0) (2020-12-22)
+
+
+### Features
+
+* **cli:** add preview command ([7088c1f](https://github.com/gorango/glyphs/commit/7088c1f43de6d70d851f67136cf6cbc4aa992e6d))
+* **cli!:** update config; parse multiple sets in file ([fa6668d](https://github.com/gorango/glyphs/commit/fa6668dabc29732ed7eb8e6170ff8fbe898b7a91))
+
+
+### Bug Fixes
+
+* **cli:** minor refactor; ensure correct relative dir ([bb7435c](https://github.com/gorango/glyphs/commit/bb7435c59216809dd0f996199dc42ca3dfb2ad9e))
+* **cli:** remove unused ([e35747b](https://github.com/gorango/glyphs/commit/e35747b2f4cdcdd179c654fe73d5e19eeac065f8))
+
 ### [0.0.5](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.0.4...@glyphs/cli-v0.0.5) (2020-12-09)
 
 
