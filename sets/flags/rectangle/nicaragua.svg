@@ -1,6 +1,6 @@
 <svg viewBox="0 0 120 80" fill="none">
   <path d="M120 0H0V79.8423H120V0Z" fill="#338AF3" />
-  <path d="M120 25.9492H0V53.8946H120V25.9492Z" fill="#F0F0F0" />
+  <path d="M120 25.9493H0V53.8948H120V25.9493Z" fill="#F0F0F0" />
   <circle cx="60" cy="40" r="12" stroke="#FFDA44" stroke-width="3" />
   <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="52" y="30" width="16" height="15">
     <path d="M60 30L68 45H52L60 30Z" fill="#FFDA44" />

@@ -1,6 +1,6 @@
 <svg viewBox="0 0 80 80" fill="none">
   <g clip-path="url(#clip0)">
-    <path d="M80 0.078125H0V80.0781L80 0.078125Z" fill="#6DA544" />
+    <path d="M80 0.0780029H0V80.078L80 0.0780029Z" fill="#6DA544" />
     <path d="M0 80.0781H80V0.078125L0 80.0781Z" fill="#D80027" />
     <path d="M-20 80.0781L100 0.078125" stroke="#FFDA44" stroke-width="32" />
     <path d="M-20 80.0781L100 0.078125" stroke="black" stroke-width="24" />

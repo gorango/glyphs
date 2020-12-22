@@ -1,12 +1,11 @@
 {
-  "key": "VyB7exNgbMB7EmOwAFF9jZ",
-  "name": "Flag Glyphs",
+  "key": "2TsY9yqFso1zrvF8LNcVE7",
+  "name": "Flags",
   "unique": 23,
-  "total": 69,
+  "total": 46,
   "variants": [
     "rectangle",
-    "square",
-    "circle"
+    "square"
   ],
   "categories": {
     "northAmerica": [
