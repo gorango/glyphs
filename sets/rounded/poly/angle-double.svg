@@ -1,4 +1,4 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M27.9994 40.1836L38.4084 29.7746C39.2871 28.8959 40.7117 28.8959 41.5904 29.7746L51.9994 40.1836" stroke="#D33131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M27.9994 52.1836L38.4084 41.7746C39.2871 40.8959 40.7117 40.8959 41.5904 41.7746L51.9994 52.1836" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 40.1836L38.409 29.7746C39.2877 28.8959 40.7123 28.8959 41.591 29.7746L52 40.1836" stroke="#D33131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 52.1836L38.409 41.7746C39.2877 40.8959 40.7123 40.8959 41.591 41.7746L52 52.1836" stroke="#FFC200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

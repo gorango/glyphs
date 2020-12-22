@@ -1,6 +1,6 @@
 <svg viewBox="0 0 80 80" fill="none">
   <path d="M22 24C22 22.8954 21.1046 22 20 22C18.8954 22 18 22.8954 18 24L22 24ZM18 65C18 66.1046 18.8954 67 20 67C21.1046 67 22 66.1046 22 65H18ZM18 24L18 65H22L22 24L18 24Z" fill="currentColor" />
-  <path d="M25.818 24L14.182 24C13.0078 24 12.4197 22.5803 13.25 21.75L18.5858 16.4142C19.3668 15.6332 20.6332 15.6332 21.4142 16.4142L26.75 21.75C27.5803 22.5803 26.9923 24 25.818 24Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="37" y="16" width="20" height="16" rx="2" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" />
-  <rect x="37" y="40" width="32" height="24" rx="2" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" />
+  <path d="M25.818 24L14.182 24C13.0078 24 12.4197 22.5803 13.25 21.75L18.5858 16.4142C19.3668 15.6332 20.6332 15.6332 21.4142 16.4142L26.75 21.75C27.5803 22.5803 26.9923 24 25.818 24Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="37" y="16" width="20" height="16" rx="2" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+  <rect x="37" y="40" width="32" height="24" rx="2" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
 </svg>

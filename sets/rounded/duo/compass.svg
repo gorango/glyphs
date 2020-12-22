@@ -1,4 +1,4 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <circle cx="40" cy="40" r="28" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M39.0715 22.3212C39.4068 21.483 40.5932 21.483 40.9285 22.3212L47.8514 39.6286C47.9468 39.867 47.9468 40.133 47.8514 40.3714L40.9285 57.6788C40.5932 58.517 39.4068 58.517 39.0715 57.6788L32.1486 40.3714C32.0532 40.133 32.0532 39.867 32.1486 39.6286L39.0715 22.3212Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="40" cy="40" r="28" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M39.0715 22.3212C39.4068 21.483 40.5932 21.483 40.9285 22.3212L47.8514 39.6286C47.9468 39.867 47.9468 40.133 47.8514 40.3714L40.9285 57.6788C40.5932 58.517 39.4068 58.517 39.0715 57.6788L32.1486 40.3714C32.0532 40.133 32.0532 39.867 32.1486 39.6286L39.0715 22.3212Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

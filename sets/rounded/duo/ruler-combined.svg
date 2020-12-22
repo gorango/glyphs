@@ -1,12 +1,12 @@
 <svg viewBox="0 0 80 80" fill="none">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M14 12C12.8954 12 12 12.8954 12 14V66C12 66.5523 12.2239 67.0523 12.5858 67.4142L36 44V14C36 12.8954 35.1046 12 34 12H14Z" fill="currentColor" fill-opacity="0.15" />
   <path d="M12.5858 67.4142L11.1716 68.8284C11.5466 69.2035 12.0553 69.4142 12.5858 69.4142C13.1162 69.4142 13.6249 69.2035 14 68.8284L12.5858 67.4142ZM36 44L37.4142 45.4142C37.7893 45.0391 38 44.5304 38 44H36ZM14 14V14V10C11.7909 10 10 11.7909 10 14H14ZM14 66V14H10V66H14ZM14 66L14 66H10C10 67.104 10.4499 68.1068 11.1716 68.8284L14 66ZM34.5858 42.5858L11.1716 66L14 68.8284L37.4142 45.4142L34.5858 42.5858ZM34 14V44H38V14H34ZM34 14H38C38 11.7909 36.2091 10 34 10V14ZM14 14H34V10H14V14Z" fill="currentColor" />
-  <path d="M28 20L36 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 29L36 29" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 38L36 38" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 20L36 20" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 29L36 29" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 38L36 38" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
   <path fill-rule="evenodd" clip-rule="evenodd" d="M68 66C68 67.1046 67.1046 68 66 68L14 68C13.4477 68 12.9477 67.7761 12.5858 67.4142L36 44L66 44C67.1046 44 68 44.8954 68 46L68 66Z" fill="currentColor" fill-opacity="0.15" />
   <path d="M12.5858 67.4142L11.1716 68.8284C10.7965 68.4534 10.5858 67.9447 10.5858 67.4142C10.5858 66.8838 10.7965 66.3751 11.1716 66L12.5858 67.4142ZM36 44L34.5858 42.5858C34.9609 42.2107 35.4696 42 36 42L36 44ZM66 66L66 66L70 66C70 68.2091 68.2091 70 66 70L66 66ZM14 66L66 66L66 70L14 70L14 66ZM14 66L14 66L14 70C12.896 70 11.8932 69.5501 11.1716 68.8284L14 66ZM37.4142 45.4142L14 68.8284L11.1716 66L34.5858 42.5858L37.4142 45.4142ZM66 46L36 46L36 42L66 42L66 46ZM66 46L66 42C68.2091 42 70 43.7909 70 46L66 46ZM66 66L66 46L70 46L70 66L66 66Z" fill="currentColor" />
-  <path d="M60 52L60 44" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M51 52L51 44" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M42 52L42 44" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M60 52L60 44" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M51 52L51 44" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M42 52L42 44" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

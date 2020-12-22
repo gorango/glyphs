@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
-  "name": "Rounded Glyphs",
-  "unique": 651,
-  "total": 3255,
+  "name": "Rounded",
+  "unique": 654,
+  "total": 3270,
   "variants": [
     "duo",
     "path",
@@ -375,6 +375,7 @@
       "pencil",
       "pen1",
       "pen",
+      "pencilPaintbrush",
       "palette",
       "icons",
       "icons1",
@@ -468,6 +469,7 @@
       "seekSkip1",
       "stop",
       "replay",
+      "playbackSpeed",
       "arrowsCross",
       "repeat",
       "repeatOnce",
@@ -521,7 +523,8 @@
       "magnet",
       "printer",
       "battery",
-      "battery1"
+      "battery1",
+      "keycap"
     ],
     "education": [
       "bookmark",

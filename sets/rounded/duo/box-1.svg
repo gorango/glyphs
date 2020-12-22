@@ -1,6 +1,6 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect x="12" y="34" width="56" height="32" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M12 34H68L60 14H20L12 34Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M46 34L44 14H36L34 34H46Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M46 34V44C46 45.1046 45.1046 46 44 46H36C34.8954 46 34 45.1046 34 44V34H46Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="12" y="34" width="56" height="32" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M12 34H68L60 14H20L12 34Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M46 34L44 14H36L34 34H46Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M46 34V44C46 45.1046 45.1046 46 44 46H36C34.8954 46 34 45.1046 34 44V34H46Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

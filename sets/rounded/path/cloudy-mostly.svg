@@ -4,5 +4,5 @@
   <path d="M28.9102 28.8519L28.919 28.8398C30.0087 27.3399 31.5453 26.2235 33.3085 25.6506C35.0717 25.0777 36.971 25.0777 38.7342 25.6506C40.4974 26.2235 42.0339 27.3399 43.1237 28.8398C43.735 29.6813 44.1881 30.6192 44.4681 31.6079" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M24.2656 17.8196L27.8831 22.7981" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M36.0212 14L36.002 20.1602" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M44.1719 22.8142L47.777 17.8196" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M47.777 17.8196L44.1719 22.8142" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

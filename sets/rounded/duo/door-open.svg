@@ -1,7 +1,7 @@
 <svg viewBox="0 0 80 80" fill="none">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M42 72H60V18C60 16.8954 59.1046 16 58 16H44V70C44 71.1046 43.1046 72 42 72Z" fill="currentColor" fill-opacity="0.15" />
-  <path d="M60 72V74C61.1046 74 62 73.1046 62 72H60ZM42 70C40.8954 70 40 70.8954 40 72C40 73.1046 40.8954 74 42 74V70ZM44 16V14C42.8954 14 42 14.8954 42 16H44ZM60 70H42V74H60V70ZM58 18V72H62V18H58ZM58 18H58H62C62 15.7909 60.2091 14 58 14V18ZM44 18H58V14H44V18ZM42 16V70H46V16H42ZM42 70V74C44.2091 74 46 72.2091 46 70H42Z" fill="currentColor" />
-  <path d="M20 17.4415C20 16.5807 20.5509 15.8164 21.3675 15.5442L41.3675 8.87748C42.6626 8.4458 44 9.40974 44 10.7749V70C44 71.1046 43.1046 72 42 72H20V17.4415Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M68 72H12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M34.0171 45.2607L37.9829 44.7386" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M60 72V74C61.1046 74 62 73.1046 62 72H60ZM42 70C40.8954 70 40 70.8954 40 72C40 73.1046 40.8954 74 42 74V70ZM44 16V14C42.8954 14 42 14.8954 42 16H44ZM60 70H42V74H60V70ZM58 18V72H62V18H58ZM58 18H62C62 15.7909 60.2091 14 58 14V18ZM44 18H58V14H44V18ZM42 16V70H46V16H42ZM42 70V74C44.2091 74 46 72.2091 46 70H42Z" fill="currentColor" />
+  <path d="M20 17.4415C20 16.5807 20.5509 15.8164 21.3675 15.5442L41.3675 8.87748C42.6626 8.4458 44 9.40974 44 10.7749V70C44 71.1046 43.1046 72 42 72H20V17.4415Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M68 72H12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M34.0171 45.2607L37.9829 44.7386" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

@@ -1,4 +1,4 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M39.134 13.5C39.5189 12.8333 40.4811 12.8333 40.866 13.5L63.3827 52.5C63.7676 53.1667 63.2865 54 62.5167 54H17.4833C16.7135 54 16.2324 53.1667 16.6173 52.5L39.134 13.5Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="square" />
-  <path d="M39.134 66.5C39.5189 67.1667 40.4811 67.1667 40.866 66.5L63.3827 27.5C63.7676 26.8333 63.2865 26 62.5167 26H17.4833C16.7135 26 16.2324 26.8333 16.6173 27.5L39.134 66.5Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="square" />
+  <path d="M39.134 13.5C39.5189 12.8333 40.4811 12.8333 40.866 13.5L63.3827 52.5C63.7676 53.1667 63.2865 54 62.5167 54H17.4833C16.7135 54 16.2324 53.1667 16.6173 52.5L39.134 13.5Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <path d="M39.134 66.5C39.5189 67.1667 40.4811 67.1667 40.866 66.5L63.3827 27.5C63.7676 26.8333 63.2865 26 62.5167 26H17.4833C16.7135 26 16.2324 26.8333 16.6173 27.5L39.134 66.5Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
 </svg>
