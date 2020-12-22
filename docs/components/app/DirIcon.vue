@@ -214,8 +214,7 @@ export default {
     svgCode () {
       const component = this.components[this.icon]
       const variant = component.variants[this.previewVariant] || component.variants[this.variant]
-      const code = variant.svg
-      return code
+      return variant
     },
     prismaCode () {
       switch (this.showCode) {

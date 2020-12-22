@@ -15,7 +15,7 @@ import kebabCase from 'lodash.kebabcase'
 
 const components = {
   rounded: require('@glyphs/rounded'),
-  edgy: require('@glyphs/edgy'),
+  // edgy: require('@glyphs/edgy'),
   brands: require('@glyphs/brands'),
   flags: require('@glyphs/flags')
 }
@@ -31,7 +31,7 @@ export default {
       if (!s || !v || !icon) {
         return
       }
-      return components[s][icon].variants[v]
+      return components[s].find(({ name }) => name === icon).variants[v]
     }
   },
 

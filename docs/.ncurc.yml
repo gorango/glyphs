@@ -1,3 +1,4 @@
 upgrade: true
 reject:
   - '@tailwindcss/typography'
+  - '@nuxtjs/tailwindcss'

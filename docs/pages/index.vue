@@ -5,7 +5,7 @@
         .flex.space-x-2.mx-auto(style='max-width: 600px')
             div.text-gray-700.dark_text-gray-500
               div.my-2.font-black.text-3xl.sm_text-4xl.dark_text-gray-400
-                | The Mightiest Icons on the Web
+                | The Smartest Icons on the Web
               div.pl-2.sm_my-8.font-light.text-xl.sm_text-2xl.dark_text-gray-400
                 | A complete design system for creating and maintaining large icon sets in Figma
                 //- | A truly open source design system for creating and maintaining large icon sets in Figma

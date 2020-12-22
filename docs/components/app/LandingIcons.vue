@@ -39,7 +39,7 @@
 
 <script>
 import { categories as _categories } from '@glyphs/rounded/meta.json'
-import _components from '@glyphs/rounded'
+import components from '@glyphs/rounded'
 
 const categories = Object.entries(_categories).reduce((obj, [key, value]) => {
   if (_categories[key].length) {
@@ -47,15 +47,12 @@ const categories = Object.entries(_categories).reduce((obj, [key, value]) => {
   }
   return obj
 }, {})
-const components = Object.keys(_components)
-  .map(key => ({ name: key, ..._components[key] }))
-  .filter(({ variants }) => Object.keys(variants).length)
 
 export default {
   data: () => ({
     previewCategories: [
       'human',
-      'communication',
+      'contact',
       'editor',
       'design',
       'transport',

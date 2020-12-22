@@ -48,6 +48,7 @@
             @click='shouldSort = !shouldSort'
           )
             svg-icon(name='sort-alpha-up', size='1.5em')
+
         nav.flex-auto.overflow-y-scroll.flex.flex-col.px-4.pb-4(:class='activeColor && `text-${activeColor}-500 dark_text-${activeColor}-400`')
           template(v-for='category in Object.keys(categories)')
             nuxt-link.flex.items-center.capitalize.py-1.transform.text-gray-600.dark_text-gray-500(
@@ -190,13 +191,13 @@ import debounce from 'lodash.debounce'
 
 const meta = {
   rounded: require('@glyphs/rounded/meta.json'),
-  edgy: require('@glyphs/edgy/meta.json'),
+  // edgy: require('@glyphs/edgy/meta.json'),
   brands: require('@glyphs/brands/meta.json'),
   flags: require('@glyphs/flags/meta.json')
 }
 const components = {
   rounded: require('@glyphs/rounded'),
-  edgy: require('@glyphs/edgy'),
+  // edgy: require('@glyphs/edgy'),
   brands: require('@glyphs/brands'),
   flags: require('@glyphs/flags')
 }
@@ -219,9 +220,7 @@ export default {
 
   computed: {
     setsSelection () {
-      const res = Object.entries(components).map(([set, obj]) => {
-        return { label: set, count: Object.keys(obj).length }
-      })
+      const res = Object.entries(meta).map(([set, { unique }]) => ({ label: set, count: unique }))
       res.splice(2, 0, { label: 'simple' })
       return res
     },
@@ -235,19 +234,28 @@ export default {
       return this.$route.query.i
     },
     variant () {
-      return this.$route.query.v || meta[this.set].variants[0]
+      return this.$route.query.v || meta[this.set].variants[0].toLowerCase()
     },
     components () {
-      return components[this.set]
+      return Object.values(components[this.set]).reduce((obj, component) => ({
+        ...obj,
+        [component.name]: component
+      }), {})
     },
     stroke () {
-      return this.$route.query.w || (
-        (this.$route.query.v === 'path' || !this.$route.query.v)
-          ? '3'
-          : this.$route.query.v === 'outline'
-            ? '1'
-            : '1.5'
-      )
+      if (!this.$route.query.w) {
+        return (
+          (this.variant === 'path' || !this.variant)
+            ? '3'
+            : this.variant === 'outline'
+              ? '1'
+              : this.variant === 'duo'
+                ? 4
+                : '1.5'
+        )
+      } else {
+        return this.$route.query.w
+      }
     },
     isWideScreen () {
       return typeof window !== 'undefined' && window.innerWidth > 1600
@@ -266,17 +274,18 @@ export default {
     variants () {
       return meta[this.set].variants
     },
-    iconComponents () {
-      const result = Object.keys(components[this.set])
-        .map(key => ({ name: key, ...components[this.set][key] }))
-        .filter(({ variants }) => Object.keys(variants).length)
-      return result
-    },
+    // iconComponents () {
+    //   const result = Object.keys(components[this.set])
+    //     .map(key => ({ name: key, ...components[this.set][key] }))
+    //     .filter(({ variants }) => Object.keys(variants).length)
+    //   return result
+    // },
     icons () {
       const { query } = this.$route || {}
-      let result = this.iconComponents
-      if (query.q && this.iconComponents) {
-        result = this.iconComponents.filter(({ name, terms, categories }) => {
+      const set = Object.values(components[this.set])
+      let result = set
+      if (query.q && set) {
+        result = set.filter(({ name, terms, categories }) => {
           return name.includes(query.q) || terms.filter(term => term.includes(query.q)).length || categories.find(c => query.q.includes(c))
         })
         return {
@@ -289,7 +298,7 @@ export default {
           return {
             ...obj,
             [category]: icons.map((icon) => {
-              return this.iconComponents.find(({ name }) => name === icon)
+              return set.find(({ name }) => name === icon)
             })
           }
         }, {})
