@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.7...@glyphs/flags-v0.0.8) (2020-12-25)
+
+
+### Bug Fixes
+
+* **flags:** add html preview ([59773e5](https://github.com/gorango/glyphs/commit/59773e59a2e5b26980898f8044319e10a701eaaf))
+* **flags:** mask bug in figma on export ([9f57db1](https://github.com/gorango/glyphs/commit/9f57db1196f605293a3ce15753ee586d5f77dd9d))
+
 ### [0.0.7](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.6...@glyphs/flags-v0.0.7) (2020-12-22)
 
 
