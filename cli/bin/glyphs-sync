@@ -8,9 +8,10 @@ const argv = parseArgs(args, {
     S: 'set',
     d: 'data',
     s: 'svg',
+    p: 'preview',
     h: 'help'
   },
-  boolean: ['h'],
+  boolean: ['h', 'p'],
   string: ['S', 'd', 's']
 })
 
@@ -26,11 +27,13 @@ if (argv.help) {
     --set, -S      Name of icon set to sync
     --data, -d     Output folder for icon-set data
     --svg, -s      Output folder for SVGs
+    --preview, -p  Generate a preview file
     --help, -h     Displays this message
   `)
   process.exit()
 }
 
+const path = require('path')
 const Configstore = require('configstore')
 const Figma = require('figma-api')
 const { camelCase } = require('lodash')
@@ -42,7 +45,7 @@ const pkg = require('../package.json')
   const conf = new Configstore(pkg.name)
   const configs = conf.all
   const hasConfig = Object.keys(configs).length
-  let { _: [query], set } = argv
+  let { _: [query], set, preview: generatePreview } = argv
   let key
 
   if (!hasConfig) {
@@ -116,6 +119,10 @@ const pkg = require('../package.json')
 
   const run = async () => {
     await sync(syncArgs).catch(handleError)
+    if (generatePreview) {
+      const dataDir = path.join(process.cwd(), syncArgs.data)
+      require('../lib/preview')(dataDir)
+    }
     console.log()
     process.exit()
   }

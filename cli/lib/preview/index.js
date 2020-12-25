@@ -3,8 +3,8 @@ const path = require('path')
 const pug = require('pug')
 
 module.exports = async function preview (dataDir) {
-  const metaFile = `${dataDir}/meta.json`
-  const componentsFile = `${dataDir}/components.json`
+  const metaFile = path.join(dataDir, 'meta.json')
+  const componentsFile = path.join(dataDir, 'components.json')
   const filesExist = [
     fs.existsSync(metaFile),
     fs.existsSync(componentsFile)
