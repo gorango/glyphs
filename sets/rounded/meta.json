@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "Rounded",
-  "unique": 654,
-  "total": 3270,
+  "unique": 659,
+  "total": 3295,
   "variants": [
     "path",
     "bold",
@@ -536,6 +536,7 @@
       "book",
       "bookAtlas",
       "scroll",
+      "certificateScroll",
       "notePad",
       "notePad1",
       "math",
@@ -646,6 +647,7 @@
       "burn",
       "smoke",
       "fireSmoke",
+      "campfire",
       "recycle",
       "binoculars",
       "binoculars1"
@@ -770,6 +772,9 @@
       "hammer",
       "mallet",
       "toolbox",
+      "shovel",
+      "shovelSnow",
+      "axe",
       "cog",
       "cog1",
       "cogs",
