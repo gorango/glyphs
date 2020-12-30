@@ -84,18 +84,26 @@ function newComponentSet () {
   const insertIndex = selectedComponent.parent.children.findIndex(({ id }) => id === selectedComponent.id)
   const alignY = 500
   const newComponents = []
-  ;['duo', 'path', 'outline', 'bold', 'poly'].forEach((style, i) => {
+  const variants: any = (() => {
+    const config: any = figma.currentPage.findChild(({ name }) => name === 'Config')
+    const variantsConfig = config && config.children.find(({ name, children }) => name === '__config' && children.find(({ characters }) => characters.toLowerCase() === 'variants'))
+    const variants = !variantsConfig ? null : variantsConfig.children.find(({ name }) => name === 'value')
+    return variants && variants.characters.split(',').map(v => v.trim())
+  })()
+  if (!variants) {
+    throw new Error('No variants configuration found on page')
+  }
+  variants.reverse().forEach((style, i) => {
     const newComponent = figma.createComponent()
     newComponent.name = style
     newComponent.x = selectedComponent.x - ((80 - selectedComponent.width) / 2)
     newComponent.y = alignY + (i * 100)
     newComponent.resizeWithoutConstraints(80, 80)
-    // console.log(newComponent)
     newComponent.appendChild(selectedComponent.createInstance())
     newComponents.push(newComponent)
   })
   const componentSet: any = figma.combineAsVariants(newComponents, selectedComponent.parent, insertIndex)
-  componentSet.name = selectedComponent.name
+  componentSet.name = selectedComponent.name.replace('_', '')
   componentSet.x = selectedComponent.x - ((80 - selectedComponent.width) / 2)
   componentSet.y = alignY
   figma.currentPage.selection = componentSet.children
