@@ -3,6 +3,6 @@
   <path d="M34 43H11V29H69V43H46" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M34 69L34 29" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M46 29L46 69" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M24.8564 20.2584C27.0983 16.2231 32.9017 16.2231 35.1435 20.2584L39.8168 28.6702C39.899 28.8182 39.792 29 39.6227 29H30C25.5135 29 22.6776 24.1803 24.8564 20.2584Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M55.1436 20.2584C52.9017 16.2231 47.0983 16.2231 44.8565 20.2584L40.1832 28.6702C40.101 28.8182 40.208 29 40.3773 29H50C54.4865 29 57.3224 24.1803 55.1436 20.2584Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M24.8565 20.2584C27.0983 16.2231 32.9018 16.2231 35.1436 20.2584L39.8168 28.6702C39.899 28.8182 39.7921 29 39.6228 29H30C25.5136 29 22.6776 24.1803 24.8565 20.2584Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M55.1435 20.2584C52.9017 16.2231 47.0982 16.2231 44.8564 20.2584L40.1832 28.6702C40.101 28.8182 40.2079 29 40.3772 29H50C54.4864 29 57.3224 24.1803 55.1435 20.2584Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

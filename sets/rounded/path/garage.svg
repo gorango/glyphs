@@ -5,7 +5,6 @@
   <path d="M68 34V64" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M43.8471 30.2502C44.3886 28.5835 43.7953 26.7577 42.3776 25.7276C40.9598 24.6976 39.0401 24.6976 37.6223 25.7276C36.2046 26.7577 35.6113 28.5835 36.1528 30.2502C36.6944 31.9168 38.2475 33.0452 40 33.0452C41.7524 33.0452 43.3055 31.9168 43.8471 30.2502Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M22 64V40H58V64" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M58 58H22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M58 52H22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M58 46H22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 56H22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 48H22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

@@ -519,13 +519,13 @@
       "mouse1",
       "mouse2",
       "keyboard",
+      "keycap",
       "plug",
       "plug1",
       "magnet",
       "printer",
       "battery",
-      "battery1",
-      "keycap"
+      "battery1"
     ],
     "education": [
       "bookmark",
