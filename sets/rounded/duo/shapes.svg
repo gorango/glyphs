@@ -1,7 +1,8 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <circle cx="21" cy="23" r="12" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M47.1003 13.1722L56.0999 22.1717L57.8998 23.9716L66.8993 32.9712" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M66.8997 13.1722L57.9001 22.1717L56.1002 23.9716L47.1007 32.9712" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M32.5212 56.1374C33.1819 56.5227 33.1818 57.4773 32.5212 57.8626L11.5018 70.1239C10.8361 70.5123 10 70.0321 10 69.2613L10 44.7387C10 43.9679 10.8361 43.4877 11.5018 43.8761L32.5212 56.1374Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="45" y="45" width="24" height="24" rx="1" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M32.9966 23C32.9966 29.6274 27.624 35 20.9966 35C14.3692 35 8.99658 29.6274 8.99658 23C8.99658 16.3726 14.3692 11 20.9966 11C27.624 11 32.9966 16.3726 32.9966 23Z" fill="currentColor" fill-opacity="0.15" />
+  <path d="M30.9966 23C30.9966 28.5228 26.5194 33 20.9966 33V37C28.7286 37 34.9966 30.732 34.9966 23H30.9966ZM20.9966 33C15.4737 33 10.9966 28.5228 10.9966 23H6.99658C6.99658 30.732 13.2646 37 20.9966 37V33ZM10.9966 23C10.9966 17.4772 15.4737 13 20.9966 13V9C13.2646 9 6.99658 15.268 6.99658 23H10.9966ZM20.9966 13C26.5194 13 30.9966 17.4772 30.9966 23H34.9966C34.9966 15.268 28.7286 9 20.9966 9V13Z" fill="currentColor" />
+  <path d="M47.0969 13.1722L56.0965 22.1717L57.8964 23.9716L66.8959 32.9712" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M66.8962 13.1722L57.8967 22.1717L56.0968 23.9716L47.0972 32.9712" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M32.5178 56.1374C33.1784 56.5227 33.1784 57.4773 32.5178 57.8626L11.4984 70.1239C10.8327 70.5123 9.99658 70.0321 9.99658 69.2613L9.99658 44.7387C9.99658 43.9679 10.8327 43.4877 11.4984 43.8761L32.5178 56.1374Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="44.9966" y="45" width="24" height="24" rx="1" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

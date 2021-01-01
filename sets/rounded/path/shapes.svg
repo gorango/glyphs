@@ -1,7 +1,7 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M33.9966 22C33.9966 28.6274 28.624 34 21.9966 34C15.3692 34 9.99658 28.6274 9.99658 22C9.99658 15.3726 15.3692 10 21.9966 10C28.624 10 33.9966 15.3726 33.9966 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M48.0972 12.1724L67.8962 31.9713" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M67.8962 12.1724L48.0972 31.9713" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M33.5178 55.1374C34.1784 55.5227 34.1784 56.4772 33.5178 56.8626L12.4984 69.1239C11.8327 69.5123 10.9966 69.0321 10.9966 68.2613L10.9966 43.7387C10.9966 42.9679 11.8327 42.4877 12.4984 42.8761L33.5178 55.1374Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M45.9966 45C45.9966 44.4477 46.4443 44 46.9966 44H68.9966C69.5489 44 69.9966 44.4477 69.9966 45V67C69.9966 67.5523 69.5489 68 68.9966 68H46.9966C46.4443 68 45.9966 67.5523 45.9966 67V45Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M32.4966 23C32.4966 29.3513 27.3479 34.5 20.9966 34.5V35.5C27.9001 35.5 33.4966 29.9036 33.4966 23H32.4966ZM20.9966 34.5C14.6453 34.5 9.49658 29.3513 9.49658 23H8.49658C8.49658 29.9036 14.093 35.5 20.9966 35.5V34.5ZM9.49658 23C9.49658 16.6487 14.6453 11.5 20.9966 11.5V10.5C14.093 10.5 8.49658 16.0964 8.49658 23H9.49658ZM20.9966 11.5C27.3479 11.5 32.4966 16.6487 32.4966 23H33.4966C33.4966 16.0964 27.9001 10.5 20.9966 10.5V11.5Z" fill="currentColor" />
+  <path d="M47.0969 13.1722L56.0965 22.1717L57.8964 23.9716L66.8959 32.9712" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M66.8962 13.1722L57.8967 22.1717L56.0968 23.9716L47.0972 32.9712" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M32.5178 56.1374C33.1784 56.5227 33.1784 57.4773 32.5178 57.8626L11.4984 70.1239C10.8327 70.5123 9.99658 70.0321 9.99658 69.2613L9.99658 44.7387C9.99658 43.9679 10.8327 43.4877 11.4984 43.8761L32.5178 56.1374Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="44.9966" y="45" width="24" height="24" rx="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
