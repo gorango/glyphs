@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "Rounded",
-  "unique": 670,
-  "total": 3350,
+  "unique": 675,
+  "total": 3375,
   "variants": [
     "path",
     "bold",
@@ -145,6 +145,11 @@
     "time": [
       "clock",
       "alarmClock",
+      "alarmExclamation",
+      "alarmPlus",
+      "alarmMinus",
+      "alarmSnooze",
+      "snooze",
       "timer",
       "timer1",
       "tachometer",
