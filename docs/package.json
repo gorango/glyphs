@@ -19,6 +19,7 @@
     "@glyphs/rounded": "^0.2.2",
     "@glyphs/edgy": "^0.0.3",
     "@nuxt/content": "^1.11.1",
+    "@nuxtjs/gtm": "^2.4.0",
     "bezier-easing": "^2.1.0",
     "lodash.camelcase": "^4.3.0",
     "lodash.debounce": "^4.0.8",
@@ -41,7 +42,6 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.16.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "nuxt-ackee": "^2.0.0",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.1.0",
     "svgson": "^4.1.0"

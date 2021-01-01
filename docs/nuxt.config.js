@@ -25,15 +25,15 @@ export default {
   ],
   components: true,
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/gtm'
   ],
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
-    '@nuxtjs/pwa',
-    'nuxt-ackee'
+    '@nuxtjs/pwa'
   ],
   generate: {
     async routes () {
@@ -63,6 +63,14 @@ export default {
       }
     }
   },
+  pwa: {
+    manifest: {
+      name: 'Glyphs'
+    }
+  },
+  tailwindcss: {
+    config: tailwindConfig
+  },
   content: {
     liveEdit: false,
     markdown: {
@@ -71,17 +79,15 @@ export default {
       }
     }
   },
-  ackee: {
-    server: 'https://ackee-icons-fyi.herokuapp.com',
-    domainId: '994f4a89-2291-449c-82b9-4c50fa1cb856',
-    detailed: true
-  },
-  pwa: {
-    manifest: {
-      name: 'Glyphs'
-    }
-  },
-  tailwindcss: {
-    config: tailwindConfig
+  gtm: {
+    enabled: process.env.NODE_ENV === 'production',
+    debug: false,
+
+    id: 'GTM-KTNCTWB',
+    layer: 'dataLayer',
+    variables: {},
+
+    pageTracking: false,
+    pageViewEventName: 'nuxtRoute'
   }
 }
