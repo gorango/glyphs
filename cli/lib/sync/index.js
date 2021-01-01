@@ -109,7 +109,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
       if (inherited.length) {
         const terms = inherited.reduce((obj, component) => ({
           ...obj,
-          ...arr.find(({ name }) => name === camelCase(component.name)).terms
+          ...(arr.find(({ name }) => name === camelCase(component.name)) || {}).terms
         }), component.terms)
         component.terms = terms
       }
