@@ -1,9 +1,9 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M23 72H57" stroke="#D2D2D2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M25 24L55 24L55 72H25L25 24Z" fill="#D2D2D2" stroke="#D2D2D2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M34 68C34 66.8954 34.8954 66 36 66H44C45.1046 66 46 66.8954 46 68V72H34V68Z" fill="#606060" stroke="#606060" stroke-width="4" stroke-linecap="round" />
-  <path d="M31 12L49 12V18L31 18V12Z" fill="#D2D2D2" stroke="#D2D2D2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M40 12L40 8" stroke="#D2D2D2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M24 18L56 18V24L24 24V18Z" fill="#606060" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M37 30H31V36H37V30ZM37 42H31V48H37V42ZM31 54H37V60H31V54ZM49 30H43V36H49V30ZM43 42H49V48H43V42ZM49 54H43V60H49V54Z" fill="#F4F4F4" />
+  <path d="M23 72H57" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M25 24L55 24L55 72H25L25 24Z" fill="#E0E0E0" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M34 68C34 66.8954 34.8954 66 36 66H44C45.1046 66 46 66.8954 46 68V72H34V68Z" fill="#4F4F4F" stroke="#4F4F4F" stroke-width="4" stroke-linecap="round" />
+  <path d="M31 12L49 12V18L31 18V12Z" fill="#E0E0E0" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M40 12L40 8" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M24 18L56 18V24L24 24V18Z" fill="#4F4F4F" stroke="#4F4F4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M37 30H31V36H37V30ZM37 42H31V48H37V42ZM31 54H37V60H31V54ZM49 30H43V36H49V30ZM43 42H49V48H43V42ZM49 54H43V60H49V54Z" fill="#F2F2F2" />
 </svg>

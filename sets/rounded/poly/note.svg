@@ -1,8 +1,8 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect x="18" y="12" width="44" height="56" rx="4" fill="#F4F4F4" stroke="#F4F4F4" stroke-width="4" />
-  <path d="M28 24L52 24" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 32H44" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 40L52 40" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 48H44" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 56L52 56" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="18" y="12" width="44" height="56" rx="4" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="4" />
+  <path d="M28 24L52 24" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 32H44" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 40L52 40" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 48H44" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 56L52 56" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

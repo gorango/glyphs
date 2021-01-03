@@ -1,14 +1,14 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect x="19" y="12" width="44" height="56" rx="4" fill="#F4F4F4" stroke="#F4F4F4" stroke-width="4" />
-  <path d="M29 24L53 24" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M29 32H45" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M29 40L53 40" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M29 48H45" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M29 56L53 56" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M21 28L17 28" stroke="#FF9100" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M21 20L17 20" stroke="#FF9100" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M21 36L17 36" stroke="#FF9100" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M21 52L17 52" stroke="#FF9100" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M21 60L17 60" stroke="#FF9100" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M21 44L17 44" stroke="#FF9100" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="19" y="12" width="44" height="56" rx="4" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="4" />
+  <path d="M29 24L53 24" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M29 32H45" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M29 40L53 40" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M29 48H45" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M29 56L53 56" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M21 28L17 28" stroke="#F2994A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M21 20L17 20" stroke="#F2994A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M21 36L17 36" stroke="#F2994A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M21 52L17 52" stroke="#F2994A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M21 60L17 60" stroke="#F2994A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M21 44L17 44" stroke="#F2994A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

@@ -1,6 +1,6 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect x="12" y="12" width="24" height="24" rx="4" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
-  <rect x="44" y="12" width="24" height="24" rx="4" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
-  <rect x="12" y="44" width="24" height="24" rx="4" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+  <rect x="12" y="12" width="24" height="24" rx="4" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+  <rect x="44" y="12" width="24" height="24" rx="4" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+  <rect x="12" y="44" width="24" height="24" rx="4" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
   <path d="M44 56L54.9091 56L57.0909 56L68 56" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

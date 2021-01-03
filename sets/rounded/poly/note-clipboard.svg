@@ -1,11 +1,11 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M22 13L30 13C30 15.2091 31.7909 17 34 17H46C48.2091 17 50 15.2091 50 13L58 13C60.2091 13 62 14.7909 62 17L62 65C62 67.2091 60.2091 69 58 69H22C19.7909 69 18 67.2091 18 65L18 17C18 14.7909 19.7909 13 22 13Z" fill="#F4F4F4" />
-  <path d="M30 13H32V11H30V13ZM50 13V11H48V13H50ZM62 17H60H62ZM62 65H64H62ZM18 65H20H18ZM18 17H16H18ZM30 11L22 11V15L30 15V11ZM34 15C32.8954 15 32 14.1046 32 13H28C28 16.3137 30.6863 19 34 19V15ZM46 15H34V19H46V15ZM48 13C48 14.1046 47.1046 15 46 15V19C49.3137 19 52 16.3137 52 13H48ZM58 11L50 11V15L58 15V11ZM64 17C64 13.6863 61.3137 11 58 11V15C59.1046 15 60 15.8954 60 17H64ZM64 65L64 17H60L60 65H64ZM58 71C61.3137 71 64 68.3137 64 65H60C60 66.1046 59.1046 67 58 67V71ZM22 71H58V67H22L22 71ZM16 65C16 68.3137 18.6863 71 22 71L22 67C20.8954 67 20 66.1046 20 65H16ZM16 17L16 65H20L20 17H16ZM22 11C18.6863 11 16 13.6863 16 17H20C20 15.8954 20.8954 15 22 15V11Z" fill="#F4F4F4" />
-  <rect x="30" y="9" width="20" height="8" rx="4" fill="#FF9100" />
-  <rect x="37" y="7" width="6" height="2" rx="1" stroke="#FF9100" stroke-width="4" />
-  <path d="M28 25L52 25" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 33H44" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 41L52 41" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 49H44" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 57L52 57" stroke="#1CB0F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M22 13L30 13C30 15.2091 31.7909 17 34 17H46C48.2091 17 50 15.2091 50 13L58 13C60.2091 13 62 14.7909 62 17L62 65C62 67.2091 60.2091 69 58 69H22C19.7909 69 18 67.2091 18 65L18 17C18 14.7909 19.7909 13 22 13Z" fill="#F2F2F2" />
+  <path d="M30 13H32V11H30V13ZM50 13V11H48V13H50ZM30 11L22 11V15L30 15V11ZM34 15C32.8954 15 32 14.1046 32 13H28C28 16.3137 30.6863 19 34 19V15ZM46 15H34V19H46V15ZM48 13C48 14.1046 47.1046 15 46 15V19C49.3137 19 52 16.3137 52 13H48ZM58 11L50 11V15L58 15V11ZM64 17C64 13.6863 61.3137 11 58 11V15C59.1046 15 60 15.8954 60 17H64ZM64 65L64 17H60L60 65H64ZM58 71C61.3137 71 64 68.3137 64 65H60C60 66.1046 59.1046 67 58 67V71ZM22 71H58V67H22L22 71ZM16 65C16 68.3137 18.6863 71 22 71L22 67C20.8954 67 20 66.1046 20 65H16ZM16 17L16 65H20L20 17H16ZM22 11C18.6863 11 16 13.6863 16 17H20C20 15.8954 20.8954 15 22 15V11Z" fill="#F2F2F2" />
+  <rect x="30" y="9" width="20" height="8" rx="4" fill="#F2994A" />
+  <rect x="37" y="7" width="6" height="2" rx="1" stroke="#F2994A" stroke-width="4" />
+  <path d="M28 25L52 25" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 33H44" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 41L52 41" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 49H44" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 57L52 57" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
