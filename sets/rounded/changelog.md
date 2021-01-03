@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.2](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.4.1...@glyphs/rounded-v0.4.2) (2021-01-03)
+
+
+### Bug Fixes
+
+* **rounded:** update colors ([ee8ebe6](https://github.com/gorango/glyphs/commit/ee8ebe625efa12dc865cff85c7deac23928b81b5))
+
 ### [0.4.1](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.4.0...@glyphs/rounded-v0.4.1) (2021-01-02)
 
 
