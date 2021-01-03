@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities'; */
 
-html, body {
+html:not(.break-smooth) {
   scroll-behavior: smooth;
 }
 

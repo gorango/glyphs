@@ -80,7 +80,6 @@
               template(v-for='variant, i in variants')
                 //- @mouseenter='previewVariant = variant',
                 button.w-11.h-11.p-1.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700.flex.items-center(
-                  @mouseenter='previewVariant = variant',
                   @click='resetPreview(); $router.push({ query: { ...$route.query, v: variant, ...(variant === "outline" ? {w: "1"} : variant === "path" ? {w: "3"} : {w: null}) } })',
                   :class=`{
                     'hover_bg-gray-700': $colorMode.value === 'dark',
@@ -211,7 +210,10 @@ export default {
     showSelect: false,
     shouldSort: false,
     showColor: false,
-    activeColor: null
+    activeColor: null,
+    activeCategories: [],
+    breakScroll: false,
+    scrollTimeout: null
   }),
 
   head: {
@@ -394,6 +396,10 @@ export default {
     // },
 
     handleArticleScroll ({ target }) {
+      if (this.breakScroll) {
+        return
+      }
+
       target = document.body
 
       const categories = Object.entries(this.$refs).reduce((arr, [name, ref]) => name.startsWith('category') ? [...arr, ...ref] : arr, [])
@@ -429,6 +435,13 @@ export default {
           nav.classList.add(...activeClass.split(' '))
           // nav.classList.add('scale-105')
           nav.style.paddingLeft = `${portion * 20}px`
+          if (portion > 0.3) {
+            this.activeCategories = [...new Set(
+              [[portion, category.firstChild.textContent], ...this.activeCategories]
+                .slice(0, 3)
+                .sort(([p1, p2]) => p2 - p1)
+            )]
+          }
         } else {
           nav.classList.remove(...activeClass.split(' '))
           nav.classList.add(...inactiveClass.split(' '))
@@ -438,9 +451,22 @@ export default {
       })
     },
 
-    handleGridSize: debounce(function (value) {
+    handleGridSize (value) {
+      this.breakScroll = true
+      const body = document.querySelector('html')
+      body.classList.add('break-smooth')
+      window.removeEventListener('scroll', this.handleArticleScroll)
+      clearTimeout(this.scrollTimeout)
+      this.scrollTimeout = setTimeout(() => {
+        this.breakScroll = false
+        body.classList.remove('break-smooth')
+        window.addEventListener('scroll', this.handleArticleScroll)
+      }, 1000)
+      const activeCategory = this.activeCategories[0][1]
+      const categoryEl = this.$refs[`category.${activeCategory}`][0]
       this.gridSize = value
-    }, 5),
+      window.scrollTo(0, categoryEl.offsetTop)
+    },
 
     _debounceRoute: debounce(function (value) {
       this.$router.replace({ query: { ...this.$route.query, w: value } })
