@@ -35,6 +35,9 @@ export default {
       type: 'toggleVisibility',
       label: 'Toggle visibility of hidden child nodes'
     }, {
+      type: 'toggleForExport',
+      label: 'Toggle visibility of variant layers'
+    }, {
       type: 'flattenChildren',
       label: 'Flatten child layers & preserve original'
     }, {
@@ -51,7 +54,7 @@ export default {
       label: 'Align children to parents’ centers'
     }, {
       type: 'sortSelected',
-      label: 'Sort panel layers to match visual order '
+      label: 'Sort panel layers to match visual order'
     }]
   })
 }

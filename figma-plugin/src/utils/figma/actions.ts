@@ -1,3 +1,5 @@
+import { component } from "node_modules/vue/types/umd"
+
 function removeSelected () {
   const selectedNodes: any = figma.currentPage.selection
   let newSelection = []
@@ -17,6 +19,23 @@ function toggleVisibility () {
         child.visible = !child.visible
       })
     }
+  })
+}
+
+function toggleForExport () {
+  const componentSets: any = figma.currentPage.selection
+  componentSets.forEach(componentSet => {
+    if (componentSet.type !== 'COMPONENT_SET') {
+      return
+    }
+    componentSet.children.forEach(variant => {
+      const allVisible = variant.children.reduce((b, { visible }) => b && visible, true)
+      if (!allVisible) {
+        variant.children.forEach(layer => {
+          layer.visible = !layer.visible
+        })
+      }
+    })
   })
 }
 
@@ -80,35 +99,38 @@ function unionSelected () {
 }
 
 function newComponentSet () {
-  const [selectedComponent]: any = figma.currentPage.selection
-  const insertIndex = selectedComponent.parent.children.findIndex(({ id }) => id === selectedComponent.id)
-  const alignY = 500
-  const newComponents = []
-  const variants: any = (() => {
-    const config: any = figma.currentPage.findChild(({ name }) => name === 'Config')
-    const variantsConfig = config && config.children.find(({ name, children }) => name === '__config' && children.find(({ characters }) => characters.toLowerCase() === 'variants'))
-    const variants = !variantsConfig ? null : variantsConfig.children.find(({ name }) => name === 'value')
-    return variants && variants.characters.split(',').map(v => v.trim())
-  })()
-  if (!variants) {
-    throw new Error('No variants configuration found on page')
-  }
-  variants.reverse().forEach((style, i) => {
-    const newComponent = figma.createComponent()
-    newComponent.name = style
-    newComponent.x = selectedComponent.x - ((80 - selectedComponent.width) / 2)
-    newComponent.y = alignY + (i * 100)
-    newComponent.resizeWithoutConstraints(80, 80)
-    newComponent.appendChild(selectedComponent.createInstance())
-    newComponents.push(newComponent)
+  const selectedComponents: any = figma.currentPage.selection
+  selectedComponents.forEach(selectedComponent => {
+    const insertIndex = selectedComponent.parent.children.findIndex(({ id }) => id === selectedComponent.id)
+    const alignY = 600
+    const newComponents = []
+    const variants: any = (() => {
+      const config: any = figma.currentPage.findChild(({ name }) => name === 'Config')
+      const variantsConfig = config && config.children.find(({ name, children }) => name === '__config' && children.find(({ characters }) => characters.toLowerCase() === 'variants'))
+      const variants = !variantsConfig ? null : variantsConfig.children.find(({ name }) => name === 'value')
+      return variants && variants.characters.split(',').map(v => v.trim())
+    })()
+    if (!variants) {
+      throw new Error('No variants configuration found on page')
+    }
+    variants.forEach((style, i) => {
+      const newComponent = figma.createComponent()
+      newComponent.name = style
+      newComponent.x = selectedComponent.x - ((80 - selectedComponent.width) / 2)
+      newComponent.y = alignY + (i * 100)
+      newComponent.resizeWithoutConstraints(80, 80)
+      newComponent.appendChild(selectedComponent.createInstance())
+      newComponents.push(newComponent)
+    })
+    const componentSet: any = figma.combineAsVariants(newComponents, selectedComponent.parent, insertIndex)
+    componentSet.name = selectedComponent.name.replace('_', '')
+    componentSet.x = selectedComponent.x - ((80 - selectedComponent.width) / 2)
+    componentSet.y = alignY
+    _addAutoLayout(componentSet)
+    figma.currentPage.selection = componentSet.children
+    centerChildren()
+    figma.currentPage.selection = [componentSet]
   })
-  const componentSet: any = figma.combineAsVariants(newComponents, selectedComponent.parent, insertIndex)
-  componentSet.name = selectedComponent.name.replace('_', '')
-  componentSet.x = selectedComponent.x - ((80 - selectedComponent.width) / 2)
-  componentSet.y = alignY
-  figma.currentPage.selection = componentSet.children
-  centerChildren()
-  figma.currentPage.selection = [componentSet]
 }
 
 function centerChildren () {
@@ -164,9 +186,25 @@ function sortSelected () {
   })
 }
 
+function _addAutoLayout (node) {
+  let selectedNodes: any
+  if (node) selectedNodes = [node]
+  else selectedNodes = figma.currentPage.selection
+  selectedNodes.forEach(node => {
+    console.log(node)
+    node.layoutMode = 'VERTICAL'
+    node.itemSpacing = 20
+    node.paddingTop = 0
+    node.paddingLeft = 0
+    node.paddingBottom = 0
+    node.paddingRight = 0
+  })
+}
+
 export default {
   removeSelected,
   toggleVisibility,
+  toggleForExport,
   flattenChildren,
   frameChildren,
   unionSelected,
