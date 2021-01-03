@@ -451,7 +451,7 @@ export default {
       })
     },
 
-    handleGridSize (value) {
+    handleGridSize: debounce(function (value) {
       this.breakScroll = true
       const body = document.querySelector('html')
       body.classList.add('break-smooth')
@@ -462,15 +462,17 @@ export default {
         body.classList.remove('break-smooth')
         window.addEventListener('scroll', this.handleArticleScroll)
       }, 1000)
-      const activeCategory = this.activeCategories[0][1]
-      const categoryEl = this.$refs[`category.${activeCategory}`][0]
       this.gridSize = value
-      window.scrollTo(0, categoryEl.offsetTop)
-    },
+      this.$nextTick(() => {
+        const activeCategory = this.activeCategories[0][1]
+        const categoryEl = this.$refs[`category.${activeCategory}`][0]
+        window.scrollTo(0, categoryEl.offsetTop)
+      })
+    }, 50),
 
     _debounceRoute: debounce(function (value) {
       this.$router.replace({ query: { ...this.$route.query, w: value } })
-    }, 10),
+    }, 50),
 
     handleStrokeWidth (value) {
       // this.gridSize = value
