@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "Rounded",
-  "unique": 713,
-  "total": 3565,
+  "unique": 717,
+  "total": 3585,
   "variants": [
     "path",
     "bold",
@@ -505,7 +505,11 @@
       "microphone2",
       "musicNote",
       "music",
+      "musicList",
       "speaker",
+      "disc",
+      "album",
+      "albumCollection",
       "eject",
       "pause",
       "play",

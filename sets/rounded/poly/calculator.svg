@@ -1,7 +1,7 @@
 <svg viewBox="0 0 80 80" fill="none">
   <rect x="12" y="12" width="56" height="56" rx="2" fill="#F2F2F2" />
-  <path d="M40 12V68" stroke="#E0E0E0" stroke-width="4" stroke-linejoin="round" />
-  <path d="M68 40L12 40" stroke="#E0E0E0" stroke-width="4" stroke-linejoin="round" />
+  <path d="M40 12V68" stroke="#BDBDBD" stroke-width="4" stroke-linejoin="round" />
+  <path d="M68 40L12 40" stroke="#BDBDBD" stroke-width="4" stroke-linejoin="round" />
   <path d="M18 26L25.2727 26L26.7273 26L34 26" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M45.9141 26L53.1868 26L54.6413 26L61.9141 26" stroke="#219653" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M53.9141 18L53.9141 25.2727L53.9141 26.7273L53.9141 34" stroke="#219653" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
