@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "Rounded",
-  "unique": 696,
-  "total": 3480,
+  "unique": 700,
+  "total": 3500,
   "variants": [
     "path",
     "bold",
@@ -372,6 +372,10 @@
       "borderOuter",
       "borderStyle",
       "font",
+      "bold",
+      "italic",
+      "underline",
+      "strikethrough",
       "text",
       "cursor",
       "quoteSingle",
