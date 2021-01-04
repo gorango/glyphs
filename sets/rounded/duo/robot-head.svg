@@ -1,0 +1,11 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <rect x="20" y="28" width="40" height="40" rx="2" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M30 68H50C51.1046 68 52 67.1046 52 66V60C52 58.8954 51.1046 58 50 58H30C28.8954 58 28 58.8954 28 60V66C28 67.1046 28.8954 68 30 68Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M50 66H30V70H50V66ZM50 66V70C52.2091 70 54 68.2091 54 66H50ZM50 60V66H54V60H50ZM50 60H54C54 57.7909 52.2091 56 50 56V60ZM30 60H50V56H30V60ZM30 60V60V56C27.7909 56 26 57.7909 26 60H30ZM30 66V60H26V66H30ZM30 66H30H26C26 68.2091 27.7909 70 30 70V66Z" fill="currentColor" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40H14C12.8954 40 12 40.8954 12 42V54C12 55.1046 12.8954 56 14 56H20V40ZM60 56H66C67.1046 56 68 55.1046 68 54V42C68 40.8954 67.1046 40 66 40H60V56Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M20 40H22C22 38.8954 21.1046 38 20 38V40ZM20 56V58C21.1046 58 22 57.1046 22 56H20ZM60 56H58C58 57.1046 58.8954 58 60 58V56ZM60 40V38C58.8954 38 58 38.8954 58 40H60ZM14 42H20V38H14V42ZM14 42V38C11.7909 38 10 39.7909 10 42H14ZM14 54V42H10V54H14ZM14 54H14H10C10 56.2091 11.7909 58 14 58V54ZM20 54H14V58H20V54ZM22 56V40H18V56H22ZM66 54H60V58H66V54ZM66 54V58C68.2091 58 70 56.2091 70 54H66ZM66 42V54H70V42H66ZM66 42H70C70 39.7909 68.2091 38 66 38V42ZM60 42H66V38H60V42ZM58 40V56H62V40H58Z" fill="currentColor" />
+  <rect x="28" y="40" width="8" height="8" rx="4" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="44" y="40" width="8" height="8" rx="4" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M40 20V28" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="36" y="12" width="8" height="8" rx="4" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

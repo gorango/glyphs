@@ -1,0 +1,10 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M20 30C20 28.8954 20.8954 28 22 28H58C59.1046 28 60 28.8954 60 30V66C60 67.1046 59.1046 68 58 68H22C20.8954 68 20 67.1046 20 66V30Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M28 44C28 41.7909 29.7909 40 32 40C34.2091 40 36 41.7909 36 44C36 46.2091 34.2091 48 32 48C29.7909 48 28 46.2091 28 44Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M44 44C44 41.7909 45.7909 40 48 40C50.2091 40 52 41.7909 52 44C52 46.2091 50.2091 48 48 48C45.7909 48 44 46.2091 44 44Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M50 68C51.1046 68 52 67.1046 52 66V60C52 58.8954 51.1046 58 50 58H30C28.8954 58 28 58.8954 28 60V66C28 67.1046 28.8954 68 30 68" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M20 40H14C12.8954 40 12 40.8954 12 42V54C12 55.1046 12.8954 56 14 56H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M60 56H66C67.1046 56 68 55.1046 68 54V42C68 40.8954 67.1046 40 66 40H60" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M40 28V20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M36 16C36 13.7909 37.7909 12 40 12C42.2091 12 44 13.7909 44 16C44 18.2091 42.2091 20 40 20C37.7909 20 36 18.2091 36 16Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

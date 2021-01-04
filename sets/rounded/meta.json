@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "Rounded",
-  "unique": 700,
-  "total": 3500,
+  "unique": 713,
+  "total": 3565,
   "variants": [
     "path",
     "bold",
@@ -99,10 +99,22 @@
       "eye1Slash",
       "eyeLashes",
       "glasses",
+      "ear",
       "shoePrint",
       "footPrint",
       "hand",
+      "handSpread",
+      "handFist",
+      "handPeace",
+      "handIndex",
+      "handMiddle",
+      "handHorns",
+      "handCall",
       "handHolding",
+      "handHoldingSeedling",
+      "handHoldingHeart",
+      "handHoldingWater",
+      "handHoldingDollar",
       "handshake",
       "baby",
       "child",
@@ -557,7 +569,8 @@
       "magnet",
       "printer",
       "battery",
-      "battery1"
+      "battery1",
+      "robotHead"
     ],
     "education": [
       "bookmark",
