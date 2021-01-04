@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "Rounded",
-  "unique": 717,
-  "total": 3585,
+  "unique": 719,
+  "total": 3595,
   "variants": [
     "path",
     "bold",
@@ -111,8 +111,8 @@
       "handHorns",
       "handCall",
       "handHolding",
-      "handHoldingSeedling",
       "handHoldingHeart",
+      "handHoldingSeedling",
       "handHoldingWater",
       "handHoldingDollar",
       "handshake",
@@ -126,7 +126,9 @@
       "restroom",
       "elevator",
       "crown",
-      "crown1"
+      "crown1",
+      "crown2",
+      "crown3"
     ],
     "place": [
       "house",
@@ -776,12 +778,14 @@
       "club",
       "heart",
       "spade",
-      "crown",
-      "crown1",
       "king",
       "queen",
       "jack",
       "joker",
+      "crown2",
+      "crown3",
+      "crown",
+      "crown1",
       "die",
       "die5",
       "die4",
