@@ -1,5 +1,5 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect x="36" y="20" width="8" height="8" rx="2" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <rect x="36" y="36" width="8" height="8" rx="2" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <rect x="36" y="52" width="8" height="8" rx="2" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <rect x="36" y="20" width="8" height="8" rx="2" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <rect x="36" y="36" width="8" height="8" rx="2" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+  <rect x="36" y="52" width="8" height="8" rx="2" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
 </svg>

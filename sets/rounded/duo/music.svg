@@ -1,8 +1,8 @@
 <svg viewBox="0 0 80 80" fill="none">
   <path d="M32 50.5L32 14.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <ellipse cx="23" cy="50.5" rx="9" ry="7" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+  <ellipse cx="23" cy="50.5" rx="9" ry="7" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
   <path d="M66 58.5L66 22.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <ellipse cx="57" cy="58.5" rx="9" ry="7" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+  <ellipse cx="57" cy="58.5" rx="9" ry="7" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
   <path d="M32 24.5L66 32.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M32 14.5L66 22.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
