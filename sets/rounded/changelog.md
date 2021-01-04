@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.4.2...@glyphs/rounded-v0.5.0) (2021-01-04)
+
+
+### Features
+
+* **rounded:** 13 new icons ([aea7315](https://github.com/gorango/glyphs/commit/aea73159c44171423166b444de29a7478eae53ce))
+* **rounded:** 15 new icons ([c59bdfd](https://github.com/gorango/glyphs/commit/c59bdfd9c70f8b411221991dcfef9ab890e1d367))
+* **rounded:** 2 new icons ([1ebc410](https://github.com/gorango/glyphs/commit/1ebc4105ffb9ec5535f9dca387f876b4d81aa975))
+* **rounded:** 4 new icons ([6b8fe0e](https://github.com/gorango/glyphs/commit/6b8fe0e475db53b3156243e7fb01e9924d0285de))
+* **rounded:** 4 new icons ([c10c006](https://github.com/gorango/glyphs/commit/c10c00677aefd381c29f171be4668f3ab43b988e))
+* **rounded:** 6 new icons ([b139983](https://github.com/gorango/glyphs/commit/b139983b333e41edfeb045cfaa6c70148fc7cd02))
+* **rounded:** rename category time to measure ([66a1abd](https://github.com/gorango/glyphs/commit/66a1abd754a3406b8f0a4e64aef7393d47594a57))
+
 ### [0.4.2](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.4.1...@glyphs/rounded-v0.4.2) (2021-01-03)
 
 
