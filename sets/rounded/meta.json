@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "Rounded",
-  "unique": 690,
-  "total": 3450,
+  "unique": 696,
+  "total": 3480,
   "variants": [
     "path",
     "bold",
@@ -281,6 +281,12 @@
       "commentExclamation",
       "lifeRing",
       "bell",
+      "bellSlash",
+      "bellRing",
+      "bellAdd",
+      "bellRemove",
+      "bellExclamation",
+      "shieldExclamation",
       "alarmClock",
       "timer"
     ],
