@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.3](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.2...@glyphs/rounded-v0.5.3) (2021-01-05)
+
+
+### Bug Fixes
+
+* **rounded:** fix robot path ([acc8a5c](https://github.com/gorango/glyphs/commit/acc8a5c9b2ad74d88a4abff637f6a95ca8df83fa))
+
 ### [0.5.2](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.1...@glyphs/rounded-v0.5.2) (2021-01-05)
 
 
