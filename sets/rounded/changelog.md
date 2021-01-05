@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.2](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.1...@glyphs/rounded-v0.5.2) (2021-01-05)
+
+
+### Features
+
+* **rounded:** 1 new icon; fix duo opacity ([87bf5e7](https://github.com/gorango/glyphs/commit/87bf5e759c31875ebbb346c7c0131676378b574d))
+* **rounded:** add glyphs cli config ([860c3e1](https://github.com/gorango/glyphs/commit/860c3e1ed2b464c2730a0db695b7a25922f928e6))
+
+
+### Bug Fixes
+
+* **rounded:** poly colors use lib palette ([9c52692](https://github.com/gorango/glyphs/commit/9c52692f9aa0cd14772c72b8176c5c46f48c62c1))
+* **rounded:** update battery conflict, duo bg opacity ([a6b18d8](https://github.com/gorango/glyphs/commit/a6b18d87d871accdefbdeda103704b06c70bd48d))
+* **rounded:** update exported components file ([d885526](https://github.com/gorango/glyphs/commit/d885526ffb0d97b70e493daa322bf1cd3f5475d5))
+
 ### [0.5.1](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.0...@glyphs/rounded-v0.5.1) (2021-01-04)
 
 
