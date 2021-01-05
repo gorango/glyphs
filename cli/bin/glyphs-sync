@@ -29,6 +29,7 @@ if (argv.help) {
     --svg, -s      Output folder for SVGs
     --preview, -p  Generate a preview file
     --diff         Fetch only new and updated assets
+    --categories   Specify categories to include
     --help, -h     Displays this message
   `)
   process.exit()

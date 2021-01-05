@@ -18,7 +18,7 @@ const progress = new Progress.SingleBar({
   hideCursor: true
 }, Progress.Presets.shades_classic)
 
-module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, diff }) {
+module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, diff, categories }) {
   if (!key || !set) {
     throw new Error('The file key and set name are required')
   }
@@ -174,26 +174,44 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   const chunkSize = figmaLimit / meta.variants.length
   const lastRun = new Date(fileConf.sets[set])
   const diffOnly = diff && mainComponents && lastRun
+
+  let chunkComponents
+
   if (diffOnly) {
     const lastComponents = await readJSON(`${dataDir}/components.json`)
     lastComponents.forEach(component => {
       components[components.findIndex(({ name: n }) => n === component.name )].variants = component.variants
     })
-  }
-  const chunkComponents = !diffOnly ? components : components.reduce((arr, component) => {
-    const updatedVariants = Object.entries(component.variants).reduce((obj, [style, id]) => {
-      const variant = mainComponents.find(({ node_id: i }) => i === id)
-      if (new Date(variant?.updated_at) > lastRun) {
-        return { ...obj, [style]: id }
+    chunkComponents = components.reduce((arr, component) => {
+      const main = mainComponents.find(({ node_id: i }) => i === component.id)
+      const mainUpdated = new Date(main?.updated_at) > lastRun
+      const updatedVariants = Object.entries(component.variants).reduce((obj, [style, id]) => {
+        const variant = mainComponents.find(({ node_id: i }) => i === id)
+        if (mainUpdated || new Date(variant?.updated_at) > lastRun) {
+          return { ...obj, [style]: id }
+        }
+        return obj
+      }, {})
+      if (Object.keys(updatedVariants).length) {
+        const chunkComponent = { ...component, variants: updatedVariants }
+        return [...arr, chunkComponent]
       }
-      return obj
-    }, {})
-    if (Object.keys(updatedVariants).length) {
-      const chunkComponent = { ...component, variants: updatedVariants }
-      return [...arr, chunkComponent]
-    }
-    return arr
-  }, [])
+      return arr
+    }, [])
+  } else if (categories) {
+    const a = new Set(categories.split(',').map(s => s.toLowerCase().trim()))
+    console.log([...a])
+    chunkComponents = components.reduce((arr, component) => {
+      const b = new Set(component.categories)
+      const aInB = new Set([...a].filter(x => b.has(x)))
+      if (aInB) {
+        return [...arr, component]
+      }
+      return arr
+    }, [])
+  } else {
+    chunkComponents = components
+  }
   const chunks = Array(Math.ceil(chunkComponents.length / chunkSize)).fill().map((_, i) => {
     const start = i * chunkSize
     return chunkComponents.slice(start, start + chunkSize)
