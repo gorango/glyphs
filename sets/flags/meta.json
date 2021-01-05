@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
-  "name": "Flags",
-  "unique": 23,
-  "total": 46,
+  "name": "flags",
+  "unique": 26,
+  "total": 52,
   "variants": [
     "rectangle",
     "square"
@@ -32,6 +32,11 @@
       "saintVincentAndTheGrenadines",
       "trinidadAndTobago",
       "unitedStatesOfAmerica"
+    ],
+    "europe": [
+      "ukraine",
+      "unitedKingdom",
+      "vaticanCity"
     ]
   }
 }
