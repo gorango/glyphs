@@ -1,6 +1,7 @@
 const Configstore = require('configstore')
 const { camelCase } = require('lodash')
-const rp = require('promise-request-retry')
+const axios = require('axios')
+const retry = require('axios-retry')
 const chalk = require('chalk')
 const Progress = require('cli-progress')
 const { Client: figmaClient } = require('figma-js')
@@ -26,6 +27,11 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   const fileConf = conf.get(key)
   const personalAccessToken = fileConf.token
   const { client: figma } = figmaClient({ personalAccessToken })
+  retry(axios)
+  retry(figma, {
+    retries: 3,
+    retryCondition: error => retry.isNetworkOrIdempotentRequestError(error)
+  })
 
   if (!fileConf) {
     console.log(`  File "${key}" not found`)
@@ -71,8 +77,8 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   const page = file.document.children.find(({ name }) => name.toLowerCase().includes(set.toLowerCase()))
 
   const components = Object.entries(file.components)
-    .filter(([id, { name }]) => validComponent(name))
     .filter(([id, { name }]) => findOne(page, ({ name: n, id: i }) => n === name && i === id))
+    .filter(([id, { name }]) => validComponent(name))
     .reduce((arr, [id, { name, description }]) => [
       ...arr,
       {
@@ -98,14 +104,10 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
         })(),
         variants: (() => {
           const node = findOne(page, ({ name: n, type: t }) => t === 'COMPONENT_SET' && n === name.slice(1))
-          if (node && 'children' in node) {
-            return node.children.reduce((obj, { id, name }) => ({
-              ...obj,
-              [name.split('=')[1].toLowerCase()]: id
-            }), {})
-          } else {
-            console.log(name)
-          }
+          return node.children.reduce((obj, { id, name }) => ({
+            ...obj,
+            [name.split('=')[1].toLowerCase()]: id
+          }), {})
         })()
       }
     ], [])
@@ -198,9 +200,8 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
       }
       return arr
     }, [])
-  } else if (categories) {
+  } else if (categories && categories.length) {
     const a = new Set(categories.split(',').map(s => s.toLowerCase().trim()))
-    console.log([...a])
     chunkComponents = components.reduce((arr, component) => {
       const b = new Set(component.categories)
       const aInB = new Set([...a].filter(x => b.has(x)))
@@ -237,11 +238,9 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
       }
 
       const svgs = await Promise.all(
-        Object.entries(images).map(([id, uri]) =>
-          rp({ uri, retry: 3, delay: 1000 })
-        )
+        Object.entries(images).map(([id, url]) => axios.get(url))
       )
-      await svgs.reduce((promise, svgString, i) => {
+      await svgs.reduce((promise, { data: svgString }, i) => {
         return promise.then(async () => {
           const [id, url] = Object.entries(images)[i]
           const [name, variant] = idMap[id]
