@@ -1,9 +1,9 @@
 const Configstore = require('configstore')
-const Figma = require('figma-api')
 const { camelCase } = require('lodash')
 const rp = require('promise-request-retry')
 const chalk = require('chalk')
 const Progress = require('cli-progress')
+const { Client: figmaClient } = require('figma-js')
 
 const { testName } = require('./name')
 const { findOne, findAll } = require('./node')
@@ -25,7 +25,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
 
   const fileConf = conf.get(key)
   const personalAccessToken = fileConf.token
-  const api = new Figma.Api({ personalAccessToken })
+  const { client: figma } = figmaClient({ personalAccessToken })
 
   if (!fileConf) {
     console.log(`  File "${key}" not found`)
@@ -44,7 +44,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
 
   progress.update(progressVal, { stage: 'Downloading Figma file...' })
 
-  const file = await api.getFile(key)
+  const file = await figma.get(`files/${key}`).then(({ data }) => data)
   const sets = file.document.children.filter(({ name }) => name.startsWith('->')).map(({ name }) => name.split(' ')[1])
   conf.set(`${key}.sets`, sets)
   conf.set(`${key}.name`, file.name)
@@ -178,10 +178,12 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
         ...obj,
         ...Object.entries(variants).reduce((o, [variant, id]) => ({ ...o, [id]: [name, variant] }), {})
       }), {})
-      const ids = targets.reduce((arr, { variants }) => [...arr, ...Object.values(variants)], [])
+      const ids = targets
+        .reduce((arr, { variants }) => [...arr, ...Object.values(variants)], [])
+        .join(',')
 
-      const opts = { ids, format: 'svg' }
-      const { images, err } = await api.getImage(key, opts).catch(err => ({ err }))
+      const params = { ids, format: 'svg' }
+      const { images, err } = await figma.get(`images/${key}`, { params }).then(({ data }) => data).catch(err => ({ err }))
 
       if (err) {
         return Promise.reject(err)

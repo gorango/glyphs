@@ -33,7 +33,7 @@ if (argv.help) {
 }
 
 const Configstore = require('configstore')
-const Figma = require('figma-api')
+const { Client: figmaClient } = require('figma-js')
 const inquirer = require('inquirer')
 
 const pkg = require('../package.json')
@@ -92,8 +92,8 @@ let { key, token, replace } = argv
       }
     }
 
-    const api = new Figma.Api({ personalAccessToken: token })
-    const file = await api.getFile(key).catch(err => {
+    const { client: figma } = figmaClient({ personalAccessToken })
+    const file = await figma.get(`files/${key}`).then(({ data }) => data).catch(err => {
       const error = err.toJSON()
       console.log()
       console.log(' ', error.message)
