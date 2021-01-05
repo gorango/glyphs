@@ -1,9 +1,9 @@
 
 module.exports = {
-  testName
+  validComponent
 }
 
-function testName (name) {
+function validComponent (name) {
   const isReserved = reservedKeywords.has(name)
   if (isReserved) {
     throw new Error(`${name} is a reserved keyword.`)

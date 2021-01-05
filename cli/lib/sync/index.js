@@ -5,7 +5,7 @@ const chalk = require('chalk')
 const Progress = require('cli-progress')
 const { Client: figmaClient } = require('figma-js')
 
-const { testName } = require('./name')
+const { validComponent } = require('./name')
 const { findOne, findAll } = require('./node')
 const { processSvg } = require('./svg')
 const { createDir, saveSVG, saveJSON } = require('./file')
@@ -18,7 +18,7 @@ const progress = new Progress.SingleBar({
   hideCursor: true
 }, Progress.Presets.shades_classic)
 
-module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) {
+module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, diff }) {
   if (!key || !set) {
     throw new Error('The file key and set name are required')
   }
@@ -45,16 +45,25 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
   progress.update(progressVal, { stage: 'Downloading Figma file...' })
 
   const file = await figma.get(`files/${key}`).then(({ data }) => data)
-  const sets = file.document.children.filter(({ name }) => name.startsWith('->')).map(({ name }) => name.split(' ')[1])
-  conf.set(`${key}.sets`, sets)
-  conf.set(`${key}.name`, file.name)
+  const mainComponents = await figma.get(`files/${key}/components`).then(({ data: { meta } }) => meta.components)
 
-  if (!sets.includes(set)) {
+  const sets = file.document.children
+    .filter(({ name }) => name.startsWith('->'))
+    .map(({ name }) => name.split(' ')[1].toLowerCase())
+    .reduce((obj, set) => ({
+      ...obj,
+      [set]: fileConf.sets[set] || null
+    }), {})
+
+  if (!set in sets) {
     console.log()
     console.log(`  Can't find the icon set "${set}"`)
     console.log()
     process.exit(1)
   }
+
+  conf.set(`${key}.sets`, sets)
+  conf.set(`${key}.name`, file.name)
 
   progressVal = Math.max(progressVal, 6)
   progress.update(progressVal, { stage: 'Parsing file...' })
@@ -62,7 +71,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
   const page = file.document.children.find(({ name }) => name.toLowerCase().includes(set.toLowerCase()))
 
   const components = Object.entries(file.components)
-    .filter(([id, { name }]) => testName(name))
+    .filter(([id, { name }]) => validComponent(name))
     .filter(([id, { name }]) => findOne(page, ({ name: n, id: i }) => n === name && i === id))
     .reduce((arr, [id, { name, description }]) => [
       ...arr,
@@ -83,7 +92,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
           if (nodes) {
             return nodes.reduce((obj, { type, parent }) => ({
               ...obj,
-              ...(parent && parent.type === 'FRAME' ? { [parent.name.toLowerCase()]: type === 'COMPONENT' } : {})
+              ...(parent?.type === 'FRAME' ? { [parent.name.toLowerCase()]: type === 'COMPONENT' } : {})
             }), {})
           }
         })(),
@@ -102,10 +111,8 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
     ], [])
     .map((component, i, arr) => {
       const node = findOne(page, ({ id }) => id === component.id)
-      if (!node) {
-        console.log(component)
-      }
-      const inherited = node && findAll(node, ({ name, type }) => type === 'INSTANCE' && /^_[a-zA-Z]/.test(name))
+      const inherited = node && findAll(node, ({ name, type }) => type === 'INSTANCE' && validComponent(name))
+
       if (inherited.length) {
         const terms = inherited.reduce((obj, component) => ({
           ...obj,
@@ -119,7 +126,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
         terms: Object.keys(component.terms),
         categories: Object.entries(component.categories)
           .sort(([_catA, boolA], [_catB, boolB]) => boolA || boolB)
-          .map(([category]) => category)
+          .map(([category]) => category),
       }
     })
 
@@ -148,9 +155,9 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
     categories: page.children.reduce((obj, frame) => {
       return {
         ...obj,
-        ...(!findOne(frame, ({ type, name }) => ['COMPONENT', 'INSTANCE'].includes(type) && testName(name)) ? {} : {
+        ...(!findOne(frame, ({ type, name }) => ['COMPONENT', 'INSTANCE'].includes(type) && validComponent(name)) ? {} : {
           [camelCase(frame.name.trim())]: [...new Set(
-            frame.children.filter(({ name }) => testName(name)).map(({ name }) => camelCase(name.trim()))
+            frame.children.filter(({ name }) => validComponent(name)).map(({ name }) => camelCase(name.trim()))
           )]
         })
       }
@@ -165,9 +172,25 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
 
   const figmaLimit = 400
   const chunkSize = figmaLimit / meta.variants.length
-  const chunks = Array(Math.ceil(components.length / chunkSize)).fill().map((_, i) => {
+  const lastRun = new Date(fileConf.sets[set])
+  const diffOnly = diff && mainComponents && lastRun
+  const chunkComponents = !diffOnly ? components : components.reduce((arr, component) => {
+    const updatedVariants = Object.entries(component.variants).reduce((obj, [style, id]) => {
+      const variant = mainComponents.find(({ node_id: i }) => i === id)
+      if (new Date(variant?.updated_at) > lastRun) {
+        return { ...obj, [style]: id }
+      }
+      return obj
+    }, {})
+    if (Object.keys(updatedVariants).length) {
+      const chunkComponent = { ...component, variants: updatedVariants }
+      return [...arr, chunkComponent]
+    }
+    return arr
+  }, [])
+  const chunks = Array(Math.ceil(chunkComponents.length / chunkSize)).fill().map((_, i) => {
     const start = i * chunkSize
-    return components.slice(start, start + chunkSize)
+    return chunkComponents.slice(start, start + chunkSize)
   })
 
   let downloaded = 0
@@ -217,6 +240,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir }) 
   progress.update(90, { stage: 'Saving categories...' })
 
   await saveJSON(`${dataDir}/components`, components)
+  conf.set(`${key}.sets.${set}`, new Date())
 
   progress.update(100, { stage: 'Done' })
   progress.stop()

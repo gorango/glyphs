@@ -28,6 +28,7 @@ if (argv.help) {
     --data, -d     Output folder for icon-set data
     --svg, -s      Output folder for SVGs
     --preview, -p  Generate a preview file
+    --diff         Fetch only new and updated assets
     --help, -h     Displays this message
   `)
   process.exit()
@@ -89,7 +90,7 @@ const pkg = require('../package.json')
   }
 
   const fileConf = configs[key]
-  const choices = fileConf.sets
+  const choices = Object.keys(fileConf.sets)
 
   if (!set) {
     const questions = [{

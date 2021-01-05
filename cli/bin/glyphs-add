@@ -100,7 +100,9 @@ let { key, token, replace } = argv
       console.log()
       process.exit(1)
     })
-    const sets = file.document.children.filter(({ name }) => name.startsWith('->')).map(({ name }) => name.split(' ')[1])
+    const sets = file.document.children
+      .filter(({ name }) => name.startsWith('->'))
+      .map(({ name }) => name.split(' ')[1].toLowerCase())
 
     conf.set(key, {
       token,
