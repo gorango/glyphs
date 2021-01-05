@@ -77,8 +77,8 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   const page = file.document.children.find(({ name }) => name.toLowerCase().includes(set.toLowerCase()))
 
   const components = Object.entries(file.components)
-    .filter(([id, { name }]) => validComponent(name))
     .filter(([id, { name }]) => findOne(page, ({ name: n, id: i }) => n === name && i === id))
+    .filter(([id, { name }]) => validComponent(name))
     .reduce((arr, [id, { name, description }]) => [
       ...arr,
       {
@@ -104,14 +104,10 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
         })(),
         variants: (() => {
           const node = findOne(page, ({ name: n, type: t }) => t === 'COMPONENT_SET' && n === name.slice(1))
-          if (node && 'children' in node) {
-            return node.children.reduce((obj, { id, name }) => ({
-              ...obj,
-              [name.split('=')[1].toLowerCase()]: id
-            }), {})
-          } else {
-            console.log(name)
-          }
+          return node.children.reduce((obj, { id, name }) => ({
+            ...obj,
+            [name.split('=')[1].toLowerCase()]: id
+          }), {})
         })()
       }
     ], [])
