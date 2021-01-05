@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
-  "name": "Rounded",
-  "unique": 719,
-  "total": 3595,
+  "name": "rounded",
+  "unique": 720,
+  "total": 3600,
   "variants": [
     "path",
     "bold",
@@ -576,7 +576,8 @@
       "printer",
       "battery",
       "batteryCar",
-      "robotHead"
+      "robotHead",
+      "robot"
     ],
     "education": [
       "bookmark",

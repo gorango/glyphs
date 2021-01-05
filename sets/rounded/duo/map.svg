@@ -1,5 +1,5 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M10 21.0067L25.0168 15V46.5353L10 52.542V21.0067Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M44.6604 21.0067L29.6436 15V46.5353L44.6604 52.542V21.0067Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M44.6604 21.0067L59.6772 15V46.5353L44.6604 52.542V21.0067Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M10 21.0067L25.0168 15V46.5353L10 52.542V21.0067Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M44.6604 21.0067L29.6436 15V46.5353L44.6604 52.542V21.0067Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M44.6604 21.0067L59.6772 15V46.5353L44.6604 52.542V21.0067Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
