@@ -8,7 +8,7 @@ const { Client: figmaClient } = require('figma-js')
 const { validComponent } = require('./name')
 const { findOne, findAll } = require('./node')
 const { processSvg } = require('./svg')
-const { createDir, saveSVG, saveJSON } = require('./file')
+const { createDir, saveSVG, saveJSON, readJSON } = require('./file')
 
 const conf = new Configstore('@glyphs/cli')
 const progress = new Progress.SingleBar({
@@ -174,6 +174,12 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   const chunkSize = figmaLimit / meta.variants.length
   const lastRun = new Date(fileConf.sets[set])
   const diffOnly = diff && mainComponents && lastRun
+  if (diffOnly) {
+    const lastComponents = await readJSON(`${dataDir}/components.json`)
+    lastComponents.forEach(component => {
+      components[components.findIndex(({ name: n }) => n === component.name )].variants = component.variants
+    })
+  }
   const chunkComponents = !diffOnly ? components : components.reduce((arr, component) => {
     const updatedVariants = Object.entries(component.variants).reduce((obj, [style, id]) => {
       const variant = mainComponents.find(({ node_id: i }) => i === id)
