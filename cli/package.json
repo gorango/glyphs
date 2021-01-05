@@ -21,6 +21,8 @@
   },
   "homepage": "https://glyphs.fyi/cli",
   "dependencies": {
+    "axios": "^0.21.1",
+    "axios-retry": "^3.1.9",
     "chalk": "^4.1.0",
     "cli-progress": "^3.8.2",
     "configstore": "^5.0.1",
@@ -30,7 +32,6 @@
     "lodash": "^4.17.20",
     "minimist": "^1.2.5",
     "pretty": "^2.0.0",
-    "promise-request-retry": "^1.0.2",
     "pug": "^3.0.0",
     "svgson": "^4.1.0",
     "update-notifier": "^5.0.1"

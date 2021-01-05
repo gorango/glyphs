@@ -1,6 +1,7 @@
 const Configstore = require('configstore')
 const { camelCase } = require('lodash')
-const rp = require('promise-request-retry')
+const axios = require('axios')
+const retry = require('axios-retry')
 const chalk = require('chalk')
 const Progress = require('cli-progress')
 const { Client: figmaClient } = require('figma-js')
@@ -26,6 +27,11 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   const fileConf = conf.get(key)
   const personalAccessToken = fileConf.token
   const { client: figma } = figmaClient({ personalAccessToken })
+  retry(axios)
+  retry(figma, {
+    retries: 3,
+    retryCondition: error => retry.isNetworkOrIdempotentRequestError(error)
+  })
 
   if (!fileConf) {
     console.log(`  File "${key}" not found`)
@@ -198,9 +204,8 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
       }
       return arr
     }, [])
-  } else if (categories) {
+  } else if (categories && categories.length) {
     const a = new Set(categories.split(',').map(s => s.toLowerCase().trim()))
-    console.log([...a])
     chunkComponents = components.reduce((arr, component) => {
       const b = new Set(component.categories)
       const aInB = new Set([...a].filter(x => b.has(x)))
@@ -237,11 +242,9 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
       }
 
       const svgs = await Promise.all(
-        Object.entries(images).map(([id, uri]) =>
-          rp({ uri, retry: 3, delay: 1000 })
-        )
+        Object.entries(images).map(([id, url]) => axios.get(url))
       )
-      await svgs.reduce((promise, svgString, i) => {
+      await svgs.reduce((promise, { data: svgString }, i) => {
         return promise.then(async () => {
           const [id, url] = Object.entries(images)[i]
           const [name, variant] = idMap[id]
