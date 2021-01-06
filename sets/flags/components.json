@@ -563,7 +563,7 @@
     ],
     "variants": {
       "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M39.9991 0H0V80H39.9991V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M120 0H80.0009V80H120V0Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
-      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M19.9991 0H-20V80H19.9991V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M100 0H60.0009V80H100V0Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M26.6661 0H0V80H26.6661V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M80 0H53.3339V80H80V0Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
     }
   },
   {
@@ -647,7 +647,7 @@
     ],
     "variants": {
       "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M39.9991 0H0V80H39.9991V0Z\" fill=\"#219653\" />\n    <path d=\"M120 0H80.0009V80H120V0Z\" fill=\"#F2994A\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
-      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M19.9991 0H-20V80H19.9991V0Z\" fill=\"#219653\" />\n    <path d=\"M100 0H60.0009V80H100V0Z\" fill=\"#F2994A\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M26.6661 0H0V80H26.6661V0Z\" fill=\"#219653\" />\n    <path d=\"M80 0H53.3339V80H80V0Z\" fill=\"#F2994A\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
     }
   },
   {
@@ -661,7 +661,7 @@
     ],
     "variants": {
       "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M39.9991 0H0V80H39.9991V0Z\" fill=\"#219653\" />\n    <path d=\"M120 0H80.001V80H120V0Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
-      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M19.9991 0H-20V80H19.9991V0Z\" fill=\"#219653\" />\n    <path d=\"M100 0H60.001V80H100V0Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M26.6661 0H0V80H26.6661V0Z\" fill=\"#219653\" />\n  <path d=\"M80.0001 0H53.334V80H80.0001V0Z\" fill=\"#EB5757\" />\n</svg>"
     }
   },
   {
@@ -872,7 +872,7 @@
     ],
     "variants": {
       "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2C94C\" />\n  <path d=\"M120 0H80V80H120V0Z\" fill=\"#EB5757\" />\n  <path d=\"M40 0H0V80H40V0Z\" fill=\"#2F80ED\" />\n</svg>",
-      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2C94C\" />\n    <path d=\"M100 0H60V80H100V0Z\" fill=\"#EB5757\" />\n    <path d=\"M20 0H-20V80H20V0Z\" fill=\"#2F80ED\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2C94C\" />\n  <path d=\"M80.0002 0H53.3335V80H80.0002V0Z\" fill=\"#EB5757\" />\n  <path d=\"M26.6667 0H0V80H26.6667V0Z\" fill=\"#2F80ED\" />\n</svg>"
     }
   },
   {
