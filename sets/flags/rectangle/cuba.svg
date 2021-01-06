@@ -1,8 +1,8 @@
 <svg viewBox="0 0 120 80" fill="none">
-  <rect width="120" height="80" fill="white" />
-  <rect width="120" height="16" fill="#002A8F" />
-  <rect y="64" width="120" height="16" fill="#002A8F" />
-  <rect y="32" width="120" height="16" fill="#002A8F" />
-  <path d="M0 0V80L69 40L0 0Z" fill="#CF142B" />
-  <path d="M21 28L23.6942 36.2918H32.4127L25.3593 41.4164L28.0534 49.7082L21 44.5836L13.9466 49.7082L16.6407 41.4164L9.58732 36.2918H18.3058L21 28Z" fill="white" />
+  <rect width="120" height="80" fill="#F2F2F2" />
+  <rect width="120" height="16" fill="#2F80ED" />
+  <rect y="64" width="120" height="16" fill="#2F80ED" />
+  <rect y="32" width="120" height="16" fill="#2F80ED" />
+  <path d="M0 0V80L69 40L0 0Z" fill="#EB5757" />
+  <path d="M21 28L23.6942 36.2918H32.4127L25.3593 41.4164L28.0534 49.7082L21 44.5836L13.9466 49.7082L16.6407 41.4164L9.58732 36.2918H18.3058L21 28Z" fill="#F2F2F2" />
 </svg>

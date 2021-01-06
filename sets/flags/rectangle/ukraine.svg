@@ -1,7 +1,7 @@
 <svg viewBox="0 0 120 80" fill="none">
   <g clip-path="url(#clip0)">
-    <path d="M120 40H0V80H120V40Z" fill="#FFDA44" />
-    <path d="M120 0H0V40H120V0Z" fill="#338AF3" />
+    <path d="M120 40H0V80H120V40Z" fill="#F2C94C" />
+    <path d="M120 0H0V40H120V0Z" fill="#2F80ED" />
   </g>
   <defs>
     <clipPath id="clip0">

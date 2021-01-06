@@ -1,24 +1,24 @@
 <svg viewBox="0 0 80 80" fill="none">
   <g clip-path="url(#clip0)">
-    <rect width="34" height="31" fill="#002D62" />
-    <rect width="34" height="31" transform="matrix(-1 0 0 1 80 49)" fill="#002D62" />
-    <rect x="46" width="34" height="31" fill="#CE1126" />
-    <rect width="34" height="31" transform="matrix(-1 0 0 1 34 49)" fill="#CE1126" />
-    <rect x="-20" y="31" width="120" height="18" fill="white" />
-    <rect x="49" width="80" height="18" transform="rotate(90 49 0)" fill="white" />
-    <path d="M49 40C49 44.9707 44.9707 49 40 49C35.0295 49 31 44.9707 31 40" stroke="#007926" stroke-width="2" />
-    <path d="M47.5 36.0232C45.8876 33.5982 43.1305 32 40 32C36.8695 32 34.1124 33.5982 32.5 36.0232" stroke="#0052B4" />
-    <path d="M34.9375 35.5V41.1251C34.9375 43.921 37.2041 46.1876 40 46.1876C42.7959 46.1876 45.0625 43.921 45.0625 41.1251V35.5H34.9375Z" fill="#D80027" />
+    <rect width="34" height="31" fill="#2F80ED" />
+    <rect width="34" height="31" transform="matrix(-1 0 0 1 80 49)" fill="#2F80ED" />
+    <rect x="46" width="34" height="31" fill="#EB5757" />
+    <rect width="34" height="31" transform="matrix(-1 0 0 1 34 49)" fill="#EB5757" />
+    <rect x="-20" y="31" width="120" height="18" fill="#F2F2F2" />
+    <rect x="49" width="80" height="18" transform="rotate(90 49 0)" fill="#F2F2F2" />
+    <path d="M49 40C49 44.9707 44.9707 49 40 49C35.0295 49 31 44.9707 31 40" stroke="#219653" stroke-width="2" />
+    <path d="M47.5 36.0232C45.8876 33.5982 43.1305 32 40 32C36.8695 32 34.1124 33.5982 32.5 36.0232" stroke="#2F80ED" />
+    <path d="M34.9375 35.5V41.1251C34.9375 43.921 37.2041 46.1876 40 46.1876C42.7959 46.1876 45.0625 43.921 45.0625 41.1251V35.5H34.9375Z" fill="#EB5757" />
     <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="34" y="35" width="12" height="12">
       <path d="M34.9375 35.5V41.1251C34.9375 43.921 37.2041 46.1876 40 46.1876C42.7959 46.1876 45.0625 43.921 45.0625 41.1251V35.5H34.9375Z" fill="#D80027" />
     </mask>
     <g mask="url(#mask0)">
-      <rect x="32" y="35" width="7" height="5" fill="#002D62" />
-      <rect width="8" height="6" transform="matrix(-1 0 0 1 49 41)" fill="#002D62" />
-      <rect x="41" y="35" width="8" height="5" fill="#CE1126" />
-      <rect width="7" height="6" transform="matrix(-1 0 0 1 39 41)" fill="#CE1126" />
-      <rect x="34" y="39.5" width="12" height="2" fill="white" />
-      <rect x="41" y="35" width="12" height="2" transform="rotate(90 41 35)" fill="white" />
+      <rect x="32" y="35" width="7" height="5" fill="#2F80ED" />
+      <rect width="8" height="6" transform="matrix(-1 0 0 1 49 41)" fill="#2F80ED" />
+      <rect x="41" y="35" width="8" height="5" fill="#EB5757" />
+      <rect width="7" height="6" transform="matrix(-1 0 0 1 39 41)" fill="#EB5757" />
+      <rect x="34" y="39.5" width="12" height="2" fill="#F2F2F2" />
+      <rect x="41" y="35" width="12" height="2" transform="rotate(90 41 35)" fill="#F2F2F2" />
     </g>
   </g>
   <defs>

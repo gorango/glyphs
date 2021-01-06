@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "flags",
-  "unique": 26,
-  "total": 52,
+  "unique": 39,
+  "total": 78,
   "variants": [
     "rectangle",
     "square"
@@ -34,6 +34,19 @@
       "unitedStatesOfAmerica"
     ],
     "europe": [
+      "albania",
+      "andorra",
+      "armenia",
+      "austria",
+      "azerbaijan",
+      "belarus",
+      "belgium",
+      "bosniaAndHerzegovina",
+      "bulgaria",
+      "spain",
+      "sweden",
+      "switzerland",
+      "turkey",
       "ukraine",
       "unitedKingdom",
       "vaticanCity"
