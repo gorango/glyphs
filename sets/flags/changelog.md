@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.9...@glyphs/flags-v0.1.0) (2021-01-06)
+
+
+### Features
+
+* **flags:** 34 new icons (europe) ([666e6bc](https://github.com/gorango/glyphs/commit/666e6bcfdfa7abc6e08b8c0b777a8a007700c957))
+
+
+### Bug Fixes
+
+* **flags:** update usa stars ([7ced088](https://github.com/gorango/glyphs/commit/7ced088a818a62d19b11eeb91ee619e1c2a24228))
+* **flags:** vertical bars layout for square variants ([3f04f27](https://github.com/gorango/glyphs/commit/3f04f27d66d1f2c69300bb5de158c91a330fe4e4))
+
 ### [0.0.9](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.8...@glyphs/flags-v0.0.9) (2021-01-06)
 
 
