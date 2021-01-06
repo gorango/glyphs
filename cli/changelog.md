@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.1.0...@glyphs/cli-v0.2.0) (2021-01-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* `sets` key in config is converted from array to object to store last run times. The keys are now lowercased.
+
+### Features
+
+* **cli:** add preview flag in sync cmd ([bf97a72](https://github.com/gorango/glyphs/commit/bf97a725bc4fe3911d9f40074f657a68493f7dac))
+* **cli:** add retry to figma api; replace request with axios ([#16](https://github.com/gorango/glyphs/issues/16)) ([6be9042](https://github.com/gorango/glyphs/commit/6be904291240d6d0df270dfad70ccd9da6ea8661)), closes [#14](https://github.com/gorango/glyphs/issues/14)
+* **cli:** enable syncing specific categories ([200e3ee](https://github.com/gorango/glyphs/commit/200e3eed0857a7d3a8de150e53015f1a17540cd8))
+
+
+### Bug Fixes
+
+* **cli:** avoid errors when missing terms ([695ab7b](https://github.com/gorango/glyphs/commit/695ab7bd302ffcbc62e903fe638a4ce867dd17b9))
+* **cli:** fix validate categories ([263e64b](https://github.com/gorango/glyphs/commit/263e64b798a0feb4d2402c672c6e07665394ed2a))
+* **cli:** merge components on diff ([813d809](https://github.com/gorango/glyphs/commit/813d8091434bd5f21c9f7206a40a347c541aa9f0))
+* **cli:** replace components svgs after diffs & includes ([2a2d22d](https://github.com/gorango/glyphs/commit/2a2d22ddc62f5cb7a31d232c7017140002498d23))
+* **cli:** replace Figma REST lib ([b6b6ca4](https://github.com/gorango/glyphs/commit/b6b6ca4b8aeb2ef93b5588bcf96cf63ee3389dc4))
+* **cli:** update download count with segments ([f582eef](https://github.com/gorango/glyphs/commit/f582eeff90e399e3df609586996f93978946c5a2))
+* **cli:** update validations ([a675098](https://github.com/gorango/glyphs/commit/a675098f03d51d88271a7b6749b752f6d423cc83))
+* **cli:** use set config for meta variants with fallback ([59d621c](https://github.com/gorango/glyphs/commit/59d621c200d825c1bed2a0e017f5852cb9b46cf3))
+
+
+* feat!(cli): add diff option to sync cmd ([e596204](https://github.com/gorango/glyphs/commit/e596204a7222388b82ccc4ce2415af9b37898b0d)), closes [#13](https://github.com/gorango/glyphs/issues/13)
+
 ## [0.1.0](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.0.5...@glyphs/cli-v0.1.0) (2020-12-22)
 
 
