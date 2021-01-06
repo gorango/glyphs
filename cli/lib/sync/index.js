@@ -203,7 +203,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
     const a = new Set(categories.split(',').map(s => s.toLowerCase().trim()))
     chunkComponents = components.reduce((arr, component) => {
       const b = new Set(component.categories)
-      const aInB = new Set([...a].filter(x => b.has(x)))
+      const aInB = [...new Set([...a].filter(x => b.has(x)))].length
       if (aInB) {
         return [...arr, component]
       }
