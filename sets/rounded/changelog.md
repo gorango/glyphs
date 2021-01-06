@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.5](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.4...@glyphs/rounded-v0.5.5) (2021-01-06)
+
+
+### Bug Fixes
+
+* **rounded:** resizing issues in export ([dc6c91a](https://github.com/gorango/glyphs/commit/dc6c91ae725374f355b045127f19d7d330ef0710))
+
 ### [0.5.4](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.3...@glyphs/rounded-v0.5.4) (2021-01-06)
 
 
