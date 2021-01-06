@@ -202,7 +202,7 @@ module.exports = {
           },
           code: {
             fontWeight: '400',
-            backgroundColor: theme('colors.gray.200'),
+            backgroundColor: theme('colors.gray.300'),
             padding: theme('padding.1'),
             borderWidth: 1,
             borderColor: theme('colors.gray.300'),

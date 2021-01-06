@@ -1,0 +1,135 @@
+/*
+ * Original: https://github.com/PrismJS/prism-themes/blob/master/themes/prism-material-oceanic.css
+*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+	@apply text-gray-100 bg-gray-900 rounded-lg;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	font-family: Roboto Mono, monospace;
+	font-size: 1em;
+	line-height: 1.5em;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+.light-mode code[class*="language-"],
+.light-mode pre[class*="language-"] {
+	@apply text-gray-900 bg-gray-300;
+}
+
+code[class*="language-"]::selection,
+pre[class*="language-"]::selection,
+code[class*="language-"] ::selection,
+pre[class*="language-"] ::selection {
+	@apply bg-red-900 bg-opacity-50;
+}
+
+.light-mode code[class*="language-"]::selection,
+.light-mode pre[class*="language-"]::selection,
+.light-mode code[class*="language-"] ::selection,
+.light-mode pre[class*="language-"] ::selection {
+	@apply bg-yellow-200
+}
+
+:not(pre) > code[class*="language-"] {
+	white-space: normal;
+	border-radius: 0.2em;
+	padding: 0.1em;
+}
+
+pre[class*="language-"] {
+	overflow: auto;
+	position: relative;
+	margin: 0;
+	padding: 1.25em 1em;
+}
+
+[class*="language-"] .namespace {
+	opacity: 0.7;
+}
+.token.atrule { @apply text-purple-500; }
+.light-mode .token.atrule { @apply text-purple-700 }
+.token.attr-name { @apply text-yellow-600; }
+.light-mode .token.attr-name { @apply text-yellow-700 }
+.token.attr-value { @apply text-green-500; }
+.light-mode .token.attr-value { @apply text-green-700 }
+.token.attribute { @apply text-green-500; }
+.light-mode .token.attribute { @apply text-green-700 }
+.token.boolean { @apply text-purple-500; }
+.light-mode .token.boolean { @apply text-purple-700 }
+.token.builtin { @apply text-yellow-600; }
+.light-mode .token.builtin { @apply text-yellow-700 }
+.token.cdata { @apply text-teal-500; }
+.light-mode .token.cdata { @apply text-teal-700 }
+.token.char { @apply text-teal-500; }
+.light-mode .token.char { @apply text-teal-700 }
+.token.class { @apply text-yellow-600; }
+.light-mode .token.class { @apply text-yellow-700 }
+.token.class-name { @apply text-green-500; }
+.light-mode .token.class-name { @apply text-green-700 }
+.token.color { @apply text-green-500; }
+.light-mode .token.color { @apply text-green-700 }
+.token.comment { @apply text-gray-500; }
+.light-mode .token.comment { @apply text-gray-700 }
+.token.constant { @apply text-purple-500; }
+.light-mode .token.constant { @apply text-purple-700 }
+.token.deleted { @apply text-red-500; }
+.light-mode .token.deleted { @apply text-red-700 }
+.token.doctype { @apply text-gray-500; }
+.light-mode .token.doctype { @apply text-gray-700 }
+.token.entity { @apply text-red-500; }
+.light-mode .token.entity { @apply text-red-700 }
+.token.function { @apply text-purple-500; }
+.light-mode .token.function { @apply text-purple-700 }
+.token.hexcode { @apply text-green-500; }
+.light-mode .token.hexcode { @apply text-green-700 }
+.token.id { @apply text-purple-500; font-weight: bold; }
+.light-mode .token.id { @apply text-purple-700 }
+.token.important { @apply text-purple-500; font-weight: bold; }
+.light-mode .token.important { @apply text-purple-700 }
+.token.inserted { @apply text-teal-500; }
+.light-mode .token.inserted { @apply text-teal-700 }
+.token.keyword { @apply text-purple-500; font-style: italic; }
+.light-mode .token.keyword { @apply text-purple-700 }
+.token.number { @apply text-orange-500 }
+.light-mode .token.number { @apply text-orange-700 }
+.token.operator { @apply text-blue-400 }
+.light-mode .token.operator { @apply text-blue-700 }
+.token.prolog { @apply text-gray-500 }
+.light-mode .token.prolog { @apply text-gray-700 }
+.token.property { @apply text-teal-500; }
+.light-mode .token.property { @apply text-teal-700 }
+.token.pseudo-class { @apply text-green-500; }
+.light-mode .token.pseudo-class { @apply text-green-700 }
+.token.pseudo-element { @apply text-green-500; }
+.light-mode .token.pseudo-element { @apply text-green-700 }
+.token.punctuation { @apply text-blue-400 }
+.light-mode .token.punctuation { @apply text-blue-700 }
+.token.regex { @apply text-green-500; }
+.light-mode .token.regex { @apply text-green-700 }
+.token.selector { @apply text-red-500; }
+.light-mode .token.selector { @apply text-red-700 }
+.token.string { @apply text-green-500; }
+.light-mode .token.string { @apply text-green-700 }
+.token.symbol { @apply text-purple-500; }
+.light-mode .token.symbol { @apply text-purple-700 }
+.token.tag { @apply text-red-500; }
+.light-mode .token.tag { @apply text-red-700 }
+.token.unit { @apply text-red-500; }
+.light-mode .token.unit { @apply text-red-700 }
+.token.url { @apply text-orange-500 }
+.light-mode .token.url { @apply text-orange-700 }
+.token.variable { @apply text-red-500; }
+.light-mode .token.variable { @apply text-red-700 }

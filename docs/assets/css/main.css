@@ -2,9 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities'; */
 
-html:not(.break-smooth) {
-  scroll-behavior: smooth;
-}
+html:not(.break-smooth) { scroll-behavior: smooth; }
+
+.dark-mode ::selection  { @apply bg-gray-500 }
+.light-mode ::selection { @apply bg-gray-400 }
 
 .nuxt-content {
   @apply break-words;
@@ -70,19 +71,4 @@ html:not(.break-smooth) {
       }
     }
   }
-
-  /* Force style on pre elements */
-  /* Make pre static so the relative goes to the parent (.nuxt-content-highlight) */
-}
-pre[class*="language-"] {
-  @apply rounded-lg bg-gray-900 static;
-  margin: 0 !important;
-}
-
-
-.vue-typer .typed {
-  color: currentColor !important
-}
-.vue-typer .custom.caret {
-  display: none;
 }
