@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.8...@glyphs/flags-v0.0.9) (2021-01-06)
+
+
+### Features
+
+* **flags:** 3 new icons ([bb0558c](https://github.com/gorango/glyphs/commit/bb0558cc35be2091f48aa43cc9fca5ee1ff87cea))
+* **flags:** add glyphs cli config ([b6f62da](https://github.com/gorango/glyphs/commit/b6f62da881ee287bffc0a49eb699a84dcc83822b))
+* **flags:** use color palette; 13 new icons ([4433eec](https://github.com/gorango/glyphs/commit/4433eec2a586d1a9a3e79b286a02ae8c7b93d34d))
+
+
+### Bug Fixes
+
+* **flags:** update vatican crest ([d727575](https://github.com/gorango/glyphs/commit/d72757534ea8ae8840f68c29eb35d18c275d6996))
+
 ### [0.0.8](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.7...@glyphs/flags-v0.0.8) (2020-12-25)
 
 
