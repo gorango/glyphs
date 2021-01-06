@@ -336,7 +336,7 @@
     ],
     "variants": {
       "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M120 0H0V8H120V0Z\" fill=\"#EB5757\" />\n  <path d=\"M120 36H0V44H120V36Z\" fill=\"#EB5757\" />\n  <path d=\"M120 18H0V26H120V18Z\" fill=\"#EB5757\" />\n  <path d=\"M120 54H0V62H120V54Z\" fill=\"#EB5757\" />\n  <path d=\"M120 72H0V80H120V72Z\" fill=\"#EB5757\" />\n  <path d=\"M62 0H0V44H62V0Z\" fill=\"#2F80ED\" />\n  <path d=\"M10 3L11.1226 6.45492H14.7553L11.8164 8.59017L12.9389 12.0451L10 9.90983L7.06107 12.0451L8.18364 8.59017L5.24472 6.45492H8.87743L10 3Z\" fill=\"#F2F2F2\" />\n  <path d=\"M24 3L25.1226 6.45492H28.7553L25.8164 8.59017L26.9389 12.0451L24 9.90983L21.0611 12.0451L22.1836 8.59017L19.2447 6.45492H22.8774L24 3Z\" fill=\"#F2F2F2\" />\n  <path d=\"M38 3L39.1226 6.45492H42.7553L39.8164 8.59017L40.9389 12.0451L38 9.90983L35.0611 12.0451L36.1836 8.59017L33.2447 6.45492H36.8774L38 3Z\" fill=\"#F2F2F2\" />\n  <path d=\"M52 3L53.1226 6.45492H56.7553L53.8164 8.59017L54.9389 12.0451L52 9.90983L49.0611 12.0451L50.1836 8.59017L47.2447 6.45492H50.8774L52 3Z\" fill=\"#F2F2F2\" />\n  <path d=\"M10 17L11.1226 20.4549H14.7553L11.8164 22.5902L12.9389 26.0451L10 23.9098L7.06107 26.0451L8.18364 22.5902L5.24472 20.4549H8.87743L10 17Z\" fill=\"#F2F2F2\" />\n  <path d=\"M24 17L25.1226 20.4549H28.7553L25.8164 22.5902L26.9389 26.0451L24 23.9098L21.0611 26.0451L22.1836 22.5902L19.2447 20.4549H22.8774L24 17Z\" fill=\"#F2F2F2\" />\n  <path d=\"M38 17L39.1226 20.4549H42.7553L39.8164 22.5902L40.9389 26.0451L38 23.9098L35.0611 26.0451L36.1836 22.5902L33.2447 20.4549H36.8774L38 17Z\" fill=\"#F2F2F2\" />\n  <path d=\"M52 17L53.1226 20.4549H56.7553L53.8164 22.5902L54.9389 26.0451L52 23.9098L49.0611 26.0451L50.1836 22.5902L47.2447 20.4549H50.8774L52 17Z\" fill=\"#F2F2F2\" />\n  <path d=\"M10 31L11.1226 34.4549H14.7553L11.8164 36.5902L12.9389 40.0451L10 37.9098L7.06107 40.0451L8.18364 36.5902L5.24472 34.4549H8.87743L10 31Z\" fill=\"#F2F2F2\" />\n  <path d=\"M24 31L25.1226 34.4549H28.7553L25.8164 36.5902L26.9389 40.0451L24 37.9098L21.0611 40.0451L22.1836 36.5902L19.2447 34.4549H22.8774L24 31Z\" fill=\"#F2F2F2\" />\n  <path d=\"M38 31L39.1226 34.4549H42.7553L39.8164 36.5902L40.9389 40.0451L38 37.9098L35.0611 40.0451L36.1836 36.5902L33.2447 34.4549H36.8774L38 31Z\" fill=\"#F2F2F2\" />\n  <path d=\"M52 31L53.1226 34.4549H56.7553L53.8164 36.5902L54.9389 40.0451L52 37.9098L49.0611 40.0451L50.1836 36.5902L47.2447 34.4549H50.8774L52 31Z\" fill=\"#F2F2F2\" />\n</svg>",
-      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M100 0H-20V80H100V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M100 0H-20V8H100V0Z\" fill=\"#EB5757\" />\n    <path d=\"M100 36H-20V44H100V36Z\" fill=\"#EB5757\" />\n    <path d=\"M100 18H-20V26H100V18Z\" fill=\"#EB5757\" />\n    <path d=\"M100 54H-20V62H100V54Z\" fill=\"#EB5757\" />\n    <path d=\"M100 72H-20V80H100V72Z\" fill=\"#EB5757\" />\n    <path d=\"M42 0H-20V44H42V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M7 3L8.12257 6.45492H11.7553L8.81636 8.59017L9.93893 12.0451L7 9.90983L4.06107 12.0451L5.18364 8.59017L2.24472 6.45492H5.87743L7 3Z\" fill=\"#333333\" />\n    <path d=\"M21 3L22.1226 6.45492H25.7553L22.8164 8.59017L23.9389 12.0451L21 9.90983L18.0611 12.0451L19.1836 8.59017L16.2447 6.45492H19.8774L21 3Z\" fill=\"#333333\" />\n    <path d=\"M35 3L36.1226 6.45492H39.7553L36.8164 8.59017L37.9389 12.0451L35 9.90983L32.0611 12.0451L33.1836 8.59017L30.2447 6.45492H33.8774L35 3Z\" fill=\"#333333\" />\n    <path d=\"M7 17L8.12257 20.4549H11.7553L8.81636 22.5902L9.93893 26.0451L7 23.9098L4.06107 26.0451L5.18364 22.5902L2.24472 20.4549H5.87743L7 17Z\" fill=\"#333333\" />\n    <path d=\"M21 17L22.1226 20.4549H25.7553L22.8164 22.5902L23.9389 26.0451L21 23.9098L18.0611 26.0451L19.1836 22.5902L16.2447 20.4549H19.8774L21 17Z\" fill=\"#333333\" />\n    <path d=\"M35 17L36.1226 20.4549H39.7553L36.8164 22.5902L37.9389 26.0451L35 23.9098L32.0611 26.0451L33.1836 22.5902L30.2447 20.4549H33.8774L35 17Z\" fill=\"#333333\" />\n    <path d=\"M7 31L8.12257 34.4549H11.7553L8.81636 36.5902L9.93893 40.0451L7 37.9098L4.06107 40.0451L5.18364 36.5902L2.24472 34.4549H5.87743L7 31Z\" fill=\"#333333\" />\n    <path d=\"M21 31L22.1226 34.4549H25.7553L22.8164 36.5902L23.9389 40.0451L21 37.9098L18.0611 40.0451L19.1836 36.5902L16.2447 34.4549H19.8774L21 31Z\" fill=\"#333333\" />\n    <path d=\"M35 31L36.1226 34.4549H39.7553L36.8164 36.5902L37.9389 40.0451L35 37.9098L32.0611 40.0451L33.1836 36.5902L30.2447 34.4549H33.8774L35 31Z\" fill=\"#333333\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M100 0H-20V80H100V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M100 0H-20V8H100V0Z\" fill=\"#EB5757\" />\n    <path d=\"M100 36H-20V44H100V36Z\" fill=\"#EB5757\" />\n    <path d=\"M100 18H-20V26H100V18Z\" fill=\"#EB5757\" />\n    <path d=\"M100 54H-20V62H100V54Z\" fill=\"#EB5757\" />\n    <path d=\"M100 72H-20V80H100V72Z\" fill=\"#EB5757\" />\n    <path d=\"M42 0H-20V44H42V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M7 3L8.12257 6.45492H11.7553L8.81636 8.59017L9.93893 12.0451L7 9.90983L4.06107 12.0451L5.18364 8.59017L2.24472 6.45492H5.87743L7 3Z\" fill=\"#F2F2F2\" />\n    <path d=\"M21 3L22.1226 6.45492H25.7553L22.8164 8.59017L23.9389 12.0451L21 9.90983L18.0611 12.0451L19.1836 8.59017L16.2447 6.45492H19.8774L21 3Z\" fill=\"#F2F2F2\" />\n    <path d=\"M35 3L36.1226 6.45492H39.7553L36.8164 8.59017L37.9389 12.0451L35 9.90983L32.0611 12.0451L33.1836 8.59017L30.2447 6.45492H33.8774L35 3Z\" fill=\"#F2F2F2\" />\n    <path d=\"M7 17L8.12257 20.4549H11.7553L8.81636 22.5902L9.93893 26.0451L7 23.9098L4.06107 26.0451L5.18364 22.5902L2.24472 20.4549H5.87743L7 17Z\" fill=\"#F2F2F2\" />\n    <path d=\"M21 17L22.1226 20.4549H25.7553L22.8164 22.5902L23.9389 26.0451L21 23.9098L18.0611 26.0451L19.1836 22.5902L16.2447 20.4549H19.8774L21 17Z\" fill=\"#F2F2F2\" />\n    <path d=\"M35 17L36.1226 20.4549H39.7553L36.8164 22.5902L37.9389 26.0451L35 23.9098L32.0611 26.0451L33.1836 22.5902L30.2447 20.4549H33.8774L35 17Z\" fill=\"#F2F2F2\" />\n    <path d=\"M7 31L8.12257 34.4549H11.7553L8.81636 36.5902L9.93893 40.0451L7 37.9098L4.06107 40.0451L5.18364 36.5902L2.24472 34.4549H5.87743L7 31Z\" fill=\"#F2F2F2\" />\n    <path d=\"M21 31L22.1226 34.4549H25.7553L22.8164 36.5902L23.9389 40.0451L21 37.9098L18.0611 40.0451L19.1836 36.5902L16.2447 34.4549H19.8774L21 31Z\" fill=\"#F2F2F2\" />\n    <path d=\"M35 31L36.1226 34.4549H39.7553L36.8164 36.5902L37.9389 40.0451L35 37.9098L32.0611 40.0451L33.1836 36.5902L30.2447 34.4549H33.8774L35 31Z\" fill=\"#F2F2F2\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
     }
   },
   {
@@ -363,8 +363,8 @@
       "europe"
     ],
     "variants": {
-      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2C94C\" />\n    <path d=\"M40 0H0V80H40V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M120 0H80.001V80H120V0Z\" fill=\"#EB5757\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M64 26C64 26.5305 63.8967 27.0368 63.7092 27.5H68.0309C68.277 25.5268 69.9602 24 72 24C74.2091 24 76 25.7909 76 28C76 29.2632 75.4145 30.3896 74.5 31.1227V32.0309C76.4732 32.277 78 33.9602 78 36C78 38.0398 76.4732 39.723 74.5 39.9691V50C74.5 50.6013 74.4495 51.1908 74.3524 51.7645C75.351 52.4918 76 53.6701 76 55C76 57.2091 74.2091 59 72 59C71.3209 59 70.6813 58.8308 70.1212 58.5322C68.3979 59.7707 66.2841 60.5 64 60.5H63.7092C63.8967 60.9632 64 61.4696 64 62C64 64.2091 62.2091 66 60 66C57.7909 66 56 64.2091 56 62C56 61.4696 56.1033 60.9632 56.2908 60.5H56C53.7159 60.5 51.6021 59.7707 49.8788 58.5322C49.3187 58.8308 48.6791 59 48 59C45.7909 59 44 57.2091 44 55C44 53.6701 44.649 52.4918 45.6476 51.7645C45.5505 51.1908 45.5 50.6013 45.5 50V39.9691C43.5268 39.723 42 38.0398 42 36C42 33.9602 43.5268 32.277 45.5 32.0309V31.1227C44.5855 30.3896 44 29.2632 44 28C44 25.7909 45.7909 24 48 24C50.0398 24 51.723 25.5268 51.9691 27.5H56.2908C56.1033 27.0368 56 26.5305 56 26C56 23.7909 57.7909 22 60 22C62.2091 22 64 23.7909 64 26ZM69.5 50C69.5 50.8715 69.2973 51.6957 68.9365 52.428C68.6978 52.7119 68.4979 53.0295 68.3449 53.3726C67.3387 54.6671 65.7666 55.5 64 55.5H56C54.2334 55.5 52.6613 54.6671 51.6551 53.3726C51.5021 53.0295 51.3022 52.7119 51.0635 52.428C50.7027 51.6957 50.5 50.8715 50.5 50V32.5H69.5V50Z\" fill=\"#F2994A\" />\n    <mask id=\"mask0\" mask-type=\"alpha\" maskUnits=\"userSpaceOnUse\" x=\"48\" y=\"30\" width=\"24\" height=\"28\">\n      <path d=\"M48 30H72V50C72 54.4183 68.4183 58 64 58H56C51.5817 58 48 54.4183 48 50V30Z\" fill=\"#C4C4C4\" />\n    </mask>\n    <g mask=\"url(#mask0)\">\n      <rect x=\"48\" y=\"30\" width=\"24\" height=\"28\" fill=\"#EB5757\" />\n      <rect x=\"60\" y=\"44\" width=\"12\" height=\"14\" fill=\"#F2C94C\" />\n      <circle cx=\"54\" cy=\"37\" r=\"5\" fill=\"#F2C94C\" />\n    </g>\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
-      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2C94C\" />\n    <path d=\"M20 0H-20V80H20V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M100 0H60.001V80H100V0Z\" fill=\"#EB5757\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M44 26C44 26.5305 43.8967 27.0368 43.7092 27.5H48.0309C48.277 25.5268 49.9602 24 52 24C54.2091 24 56 25.7909 56 28C56 29.2632 55.4145 30.3896 54.5 31.1227V32.0309C56.4732 32.277 58 33.9602 58 36C58 38.0398 56.4732 39.723 54.5 39.9691V50C54.5 50.6013 54.4495 51.1908 54.3524 51.7645C55.351 52.4918 56 53.6701 56 55C56 57.2091 54.2091 59 52 59C51.3209 59 50.6813 58.8308 50.1212 58.5322C48.3979 59.7707 46.2841 60.5 44 60.5H43.7092C43.8967 60.9632 44 61.4696 44 62C44 64.2091 42.2091 66 40 66C37.7909 66 36 64.2091 36 62C36 61.4696 36.1033 60.9632 36.2908 60.5H36C33.7159 60.5 31.6021 59.7707 29.8788 58.5322C29.3187 58.8308 28.6791 59 28 59C25.7909 59 24 57.2091 24 55C24 53.6701 24.649 52.4918 25.6476 51.7645C25.5505 51.1908 25.5 50.6013 25.5 50V39.9691C23.5268 39.723 22 38.0398 22 36C22 33.9602 23.5268 32.277 25.5 32.0309V31.1227C24.5855 30.3896 24 29.2632 24 28C24 25.7909 25.7909 24 28 24C30.0398 24 31.723 25.5268 31.9691 27.5H36.2908C36.1033 27.0368 36 26.5305 36 26C36 23.7909 37.7909 22 40 22C42.2091 22 44 23.7909 44 26ZM49.5 50C49.5 50.8715 49.2973 51.6957 48.9365 52.428C48.6978 52.7119 48.4979 53.0295 48.3449 53.3726C47.3387 54.6671 45.7666 55.5 44 55.5H36C34.2334 55.5 32.6613 54.6671 31.6551 53.3726C31.5021 53.0295 31.3022 52.7119 31.0635 52.428C30.7027 51.6957 30.5 50.8715 30.5 50V32.5H49.5V50Z\" fill=\"#F2994A\" />\n    <mask id=\"mask0\" mask-type=\"alpha\" maskUnits=\"userSpaceOnUse\" x=\"28\" y=\"30\" width=\"24\" height=\"28\">\n      <path d=\"M28 30H52V50C52 54.4183 48.4183 58 44 58H36C31.5817 58 28 54.4183 28 50V30Z\" fill=\"#C4C4C4\" />\n    </mask>\n    <g mask=\"url(#mask0)\">\n      <rect x=\"28\" y=\"30\" width=\"24\" height=\"28\" fill=\"#EB5757\" />\n      <rect x=\"40\" y=\"44\" width=\"12\" height=\"14\" fill=\"#F2C94C\" />\n      <circle cx=\"34\" cy=\"37\" r=\"5\" fill=\"#F2C94C\" />\n    </g>\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2C94C\" />\n    <path d=\"M40 0H0V80H40V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M120 0H80.001V80H120V0Z\" fill=\"#EB5757\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M64 26C64 26.5305 63.8967 27.0368 63.7092 27.5H68.0309C68.277 25.5268 69.9602 24 72 24C74.2091 24 76 25.7909 76 28C76 29.2632 75.4145 30.3896 74.5 31.1227V32.0309C76.4732 32.277 78 33.9602 78 36C78 38.0398 76.4732 39.723 74.5 39.9691V50C74.5 50.6013 74.4495 51.1908 74.3524 51.7645C75.351 52.4918 76 53.6701 76 55C76 57.2091 74.2091 59 72 59C71.3209 59 70.6813 58.8308 70.1212 58.5322C68.3979 59.7707 66.2841 60.5 64 60.5H63.7092C63.8967 60.9632 64 61.4696 64 62C64 64.2091 62.2091 66 60 66C57.7909 66 56 64.2091 56 62C56 61.4696 56.1033 60.9632 56.2908 60.5H56C53.7159 60.5 51.6021 59.7707 49.8788 58.5322C49.3187 58.8308 48.6791 59 48 59C45.7909 59 44 57.2091 44 55C44 53.6701 44.649 52.4918 45.6476 51.7645C45.5505 51.1908 45.5 50.6013 45.5 50V39.9691C43.5268 39.723 42 38.0398 42 36C42 33.9602 43.5268 32.277 45.5 32.0309V31.1227C44.5855 30.3896 44 29.2632 44 28C44 25.7909 45.7909 24 48 24C50.0398 24 51.723 25.5268 51.9691 27.5H56.2908C56.1033 27.0368 56 26.5305 56 26C56 23.7909 57.7909 22 60 22C62.2091 22 64 23.7909 64 26ZM69.5 50C69.5 50.8715 69.2973 51.6957 68.9365 52.428C68.6978 52.7119 68.4979 53.0295 68.3449 53.3726C67.3387 54.6671 65.7666 55.5 64 55.5H56C54.2334 55.5 52.6613 54.6671 51.6551 53.3726C51.5021 53.0295 51.3022 52.7119 51.0635 52.428C50.7027 51.6957 50.5 50.8715 50.5 50V32.5H69.5V50Z\" fill=\"#F2994A\" />\n    <mask id=\"mask0\" mask-type=\"alpha\" maskUnits=\"userSpaceOnUse\" x=\"45\" y=\"27\" width=\"30\" height=\"34\">\n      <path d=\"M48 30H72V50C72 54.4183 68.4183 58 64 58H56C51.5817 58 48 54.4183 48 50V30Z\" fill=\"#C4C4C4\" stroke=\"#F2994A\" stroke-width=\"5\" stroke-linejoin=\"round\" />\n    </mask>\n    <g mask=\"url(#mask0)\">\n      <rect x=\"48\" y=\"30\" width=\"24\" height=\"28\" fill=\"#EB5757\" />\n      <rect x=\"60\" y=\"44\" width=\"12\" height=\"14\" fill=\"#F2C94C\" />\n      <circle cx=\"54\" cy=\"37\" r=\"5\" fill=\"#F2C94C\" />\n    </g>\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2C94C\" />\n    <path d=\"M20 0H-20V80H20V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M100 0H60.001V80H100V0Z\" fill=\"#EB5757\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M44 26C44 26.5305 43.8967 27.0368 43.7092 27.5H48.0309C48.277 25.5268 49.9602 24 52 24C54.2091 24 56 25.7909 56 28C56 29.2632 55.4145 30.3896 54.5 31.1227V32.0309C56.4732 32.277 58 33.9602 58 36C58 38.0398 56.4732 39.723 54.5 39.9691V50C54.5 50.6013 54.4495 51.1908 54.3524 51.7645C55.351 52.4918 56 53.6701 56 55C56 57.2091 54.2091 59 52 59C51.3209 59 50.6813 58.8308 50.1212 58.5322C48.3979 59.7707 46.2841 60.5 44 60.5H43.7092C43.8967 60.9632 44 61.4696 44 62C44 64.2091 42.2091 66 40 66C37.7909 66 36 64.2091 36 62C36 61.4696 36.1033 60.9632 36.2908 60.5H36C33.7159 60.5 31.6021 59.7707 29.8788 58.5322C29.3187 58.8308 28.6791 59 28 59C25.7909 59 24 57.2091 24 55C24 53.6701 24.649 52.4918 25.6476 51.7645C25.5505 51.1908 25.5 50.6013 25.5 50V39.9691C23.5268 39.723 22 38.0398 22 36C22 33.9602 23.5268 32.277 25.5 32.0309V31.1227C24.5855 30.3896 24 29.2632 24 28C24 25.7909 25.7909 24 28 24C30.0398 24 31.723 25.5268 31.9691 27.5H36.2908C36.1033 27.0368 36 26.5305 36 26C36 23.7909 37.7909 22 40 22C42.2091 22 44 23.7909 44 26ZM49.5 50C49.5 50.8715 49.2973 51.6957 48.9365 52.428C48.6978 52.7119 48.4979 53.0295 48.3449 53.3726C47.3387 54.6671 45.7666 55.5 44 55.5H36C34.2334 55.5 32.6613 54.6671 31.6551 53.3726C31.5021 53.0295 31.3022 52.7119 31.0635 52.428C30.7027 51.6957 30.5 50.8715 30.5 50V32.5H49.5V50Z\" fill=\"#F2994A\" />\n    <mask id=\"mask0\" mask-type=\"alpha\" maskUnits=\"userSpaceOnUse\" x=\"25\" y=\"27\" width=\"30\" height=\"34\">\n      <path d=\"M28 30H52V50C52 54.4183 48.4183 58 44 58H36C31.5817 58 28 54.4183 28 50V30Z\" fill=\"#C4C4C4\" stroke=\"#F2994A\" stroke-width=\"5\" stroke-linejoin=\"round\" />\n    </mask>\n    <g mask=\"url(#mask0)\">\n      <rect x=\"28\" y=\"30\" width=\"24\" height=\"28\" fill=\"#EB5757\" />\n      <rect x=\"40\" y=\"44\" width=\"12\" height=\"14\" fill=\"#F2C94C\" />\n      <circle cx=\"34\" cy=\"37\" r=\"5\" fill=\"#F2C94C\" />\n    </g>\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
     }
   },
   {
@@ -465,6 +465,485 @@
     "variants": {
       "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#219653\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M120 53.33H0V80H120V53.33Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
       "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#219653\" />\n    <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M80 53.33H0V80H80V53.33Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "croatia",
+    "id": "4672:1068",
+    "terms": [
+      "croatia"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#EB5757\" />\n    <path d=\"M120 53.33H0V80H120V53.33Z\" fill=\"#2F80ED\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M46 23.1667L51 19L55.5 22.75L60 19L64.5 22.75L69 19L74 23.1667V29L72 29H63L57 29H48H46V23.1667Z\" fill=\"#2F80ED\" />\n    <mask id=\"mask0\" mask-type=\"alpha\" maskUnits=\"userSpaceOnUse\" x=\"46\" y=\"29\" width=\"28\" height=\"32\">\n      <path d=\"M46 29H74V47C74 54.732 67.732 61 60 61C52.268 61 46 54.732 46 47V29Z\" fill=\"#F2F2F2\" />\n    </mask>\n    <g mask=\"url(#mask0)\">\n      <path d=\"M45.9999 29H51.5999V34.6H45.9999V29Z\" fill=\"#EB5757\" />\n      <path d=\"M51.5999 29H57.1999V34.6H51.5999V29Z\" fill=\"#F2F2F2\" />\n      <path d=\"M57.1999 29H62.7999V34.6H57.1999V29Z\" fill=\"#EB5757\" />\n      <path d=\"M62.7999 29H68.3999V34.6H62.7999V29Z\" fill=\"#F2F2F2\" />\n      <path d=\"M68.3998 29H73.9998V34.6H68.3998V29Z\" fill=\"#EB5757\" />\n      <path d=\"M73.9998 29H79.5998V34.6H73.9998V29Z\" fill=\"#F2F2F2\" />\n      <path d=\"M79.5998 34.6H73.9998V40.2H79.5998V34.6Z\" fill=\"#EB5757\" />\n      <path d=\"M73.9998 34.6H68.3998V40.2H73.9998V34.6Z\" fill=\"#F2F2F2\" />\n      <path d=\"M68.3998 34.6H62.7998V40.2H68.3998V34.6Z\" fill=\"#EB5757\" />\n      <path d=\"M62.7999 34.6H57.1999V40.2H62.7999V34.6Z\" fill=\"#F2F2F2\" />\n      <path d=\"M57.1999 34.6H51.5999V40.2H57.1999V34.6Z\" fill=\"#EB5757\" />\n      <path d=\"M51.5999 34.6H45.9999V40.2H51.5999V34.6Z\" fill=\"#F2F2F2\" />\n      <path d=\"M45.9999 40.2H51.5999V45.8H45.9999V40.2Z\" fill=\"#EB5757\" />\n      <path d=\"M51.5999 40.2H57.1999V45.8H51.5999V40.2Z\" fill=\"#F2F2F2\" />\n      <path d=\"M57.1999 40.2H62.7999V45.8H57.1999V40.2Z\" fill=\"#EB5757\" />\n      <path d=\"M62.7999 40.2H68.3999V45.8H62.7999V40.2Z\" fill=\"#F2F2F2\" />\n      <path d=\"M68.3998 40.2H73.9998V45.8H68.3998V40.2Z\" fill=\"#EB5757\" />\n      <path d=\"M73.9998 40.2H79.5998V45.8H73.9998V40.2Z\" fill=\"#F2F2F2\" />\n      <path d=\"M79.5999 45.8H73.9999V51.4H79.5999V45.8Z\" fill=\"#EB5757\" />\n      <path d=\"M73.9999 45.8H68.3999V51.4H73.9999V45.8Z\" fill=\"#F2F2F2\" />\n      <path d=\"M68.3999 45.8H62.7999V51.4H68.3999V45.8Z\" fill=\"#EB5757\" />\n      <path d=\"M62.7999 45.8H57.1999V51.4H62.7999V45.8Z\" fill=\"#F2F2F2\" />\n      <path d=\"M57.2 45.8H51.6V51.4H57.2V45.8Z\" fill=\"#EB5757\" />\n      <path d=\"M51.6 45.8H46V51.4H51.6V45.8Z\" fill=\"#F2F2F2\" />\n      <path d=\"M45.9999 51.4H51.5999V57H45.9999V51.4Z\" fill=\"#EB5757\" />\n      <path d=\"M51.5999 51.4H57.1999V57H51.5999V51.4Z\" fill=\"#F2F2F2\" />\n      <path d=\"M57.1999 51.4H62.7999V57H57.1999V51.4Z\" fill=\"#EB5757\" />\n      <path d=\"M62.7999 51.4H68.3999V57H62.7999V51.4Z\" fill=\"#F2F2F2\" />\n      <path d=\"M68.3998 51.4H73.9998V57H68.3998V51.4Z\" fill=\"#EB5757\" />\n      <path d=\"M73.9998 51.4H79.5998V57H73.9998V51.4Z\" fill=\"#F2F2F2\" />\n      <path d=\"M79.5999 57H73.9999V62.6H79.5999V57Z\" fill=\"#EB5757\" />\n      <path d=\"M73.9999 57H68.3999V62.6H73.9999V57Z\" fill=\"#F2F2F2\" />\n      <path d=\"M68.3999 57H62.7999V62.6H68.3999V57Z\" fill=\"#EB5757\" />\n      <path d=\"M62.7999 57H57.1999V62.6H62.7999V57Z\" fill=\"#F2F2F2\" />\n      <path d=\"M57.2 57H51.6V62.6H57.2V57Z\" fill=\"#EB5757\" />\n      <path d=\"M51.6 57H46V62.6H51.6V57Z\" fill=\"#F2F2F2\" />\n    </g>\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#EB5757\" />\n  <path d=\"M80 53.33H0V80H80V53.33Z\" fill=\"#2F80ED\" />\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26 23.1667L31 19L35.5 22.75L40 19L44.5 22.75L49 19L54 23.1667V29L52 29H43L37 29H28H26V23.1667Z\" fill=\"#2F80ED\" />\n  <mask id=\"mask0\" mask-type=\"alpha\" maskUnits=\"userSpaceOnUse\" x=\"26\" y=\"29\" width=\"28\" height=\"32\">\n    <path d=\"M26 29H54V47C54 54.732 47.732 61 40 61C32.268 61 26 54.732 26 47V29Z\" fill=\"#F2F2F2\" />\n  </mask>\n  <g mask=\"url(#mask0)\">\n    <path d=\"M25.9999 29H31.5999V34.6H25.9999V29Z\" fill=\"#EB5757\" />\n    <path d=\"M31.5999 29H37.1999V34.6H31.5999V29Z\" fill=\"#F2F2F2\" />\n    <path d=\"M37.1999 29H42.7999V34.6H37.1999V29Z\" fill=\"#EB5757\" />\n    <path d=\"M42.7999 29H48.3999V34.6H42.7999V29Z\" fill=\"#F2F2F2\" />\n    <path d=\"M48.3998 29H53.9998V34.6H48.3998V29Z\" fill=\"#EB5757\" />\n    <path d=\"M53.9998 29H59.5998V34.6H53.9998V29Z\" fill=\"#F2F2F2\" />\n    <path d=\"M59.5998 34.6H53.9998V40.2H59.5998V34.6Z\" fill=\"#EB5757\" />\n    <path d=\"M53.9998 34.6H48.3998V40.2H53.9998V34.6Z\" fill=\"#F2F2F2\" />\n    <path d=\"M48.3998 34.6H42.7998V40.2H48.3998V34.6Z\" fill=\"#EB5757\" />\n    <path d=\"M42.7999 34.6H37.1999V40.2H42.7999V34.6Z\" fill=\"#F2F2F2\" />\n    <path d=\"M37.1999 34.6H31.5999V40.2H37.1999V34.6Z\" fill=\"#EB5757\" />\n    <path d=\"M31.5999 34.6H25.9999V40.2H31.5999V34.6Z\" fill=\"#F2F2F2\" />\n    <path d=\"M25.9999 40.2H31.5999V45.8H25.9999V40.2Z\" fill=\"#EB5757\" />\n    <path d=\"M31.5999 40.2H37.1999V45.8H31.5999V40.2Z\" fill=\"#F2F2F2\" />\n    <path d=\"M37.1999 40.2H42.7999V45.8H37.1999V40.2Z\" fill=\"#EB5757\" />\n    <path d=\"M42.7999 40.2H48.3999V45.8H42.7999V40.2Z\" fill=\"#F2F2F2\" />\n    <path d=\"M48.3998 40.2H53.9998V45.8H48.3998V40.2Z\" fill=\"#EB5757\" />\n    <path d=\"M53.9998 40.2H59.5998V45.8H53.9998V40.2Z\" fill=\"#F2F2F2\" />\n    <path d=\"M59.5999 45.8H53.9999V51.4H59.5999V45.8Z\" fill=\"#EB5757\" />\n    <path d=\"M53.9999 45.8H48.3999V51.4H53.9999V45.8Z\" fill=\"#F2F2F2\" />\n    <path d=\"M48.3999 45.8H42.7999V51.4H48.3999V45.8Z\" fill=\"#EB5757\" />\n    <path d=\"M42.7999 45.8H37.1999V51.4H42.7999V45.8Z\" fill=\"#F2F2F2\" />\n    <path d=\"M37.2 45.8H31.6V51.4H37.2V45.8Z\" fill=\"#EB5757\" />\n    <path d=\"M31.6 45.8H26V51.4H31.6V45.8Z\" fill=\"#F2F2F2\" />\n    <path d=\"M25.9999 51.4H31.5999V57H25.9999V51.4Z\" fill=\"#EB5757\" />\n    <path d=\"M31.5999 51.4H37.1999V57H31.5999V51.4Z\" fill=\"#F2F2F2\" />\n    <path d=\"M37.1999 51.4H42.7999V57H37.1999V51.4Z\" fill=\"#EB5757\" />\n    <path d=\"M42.7999 51.4H48.3999V57H42.7999V51.4Z\" fill=\"#F2F2F2\" />\n    <path d=\"M48.3998 51.4H53.9998V57H48.3998V51.4Z\" fill=\"#EB5757\" />\n    <path d=\"M53.9998 51.4H59.5998V57H53.9998V51.4Z\" fill=\"#F2F2F2\" />\n    <path d=\"M59.5999 57H53.9999V62.6H59.5999V57Z\" fill=\"#EB5757\" />\n    <path d=\"M53.9999 57H48.3999V62.6H53.9999V57Z\" fill=\"#F2F2F2\" />\n    <path d=\"M48.3999 57H42.7999V62.6H48.3999V57Z\" fill=\"#EB5757\" />\n    <path d=\"M42.7999 57H37.1999V62.6H42.7999V57Z\" fill=\"#F2F2F2\" />\n    <path d=\"M37.2 57H31.6V62.6H37.2V57Z\" fill=\"#EB5757\" />\n    <path d=\"M31.6 57H26V62.6H31.6V57Z\" fill=\"#F2F2F2\" />\n  </g>\n</svg>"
+    }
+  },
+  {
+    "name": "cyprus",
+    "id": "4672:1069",
+    "terms": [
+      "cyprus"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M40.7238 41.6955L37 33.8922H40.0351C41.0402 33.8922 42.0085 33.5138 42.7472 32.8323L44.2343 31.4605C45.1692 30.5981 46.4643 30.2426 47.7085 30.5069C50.1481 31.025 52.4454 29.1645 52.4454 26.6704V24.7323L66.002 26.6075C66.6987 26.7039 67.4084 26.6149 68.0597 26.3494L91 17L77.8951 27.0373C76.1919 28.3418 75.8211 30.7576 77.0547 32.5128L79.4454 35.9145H72.1629C70.7151 35.9145 69.5415 37.0882 69.5415 38.536C69.5415 39.7255 68.7406 40.7659 67.5907 41.0702L57.0353 43.8636C55.8495 44.1774 54.8732 45.018 54.3867 46.144L53.1528 49L50.441 45.1933L43.5935 43.9037C42.3395 43.6675 41.2734 42.8472 40.7238 41.6955Z\" fill=\"#F2C94C\" />\n  <path d=\"M42 50L44.4335 52.4335C48.0632 56.0632 52.6859 58.5372 57.7193 59.5439L60 60\" stroke=\"#219653\" stroke-width=\"4\" />\n  <path d=\"M78 50L75.5665 52.4335C71.9368 56.0632 67.3141 58.5372 62.2807 59.5439L60 60\" stroke=\"#219653\" stroke-width=\"4\" />\n  <path d=\"M56 63V63C58.2091 60.7909 61.7909 60.7909 64 63V63\" stroke=\"#219653\" stroke-width=\"4\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M20.7238 41.6955L17 33.8922H20.0351C21.0402 33.8922 22.0085 33.5138 22.7472 32.8323L24.2343 31.4605C25.1692 30.5981 26.4643 30.2426 27.7085 30.5069C30.1481 31.025 32.4454 29.1645 32.4454 26.6704V24.7323L46.002 26.6075C46.6987 26.7039 47.4084 26.6149 48.0597 26.3494L71 17L57.8951 27.0373C56.1919 28.3418 55.8211 30.7576 57.0547 32.5128L59.4454 35.9145H52.1629C50.7151 35.9145 49.5415 37.0882 49.5415 38.536C49.5415 39.7255 48.7406 40.7659 47.5907 41.0702L37.0353 43.8636C35.8495 44.1774 34.8732 45.018 34.3867 46.144L33.1528 49L30.441 45.1933L23.5935 43.9037C22.3395 43.6675 21.2734 42.8472 20.7238 41.6955Z\" fill=\"#F2C94C\" />\n  <path d=\"M22 50L24.4335 52.4335C28.0632 56.0632 32.6859 58.5372 37.7193 59.5439L40 60\" stroke=\"#219653\" stroke-width=\"4\" />\n  <path d=\"M58 50L55.5665 52.4335C51.9368 56.0632 47.3141 58.5372 42.2807 59.5439L40 60\" stroke=\"#219653\" stroke-width=\"4\" />\n  <path d=\"M36 63V63C38.2091 60.7909 41.7909 60.7909 44 63V63\" stroke=\"#219653\" stroke-width=\"4\" />\n</svg>"
+    }
+  },
+  {
+    "name": "czechRepublic",
+    "id": "4672:1071",
+    "terms": [
+      "czech",
+      "republic"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 40V80H0V40H120Z\" fill=\"#EB5757\" />\n  <path d=\"M120 0V40H0V0H120Z\" fill=\"#F2F2F2\" />\n  <path d=\"M56 40L0 0V80L56 40Z\" fill=\"#2F80ED\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 40V80H0V40H80Z\" fill=\"#EB5757\" />\n  <path d=\"M80 0V40H0V0H80Z\" fill=\"#F2F2F2\" />\n  <path d=\"M37.3333 40L0 0V80L37.3333 40Z\" fill=\"#2F80ED\" />\n</svg>"
+    }
+  },
+  {
+    "name": "denmark",
+    "id": "4672:1078",
+    "terms": [
+      "denmark"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#EB5757\" />\n  <path d=\"M0 40H120\" stroke=\"#F2F2F2\" stroke-width=\"15\" />\n  <path d=\"M38 80V0\" stroke=\"#F2F2F2\" stroke-width=\"15\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#EB5757\" />\n  <path d=\"M0 40H80\" stroke=\"#F2F2F2\" stroke-width=\"15\" />\n  <path d=\"M25.3333 80V0\" stroke=\"#F2F2F2\" stroke-width=\"15\" />\n</svg>"
+    }
+  },
+  {
+    "name": "estonia",
+    "id": "4672:1079",
+    "terms": [
+      "estonia"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#333333\" />\n  <path d=\"M120 0.078949H0V26.7456H120V0.078949Z\" fill=\"#2F80ED\" />\n  <path d=\"M120 53H0V79.6667H120V53Z\" fill=\"#F2F2F2\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#333333\" />\n  <path d=\"M80 0.078949H0V26.7456H80V0.078949Z\" fill=\"#2F80ED\" />\n  <path d=\"M80 53H0V79.6667H80V53Z\" fill=\"#F2F2F2\" />\n</svg>"
+    }
+  },
+  {
+    "name": "finland",
+    "id": "4672:1090",
+    "terms": [
+      "finland"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M0 40H120\" stroke=\"#2F80ED\" stroke-width=\"17\" />\n  <path d=\"M38 80V0\" stroke=\"#2F80ED\" stroke-width=\"17\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M0 40H80\" stroke=\"#2F80ED\" stroke-width=\"17\" />\n  <path d=\"M25.3333 80V0\" stroke=\"#2F80ED\" stroke-width=\"17\" />\n</svg>"
+    }
+  },
+  {
+    "name": "france",
+    "id": "4672:1089",
+    "terms": [
+      "france"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M39.9991 0H0V80H39.9991V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M120 0H80.0009V80H120V0Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M19.9991 0H-20V80H19.9991V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M100 0H60.0009V80H100V0Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "georgia",
+    "id": "4672:1122",
+    "terms": [
+      "georgia"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M0 40H120\" stroke=\"#EB5757\" stroke-width=\"16\" />\n  <path d=\"M60 80V0\" stroke=\"#EB5757\" stroke-width=\"16\" />\n  <path d=\"M18 17H34\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M26 25V9\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M18 64H34\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M26 72V56\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M86 17H102\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M94 25V9\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M86 64H102\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M94 72V56\" stroke=\"#EB5757\" stroke-width=\"6\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M0 40H80\" stroke=\"#EB5757\" stroke-width=\"16\" />\n  <path d=\"M40 80V0\" stroke=\"#EB5757\" stroke-width=\"16\" />\n  <path d=\"M9 17H25\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M17 25V9\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M9 64H25\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M17 72V56\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M54.3333 17H70.3333\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M62.3333 25V9\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M54.3333 64H70.3333\" stroke=\"#EB5757\" stroke-width=\"6\" />\n  <path d=\"M62.3333 72V56\" stroke=\"#EB5757\" stroke-width=\"6\" />\n</svg>"
+    }
+  },
+  {
+    "name": "germany",
+    "id": "4672:1128",
+    "terms": [
+      "germany"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#EB5757\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#333333\" />\n    <path d=\"M120 53.3333H0V80H120V53.3333Z\" fill=\"#F2C94C\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#EB5757\" />\n    <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#333333\" />\n    <path d=\"M80 53.3333H0V80H80V53.3333Z\" fill=\"#F2C94C\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "greece",
+    "id": "4672:1127",
+    "terms": [
+      "greece"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#2F80ED\" />\n  <path d=\"M120 10H44V18H120V10Z\" fill=\"#F2F2F2\" />\n  <path d=\"M120 28H44V36H120V28Z\" fill=\"#F2F2F2\" />\n  <path d=\"M120 46H0V54H120V46Z\" fill=\"#F2F2F2\" />\n  <path d=\"M120 64H0V72H120V64Z\" fill=\"#F2F2F2\" />\n  <path d=\"M0 23H44\" stroke=\"#F2F2F2\" stroke-width=\"8\" />\n  <path d=\"M22 46V0\" stroke=\"#F2F2F2\" stroke-width=\"8\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#2F80ED\" />\n  <path d=\"M80 10H44V18H80V10Z\" fill=\"#F2F2F2\" />\n  <path d=\"M80 28H44V36H80V28Z\" fill=\"#F2F2F2\" />\n  <path d=\"M80 46H0V54H80V46Z\" fill=\"#F2F2F2\" />\n  <path d=\"M80 64H0V72H80V64Z\" fill=\"#F2F2F2\" />\n  <path d=\"M0 23H44\" stroke=\"#F2F2F2\" stroke-width=\"8\" />\n  <path d=\"M22 46V0\" stroke=\"#F2F2F2\" stroke-width=\"8\" />\n</svg>"
+    }
+  },
+  {
+    "name": "hungary",
+    "id": "4672:1129",
+    "terms": [
+      "hungary"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#EB5757\" />\n    <path opacity=\"0.9\" d=\"M120 53.3333H0V80H120V53.3333Z\" fill=\"#219653\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#EB5757\" />\n  <path opacity=\"0.9\" d=\"M80 53.3333H0V80H80V53.3333Z\" fill=\"#219653\" />\n</svg>"
+    }
+  },
+  {
+    "name": "iceland",
+    "id": "4672:1136",
+    "terms": [
+      "iceland"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#2F80ED\" />\n  <path d=\"M0 40H120\" stroke=\"#F2F2F2\" stroke-width=\"17\" />\n  <path d=\"M38 80V0\" stroke=\"#F2F2F2\" stroke-width=\"17\" />\n  <path d=\"M0 40H120\" stroke=\"#EB5757\" stroke-width=\"8\" />\n  <path d=\"M38 80V0\" stroke=\"#EB5757\" stroke-width=\"8\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#2F80ED\" />\n  <path d=\"M0 40H80\" stroke=\"#F2F2F2\" stroke-width=\"17\" />\n  <path d=\"M25.3334 80V0\" stroke=\"#F2F2F2\" stroke-width=\"17\" />\n  <path d=\"M0 40H80\" stroke=\"#EB5757\" stroke-width=\"8\" />\n  <path d=\"M25.3334 80V0\" stroke=\"#EB5757\" stroke-width=\"8\" />\n</svg>"
+    }
+  },
+  {
+    "name": "ireland",
+    "id": "4672:2007",
+    "terms": [
+      "ireland"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M39.9991 0H0V80H39.9991V0Z\" fill=\"#219653\" />\n    <path d=\"M120 0H80.0009V80H120V0Z\" fill=\"#F2994A\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M19.9991 0H-20V80H19.9991V0Z\" fill=\"#219653\" />\n    <path d=\"M100 0H60.0009V80H100V0Z\" fill=\"#F2994A\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "italy",
+    "id": "4672:2008",
+    "terms": [
+      "italy"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M39.9991 0H0V80H39.9991V0Z\" fill=\"#219653\" />\n    <path d=\"M120 0H80.001V80H120V0Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M19.9991 0H-20V80H19.9991V0Z\" fill=\"#219653\" />\n    <path d=\"M100 0H60.001V80H100V0Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "kazakhstan",
+    "id": "4672:1157",
+    "terms": [
+      "kazakhstan"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#56CCF2\" />\n  <path d=\"M8 8L12 12.5714L8 17.1429L4 12.5714L8 8Z\" fill=\"#F2C94C\" />\n  <path d=\"M8 21.7143L12 26.2857L8 30.8571L4 26.2857L8 21.7143Z\" fill=\"#F2C94C\" />\n  <path d=\"M8 33.9048L12 40L8 46.0952L4 40L8 33.9048Z\" fill=\"#F2C94C\" />\n  <path d=\"M8 49.1429L12 53.7143L8 58.2857L4 53.7143L8 49.1429Z\" fill=\"#F2C94C\" />\n  <path d=\"M8 62.8571L12 67.4286L8 72L4 67.4286L8 62.8571Z\" fill=\"#F2C94C\" />\n  <path d=\"M60 24L62.7034 26.7345L66.5136 26.3957L66.8451 30.2464L69.9794 32.4618L67.784 35.6269L68.7758 39.36L65.0806 40.3585L63.4658 43.8624L60 42.2272L56.5342 43.8624L54.9194 40.3585L51.2243 39.36L52.2161 35.6269L50.0206 32.4618L53.155 30.2464L53.4865 26.3957L57.2967 26.7345L60 24Z\" fill=\"#F2C94C\" />\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M77.6012 34.8448C76.5285 42.4387 69.0572 48.32 60 48.32C50.9428 48.32 43.4715 42.4387 42.3988 34.8447C41.497 36.6331 41 38.5896 41 40.64C41 49.1231 49.5066 56 60 56C70.4934 56 79 49.1231 79 40.64C79 38.5896 78.503 36.6331 77.6012 34.8448Z\" fill=\"#F2C94C\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#56CCF2\" />\n  <path d=\"M8 8L12 12.5714L8 17.1429L4 12.5714L8 8Z\" fill=\"#F2C94C\" />\n  <path d=\"M8 21.7143L12 26.2857L8 30.8571L4 26.2857L8 21.7143Z\" fill=\"#F2C94C\" />\n  <path d=\"M8 33.9048L12 40L8 46.0952L4 40L8 33.9048Z\" fill=\"#F2C94C\" />\n  <path d=\"M8 49.1429L12 53.7143L8 58.2857L4 53.7143L8 49.1429Z\" fill=\"#F2C94C\" />\n  <path d=\"M8 62.8571L12 67.4286L8 72L4 67.4286L8 62.8571Z\" fill=\"#F2C94C\" />\n  <path d=\"M40 24L42.7034 26.7345L46.5136 26.3957L46.8451 30.2464L49.9794 32.4618L47.784 35.6269L48.7758 39.36L45.0806 40.3585L43.4658 43.8624L40 42.2272L36.5342 43.8624L34.9194 40.3585L31.2243 39.36L32.2161 35.6269L30.0206 32.4618L33.155 30.2464L33.4865 26.3957L37.2967 26.7345L40 24Z\" fill=\"#F2C94C\" />\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M57.6012 34.8448C56.5285 42.4387 49.0572 48.32 40 48.32C30.9428 48.32 23.4715 42.4387 22.3988 34.8448C21.497 36.6331 21 38.5896 21 40.64C21 49.1231 29.5066 56 40 56C50.4934 56 59 49.1231 59 40.64C59 38.5896 58.503 36.6331 57.6012 34.8448Z\" fill=\"#F2C94C\" />\n</svg>"
+    }
+  },
+  {
+    "name": "latvia",
+    "id": "4672:1178",
+    "terms": [
+      "latvia"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#EB5757\" />\n  <path d=\"M120 26.6667H0V53.3333H120V26.6667Z\" fill=\"#F2F2F2\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#EB5757\" />\n  <path d=\"M80 26.6667H0V53.3333H80V26.6667Z\" fill=\"#F2F2F2\" />\n</svg>"
+    }
+  },
+  {
+    "name": "liechtenstein",
+    "id": "4672:1177",
+    "terms": [
+      "liechtenstein"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#EB5757\" />\n  <path d=\"M120 0V39.0281L0 40V0H120Z\" fill=\"#2F80ED\" />\n  <path d=\"M25 10V22\" stroke=\"#F2994A\" stroke-width=\"3\" />\n  <path d=\"M29 14L21 14\" stroke=\"#F2994A\" stroke-width=\"3\" />\n  <mask id=\"path-5-inside-1\" fill=\"white\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13 23C13 24.0492 13.2693 25.0355 13.7425 25.8935C14.3657 27.0234 15 28.2097 15 29.5C15 29.7761 15.2239 30 15.5 30H34.5C34.7761 30 35 29.7761 35 29.5C35 28.2097 35.6343 27.0234 36.2575 25.8935C36.7307 25.0355 37 24.0492 37 23C37 19.6863 34.3137 17 31 17C29.0668 17 27.3471 17.9143 26.2498 19.334C25.946 19.7271 25.4968 20 25 20C24.5032 20 24.054 19.7271 23.7502 19.334C22.6529 17.9143 20.9332 17 19 17C15.6863 17 13 19.6863 13 23Z\" />\n  </mask>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13 23C13 24.0492 13.2693 25.0355 13.7425 25.8935C14.3657 27.0234 15 28.2097 15 29.5C15 29.7761 15.2239 30 15.5 30H34.5C34.7761 30 35 29.7761 35 29.5C35 28.2097 35.6343 27.0234 36.2575 25.8935C36.7307 25.0355 37 24.0492 37 23C37 19.6863 34.3137 17 31 17C29.0668 17 27.3471 17.9143 26.2498 19.334C25.946 19.7271 25.4968 20 25 20C24.5032 20 24.054 19.7271 23.7502 19.334C22.6529 17.9143 20.9332 17 19 17C15.6863 17 13 19.6863 13 23Z\" fill=\"#F2C94C\" />\n  <path d=\"M13.7425 25.8935L16.3695 24.4447L13.7425 25.8935ZM16.3695 24.4447C16.1347 24.019 16 23.5297 16 23H10C10 24.5686 10.4039 26.0519 11.1156 27.3424L16.3695 24.4447ZM34.5 27H15.5V33H34.5V27ZM34 23C34 23.5297 33.8653 24.019 33.6305 24.4447L38.8844 27.3424C39.5961 26.0519 40 24.5686 40 23H34ZM31 20C32.6569 20 34 21.3431 34 23H40C40 18.0294 35.9706 14 31 14V20ZM28.6235 21.1686C29.1772 20.4522 30.0351 20 31 20V14C28.0985 14 25.5171 15.3763 23.8762 17.4995L28.6235 21.1686ZM19 20C19.9649 20 20.8228 20.4522 21.3765 21.1686L26.1238 17.4995C24.4829 15.3763 21.9015 14 19 14V20ZM16 23C16 21.3431 17.3431 20 19 20V14C14.0294 14 10 18.0294 10 23H16ZM25 17C25.6372 17 25.9979 17.3365 26.1238 17.4995L21.3765 21.1686C22.11 22.1177 23.3692 23 25 23V17ZM38 29.5C38 29.1039 38.1999 28.5834 38.8844 27.3424L33.6305 24.4447C33.0686 25.4635 32 27.3154 32 29.5H38ZM23.8762 17.4995C24.0021 17.3365 24.3628 17 25 17V23C26.6308 23 27.89 22.1177 28.6235 21.1686L23.8762 17.4995ZM34.5 33C36.433 33 38 31.433 38 29.5H32C32 28.1193 33.1193 27 34.5 27V33ZM12 29.5C12 31.433 13.567 33 15.5 33V27C16.8807 27 18 28.1193 18 29.5H12ZM11.1156 27.3424C11.8001 28.5834 12 29.1039 12 29.5H18C18 27.3154 16.9314 25.4635 16.3695 24.4447L11.1156 27.3424Z\" fill=\"#F2994A\" mask=\"url(#path-5-inside-1)\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#EB5757\" />\n  <path d=\"M80 0V39.0281L0 40V0H80Z\" fill=\"#2F80ED\" />\n  <path d=\"M25 10V22\" stroke=\"#F2994A\" stroke-width=\"3\" />\n  <path d=\"M29 14L21 14\" stroke=\"#F2994A\" stroke-width=\"3\" />\n  <mask id=\"path-5-inside-1\" fill=\"white\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13 23C13 24.0492 13.2693 25.0355 13.7425 25.8935C14.3657 27.0234 15 28.2097 15 29.5C15 29.7761 15.2239 30 15.5 30H34.5C34.7761 30 35 29.7761 35 29.5C35 28.2097 35.6343 27.0234 36.2575 25.8935C36.7307 25.0355 37 24.0492 37 23C37 19.6863 34.3137 17 31 17C29.0668 17 27.3471 17.9143 26.2498 19.334C25.946 19.7271 25.4968 20 25 20C24.5032 20 24.054 19.7271 23.7502 19.334C22.6529 17.9143 20.9332 17 19 17C15.6863 17 13 19.6863 13 23Z\" />\n  </mask>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13 23C13 24.0492 13.2693 25.0355 13.7425 25.8935C14.3657 27.0234 15 28.2097 15 29.5C15 29.7761 15.2239 30 15.5 30H34.5C34.7761 30 35 29.7761 35 29.5C35 28.2097 35.6343 27.0234 36.2575 25.8935C36.7307 25.0355 37 24.0492 37 23C37 19.6863 34.3137 17 31 17C29.0668 17 27.3471 17.9143 26.2498 19.334C25.946 19.7271 25.4968 20 25 20C24.5032 20 24.054 19.7271 23.7502 19.334C22.6529 17.9143 20.9332 17 19 17C15.6863 17 13 19.6863 13 23Z\" fill=\"#F2C94C\" />\n  <path d=\"M13.7425 25.8935L16.3695 24.4447L13.7425 25.8935ZM16.3695 24.4447C16.1347 24.019 16 23.5297 16 23H10C10 24.5686 10.4039 26.0519 11.1156 27.3424L16.3695 24.4447ZM34.5 27H15.5V33H34.5V27ZM34 23C34 23.5297 33.8653 24.019 33.6305 24.4447L38.8844 27.3424C39.5961 26.0519 40 24.5686 40 23H34ZM31 20C32.6569 20 34 21.3431 34 23H40C40 18.0294 35.9706 14 31 14V20ZM28.6235 21.1686C29.1772 20.4522 30.0351 20 31 20V14C28.0985 14 25.5171 15.3763 23.8762 17.4995L28.6235 21.1686ZM19 20C19.9649 20 20.8228 20.4522 21.3765 21.1686L26.1238 17.4995C24.4829 15.3763 21.9015 14 19 14V20ZM16 23C16 21.3431 17.3431 20 19 20V14C14.0294 14 10 18.0294 10 23H16ZM25 17C25.6372 17 25.9979 17.3365 26.1238 17.4995L21.3765 21.1686C22.11 22.1177 23.3692 23 25 23V17ZM38 29.5C38 29.1039 38.1999 28.5834 38.8844 27.3424L33.6305 24.4447C33.0686 25.4635 32 27.3154 32 29.5H38ZM23.8762 17.4995C24.0021 17.3365 24.3628 17 25 17V23C26.6308 23 27.89 22.1177 28.6235 21.1686L23.8762 17.4995ZM34.5 33C36.433 33 38 31.433 38 29.5H32C32 28.1193 33.1193 27 34.5 27V33ZM12 29.5C12 31.433 13.567 33 15.5 33V27C16.8807 27 18 28.1193 18 29.5H12ZM11.1156 27.3424C11.8001 28.5834 12 29.1039 12 29.5H18C18 27.3154 16.9314 25.4635 16.3695 24.4447L11.1156 27.3424Z\" fill=\"#F2994A\" mask=\"url(#path-5-inside-1)\" />\n</svg>"
+    }
+  },
+  {
+    "name": "lithuania",
+    "id": "4672:1176",
+    "terms": [
+      "lithuania"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#219653\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#F2C94C\" />\n    <path opacity=\"0.9\" d=\"M120 53.3333H0V80H120V53.3333Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#219653\" />\n    <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#F2C94C\" />\n    <path opacity=\"0.9\" d=\"M80 53.3333H0V80H80V53.3333Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "luxembourg",
+    "id": "4672:1194",
+    "terms": [
+      "luxembourg"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#EB5757\" />\n    <path opacity=\"0.9\" d=\"M120 53.3333H0V80H120V53.3333Z\" fill=\"#2D9CDB\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#EB5757\" />\n    <path opacity=\"0.9\" d=\"M80 53.3333H0V80H80V53.3333Z\" fill=\"#2D9CDB\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "malta",
+    "id": "4672:1193",
+    "terms": [
+      "malta"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M120 0H60V80H120V0Z\" fill=\"#EB5757\" />\n    <mask id=\"path-3-outside-1\" maskUnits=\"userSpaceOnUse\" x=\"5\" y=\"5\" width=\"20\" height=\"20\" fill=\"black\">\n      <rect fill=\"white\" x=\"5\" y=\"5\" width=\"20\" height=\"20\" />\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.5 24V20.0403C11.401 19.4941 10.5059 18.599 9.9597 17.5H6V12.5H9.9597C10.5059 11.401 11.401 10.5059 12.5 9.9597V6H17.5V9.9597C18.599 10.5059 19.4941 11.401 20.0403 12.5H24V17.5H20.0403C19.4941 18.599 18.599 19.4941 17.5 20.0403V24H12.5Z\" />\n    </mask>\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.5 24V20.0403C11.401 19.4941 10.5059 18.599 9.9597 17.5H6V12.5H9.9597C10.5059 11.401 11.401 10.5059 12.5 9.9597V6H17.5V9.9597C18.599 10.5059 19.4941 11.401 20.0403 12.5H24V17.5H20.0403C19.4941 18.599 18.599 19.4941 17.5 20.0403V24H12.5Z\" fill=\"#BDBDBD\" />\n    <path d=\"M12.5 20.0403H13.5V19.4206L12.945 19.1448L12.5 20.0403ZM12.5 24H11.5V25H12.5V24ZM9.9597 17.5L10.8552 17.055L10.5794 16.5H9.9597V17.5ZM6 17.5H5V18.5H6V17.5ZM6 12.5V11.5H5V12.5H6ZM9.9597 12.5V13.5H10.5794L10.8552 12.945L9.9597 12.5ZM12.5 9.9597L12.945 10.8552L13.5 10.5794V9.9597H12.5ZM12.5 6V5H11.5V6H12.5ZM17.5 6H18.5V5H17.5V6ZM17.5 9.9597H16.5V10.5794L17.055 10.8552L17.5 9.9597ZM20.0403 12.5L19.1448 12.945L19.4206 13.5H20.0403V12.5ZM24 12.5H25V11.5H24V12.5ZM24 17.5V18.5H25V17.5H24ZM20.0403 17.5V16.5H19.4206L19.1448 17.055L20.0403 17.5ZM17.5 20.0403L17.055 19.1448L16.5 19.4206V20.0403H17.5ZM17.5 24V25H18.5V24H17.5ZM11.5 20.0403V24H13.5V20.0403H11.5ZM9.06418 17.945C9.7074 19.2393 10.7607 20.2926 12.055 20.9358L12.945 19.1448C12.0412 18.6956 11.3044 17.9588 10.8552 17.055L9.06418 17.945ZM9.9597 16.5H6V18.5H9.9597V16.5ZM7 17.5V12.5H5V17.5H7ZM6 13.5H9.9597V11.5H6V13.5ZM12.055 9.06419C10.7607 9.7074 9.7074 10.7607 9.06419 12.055L10.8552 12.945C11.3044 12.0412 12.0412 11.3044 12.945 10.8552L12.055 9.06419ZM11.5 6V9.9597H13.5V6H11.5ZM17.5 5H12.5V7H17.5V5ZM18.5 9.9597V6H16.5V9.9597H18.5ZM20.9358 12.055C20.2926 10.7607 19.2393 9.7074 17.945 9.06419L17.055 10.8552C17.9588 11.3044 18.6956 12.0412 19.1448 12.945L20.9358 12.055ZM20.0403 13.5H24V11.5H20.0403V13.5ZM23 12.5V17.5H25V12.5H23ZM24 16.5H20.0403V18.5H24V16.5ZM17.945 20.9358C19.2393 20.2926 20.2926 19.2393 20.9358 17.945L19.1448 17.055C18.6956 17.9588 17.9588 18.6956 17.055 19.1448L17.945 20.9358ZM18.5 24V20.0403H16.5V24H18.5ZM12.5 25H17.5V23H12.5V25Z\" fill=\"#EB5757\" mask=\"url(#path-3-outside-1)\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M80 0H40V80H80V0Z\" fill=\"#EB5757\" />\n    <mask id=\"path-3-outside-1\" maskUnits=\"userSpaceOnUse\" x=\"5\" y=\"5\" width=\"20\" height=\"20\" fill=\"black\">\n      <rect fill=\"white\" x=\"5\" y=\"5\" width=\"20\" height=\"20\" />\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.5 24V20.0403C11.401 19.4941 10.5059 18.599 9.9597 17.5H6V12.5H9.9597C10.5059 11.401 11.401 10.5059 12.5 9.9597V6H17.5V9.9597C18.599 10.5059 19.4941 11.401 20.0403 12.5H24V17.5H20.0403C19.4941 18.599 18.599 19.4941 17.5 20.0403V24H12.5Z\" />\n    </mask>\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.5 24V20.0403C11.401 19.4941 10.5059 18.599 9.9597 17.5H6V12.5H9.9597C10.5059 11.401 11.401 10.5059 12.5 9.9597V6H17.5V9.9597C18.599 10.5059 19.4941 11.401 20.0403 12.5H24V17.5H20.0403C19.4941 18.599 18.599 19.4941 17.5 20.0403V24H12.5Z\" fill=\"#BDBDBD\" />\n    <path d=\"M12.5 20.0403H13.5V19.4206L12.945 19.1448L12.5 20.0403ZM12.5 24H11.5V25H12.5V24ZM9.9597 17.5L10.8552 17.055L10.5794 16.5H9.9597V17.5ZM6 17.5H5V18.5H6V17.5ZM6 12.5V11.5H5V12.5H6ZM9.9597 12.5V13.5H10.5794L10.8552 12.945L9.9597 12.5ZM12.5 9.9597L12.945 10.8552L13.5 10.5794V9.9597H12.5ZM12.5 6V5H11.5V6H12.5ZM17.5 6H18.5V5H17.5V6ZM17.5 9.9597H16.5V10.5794L17.055 10.8552L17.5 9.9597ZM20.0403 12.5L19.1448 12.945L19.4206 13.5H20.0403V12.5ZM24 12.5H25V11.5H24V12.5ZM24 17.5V18.5H25V17.5H24ZM20.0403 17.5V16.5H19.4206L19.1448 17.055L20.0403 17.5ZM17.5 20.0403L17.055 19.1448L16.5 19.4206V20.0403H17.5ZM17.5 24V25H18.5V24H17.5ZM11.5 20.0403V24H13.5V20.0403H11.5ZM9.06418 17.945C9.7074 19.2393 10.7607 20.2926 12.055 20.9358L12.945 19.1448C12.0412 18.6956 11.3044 17.9588 10.8552 17.055L9.06418 17.945ZM9.9597 16.5H6V18.5H9.9597V16.5ZM7 17.5V12.5H5V17.5H7ZM6 13.5H9.9597V11.5H6V13.5ZM12.055 9.06419C10.7607 9.7074 9.7074 10.7607 9.06419 12.055L10.8552 12.945C11.3044 12.0412 12.0412 11.3044 12.945 10.8552L12.055 9.06419ZM11.5 6V9.9597H13.5V6H11.5ZM17.5 5H12.5V7H17.5V5ZM18.5 9.9597V6H16.5V9.9597H18.5ZM20.9358 12.055C20.2926 10.7607 19.2393 9.7074 17.945 9.06419L17.055 10.8552C17.9588 11.3044 18.6956 12.0412 19.1448 12.945L20.9358 12.055ZM20.0403 13.5H24V11.5H20.0403V13.5ZM23 12.5V17.5H25V12.5H23ZM24 16.5H20.0403V18.5H24V16.5ZM17.945 20.9358C19.2393 20.2926 20.2926 19.2393 20.9358 17.945L19.1448 17.055C18.6956 17.9588 17.9588 18.6956 17.055 19.1448L17.945 20.9358ZM18.5 24V20.0403H16.5V24H18.5ZM12.5 25H17.5V23H12.5V25Z\" fill=\"#EB5757\" mask=\"url(#path-3-outside-1)\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "moldova",
+    "id": "4672:1237",
+    "terms": [
+      "moldova"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2C94C\" />\n    <path d=\"M120 0H80V80H120V0Z\" fill=\"#EB5757\" />\n    <path d=\"M40 0H0V80H40V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M74.4889 29.6324C75.0844 30.5584 75.1606 31.5291 74.7118 32.4693C74.2629 33.4096 73.3009 34.2942 71.9003 35.0548C70.4996 35.8153 68.6979 36.4314 66.6343 36.8555C64.5708 37.2795 62.3008 37.5 60 37.5C57.6992 37.5 55.4292 37.2795 53.3657 36.8555C51.3021 36.4314 49.5003 35.8153 48.0997 35.0548C46.699 34.2942 45.7371 33.4096 45.2882 32.4693C44.8394 31.5291 44.9156 30.5584 45.5111 29.6324L60 31.25L74.4889 29.6324Z\" fill=\"#F2994A\" />\n    <path d=\"M63.75 49.6911L60 55L56.25 49.6911L60 37.5L63.75 49.6911Z\" fill=\"#F2994A\" />\n    <circle cx=\"53.75\" cy=\"36.25\" r=\"5\" fill=\"#F2994A\" />\n    <circle cx=\"66.25\" cy=\"36.25\" r=\"5\" fill=\"#F2994A\" />\n    <circle cx=\"60\" cy=\"40\" r=\"7.5\" fill=\"#F2994A\" />\n    <circle cx=\"60\" cy=\"31.25\" r=\"5\" fill=\"#F2994A\" />\n    <path d=\"M74.4889 29.6324C75.0844 30.5584 75.1606 31.5291 74.7118 32.4693C74.2629 33.4096 73.3009 34.2942 71.9003 35.0548C70.4996 35.8153 68.6979 36.4314 66.6343 36.8555C64.5708 37.2795 62.3008 37.5 60 37.5C57.6992 37.5 55.4292 37.2795 53.3657 36.8555C51.3021 36.4314 49.5003 35.8153 48.0997 35.0548C46.699 34.2942 45.7371 33.4096 45.2882 32.4693C44.8394 31.5291 44.9156 30.5584 45.5111 29.6324L60 31.25L74.4889 29.6324Z\" fill=\"#F2994A\" />\n    <path d=\"M53.125 45.625V39.375H66.875V45.625L60 48.75L53.125 45.625Z\" fill=\"#2F80ED\" />\n    <path d=\"M66.875 33.75H53.125V39.375H66.875V33.75Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2C94C\" />\n    <path d=\"M100 0H60V80H100V0Z\" fill=\"#EB5757\" />\n    <path d=\"M20 0H-20V80H20V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M54.4889 29.6324C55.0844 30.5584 55.1606 31.5291 54.7118 32.4693C54.2629 33.4096 53.3009 34.2942 51.9003 35.0548C50.4996 35.8153 48.6979 36.4314 46.6343 36.8555C44.5708 37.2795 42.3008 37.5 40 37.5C37.6992 37.5 35.4292 37.2795 33.3657 36.8555C31.3021 36.4314 29.5003 35.8153 28.0997 35.0548C26.699 34.2942 25.7371 33.4096 25.2882 32.4693C24.8394 31.5291 24.9156 30.5584 25.5111 29.6324L40 31.25L54.4889 29.6324Z\" fill=\"#F2994A\" />\n    <path d=\"M43.75 49.6911L40 55L36.25 49.6911L40 37.5L43.75 49.6911Z\" fill=\"#F2994A\" />\n    <circle cx=\"33.75\" cy=\"36.25\" r=\"5\" fill=\"#F2994A\" />\n    <circle cx=\"46.25\" cy=\"36.25\" r=\"5\" fill=\"#F2994A\" />\n    <circle cx=\"40\" cy=\"40\" r=\"7.5\" fill=\"#F2994A\" />\n    <circle cx=\"40\" cy=\"31.25\" r=\"5\" fill=\"#F2994A\" />\n    <path d=\"M54.4889 29.6324C55.0844 30.5584 55.1606 31.5291 54.7118 32.4693C54.2629 33.4096 53.3009 34.2942 51.9003 35.0548C50.4996 35.8153 48.6979 36.4314 46.6343 36.8555C44.5708 37.2795 42.3008 37.5 40 37.5C37.6992 37.5 35.4292 37.2795 33.3657 36.8555C31.3021 36.4314 29.5003 35.8153 28.0997 35.0548C26.699 34.2942 25.7371 33.4096 25.2882 32.4693C24.8394 31.5291 24.9156 30.5584 25.5111 29.6324L40 31.25L54.4889 29.6324Z\" fill=\"#F2994A\" />\n    <path d=\"M33.125 45.625V39.375H46.875V45.625L40 48.75L33.125 45.625Z\" fill=\"#2F80ED\" />\n    <path d=\"M46.875 33.75H33.125V39.375H46.875V33.75Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "monaco",
+    "id": "4672:1238",
+    "terms": [
+      "monaco"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M120 0V39.0281L0 40V0H120Z\" fill=\"#EB5757\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M80 0V39.0281L0 40V0H80Z\" fill=\"#EB5757\" />\n</svg>"
+    }
+  },
+  {
+    "name": "montenegro",
+    "id": "4672:1289",
+    "terms": [
+      "montenegro"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2C94C\" />\n  <path d=\"M116 4H4V76H116V4Z\" fill=\"#EB5757\" />\n  <path d=\"M76.4207 34.0543C77.0956 35.0801 77.1821 36.1553 76.6733 37.1968C76.1646 38.2383 75.0744 39.2182 73.487 40.0607C71.8996 40.9031 69.8576 41.5856 67.5189 42.0553C65.1802 42.5249 62.6076 42.7692 60 42.7692C57.3924 42.7692 54.8198 42.5249 52.4811 42.0553C50.1424 41.5856 48.1004 40.9031 46.513 40.0607C44.9256 39.2182 43.8354 38.2383 43.3266 37.1968C42.8179 36.1553 42.9044 35.0801 43.5793 34.0543L60 35.8462L76.4207 34.0543Z\" fill=\"#F2C94C\" />\n  <path d=\"M64.9582 53.504L59.9998 58L55.0415 53.504L59.9998 38.6154L64.9582 53.504Z\" fill=\"#F2C94C\" />\n  <path d=\"M69.2082 50.7348L59.9998 42.7692L50.7915 50.7348\" stroke=\"#F2C94C\" stroke-width=\"6\" />\n  <ellipse cx=\"52.9167\" cy=\"41.3846\" rx=\"5.66667\" ry=\"5.53846\" fill=\"#F2C94C\" />\n  <ellipse cx=\"67.0832\" cy=\"41.3846\" rx=\"5.66667\" ry=\"5.53846\" fill=\"#F2C94C\" />\n  <ellipse cx=\"60.0002\" cy=\"35.8462\" rx=\"5.66667\" ry=\"5.53846\" fill=\"#F2C94C\" />\n  <path d=\"M72.0208 30.9508C74.3983 31.919 76.0174 33.1526 76.6734 34.4955C77.3293 35.8385 76.9926 37.2305 75.706 38.4955C74.4193 39.7605 72.2403 40.8418 69.4447 41.6025C66.6491 42.3632 63.3623 42.7692 60 42.7692C56.6377 42.7692 53.3509 42.3632 50.5553 41.6025C47.7597 40.8418 45.5807 39.7605 44.294 38.4955C43.0074 37.2305 42.6707 35.8385 43.3267 34.4955C43.9826 33.1526 45.6017 31.919 47.9792 30.9508L60 35.8462L72.0208 30.9508Z\" fill=\"#F2C94C\" />\n  <path d=\"M53.625 48.0769V45.5385H66.375V48.0769L60 51.0769L53.625 48.0769Z\" fill=\"#219653\" />\n  <path d=\"M66.375 37.2308H53.625V45.5385H66.375V37.2308Z\" fill=\"#2F80ED\" />\n  <path d=\"M53.625 27.5385H66.375V23.8461L63.5417 24.7692L60 22L56.4583 24.7692L53.625 23.8461V27.5385Z\" fill=\"#F2C94C\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2C94C\" />\n  <path d=\"M76 4H4V76H76V4Z\" fill=\"#EB5757\" />\n  <path d=\"M56.4207 34.0543C57.0956 35.0801 57.1821 36.1553 56.6733 37.1968C56.1646 38.2383 55.0744 39.2182 53.487 40.0607C51.8996 40.9031 49.8576 41.5856 47.5189 42.0553C45.1802 42.5249 42.6076 42.7692 40 42.7692C37.3924 42.7692 34.8198 42.5249 32.4811 42.0553C30.1424 41.5856 28.1004 40.9031 26.513 40.0607C24.9256 39.2182 23.8354 38.2383 23.3266 37.1968C22.8179 36.1553 22.9044 35.0801 23.5793 34.0543L40 35.8462L56.4207 34.0543Z\" fill=\"#F2C94C\" />\n  <path d=\"M44.9582 53.504L39.9998 58L35.0415 53.504L39.9998 38.6154L44.9582 53.504Z\" fill=\"#F2C94C\" />\n  <path d=\"M49.2082 50.7348L39.9998 42.7692L30.7915 50.7348\" stroke=\"#F2C94C\" stroke-width=\"6\" />\n  <ellipse cx=\"32.9167\" cy=\"41.3846\" rx=\"5.66667\" ry=\"5.53846\" fill=\"#F2C94C\" />\n  <ellipse cx=\"47.0832\" cy=\"41.3846\" rx=\"5.66667\" ry=\"5.53846\" fill=\"#F2C94C\" />\n  <ellipse cx=\"40.0002\" cy=\"35.8462\" rx=\"5.66667\" ry=\"5.53846\" fill=\"#F2C94C\" />\n  <path d=\"M52.0208 30.9508C54.3983 31.919 56.0174 33.1526 56.6734 34.4955C57.3293 35.8385 56.9926 37.2305 55.706 38.4955C54.4193 39.7605 52.2403 40.8418 49.4447 41.6025C46.6491 42.3632 43.3623 42.7692 40 42.7692C36.6377 42.7692 33.3509 42.3632 30.5553 41.6025C27.7597 40.8418 25.5807 39.7605 24.294 38.4955C23.0074 37.2305 22.6707 35.8385 23.3267 34.4955C23.9826 33.1526 25.6017 31.919 27.9792 30.9508L40 35.8462L52.0208 30.9508Z\" fill=\"#F2C94C\" />\n  <path d=\"M33.625 48.0769V45.5385H46.375V48.0769L40 51.0769L33.625 48.0769Z\" fill=\"#219653\" />\n  <path d=\"M46.375 37.2308H33.625V45.5385H46.375V37.2308Z\" fill=\"#2F80ED\" />\n  <path d=\"M33.625 27.5385H46.375V23.8461L43.5417 24.7692L40 22L36.4583 24.7692L33.625 23.8461V27.5385Z\" fill=\"#F2C94C\" />\n</svg>"
+    }
+  },
+  {
+    "name": "netherlands",
+    "id": "4672:1288",
+    "terms": [
+      "netherlands"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#EB5757\" />\n    <path opacity=\"0.9\" d=\"M120 53.3333H0V80H120V53.3333Z\" fill=\"#2F80ED\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2F2F2\" />\n    <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#EB5757\" />\n    <path opacity=\"0.9\" d=\"M80 53.3333H0V80H80V53.3333Z\" fill=\"#2F80ED\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "northMacedonia",
+    "id": "4672:1339",
+    "terms": [
+      "north",
+      "macedonia"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#EB5757\" />\n    <circle cx=\"60\" cy=\"40\" r=\"108\" fill=\"#EB5757\" />\n    <circle cx=\"60\" cy=\"40\" r=\"10\" fill=\"#F2C94C\" />\n    <path d=\"M49 -53H71L62 27H60H58L49 -53Z\" fill=\"#F2C94C\" />\n    <path d=\"M153 29L153 51L73 42L73 40L73 38L153 29Z\" fill=\"#F2C94C\" />\n    <path d=\"M71 133L49 133L58 53L60 53L62 53L71 133Z\" fill=\"#F2C94C\" />\n    <path d=\"M-33 51L-33 29L47 38L47 40L47 42L-33 51Z\" fill=\"#F2C94C\" />\n    <path d=\"M125.353 -27.0754L139.198 -9.97816L71.362 33.3732L70.1034 31.8189L68.8447 30.2646L125.353 -27.0754Z\" fill=\"#F2C94C\" />\n    <path d=\"M-5.35205 107.075L-19.1971 89.9782L48.6385 46.6269L49.8971 48.1812L51.1557 49.7355L-5.35205 107.075Z\" fill=\"#F2C94C\" />\n    <path d=\"M-19.1982 -9.95448L-5.3532 -27.0517L51.1546 30.2882L49.896 31.8425L48.6373 33.3968L-19.1982 -9.95448Z\" fill=\"#F2C94C\" />\n    <path d=\"M138.519 89.9545L124.674 107.052L68.1657 49.7118L69.4244 48.1575L70.683 46.6032L138.519 89.9545Z\" fill=\"#F2C94C\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#EB5757\" />\n    <circle cx=\"40\" cy=\"40\" r=\"108\" fill=\"#EB5757\" />\n    <circle cx=\"40\" cy=\"40\" r=\"10\" fill=\"#F2C94C\" />\n    <path d=\"M29 -53H51L42 27H40H38L29 -53Z\" fill=\"#F2C94C\" />\n    <path d=\"M133 29L133 51L53 42L53 40L53 38L133 29Z\" fill=\"#F2C94C\" />\n    <path d=\"M51 133L29 133L38 53L40 53L42 53L51 133Z\" fill=\"#F2C94C\" />\n    <path d=\"M-53 51L-53 29L27 38L27 40L27 42L-53 51Z\" fill=\"#F2C94C\" />\n    <path d=\"M105.353 -27.0754L119.198 -9.97816L51.362 33.3732L50.1034 31.8189L48.8447 30.2646L105.353 -27.0754Z\" fill=\"#F2C94C\" />\n    <path d=\"M-25.3521 107.075L-39.1971 89.9782L28.6385 46.6269L29.8971 48.1812L31.1557 49.7355L-25.3521 107.075Z\" fill=\"#F2C94C\" />\n    <path d=\"M-39.1982 -9.95448L-25.3532 -27.0517L31.1546 30.2882L29.896 31.8425L28.6373 33.3968L-39.1982 -9.95448Z\" fill=\"#F2C94C\" />\n    <path d=\"M118.519 89.9545L104.674 107.052L48.1657 49.7118L49.4244 48.1575L50.683 46.6032L118.519 89.9545Z\" fill=\"#F2C94C\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "norway",
+    "id": "4672:1349",
+    "terms": [
+      "norway"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#EB5757\" />\n  <path d=\"M0 40H120\" stroke=\"#F2F2F2\" stroke-width=\"17\" />\n  <path d=\"M38 80V0\" stroke=\"#F2F2F2\" stroke-width=\"17\" />\n  <path d=\"M0 40H120\" stroke=\"#2F80ED\" stroke-width=\"8\" />\n  <path d=\"M38 80V0\" stroke=\"#2F80ED\" stroke-width=\"8\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#EB5757\" />\n  <path d=\"M0 40H80\" stroke=\"#F2F2F2\" stroke-width=\"17\" />\n  <path d=\"M25.3335 80V0\" stroke=\"#F2F2F2\" stroke-width=\"17\" />\n  <path d=\"M0 40H80\" stroke=\"#2F80ED\" stroke-width=\"8\" />\n  <path d=\"M25.3335 80V0\" stroke=\"#2F80ED\" stroke-width=\"8\" />\n</svg>"
+    }
+  },
+  {
+    "name": "poland",
+    "id": "4672:1350",
+    "terms": [
+      "poland"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V40H120V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M120 40H0V80H120V40Z\" fill=\"#EB5757\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V40H80V0Z\" fill=\"#F2F2F2\" />\n  <path d=\"M80 40H0V80H80V40Z\" fill=\"#EB5757\" />\n</svg>"
+    }
+  },
+  {
+    "name": "portugal",
+    "id": "4672:1360",
+    "terms": [
+      "portugal"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#EB5757\" />\n  <path d=\"M48 0V41.3043V80H0V0H48Z\" fill=\"#219653\" />\n  <path d=\"M48 58C57.9411 58 66 49.9411 66 40C66 30.0589 57.9411 22 48 22C38.0589 22 30 30.0589 30 40C30 49.9411 38.0589 58 48 58Z\" fill=\"#F2C94C\" />\n  <path d=\"M38 30H58V42C58 47.5228 53.5228 52 48 52C42.4772 52 38 47.5228 38 42V30Z\" fill=\"#F2F2F2\" />\n  <path d=\"M40.5 32.5H55.5V42C55.5 46.1421 52.1421 49.5 48 49.5C43.8579 49.5 40.5 46.1421 40.5 42V32.5Z\" stroke=\"#EB5757\" stroke-width=\"5\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <path d=\"M80 0H0V80H80V0Z\" fill=\"#EB5757\" />\n  <path d=\"M32 0V41.3043V80H0V0H32Z\" fill=\"#219653\" />\n  <path d=\"M32 58C38.6274 58 44 49.9411 44 40C44 30.0589 38.6274 22 32 22C25.3726 22 20 30.0589 20 40C20 49.9411 25.3726 58 32 58Z\" fill=\"#F2C94C\" />\n  <path d=\"M25.3335 30H38.6668V45.3333C38.6668 49.0152 35.6821 52 32.0002 52C28.3183 52 25.3335 49.0152 25.3335 45.3333V30Z\" fill=\"#F2F2F2\" />\n  <path d=\"M27.8335 32.5H36.1668V45.3333C36.1668 47.6345 34.3013 49.5 32.0002 49.5C29.699 49.5 27.8335 47.6345 27.8335 45.3333V32.5Z\" stroke=\"#EB5757\" stroke-width=\"5\" />\n</svg>"
+    }
+  },
+  {
+    "name": "romania",
+    "id": "4672:1361",
+    "terms": [
+      "romania"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <path d=\"M120 0H0V80H120V0Z\" fill=\"#F2C94C\" />\n  <path d=\"M120 0H80V80H120V0Z\" fill=\"#EB5757\" />\n  <path d=\"M40 0H0V80H40V0Z\" fill=\"#2F80ED\" />\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#F2C94C\" />\n    <path d=\"M100 0H60V80H100V0Z\" fill=\"#EB5757\" />\n    <path d=\"M20 0H-20V80H20V0Z\" fill=\"#2F80ED\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "russia",
+    "id": "4672:1365",
+    "terms": [
+      "russia"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#F2F2F2\" />\n    <path opacity=\"0.9\" d=\"M120 53.3333H0V80H120V53.3333Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#F2F2F2\" />\n    <path opacity=\"0.9\" d=\"M80 53.3333H0V80H80V53.3333Z\" fill=\"#EB5757\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "sanMarino",
+    "id": "4672:1565",
+    "terms": [
+      "san",
+      "marino"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#56CCF2\" />\n    <path d=\"M120 0V39.0281L0 40V0H120Z\" fill=\"#F2F2F2\" />\n    <path d=\"M60 16V25.6\" stroke=\"#F2994A\" stroke-width=\"3\" />\n    <path d=\"M63.3335 19.2L56.6668 19.2\" stroke=\"#F2994A\" stroke-width=\"3\" />\n    <mask id=\"path-5-inside-1\" fill=\"white\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M50 26.4C50 27.2488 50.2295 28.0461 50.6322 28.7379C51.1502 29.6279 51.6667 30.5702 51.6667 31.6C51.6667 31.8209 51.8458 32 52.0667 32H67.9333C68.1542 32 68.3333 31.8209 68.3333 31.6C68.3333 30.5702 68.8498 29.6279 69.3679 28.7379C69.7705 28.0461 70 27.2488 70 26.4C70 23.749 67.7614 21.6 65 21.6C63.3957 21.6 61.9679 22.3253 61.053 23.453C60.7915 23.7754 60.4151 24 60 24C59.5849 24 59.2085 23.7754 58.947 23.453C58.0321 22.3253 56.6043 21.6 55 21.6C52.2386 21.6 50 23.749 50 26.4Z\" />\n    </mask>\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M50 26.4C50 27.2488 50.2295 28.0461 50.6322 28.7379C51.1502 29.6279 51.6667 30.5702 51.6667 31.6C51.6667 31.8209 51.8458 32 52.0667 32H67.9333C68.1542 32 68.3333 31.8209 68.3333 31.6C68.3333 30.5702 68.8498 29.6279 69.3679 28.7379C69.7705 28.0461 70 27.2488 70 26.4C70 23.749 67.7614 21.6 65 21.6C63.3957 21.6 61.9679 22.3253 61.053 23.453C60.7915 23.7754 60.4151 24 60 24C59.5849 24 59.2085 23.7754 58.947 23.453C58.0321 22.3253 56.6043 21.6 55 21.6C52.2386 21.6 50 23.749 50 26.4Z\" fill=\"#F2994A\" />\n    <path d=\"M58.947 23.453L61.2767 21.5629L58.947 23.453ZM69.3679 28.7379L66.7751 27.2288L69.3679 28.7379ZM61.053 23.453L63.3827 25.3431L61.053 23.453ZM53.2249 27.2288C53.0792 26.9784 53 26.6995 53 26.4H47C47 27.7981 47.3798 29.1138 48.0394 30.247L53.2249 27.2288ZM67.9333 29H52.0667V35H67.9333V29ZM67 26.4C67 26.6995 66.9208 26.9784 66.7751 27.2288L71.9606 30.247C72.6202 29.1138 73 27.7981 73 26.4H67ZM65 24.6C66.2212 24.6 67 25.5201 67 26.4H73C73 21.9779 69.3017 18.6 65 18.6V24.6ZM63.3827 25.3431C63.7355 24.9083 64.3117 24.6 65 24.6V18.6C62.4797 18.6 60.2004 19.7424 58.7233 21.5629L63.3827 25.3431ZM55 24.6C55.6883 24.6 56.2645 24.9083 56.6173 25.3431L61.2767 21.5629C59.7996 19.7424 57.5203 18.6 55 18.6V24.6ZM53 26.4C53 25.5201 53.7788 24.6 55 24.6V18.6C50.6983 18.6 47 21.9779 47 26.4H53ZM60 21C60.7005 21 61.1167 21.3657 61.2767 21.5629L56.6173 25.3431C57.3004 26.185 58.4693 27 60 27V21ZM71.3333 31.6C71.3333 31.5909 71.335 31.4927 71.4343 31.2491C71.5407 30.9883 71.702 30.6915 71.9606 30.247L66.7751 27.2288C66.3061 28.0345 65.3333 29.6465 65.3333 31.6H71.3333ZM58.7233 21.5629C58.8833 21.3657 59.2995 21 60 21V27C61.5307 27 62.6996 26.185 63.3827 25.3431L58.7233 21.5629ZM67.9333 35C69.8111 35 71.3333 33.4778 71.3333 31.6H65.3333C65.3333 30.1641 66.4974 29 67.9333 29V35ZM48.6667 31.6C48.6667 33.4778 50.1889 35 52.0667 35V29C53.5026 29 54.6667 30.1641 54.6667 31.6H48.6667ZM48.0394 30.247C48.298 30.6915 48.4593 30.9883 48.5657 31.2491C48.665 31.4927 48.6667 31.5909 48.6667 31.6H54.6667C54.6667 29.6465 53.6939 28.0345 53.2249 27.2288L48.0394 30.247Z\" fill=\"#F2994A\" mask=\"url(#path-5-inside-1)\" />\n    <mask id=\"path-7-outside-2\" maskUnits=\"userSpaceOnUse\" x=\"40\" y=\"28\" width=\"40\" height=\"36\" fill=\"black\">\n      <rect fill=\"white\" x=\"40\" y=\"28\" width=\"40\" height=\"36\" />\n      <path d=\"M71.5911 38.3765C72.0675 40.4508 72.1285 42.6251 71.7694 44.7313C71.4103 46.8374 70.6408 48.819 69.5202 50.5227C68.3997 52.2263 66.9583 53.6064 65.3075 54.5562C63.6566 55.506 61.8406 56 60 56C58.1593 56 56.3434 55.506 54.6925 54.5562C53.0417 53.6064 51.6003 52.2263 50.4798 50.5227C49.3592 48.819 48.5897 46.8374 48.2306 44.7313C47.8715 42.6251 47.9325 40.4508 48.4089 38.3765L60 42L71.5911 38.3765Z\" />\n    </mask>\n    <path d=\"M71.5911 38.3765C72.0675 40.4508 72.1285 42.6251 71.7694 44.7313C71.4103 46.8374 70.6408 48.819 69.5202 50.5227C68.3997 52.2263 66.9583 53.6064 65.3075 54.5562C63.6566 55.506 61.8406 56 60 56C58.1593 56 56.3434 55.506 54.6925 54.5562C53.0417 53.6064 51.6003 52.2263 50.4798 50.5227C49.3592 48.819 48.5897 46.8374 48.2306 44.7313C47.8715 42.6251 47.9325 40.4508 48.4089 38.3765L60 42L71.5911 38.3765Z\" stroke=\"#219653\" stroke-width=\"16\" mask=\"url(#path-7-outside-2)\" />\n    <ellipse cx=\"60\" cy=\"42\" rx=\"12\" ry=\"14\" fill=\"#56CCF2\" />\n    <ellipse cx=\"60\" cy=\"42\" rx=\"12\" ry=\"14\" stroke=\"#F2994A\" stroke-width=\"5\" />\n    <rect x=\"51\" y=\"55\" width=\"18\" height=\"6\" fill=\"#F2F2F2\" />\n    <rect x=\"44\" y=\"59\" width=\"10\" height=\"4\" fill=\"#F2F2F2\" />\n    <rect x=\"66\" y=\"59\" width=\"10\" height=\"4\" fill=\"#F2F2F2\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#56CCF2\" />\n    <path d=\"M80 0V39.0281L0 40V0H80Z\" fill=\"#F2F2F2\" />\n    <path d=\"M40 16V25.6\" stroke=\"#F2994A\" stroke-width=\"3\" />\n    <path d=\"M43.3335 19.2L36.6668 19.2\" stroke=\"#F2994A\" stroke-width=\"3\" />\n    <mask id=\"path-5-inside-1\" fill=\"white\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30 26.4C30 27.2488 30.2295 28.0461 30.6322 28.7379C31.1502 29.6279 31.6667 30.5702 31.6667 31.6C31.6667 31.8209 31.8458 32 32.0667 32H47.9333C48.1542 32 48.3333 31.8209 48.3333 31.6C48.3333 30.5702 48.8498 29.6279 49.3679 28.7379C49.7705 28.0461 50 27.2488 50 26.4C50 23.749 47.7614 21.6 45 21.6C43.3957 21.6 41.9679 22.3253 41.053 23.453C40.7915 23.7754 40.4151 24 40 24C39.5849 24 39.2085 23.7754 38.947 23.453C38.0321 22.3253 36.6043 21.6 35 21.6C32.2386 21.6 30 23.749 30 26.4Z\" />\n    </mask>\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30 26.4C30 27.2488 30.2295 28.0461 30.6322 28.7379C31.1502 29.6279 31.6667 30.5702 31.6667 31.6C31.6667 31.8209 31.8458 32 32.0667 32H47.9333C48.1542 32 48.3333 31.8209 48.3333 31.6C48.3333 30.5702 48.8498 29.6279 49.3679 28.7379C49.7705 28.0461 50 27.2488 50 26.4C50 23.749 47.7614 21.6 45 21.6C43.3957 21.6 41.9679 22.3253 41.053 23.453C40.7915 23.7754 40.4151 24 40 24C39.5849 24 39.2085 23.7754 38.947 23.453C38.0321 22.3253 36.6043 21.6 35 21.6C32.2386 21.6 30 23.749 30 26.4Z\" fill=\"#F2994A\" />\n    <path d=\"M38.947 23.453L41.2767 21.5629L38.947 23.453ZM49.3679 28.7379L46.7751 27.2288L49.3679 28.7379ZM41.053 23.453L43.3827 25.3431L41.053 23.453ZM33.2249 27.2288C33.0792 26.9784 33 26.6995 33 26.4H27C27 27.7981 27.3798 29.1138 28.0394 30.247L33.2249 27.2288ZM47.9333 29H32.0667V35H47.9333V29ZM47 26.4C47 26.6995 46.9208 26.9784 46.7751 27.2288L51.9606 30.247C52.6202 29.1138 53 27.7981 53 26.4H47ZM45 24.6C46.2212 24.6 47 25.5201 47 26.4H53C53 21.9779 49.3017 18.6 45 18.6V24.6ZM43.3827 25.3431C43.7355 24.9083 44.3117 24.6 45 24.6V18.6C42.4797 18.6 40.2004 19.7424 38.7233 21.5629L43.3827 25.3431ZM35 24.6C35.6883 24.6 36.2645 24.9083 36.6173 25.3431L41.2767 21.5629C39.7996 19.7424 37.5203 18.6 35 18.6V24.6ZM33 26.4C33 25.5201 33.7788 24.6 35 24.6V18.6C30.6983 18.6 27 21.9779 27 26.4H33ZM40 21C40.7005 21 41.1167 21.3657 41.2767 21.5629L36.6173 25.3431C37.3004 26.185 38.4693 27 40 27V21ZM51.3333 31.6C51.3333 31.5909 51.335 31.4927 51.4343 31.2491C51.5407 30.9883 51.702 30.6915 51.9606 30.247L46.7751 27.2288C46.3061 28.0345 45.3333 29.6464 45.3333 31.6H51.3333ZM38.7233 21.5629C38.8833 21.3657 39.2995 21 40 21V27C41.5307 27 42.6996 26.185 43.3827 25.3431L38.7233 21.5629ZM47.9333 35C49.8111 35 51.3333 33.4778 51.3333 31.6H45.3333C45.3333 30.1641 46.4974 29 47.9333 29V35ZM28.6667 31.6C28.6667 33.4778 30.1889 35 32.0667 35V29C33.5026 29 34.6667 30.1641 34.6667 31.6H28.6667ZM28.0394 30.247C28.298 30.6915 28.4593 30.9883 28.5657 31.2491C28.665 31.4927 28.6667 31.5909 28.6667 31.6H34.6667C34.6667 29.6464 33.6939 28.0345 33.2249 27.2288L28.0394 30.247Z\" fill=\"#F2994A\" mask=\"url(#path-5-inside-1)\" />\n    <mask id=\"path-7-outside-2\" maskUnits=\"userSpaceOnUse\" x=\"20\" y=\"28\" width=\"40\" height=\"36\" fill=\"black\">\n      <rect fill=\"white\" x=\"20\" y=\"28\" width=\"40\" height=\"36\" />\n      <path d=\"M51.5911 38.3765C52.0675 40.4508 52.1285 42.6251 51.7694 44.7313C51.4103 46.8374 50.6408 48.819 49.5202 50.5227C48.3997 52.2263 46.9583 53.6064 45.3075 54.5562C43.6566 55.506 41.8406 56 40 56C38.1593 56 36.3434 55.506 34.6925 54.5562C33.0417 53.6064 31.6003 52.2263 30.4798 50.5227C29.3592 48.819 28.5897 46.8374 28.2306 44.7313C27.8715 42.6251 27.9325 40.4508 28.4089 38.3765L40 42L51.5911 38.3765Z\" />\n    </mask>\n    <path d=\"M51.5911 38.3765C52.0675 40.4508 52.1285 42.6251 51.7694 44.7313C51.4103 46.8374 50.6408 48.819 49.5202 50.5227C48.3997 52.2263 46.9583 53.6064 45.3075 54.5562C43.6566 55.506 41.8406 56 40 56C38.1593 56 36.3434 55.506 34.6925 54.5562C33.0417 53.6064 31.6003 52.2263 30.4798 50.5227C29.3592 48.819 28.5897 46.8374 28.2306 44.7313C27.8715 42.6251 27.9325 40.4508 28.4089 38.3765L40 42L51.5911 38.3765Z\" stroke=\"#219653\" stroke-width=\"16\" mask=\"url(#path-7-outside-2)\" />\n    <ellipse cx=\"40\" cy=\"42\" rx=\"12\" ry=\"14\" fill=\"#56CCF2\" />\n    <ellipse cx=\"40\" cy=\"42\" rx=\"12\" ry=\"14\" stroke=\"#F2994A\" stroke-width=\"5\" />\n    <rect x=\"31\" y=\"55\" width=\"18\" height=\"6\" fill=\"#F2F2F2\" />\n    <rect x=\"24\" y=\"59\" width=\"10\" height=\"4\" fill=\"#F2F2F2\" />\n    <rect x=\"46\" y=\"59\" width=\"10\" height=\"4\" fill=\"#F2F2F2\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "serbia",
+    "id": "4672:1564",
+    "terms": [
+      "serbia"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#EB5757\" />\n    <path opacity=\"0.9\" d=\"M120 53.3333H0V80H120V53.3333Z\" fill=\"#F2F2F2\" />\n    <path d=\"M16 23.7895H48V45.3065C48 51.2241 44.4882 56.5775 39.0602 58.9344L32 62L24.9398 58.9344C19.5118 56.5775 16 51.2241 16 45.3065V23.7895Z\" fill=\"#EB5757\" />\n    <path d=\"M24 28.4211H40V21.4736L36.4444 22.5591L32 18L27.5556 22.5591L24 21.4736V28.4211Z\" fill=\"#F2C94C\" />\n    <path d=\"M40 51.8718L32 41.7368L24 51.8718\" stroke=\"#F2C94C\" stroke-width=\"3.42857\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M32 34.0267C31.3857 33.0906 30.3353 32.4737 29.1427 32.4737C27.2492 32.4737 25.7141 34.0289 25.7141 35.9474C25.7141 36.225 25.7463 36.495 25.807 36.7538L20.123 35.3684C18.9193 36.2485 18.2856 37.2469 18.2856 38.2631C18.2856 39.2794 18.9193 40.2778 20.123 41.1579C20.7209 41.5951 21.449 41.9954 22.286 42.35C22.3012 44.4873 23.7454 46.2804 25.6987 46.7973C26.3755 48.3903 27.6237 49.6755 29.1817 50.388L27.4286 53.6086L32 57.3684L36.5715 53.6086L34.8183 50.3879C36.3762 49.6754 37.6242 48.3903 38.3011 46.7974C40.2546 46.2806 41.6989 44.4874 41.7141 42.3499C42.551 41.9954 43.279 41.595 43.8769 41.1579C45.0805 40.2778 45.7142 39.2794 45.7142 38.2631C45.7142 37.2469 45.0805 36.2485 43.8768 35.3684L38.1929 36.7537C38.2536 36.495 38.2858 36.225 38.2858 35.9474C38.2858 34.0289 36.7507 32.4737 34.8572 32.4737C33.6646 32.4737 32.6142 33.0906 32 34.0267Z\" fill=\"#F2F2F2\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#EB5757\" />\n    <path opacity=\"0.9\" d=\"M80 53.3333H0V80H80V53.3333Z\" fill=\"#F2F2F2\" />\n    <path d=\"M16 23.7895H48V45.3065C48 51.2241 44.4882 56.5775 39.0602 58.9344L32 62L24.9398 58.9344C19.5118 56.5775 16 51.2241 16 45.3065V23.7895Z\" fill=\"#EB5757\" />\n    <path d=\"M24 28.4211H40V21.4736L36.4444 22.5591L32 18L27.5556 22.5591L24 21.4736V28.4211Z\" fill=\"#F2C94C\" />\n    <path d=\"M40 51.8718L32 41.7368L24 51.8718\" stroke=\"#F2C94C\" stroke-width=\"3.42857\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M32 34.0267C31.3857 33.0906 30.3353 32.4737 29.1427 32.4737C27.2492 32.4737 25.7141 34.0289 25.7141 35.9474C25.7141 36.225 25.7463 36.495 25.807 36.7538L20.123 35.3684C18.9193 36.2485 18.2856 37.2469 18.2856 38.2631C18.2856 39.2794 18.9193 40.2778 20.123 41.1579C20.7209 41.5951 21.449 41.9954 22.286 42.35C22.3012 44.4873 23.7454 46.2804 25.6987 46.7973C26.3755 48.3903 27.6237 49.6755 29.1817 50.388L27.4286 53.6086L32 57.3684L36.5715 53.6086L34.8183 50.3879C36.3762 49.6754 37.6242 48.3903 38.3011 46.7974C40.2546 46.2806 41.6989 44.4874 41.7141 42.3499C42.551 41.9954 43.279 41.595 43.8769 41.1579C45.0805 40.2778 45.7142 39.2794 45.7142 38.2631C45.7142 37.2469 45.0805 36.2485 43.8768 35.3684L38.1929 36.7537C38.2536 36.495 38.2858 36.225 38.2858 35.9474C38.2858 34.0289 36.7507 32.4737 34.8572 32.4737C33.6646 32.4737 32.6142 33.0906 32 34.0267Z\" fill=\"#F2F2F2\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "slovakia",
+    "id": "4672:1563",
+    "terms": [
+      "slovakia"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#F2F2F2\" />\n    <path opacity=\"0.9\" d=\"M120 53.3333H0V80H120V53.3333Z\" fill=\"#EB5757\" />\n    <path d=\"M16 21H48V42.517C48 48.4346 44.4882 53.788 39.0602 56.1449L32 59.2105L24.9398 56.1449C19.5118 53.788 16 48.4346 16 42.517V21Z\" fill=\"#EB5757\" />\n    <path d=\"M32 26V46\" stroke=\"#F2F2F2\" stroke-width=\"3\" />\n    <path d=\"M38 32H26\" stroke=\"#F2F2F2\" stroke-width=\"3\" />\n    <path d=\"M40 38H24\" stroke=\"#F2F2F2\" stroke-width=\"3\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M45.7376 50.3976C44.1759 52.8934 41.8759 54.9223 39.0602 56.1449L31.9999 59.2105L24.9397 56.1449C22.124 54.9223 19.8239 52.8934 18.2622 50.3976C18.9301 48.4221 20.7989 47 22.9999 47C23.6941 47 24.3553 47.1415 24.9562 47.3972C26.6051 45.3269 29.1475 44 31.9999 44C34.8523 44 37.3948 45.3269 39.0437 47.3972C39.6446 47.1415 40.3057 47 40.9999 47C43.2009 47 45.0697 48.4221 45.7376 50.3976Z\" fill=\"#2F80ED\" />\n    <path d=\"M17 22H47V42.517C47 48.0363 43.7246 53.0294 38.6619 55.2276L32 58.1203L25.3381 55.2276C20.2754 53.0294 17 48.0363 17 42.517V22Z\" stroke=\"#F2F2F2\" stroke-width=\"2\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#F2F2F2\" />\n    <path opacity=\"0.9\" d=\"M80 53.3333H0V80H80V53.3333Z\" fill=\"#EB5757\" />\n    <path d=\"M16 21H48V42.517C48 48.4346 44.4882 53.788 39.0602 56.1449L32 59.2105L24.9398 56.1449C19.5118 53.788 16 48.4346 16 42.517V21Z\" fill=\"#EB5757\" />\n    <path d=\"M32 26V46\" stroke=\"#F2F2F2\" stroke-width=\"3\" />\n    <path d=\"M38 32H26\" stroke=\"#F2F2F2\" stroke-width=\"3\" />\n    <path d=\"M40 38H24\" stroke=\"#F2F2F2\" stroke-width=\"3\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M45.7376 50.3976C44.1759 52.8934 41.8759 54.9223 39.0602 56.1449L31.9999 59.2105L24.9397 56.1449C22.124 54.9223 19.8239 52.8934 18.2622 50.3976C18.9301 48.4221 20.7989 47 22.9999 47C23.6941 47 24.3553 47.1415 24.9562 47.3972C26.6051 45.3269 29.1475 44 31.9999 44C34.8523 44 37.3948 45.3269 39.0437 47.3972C39.6446 47.1415 40.3057 47 40.9999 47C43.2009 47 45.0697 48.4221 45.7376 50.3976Z\" fill=\"#2F80ED\" />\n    <path d=\"M17 22H47V42.517C47 48.0363 43.7246 53.0294 38.6619 55.2276L32 58.1203L25.3381 55.2276C20.2754 53.0294 17 48.0363 17 42.517V22Z\" stroke=\"#F2F2F2\" stroke-width=\"2\" />\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
+    }
+  },
+  {
+    "name": "slovenia",
+    "id": "4672:1562",
+    "terms": [
+      "slovenia"
+    ],
+    "categories": [
+      "europe"
+    ],
+    "variants": {
+      "rectangle": "<svg viewBox=\"0 0 120 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M120 0H0V80H120V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M120 0H0V26.6667H120V0Z\" fill=\"#F2F2F2\" />\n    <path opacity=\"0.9\" d=\"M120 53.3333H0V80H120V53.3333Z\" fill=\"#EB5757\" />\n    <path d=\"M20 15H40V26.853C40 30.5656 37.7397 33.9041 34.2926 35.2829L30 37L25.7074 35.283C22.2603 33.9041 20 30.5656 20 26.853V15Z\" fill=\"#2F80ED\" />\n    <mask id=\"mask0\" mask-type=\"alpha\" maskUnits=\"userSpaceOnUse\" x=\"20\" y=\"15\" width=\"20\" height=\"22\">\n      <path d=\"M20 15H40V26.853C40 30.5656 37.7397 33.9041 34.2926 35.2829L30 37L25.7074 35.283C22.2603 33.9041 20 30.5656 20 26.853V15Z\" fill=\"#2F80ED\" />\n    </mask>\n    <g mask=\"url(#mask0)\">\n      <path d=\"M30 23.5556L47.3205 36.3889H12.6795L30 23.5556Z\" fill=\"#F2F2F2\" />\n      <path d=\"M42.5 23.5556L59.8205 36.3889H25.1795L42.5 23.5556Z\" fill=\"#F2F2F2\" />\n      <path d=\"M17.5 23.5556L34.8205 36.3889H0.179491L17.5 23.5556Z\" fill=\"#F2F2F2\" />\n    </g>\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"120\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>",
+      "square": "<svg viewBox=\"0 0 80 80\" fill=\"none\">\n  <g clip-path=\"url(#clip0)\">\n    <path d=\"M80 0H0V80H80V0Z\" fill=\"#2F80ED\" />\n    <path d=\"M80 0H0V26.6667H80V0Z\" fill=\"#F2F2F2\" />\n    <path opacity=\"0.9\" d=\"M80 53.3333H0V80H80V53.3333Z\" fill=\"#EB5757\" />\n    <path d=\"M20 15H40V26.853C40 30.5656 37.7397 33.9041 34.2926 35.2829L30 37L25.7074 35.283C22.2603 33.9041 20 30.5656 20 26.853V15Z\" fill=\"#2F80ED\" />\n    <mask id=\"mask0\" mask-type=\"alpha\" maskUnits=\"userSpaceOnUse\" x=\"20\" y=\"15\" width=\"20\" height=\"22\">\n      <path d=\"M20 15H40V26.853C40 30.5656 37.7397 33.9041 34.2926 35.2829L30 37L25.7074 35.283C22.2603 33.9041 20 30.5656 20 26.853V15Z\" fill=\"#2F80ED\" />\n    </mask>\n    <g mask=\"url(#mask0)\">\n      <path d=\"M30 23.5556L47.3205 36.3889H12.6795L30 23.5556Z\" fill=\"#F2F2F2\" />\n      <path d=\"M42.5 23.5556L59.8205 36.3889H25.1795L42.5 23.5556Z\" fill=\"#F2F2F2\" />\n      <path d=\"M17.5 23.5556L34.8205 36.3889H0.179491L17.5 23.5556Z\" fill=\"#F2F2F2\" />\n    </g>\n  </g>\n  <defs>\n    <clipPath id=\"clip0\">\n      <rect width=\"80\" height=\"80\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>"
     }
   },
   {

@@ -1,0 +1,54 @@
+<svg viewBox="0 0 120 80" fill="none">
+  <g clip-path="url(#clip0)">
+    <path d="M120 0H0V80H120V0Z" fill="#F2F2F2" />
+    <path d="M120 0H0V26.6667H120V0Z" fill="#EB5757" />
+    <path d="M120 53.33H0V80H120V53.33Z" fill="#2F80ED" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M46 23.1667L51 19L55.5 22.75L60 19L64.5 22.75L69 19L74 23.1667V29L72 29H63L57 29H48H46V23.1667Z" fill="#2F80ED" />
+    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="46" y="29" width="28" height="32">
+      <path d="M46 29H74V47C74 54.732 67.732 61 60 61C52.268 61 46 54.732 46 47V29Z" fill="#F2F2F2" />
+    </mask>
+    <g mask="url(#mask0)">
+      <path d="M45.9999 29H51.5999V34.6H45.9999V29Z" fill="#EB5757" />
+      <path d="M51.5999 29H57.1999V34.6H51.5999V29Z" fill="#F2F2F2" />
+      <path d="M57.1999 29H62.7999V34.6H57.1999V29Z" fill="#EB5757" />
+      <path d="M62.7999 29H68.3999V34.6H62.7999V29Z" fill="#F2F2F2" />
+      <path d="M68.3998 29H73.9998V34.6H68.3998V29Z" fill="#EB5757" />
+      <path d="M73.9998 29H79.5998V34.6H73.9998V29Z" fill="#F2F2F2" />
+      <path d="M79.5998 34.6H73.9998V40.2H79.5998V34.6Z" fill="#EB5757" />
+      <path d="M73.9998 34.6H68.3998V40.2H73.9998V34.6Z" fill="#F2F2F2" />
+      <path d="M68.3998 34.6H62.7998V40.2H68.3998V34.6Z" fill="#EB5757" />
+      <path d="M62.7999 34.6H57.1999V40.2H62.7999V34.6Z" fill="#F2F2F2" />
+      <path d="M57.1999 34.6H51.5999V40.2H57.1999V34.6Z" fill="#EB5757" />
+      <path d="M51.5999 34.6H45.9999V40.2H51.5999V34.6Z" fill="#F2F2F2" />
+      <path d="M45.9999 40.2H51.5999V45.8H45.9999V40.2Z" fill="#EB5757" />
+      <path d="M51.5999 40.2H57.1999V45.8H51.5999V40.2Z" fill="#F2F2F2" />
+      <path d="M57.1999 40.2H62.7999V45.8H57.1999V40.2Z" fill="#EB5757" />
+      <path d="M62.7999 40.2H68.3999V45.8H62.7999V40.2Z" fill="#F2F2F2" />
+      <path d="M68.3998 40.2H73.9998V45.8H68.3998V40.2Z" fill="#EB5757" />
+      <path d="M73.9998 40.2H79.5998V45.8H73.9998V40.2Z" fill="#F2F2F2" />
+      <path d="M79.5999 45.8H73.9999V51.4H79.5999V45.8Z" fill="#EB5757" />
+      <path d="M73.9999 45.8H68.3999V51.4H73.9999V45.8Z" fill="#F2F2F2" />
+      <path d="M68.3999 45.8H62.7999V51.4H68.3999V45.8Z" fill="#EB5757" />
+      <path d="M62.7999 45.8H57.1999V51.4H62.7999V45.8Z" fill="#F2F2F2" />
+      <path d="M57.2 45.8H51.6V51.4H57.2V45.8Z" fill="#EB5757" />
+      <path d="M51.6 45.8H46V51.4H51.6V45.8Z" fill="#F2F2F2" />
+      <path d="M45.9999 51.4H51.5999V57H45.9999V51.4Z" fill="#EB5757" />
+      <path d="M51.5999 51.4H57.1999V57H51.5999V51.4Z" fill="#F2F2F2" />
+      <path d="M57.1999 51.4H62.7999V57H57.1999V51.4Z" fill="#EB5757" />
+      <path d="M62.7999 51.4H68.3999V57H62.7999V51.4Z" fill="#F2F2F2" />
+      <path d="M68.3998 51.4H73.9998V57H68.3998V51.4Z" fill="#EB5757" />
+      <path d="M73.9998 51.4H79.5998V57H73.9998V51.4Z" fill="#F2F2F2" />
+      <path d="M79.5999 57H73.9999V62.6H79.5999V57Z" fill="#EB5757" />
+      <path d="M73.9999 57H68.3999V62.6H73.9999V57Z" fill="#F2F2F2" />
+      <path d="M68.3999 57H62.7999V62.6H68.3999V57Z" fill="#EB5757" />
+      <path d="M62.7999 57H57.1999V62.6H62.7999V57Z" fill="#F2F2F2" />
+      <path d="M57.2 57H51.6V62.6H57.2V57Z" fill="#EB5757" />
+      <path d="M51.6 57H46V62.6H51.6V57Z" fill="#F2F2F2" />
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <rect width="120" height="80" fill="white" />
+    </clipPath>
+  </defs>
+</svg>
