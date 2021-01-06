@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.1.0...@glyphs/flags-v0.2.0) (2021-01-06)
+
+
+### Features
+
+* **flags:** add circle variant to set ([ee1fd8c](https://github.com/gorango/glyphs/commit/ee1fd8c719e5a979d80e48418b462d95416b68f2))
+
 ## [0.1.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.0.9...@glyphs/flags-v0.1.0) (2021-01-06)
 
 
