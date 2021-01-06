@@ -167,9 +167,6 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   await saveJSON(`${dataDir}/meta`, meta)
   meta.variants.forEach(variant => createDir(`${svgDir}/${variant}`))
 
-  progressVal = Math.max(progressVal, 10)
-  progress.update(progressVal, { stage: `Setting up ${meta.total} icons...` })
-
   const figmaLimit = 400
   const chunkSize = figmaLimit / meta.variants.length
   const lastRun = new Date(fileConf.sets[set])
@@ -214,6 +211,9 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   })
 
   let downloaded = 0
+  const chunksTotal = chunkComponents.reduce((sum, { variants }) => sum + Object.keys(variants).length, 0)
+  progressVal = Math.max(progressVal, 10)
+  progress.update(progressVal, { stage: `Setting up ${chunksTotal} icons...` })
 
   await chunks.reduce((promise, targets, i) => {
     return promise.then(async () => {
@@ -246,7 +246,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
           downloaded++
           const newProgress = downloaded / meta.total * 80 + 10
           progressVal = Math.min(progressVal, newProgress)
-          progress.update(progressVal, { stage: `${downloaded}/${meta.total} downloaded...` })
+          progress.update(progressVal, { stage: `${downloaded}/${chunksTotal} downloaded...` })
           return Promise.resolve()
         })
       }, Promise.resolve())
@@ -258,7 +258,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   progress.update(90, { stage: 'Saving categories...' })
   let lastComponents
 
-  if (diffOnly || categories.length) {
+  if (diffOnly || categories) {
     const lastComponents = await readJSON(`${dataDir}/components.json`)
     components.forEach(component => {
       const ci = components.findIndex(({ name: n }) => n === component.name )
