@@ -2,10 +2,11 @@
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "flags",
   "unique": 73,
-  "total": 146,
+  "total": 219,
   "variants": [
     "rectangle",
-    "square"
+    "square",
+    "circle"
   ],
   "categories": {
     "europe": [

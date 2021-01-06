@@ -1,13 +1,13 @@
 <svg viewBox="0 0 80 80" fill="none">
   <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
-    <rect width="80" height="80" rx="40" fill="white" />
+    <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
   <g mask="url(#mask0)">
     <g opacity="0.9">
-      <rect width="80" height="80" fill="#FF1A1A" />
-      <rect x="10" width="60" height="80" fill="white" />
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M39.7685 15L45.9093 23.1824L50.4586 21.7919L46.5809 38.8791L46.6232 39.0182L51.509 31.1767L53.2233 34.455L60.5798 33.3595L60.5799 33.3596L59.4954 40.7904L62.7402 42.5217L50.1315 50.5352L51.7685 55.9091L39.7685 52.6564L27.7685 55.9091L29.3935 50.5745L16.7269 42.5522L20.0289 40.7904L18.9443 33.3595L26.3009 34.455L28.0456 31.1187L32.552 38.3766L28.769 21.6973L33.6278 23.1824L39.7685 15Z" fill="#FF0000" />
-      <path d="M39.7686 40.7578L39.7687 65.0002" stroke="#FF0000" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+      <rect width="80" height="80" fill="#EB5757" />
+      <rect x="10" width="60" height="80" fill="#F2F2F2" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M39.7685 15L45.9093 23.1824L50.4586 21.7919L46.5809 38.8791L46.6232 39.0182L51.509 31.1767L53.2233 34.455L60.5798 33.3595L60.5799 33.3596L59.4954 40.7904L62.7402 42.5217L50.1315 50.5352L51.7685 55.9091L39.7685 52.6564L27.7685 55.9091L29.3935 50.5745L16.7269 42.5522L20.0289 40.7904L18.9443 33.3595L26.3009 34.455L28.0456 31.1187L32.552 38.3766L28.769 21.6973L33.6278 23.1824L39.7685 15Z" fill="#EB5757" />
+      <path d="M39.7686 40.7578L39.7687 65.0002" stroke="#EB5757" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
     </g>
   </g>
 </svg>

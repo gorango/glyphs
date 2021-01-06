@@ -1,10 +1,10 @@
 <svg viewBox="0 0 80 80" fill="none">
   <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
-    <rect width="80" height="80" rx="40" fill="white" />
+    <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
   <g mask="url(#mask0)">
-    <rect x="0.0559082" width="79.9435" height="80" fill="#00778B" />
-    <rect x="0.0559082" y="26.561" width="79.9435" height="26.878" fill="#FFC72C" />
-    <path d="M0 0V80L51.7135 40L0 0Z" fill="black" />
+    <rect x="0.0559082" width="79.9435" height="80" fill="#219653" />
+    <rect x="0.0559082" y="26.561" width="79.9435" height="26.878" fill="#F2C94C" />
+    <path d="M0 0V80L51.7135 40L0 0Z" fill="#333333" />
   </g>
 </svg>
