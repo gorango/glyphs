@@ -137,13 +137,8 @@ function centerChildren () {
   const selectedNodes: any = figma.currentPage.selection
   selectedNodes.forEach((node: any) => {
     node.children.forEach((child: any) => {
-      // const rotation = child.rotation
-      // child.rotation = 0
       child.x = (node.width - child.width) / 2
       child.y = (node.height - child.height) / 2
-      // setTimeout(() => {
-      //   child.rotation = rotation
-      // }, 2000)
     })
   })
 }
@@ -153,7 +148,6 @@ function sortSelected () {
   const parent = selectedNodes[0].parent
   const indices = selectedNodes.map((node: any) => {
     const index = node.parent.children.findIndex(({ id }) => id === node.id)
-    // console.log(node)
     let [[_, __, x], [___, ____, y]] = node.absoluteTransform
     x = x - (node.width / 2)
     y = y - (node.height / 2)
@@ -164,25 +158,14 @@ function sortSelected () {
     const ydiff = ay - by
     const xdiff = ax - bx
     if (Math.abs(xdiff) > 40) {
-      // console.log('y:', ydiff)
-      // if (Math.abs(ydiff) > 40) {
-      //   return ydiff
-      // }
       return xdiff
     }
     if (Math.abs(ydiff) > 40) {
-      // console.log('x:', xdiff)
-      // if (Math.abs(xdiff) > 40) {
-      //   return xdiff
-      // }
       return ydiff
     }
     return 0
   }).forEach(([node, index], i) => {
-    // const node = parent.children[index]
     parent.insertChild(startIndex + i, node)
-    // const newIndex = sorted[i]
-    // node.parent.insertChild(sorted[i][0], node)
   })
 }
 
@@ -193,6 +176,8 @@ function _addAutoLayout (node) {
   selectedNodes.forEach(node => {
     console.log(node)
     node.layoutMode = 'VERTICAL'
+    node.primaryAxisAlignItems = 'CENTER'
+    node.counterAxisAlignItems = 'CENTER'
     node.itemSpacing = 20
     node.paddingTop = 0
     node.paddingLeft = 0
