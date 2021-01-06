@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.4](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.3...@glyphs/rounded-v0.5.4) (2021-01-06)
+
+
+### Bug Fixes
+
+* **rounded:** update globe stand (rebuild); fix wifi paths ([d2d6247](https://github.com/gorango/glyphs/commit/d2d62476a8a2582da90884bb520ba9fce6342bef))
+
 ### [0.5.3](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.2...@glyphs/rounded-v0.5.3) (2021-01-05)
 
 
