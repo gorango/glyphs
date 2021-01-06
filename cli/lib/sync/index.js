@@ -6,7 +6,7 @@ const chalk = require('chalk')
 const Progress = require('cli-progress')
 const { Client: figmaClient } = require('figma-js')
 
-const { validComponent } = require('./name')
+const { validName, validType } = require('./validate')
 const { findOne, findAll } = require('./node')
 const { processSvg } = require('./svg')
 const { createDir, saveSVG, saveJSON, readJSON } = require('./file')
@@ -78,7 +78,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
 
   const components = Object.entries(file.components)
     .filter(([id, { name }]) => findOne(page, ({ name: n, id: i }) => n === name && i === id))
-    .filter(([id, { name }]) => validComponent(name))
+    .filter(([id, { name }]) => validName(name))
     .reduce((arr, [id, { name, description }]) => [
       ...arr,
       {
@@ -92,9 +92,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
           )
         },
         categories: (() => {
-          const nodes = findAll(page, ({ name: n, type: t, parent: p }) =>
-            (t === 'COMPONENT' || t === 'INSTANCE') && n === name
-          )
+          const nodes = findAll(page, ({ name: n, type: t, parent: p }) => n === name && validType(t))
           if (nodes) {
             return nodes.reduce((obj, { type, parent }) => ({
               ...obj,
@@ -113,7 +111,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
     ], [])
     .map((component, i, arr) => {
       const node = findOne(page, ({ id }) => id === component.id)
-      const inherited = node && findAll(node, ({ name, type }) => type === 'INSTANCE' && validComponent(name))
+      const inherited = node && findAll(node, ({ name, type }) => type === 'INSTANCE' && validName(name))
 
       if (inherited.length) {
         const terms = inherited.reduce((obj, component) => ({
@@ -157,9 +155,9 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
     categories: page.children.reduce((obj, frame) => {
       return {
         ...obj,
-        ...(!findOne(frame, ({ type, name }) => ['COMPONENT', 'INSTANCE'].includes(type) && validComponent(name)) ? {} : {
+        ...(!findOne(frame, ({ type, name }) => validType(type) && validName(name)) ? {} : {
           [camelCase(frame.name.trim())]: [...new Set(
-            frame.children.filter(({ name }) => validComponent(name)).map(({ name }) => camelCase(name.trim()))
+            frame.children.filter(({ name, type }) => validType(type) && validName(name)).map(({ name }) => camelCase(name.trim()))
           )]
         })
       }
@@ -186,10 +184,11 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
     })
     chunkComponents = components.reduce((arr, component) => {
       const main = mainComponents.find(({ node_id: i }) => i === component.id)
-      const mainUpdated = new Date(main?.updated_at) > lastRun
+      const mainUpdated = main && new Date(main.updated_at) > lastRun
       const updatedVariants = Object.entries(component.variants).reduce((obj, [style, id]) => {
         const variant = mainComponents.find(({ node_id: i }) => i === id)
-        if (mainUpdated || new Date(variant?.updated_at) > lastRun) {
+        const variantUpdated = new Date(variant?.updated_at) > lastRun
+        if (mainUpdated || variantUpdated) {
           return { ...obj, [style]: id }
         }
         return obj

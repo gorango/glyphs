@@ -1,9 +1,14 @@
 
 module.exports = {
-  validComponent
+  validType,
+  validName,
 }
 
-function validComponent (name) {
+function validType (type) {
+  return ['COMPONENT', 'INSTANCE'].includes(type)
+}
+
+function validName (name) {
   const isReserved = reservedKeywords.has(name)
   if (isReserved) {
     throw new Error(`${name} is a reserved keyword.`)
