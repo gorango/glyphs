@@ -3,6 +3,19 @@
     .order-2.lg_order-1.flex-1.min-w-0.px-4.lg_px-8.pt-6.pb-16
       h1.mb-8.text-4xl.font-bold {{ document.title }}
       nuxt-content.prose.dark_prose-dark.docs(:document='document')
+      div.flex.justify-between.mt-8.text-blue-500.dark_text-blue-300.border-t.border-gray-100.dark_border-gray-700.pt-8
+        div.flex.items-center.space-x-3(v-if='prev')
+          svg-icon(name='arrow', rotate='w', stroke-width='7')
+          nuxt-link(:to='prev.path')
+            span.opacity-50.mr-2 {{ prev.category }}:
+            | {{ prev.title }}
+        .flex-auto
+        div.flex.items-center.space-x-3(v-if='next')
+          nuxt-link(:to='next.path')
+            span.opacity-50.mr-2 {{ next.category }}:
+            | {{ next.title }}
+          svg-icon(name='arrow', rotate='e', stroke-width='7')
+
     template(v-if='document.toc && document.toc.length')
       div.order-1.lg_order-2.flex.flex-col.px-4.block.lg_sticky.self-start(style='top: 72px; width: 16rem; min-width: 16rem')
         h3.text-grey-900.uppercase.text-xs.tracking-wider.mt-4.mb-3 On this page
@@ -32,7 +45,8 @@ export default {
     }
 
     const [prev, next] = await $content({ deep: true })
-      .only(['title', 'slug', 'to'])
+      .where({ disabled: { $ne: true }, position: { $gt: 0 } })
+      .only(['title', 'category', 'slug', 'path'])
       .sortBy('position', 'asc')
       .surround(document.slug, { before: 1, after: 1 })
       .fetch()
