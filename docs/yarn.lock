@@ -954,15 +954,15 @@
   resolved "https://registry.yarnpkg.com/@glyphs/edgy/-/edgy-0.0.3.tgz#573bc122dfa2b4aebbdfc4da6a252c501dbda98b"
   integrity sha512-Xb3uSAa/RVymSBnvKyyUZXDA7/AZ+BMNNnIxQkdxIZCtklRTSSaXhgZGLssxyjepCGq7wltEIhaR/d1lCDTS/A==
 
-"@glyphs/flags@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.0.7.tgz#836e577d34893e992327853174a78b1ef3c2ef59"
-  integrity sha512-wzJSiKFdfEVDYElUIH4qOqJTte/mpvW+8FIG9jVgz+GgvS6uyBGJUqh7gN4ReCLXf2OB78br3E9Z37YgvGBQLw==
+"@glyphs/flags@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.2.0.tgz#48e99416beff7b727b8062a245b832cda4e027fe"
+  integrity sha512-vj7foDCO009m4SEjzTdca/8ApxNnOPO4YTYP8mhD7BaZCgXQBkgLRp8mfe/PdGkroNFaGBZErtx1kEK1LlBqmA==
 
-"@glyphs/rounded@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@glyphs/rounded/-/rounded-0.2.2.tgz#40adfb18374b2339eab7306dbf1f013c4da086c8"
-  integrity sha512-zRLtlyRihUrwRf/BdrimAvnNx98r2OfpaE01UWGQdjZzFD3gd9FJeWpKOoMVngX4YE+mh30zxaSxYpdAfTMiow==
+"@glyphs/rounded@^0.5.5":
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@glyphs/rounded/-/rounded-0.5.5.tgz#f3146dd6285c90e7ce1fa59f4a11ef0b321fa141"
+  integrity sha512-HId0WMTqcIgQ6vNBuFK+Jf5hpR+ozr13XfMgKYvxT3cykb7+C93qE6Vm6gBU7L3c7cYhGvhMeMH2FUhKyHNJnQ==
 
 "@koa/router@^9.0.1":
   version "9.4.0"
@@ -4359,10 +4359,10 @@ eslint-webpack-plugin@^2.4.1:
     micromatch "^4.0.2"
     schema-utils "^3.0.0"
 
-eslint@^7.16.0:
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.16.0.tgz#a761605bf9a7b32d24bb7cde59aeb0fd76f06092"
-  integrity sha512-iVWPS785RuDA4dWuhhgXTNrGxHHK3a8HLSMBgbbU59ruJDubUraXN8N5rn7kb8tG6sjg74eE0RA3YWT51eusEw==
+eslint@^7.17.0:
+  version "7.17.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.17.0.tgz#4ccda5bf12572ad3bf760e6f195886f50569adb0"
+  integrity sha512-zJk08MiBgwuGoxes5sSQhOtibZ75pz0J35XTRlZOk9xMffhpA9BTbQZxoXZzOl5zMbleShbGwtw+1kGferfFwQ==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@eslint/eslintrc" "^0.2.2"
@@ -8302,6 +8302,13 @@ prismjs@^1.22.0:
   version "1.22.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.22.0.tgz#73c3400afc58a823dd7eed023f8e1ce9fd8977fa"
   integrity sha512-lLJ/Wt9yy0AiSYBf212kK3mM5L8ycwlyTlSxHBAneXLR0nzFMlZ5y7riFPF3E33zXOF2IH95xdY5jIyZbM9z/w==
+  optionalDependencies:
+    clipboard "^2.0.0"
+
+prismjs@^1.23.0:
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
+  integrity sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA==
   optionalDependencies:
     clipboard "^2.0.0"
 
