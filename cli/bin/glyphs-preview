@@ -13,7 +13,7 @@ const argv = parseArgs(args, {
 if (argv.help) {
   console.log(`
   Description
-  Preview a local icon set in the browser. Options that are not supplied as arguments will be prompted.
+  Preview a local icon set in the browser.
 
   Usage
     $ glyphs preview [<data-dir>]
