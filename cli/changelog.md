@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.2.0...@glyphs/cli-v0.2.1) (2021-01-07)
+
+
+### Bug Fixes
+
+* **cli:** clean up docs ([7aa8a0d](https://github.com/gorango/glyphs/commit/7aa8a0d2553876f9faf960666e10337d8300c17d))
+
 ## [0.2.0](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.1.0...@glyphs/cli-v0.2.0) (2021-01-06)
 
 
