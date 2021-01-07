@@ -2,18 +2,16 @@
   aside.hidden.xl_block.pt-3.overflow-y-scroll.px-6.pb-6.w-full.sticky.self-start(
     style='top: 72px; max-height: calc(100vh - 72px); width: 384px; max-width: 384px'
   )
-    div.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Icon Name
+    .flex.justify-between
+      div.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Icon Name
+      template(v-if='copy.name')
+        div.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Copied
     .flex.space-x-2.mt-2
-      .flex.items-center.justify-between.w-full.p-2.pl-4.bg-gray-200.dark_bg-gray-900.rounded-lg.border-2.border-gray-300.dark_border-gray-700
+      .cursor-pointer.flex.items-center.justify-between.w-full.p-2.pl-4.bg-gray-200.dark_bg-gray-900.rounded-lg.border-2.border-gray-300.dark_border-gray-700(
+        @click='selectCopy("name")',
+        ref='name'
+      )
         span.text-md(ref='iconName') {{ kebabCase(icon) }}
-        .flex-auto
-        template(v-if='copy.name')
-          div.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600.mr-3 Copied
-        button.flex.items-center.justify-center.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.text-gray-700.dark_text-gray-400.cursor-pointer(
-          title='Copy to clipboard',
-          @click='copyToClipboard(kebabCase(icon), "name")',
-        )
-          svg-icon(name='copy', size='1.5em')
 
     .flex.mt-2.justify-center.relative(:class='activeColor && `text-${activeColor}-500 dark_text-${activeColor}-400`')
       .absolute.top-0.right-0.p-2
@@ -114,25 +112,18 @@
           :friction='20',
         )
     div.mt-6.mb-2
-      div.flex.space-x-3
+      div.flex.items-end.space-x-3
         a.cursor-pointer.hover_underline.text-xs(@click='showCode = "svg"', :class='showCode === "svg" ? "text-gray-700 dark_text-gray-400" : "text-gray-500 dark_text-gray-600"') SVG
         a.cursor-pointer.hover_underline.text-xs(@click='showCode = "wc"', :class='showCode === "wc" ? "text-gray-700 dark_text-gray-400" : "text-gray-500 dark_text-gray-600"') HTML
-        //- a.cursor-pointer.hover_underline.text-xs(@click='showCode = "vue"', :class='showCode === "vue" ? "text-gray-700 dark_text-gray-400" : "text-gray-500 dark_text-gray-600"') Frameworks
-        //- .flex-auto
-        //- span.text-sm.tracking-wider Copy Code
+        .flex-auto
+        template(v-if='copy.code')
+          span.text-xs.tracking-wider.uppercase Copied
 
       .flex.relative.mt-2
-        div.w-full.rounded-lg.bg-gray-200.dark_bg-gray-900.text-gray-800.dark_text-gray-300.border-2.border-gray-300.dark_border-gray-700.relative(
-          ref='code',
+        div.cursor-pointer.w-full.rounded-lg.bg-gray-200.dark_bg-gray-900.text-gray-800.dark_text-gray-300.border-2.border-gray-300.dark_border-gray-700.relative(
+          @click='selectCopy("code")',
+          ref='code'
         )
-          .absolute.top-0.right-0.p-2.pb-4.flex.items-center.z-20
-            template(v-if='copy.code')
-              div.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600.mr-3 Copied
-            button.flex.items-center.justify-center.bg-gray-900.hover_bg-gray-1000.rounded-lg.border-2.border-gray-600.text-gray-400.cursor-pointer(
-              title='Copy to clipboard',
-              @click='copyCode',
-            )
-              svg-icon(name='copy', size='1.5em')
           template(v-if='icon')
             prism(lang='html', :code='prismaCode')
 
@@ -253,18 +244,6 @@ export default {
   methods: {
     kebabCase,
 
-    copyCode () {
-      const ref = this.$refs.code
-      const sel = window.getSelection()
-      const range = document.createRange()
-      range.selectNodeContents(ref)
-      sel.removeAllRanges()
-      sel.addRange(range)
-      const text = sel.toString()
-      this.copyToClipboard(text, 'code')
-      sel.removeAllRanges()
-    },
-
     async copyToClipboard (text, type) {
       if (!navigator.clipboard) {
         fallbackCopyTextToClipboard(text)
@@ -278,8 +257,19 @@ export default {
         this.copy[type] = true
         setTimeout(() => {
           this.copy[type] = false
-        }, 1500)
+        }, 3000)
       }
+    },
+
+    selectCopy (type) {
+      const ref = this.$refs[type]
+      const sel = window.getSelection()
+      const range = document.createRange()
+      range.selectNodeContents(ref)
+      sel.removeAllRanges()
+      sel.addRange(range)
+      const text = sel.toString()
+      this.copyToClipboard(text, type)
     },
 
     downloadIcon () {
