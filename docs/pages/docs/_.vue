@@ -36,7 +36,7 @@
         a.mt-6.mb-4.flex.items-center.space-x-3.text-gray-600.dark_text-gray-500(
           :href='`https://github.com/gorango/glyphs/edit/main/docs/content${document.path}.md`',
           target='_blank',
-          ret='noreferrer noopener',
+          ref='noreferrer noopener',
         )
           svg-icon.text-2xl(name='edit-1', stroke-width='4')
           span Suggest an edit
