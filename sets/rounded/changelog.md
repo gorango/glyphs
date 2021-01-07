@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.6](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.2.2...@glyphs/flags-v0.5.6) (2021-01-07)
+
+
+### Bug Fixes
+
+* **rounded:** update terms; fix gift-card path ([028dd2b](https://github.com/gorango/glyphs/commit/028dd2b605c3db5e5ade78066495ba2f40d246e2))
+
 ### [0.5.5](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.4...@glyphs/rounded-v0.5.5) (2021-01-06)
 
 
