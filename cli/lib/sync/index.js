@@ -175,7 +175,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
 
   const figmaLimit = 400
   const chunkSize = figmaLimit / meta.variants.length
-  const lastRun = new Date(fileConf.sets[set])
+  const lastRun = fileConf.sets[set]
   const diffOnly = diff && mainComponents && lastRun
 
   let chunkComponents
@@ -183,10 +183,10 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   if (diffOnly) {
     chunkComponents = components.reduce((arr, component) => {
       const main = mainComponents.find(({ node_id: i }) => i === component.id)
-      const mainUpdated = main && new Date(main.updated_at) > lastRun
+      const mainUpdated = main && new Date(main.updated_at) > new Date(lastRun)
       const updatedVariants = Object.entries(component.variants).reduce((obj, [style, id]) => {
         const variant = mainComponents.find(({ node_id: i }) => i === id)
-        const variantUpdated = new Date(variant?.updated_at) > lastRun
+        const variantUpdated = variant && new Date(variant?.updated_at) > new Date(lastRun)
         if (mainUpdated || variantUpdated) {
           return { ...obj, [style]: id }
         }
