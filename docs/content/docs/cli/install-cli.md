@@ -24,7 +24,7 @@ npm i -g .
 Simply run `glyphs` in your terminal for instructions on how to use the interface.
 
 ```bash
-icons
+glyphs  # also glyphs -h or glyphs --help
 ```
 
 This will return a robust set of options and instructions.
@@ -36,7 +36,6 @@ This will return a robust set of options and instructions.
   |_____|_|_  |  _|_|_|___|
           |___|_|
 
-  Running @glyphs/cli v0.0.1
 
   Example usage
     $ glyphs <command> <options>
@@ -54,6 +53,12 @@ This will return a robust set of options and instructions.
     get, g        Get details on the icon set config
     list, l       List configured icon sets
     sync, s       Sync an icon set to the current directory
+    preview, p    Preview a local icon set in the browser
     help, h       Display this message
+```
 
+To get more information on each command, append `--help` or `-h` to the end:
+
+```
+$ glyphs sync -h
 ```

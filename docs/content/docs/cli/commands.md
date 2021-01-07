@@ -2,33 +2,69 @@
 title: Commands
 category: CLI
 position: 32
-disabled: true
 ---
 
-## `icons add`
+## `add`
 
-Tempor consectetur ullamco irure cillum proident est id velit laboris sunt. Ipsum ullamco ut in magna elit excepteur ea enim tempor. Aliqua eu consectetur excepteur labore sint non consectetur voluptate aute proident nisi Lorem. Laboris magna id dolor proident sint adipisicing sint laborum cupidatat exercitation sunt culpa velit. Do aliqua Lorem in proident dolor qui tempor consectetur anim aute mollit.
+Add a new icon set config. Options that are not supplied as arguments will be prompted.
 
-Aliqua magna amet irure sit irure est. Officia aute reprehenderit duis aliquip excepteur pariatur. Esse excepteur est laborum cillum ea aute enim nostrud in anim ut excepteur nostrud.
+```bash
+glyphs add [--key <file-key> --token <access-token>]
+```
 
-## `icons remove`
+Options:
 
-Non anim sunt eiusmod exercitation consequat tempor consequat laboris quis. Ex elit veniam nostrud laboris. Aute laboris fugiat commodo culpa aute Lorem nostrud culpa ipsum. Cillum ullamco incididunt eu sint aute commodo aliquip ea ex. Nostrud nisi do quis ullamco reprehenderit nostrud consequat veniam fugiat quis. Aliqua dolor ea Lorem commodo esse excepteur magna.
+- `--key`, `-k`     &nbsp; File key for the Figma file
+- `--token`, `-t`   &nbsp; Personal access token from Figma
+- `--replace`, `-r` &nbsp; Overwrite any existing configuration for `<name>` or `<key>`
 
-Laboris commodo tempor mollit fugiat ad dolore nostrud ipsum velit aliqua non qui. Aliquip deserunt consectetur occaecat qui nostrud sint nisi. Ipsum aliqua eu consequat fugiat.
+## `remove`
 
-## `icons get`
+Remove an existing icon set config by name
 
-Minim nulla labore labore fugiat Lorem laborum et enim esse incididunt. Labore laboris culpa adipisicing sunt aute ipsum nisi sit pariatur voluptate dolor. Culpa amet laborum non sunt.
+```bash
+glyphs remove [<key>]
+```
 
-Culpa proident minim enim sint irure ad proident aute officia ex mollit mollit in. Magna ad cillum eiusmod adipisicing proident. Incididunt minim proident sit occaecat sit consequat quis.
+## `get`
 
-## `icons list`
+Get details on the icon set config
 
-Cillum ad amet duis qui sit laboris magna dolore reprehenderit occaecat. Eu dolore anim ullamco minim sint sunt amet do amet. Cupidatat dolore laborum incididunt et sit veniam Lorem aute sunt sint et ullamco irure mollit.
+```bash
+glyphs get [<key|name>]
+```
 
-Non qui veniam mollit dolor enim irure nulla mollit cupidatat Lorem laboris laboris ullamco. Occaecat sunt qui incididunt officia ipsum aliquip Lorem. Reprehenderit nisi qui ullamco nostrud officia pariatur. Consequat laborum culpa aliquip ullamco elit irure irure ut Lorem excepteur in minim qui magna. Lorem aliqua nulla amet duis. Qui nisi magna aliqua velit dolor.
+## `list`
 
-## `icons sync`
+List configured icon sets
 
-Eiusmod excepteur excepteur irure nostrud. Deserunt ipsum sint irure laborum qui magna irure et do ut et occaecat consectetur duis. Minim dolore sint velit dolore magna sit fugiat aliquip eiusmod aliqua ipsum laborum.
+```bash
+glyphs list [--available]
+```
+
+## `sync`
+
+Sync a configured icon set to the current directory.
+
+```bash
+glyphs sync [<key|name> --set <set> --data <data-folder> --svg <svg-folder>]
+```
+
+Options:
+
+- `--set`, `-S`     &nbsp; Name of icon set to sync
+- `--data`, `-d`    &nbsp; Output folder for icon-set data
+- `--svg`, `-s`     &nbsp; Output folder for SVGs
+- `--preview`, `-p` &nbsp; Generate a preview file
+- `--diff`          &nbsp; Fetch only new and updated assets
+- `--categories`    &nbsp; Specify categories to include
+
+## `preview`
+
+Preview a local icon set in the browser. Options that are not supplied as arguments will be prompted.
+
+```bash
+glyphs preview [<data-dir>]
+```
+
+This command will use the `components.json` in the `data-dir` to scaffold out a single-page HTML file to preview the exported icons. The [template](https://github.com/gorango/glyphs/blob/main/cli/lib/preview/template.pug) is very simple and can easily be modified.

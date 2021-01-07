@@ -1,22 +1,30 @@
 ---
-title: Web Components
+title: Standard Component
 category: Web Components
 position: 23
 ---
 
+## Introduction
+
 [Stencil]: https://stenciljs.com/
 [wc]: https://www.webcomponents.org/
-[rounded]: https://figma.com/rounded
-[brand]: https://figma.com/brand
-[flag]: https://figma.com/flag
+[rd]: https://figma.com/rounded
+[bd]: https://figma.com/brand
+[fd]: https://figma.com/flag
+[rf]: https://figma.com/rounded
+[bf]: https://figma.com/brand
+[ff]: https://figma.com/flag
 
-This project uses [Stencil] to generate standard [web components][wc] for universal use on the web. This makes it simple to use in any modern browser environment and in any web framework or CMS platform.
+This project uses [Stencil] to generate [standard web components][wc] for universal use on the web. This makes it simple to use in any modern browser environment and in any web framework or CMS platform.
 
 Currently this project supplies three different icon sets along with three dedicated web components:
 
-- Rounded Icons ([design file][rounded], [component][rounded])
-- Brand Icons ([design file][brand], [component][brand])
-- Flag Icons ([design file][flag], [component][flag])
+### `<rounded-icon />`
+[@glyphs/rounded-icon][rf]
+### `<brand-icon />`
+[@glyphs/brand-icon][bf]
+### `<flag-icon />`
+[@glyphs/flag-icon][ff]
 
 ## Install
 
