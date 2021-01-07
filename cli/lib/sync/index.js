@@ -102,6 +102,12 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
         })(),
         variants: (() => {
           const node = findOne(page, ({ name: n, type: t }) => t === 'COMPONENT_SET' && n === name.slice(1))
+
+          if (!node) {
+            progress.stop()
+            throw new Error(`Problem with Figma node "${name}": https://www.figma.com/file/${key}/?node-id=4954%3A1152`)
+          }
+
           return node.children.reduce((obj, { id, name }) => ({
             ...obj,
             [name.split('=')[1].toLowerCase()]: id

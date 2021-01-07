@@ -132,8 +132,9 @@ const pkg = require('../package.json')
 })()
 
 function handleError (err) {
-  console.log
+  console.log()
   console.log(err.message)
-  console.log(err)
+  process.env.NODE_ENV === 'dev' && console.log(err)
+  console.log()
   process.exit(1)
 }
