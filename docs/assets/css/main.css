@@ -7,6 +7,9 @@ html:not(.break-smooth) { scroll-behavior: smooth; }
 .dark-mode ::selection  { @apply bg-gray-500 }
 .light-mode ::selection { @apply bg-gray-400 }
 
+.light-mode .show-dark  { display: none }
+.dark-mode .show-light  { display: none }
+
 .nuxt-content {
   @apply break-words;
 
