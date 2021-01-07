@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.2.1...@glyphs/flags-v0.2.2) (2021-01-07)
+
+
+### Bug Fixes
+
+* **flags:** remove mask - malta circle crest ([80db7a1](https://github.com/gorango/glyphs/commit/80db7a1207747e496b685df17acd93075e82c6f2))
+* **flags:** remove mask - nicaragua crest ([1de83ec](https://github.com/gorango/glyphs/commit/1de83ecf73da438eaf4223ab1f594064a35b3db8))
+* **flags:** update barbados crest ([786a8d1](https://github.com/gorango/glyphs/commit/786a8d18d89f80afae682338f61af38612c051b1))
+
 ### [0.2.1](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.2.0...@glyphs/flags-v0.2.1) (2021-01-07)
 
 
