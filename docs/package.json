@@ -1,7 +1,7 @@
 {
-  "name": "glyphs.fyi",
+  "name": "@glyphs/docs",
   "description": "Website, directory & docs for the Glyphs design system",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "dev": "nuxt",
     "gen": "nuxt generate",
