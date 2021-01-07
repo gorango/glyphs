@@ -17,7 +17,7 @@ if (argv.help) {
   Remove an existing icon set config by name
 
   Usage
-    $ glyphs remove [<key>]
+    $ glyphs remove <key>
 
   Options
     --help, -h    Displays this message

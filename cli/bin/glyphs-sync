@@ -18,7 +18,7 @@ const argv = parseArgs(args, {
 if (argv.help) {
   console.log(`
   Description
-  Sync a configured icon set to the current directory.
+  Sync a configured icon set to the current directory. Options that are not supplied as arguments will be prompted.
 
   Usage
     $ glyphs sync [<key|name> --set <set> --data <data-folder> --svg <svg-folder>]

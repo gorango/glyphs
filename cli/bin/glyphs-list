@@ -17,10 +17,9 @@ if (argv.help) {
   List configured icon sets
 
   Usage
-    $ glyphs list [--available]
+    $ glyphs list
 
   Options
-    --available, -a  Show available (installable) icon sets
     --help, -h       Displays this message
   `)
   process.exit()
