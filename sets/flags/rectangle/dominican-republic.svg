@@ -6,20 +6,13 @@
     <rect width="51" height="31" transform="matrix(-1 0 0 1 51 49)" fill="#EB5757" />
     <rect y="31" width="120" height="18" fill="#F2F2F2" />
     <rect x="69" width="80" height="18" transform="rotate(90 69 0)" fill="#F2F2F2" />
-    <path d="M69 40C69 44.9707 64.9707 49 60 49C55.0295 49 51 44.9707 51 40" stroke="#219653" stroke-width="2" />
-    <path d="M67.5 36.0232C65.8876 33.5982 63.1305 32 60 32C56.8695 32 54.1124 33.5982 52.5 36.0232" stroke="#2F80ED" />
-    <path d="M54.9375 35.5V41.1251C54.9375 43.921 57.2041 46.1876 60 46.1876C62.7959 46.1876 65.0625 43.921 65.0625 41.1251V35.5H54.9375Z" fill="#EB5757" />
-    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="54" y="35" width="12" height="12">
-      <path d="M54.9375 35.5V41.1251C54.9375 43.921 57.2041 46.1876 60 46.1876C62.7959 46.1876 65.0625 43.921 65.0625 41.1251V35.5H54.9375Z" fill="#D80027" />
-    </mask>
-    <g mask="url(#mask0)">
-      <rect x="52" y="35" width="7" height="5" fill="#2F80ED" />
-      <rect width="8" height="6" transform="matrix(-1 0 0 1 69 41)" fill="#2F80ED" />
-      <rect x="61" y="35" width="8" height="5" fill="#EB5757" />
-      <rect width="7" height="6" transform="matrix(-1 0 0 1 59 41)" fill="#EB5757" />
-      <rect x="54" y="39.5" width="12" height="2" fill="#F2F2F2" />
-      <rect x="61" y="35" width="12" height="2" transform="rotate(90 61 35)" fill="#F2F2F2" />
-    </g>
+    <path d="M54 34.0005C55.8242 32.9658 57.8936 32.421 60 32.421C62.1064 32.421 64.1758 32.9658 66 34.0005" stroke="#2F80ED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M56.5716 46.6763C55.2644 45.9348 54.2427 44.7903 53.665 43.4201C53.0874 42.05 52.986 40.5309 53.3767 39.0984" stroke="#219653" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M66.6237 39.0984C67.0144 40.5309 66.913 42.05 66.3354 43.4201C65.7577 44.7903 64.736 45.9348 63.4288 46.6763" stroke="#219653" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M66 45.9995C64.1758 47.0342 62.1064 47.5789 60 47.5789C57.8936 47.5789 55.8242 47.0342 54 45.9995" stroke="#EB5757" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M55.7144 35.7894H64.2858V40.7669C64.2858 43.1338 62.367 45.0526 60.0001 45.0526C57.6331 45.0526 55.7144 43.1338 55.7144 40.7669V35.7894Z" fill="#2F80ED" />
+    <path d="M64.2858 40.421V35.7894H60.0001V40.421H64.2858Z" fill="#EB5757" />
+    <path d="M55.7144 40.421V40.7669C55.7144 43.1338 57.6331 45.0526 60.0001 45.0526V40.421H55.7144Z" fill="#EB5757" />
   </g>
   <defs>
     <clipPath id="clip0">
