@@ -35,6 +35,9 @@ export default {
     '@nuxtjs/svg',
     '@nuxtjs/pwa'
   ],
+  router: {
+    prefetchLinks: false
+  },
   generate: {
     async routes () {
       const { $content } = require('@nuxt/content')

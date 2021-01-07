@@ -75,6 +75,7 @@ export default {
       this.waitUntilVisible(this.$el, '500px', async () => {
         try {
           this.svg = require(`@glyphs/${this.set}/${this.variant}/${this.iconName}.svg?inline`)
+          // this.svg = await import(/* webpackChunkName: `${this.set}-${this.variant}` */ `@glyphs/${this.set}/${this.variant}/${this.iconName}.svg?inline`)
           if (this.variant === 'path' && this.offset !== null) {
             this.isDashSet = false
             await this.$nextTick()

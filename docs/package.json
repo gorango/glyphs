@@ -3,15 +3,11 @@
   "description": "Website, directory & docs for the Glyphs design system",
   "version": "0.1.0",
   "scripts": {
-    "dev": "nuxt",
-    "gen": "nuxt generate",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "NODE_OPTIONS=--max-old-space-size=8192 nuxt",
+    "gen": "NODE_OPTIONS=--max-old-space-size=8192 nuxt generate",
     "export": "nuxt export",
-    "serve": "nuxt serve",
     "ncu": "npx npm-check-updates && yarn",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "@glyphs/brands": "^0.0.5",
