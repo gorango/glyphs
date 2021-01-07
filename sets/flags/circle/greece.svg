@@ -9,6 +9,6 @@
     <path d="M80 46H0V54H80V46Z" fill="#F2F2F2" />
     <path d="M80 64H0V72H80V64Z" fill="#F2F2F2" />
     <path d="M0 23H44" stroke="#F2F2F2" stroke-width="8" />
-    <path d="M22 46V0" stroke="#F2F2F2" stroke-width="8" />
+    <path d="M21.9999 46V0" stroke="#F2F2F2" stroke-width="8" />
   </g>
 </svg>

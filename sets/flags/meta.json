@@ -9,6 +9,31 @@
     "circle"
   ],
   "categories": {
+    "northAmerica": [
+      "antiguaAndBarbuda",
+      "bahamas",
+      "barbados",
+      "belize",
+      "canada",
+      "costaRica",
+      "cuba",
+      "dominica",
+      "dominicanRepublic",
+      "elSalvador",
+      "grenada",
+      "guatemala",
+      "haiti",
+      "honduras",
+      "jamaica",
+      "mexico",
+      "nicaragua",
+      "panama",
+      "saintKittsAndNevis",
+      "saintLucia",
+      "saintVincentAndTheGrenadines",
+      "trinidadAndTobago",
+      "unitedStatesOfAmerica"
+    ],
     "europe": [
       "albania",
       "andorra",
@@ -60,31 +85,6 @@
       "ukraine",
       "unitedKingdom",
       "vaticanCity"
-    ],
-    "northAmerica": [
-      "antiguaAndBarbuda",
-      "bahamas",
-      "barbados",
-      "belize",
-      "canada",
-      "costaRica",
-      "cuba",
-      "dominica",
-      "dominicanRepublic",
-      "elSalvador",
-      "grenada",
-      "guatemala",
-      "haiti",
-      "honduras",
-      "jamaica",
-      "mexico",
-      "nicaragua",
-      "panama",
-      "saintKittsAndNevis",
-      "saintLucia",
-      "saintVincentAndTheGrenadines",
-      "trinidadAndTobago",
-      "unitedStatesOfAmerica"
     ]
   }
 }
