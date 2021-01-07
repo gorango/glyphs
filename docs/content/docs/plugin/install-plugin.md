@@ -1,7 +1,7 @@
 ---
 title: Install
 category: Figma Plugin
-position: 41
+position: 21
 ---
 
 <alert type="warning">

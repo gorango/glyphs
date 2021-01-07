@@ -1,7 +1,7 @@
 ---
 title: Path Animations
 category: Web Components
-position: 28
+position: 78
 disabled: true
 ---
 

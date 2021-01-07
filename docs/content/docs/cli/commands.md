@@ -9,7 +9,7 @@ position: 32
 Add a new icon set config. Options that are not supplied as arguments will be prompted.
 
 ```bash
-glyphs add [--key <file-key> --token <access-token>]
+glyphs add [--key <file-key> --token <access-token> --replace]
 ```
 
 Options:
@@ -23,8 +23,12 @@ Options:
 Remove an existing icon set config by name
 
 ```bash
-glyphs remove [<key>]
+glyphs remove <key>
 ```
+
+Argements:
+
+- `key` &nbsp; The file key is required
 
 ## `get`
 
@@ -39,16 +43,20 @@ glyphs get [<key|name>]
 List configured icon sets
 
 ```bash
-glyphs list [--available]
+glyphs list
 ```
 
 ## `sync`
 
-Sync a configured icon set to the current directory.
+Sync a configured icon set to the current directory. Options that are not supplied as arguments will be prompted.
 
 ```bash
 glyphs sync [<key|name> --set <set> --data <data-folder> --svg <svg-folder>]
 ```
+
+Arguments:
+
+- `key` or `name` &nbsp; Optional. If multiple files are configured the first match will be used.
 
 Options:
 

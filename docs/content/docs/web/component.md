@@ -1,30 +1,40 @@
 ---
 title: Standard Component
 category: Web Components
-position: 23
+position: 73
 ---
 
 ## Introduction
 
 [Stencil]: https://stenciljs.com/
 [wc]: https://www.webcomponents.org/
-[rd]: https://figma.com/rounded
-[bd]: https://figma.com/brand
-[fd]: https://figma.com/flag
-[rf]: https://figma.com/rounded
-[bf]: https://figma.com/brand
-[ff]: https://figma.com/flag
 
 This project uses [Stencil] to generate [standard web components][wc] for universal use on the web. This makes it simple to use in any modern browser environment and in any web framework or CMS platform.
 
-Currently this project supplies three different icon sets along with three dedicated web components:
+This project supports three different icon sets with dedicated web components:
 
-### `<rounded-icon />`
-[@glyphs/rounded-icon][rf]
-### `<brand-icon />`
-[@glyphs/brand-icon][bf]
-### `<flag-icon />`
-[@glyphs/flag-icon][ff]
+```html
+<rounded-icon
+  name='heart'
+  stroke-width='5'
+  variant='path' />
+
+<brand-icon
+  name='figma'
+  variant='color' />
+
+<flag-icon
+  name='canada'
+  variant='circle'/>
+```
+
+---
+
+<alert>
+
+The following guide uses the `<rounded-icon />` icon set in examples but the same principles apply for the other components.
+
+</alert>
 
 ## Install
 
@@ -44,15 +54,9 @@ If you are using a build system for your project or if you just want to access t
 
 ```bash
 npm install @glyphs/rounded
-# or
-npm install @glyphs/brands
-# or
-npm install @glyphs/flags
 ```
 
 ## Usage
-
-The following guide uses the `<rounded-icon />` icon set in examples but the same principles apply for all other components.
 
 The web component is an easy and performant way to use icons in your app. The component will dynamically load an SVG for each icon and apply any transformations that are passed in with parameters.
 

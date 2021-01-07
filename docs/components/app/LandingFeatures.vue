@@ -142,7 +142,7 @@
         p.text-xl.my-3 Windows, Mac, and Linux application coming soon.
         .flex.mt-8.space-x-2
           router-link.py-2.pl-4.pr-5.shadow-md.bg-white.dark_bg-gray-900.hover_bg-gray-900.dark_hover_bg-gray-1000.border-2.border-transparent.rounded-lg.text-lg(
-            to='docs/cli/install'
+            to='docs/cli/install-cli'
           )
             .flex.items-center
               svg-icon.mr-3(name='cli', size='1.5rem', variant='bold')

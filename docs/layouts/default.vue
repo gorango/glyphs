@@ -2,11 +2,11 @@
   main
     header.w-full.bg-white.dark_bg-gray-900.z-20.sticky.top-0
       app-nav
-    .bg-gray-100.dark_bg-gray-800.flex-auto.relative(style='min-height: calc(100vh - 140px); margin-bottom: 67px')
+    .bg-gray-100.dark_bg-gray-800.flex-auto.relative(style='min-height: calc(100vh - 144px); margin-bottom: 72px')
       app-overlay(v-model='$store.state.menu.open')
       nuxt
-    footer.bg-gray-200.dark_bg-gray-900.fixed.bottom-0.w-full(style='z-index: -1;')
-      nav.w-full.flex.items-center.p-4.mx-auto(style='max-width: 1440px')
+    footer.bg-gray-200.dark_bg-gray-900.fixed.bottom-0.w-full(style='z-index: -1; height: 72px')
+      nav.w-full.flex.items-center.p-4.mx-auto.space-x-4(style='max-width: 1440px')
         //- (class='w-1/3')
         nuxt-link.flex.items-center.p-1.rounded-lg.outline-none(
           to='/',
@@ -14,14 +14,22 @@
         )
           svg-icon(set='brands', name='icons', size='2rem', variant='bold')
         .flex-auto
-        //- a.ml-3.flex.items-center.p-1.rounded-lg.outline-none(
-        //-   href='mailto:hi5@glyphs.fyi',
-        //-   target='_blank',
-        //-   ret='noreferrer noopener',
+        //- a.flex.items-center.p-1.rounded-lg.outline-none.cursor-pointer(
         //-   :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
         //- )
-        //-   svg-icon(set='rounded', name='envelope', size='2rem', variant='bold')
-        a.ml-3.flex.items-center.p-1.rounded-lg.outline-none(
+        //-   svg-icon.text-yellow-500(set='rounded', name='bell', size='1.75rem', variant='bold')
+        //- a.flex.items-center.p-1.rounded-lg.outline-none.cursor-pointer(
+        //-   :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
+        //- )
+        //-   svg-icon.text-red-500(set='rounded', name='heart1', size='2rem', variant='bold')
+        a.flex.items-center.p-1.rounded-lg.outline-none(
+          href='https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7',
+          target='_blank',
+          ret='noreferrer noopener',
+          :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
+        )
+          svg-icon(set='brands', name='figma', size='1.75rem', variant='bold')
+        a.flex.items-center.p-1.rounded-lg.outline-none(
           href='https://github.com/gorango/glyphs',
           target='_blank',
           ret='noreferrer noopener',
@@ -34,7 +42,7 @@
 export default {
   head () {
     return {
-      titleTemplate: str => str ? `${str} | Glyphs` : 'Glyphs',
+      title: 'Glyphs',
       bodyAttrs: {
         class: [...this.bodyClass, 'antialiased leading-normal bg-gray-100 dark_bg-gray-800 text-gray-700 dark_text-gray-300']
       },

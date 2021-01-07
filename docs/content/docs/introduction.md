@@ -49,7 +49,7 @@ The entire Glyphs design system is built around the Figma file. The files are la
 
 All icons are made using only simple shapes, joined with boolean operations, and styled with corner roundings and stroke effects.
 
-Read more in the [Figma File section](/docs/figma/overview)...
+Read more in the [Figma File section](/docs/figma/overview).
 
 ### Command Line Interface
 
@@ -59,7 +59,7 @@ The Glyphs command line utility enables exporting icon sets from a Figma file to
 npm install -g @glyphs/cli
 ```
 
-Read more in the [CLI section](/docs/cli/install-cli)...
+Read more in the [CLI section](/docs/cli/install-cli).
 
 ### Web Components
 
@@ -69,10 +69,10 @@ The assets from Figma get exported and packaged into several distributions:
 - Universal web component
 - JS Frameworks components
 
-Read more in the [Web Components section](/docs/web/getting-started)...
+Read more in the [Web Components section](/docs/web/getting-started).
 
 ### Figma Plugin
 
 The Glyphs Utils plugin improves the workflow when organizing and editing large icon sets.
 
-Read more in the [Figma Plugin section](/docs/plugin/install-plugin)...
+Read more in the [Figma Plugin section](/docs/plugin/install-plugin).

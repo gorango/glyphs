@@ -5,35 +5,40 @@
         .flex.space-x-2.mx-auto(style='max-width: 600px')
             div.text-gray-700.dark_text-gray-500
               div.my-2.font-black.text-3xl.sm_text-4xl.dark_text-gray-400
-                | The Smartest Icons on the Web
-              div.pl-2.sm_my-8.font-light.text-xl.sm_text-2xl.dark_text-gray-400
+                | The Mightiest Icons on the Web
+              div.pl-2.sm_my-8.text-xl.sm_text-2xl.dark_text-gray-400
                 | A complete design system for creating and maintaining large icon sets in Figma
                 //- | A truly open source design system for creating and maintaining large icon sets in Figma
               //- p.text-2xl.font-light May just be the mightiest set of icons on the web
 
-              div.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap(
-                href='#figma',
+              a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+                href='https://www.figma.com/community/file/899031264835768805',
+                target='_blank',
+                ret='noreferrer noopener',
+                :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='brands', name='figma', variant='color')
                 span Thousands of editable icons #[span.text-black.dark_text-gray-300 designed in Figma]
-                //- .flex-auto
-                //- svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='180')
+                .flex-auto
+                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='45')
 
-              div.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap(
-                href='#web',
+              router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+                to='docs/web/getting-started',
+                :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='brands', name='web-components', variant='color')
                 span #[span.text-black.dark_text-gray-300 Web components] for use with any application
-                //- .flex-auto
-                //- svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='180')
+                .flex-auto
+                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='90')
 
-              div.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap(
-                href='#cli',
+              router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+                to='/docs/cli/install-cli',
+                :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='laptop', variant='poly')
                 span #[span.text-black.dark_text-gray-300 CLI utility] to download SVGs from Figma
-                //- .flex-auto
-                //- svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='180')
+                .flex-auto
+                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='90')
 
               a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
                 @click='focusSearch(); $router.push("dir")',
@@ -42,7 +47,7 @@
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='search', variant='poly')
                 span Categorized & tagged for easy #[span.text-black.dark_text-gray-300 search]
                 .flex-auto
-                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='90')
+                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path')
 
               router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300(
                 to='docs',

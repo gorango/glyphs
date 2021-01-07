@@ -60,7 +60,7 @@ export default {
       'place',
       'education',
       'weather',
-      'time',
+      'measure',
       'file',
       'medical',
       'arrow',

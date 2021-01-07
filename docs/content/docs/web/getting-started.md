@@ -2,14 +2,14 @@
 title: Getting Started
 description: Get started using the web component
 category: Web Components
-position: 21
+position: 71
 ---
 
 This project currently supports several ways of integrating icons from Figma:
 
 - Using the [raw SVG](#raw-files) files
 - Using the universal [web component](#web-component)
-- Using a [webpack](@webpack) build system
+- Using a [webpack](#webpack) build system
 - [Coming Soon]: VueJS component
 - [Coming Soon]: ReactJS component
 - [Coming Soon]: AngularJS component
@@ -41,7 +41,7 @@ The web components can be installed directly from NPM:
 npm i @glyphs/rounded-icon
 ```
 
-They are also available with a CDN for rapid development and testing:
+Also available with a CDN for rapid development and testing:
 
 ```html
 <script src="https://unpkg.com/@glyphs/rounded/dist/rounded-icon/rounded-icon.esm.js" type="module" ></script>

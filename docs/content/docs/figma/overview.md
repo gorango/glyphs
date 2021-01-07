@@ -8,10 +8,10 @@ position: 17
 
 Get access by downloading the [Glyphs community file](https://www.figma.com/community/file/899031264835768805/Glyphs-Icons) from Figma Community.
 
-<a class="block rounded-2xl overflow-hidden" href="https://www.figma.com/community/file/899031264835768805/Glyphs-Icons">
+<!-- <a class="block rounded-2xl overflow-hidden" href="https://www.figma.com/community/file/899031264835768805/Glyphs-Icons">
   <img class="show-dark" src="/content/community-dark.jpg" style="margin: 0" alt="Community File Preview" />
   <img class="show-light" src="/content/community-light.jpg" style="margin: 0" alt="Community File Preview" />
-</a>
+</a> -->
 
 Check the [original file](https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7) for the latest updates and to provide any feedback.
 
@@ -31,7 +31,7 @@ For large changes, it is recommended to use the [Glyphs Figma plugin][plugin], w
 
 ### Exporting
 
-The [Glyphs CLI][cli] was created to automate the process of exporting and packaging icons from Figma.
+Use the [Glyphs CLI][cli] to automate the process of exporting and packaging icons from Figma.
 
 <alert type="info">
 

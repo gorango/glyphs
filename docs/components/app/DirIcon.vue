@@ -21,6 +21,7 @@
           a.mb-2.flex.items-center.justify-center.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.text-gray-700.dark_text-gray-400.cursor-pointer(
             title='View in Figma',
             target='_blank',
+            ret='noreferrer noopener',
             :href='`https://figma.com/file/${figmaIds[set]}?node-id=${components[icon].variants[variant].id}`',
           )
             svg-icon(set='brands', name='figma', variant='color', size='1.5rem')
@@ -80,7 +81,7 @@
             svg-icon.self-center(name='flip-1', variant='path', size='2rem', :rotate='previewRotate + 90')
           button.p-1.flex.items-center.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700(@click='handleFlip("x")')
             svg-icon.self-center(name='flip-1', variant='path', size='2rem', :rotate='previewRotate')
-      div.mr-3(v-if='["path", "outline", "mono", "poly", "solid", "bold"].includes(variant)')
+      div.mr-3
         div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Rotate
         input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
           style='cursor: col-resize; height: 44px',
@@ -90,7 +91,7 @@
           :shift='22.5',
           :friction='1',
         )
-      div.mr-3(v-if='["path", "outline"].includes(variant)')
+      div.mr-3(v-if='["path", "line", "outline"].includes(variant)')
         div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Stroke
         input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
           style='cursor: col-resize; height: 44px',

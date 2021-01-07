@@ -1,8 +1,10 @@
 ---
 title: Webpack
 category: Web Components
-position: 24
+position: 74
 ---
+
+## Setup
 
 <alert>
 
