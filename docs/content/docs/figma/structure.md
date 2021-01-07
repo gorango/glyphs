@@ -4,9 +4,7 @@ category: Figma File
 position: 18
 ---
 
-This page documents the design of this icon set along with the architecture for exporting SVGs using the Figma REST API.
-
-The guides on this page assume an understanding of Figma’s interface, its component system, as well as vector graphics more broadly.
+This page documents the design of this icon set along with the architecture for exporting SVGs using the Figma REST API. The guides on this page assume a basic understanding of Figma’s interface, its component system, and vector graphics more broadly.
 
 ## Icons
 

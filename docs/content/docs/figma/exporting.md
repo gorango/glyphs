@@ -12,7 +12,7 @@ Figma has known issues when exporting nodes with nested groups (this applies onl
 
 ## Configuration
 
-<div class="hidden sm_block relative overflow-hidden w-full" style="padding-top: 56.25%">
+<div class="hidden sm_block relative rounded-xl overflow-hidden w-full" style="padding-top: 56.25%">
   <iframe
     class="absolute inset-0 w-full h-full"
     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2TsY9yqFso1zrvF8LNcVE7%2FGlyphs-Icons%3Fnode-id%3D3844%253A75606"
@@ -20,7 +20,7 @@ Figma has known issues when exporting nodes with nested groups (this applies onl
   ></iframe>
 </div>
 
-<div class="sm_hidden relative overflow-hidden w-full" style="padding-top: 100%">
+<div class="sm_hidden relative rounded-xl overflow-hidden w-full" style="padding-top: 100%">
   <iframe
     class="absolute inset-0 w-full h-full"
     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2TsY9yqFso1zrvF8LNcVE7%2FGlyphs-Icons%3Fnode-id%3D3844%253A75606"

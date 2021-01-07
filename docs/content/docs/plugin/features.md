@@ -12,7 +12,7 @@ The plugin is currently in BETA! The core features are still expected to change 
 
 ## Preview
 
-<div class="relative overflow-hidden w-full" style="padding-top: 80%">
+<div class="relative rounded-xl overflow-hidden w-full" style="padding-top: 80%">
   <iframe
     class="absolute inset-0 w-full h-full"
     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2TsY9yqFso1zrvF8LNcVE7%2FGlyphs-Icons%3Fnode-id%3D4316%253A120918"

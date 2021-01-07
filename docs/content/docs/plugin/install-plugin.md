@@ -10,7 +10,10 @@ The plugin is currently in BETA! The core features are still expected to change 
 
 </alert>
 
+The Glyphs Utils plugin improves the workflow when organizing and editing large icon sets.
+
 ## Download
+
 
 The Glyphs Utils plugin can be downloaded from the GitHub repository or as a [zip file](https://github.com/gorango/glyphs/archive/main.zip).
 

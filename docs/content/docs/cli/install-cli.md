@@ -4,6 +4,8 @@ category: CLI
 position: 31
 ---
 
+The Glyphs command line utility enables exporting icon sets from a Figma file to any environment. This allows for easy integration with other design or development projects. To quickly get started, install from NPM.
+
 ### Install from NPM
 
 ```bash

@@ -6,14 +6,23 @@ position: 17
 
 ### Source File
 
-Get access by downloading the [Glyphs community file](https://www.figma.com/community/file/899031264835768805/Glyphs-Icons) from Figma Community.
+<alert>
+
+[cf]: https://www.figma.com/community/file/899031264835768805/Glyphs-Icons
+[of]: https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7/Glyphs-Icons
+
+Duplicate the [community file][cf] to make changes to the icons or to build your own sets.
+
+Check the [original file][of] for the latest updates and to provide any feedback.
+
+</alert>
 
 <!-- <a class="block rounded-2xl overflow-hidden" href="https://www.figma.com/community/file/899031264835768805/Glyphs-Icons">
   <img class="show-dark" src="/content/community-dark.jpg" style="margin: 0" alt="Community File Preview" />
   <img class="show-light" src="/content/community-light.jpg" style="margin: 0" alt="Community File Preview" />
 </a> -->
 
-Check the [original file](https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7) for the latest updates and to provide any feedback.
+The entire Glyphs design system is built around the Figma file. The files are laid with specific rules in order to facilitate integration with other tools in this project. Internally, the files are designed with Figma’s components and variants. Modifying the core component or any of its internal components will be reflected in all variants, and in any other places where the icon is being used.
 
 ### Editing
 
@@ -41,5 +50,5 @@ There are workarounds to all of these behaviors and they require additional impl
 
 </alert>
 
-Read more about [preparing files for export](/figma/exporting) and some [common issues](/docs/figma/exporting#common-issues).
+Read more about [preparing files for export](/docs/figma/exporting) and some [common issues](/docs/figma/exporting#common-issues).
 

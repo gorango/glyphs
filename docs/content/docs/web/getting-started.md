@@ -5,7 +5,7 @@ category: Web Components
 position: 71
 ---
 
-This project currently supports several ways of integrating icons from Figma:
+This project currently supports several ways of integrating icons from Figma. The assets from Figma get exported and packaged into several distributions:
 
 - Using the [raw SVG](#raw-files) files
 - Using the universal [web component](#web-component)
