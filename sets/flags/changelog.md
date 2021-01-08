@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.5.6...@glyphs/flags-v0.3.0) (2021-01-08)
+
+
+### Features
+
+* **flags:** add 39 flags from asia ([abf6996](https://github.com/gorango/glyphs/commit/abf69968adf216a82c9b614c12cebdc0ea93ec39))
+
 ### [0.2.2](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.2.1...@glyphs/flags-v0.2.2) (2021-01-07)
 
 
