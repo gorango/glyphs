@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "flags",
-  "unique": 112,
-  "total": 336,
+  "unique": 113,
+  "total": 339,
   "variants": [
     "rectangle",
     "square",
@@ -124,6 +124,7 @@
       "russia",
       "saudiArabia",
       "singapore",
+      "sriLanka",
       "syria",
       "tajikistan",
       "thailand",
