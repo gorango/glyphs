@@ -1,7 +1,4 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M19 16L67 22V42L19 48L19 16Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M13 16L13 64" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M13 22H19" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M13 42H19" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M25 47C25 48.1046 25.8954 49 27 49C28.1046 49 29 48.1046 29 47H25ZM29 17C29 15.8954 28.1046 15 27 15C25.8954 15 25 15.8954 25 17H29ZM41 45C41 46.1046 41.8954 47 43 47C44.1046 47 45 46.1046 45 45H41ZM45 19C45 17.8954 44.1046 17 43 17C41.8954 17 41 17.8954 41 19H45ZM61 21C61 19.8954 60.1046 19 59 19C57.8954 19 57 19.8954 57 21L61 21ZM57 43C57 44.1046 57.8954 45 59 45C60.1046 45 61 44.1046 61 43L57 43ZM29 47L29 17H25L25 47H29ZM45 45V19H41L41 45H45ZM57 21V43L61 43L61 21L57 21Z" fill="currentColor" />
+  <path d="M19 16L67 22V42L19 48V16Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M13 64V16M13 22H19M13 42H19M27 47V17M43 45V19M59 21V43M19 16L67 22V42L19 48V16Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

@@ -1,7 +1,8 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M58 16H60V14H58V16ZM22 16V14H20V16H22ZM58 22H56V24H58V22ZM64 22H66V20H64V22ZM64 58V60H66V58H64ZM58 58V56H56V58H58ZM58 64V66H60V64H58ZM22 64H20V66H22V64ZM22 58H24V56H22V58ZM16 58H14V60H16V58ZM16 22L16 20H14V22H16ZM22 22V24H24V22H22ZM58 14L22 14V18L58 18V14ZM60 22V16H56V22H60ZM64 20H58V24H64V20ZM66 58V22H62L62 58H66ZM58 60H64V56H58V60ZM60 64V58H56V64H60ZM22 66H58V62L22 62V66ZM20 58V64H24V58H20ZM16 60H22V56H16V60ZM14 22L14 58H18L18 22H14ZM22 20H16L16 24H22V20ZM20 16V22H24V16H20Z" fill="currentColor" />
-  <rect x="10" y="10" width="12" height="12" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" />
-  <rect x="10" y="58" width="12" height="12" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" />
-  <rect x="58" y="10" width="12" height="12" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" />
-  <rect x="58" y="58" width="12" height="12" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" />
+  <path d="M22 16H58V22H64V58H58V64H22V58H16V22H22V16Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M10 10H22V22H10V10Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M10 58H22V70H10V58Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M58 10H70V22H58V10Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M58 58H70V70H58V58Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M58 22V16H22V22M58 22H64V58H58M58 22H70V10H58V22ZM58 58V64H22V58M58 58H70V70H58V58ZM22 58H16V22H22M22 58H10V70H22V58ZM22 22V10H10V22H22Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

@@ -1,4 +1,5 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <rect x="8" y="24" width="64" height="32" rx="8" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="8" y="24" width="32" height="32" rx="8" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M8 32C8 27.5817 11.5817 24 16 24H64C68.4183 24 72 27.5817 72 32V48C72 52.4183 68.4183 56 64 56H16C11.5817 56 8 52.4183 8 48V32Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M8 32C8 27.5817 11.5817 24 16 24H32C36.4183 24 40 27.5817 40 32V48C40 52.4183 36.4183 56 32 56H16C11.5817 56 8 52.4183 8 48V32Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M16 56H64C68.4183 56 72 52.4183 72 48V32C72 27.5817 68.4183 24 64 24H16M16 56C11.5817 56 8 52.4183 8 48V32C8 27.5817 11.5817 24 16 24M16 56H32C36.4183 56 40 52.4183 40 48V32C40 27.5817 36.4183 24 32 24H16" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

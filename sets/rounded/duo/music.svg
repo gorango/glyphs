@@ -1,8 +1,5 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M32 50.5L32 14.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <ellipse cx="23" cy="50.5" rx="9" ry="7" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
-  <path d="M66 58.5L66 22.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <ellipse cx="57" cy="58.5" rx="9" ry="7" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
-  <path d="M32 24.5L66 32.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M32 14.5L66 22.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M32 50.5C32 54.366 27.9706 57.5 23 57.5C18.0294 57.5 14 54.366 14 50.5C14 46.634 18.0294 43.5 23 43.5C27.9706 43.5 32 46.634 32 50.5Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M66 58.5C66 62.366 61.9706 65.5 57 65.5C52.0294 65.5 48 62.366 48 58.5C48 54.634 52.0294 51.5 57 51.5C61.9706 51.5 66 54.634 66 58.5Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M32 50.5L32 14.5L66 22.5V58.5M32 50.5C32 54.366 27.9706 57.5 23 57.5C18.0294 57.5 14 54.366 14 50.5C14 46.634 18.0294 43.5 23 43.5C27.9706 43.5 32 46.634 32 50.5ZM66 58.5C66 62.366 61.9706 65.5 57 65.5C52.0294 65.5 48 62.366 48 58.5C48 54.634 52.0294 51.5 57 51.5C61.9706 51.5 66 54.634 66 58.5ZM32 24.5L66 32.5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

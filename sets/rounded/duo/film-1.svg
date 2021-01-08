@@ -1,16 +1,4 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M58 16L22 16L22 64H58L58 16Z" fill="currentColor" fill-opacity="0.25" />
-  <path d="M22 16L22 14C20.8954 14 20 14.8954 20 16H22ZM58 16H60C60 15.4696 59.7893 14.9609 59.4142 14.5858C59.0391 14.2107 58.5304 14 58 14V16ZM22 64H20C20 64.5304 20.2107 65.0391 20.5858 65.4142C20.9609 65.7893 21.4696 66 22 66L22 64ZM58 64V66C59.1046 66 60 65.1046 60 64H58ZM58 42C59.1046 42 60 41.1046 60 40C60 38.8954 59.1046 38 58 38V42ZM22 38C20.8954 38 20 38.8954 20 40C20 41.1046 20.8954 42 22 42L22 38ZM22 18L58 18V14L22 14L22 18ZM24 64L24 16H20L20 64H24ZM58 62L22 62L22 66H58V62ZM56 16L56 64H60L60 16H56ZM58 38L22 38L22 42L58 42V38Z" fill="currentColor" />
-  <path d="M12 16L12 64M22 16L22 64" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M12 16L22 16" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M22 28L12 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M22 40H12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M22 52H12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M22 64H12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M58 16L58 64M68 16V64" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M58 16L68 16" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M68 28L58 28" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M68 40H58" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M68 52H58" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M68 64H58" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 16H22V64H58V16Z" fill="currentColor" fill-opacity="0.25" />
+  <path d="M22 16H58M22 16V64M22 16H12V64H22M58 16V64M58 16H68V64H58M22 64H58M22 28H12M12 40H68M22 52H12M68 28H58M68 52H58" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
