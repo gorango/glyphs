@@ -1,0 +1,17 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
+  </mask>
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
+      <path d="M100 0H-20V80.0008H100V0Z" fill="#6DA544" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M25 36V24H29V36C29 40.4183 25.4183 44 21 44V40C23.2091 40 25 38.2091 25 36ZM31 40H37V44H31V40ZM55 24V33V36C55 38.2091 53.2091 40 51 40V44C55.4183 44 59 40.4183 59 36V33V24H55ZM43 31V24H47V31V33V36C47 40.4183 43.4183 44 39 44V40C41.2091 40 43 38.2091 43 36V35.9C42.6769 35.9656 42.3425 36 42 36C40.8744 36 39.8357 35.6281 39 35.0004C38.1643 35.6281 37.1256 36 36 36C33.2386 36 31 33.7614 31 31V24H35V31C35 31.5523 35.4477 32 36 32C36.5523 32 37 31.5523 37 31V24H41V31C41 31.5523 41.4477 32 42 32C42.5523 32 43 31.5523 43 31ZM49 24V35.5H53V24H49Z" fill="#F2F2F2" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M50.5 53.5V53H48.5V53.5H24V55.5H48.5V56H50.5V55.5H56V53.5H50.5Z" fill="#F2F2F2" />
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <rect width="80" height="80" fill="white" />
+    </clipPath>
+  </defs>
+</svg>

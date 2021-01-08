@@ -1,0 +1,15 @@
+<svg viewBox="0 0 120 80" fill="none">
+  <g clip-path="url(#clip0)">
+    <path d="M120 0H0V80H120V0Z" fill="#F2F2F2" />
+    <path d="M120 0H0V26.6667H120V0Z" fill="#EB5757" />
+    <path d="M120 53.34H0V80.01H120V53.34Z" fill="#333333" />
+    <path d="M38 48H55.5V45C55.5 42.7909 53.7091 41 51.5 41H43V39C43 36.2386 45.2386 34 48 34V34" stroke="#219653" stroke-width="4" />
+    <path d="M67 48H62V32" stroke="#219653" stroke-width="4" />
+    <path d="M77 48H71V41M77 48V32M77 48H82" stroke="#219653" stroke-width="4" />
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <rect width="120" height="80" fill="white" />
+    </clipPath>
+  </defs>
+</svg>

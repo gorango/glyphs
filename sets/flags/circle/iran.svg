@@ -1,0 +1,29 @@
+<svg viewBox="0 0 80 80" fill="none">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
+  </mask>
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
+      <path d="M80 0H0V80H80V0Z" fill="#F2F2F2" />
+      <path d="M80 0H0V26.6667H80V0Z" fill="#6FCF97" />
+      <path d="M80 53.34H0V80.01H80V53.34Z" fill="#EB5757" />
+      <path d="M1.69727 23.9999V55.9999" stroke="#F2F2F2" stroke-width="5" />
+      <path d="M10.6973 23.9999V55.9999" stroke="#F2F2F2" stroke-width="5" />
+      <path d="M19.6973 23.9999V55.9999" stroke="#F2F2F2" stroke-width="5" />
+      <path d="M28.6973 23.9999V55.9999" stroke="#F2F2F2" stroke-width="5" />
+      <path d="M37.6973 23.9999V55.9999" stroke="#F2F2F2" stroke-width="5" />
+      <path d="M46.6973 23.9999V55.9999" stroke="#F2F2F2" stroke-width="5" />
+      <path d="M55.6973 23.9999V55.9999" stroke="#F2F2F2" stroke-width="5" />
+      <path d="M64.6973 23.9999V55.9999" stroke="#F2F2F2" stroke-width="5" />
+      <path d="M73.6973 23.9999V55.9999" stroke="#F2F2F2" stroke-width="5" />
+      <path d="M46.364 33.636C47.6226 34.8947 48.4798 36.4984 48.8271 38.2442C49.1743 39.99 48.9961 41.7996 48.3149 43.4442C47.6337 45.0887 46.4802 46.4943 45.0001 47.4832C43.5201 48.4722 41.78 49 40 49C38.22 49 36.4799 48.4722 34.9999 47.4832C33.5198 46.4943 32.3663 45.0887 31.6851 43.4441C31.0039 41.7996 30.8257 39.99 31.1729 38.2442C31.5202 36.4984 32.3774 34.8947 33.636 33.636" stroke="#EB5757" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M34 49H46" stroke="#EB5757" stroke-width="3" />
+      <path d="M40 49L40 31" stroke="#EB5757" stroke-width="3" />
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <rect width="80" height="80" fill="white" />
+    </clipPath>
+  </defs>
+</svg>
