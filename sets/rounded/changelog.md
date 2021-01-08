@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.5...@glyphs/rounded-v0.6.0) (2021-01-08)
+
+
+### Features
+
+* **rounded:** flatten "duo" variants; fix edu globes ([d8f8b85](https://github.com/gorango/glyphs/commit/d8f8b85acc847b3d233b0033fd30c8d2904337fc))
+
+
+### Bug Fixes
+
+* **rounded:** remove stroke from "duo" variants ([63e78d4](https://github.com/gorango/glyphs/commit/63e78d4f159b6343f1bd893ed34ed8ba8bdf862a))
+* **rounded:** update terms; fix gift-card path ([028dd2b](https://github.com/gorango/glyphs/commit/028dd2b605c3db5e5ade78066495ba2f40d246e2))
+
 ### [0.5.6](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.2.2...@glyphs/flags-v0.5.6) (2021-01-07)
 
 
