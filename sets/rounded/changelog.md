@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.1](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.6.0...@glyphs/rounded-v0.6.1) (2021-01-08)
+
+
+### Bug Fixes
+
+* **rounded:** flattened duo variant; handle stroke dash ([5f22729](https://github.com/gorango/glyphs/commit/5f2272945b9d9be7505acb03ad9c8250f9acddb2))
+
 ## [0.6.0](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.5.5...@glyphs/rounded-v0.6.0) (2021-01-08)
 
 
