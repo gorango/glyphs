@@ -954,15 +954,15 @@
   resolved "https://registry.yarnpkg.com/@glyphs/edgy/-/edgy-0.0.3.tgz#573bc122dfa2b4aebbdfc4da6a252c501dbda98b"
   integrity sha512-Xb3uSAa/RVymSBnvKyyUZXDA7/AZ+BMNNnIxQkdxIZCtklRTSSaXhgZGLssxyjepCGq7wltEIhaR/d1lCDTS/A==
 
-"@glyphs/flags@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.2.0.tgz#48e99416beff7b727b8062a245b832cda4e027fe"
-  integrity sha512-vj7foDCO009m4SEjzTdca/8ApxNnOPO4YTYP8mhD7BaZCgXQBkgLRp8mfe/PdGkroNFaGBZErtx1kEK1LlBqmA==
+"@glyphs/flags@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.3.0.tgz#1f77b42d2794fa8e6797ca65f7a33b3df1f4dda8"
+  integrity sha512-o8zdTwi9xQ63mPHcOt8g9Q863tZYc/h9hTpF2BpxAQF1S7sC1TSWvXyHPOsb2uqOceS/d0IrINjxbbPXQmkI4A==
 
-"@glyphs/rounded@^0.5.5":
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/@glyphs/rounded/-/rounded-0.5.5.tgz#f3146dd6285c90e7ce1fa59f4a11ef0b321fa141"
-  integrity sha512-HId0WMTqcIgQ6vNBuFK+Jf5hpR+ozr13XfMgKYvxT3cykb7+C93qE6Vm6gBU7L3c7cYhGvhMeMH2FUhKyHNJnQ==
+"@glyphs/rounded@^0.5.6":
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/@glyphs/rounded/-/rounded-0.5.6.tgz#c30de3b00f30530b177a9ecdf402d81acf1934c1"
+  integrity sha512-Xh6POSpCcvtYWOjN8vPD/X3/6Y5jLgxK8+9oXxs1/bq9sKcSgmkT1mlnA6DrpxJw0oF1L4A3dmxkUG52hS7wqA==
 
 "@koa/router@^9.0.1":
   version "9.4.0"
@@ -1428,10 +1428,10 @@
     chalk "^4.1.0"
     semver "^7.3.2"
 
-"@nuxtjs/pwa@^3.3.3":
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/pwa/-/pwa-3.3.3.tgz#b3b9d90589c0fd000effe89ee767ca1a125f07e8"
-  integrity sha512-SVydLpHWeHFTdBx/UaC8sc39lcDW8IkDUCDSVh8jGz1aPsqZGbATd0MMtGa7uefGInMX+SvN/osmzYjuLlYRpw==
+"@nuxtjs/pwa@^3.3.4":
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/pwa/-/pwa-3.3.4.tgz#557a7a57bc3713bcc820bc88942069af263fd045"
+  integrity sha512-aDw9xnTIPdqknvgm5uOtuhcmMedtCy8HALQ4lSb30UqLQzY0z6yOyGSq+6ShybtDW2FjaBeyhs/ooEIP0XZZ9A==
   dependencies:
     clone-deep "^4.0.1"
     defu "^3.2.2"
