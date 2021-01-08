@@ -959,10 +959,10 @@
   resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.3.0.tgz#1f77b42d2794fa8e6797ca65f7a33b3df1f4dda8"
   integrity sha512-o8zdTwi9xQ63mPHcOt8g9Q863tZYc/h9hTpF2BpxAQF1S7sC1TSWvXyHPOsb2uqOceS/d0IrINjxbbPXQmkI4A==
 
-"@glyphs/rounded@^0.5.6":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@glyphs/rounded/-/rounded-0.5.6.tgz#c30de3b00f30530b177a9ecdf402d81acf1934c1"
-  integrity sha512-Xh6POSpCcvtYWOjN8vPD/X3/6Y5jLgxK8+9oXxs1/bq9sKcSgmkT1mlnA6DrpxJw0oF1L4A3dmxkUG52hS7wqA==
+"@glyphs/rounded@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@glyphs/rounded/-/rounded-0.6.1.tgz#f29609547afd376314b39200ff9a75e440fa23bd"
+  integrity sha512-SURKI6O1qJkpYoRdcN9fYzVdQ0lItU3toEZgzh7YJfHcXNGr+0sQ5WG8aJ2iIeNZccqW7dUPMMi3TOI8ABdzpA==
 
 "@koa/router@^9.0.1":
   version "9.4.0"

@@ -13,7 +13,7 @@
     "@glyphs/brands": "^0.0.5",
     "@glyphs/edgy": "^0.0.3",
     "@glyphs/flags": "^0.3.0",
-    "@glyphs/rounded": "^0.5.6",
+    "@glyphs/rounded": "^0.6.1",
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/gtm": "^2.4.0",
     "bezier-easing": "^2.1.0",
