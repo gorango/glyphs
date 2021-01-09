@@ -20,7 +20,6 @@ export default {
     '@/plugins/init.js',
     '@/plugins/clipboard.client.js',
     '@/plugins/click-outside.js',
-    '@/plugins/router-sync.client.js',
     '@/plugins/icons.client.js'
   ],
   components: true,
@@ -78,7 +77,7 @@ export default {
     liveEdit: false,
     markdown: {
       prism: {
-        theme: '@/assets/css/prism-material-oceanic.css'
+        theme: '@/assets/css/prism.css'
       }
     }
   },

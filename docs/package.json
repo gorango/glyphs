@@ -22,10 +22,8 @@
     "lodash.groupby": "^4.6.0",
     "lodash.kebabcase": "^4.1.1",
     "nuxt": "^2.14.12",
-    "prism-themes": "^1.5.0",
     "prismjs": "^1.23.0",
-    "v-clipboard": "^2.2.3",
-    "vuex-router-sync": "^5.0.0"
+    "v-clipboard": "^2.2.3"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.0.2",
