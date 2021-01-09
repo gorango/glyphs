@@ -2,6 +2,7 @@
   "name": "@glyphs/docs",
   "description": "Website, directory & docs for the Glyphs design system",
   "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
     "dev": "NODE_OPTIONS=--max-old-space-size=8192 nuxt",
     "gen": "NODE_OPTIONS=--max-old-space-size=8192 nuxt generate",
