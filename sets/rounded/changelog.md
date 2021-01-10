@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.2](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.6.1...@glyphs/rounded-v0.6.2) (2021-01-10)
+
+
+### Bug Fixes
+
+* **rounded:** ensure consistent paths props ([42b0185](https://github.com/gorango/glyphs/commit/42b0185284b77c4116210f72e9c449b110ed2b19))
+
 ### [0.6.1](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.6.0...@glyphs/rounded-v0.6.1) (2021-01-08)
 
 
