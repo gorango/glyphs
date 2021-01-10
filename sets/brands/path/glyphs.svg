@@ -1,6 +1,3 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M40 68H68V40L42.3759 42.3759L40 68Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M12 40V52C12 60.8366 19.1634 68 28 68H40L37.6241 42.3759L12 40Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M12 40L37.6241 37.6241L40 12C24.536 12 12 24.536 12 40Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M42.3759 37.6241L40 12L68 40L42.3759 37.6241Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M68 40V68H40M68 40L42.3759 42.3759L40 68M68 40L42.3759 37.6241L40 12M68 40L40 12M40 68C24.536 68 12 55.464 12 40M40 68L37.6241 42.3759L12 40M40 12C24.536 12 12 24.536 12 40M40 12L37.6241 37.6241L12 40" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
