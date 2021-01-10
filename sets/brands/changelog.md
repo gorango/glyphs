@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.1.0...@glyphs/brands-v0.1.1) (2021-01-10)
+
+
+### Bug Fixes
+
+* **brands:** fix color variants, outlined paths ([2f96bf4](https://github.com/gorango/glyphs/commit/2f96bf4f23b8abc4413d5cca0c937418cf3c80a9))
+
 ## [0.1.0](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.0.5...@glyphs/brands-v0.1.0) (2021-01-10)
 
 
