@@ -1,9 +1,9 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+  <mask id="mask0nkHf" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
-  <g mask="url(#mask0)">
-    <g clip-path="url(#clip0)">
+  <g mask="url(#mask0nkHf)">
+    <g clip-path="url(#clip0nkHf)">
       <path d="M80 0H0V80H80V0Z" fill="#F2F2F2" />
       <path d="M80 0H0V26.6667H80V0Z" fill="#F2994A" />
       <path d="M80 53.34H0V80.01H80V53.34Z" fill="#6FCF97" />
@@ -12,7 +12,7 @@
     </g>
   </g>
   <defs>
-    <clipPath id="clip0">
+    <clipPath id="clip0nkHf">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

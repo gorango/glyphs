@@ -1,5 +1,5 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <g clip-path="url(#clip0)">
+  <g clip-path="url(#clip0vEKb)">
     <path d="M80 0H0V80H80V0Z" fill="#F2F2F2" />
     <path d="M80 0H0V26.6667H80V0Z" fill="#F2994A" />
     <path d="M80 53.34H0V80.01H80V53.34Z" fill="#6FCF97" />
@@ -7,7 +7,7 @@
     <circle cx="40" cy="40" r="10" stroke="#2F80ED" stroke-width="2" />
   </g>
   <defs>
-    <clipPath id="clip0">
+    <clipPath id="clip0vEKb">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

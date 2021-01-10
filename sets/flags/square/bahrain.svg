@@ -1,4 +1,11 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <path d="M80 0V80H0V0H80Z" fill="#EB5757" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 80H31L48 72L31 64L48 56L31 48L48 40L31 32L48 24L31 16L48 8L31 0H0V80Z" fill="#F2F2F2" />
+  <g clip-path="url(#clip0qPh1)">
+    <path d="M80 0V80H0V0H80Z" fill="#EB5757" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M-20 80H11L28 72L11 64L28 56L11 48L28 40L11 32L28 24L11 16L28 8L11 0H-20V80Z" fill="#F2F2F2" />
+  </g>
+  <defs>
+    <clipPath id="clip0qPh1">
+      <rect width="80" height="80" fill="white" />
+    </clipPath>
+  </defs>
 </svg>

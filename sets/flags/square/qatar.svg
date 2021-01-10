@@ -1,18 +1,20 @@
 <svg viewBox="0 0 80 80" fill="none">
-  <g clip-path="url(#clip0)">
-    <path d="M80 0V80H0V0H80Z" fill="#9B51E0" />
-    <path d="M36 -0.0490723V143.951H0V-0.0490723H36Z" fill="#F2F2F2" />
-    <path d="M48 4.95093L36 -0.0490723V9.95093L48 4.95093Z" fill="#F2F2F2" />
-    <path d="M48 14.9509L36 9.95093V19.9509L48 14.9509Z" fill="#F2F2F2" />
-    <path d="M48 24.9509L36 19.9509V29.9509L48 24.9509Z" fill="#F2F2F2" />
-    <path d="M48 34.9509L36 29.9509V39.9509L48 34.9509Z" fill="#F2F2F2" />
-    <path d="M48 44.9509L36 39.9509V49.9509L48 44.9509Z" fill="#F2F2F2" />
-    <path d="M48 54.9509L36 49.9509V59.9509L48 54.9509Z" fill="#F2F2F2" />
-    <path d="M48 64.9509L36 59.9509V69.9509L48 64.9509Z" fill="#F2F2F2" />
-    <path d="M48 74.9509L36 69.9509V79.9509L48 74.9509Z" fill="#F2F2F2" />
+  <g clip-path="url(#clip0TC8j)">
+    <path d="M80 0V80H0V0H80Z" fill="#EB5757" />
+    <path d="M10 0V80H-20V0H10Z" fill="#F2F2F2" />
+    <path d="M22 4L10 0V8L22 4Z" fill="#F2F2F2" />
+    <path d="M22 12L10 8V16L22 12Z" fill="#F2F2F2" />
+    <path d="M22 20L10 16V24L22 20Z" fill="#F2F2F2" />
+    <path d="M22 28L10 24V32L22 28Z" fill="#F2F2F2" />
+    <path d="M22 36L10 32V40L22 36Z" fill="#F2F2F2" />
+    <path d="M22 44L10 40V48L22 44Z" fill="#F2F2F2" />
+    <path d="M22 52L10 48V56L22 52Z" fill="#F2F2F2" />
+    <path d="M22 60L10 56V64L22 60Z" fill="#F2F2F2" />
+    <path d="M22 68L10 64V72L22 68Z" fill="#F2F2F2" />
+    <path d="M22 76L10 72V80L22 76Z" fill="#F2F2F2" />
   </g>
   <defs>
-    <clipPath id="clip0">
+    <clipPath id="clip0TC8j">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>
