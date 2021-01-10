@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.3.0...@glyphs/flags-v0.3.1) (2021-01-10)
+
+
+### Features
+
+* **flags:** 1 new icon; minor updates ([b4d6af2](https://github.com/gorango/glyphs/commit/b4d6af2017c062548d03429cbfbc31f9008d378c))
+
+
+### Bug Fixes
+
+* **flags:** ensure unique ids ([73be5b4](https://github.com/gorango/glyphs/commit/73be5b41f7261ef52c035a32d132dc31ef7ebb70))
+* **flags:** update haiti crest ([c776082](https://github.com/gorango/glyphs/commit/c776082380dc1b81e16ca16ba4ca41678e16c5cc))
+
 ## [0.3.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.5.6...@glyphs/flags-v0.3.0) (2021-01-08)
 
 
