@@ -44,6 +44,9 @@ export default {
       type: 'frameChildren',
       label: 'Frame selected children'
     }, {
+      type: 'circleChildren',
+      label: 'Group & mask selected children'
+    }, {
       type: 'unionSelected',
       label: 'Union selected layers'
     }, {

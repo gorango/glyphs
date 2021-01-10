@@ -5,7 +5,7 @@ import arrange from './utils/figma/arrange'
 
 figma.showUI(__html__, {
   width: 288,
-  height: 800
+  height: 820
 })
 
 const updateSelection = () => figma.ui.postMessage({ type: 'selection', value: figma.currentPage.selection.length })

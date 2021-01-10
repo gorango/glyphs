@@ -89,6 +89,17 @@ function frameChildren (name = 'duo') {
   figma.notify(`Duplicated ${newNodes.length} icons to paths.`, {timeout: 4000})
 }
 
+function circleChildren (name = 'duo') {
+  const selectedNodes: any = figma.currentPage.selection
+  selectedNodes.forEach((node: any) => {
+    figma.group(node.children, node)
+    const circ = figma.createEllipse()
+    circ.resize(80, 80)
+    circ.isMask = true
+    node.insertChild(0, circ)
+  })
+}
+
 function unionSelected () {
   const selectedNodes: any = figma.currentPage.selection
   selectedNodes.forEach((node: any) => {
@@ -192,6 +203,7 @@ export default {
   toggleForExport,
   flattenChildren,
   frameChildren,
+  circleChildren,
   unionSelected,
   newComponentSet,
   centerChildren,
