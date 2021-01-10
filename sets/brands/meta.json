@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "brands",
-  "unique": 164,
-  "total": 491,
+  "unique": 163,
+  "total": 488,
   "variants": [
     "color",
     "solid",
@@ -11,7 +11,6 @@
   "categories": {
     "design": [
       "icons",
-      "glyphs",
       "figma",
       "sketch",
       "zeplin",
