@@ -1,4 +1,5 @@
 const pretty = require('pretty')
+const { nanoid } = require('nanoid')
 const { parse, stringify } = require('svgson')
 
 async function processSvg (svgString, variant, svgConfig) {
@@ -9,6 +10,9 @@ async function processSvg (svgString, variant, svgConfig) {
     replaceColor: [],
     removeStroke: []
   }
+  findAllIds(svgString, nanoid(4)).forEach(([oldId, newId]) => {
+    svgString = svgString.replace(oldId, newId)
+  })
   const { replaceColor, removeStroke } = { ...configDefaults, ...svgConfig }
   const svgNode = svgString ? await parse(svgString) : null
   removeUnused(svgNode)
@@ -19,6 +23,21 @@ async function processSvg (svgString, variant, svgConfig) {
     removeStrokeWidths(svgNode)
   }
   return pretty(stringify(svgNode))
+}
+
+function findAllIds (svgString, id) {
+  const regex = /(?:url\(#)[a-zA-Z0-9_]+/gim
+  let result
+  const indices = []
+  while (result = regex.exec(svgString)) {
+    indices.push([result.index, result[0]])
+  }
+  return indices.map(([i, val]) => {
+    const found = svgString.slice(i + 5, i + val.length)
+    const newId = found.slice(0, found.length) + id
+    const oldId = new RegExp(found, 'g')
+    return [oldId, newId]
+  })
 }
 
 function removeUnused (node) {
