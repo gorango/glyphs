@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.3.1...@glyphs/flags-v0.4.0) (2021-01-11)
+
+
+### Features
+
+* **flags:** add africa - 49 new icons ([74507d4](https://github.com/gorango/glyphs/commit/74507d4cbb63309dd08298be47e009a13829e24a))
+* **flags:** add south america - 12 new icons ([eb00296](https://github.com/gorango/glyphs/commit/eb00296139cbd27c7de51d8c89eea3c39262ac73))
+
+
+### Bug Fixes
+
+* **flags:** align portugal crest ([76884b8](https://github.com/gorango/glyphs/commit/76884b8d2d2531b4775062a6027b9853a65b3fc1))
+
 ### [0.3.1](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.3.0...@glyphs/flags-v0.3.1) (2021-01-10)
 
 
