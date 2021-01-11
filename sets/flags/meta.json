@@ -1,14 +1,28 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "flags",
-  "unique": 113,
-  "total": 339,
+  "unique": 125,
+  "total": 375,
   "variants": [
     "rectangle",
     "square",
     "circle"
   ],
   "categories": {
+    "southAmerica": [
+      "chile",
+      "colombia",
+      "ecuador",
+      "argentina",
+      "bolivia",
+      "brazil",
+      "paraguay",
+      "peru",
+      "venezuela",
+      "uruguay",
+      "suriname",
+      "guyana"
+    ],
     "northAmerica": [
       "antiguaAndBarbuda",
       "bahamas",
