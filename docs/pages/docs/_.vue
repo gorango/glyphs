@@ -99,7 +99,7 @@ export default {
 }
 @media (min-width: theme('screens.lg')) {
   .toc {
-    height: calc(100vh - 144px)
+    height: calc(100vh - 72px)
   }
 }
 </style>

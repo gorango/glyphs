@@ -12,7 +12,7 @@
           to='/',
           :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
         )
-          svg-icon(set='brands', name='icons', size='2rem', variant='bold')
+          svg-icon(set='brands', name='icons', size='2rem', variant='solid')
         .flex-auto
         //- a.flex.items-center.p-1.rounded-lg.outline-none.cursor-pointer(
         //-   :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
@@ -28,14 +28,14 @@
           ref='noreferrer noopener',
           :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
         )
-          svg-icon(set='brands', name='figma', size='1.75rem', variant='bold')
+          svg-icon(set='brands', name='figma', size='1.75rem', variant='solid')
         a.flex.items-center.p-1.rounded-lg.outline-none(
           href='https://github.com/gorango/glyphs',
           target='_blank',
           ref='noreferrer noopener',
           :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
         )
-          svg-icon(set='brands', name='github', size='2rem', variant='bold')
+          svg-icon(set='brands', name='github', size='2rem', variant='solid')
 </template>
 
 <script>

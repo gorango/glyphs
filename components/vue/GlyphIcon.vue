@@ -120,15 +120,13 @@ svg {
   width: 100%;
 }
 
-:not(.color), :not(.poly) {
-  & > svg *[stroke] {
-    stroke: currentColor;
-  }
+:not(.color) > svg *[stroke],
+:not(.poly) > svg *[stroke] {
+  stroke: currentColor;
 }
 
-:not(.color), :not(.poly) {
-  & > svg *[fill] {
-    fill: currentColor;
-  }
+:not(.color) > svg *[fill],
+:not(.poly) > svg *[fill] {
+  fill: currentColor;
 }
 </style>

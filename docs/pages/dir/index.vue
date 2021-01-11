@@ -80,7 +80,7 @@
               template(v-for='variant, i in variants')
                 //- @mouseenter='previewVariant = variant',
                 button.w-11.h-11.p-1.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700.flex.items-center(
-                  @click='resetPreview(); $router.push({ query: { ...$route.query, v: variant, ...(variant === "outline" ? {w: "1"} : variant === "path" ? {w: "3"} : {w: null}) } })',
+                  @click='resetPreview(); $router.push({ query: { ...$route.query, v: variant, ...(variant === "outline" ? {w: "1"} : ["path", "duo"].includes(variant) ? {w: "3"} : {w: null}) } })',
                   :class=`{
                     'hover_bg-gray-700': $colorMode.value === 'dark',
                     'bg-gray-300': $route.query.v === variant || (!i && !$route.query.v),
@@ -105,7 +105,7 @@
                 steps='2',
                 :friction='10',
               )
-          div.hidden.sm_block.mr-6(v-if='["path", "outline"].includes(variant)')
+          div.hidden.sm_block.mr-6(v-if='["path", "duo", "outline"].includes(variant)')
             div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Stroke
             .flex.space-x-2
               input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
