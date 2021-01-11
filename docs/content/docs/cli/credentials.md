@@ -4,16 +4,16 @@ category: CLI
 position: 33
 ---
 
-You will be prompted for credentials when configuring your first file using the `glyphs add` command. The file key as well as the personal access token are supplied by Figma.
+You will be prompted for credentials when configuring your first file using the `glyphs add` command.
+
+The file key as well as the personal access token are supplied by Figma.
 
 ## File Key
 
-This is the ID for the Figma file.
-
-Using the desktop app, there is no way to copy just the key. You need to copy the link to the file and extract the key from there. The relevant part of the URL is the string that follows `https://www.figma.com/file/`.
+This is the ID for the Figma file and can be extracted from the file URL:
 
 ```
-https://www.figma.com/file/<file-key>/...
+https://www.figma.com/file/<FILE-KEY>/.../...
 ```
 
 ## Personal Access Token

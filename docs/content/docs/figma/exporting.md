@@ -28,9 +28,9 @@ Figma has known issues when exporting nodes with nested groups (this applies onl
   ></iframe>
 </div>
 
-Icon sets can be exported with the [Glyphs CLI](/docs/cli/install-cli) without any specified file configuration. However, you can leverage several helpful transformations that are available during export.
+Above is the configuration <span class="info-tag" title="Figma's layer group">Frame</span> for the [core icon set](https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7/?node-id=0%3A1):
 
-The following is a sample configuration for the [rounded icon set](https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7/?node-id=0%3A1):
+Icon sets can be exported with the [Glyphs CLI](/docs/cli/install-cli) without any specified file configuration. However, you can leverage several helpful transformations that are available during export.
 
 ### Variants
 
@@ -54,7 +54,7 @@ The [Figma plugin](/docs/plugin/install-plugin) can help perform most of the opt
 
 All of the icons in the core set are designed in such a way that flattening them (Ctrl/Cmd + E) will create a line-only representation of the component.
 
-If the icons are not flattened, Figma's export will convert certain layers to lines and certain other layers to outlined vectors. This disables control over the stroke-widths of those layers.
+If the icons are not flattened, Figma's export will convert certain layers to lines and certain other layers to outlined vectors. This disables control over the <span class="info-tag" title="width, linecap, dasharray">stroke properties</span> of those layers.
 
 **The Solution**
 

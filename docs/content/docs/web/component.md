@@ -1,8 +1,24 @@
 ---
-title: Standard Component
+title: Web Component
 category: Web Components
-position: 73
+position: 74
+disabled: true
 ---
+
+There are currently 3 sets supported as web components: `<rounded-icon>`, `<brand-icon>`, and `<flag-icon>`. The following examples can be adapted for any of those sets.
+
+The web components can be installed directly from NPM:
+
+```bash
+npm i @glyphs/rounded-icon
+```
+
+Also available with a CDN for rapid development and testing:
+
+```html
+<script src="https://unpkg.com/@glyphs/rounded/dist/rounded-icon/rounded-icon.esm.js" type="module" ></script>
+```
+
 
 ## Introduction
 

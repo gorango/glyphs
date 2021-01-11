@@ -2,14 +2,13 @@
   .overflow-x-hidden
     section.flex.w-full.mx-auto.mt-12.sm_mt-16(style='max-width: 1440px')
       .flex-1.p-2.sm_p-4.flex.items-center
-        .flex.space-x-2.mx-auto(style='max-width: 600px')
+        .flex.space-x-2.mx-auto.w-full(style='max-width: 600px')
             div.text-gray-700.dark_text-gray-500
-              div.my-2.font-black.text-3xl.sm_text-4xl.dark_text-gray-400
+              h1.my-2.font-black.text-3xl.sm_text-4xl.dark_text-gray-400
                 | The Mightiest Icons on the Web
-              div.pl-2.sm_my-8.text-xl.sm_text-2xl.dark_text-gray-400
-                | A complete design system for creating and maintaining large icon sets in Figma
-                //- | A truly open source design system for creating and maintaining large icon sets in Figma
-              //- p.text-2xl.font-light May just be the mightiest set of icons on the web
+              .my-8.sm_space-y-3
+                h3.pl-2.text-xl.sm_text-2xl.dark_text-gray-400
+                  | Fully editalbe & truly open source design system
 
               a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
                 href='https://www.figma.com/community/file/899031264835768805',
@@ -95,7 +94,7 @@
               target='_blank',
               ref='noreferrer noopener',
             )
-              svg-icon.mr-3(set='brands', name='github', size='1.5rem', variant='bold')
+              svg-icon.mr-3(set='brands', name='github', size='1.5rem', variant='solid')
               span.text-xl GitHub Repo
     .my-24
 </template>

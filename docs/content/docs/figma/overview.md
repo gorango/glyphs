@@ -22,7 +22,7 @@ Check the [original file][of] for the latest updates and to provide any feedback
   <img class="show-light" src="/content/community-light.jpg" style="margin: 0" alt="Community File Preview" />
 </a> -->
 
-The entire Glyphs design system is built around the Figma file. The files are laid with specific rules in order to facilitate integration with other tools in this project. Internally, the files are designed with Figma’s components and variants. Modifying the core component or any of its internal components will be reflected in all variants, and in any other places where the icon is being used.
+The entire Glyphs design system is built around the Figma file. The files are laid out with specific rules in order to facilitate integration with other tools in this project. Internally, the files are designed with Figma’s components and variants. Modifying the core component or any of its internal components will be reflected in all variants, and in any other places where the icon is being used.
 
 ### Editing
 
@@ -40,15 +40,14 @@ For large changes, it is recommended to use the [Glyphs Figma plugin][plugin], w
 
 ### Exporting
 
-Use the [Glyphs CLI][cli] to automate the process of exporting and packaging icons from Figma.
-
-<alert type="info">
+<alert type="warning">
 
 Figma has some unexpected behavior with its SVG conversions using the REST API.
 
-There are workarounds to all of these behaviors and they require additional implementation.
+Certain icon variants need to be "flattened" before export to ensure accurate renders. There are workarounds to all of these behaviors and they require additional implementation.
 
 </alert>
 
 Read more about [preparing files for export](/docs/figma/exporting) and some [common issues](/docs/figma/exporting#common-issues).
 
+Use the [Glyphs CLI][cli] to automate the process of exporting and packaging icons.

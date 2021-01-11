@@ -28,8 +28,9 @@ Until recently, design software from Adobe, Sketch, and others didn't provide a 
 
 In order to achieve the desired goals, this project consists of several tools:
 
-- [Figma source file](/docs/figma/overview) for the target icon set
-- [Figma plugin](/docs/plugin/install-plugin) to speed up common design tasks with large icon sets
-- [Command line interface](/docs/cli/install-cli) to download the assets
-- [Packaged assets](/docs/web/getting-started) to use in various environments
+- [Figma source file](/docs/figma/overview) for the icon sets
+- [Figma library plugin](/docs/plugin/install-plugin) to easily search & use the icons in other Figma projects
+- [Figma command plugin](/docs/plugin/install-plugin) to speed up common design tasks with large icon sets
+- [Command line interface](/docs/cli/install-cli) to download the assets from Figma
+- [Packaged assets](/docs/web/getting-started) to use in development projects and elsewhere
 - [Web components](/docs/web/component) to integrate the icons with additional features

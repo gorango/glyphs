@@ -56,9 +56,9 @@ Use the Search in the Assets tab (Alt+2) to find icons (If selecting one of the 
 
 All icons are distributed on a grid composed of several rows:
 
-- <span class="px-1 bg-purple-200 dark_bg-purple-700"><b>Drafting Row</b></span>: The top row is reserved for drafting new icons and should only contain the components used to create the source icons. These must be named with a leading double undersccore (like `__sub-component`).
-- <span class="px-1 bg-pink-200 dark_bg-pink-900"><b>Component Row</b></span>: This row contains the source components and copies to be included in the category. These components must be named with a single leading underscroe (like `_main-component`).
-- <span class="px-1 bg-gray-300 dark_bg-gray-700"><b>Variants Row</b></span>: There can be any number of variants as long as they retain consistent naming conventions. The component set must be named the same as its source component but without leading underscores (like `main-component`).
+- <span class="px-1 bg-purple-200 dark_bg-purple-700"><b>Drafting Row</b></span>: The top row is reserved for drafting new icons and should only contain the components used to create the source icons. These must be named with a leading double underscore<br>(ex. `__sub-component`).
+- <span class="px-1 bg-pink-200 dark_bg-pink-900"><b>Component Row</b></span>: This row contains the source components and copies to be included in the category. These components must be named with a single leading underscroe<br>(ex. `_main-component`).
+- <span class="px-1 bg-gray-300 dark_bg-gray-700"><b>Variants Row</b></span>: There can be any number of variants as long as they retain consistent naming conventions. The component set must be named the same as its source component but without leading underscores<br>(ex. `main-component`).
 
 Explore the embedded Figma file to learn more about the grid.
 

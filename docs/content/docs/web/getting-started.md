@@ -5,11 +5,11 @@ category: Web Components
 position: 71
 ---
 
-This project currently supports several ways of integrating icons from Figma. The assets from Figma get exported and packaged into several distributions:
+There are several ways to integrate icons from into a web development project. The assets from Figma are exported and packaged into several distributions:
 
-- Using the [raw SVG](#raw-files) files
-- Using the universal [web component](#web-component)
-- Using a [webpack](#webpack) build system
+- [Raw SVG files](#raw-files)
+- [Webpack build system](#webpack)
+- [Coming Soon]: Web component
 - [Coming Soon]: VueJS component
 - [Coming Soon]: ReactJS component
 - [Coming Soon]: AngularJS component
@@ -26,29 +26,34 @@ npm i @glyphs/flags
 
 These packages all contain the same internal structure:
 
+```bash
+.
+├── meta.json                 # Meta data for the complete set
+├── components.json           # Meta data for each of the icons
+├── preview.html              # HTML preview of the complete icon set
+├── <variant-1>               # Folder containing all SVGs for that variant
+│   ├── <icon-name>.svg       # Icon name
+│   └── # ...
+├── <variant-2>
+│   └── # ...
+└── # ...                     # Other files, including package.json, readme.md, changelog.md, glyphs.config.js
+```
+
 - All SVG files are organized into folders based on their variants.
 - The `components.json` file contains additional details on each icon, including its categories, search terms, source ids as well as the SVG strings of each variant.
 - The `meta.json` file contains information about the whole icon set, including its name, icon counts, variants, and categories.
 
 
-## Web Component
-
-There are currently 3 sets supported as web components: `<rounded-icon>`, `<brand-icon>`, and `<flag-icon>`. The following examples can be adapted for any of those sets.
-
-The web components can be installed directly from NPM:
-
-```bash
-npm i @glyphs/rounded-icon
-```
-
-Also available with a CDN for rapid development and testing:
-
-```html
-<script src="https://unpkg.com/@glyphs/rounded/dist/rounded-icon/rounded-icon.esm.js" type="module" ></script>
-```
-
-See complete docs in the [Web Component section](/docs/web/component)
-
 ## Webpack
 
 Official packages for major Javascript frameworks are coming soon. However, developers can still use the assets by downloading the icon sets from NPM or GitHub and importing them into their projects.
+
+If you are using Webpack as a build system, you can add specific loaders to allow you to import SVGs from `node_modules` or other locations.
+
+## Components
+
+<alert>
+
+Coming soon... Under active development.
+
+</alert>
