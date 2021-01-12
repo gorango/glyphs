@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 0.7.0 (2021-01-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* rename set
+
+* feat!(svg): move "rounded" to "core" ([1d96849](https://github.com/gorango/glyphs/commit/1d96849e3e43839d8da1098c82732ada1cc6c94f))
+
 ### [0.6.2](https://github.com/gorango/glyphs/compare/@glyphs/rounded-v0.6.1...@glyphs/rounded-v0.6.2) (2021-01-10)
 
 

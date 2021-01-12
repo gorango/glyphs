@@ -1,5 +1,5 @@
 module.exports = {
-  set: 'rounded',
+  set: 'core',
   svg: '.',
   data: '.',
   diff: true,
