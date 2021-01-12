@@ -1,8 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <g opacity="0.25">
-    <path d="M30.3652 60.5589L56.3652 15.5256" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-    <path d="M26.3643 67.4888L14.24 60.4888L22.24 46.6324L34.3643 53.6324L26.3643 67.4888Z" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  </g>
-  <path d="M50.3638 60.5589L24.3638 15.5256" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <path d="M54.3647 67.4888L66.489 60.4888L58.489 46.6324L46.3647 53.6324L54.3647 67.4888Z" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-</svg>

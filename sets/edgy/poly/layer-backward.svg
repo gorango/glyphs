@@ -1,5 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path d="M16 16L48 16V48L16 48L16 16Z" fill="#1CB0F6" class="fill-blue" />
-  <path d="M22 22L42 22V42H22L22 22Z" fill="#84D3FF" class="fill-blue" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M32 48V64H64V32L48 32V48H32Z" fill="#7B61FF" class="fill-purple" />
-</svg>

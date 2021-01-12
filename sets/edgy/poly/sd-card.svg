@@ -1,9 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M20 20V68H60V12H28L20 20Z" fill="#606060" class="fill-grey" />
-  <path d="M20 68H18V70H20V68ZM20 20L18.5858 18.5858L18 19.1716V20H20ZM60 68V70H62V68H60ZM60 12H62V10H60V12ZM28 12V10H27.1716L26.5858 10.5858L28 12ZM22 68V20H18V68H22ZM60 66H20V70H60V66ZM58 12V68H62V12H58ZM28 14H60V10H28V14ZM26.5858 10.5858L18.5858 18.5858L21.4142 21.4142L29.4142 13.4142L26.5858 10.5858Z" fill="#606060" class="fill-grey" />
-  <path d="M26 28V22" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
-  <path d="M33 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
-  <path d="M40 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
-  <path d="M47 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
-  <path d="M54 24V18" stroke="#FFC200" stroke-width="4" stroke-linecap="square" class="stroke-yellow" />
-</svg>

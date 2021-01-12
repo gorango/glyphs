@@ -1,6 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path opacity="0.25" d="M51 25L51 23L47 23V25L51 25ZM47 64L47 66H51L51 64H47ZM47 25L47 64H51L51 25L47 25Z" fill="currentColor" />
-  <path d="M58 25H40L42.25 22.75L49 16L55.75 22.75L58 25Z" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <path opacity="0.25" d="M33 55L33 57L29 57L29 55L33 55ZM29 16L29 14L33 14L33 16L29 16ZM29 55L29 16L33 16L33 55L29 55Z" fill="currentColor" />
-  <path d="M40 55L22 55L24.25 57.25L31 64L37.75 57.25L40 55Z" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-</svg>

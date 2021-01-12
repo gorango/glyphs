@@ -1,6 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <rect x="12" y="12" width="24" height="24" fill="#7B61FF" stroke="#7B61FF" stroke-width="4" stroke-linecap="square" class="fill-purple stroke-purple" />
-  <rect x="44" y="12" width="24" height="24" fill="#84D3FF" stroke="#84D3FF" stroke-width="4" stroke-linecap="square" class="fill-blue stroke-blue" />
-  <rect x="12" y="44" width="24" height="24" fill="#84D3FF" stroke="#84D3FF" stroke-width="4" stroke-linecap="square" class="fill-blue stroke-blue" />
-  <rect x="44" y="44" width="24" height="24" fill="#7B61FF" stroke="#7B61FF" stroke-width="4" stroke-linecap="square" class="fill-purple stroke-purple" />
-</svg>

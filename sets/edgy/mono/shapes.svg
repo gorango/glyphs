@@ -1,7 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <circle opacity="0.5" cx="21" cy="23" r="12" fill="currentColor" />
-  <path d="M47.1005 13.1722L56.1 22.1717L57.8999 23.9716L66.8995 32.9712" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <path d="M66.8995 13.1722L57.9 22.1717L56.1001 23.9716L47.1005 32.9712" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <path d="M34 57L10 71L10 43L34 57Z" fill="currentColor" />
-  <rect opacity="0.5" x="45" y="45" width="24" height="24" fill="currentColor" />
-</svg>

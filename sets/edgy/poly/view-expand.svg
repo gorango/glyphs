@@ -1,6 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path d="M34 16L16 16L16 34" stroke="#7B61FF" stroke-width="4" stroke-linecap="square" class="stroke-purple" />
-  <path d="M34 64H16L16 46" stroke="#7B61FF" stroke-width="4" stroke-linecap="square" class="stroke-purple" />
-  <path d="M46 16L64 16V34" stroke="#7B61FF" stroke-width="4" stroke-linecap="square" class="stroke-purple" />
-  <path d="M46 64H64V46" stroke="#7B61FF" stroke-width="4" stroke-linecap="square" class="stroke-purple" />
-</svg>

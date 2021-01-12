@@ -1,6 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path d="M44.0001 12H36.0001V6.66667L44.0001 4V12Z" fill="#7AC70C" class="fill-green" />
-  <path d="M45.0001 12H35.0001L28.0001 28H52.0001L45.0001 12Z" fill="#F4F4F4" stroke="#F4F4F4" stroke-width="4" stroke-linecap="square" class="fill-white stroke-white" />
-  <path d="M50 76H30L28 28H52L50 76Z" fill="#7AC70C" stroke="#7AC70C" stroke-width="4" stroke-linecap="square" class="fill-green stroke-green" />
-  <path d="M34.0001 36H46.0001" stroke="black" stroke-width="4" stroke-linecap="square" class="stroke-grey" />
-</svg>

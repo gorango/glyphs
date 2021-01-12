@@ -1,7 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path opacity="0.25" d="M19 34L17.5858 32.5858L17 33.1716V34H19ZM19 46H17V46.8284L17.5858 47.4142L19 46ZM34 19V17H33.1716L32.5858 17.5858L34 19ZM46 19L47.4142 17.5858L46.8284 17H46V19ZM61 34H63V33.1716L62.4142 32.5858L61 34ZM61 46L62.4142 47.4142L63 46.8284V46H61ZM46 61V63H46.8284L47.4142 62.4142L46 61ZM34 61L32.5858 62.4142L33.1716 63H34V61ZM17 34V46H21V34H17ZM32.5858 17.5858L17.5858 32.5858L20.4142 35.4142L35.4142 20.4142L32.5858 17.5858ZM46 17H34V21H46V17ZM62.4142 32.5858L47.4142 17.5858L44.5858 20.4142L59.5858 35.4142L62.4142 32.5858ZM63 46L63 34H59L59 46H63ZM47.4142 62.4142L62.4142 47.4142L59.5858 44.5858L44.5858 59.5858L47.4142 62.4142ZM34 63L46 63V59L34 59V63ZM17.5858 47.4142L32.5858 62.4142L35.4142 59.5858L20.4142 44.5858L17.5858 47.4142Z" fill="currentColor" />
-  <rect x="34" y="7" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <rect x="34" y="61" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <rect x="7" y="34" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <rect x="61" y="34" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-</svg>

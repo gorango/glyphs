@@ -1,8 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <rect x="12" y="24" width="56" height="40" fill="#7B61FF" class="fill-purple" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M66.7029 23.9999L39.4182 23.9999L42.4804 15.9999L63.6407 15.9999L66.7029 23.9999Z" fill="#FFC200" class="fill-yellow" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9151 23.9999H15.1195L15.9944 19.9999H22.0402L22.9151 23.9999Z" fill="#606060" class="fill-grey" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M27.8756 40H12L12 48H27.8756V40ZM52.1244 48H68V40H52.1244V48Z" fill="#FFC200" class="fill-yellow" />
-  <path d="M40 30L52.1244 37V51L40 58L27.8756 51L27.8756 37L40 30Z" fill="#84D3FF" class="fill-blue" />
-  <path d="M31.072 46.2506V48.2506H35.072V46.2506H31.072ZM33.072 40.0002L32.072 38.2681L31.072 38.8455V40.0002H33.072ZM40.9993 37.7327L42.7314 36.7327L40.7314 33.2686L38.9993 34.2686L40.9993 37.7327ZM35.072 46.2506V40.0002H31.072V46.2506H35.072ZM34.072 41.7322L40.9993 37.7327L38.9993 34.2686L32.072 38.2681L34.072 41.7322Z" fill="#7B61FF" class="fill-purple" />
-</svg>

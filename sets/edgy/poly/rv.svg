@@ -1,8 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M63 18H64L74 28V28.5V32V33H50V43H74V43.1V54.5V58H66L58 50L50 58H32L24 50L16 58L6 48V26.5V18H63Z" fill="#FFC200" class="fill-yellow" />
-  <rect x="32" y="14" width="16" height="4" fill="#FF9100" class="fill-orange" />
-  <path d="M50 33H66L74 43H50V33Z" fill="#84D3FF" class="fill-blue" />
-  <rect x="18" y="33" width="20" height="10" fill="#84D3FF" class="fill-blue" />
-  <path d="M24 50L32 58L24 66L16 58L24 50Z" fill="black" class="fill-grey" />
-  <path d="M58 50L66 58L58 66L50 58L58 50Z" fill="black" class="fill-grey" />
-</svg>

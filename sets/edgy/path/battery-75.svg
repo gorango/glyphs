@@ -1,7 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path d="M10 22H66V58H10V22Z" stroke="currentColor" stroke-linecap="square" />
-  <path d="M66 32H70V48H66V32Z" stroke="currentColor" stroke-linecap="square" />
-  <path d="M41 28.3379H47V52H41V28.3379Z" stroke="currentColor" stroke-linecap="square" />
-  <path d="M29 28.3379H35V52H29L29 28.3379Z" stroke="currentColor" stroke-linecap="square" />
-  <path d="M23 28.3379L23 52H17V28.3379H23Z" stroke="currentColor" stroke-linecap="square" />
-</svg>

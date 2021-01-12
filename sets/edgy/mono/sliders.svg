@@ -1,6 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path opacity="0.25" d="M12 21H10V25H12V21ZM21 25H23V21H21V25ZM29 21H27V25H29V21ZM68 25L70 25V21H68V25ZM12 38H10L10 42H12L12 38ZM51 42H53V38H51V42ZM59 38H57V42H59V38ZM68 42H70V38H68V42ZM12 55H10V59H12V55ZM33 59L35 59L35 55L33 55L33 59ZM41 55H39L39 59H41L41 55ZM68 59H70V55H68V59ZM12 25H21V21H12V25ZM29 25L68 25V21L29 21V25ZM12 42L51 42V38L12 38L12 42ZM59 42L68 42V38H59V42ZM12 59H33L33 55H12V59ZM41 59H68V55H41L41 59Z" fill="currentColor" />
-  <rect x="21" y="15" width="8" height="16" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <rect x="51" y="32" width="8" height="16" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <rect x="33" y="49" width="8" height="16" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-</svg>

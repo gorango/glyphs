@@ -1,7 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M37.9999 26.8452V65.197L24.0986 60.4148L17.7466 49.0259C17.2085 48.0612 15.9904 47.7153 15.0257 48.2534C14.061 48.7914 13.7151 50.0096 14.2532 50.9742L20.9778 63.0314C21.2178 63.4616 21.6081 63.7882 22.0739 63.9484L39.3493 69.8913C39.7709 70.0363 40.2289 70.0363 40.6505 69.8913L57.9258 63.9484C58.3917 63.7882 58.782 63.4616 59.0219 63.0314L65.7466 50.9742C66.2846 50.0096 65.9387 48.7914 64.9741 48.2534C64.0094 47.7153 62.7912 48.0612 62.2532 49.0259L55.9012 60.4148L41.9999 65.197V26.8455L40.0001 28L37.9999 26.8452Z" fill="currentColor" />
-  <path d="M16 42L21 50H20.7669H16H11.232H11L15.8832 42.187L16 42Z" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <path d="M64 42L69 50H68.7669H64H59.232H59L63.8832 42.187L64 42Z" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-  <path opacity="0.25" d="M40 12L48 20L40 28L32 20L40 12Z" fill="currentColor" />
-  <path d="M32 36H48" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
-</svg>

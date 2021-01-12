@@ -1,7 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8807 35H20.1191L25.8931 20.1914H54.1068L59.8807 35Z" fill="#84D3FF" class="fill-blue" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M17 53V60.3711H27V53H17ZM53 53V60.3711H63V53H53Z" fill="black" class="fill-grey" />
-  <path d="M14 35H66V53H14V35Z" fill="#D33131" class="fill-red" />
-  <rect x="21" y="41.3711" width="6" height="6" fill="#FFC200" class="fill-yellow" />
-  <rect width="6" height="6" transform="matrix(-1 0 0 1 59 41.3711)" fill="#FFC200" class="fill-yellow" />
-</svg>
