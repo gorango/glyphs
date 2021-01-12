@@ -25,6 +25,12 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   }
 
   const fileConf = conf.get(key)
+
+  if (!fileConf) {
+    console.log(`  File "${key}" not found`)
+    process.exit(1)
+  }
+
   const personalAccessToken = fileConf.token
   const { client: figma } = figmaClient({ personalAccessToken })
   retry(axios)
@@ -33,11 +39,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
     retryCondition: error => retry.isNetworkOrIdempotentRequestError(error)
   })
 
-  if (!fileConf) {
-    console.log(`  File "${key}" not found`)
-    process.exit(1)
-  }
-
+  let svgMap = {}
   let progressVal = 0
   progress.start(100, 0)
   setInterval(() => {
@@ -248,7 +250,8 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
           const svg = await processSvg(svgString, variant, setConfig)
 
           saveSVG(name, svgDir, variant, svg)
-          components[components.findIndex(({ name: n }) => n === name )].variants[variant] = svg
+          // components[components.findIndex(({ name: n }) => n === name )].variants[variant] = svg
+          svgMap[id] = svg
           downloaded++
           const newProgress = downloaded / meta.total * 80 + 10
           progressVal = Math.min(progressVal, newProgress)
@@ -279,6 +282,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   }
 
   await saveJSON(`${dataDir}/components`, components)
+  await saveJSON(`${dataDir}/map`, svgMap)
   conf.set(`${key}.sets.${set}`, new Date())
 
   progress.update(100, { stage: 'Done' })
