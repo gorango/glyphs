@@ -1,0 +1,12 @@
+{
+  "name": "@glyphs/wc-core",
+  "version": "0.0.0",
+  "description": "Glyphs Web Components Core",
+  "homepage": "https://glyphs.fyi/dir?set=core",
+  "main": "src/index.js",
+  "unpkg": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@glyphs/core": "^0.7.0"
+  }
+}
