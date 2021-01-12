@@ -1,9 +1,0 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path d="M80 0H0V80H80V0Z" fill="#2F80ED" />
-  <path d="M80 10H44V18H80V10Z" fill="#F2F2F2" />
-  <path d="M80 28H44V36H80V28Z" fill="#F2F2F2" />
-  <path d="M80 46H0V54H80V46Z" fill="#F2F2F2" />
-  <path d="M80 64H0V72H80V64Z" fill="#F2F2F2" />
-  <path d="M0 23H44" stroke="#F2F2F2" stroke-width="8" />
-  <path d="M21.9999 46V0" stroke="#F2F2F2" stroke-width="8" />
-</svg>
