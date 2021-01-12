@@ -1,1 +1,0 @@
-import{p as a,b as r}from"./p-7481def5.js";(()=>{const r=import.meta.url,t={};return""!==r&&(t.resourcesUrl=new URL(".",r).href),a(t)})().then((a=>r([["p-cb36a514",[[1,"rounded-icon",{ariaLabel:[1537,"aria-label"],flip:[1],name:[1],src:[1],icon:[8],size:[8],rotate:[1],variant:[1],strokeWidth:[8,"stroke-width"],svgContent:[32]}]]]],a)));
