@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.2.1...@glyphs/cli-v0.3.0-alpha.1) (2021-01-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* export & save raw SVGs from Figma
+* SVG strings no longer exist on variants in components.json. Replaced with node id referenced in new map.json
+
+### Features
+
+* **cli:** add generate option for web components ([6c9f449](https://github.com/gorango/glyphs/commit/6c9f4494e8e0a920f969f7ce1ecd5487c61bcdd5))
+* **cli:** update wc, vue, & react scoffolds ([9e12be8](https://github.com/gorango/glyphs/commit/9e12be87e1f1c0dd18e675a48400b16df37ec14e))
+* **wc:** init web components packages ([7a60662](https://github.com/gorango/glyphs/commit/7a60662bcdb189d1dbca9dedd00fa2a3e1b43aa6))
+
+
+### Bug Fixes
+
+* **cli:** ensure unique id in defs to avoid conflics ([661ba8a](https://github.com/gorango/glyphs/commit/661ba8ae9856158102b341f1f437dbc9530d313b))
+* **cli:** fix --diff option ([5259f25](https://github.com/gorango/glyphs/commit/5259f25a8a6bc5054671a489f036031e0282e6ff))
+* **cli:** fix react template imports ([da7a856](https://github.com/gorango/glyphs/commit/da7a8567b53876af73143efacd8d9914a362cf4c))
+* **cli:** handle naming error in export ([988853a](https://github.com/gorango/glyphs/commit/988853af4f557720e79f572feb802977f91960c1)), closes [#15](https://github.com/gorango/glyphs/issues/15)
+* **cli:** update docs ([142796f](https://github.com/gorango/glyphs/commit/142796f1a3543ddfefee1b76205644533e56c802))
+* **cli:** update templates; use file paths for SVGs ([fcc259b](https://github.com/gorango/glyphs/commit/fcc259bc468d9a216271a1cdaf9287d54274964f))
+
+
+* feat!(cli): remove svg post processing ([bb84fe8](https://github.com/gorango/glyphs/commit/bb84fe846b2491519fe71232387064840cb98071))
+* feat!(cli): move SVG strings from components to map ([e12915f](https://github.com/gorango/glyphs/commit/e12915f974ff3c31096cc3ad975a6e28358cd9f9))
+
 ### [0.2.1](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.2.0...@glyphs/cli-v0.2.1) (2021-01-07)
 
 
