@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.0...@glyphs/core-v0.7.1) (2021-01-13)
+
+
+### Bug Fixes
+
+* **core:** fix accidental opacity change in figma ([23d126a](https://github.com/gorango/glyphs/commit/23d126adc4afb6b9fd68f0265954fc3a22ee906f))
+
 ## 0.7.0 (2021-01-12)
 
 
