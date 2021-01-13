@@ -1,0 +1,18 @@
+{
+  "name": "@glyphs/wc-brands",
+  "version": "0.0.0",
+  "description": "Glyphs Web Components Brands",
+  "homepage": "https://glyphs.fyi/dir?set=brands",
+  "license": "MIT",
+  "main": "src/index.js",
+  "unpkg": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/index.js"
+  },
+  "dependencies": {
+    "hybrids": "^4.3.3"
+  },
+  "devDependencies": {
+    "@glyphs/brands": "^0.1.2"
+  }
+}
