@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.4.0...@glyphs/flags-v0.4.1) (2021-01-13)
+
+
+### Bug Fixes
+
+* **flags:** ensure unique ids on defs; add SVGs map file ([4383b84](https://github.com/gorango/glyphs/commit/4383b845fdeb9bd4681ea04f67b340bd5377d6c3))
+
 ## [0.4.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.3.1...@glyphs/flags-v0.4.0) (2021-01-11)
 
 
