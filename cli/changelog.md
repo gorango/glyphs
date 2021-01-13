@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0-alpha.2](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.0-alpha.1...@glyphs/cli-v0.3.0-alpha.2) (2021-01-13)
+
+
+### Bug Fixes
+
+* **cli:sync:** replace current color in export ([ca2a374](https://github.com/gorango/glyphs/commit/ca2a3740ee3d813204e4db1f5757c3d85c2e51a0))
+
 ## [0.3.0](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.2.1...@glyphs/cli-v0.3.0-alpha.1) (2021-01-13)
 
 
