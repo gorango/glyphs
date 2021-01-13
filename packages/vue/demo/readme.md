@@ -13,3 +13,7 @@ To create a development build:
 ```sh
 npm run build-dev
 ```
+
+## Credits
+
+Made with [createapp.dev](https://createapp.dev/)
