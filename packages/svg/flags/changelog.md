@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.2-alpha.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.4.1...@glyphs/flags-v0.4.2) (2021-01-13)
+
+
+### Bug Fixes
+
+* **flags:** remove unique ids; fix accidental opacity change ([2ea80ab](https://github.com/gorango/glyphs/commit/2ea80ab6a77141e01722b7065b2677ac57ed7735))
+
 ### [0.4.1](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.4.0...@glyphs/flags-v0.4.1) (2021-01-13)
 
 
