@@ -3,7 +3,7 @@ const { createVariants, s, createIndex } = require('../utils/template-utils')
 module.exports.index = (opts) => createIndex(opts, 'jsx')
 
 module.exports.component = async ({ variants, className, set }) => `
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
