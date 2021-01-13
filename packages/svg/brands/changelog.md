@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.1.1...@glyphs/brands-v0.1.2) (2021-01-13)
+
+
+### Bug Fixes
+
+* **brands:** fix swift collision; add SVGs map file ([fbeac4a](https://github.com/gorango/glyphs/commit/fbeac4a5a1d57997c3106313bca99c0729349368))
+
 ### [0.1.1](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.1.0...@glyphs/brands-v0.1.1) (2021-01-10)
 
 
