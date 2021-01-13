@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "brands",
-  "unique": 163,
-  "total": 488,
+  "unique": 162,
+  "total": 485,
   "variants": [
     "color",
     "solid",
@@ -45,7 +45,6 @@
       "pwa",
       "webComponents",
       "stencil",
-      "npm",
       "atom",
       "vsCode",
       "sublimeText",
@@ -62,12 +61,13 @@
       "python",
       "ruby",
       "php",
-      "swift",
+      "swiftLang",
       "rLang",
       "go",
       "cSharp",
       "docker",
       "wordpress",
+      "npm",
       "redux",
       "joomla",
       "drupal"

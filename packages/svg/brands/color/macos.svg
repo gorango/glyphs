@@ -1,8 +1,8 @@
 <svg viewBox="0 0 80 80" fill="none">
   <path d="M75 40C75 59.32 59.3375 75 40 75C20.6625 75 5 59.32 5 40C5 20.6625 20.6625 5 40 5C59.3375 5 75 20.6625 75 40Z" fill="white" />
-  <path d="M53.75 15H57.5L42.5 40L57.5 65H53.75L40 42.5L26.25 65H22.5L37.5 40L22.5 15H26.25L40 37.5L53.75 15Z" fill="url(#tUBtt0_linear)" />
+  <path d="M53.75 15H57.5L42.5 40L57.5 65H53.75L40 42.5L26.25 65H22.5L37.5 40L22.5 15H26.25L40 37.5L53.75 15Z" fill="url(#paint0_linearB9On)" />
   <defs>
-    <linearGradient id="tUBtt0_linear" x1="40" y1="15" x2="40" y2="65" gradientUnits="userSpaceOnUse">
+    <linearGradient id="paint0_linearB9On" x1="40" y1="15" x2="40" y2="65" gradientUnits="userSpaceOnUse">
       <stop stop-color="#5AB1DC" />
       <stop offset="0.256735" stop-color="#8396B0" />
       <stop offset="0.500792" stop-color="#A37F86" />
