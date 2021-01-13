@@ -2,7 +2,7 @@ const { createVariants, s, createIndex } = require('../utils/template-utils')
 
 module.exports.index = (opts) => createIndex(opts, 'vue')
 
-module.exports.component = async (variants, name, props) => `
+module.exports.component = async ({ variants, className, set }) => `
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -14,6 +14,7 @@ module.exports.component = async (variants, name, props) => `
     <slot></slot>
     <g>\
       ${await createVariants(variants, {
+        set,
         parent: {
           prepend: variant => `\n${s(6)}<template v-if="variant === '${variant}'">`,
           append: variant => `\n${s(6)}</template>`
@@ -31,11 +32,11 @@ module.exports.component = async (variants, name, props) => `
 </template>
 
 <script>
-import Vue from 'Vue'
+import Vue from 'vue'
 import { transform } from '../utils'
 
 export default {
-  name: '${name}',
+  name: '${className, set}',
 
   props: {
     size: { type: String, default: '40', },

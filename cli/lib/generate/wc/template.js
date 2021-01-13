@@ -2,7 +2,7 @@ const { createVariants, s, createIndex } = require('../utils/template-utils')
 
 module.exports.index = createIndex
 
-module.exports.component = async (variants, className ,tagName) => `
+module.exports.component = async ({ variants, className, tagName, set }) => `
 import { html, property, svg, define } from 'hybrids'
 import { transform } from '../utils'
 
@@ -27,6 +27,7 @@ const ${className} = {
       <slot></slot>
       <g>\
         ${await createVariants(variants, {
+          set,
           parent: {
             prepend: variant => `\n${s(8)}\${variant === "${variant}" && svg\``,
             append: variant => `\n${s(8)}\`}`

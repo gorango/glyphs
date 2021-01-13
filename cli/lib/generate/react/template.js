@@ -2,13 +2,14 @@ const { createVariants, s, createIndex } = require('../utils/template-utils')
 
 module.exports.index = (opts) => createIndex(opts, 'jsx')
 
-module.exports.component = async (variants, className) => `
+module.exports.component = async ({ variants, className, set }) => `
 import { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
   switch (variant) {\
     ${await createVariants(variants, {
+      set,
       parent: {
         prepend: variant => `\n${s(4)}case '${variant}':\n${s(6)}return \(\n${s(8)}<>`,
         append: variant => `\n${s(8)}</>\n${s(6)})`
@@ -37,7 +38,9 @@ const ${className} = forwardRef((props, ref) => {
       transform={transform(rotate, flip)}
     >
       {children}
-      {renderString({ size, variant, rotate, flip })}
+      <g>
+        {renderString({ size, variant, rotate, flip })}
+      </g>
     </svg>
   )
 })
