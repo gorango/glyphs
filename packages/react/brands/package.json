@@ -1,0 +1,18 @@
+{
+  "name": "@glyphs/react-brands",
+  "version": "0.0.0",
+  "description": "Glyphs React Brands",
+  "homepage": "https://glyphs.fyi/dir?set=brands",
+  "license": "MIT",
+  "main": "src/index.js",
+  "unpkg": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/index.js"
+  },
+  "dependencies": {
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@glyphs/brands": "^0.1.2"
+  }
+}
