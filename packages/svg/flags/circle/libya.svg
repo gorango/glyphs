@@ -1,19 +1,19 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
-<circle cx="40" cy="40" r="40" fill="#C4C4C4"/>
-</mask>
-<g mask="url(#mask0)">
-<g clip-path="url(#clip0)">
-<path d="M80 40H0V80H80V40Z" fill="#219653"/>
-<path d="M80 0H0V40H80V0Z" fill="#EB5757"/>
-<path d="M80 40H0" stroke="#333333" stroke-width="40"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M42.7144 27.2039C41.3593 26.741 39.907 26.49 38.3963 26.49C30.9838 26.49 24.9748 32.5341 24.9748 39.99C24.9748 47.4458 30.9838 53.49 38.3963 53.49C39.907 53.49 41.3593 53.239 42.7144 52.7761C40.4448 54.1802 37.7728 54.99 34.9128 54.99C26.6767 54.99 20 48.2743 20 39.99C20 31.7057 26.6767 24.99 34.9128 24.99C37.7728 24.99 40.4448 25.7998 42.7144 27.2039Z" fill="#F2F2F2"/>
-<path d="M46.7253 28.9211L50.452 33.9175L56.5453 32.7127L52.9727 37.8217L55.9948 43.2783L50.0601 41.4395L45.8346 46.0167L45.7393 39.7712L40.1057 37.1434L45.9815 35.1223L46.7253 28.9211Z" fill="#F2F2F2"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="80" height="80" fill="white"/>
-</clipPath>
-</defs>
+<svg viewBox="0 0 80 80" fill="none">
+  <mask id="mask0cH7m" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
+  </mask>
+  <g mask="url(#mask0cH7m)">
+    <g clip-path="url(#clip0cH7m)">
+      <path d="M80 40H0V80H80V40Z" fill="#219653" />
+      <path d="M80 0H0V40H80V0Z" fill="#EB5757" />
+      <path d="M80 40H0" stroke="#333333" stroke-width="40" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M42.7144 27.2039C41.3593 26.741 39.907 26.49 38.3963 26.49C30.9838 26.49 24.9748 32.5341 24.9748 39.99C24.9748 47.4458 30.9838 53.49 38.3963 53.49C39.907 53.49 41.3593 53.239 42.7144 52.7761C40.4448 54.1802 37.7728 54.99 34.9128 54.99C26.6767 54.99 20 48.2743 20 39.99C20 31.7057 26.6767 24.99 34.9128 24.99C37.7728 24.99 40.4448 25.7998 42.7144 27.2039Z" fill="#F2F2F2" />
+      <path d="M46.7253 28.9211L50.452 33.9175L56.5453 32.7127L52.9727 37.8217L55.9948 43.2783L50.0601 41.4395L45.8346 46.0167L45.7393 39.7712L40.1057 37.1434L45.9815 35.1223L46.7253 28.9211Z" fill="#F2F2F2" />
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0cH7m">
+      <rect width="80" height="80" fill="white" />
+    </clipPath>
+  </defs>
 </svg>

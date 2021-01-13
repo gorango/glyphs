@@ -1,7 +1,7 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M80 0H0V80H80V0Z" fill="#F2F2F2"/>
-<path d="M80 12H0" stroke="#2F80ED" stroke-width="13"/>
-<path d="M80 68H0" stroke="#2F80ED" stroke-width="13"/>
-<path d="M40 26L52.1244 47H27.8756L40 26Z" stroke="#2F80ED" stroke-width="3" stroke-linecap="square"/>
-<path d="M40 54L52.1244 33H27.8756L40 54Z" stroke="#2F80ED" stroke-width="3" stroke-linecap="square"/>
+<svg viewBox="0 0 80 80" fill="none">
+  <path d="M80 0H0V80H80V0Z" fill="#F2F2F2" />
+  <path d="M80 12H0" stroke="#2F80ED" stroke-width="13" />
+  <path d="M80 68H0" stroke="#2F80ED" stroke-width="13" />
+  <path d="M40 26L52.1244 47H27.8756L40 26Z" stroke="#2F80ED" stroke-width="3" stroke-linecap="square" />
+  <path d="M40 54L52.1244 33H27.8756L40 54Z" stroke="#2F80ED" stroke-width="3" stroke-linecap="square" />
 </svg>

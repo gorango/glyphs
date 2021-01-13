@@ -1,20 +1,20 @@
-<svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M120 0H0V80H120V0Z" fill="#EB5757"/>
-<circle cx="60" cy="40" r="108" fill="#EB5757"/>
-<circle cx="60" cy="40" r="10" fill="#F2C94C"/>
-<path d="M49 -53H71L62 27H60H58L49 -53Z" fill="#F2C94C"/>
-<path d="M153 29L153 51L73 42L73 40L73 38L153 29Z" fill="#F2C94C"/>
-<path d="M71 133L49 133L58 53L60 53L62 53L71 133Z" fill="#F2C94C"/>
-<path d="M-33 51L-33 29L47 38L47 40L47 42L-33 51Z" fill="#F2C94C"/>
-<path d="M125.353 -27.0754L139.198 -9.97823L71.362 33.3731L70.1034 31.8188L68.8447 30.2645L125.353 -27.0754Z" fill="#F2C94C"/>
-<path d="M-5.35205 107.075L-19.1971 89.9781L48.6385 46.6268L49.8971 48.1811L51.1557 49.7354L-5.35205 107.075Z" fill="#F2C94C"/>
-<path d="M-19.1982 -9.95435L-5.3532 -27.0516L51.1546 30.2884L49.896 31.8427L48.6373 33.397L-19.1982 -9.95435Z" fill="#F2C94C"/>
-<path d="M138.519 89.9546L124.674 107.052L68.1657 49.7119L69.4244 48.1576L70.683 46.6033L138.519 89.9546Z" fill="#F2C94C"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="120" height="80" fill="white"/>
-</clipPath>
-</defs>
+<svg viewBox="0 0 120 80" fill="none">
+  <g clip-path="url(#clip0jTkD)">
+    <path d="M120 0H0V80H120V0Z" fill="#EB5757" />
+    <circle cx="60" cy="40" r="108" fill="#EB5757" />
+    <circle cx="60" cy="40" r="10" fill="#F2C94C" />
+    <path d="M49 -53H71L62 27H60H58L49 -53Z" fill="#F2C94C" />
+    <path d="M153 29L153 51L73 42L73 40L73 38L153 29Z" fill="#F2C94C" />
+    <path d="M71 133L49 133L58 53L60 53L62 53L71 133Z" fill="#F2C94C" />
+    <path d="M-33 51L-33 29L47 38L47 40L47 42L-33 51Z" fill="#F2C94C" />
+    <path d="M125.353 -27.0754L139.198 -9.97823L71.362 33.3731L70.1034 31.8188L68.8447 30.2645L125.353 -27.0754Z" fill="#F2C94C" />
+    <path d="M-5.35205 107.075L-19.1971 89.9781L48.6385 46.6268L49.8971 48.1811L51.1557 49.7354L-5.35205 107.075Z" fill="#F2C94C" />
+    <path d="M-19.1982 -9.95435L-5.3532 -27.0516L51.1546 30.2884L49.896 31.8427L48.6373 33.397L-19.1982 -9.95435Z" fill="#F2C94C" />
+    <path d="M138.519 89.9546L124.674 107.052L68.1657 49.7119L69.4244 48.1576L70.683 46.6033L138.519 89.9546Z" fill="#F2C94C" />
+  </g>
+  <defs>
+    <clipPath id="clip0jTkD">
+      <rect width="120" height="80" fill="white" />
+    </clipPath>
+  </defs>
 </svg>

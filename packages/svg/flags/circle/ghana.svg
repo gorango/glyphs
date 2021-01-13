@@ -1,18 +1,18 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
-<circle cx="40" cy="40" r="40" fill="#C4C4C4"/>
-</mask>
-<g mask="url(#mask0)">
-<g clip-path="url(#clip0)">
-<path d="M80 0H0V80H80V0Z" fill="#F2C94C"/>
-<path d="M80 0H0V26.6667H80V0Z" fill="#EB5757"/>
-<path d="M80 53.3401H0V80.0101H80V53.3401Z" fill="#219653"/>
-<path d="M40 23.9897L43.5737 35.0709L55.2169 35.0455L45.7824 41.8686L49.4046 52.934L40 46.0697L30.5954 52.934L34.2176 41.8686L24.7831 35.0455L36.4263 35.0709L40 23.9897Z" fill="#333333"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="80" height="80" fill="white"/>
-</clipPath>
-</defs>
+<svg viewBox="0 0 80 80" fill="none">
+  <mask id="mask0AReE" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
+  </mask>
+  <g mask="url(#mask0AReE)">
+    <g clip-path="url(#clip0AReE)">
+      <path d="M80 0H0V80H80V0Z" fill="#F2C94C" />
+      <path d="M80 0H0V26.6667H80V0Z" fill="#EB5757" />
+      <path d="M80 53.3401H0V80.0101H80V53.3401Z" fill="#219653" />
+      <path d="M40 23.9897L43.5737 35.0709L55.2169 35.0455L45.7824 41.8686L49.4046 52.934L40 46.0697L30.5954 52.934L34.2176 41.8686L24.7831 35.0455L36.4263 35.0709L40 23.9897Z" fill="#333333" />
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0AReE">
+      <rect width="80" height="80" fill="white" />
+    </clipPath>
+  </defs>
 </svg>
