@@ -1,4 +1,4 @@
-<svg viewBox="0 0 120 81" fill="none">
+<svg width="120" height="81" viewBox="0 0 120 81" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M60 40L0 80V0L60 40Z" fill="#219653" />
   <path d="M120 0V80L60 40L120 0Z" fill="#219653" />
   <path d="M60 40L120 80H0L60 40Z" fill="#F2C94C" />

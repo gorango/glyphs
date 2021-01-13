@@ -1,8 +1,8 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <mask id="mask05pIa" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
-  <g mask="url(#mask05pIa)">
+  <g mask="url(#mask0)">
     <rect width="80" height="80" fill="#F2F2F2" />
     <rect width="80" height="14" fill="#2F80ED" />
     <rect y="66" width="80" height="14" fill="#2F80ED" />

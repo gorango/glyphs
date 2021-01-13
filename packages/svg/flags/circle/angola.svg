@@ -1,18 +1,18 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <mask id="mask0Fhre" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
-  <g mask="url(#mask0Fhre)">
-    <g clip-path="url(#clip0Fhre)">
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
       <path d="M80 0H0V40H80V0Z" fill="#EB5757" />
       <path d="M80 40H0V80H80V40Z" fill="#333333" />
       <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5722 56.6483C17.6278 57.0574 18.697 57.3709 19.7701 57.593L19.5177 59.6383L22.4934 60.0193L22.7641 57.9786C24.7708 58.083 26.7603 57.8808 28.6697 57.3998L29.3302 59.3536L32.1765 58.4058L31.5333 56.4445C33.3597 55.6785 35.072 54.6433 36.6061 53.3673L38.0475 54.8396L40.2007 52.7507L38.7739 51.2666C40.0652 49.8094 41.1607 48.1415 42.0025 46.2882L43.943 46.9904L44.9766 44.1741L43.0433 43.4546C43.5996 41.5007 43.8434 39.5194 43.8007 37.5693L45.849 37.3605L45.5583 34.3747L43.5059 34.5651C43.1618 32.6019 42.5266 30.7043 41.6289 28.9368L43.3879 27.8573L41.8305 25.2933L40.0635 26.3556C38.9202 24.7556 37.5344 23.3145 35.9336 22.0945L37.0474 20.3631L34.5317 18.7287L33.4007 20.4524C32.6446 20.04 31.8532 19.6716 31.0286 19.352L30.3058 21.2168C39.5749 24.8097 44.1764 35.2364 40.5836 44.5055C36.9908 53.7747 26.5641 58.3762 17.295 54.7835L16.5722 56.6483Z" fill="#F2C94C" />
       <path d="M29.7995 26.0054L31.1396 30.1608L35.5058 30.1513L31.9679 32.7099L33.3262 36.8595L29.7995 34.2854L26.2728 36.8595L27.6311 32.7099L24.0931 30.1513L28.4593 30.1608L29.7995 26.0054Z" fill="#F2C94C" />
-      <path opacity="0.9" d="M22.7995 46.0054L51.7995 64.0054" stroke="#F2C94C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M22.7995 46.0054L51.7995 64.0054" stroke="#F2C94C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
     </g>
   </g>
   <defs>
-    <clipPath id="clip0Fhre">
+    <clipPath id="clip0">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

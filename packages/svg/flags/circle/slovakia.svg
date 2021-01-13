@@ -1,12 +1,12 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <mask id="mask0rGO9" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
-  <g mask="url(#mask0rGO9)">
-    <g clip-path="url(#clip0rGO9)">
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
       <path d="M80 0H0V80H80V0Z" fill="#2F80ED" />
       <path d="M80 0H0V26.6667H80V0Z" fill="#F2F2F2" />
-      <path opacity="0.9" d="M80 53.3334H0V80H80V53.3334Z" fill="#EB5757" />
+      <path d="M80 53.3334H0V80H80V53.3334Z" fill="#EB5757" />
       <path d="M16 21H48V42.517C48 48.4346 44.4882 53.788 39.0602 56.1449L32 59.2105L24.9398 56.1449C19.5118 53.788 16 48.4346 16 42.517V21Z" fill="#EB5757" />
       <path d="M32 26V46" stroke="#F2F2F2" stroke-width="3" />
       <path d="M38 32H26" stroke="#F2F2F2" stroke-width="3" />
@@ -16,7 +16,7 @@
     </g>
   </g>
   <defs>
-    <clipPath id="clip0rGO9">
+    <clipPath id="clip0">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

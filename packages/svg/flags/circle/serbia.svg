@@ -1,12 +1,12 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <mask id="mask0PANQ" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
-  <g mask="url(#mask0PANQ)">
-    <g clip-path="url(#clip0PANQ)">
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
       <path d="M80 0H0V80H80V0Z" fill="#2F80ED" />
       <path d="M80 0H0V26.6667H80V0Z" fill="#EB5757" />
-      <path opacity="0.9" d="M80 53.3334H0V80H80V53.3334Z" fill="#F2F2F2" />
+      <path d="M80 53.3334H0V80H80V53.3334Z" fill="#F2F2F2" />
       <path d="M16 23.7896H48V45.3066C48 51.2242 44.4882 56.5775 39.0602 58.9344L32 62.0001L24.9398 58.9344C19.5118 56.5776 16 51.2242 16 45.3066V23.7896Z" fill="#EB5757" />
       <path d="M24 28.4211H40V21.4736L36.4444 22.5591L32 18L27.5556 22.5591L24 21.4736V28.4211Z" fill="#F2C94C" />
       <path d="M40 51.8717L32 41.7368L24 51.8717" stroke="#F2C94C" stroke-width="3.42857" />
@@ -14,7 +14,7 @@
     </g>
   </g>
   <defs>
-    <clipPath id="clip0PANQ">
+    <clipPath id="clip0">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

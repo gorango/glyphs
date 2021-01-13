@@ -1,7 +1,7 @@
-<svg viewBox="0 0 120 80" fill="none">
-  <g clip-path="url(#clip0AX2U)">
+<svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0)">
     <path d="M120 0H0V40H120V0Z" fill="#56CCF2" />
-    <path opacity="0.9" d="M120 40H0V80H120V40Z" fill="#219653" />
+    <path d="M120 40H0V80H120V40Z" fill="#219653" />
     <path d="M120 40H0" stroke="#EB5757" stroke-width="32" />
     <path d="M120 40H0" stroke="#F2F2F2" stroke-width="22" />
     <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6484 2.13522C19.91 2.92116 16.2969 7.03864 16.2969 12C16.2969 16.9614 19.91 21.0788 24.6484 21.8648C24.1122 21.9537 23.5615 22 23 22C17.4772 22 13 17.5228 13 12C13 6.47715 17.4772 2 23 2C23.5615 2 24.1122 2.04628 24.6484 2.13522Z" fill="#F2F2F2" />
@@ -19,7 +19,7 @@
     <path d="M64 2L64.449 3.38197H65.9021L64.7265 4.23607L65.1756 5.61803L64 4.76393L62.8244 5.61803L63.2735 4.23607L62.0979 3.38197H63.551L64 2Z" fill="#F2F2F2" />
   </g>
   <defs>
-    <clipPath id="clip0AX2U">
+    <clipPath id="clip0">
       <rect width="120" height="80" fill="white" />
     </clipPath>
   </defs>

@@ -1,5 +1,5 @@
-<svg viewBox="0 0 120 80" fill="none">
-  <g clip-path="url(#clip04AuT)">
+<svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0)">
     <path d="M120 0H0V80H120V0Z" fill="#2F80ED" />
     <path d="M27.4152 0.0771484H107.415V79.9213" fill="#F2C94C" />
     <path d="M9.99988 -8.51489L11.6457 -3.78014L16.6573 -3.67801L12.6628 -0.649645L14.1144 4.14823L9.99988 1.28511L5.88538 4.14823L7.33692 -0.649645L3.34248 -3.67801L8.35408 -3.78014L9.99988 -8.51489Z" fill="#F2F2F2" />
@@ -13,7 +13,7 @@
     <path d="M90.3214 71.8066L91.9672 76.5414L96.9788 76.6435L92.9844 79.6719L94.4359 84.4698L90.3214 81.6066L86.2069 84.4698L87.6585 79.6719L83.664 76.6435L88.6756 76.5414L90.3214 71.8066Z" fill="#F2F2F2" />
   </g>
   <defs>
-    <clipPath id="clip04AuT">
+    <clipPath id="clip0">
       <rect width="120" height="80" fill="white" />
     </clipPath>
   </defs>

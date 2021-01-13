@@ -1,9 +1,9 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <g clip-path="url(#clip0dH_g)">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0)">
     <path d="M120 0H0V80H120V0Z" fill="#2F80ED" />
     <path d="M120 57.99H0" stroke="#F2F2F2" stroke-width="18" />
     <path d="M120 57.99H0" stroke="#EB5757" stroke-width="8" />
-    <g clip-path="url(#clip1dH_g)">
+    <g clip-path="url(#clip1)">
       <path d="M30.8967 38.304L31.7139 40.8377L34.3761 40.8319L32.2189 42.392L33.0471 44.9221L30.8967 43.3526L28.7463 44.9221L29.5746 42.392L27.4173 40.8319L30.0796 40.8377L30.8967 38.304Z" fill="#F2C94C" />
       <path d="M39.9509 36L40.7681 38.5337L43.4303 38.5279L41.2731 40.088L42.1013 42.6182L39.9509 41.0486L37.8005 42.6182L38.6288 40.088L36.4715 38.5279L39.1338 38.5337L39.9509 36Z" fill="#F2C94C" />
       <path d="M49.0054 37.9495L49.8225 40.4832L52.4847 40.4774L50.3275 42.0375L51.1557 44.5676L49.0054 42.9981L46.855 44.5676L47.6832 42.0375L45.526 40.4774L48.1882 40.4832L49.0054 37.9495Z" fill="#F2C94C" />
@@ -19,10 +19,10 @@
     </g>
   </g>
   <defs>
-    <clipPath id="clip0dH_g">
+    <clipPath id="clip0">
       <rect width="80" height="80" fill="white" />
     </clipPath>
-    <clipPath id="clip1dH_g">
+    <clipPath id="clip1">
       <rect width="43.9016" height="43.4328" fill="white" transform="translate(18 36)" />
     </clipPath>
   </defs>

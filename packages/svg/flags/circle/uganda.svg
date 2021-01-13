@@ -1,17 +1,15 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <mask id="mask0v5mC" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
-  <g mask="url(#mask0v5mC)">
-    <g clip-path="url(#clip0v5mC)">
-      <g opacity="0.9">
-        <path d="M120 0H0V13.3333H120V0Z" fill="#333333" />
-        <path d="M120 13.3333H0V26.6666H120V13.3333Z" fill="#F2C94C" />
-        <path d="M120 26.6667H0V40.0001H120V26.6667Z" fill="#EB5757" />
-        <path d="M120 40H0V53.3333H120V40Z" fill="#333333" />
-        <path d="M120 53.3333H0V66.6666H120V53.3333Z" fill="#F2C94C" />
-        <path d="M120 66.6667H0V80.0001H120V66.6667Z" fill="#EB5757" />
-      </g>
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
+      <path d="M120 0H0V13.3333H120V0Z" fill="#333333" />
+      <path d="M120 13.3333H0V26.6666H120V13.3333Z" fill="#F2C94C" />
+      <path d="M120 26.6667H0V40.0001H120V26.6667Z" fill="#EB5757" />
+      <path d="M120 40H0V53.3333H120V40Z" fill="#333333" />
+      <path d="M120 53.3333H0V66.6666H120V53.3333Z" fill="#F2C94C" />
+      <path d="M120 66.6667H0V80.0001H120V66.6667Z" fill="#EB5757" />
       <circle cx="40" cy="40" r="14" fill="#F2F2F2" />
       <path d="M40.0708 42.855C40.1063 44.6725 40.22 48.6479 40.3901 50.0096M40.3901 50.0096C39.8758 50.3111 38.7089 51.0469 38.1557 51.5789M40.3901 50.0096C40.7713 49.983 41.6612 49.983 42.1719 50.1958M40.3901 50.0096C39.6098 49.9742 37.8791 49.9618 37.1982 50.1958" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
       <path d="M40.1499 42.4561L42.3043 45.7275H37.0116M34.8568 47.4563C34.8355 46.3073 35.8409 45.825 36.3462 45.7275H37.0116M37.0116 45.7275C36.7279 45.9048 36.1286 46.4562 36.0009 47.2435" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
@@ -24,7 +22,7 @@
     </g>
   </g>
   <defs>
-    <clipPath id="clip0v5mC">
+    <clipPath id="clip0">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

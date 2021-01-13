@@ -1,5 +1,5 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <g clip-path="url(#clip0Bc_i)">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0)">
     <path d="M80 40H0V80H80V40Z" fill="#219653" />
     <path d="M80 0H0V40H80V0Z" fill="#EB5757" />
     <path d="M80 40H0" stroke="#333333" stroke-width="40" />
@@ -7,7 +7,7 @@
     <path d="M46.7253 28.9211L50.452 33.9175L56.5453 32.7127L52.9727 37.8217L55.9948 43.2783L50.0601 41.4395L45.8346 46.0167L45.7393 39.7712L40.1057 37.1434L45.9815 35.1223L46.7253 28.9211Z" fill="#F2F2F2" />
   </g>
   <defs>
-    <clipPath id="clip0Bc_i">
+    <clipPath id="clip0">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

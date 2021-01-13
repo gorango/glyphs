@@ -1,11 +1,11 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <mask id="mask0Dacr" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
-  <g mask="url(#mask0Dacr)">
-    <g clip-path="url(#clip0Dacr)">
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
       <path d="M80 0H0V40H80V0Z" fill="#56CCF2" />
-      <path opacity="0.9" d="M80 40H0V80H80V40Z" fill="#219653" />
+      <path d="M80 40H0V80H80V40Z" fill="#219653" />
       <path d="M80 40H0" stroke="#EB5757" stroke-width="32" />
       <path d="M80 40H0" stroke="#F2F2F2" stroke-width="22" />
       <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6484 2.13522C19.91 2.92116 16.2969 7.03864 16.2969 12C16.2969 16.9614 19.91 21.0788 24.6484 21.8648C24.1122 21.9537 23.5615 22 23 22C17.4772 22 13 17.5228 13 12C13 6.47715 17.4772 2 23 2C23.5615 2 24.1122 2.04628 24.6484 2.13522Z" fill="#F2F2F2" />
@@ -24,7 +24,7 @@
     </g>
   </g>
   <defs>
-    <clipPath id="clip0Dacr">
+    <clipPath id="clip0">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

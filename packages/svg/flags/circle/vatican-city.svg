@@ -1,9 +1,9 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <mask id="mask09mbs" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
-  <g mask="url(#mask09mbs)">
-    <g clip-path="url(#clip09mbs)">
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
       <path d="M40.0781 0.00012207H0V79.9975H40.0781V0.00012207Z" fill="#F2C94C" />
       <path d="M80.1562 0H40.0781V80H80.1562V0Z" fill="#F2F2F2" />
       <path fill-rule="evenodd" clip-rule="evenodd" d="M71.1793 51.1695C73.5062 49.217 73.8098 45.7478 71.8572 43.4209C70.239 41.4924 67.5789 40.9537 65.3908 41.9374L53.3662 27.607L52.2171 28.5712L51.068 29.5354L46.0887 33.7135L51.231 39.8418L56.2103 35.6637L63.0927 43.8658C61.744 45.8498 61.8125 48.563 63.4308 50.4916C65.3833 52.8185 68.8524 53.122 71.1793 51.1695ZM69.5591 45.3493C70.4466 46.407 70.3087 47.9838 69.251 48.8714C68.1933 49.7589 66.6164 49.6209 65.7289 48.5632C64.8414 47.5055 64.9793 45.9286 66.037 45.0411C67.0947 44.1536 68.6716 44.2916 69.5591 45.3493Z" fill="#828282" />
@@ -11,7 +11,7 @@
     </g>
   </g>
   <defs>
-    <clipPath id="clip09mbs">
+    <clipPath id="clip0">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

@@ -1,9 +1,9 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <mask id="mask0ncXI" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
-  <g mask="url(#mask0ncXI)">
-    <g clip-path="url(#clip0ncXI)">
+  <g mask="url(#mask0)">
+    <g clip-path="url(#clip0)">
       <path d="M100 0.0791016H-20V80.0774H100V0.0791016Z" fill="#F2F2F2" />
       <path d="M40 40C40 40 40 59.9931 40 79.9991H-20V40H0.000858307C19.1252 40 40 40 40 40Z" fill="#2F80ED" />
       <path d="M100 0V39.9991H79.9991C58.7931 39.9991 40 39.9991 40 39.9991C40 39.9991 40 18.8297 40 0H100Z" fill="#EB5757" />
@@ -12,7 +12,7 @@
     </g>
   </g>
   <defs>
-    <clipPath id="clip0ncXI">
+    <clipPath id="clip0">
       <rect width="80" height="80" fill="white" />
     </clipPath>
   </defs>

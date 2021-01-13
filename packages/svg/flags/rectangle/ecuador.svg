@@ -1,9 +1,7 @@
-<svg viewBox="0 0 120 80" fill="none">
+<svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M120 0H0V40H120V0Z" fill="#F2C94C" />
-  <g opacity="0.9">
-    <path d="M120 40H0V60H120V40Z" fill="#2F80ED" />
-    <path d="M120 60H0V80H120V60Z" fill="#EB5757" />
-  </g>
+  <path d="M120 40H0V60H120V40Z" fill="#2F80ED" />
+  <path d="M120 60H0V80H120V60Z" fill="#EB5757" />
   <ellipse cx="60" cy="38.111" rx="6.93333" ry="10.6667" fill="#56CCF2" />
   <path d="M52.2 32.7778V40.9778C52.2 45.2857 55.6921 48.7778 60 48.7778V48.7778C64.3078 48.7778 67.8 45.2857 67.8 40.9778V32.7778" stroke="#EB5757" stroke-width="4" />
   <path d="M49.6001 31V41.9333C49.6001 47.6771 54.2563 52.3333 60.0001 52.3333V52.3333C65.7439 52.3333 70.4001 47.6771 70.4001 41.9333V31" stroke="#2F80ED" stroke-width="4" />
