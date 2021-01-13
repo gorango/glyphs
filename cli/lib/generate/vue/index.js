@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const util = require('util')
 const { parse, stringify } = require('svgson')
-const { kebabCase, startCase, camelCase, capitalize } = require('lodash')
+const { kebabCase, startCase, camelCase, upperFirst } = require('lodash')
 const template = require('./template')
 
 module.exports = async function wc ({ target, set, output, transform }) {
@@ -22,10 +22,10 @@ module.exports = async function wc ({ target, set, output, transform }) {
   const components = require(`${assetPath}/components.json`)
 
   for ({ name, variants } of components) {
-    const componentName = capitalize(camelCase(name))
+    const componentName = upperFirst(camelCase(name))
     const className = startCase(setName) + componentName
     const tagName = `${kebabCase(setName)}-${kebabCase(name)}`
-    const componentString = await template.component(variants, className)
+    const componentString = await template.component({ variants, className, set })
     try {
       fs.writeFileSync(
         path.join(componentsPath, `${componentName}.vue`),

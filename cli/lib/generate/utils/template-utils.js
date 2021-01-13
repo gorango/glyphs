@@ -1,11 +1,13 @@
-const { capitalize, camelCase, startCase } = require('lodash')
+const fs = require('fs')
+const path = require('path')
+const { upperFirst, camelCase, startCase, kebabCase } = require('lodash')
 const { parse, stringify } = require('svgson')
 
 module.exports.createIndex = ({ setName, components }, extension) => {
   let indexString = ''
 
   for ({ name, variants } of components) {
-    const componentName = capitalize(camelCase(name))
+    const componentName = upperFirst(camelCase(name))
     const className = startCase(setName) + componentName
     const ext = extension ? `.${extension}` : ''
     indexString += `export { default as ${className} } from './icons/${componentName}${ext}'\n`
@@ -19,8 +21,8 @@ module.exports.s = n => Array(n + 1).fill(null).join(' ')
 module.exports.createVariants = async function (variants, options) {
   return Object.keys(variants).reduce(async (p, variant) => p.then(async str => {
     const replaceProps = ['path', 'rect', 'circle']
-    // const svg = fs.readFileSync(path.join(assetPath, variant, `${kebabCase(name)}.svg`), 'utf-8')
-    const svg = variants[variant]
+    const svg = fs.readFileSync(path.join(process.cwd(), options.set, variant, `${kebabCase(name)}.svg`), 'utf-8')
+    // const svgId = variants[variant]
     const icon = await parse(svg)
     const prepend = options.parent.prepend(variant)
     const append = options.parent.append(variant)
@@ -34,7 +36,7 @@ module.exports.createVariants = async function (variants, options) {
 
         if (!replaceProps.includes(child.name)) {
           const body = await stringify(child)
-          return str + prepend + options.child.space + body + append
+          return str + '\n' + options.child.space.split(' ').slice(2).join(' ') + body
         } else {
           const children = Object.entries(child.attributes).map(([attr, val]) => {
             let res = options.child.space
