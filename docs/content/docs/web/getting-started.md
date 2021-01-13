@@ -19,7 +19,7 @@ There are several ways to integrate icons from into a web development project. T
 The raw SVG files can be downloaded from the GitHub repo or from NPM:
 
 ```bash
-npm i @glyphs/rounded
+npm i @glyphs/core
 npm i @glyphs/brands
 npm i @glyphs/flags
 ```

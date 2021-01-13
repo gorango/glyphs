@@ -20,7 +20,7 @@
               span.capitalize {{ selectedSet.label }}
               span.text-gray-600.ml-2 ({{ selectedSet.count }})
               .flex-auto
-              svg-icon.text-3xl(set='rounded', name='caret', :rotate='showSelect ? "0" : "180"')
+              svg-icon.text-3xl(set='core', name='caret', :rotate='showSelect ? "0" : "180"')
             template(v-if='showSelect')
               .absolute.top-0.overflow-hidden.inset-x-0.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-500.dark_border-gray-700.flex.flex-col.z-10(
               )
@@ -189,14 +189,12 @@ import kebabCase from 'lodash.kebabcase'
 import debounce from 'lodash.debounce'
 
 const meta = {
-  rounded: require('@glyphs/rounded/meta.json'),
-  // edgy: require('@glyphs/edgy/meta.json'),
+  core: require('@glyphs/core/meta.json'),
   brands: require('@glyphs/brands/meta.json'),
   flags: require('@glyphs/flags/meta.json')
 }
 const components = {
-  rounded: require('@glyphs/rounded'),
-  // edgy: require('@glyphs/edgy'),
+  core: require('@glyphs/core'),
   brands: require('@glyphs/brands'),
   flags: require('@glyphs/flags')
 }
@@ -223,11 +221,11 @@ export default {
   computed: {
     setsSelection () {
       const res = Object.entries(meta).map(([set, { unique }]) => ({ label: set, count: unique }))
-      res.splice(2, 0, { label: 'simple' })
+      res.splice(3, 0, { label: 'simple' })
       return res
     },
     set () {
-      return this.$route.query.s || 'rounded'
+      return this.$route.query.s || 'core'
     },
     selectedSet () {
       return this.setsSelection.find(({ label }) => label === this.set)

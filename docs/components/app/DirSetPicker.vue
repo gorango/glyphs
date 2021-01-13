@@ -13,7 +13,7 @@
       span.capitalize {{ selectedSet.label }}
       span.text-gray-600.ml-2 ({{ selectedSet.count }})
       .flex-auto
-      svg-icon.text-3xl(set='rounded', name='caret', :rotate='showSelect ? "0" : "180"')
+      svg-icon.text-3xl(set='core', name='caret', :rotate='showSelect ? "0" : "180"')
     template(v-if='showSelect')
       .absolute.top-0.overflow-hidden.inset-x-0.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-500.dark_border-gray-700.flex.flex-col.z-10(
       )

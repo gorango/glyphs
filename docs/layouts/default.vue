@@ -17,11 +17,11 @@
         //- a.flex.items-center.p-1.rounded-lg.outline-none.cursor-pointer(
         //-   :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
         //- )
-        //-   svg-icon.text-yellow-500(set='rounded', name='bell', size='1.75rem', variant='bold')
+        //-   svg-icon.text-yellow-500(set='core', name='bell', size='1.75rem', variant='bold')
         //- a.flex.items-center.p-1.rounded-lg.outline-none.cursor-pointer(
         //-   :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
         //- )
-        //-   svg-icon.text-red-500(set='rounded', name='heart1', size='2rem', variant='bold')
+        //-   svg-icon.text-red-500(set='core', name='heart1', size='2rem', variant='bold')
         a.flex.items-center.p-1.rounded-lg.outline-none(
           href='https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7',
           target='_blank',

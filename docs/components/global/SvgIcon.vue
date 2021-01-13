@@ -7,7 +7,7 @@ export default {
   props: {
     set: {
       type: String,
-      default: 'rounded'
+      default: 'core'
     },
     name: {
       type: String,

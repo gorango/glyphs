@@ -19,7 +19,7 @@
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='brands', name='figma', variant='color')
                 span Thousands of editable icons #[span.text-black.dark_text-gray-300 designed in Figma]
                 .flex-auto
-                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='45')
+                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path', rotate='45')
 
               router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
                 to='docs/web/getting-started',
@@ -28,34 +28,34 @@
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='brands', name='web-components', variant='color')
                 span #[span.text-black.dark_text-gray-300 Web components] for use with any application
                 .flex-auto
-                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='90')
+                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path', rotate='90')
 
               router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
                 to='/docs/cli/install-cli',
                 :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
-                svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='laptop', variant='poly')
+                svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='laptop', variant='poly')
                 span #[span.text-black.dark_text-gray-300 CLI utility] to download SVGs from Figma
                 .flex-auto
-                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='90')
+                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path', rotate='90')
 
               a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
                 @click='focusSearch(); $router.push("dir")',
                 :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
-                svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='search', variant='poly')
+                svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='search', variant='poly')
                 span Categorized & tagged for easy #[span.text-black.dark_text-gray-300 search]
                 .flex-auto
-                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path')
+                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path')
 
               router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300(
                 to='docs',
                 :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
-                svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='note-pad', variant='poly')
+                svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='note-pad', variant='poly')
                 span Growing #[span.text-black.dark_text-gray-300 documentation] and guides
                 .flex-auto
-                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='rounded', name='angle', variant='path', rotate='90')
+                svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path', rotate='90')
 
       landing-icons.hidden.xl_block
 

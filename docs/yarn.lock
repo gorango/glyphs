@@ -944,25 +944,20 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
-"@glyphs/brands@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@glyphs/brands/-/brands-0.1.1.tgz#966c2b63fb624c0e7cbfef401879446898f1a324"
-  integrity sha512-FljJEcPNcimk+E/A79WRNQBPwXKbcJ5jVVFPN5A3d8ZOFlUPF6xYLbhXoQCSMZZNcNmgLSzflZhqPfZjhzJu9g==
+"@glyphs/brands@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@glyphs/brands/-/brands-0.1.2.tgz#009af6795d740a364258926cd43784b1aaec94ac"
+  integrity sha512-ijw8E6jJlAyI0wQ4J3TGCrym73f0pztFq5UXF8N4zaddB456pRtP53LU3ZR9FaKd+ZDDfO0q0mQ9+XHHBbEcrw==
 
-"@glyphs/edgy@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@glyphs/edgy/-/edgy-0.0.3.tgz#573bc122dfa2b4aebbdfc4da6a252c501dbda98b"
-  integrity sha512-Xb3uSAa/RVymSBnvKyyUZXDA7/AZ+BMNNnIxQkdxIZCtklRTSSaXhgZGLssxyjepCGq7wltEIhaR/d1lCDTS/A==
+"@glyphs/core@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.7.2.tgz#a1f729d1e9de0709c41619541d5e1752e6d348c9"
+  integrity sha512-4tW8XAEQwPzlG83++FFIwO/VdzRkGB2YZPsfOvTvPxhx7NeR/jWwGL7B6NOv+5rOpPO6qkwxxiIiv1HQZ/NWhg==
 
-"@glyphs/flags@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.4.0.tgz#104cce2456306ea922a769d855024d2d14246904"
-  integrity sha512-mAfZQEs+flmWwB+FLs+2smnEcC5gtfkx8X8/0qpyHEpJYVGNPvYZqcH1xK/xDNBBI941irqjCgGYZOuu6yi3Wg==
-
-"@glyphs/rounded@^0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@glyphs/rounded/-/rounded-0.6.2.tgz#22040429d7b3461700c51af9f64f8773522b4a2a"
-  integrity sha512-aWfw7gjuG2Ugc1UHsqwP5I0gOChb38wbFxzCzmsPpVeNyfWJRVqG2GmhoPYz8SPDLgFhTVLUoISQohcMelTsaQ==
+"@glyphs/flags@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.4.2.tgz#dd5265f4d91a07aea7e71d886c0a3e83bdc7a11e"
+  integrity sha512-roXB9WuWKEHOK5IIloRvlXbwmAT7WM2yENokbmDeJOMIHI8SQ/ucsm4hpvSfpLC8j64mQGkn0QzClwzY2frLQw==
 
 "@koa/router@^9.0.1":
   version "9.4.0"

@@ -138,9 +138,15 @@ import kebabCase from 'lodash.kebabcase'
 import debounce from 'lodash.debounce'
 
 const figmaIds = {
-  rounded: '2TsY9yqFso1zrvF8LNcVE7',
+  core: '2TsY9yqFso1zrvF8LNcVE7',
   brands: 'vuadSjKf4P4foe0E5rCURn',
   flags: 'VyB7exNgbMB7EmOwAFF9jZ'
+}
+
+const svgs = {
+  core: require('@glyphs/core/map.json'),
+  brands: require('@glyphs/brands/map.json'),
+  flags: require('@glyphs/flags/map.json')
 }
 
 export default {
@@ -196,7 +202,7 @@ export default {
 
   computed: {
     wcCode () {
-      const start = `<${this.selectedSet.label}-icon\n  name="${this.kebabCase(this.icon)}"\n  variant="${this.previewVariant || this.variant}"`
+      const start = `<${this.selectedSet.label}-${this.kebabCase(this.icon)}\n  variant="${this.previewVariant || this.variant}"`
       const rotate = this.previewRotate ? `\n  rotate="${this.previewRotate}"` : ''
       const flip = this.previewFlip ? `\n  flip="${this.previewFlip}"` : ''
       const stroke = ['path', 'outline'].reduce((b, v) => b || [this.variant, this.previewVariant].includes(v), 0) ? `\n  stroke-width="${this.stroke}"` : ''
@@ -206,7 +212,8 @@ export default {
     svgCode () {
       const component = this.components[this.icon]
       const variant = component.variants[this.previewVariant] || component.variants[this.variant]
-      return variant
+      const svg = svgs[this.selectedSet.label][variant]
+      return svg
     },
     prismaCode () {
       switch (this.showCode) {

@@ -11,10 +11,9 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@glyphs/brands": "^0.1.1",
-    "@glyphs/edgy": "^0.0.3",
-    "@glyphs/flags": "^0.4.0",
-    "@glyphs/rounded": "^0.6.2",
+    "@glyphs/brands": "0.1.2",
+    "@glyphs/core": "^0.7.2",
+    "@glyphs/flags": "^0.4.2",
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/gtm": "^2.4.0",
     "bezier-easing": "^2.1.0",

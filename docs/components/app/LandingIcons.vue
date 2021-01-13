@@ -26,7 +26,7 @@
               )
                 svg-icon(
                   :ref='icon.name',
-                  set='rounded',
+                  set='core',
                   :name='icon.name',
                   variant='path',
                   @mouseenter='hover = icon.name'
@@ -38,8 +38,8 @@
 </template>
 
 <script>
-import { categories as _categories } from '@glyphs/rounded/meta.json'
-import components from '@glyphs/rounded'
+import { categories as _categories } from '@glyphs/core/meta.json'
+import components from '@glyphs/core'
 
 const categories = Object.entries(_categories).reduce((obj, [key, value]) => {
   if (_categories[key].length) {
