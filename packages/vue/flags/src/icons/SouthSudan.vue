@@ -1,0 +1,54 @@
+
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 80 80"
+    :width="size"
+    :height="size"
+    :transform="transform"
+  >
+    <slot></slot>
+    <g>      
+      <template v-if="variant === 'rectangle'">
+        <g clip-path="url(#clip0vlBS)"><path d="M120 0H0V40H120V0Z" fill="#333333"/><path d="M120 40H0V80H120V40Z" fill="#219653"/><path d="M120 40H0" stroke="#F2F2F2" stroke-width="24"/><path d="M120 40H0" stroke="#EB5757" stroke-width="16"/><path d="M56 40L0 0V80L56 40Z" fill="#2F80ED"/><path d="M15.7933 27.8839L20.5332 35.2179L28.9631 32.9394L23.4528 39.7137L28.2248 47.0269L20.0793 43.8796L14.5987 50.678L15.0747 41.9586L6.91553 38.847L15.3553 36.6053L15.7933 27.8839Z" fill="#F2C94C"/></g>
+        <defs><clipPath id="clip0vlBS"><rect width="120" height="80" fill="white"/></clipPath></defs>
+      </template>
+      <template v-if="variant === 'square'">
+        <g clip-path="url(#clip09h72)"><path d="M120 0H0V40H120V0Z" fill="#333333"/><path d="M120 40H0V80H120V40Z" fill="#219653"/><path d="M120 40H0" stroke="#F2F2F2" stroke-width="24"/><path d="M120 40H0" stroke="#EB5757" stroke-width="16"/><path d="M56 40L0 0V80L56 40Z" fill="#2F80ED"/><path d="M15.7933 27.8839L20.5332 35.2179L28.9631 32.9394L23.4528 39.7137L28.2248 47.0269L20.0793 43.8796L14.5987 50.678L15.0747 41.9586L6.91553 38.847L15.3553 36.6053L15.7933 27.8839Z" fill="#F2C94C"/></g>
+        <defs><clipPath id="clip09h72"><rect width="80" height="80" fill="white"/></clipPath></defs>
+      </template>
+      <template v-if="variant === 'circle'">
+        <mask id="mask0J75V" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80"><circle cx="40" cy="40" r="40" fill="#C4C4C4"/></mask>
+        <g mask="url(#mask0J75V)"><g clip-path="url(#clip0J75V)"><path d="M120 0H0V40H120V0Z" fill="#333333"/><path d="M120 40H0V80H120V40Z" fill="#219653"/><path d="M120 40H0" stroke="#F2F2F2" stroke-width="24"/><path d="M120 40H0" stroke="#EB5757" stroke-width="16"/><path d="M56 40L0 0V80L56 40Z" fill="#2F80ED"/><path d="M15.7933 27.8839L20.5332 35.2179L28.9631 32.9394L23.4528 39.7137L28.2248 47.0269L20.0793 43.8796L14.5987 50.678L15.0747 41.9586L6.91553 38.847L15.3553 36.6053L15.7933 27.8839Z" fill="#F2C94C"/></g></g>
+        <defs><clipPath id="clip0J75V"><rect width="80" height="80" fill="white"/></clipPath></defs>
+      </template>
+    </g>
+  </svg>
+</template>
+
+<script>
+import Vue from 'vue'
+import { transform } from '../utils'
+
+export default {
+  name: 'node_modules/@glyphs/flags',
+
+  props: {
+    size: { type: String, default: '40', },
+    color: { type: String, default: 'currentColor', },
+    variant: { type: String, default: '', },
+    colors: { type: [String], default: ['#000000', '#C4C4C4'], },
+    strokeWidth: { type: String, default: '3', },
+    strokeLinecap: { type: String, default: 'round', },
+    strokeLinejoin: { type: String, default: 'round', },
+    rotate: { type: String, default: '0', },
+    flip: { type: String, default: '' }
+  },
+
+  computed: {
+    transform () {
+      return transform(this.rotate, this.flip)
+    }
+  }
+}
+</script>

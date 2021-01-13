@@ -1,0 +1,18 @@
+{
+  "name": "@glyphs/vue-core",
+  "version": "0.0.0",
+  "description": "Glyphs Vue Core",
+  "homepage": "https://glyphs.fyi/dir?set=core",
+  "license": "MIT",
+  "main": "src/index.js",
+  "unpkg": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/index.js"
+  },
+  "dependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@glyphs/core": "^0.7.1"
+  }
+}
