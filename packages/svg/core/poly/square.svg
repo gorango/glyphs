@@ -1,6 +1,4 @@
 <svg viewBox="0 0 80 80" fill="none">
   <rect x="16" y="16" width="48" height="48" rx="2" fill="#2F80ED" />
-  <g opacity="0.5">
-    <rect x="25.46" y="25.46" width="29.0801" height="29.0801" rx="1.21167" fill="#F2F2F2" />
-  </g>
+  <rect x="25.46" y="25.46" width="29.0801" height="29.0801" rx="1.21167" fill="#F2F2F2" />
 </svg>
