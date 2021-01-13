@@ -1,4 +1,4 @@
-<svg viewBox="0 0 80 80" fill="none">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M13 16L13 64" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M13 22H19" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M13 42H19" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />

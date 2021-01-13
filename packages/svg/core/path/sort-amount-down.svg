@@ -1,4 +1,4 @@
-<svg viewBox="0 0 80 80" fill="none">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M20 55L20 16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M25.818 55H14.182C13.0078 55 12.4197 56.4197 13.25 57.25L18.5858 62.5858C19.3668 63.3668 20.6332 63.3668 21.4142 62.5858L26.75 57.25C27.5803 56.4197 26.9923 55 25.818 55Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M37 22H45" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />

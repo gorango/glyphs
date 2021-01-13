@@ -1,9 +1,9 @@
-<svg viewBox="0 0 80 80" fill="none">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M34 19.3593L20.5 29.1676V39.5H16.2201L22.5561 59H30V63.8435H50V59H57.4439L63.7799 39.5H59.5V29.1676L46 19.3593V21H34V19.3593Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M34 9H46V21H34L34 9Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M18 59H30V71H18V59Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M50 59H62V71H50V59Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M8.5 27.5H20.5V39.5H8.5V27.5Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M59.5 27.5H71.5V39.5H59.5V27.5Z" fill="currentColor" fill-opacity="0.25" />
-  <path d="M20.5 39.5V29.1676L34 19.3593V21M20.5 39.5H16.2201L22.5561 59H30M20.5 39.5V27.5H8.5V39.5H20.5ZM30 59V63.8435H50V59M30 59H18V71H30V59ZM50 59H57.4439L63.7799 39.5H59.5M50 59H62V71H50V59ZM59.5 39.5V29.1676L46 19.3593V21M59.5 39.5H71.5V27.5H59.5V39.5ZM46 21H34M46 21V9H34L34 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M20.5 39.5V29.1676L34 19.3593V21M20.5 39.5H16.2201L22.5561 59H30M20.5 39.5V27.5H8.5V39.5H20.5ZM30 59V63.8435H50V59M30 59H18V71H30V59ZM50 59H57.4439L63.7799 39.5H59.5M50 59H62V71H50V59ZM59.5 39.5V29.1676L46 19.3593V21M59.5 39.5H71.5V27.5H59.5V39.5ZM46 21H34M46 21V9H34L34 21" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

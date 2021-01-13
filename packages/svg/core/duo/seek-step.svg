@@ -1,4 +1,4 @@
-<svg viewBox="0 0 80 80" fill="none">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M53.8667 38.4C54.9333 39.2 54.9333 40.8 53.8667 41.6L27.2 61.6C25.8815 62.5889 24 61.6481 24 60L24 20C24 18.3519 25.8815 17.4111 27.2 18.4L53.8667 38.4Z" fill="currentColor" fill-opacity="0.25" />
-  <path d="M56 16L56 64M24 20L24 60C24 61.6481 25.8815 62.5889 27.2 61.6L53.8667 41.6C54.9333 40.8 54.9333 39.2 53.8667 38.4L27.2 18.4C25.8815 17.4111 24 18.3519 24 20Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M56 16L56 64M24 20L24 60C24 61.6481 25.8815 62.5889 27.2 61.6L53.8667 41.6C54.9333 40.8 54.9333 39.2 53.8667 38.4L27.2 18.4C25.8815 17.4111 24 18.3519 24 20Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

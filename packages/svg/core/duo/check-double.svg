@@ -1,3 +1,3 @@
-<svg viewBox="0 0 80 80" fill="none">
-  <path d="M9.3291 40.3104L24.8855 55.8668C25.2187 56.2 25.6403 56.3911 26.0748 56.4399M35.8001 47.7805L60.2408 23.3398M19.1379 40.3106L34.6943 55.867C35.4753 56.648 36.7416 56.648 37.5227 55.867L70.0496 23.3401" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.3291 40.3104L24.8855 55.8668C25.2187 56.2 25.6403 56.3911 26.0748 56.4399M35.8001 47.7805L60.2408 23.3398M19.1379 40.3106L34.6943 55.867C35.4753 56.648 36.7416 56.648 37.5227 55.867L70.0496 23.3401" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

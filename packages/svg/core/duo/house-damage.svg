@@ -1,6 +1,6 @@
-<svg viewBox="0 0 80 80" fill="none">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M60 33.625L40 17.625L20 33.625V61.625H60V33.625Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M55 29.625V18.625H49V24.825L55 29.625Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M34.076 61.625H43.0343L40.6201 52.3379H48.3264L37.7419 31.6998L40.9323 46.6624H31.9206L34.076 61.625Z" fill="currentColor" fill-opacity="0.25" />
-  <path d="M40 17.625L60 33.625V61.625H20V33.625L40 17.625ZM40 17.625L12.5 39.625M40 17.625L67.5 39.625M55 18.625V29.625L49 24.825V18.625H55ZM43.0343 61.625H34.076L31.9206 46.6624H40.9323L37.7419 31.6998L48.3264 52.3379H40.6201L43.0343 61.625Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M40 17.625L60 33.625V61.625H20V33.625L40 17.625ZM40 17.625L12.5 39.625M40 17.625L67.5 39.625M55 18.625V29.625L49 24.825V18.625H55ZM43.0343 61.625H34.076L31.9206 46.6624H40.9323L37.7419 31.6998L48.3264 52.3379H40.6201L43.0343 61.625Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

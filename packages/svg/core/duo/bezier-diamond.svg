@@ -1,8 +1,8 @@
-<svg viewBox="0 0 80 80" fill="none">
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M19 46V34L34 19H46L61 34V46L46 61H34L19 46Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M34 7H46V19H34V7Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M34 61H46V73H34V61Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M7 34H19V46H7V34Z" fill="currentColor" fill-opacity="0.25" />
   <path d="M61 34H73V46H61V34Z" fill="currentColor" fill-opacity="0.25" />
-  <path d="M19 34V46M19 34L34 19M19 34H7V46H19M19 46L34 61M34 19H46M34 19V7H46V19M46 19L61 34M61 34V46M61 34H73V46H61M61 46L46 61M46 61H34M46 61V73H34V61" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M19 34V46M19 34L34 19M19 34H7V46H19M19 46L34 61M34 19H46M34 19V7H46V19M46 19L61 34M61 34V46M61 34H73V46H61M61 46L46 61M46 61H34M46 61V73H34V61" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
