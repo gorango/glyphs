@@ -8,7 +8,6 @@ const { Client: figmaClient } = require('figma-js')
 
 const { validName, validType } = require('./validate')
 const { findOne, findAll } = require('./node')
-const { processSvg } = require('./svg')
 const { createDir, saveSVG, saveJSON, readJSON } = require('./file')
 
 const conf = new Configstore('@glyphs/cli')
@@ -247,11 +246,8 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
         return promise.then(async () => {
           const [id, url] = Object.entries(images)[i]
           const [name, variant] = idMap[id]
-          const svg = await processSvg(svgString, variant, setConfig)
-
-          saveSVG(name, svgDir, variant, svg)
-          // components[components.findIndex(({ name: n }) => n === name )].variants[variant] = svg
-          svgMap[id] = svg
+          saveSVG(name, svgDir, variant, svgString)
+          svgMap[id] = svgString
           downloaded++
           const newProgress = downloaded / meta.total * 80 + 10
           progressVal = Math.min(progressVal, newProgress)
