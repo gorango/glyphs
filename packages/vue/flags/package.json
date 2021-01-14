@@ -10,9 +10,12 @@
     "build": "parcel build src/index.js"
   },
   "dependencies": {
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "@glyphs/flags": "^0.4.1"
+    "@glyphs/flags": "^0.4.2",
+    "@vue/component-compiler-utils": "^3.2.0",
+    "vue-template-compiler": "^2.6.12"
   }
 }
