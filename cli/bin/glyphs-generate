@@ -26,7 +26,6 @@ if (argv.help) {
 
 const fs = require('fs')
 const path = require('path')
-const Configstore = require('configstore')
 const { camelCase } = require('lodash')
 const inquirer = require('inquirer')
 
@@ -34,7 +33,7 @@ const inquirer = require('inquirer')
   const config = require(path.join(process.cwd(), 'glyphs.config.js'))
 
   if (!config || !config.generate) {
-    throw new Error
+    throw new Error(`A config file wasn't supplied.`)
   }
 
   const { target } = config.generate

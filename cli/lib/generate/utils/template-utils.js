@@ -16,7 +16,7 @@ module.exports.createIndex = ({ setName, components }, extension) => {
   return indexString
 }
 
-module.exports.s = n => Array(n + 1).fill(null).join(' ')
+module.exports.s = n => Array(n + 1).fill().join(' ')
 
 module.exports.createVariants = async function (variants, options) {
   return Object.keys(variants).reduce(async (p, variant) => p.then(async str => {
@@ -41,7 +41,8 @@ module.exports.createVariants = async function (variants, options) {
           const children = Object.entries(child.attributes).map(([attr, val]) => {
             let res = options.child.space
             switch (attr) {
-              // case 'stroke': break
+              // case 'stroke':
+                // res += options.child.attr(attr, `stroke`); break
               case 'stroke-width':
                 res += options.child.attr(attr, 'strokeWidth'); break
               case 'stroke-linecap':

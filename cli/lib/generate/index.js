@@ -10,7 +10,8 @@ const templates = {
   react: require('./react')
 }
 
-module.exports = async function wc ({ target, set, output }) {
+module.exports = async function wc (genConfig) {
+  const { target, set, output, defaultVariant, transform } = genConfig
   const setName = set.split('/').reverse()[0]
   const extension = { wc: 'js', vue: 'vue', react: 'jsx' }[target]
   const assetPath = path.join(process.cwd(), set)
@@ -18,6 +19,7 @@ module.exports = async function wc ({ target, set, output }) {
   const componentsPath = path.join(outputPath, 'icons')
   const indexPath = path.join(outputPath, 'index.js')
   const utilsPath = path.join(outputPath, 'utils.js')
+  const ratios = genConfig?.transform?.ratios || {}
 
   if (fs.existsSync(outputPath)) {
     fs.rmdirSync(outputPath, { recursive: true })
@@ -31,7 +33,7 @@ module.exports = async function wc ({ target, set, output }) {
     const componentName = upperFirst(camelCase(name))
     const className = startCase(setName) + componentName
     const tagName = `${kebabCase(setName)}-${kebabCase(name)}`
-    const componentString = await templates[target].component({ variants, className, tagName, set })
+    const componentString = await templates[target].component({ set, variants, defaultVariant, componentName, className, tagName, ratios })
     try {
       fs.writeFileSync(
         path.join(componentsPath, `${componentName}.${extension}`),
