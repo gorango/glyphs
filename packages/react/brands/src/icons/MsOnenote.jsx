@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -13,7 +13,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="54"
             height="63"
             rx="5"
-            fill="url(#paint0_linearQeIT)"
+            fill="url(#paint0_linear)"
           />
           <path
             d="M22 55.75H76V66.5C76 69.2614 73.7614 71.5 71 71.5H27C24.2386 71.5 22 69.2614 22 66.5V55.75Z"
@@ -35,7 +35,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           />
           <path
             d="M26.5 8.5C24.0147 8.5 22 10.5147 22 13V67C22 69.4853 24.0147 71.5 26.5 71.5H58V24.25H76V13C76 10.5147 73.9853 8.5 71.5 8.5H26.5Z"
-            fill="url(#paint1_linearQeIT)"
+            fill="url(#paint1_linear)"
           />
           <path
             d="M22 31.75C22 27.6079 25.3579 24.25 29.5 24.25H41.5C45.6421 24.25 49 27.6079 49 31.75V57.25C49 61.3921 45.6421 64.75 41.5 64.75H22V31.75Z"
@@ -48,7 +48,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="40.5"
             height="40.5"
             rx="5"
-            fill="url(#paint2_linearQeIT)"
+            fill="url(#paint2_linear)"
           />
           <rect
             x="4"
@@ -56,13 +56,13 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="40.5"
             height="40.5"
             rx="5"
-            fill="url(#paint3_linearQeIT)"
+            fill="url(#paint3_linear)"
           />
           <path
             d="M33.25 51.25V28.75H28.5009V41.8643L19.667 28.75H15.25V51.25H19.9327V37.6536L29.0987 51.25H33.25Z"
             fill="white"
           />
-          <defs><linearGradient id="paint0_linearQeIT" x1="22" y1="40" x2="59.125" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8C42AC"/><stop offset="1" stop-color="#C36DEF"/></linearGradient><linearGradient id="paint1_linearQeIT" x1="22" y1="40" x2="59.125" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8C42AC"/><stop offset="1" stop-color="#C36DEF"/></linearGradient><linearGradient id="paint2_linearQeIT" x1="4" y1="40" x2="46.75" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#44176C"/><stop offset="1" stop-color="#621F9C"/></linearGradient><linearGradient id="paint3_linearQeIT" x1="4" y1="40" x2="46.75" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#44176C"/><stop offset="1" stop-color="#621F9C"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="22" y1="40" x2="59.125" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8C42AC"/><stop offset="1" stop-color="#C36DEF"/></linearGradient><linearGradient id="paint1_linear" x1="22" y1="40" x2="59.125" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8C42AC"/><stop offset="1" stop-color="#C36DEF"/></linearGradient><linearGradient id="paint2_linear" x1="4" y1="40" x2="46.75" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#44176C"/><stop offset="1" stop-color="#621F9C"/></linearGradient><linearGradient id="paint3_linear" x1="4" y1="40" x2="46.75" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#44176C"/><stop offset="1" stop-color="#621F9C"/></linearGradient></defs>
         </>
       )
     case 'solid':

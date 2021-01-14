@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -23,15 +23,15 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M10.2842 48.7187C12.2703 63.7551 24.9841 74.9888 40.027 74.999V56.7142C33.4904 56.7142 28.187 51.3791 28.1714 44.7876L10.2842 48.7187Z"
-            fill="url(#paint0_linearkEAo)"
+            fill="url(#paint0_linear)"
           />
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M10 44.5036V44.7892H28.1704C28.186 38.1977 33.4894 32.8626 40.026 32.8626L36.1276 14.8633C21.3168 16.8094 10.1802 29.4433 10 44.5036Z"
-            fill="url(#paint1_linearkEAo)"
+            fill="url(#paint1_linear)"
           />
-          <defs><linearGradient id="paint0_linearkEAo" x1="25.1603" y1="15.0902" x2="25.1603" y2="56.3334" gradientUnits="userSpaceOnUse"><stop stop-color="#0052CC"/><stop offset="1" stop-color="#2684FF"/></linearGradient><linearGradient id="paint1_linearkEAo" x1="25.0177" y1="15.0917" x2="25.0177" y2="56.335" gradientUnits="userSpaceOnUse"><stop stop-color="#0052CC"/><stop offset="1" stop-color="#2684FF"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="25.1603" y1="15.0902" x2="25.1603" y2="56.3334" gradientUnits="userSpaceOnUse"><stop stop-color="#0052CC"/><stop offset="1" stop-color="#2684FF"/></linearGradient><linearGradient id="paint1_linear" x1="25.0177" y1="15.0917" x2="25.0177" y2="56.335" gradientUnits="userSpaceOnUse"><stop stop-color="#0052CC"/><stop offset="1" stop-color="#2684FF"/></linearGradient></defs>
         </>
       )
     case 'solid':

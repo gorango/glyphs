@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -35,8 +35,8 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
     case 'circle':
       return (
         <>
-          <mask id="mask08Pz7" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80"><circle cx="40" cy="40" r="40" fill="#C4C4C4"/></mask>
-          <g mask="url(#mask08Pz7)"><path d="M80 0H0V80H80V0Z" fill="#EB5757"/><path d="M40 64V16M64 40H16" stroke="#F2F2F2" stroke-width="14"/></g>
+          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80"><circle cx="40" cy="40" r="40" fill="#C4C4C4"/></mask>
+          <g mask="url(#mask0)"><path d="M80 0H0V80H80V0Z" fill="#EB5757"/><path d="M40 64V16M64 40H16" stroke="#F2F2F2" stroke-width="14"/></g>
         </>
       )
   }

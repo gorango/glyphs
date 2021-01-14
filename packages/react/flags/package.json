@@ -13,6 +13,6 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@glyphs/flags": "^0.4.1"
+    "@glyphs/flags": "^0.4.2"
   }
 }

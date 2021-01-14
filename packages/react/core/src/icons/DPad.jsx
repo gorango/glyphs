@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -101,24 +101,28 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           <path
             d="M31 15C31 13.3431 32.3431 12 34 12H46C47.6569 12 49 13.3431 49 15V25.8488C49 26.5899 48.7257 27.3048 48.2299 27.8557L42.2299 34.5224C41.0382 35.8465 38.9618 35.8465 37.7701 34.5224L31.7701 27.8557C31.2743 27.3048 31 26.5899 31 25.8488V15Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M65 31C66.6569 31 68 32.3431 68 34V46C68 47.6569 66.6569 49 65 49H54.1512C53.4101 49 52.6952 48.7257 52.1443 48.2299L45.4776 42.2299C44.1535 41.0382 44.1535 38.9618 45.4776 37.7701L52.1443 31.7701C52.6952 31.2743 53.4101 31 54.1512 31H65Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M31 65C31 66.6569 32.3431 68 34 68H46C47.6569 68 49 66.6569 49 65V54.1512C49 53.4101 48.7257 52.6952 48.2299 52.1443L42.2299 45.4776C41.0382 44.1535 38.9618 44.1535 37.7701 45.4776L31.7701 52.1443C31.2743 52.6952 31 53.4101 31 54.1512V65Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M15 31C13.3431 31 12 32.3431 12 34L12 46C12 47.6569 13.3431 49 15 49H25.8488C26.5899 49 27.3048 48.7257 27.8557 48.2299L34.5224 42.2299C35.8465 41.0382 35.8465 38.9618 34.5224 37.7701L27.8557 31.7701C27.3048 31.2743 26.5899 31 25.8488 31H15Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />

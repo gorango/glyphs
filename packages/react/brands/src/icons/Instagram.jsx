@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -13,7 +13,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="70"
             height="70"
             rx="15"
-            fill="url(#paint0_radialyCb6)"
+            fill="url(#paint0_radial)"
           />
           <rect
             x="5"
@@ -21,7 +21,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="70"
             height="70"
             rx="15"
-            fill="url(#paint1_radialyCb6)"
+            fill="url(#paint1_radial)"
           />
           <rect
             x="5"
@@ -29,7 +29,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="70"
             height="70"
             rx="15"
-            fill="url(#paint2_radialyCb6)"
+            fill="url(#paint2_radial)"
           />
           <path
             d="M57.5 26.25C57.5 28.3211 55.8211 30 53.75 30C51.6789 30 50 28.3211 50 26.25C50 24.1789 51.6789 22.5 53.75 22.5C55.8211 22.5 57.5 24.1789 57.5 26.25Z"
@@ -47,7 +47,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             d="M15 39C15 30.5992 15 26.3988 16.6349 23.1901C18.073 20.3677 20.3677 18.073 23.1901 16.6349C26.3988 15 30.5992 15 39 15H41C49.4008 15 53.6012 15 56.8099 16.6349C59.6323 18.073 61.927 20.3677 63.3651 23.1901C65 26.3988 65 30.5992 65 39V41C65 49.4008 65 53.6012 63.3651 56.8099C61.927 59.6323 59.6323 61.927 56.8099 63.3651C53.6012 65 49.4008 65 41 65H39C30.5992 65 26.3988 65 23.1901 63.3651C20.3677 61.927 18.073 59.6323 16.6349 56.8099C15 53.6012 15 49.4008 15 41V39ZM39 20H41C45.2829 20 48.1944 20.0039 50.4448 20.1878C52.6369 20.3669 53.7579 20.6915 54.5399 21.0899C56.4215 22.0487 57.9513 23.5785 58.9101 25.4601C59.3085 26.2421 59.6331 27.3631 59.8122 29.5552C59.9961 31.8056 60 34.7171 60 39V41C60 45.2829 59.9961 48.1944 59.8122 50.4448C59.6331 52.6369 59.3085 53.7579 58.9101 54.5399C57.9513 56.4215 56.4215 57.9513 54.5399 58.9101C53.7579 59.3085 52.6369 59.6331 50.4448 59.8122C48.1944 59.9961 45.2829 60 41 60H39C34.7171 60 31.8056 59.9961 29.5552 59.8122C27.3631 59.6331 26.2421 59.3085 25.4601 58.9101C23.5785 57.9513 22.0487 56.4215 21.0899 54.5399C20.6915 53.7579 20.3669 52.6369 20.1878 50.4448C20.0039 48.1944 20 45.2829 20 41V39C20 34.7171 20.0039 31.8056 20.1878 29.5552C20.3669 27.3631 20.6915 26.2421 21.0899 25.4601C22.0487 23.5785 23.5785 22.0487 25.4601 21.0899C26.2421 20.6915 27.3631 20.3669 29.5552 20.1878C31.8056 20.0039 34.7171 20 39 20Z"
             fill="white"
           />
-          <defs><radialGradient id="paint0_radialyCb6" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 57.5) rotate(-55.3758) scale(63.799)"><stop stop-color="#B13589"/><stop offset="0.79309" stop-color="#C62F94"/><stop offset="1" stop-color="#8A3AC8"/></radialGradient><radialGradient id="paint1_radialyCb6" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(27.5 77.5) rotate(-65.1363) scale(56.4856)"><stop stop-color="#E0E8B7"/><stop offset="0.444662" stop-color="#FB8A2E"/><stop offset="0.71474" stop-color="#E2425C"/><stop offset="1" stop-color="#E2425C" stop-opacity="0"/></radialGradient><radialGradient id="paint2_radialyCb6" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.25 7.5) rotate(-8.1301) scale(97.2272 20.7959)"><stop offset="0.156701" stop-color="#406ADC"/><stop offset="0.467799" stop-color="#6A45BE"/><stop offset="1" stop-color="#6A45BE" stop-opacity="0"/></radialGradient></defs>
+          <defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 57.5) rotate(-55.3758) scale(63.799)"><stop stop-color="#B13589"/><stop offset="0.79309" stop-color="#C62F94"/><stop offset="1" stop-color="#8A3AC8"/></radialGradient><radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(27.5 77.5) rotate(-65.1363) scale(56.4856)"><stop stop-color="#E0E8B7"/><stop offset="0.444662" stop-color="#FB8A2E"/><stop offset="0.71474" stop-color="#E2425C"/><stop offset="1" stop-color="#E2425C" stop-opacity="0"/></radialGradient><radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.25 7.5) rotate(-8.1301) scale(97.2272 20.7959)"><stop offset="0.156701" stop-color="#406ADC"/><stop offset="0.467799" stop-color="#6A45BE"/><stop offset="1" stop-color="#6A45BE" stop-opacity="0"/></radialGradient></defs>
         </>
       )
     case 'solid':

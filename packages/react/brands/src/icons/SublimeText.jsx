@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -17,7 +17,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M37.1274 46.062L58.9978 52.7366C59.4741 52.8821 59.8729 52.6512 59.9748 52.211C59.8826 52.7248 59.4768 53.2148 58.9922 53.363L21.0022 64.9568C20.4489 65.1257 20 64.7867 20 64.2007V52.3503C20 51.7653 20.4489 51.1525 21.0022 50.9835L37.1274 46.062Z"
-            fill="url(#paint0_linearnb0R)"
+            fill="url(#paint0_linear)"
           />
           <path
             fill-rule="evenodd"
@@ -25,7 +25,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             d="M58.9922 15.0434C59.5444 14.8745 59.9944 15.2135 59.9944 15.7995V27.6499C59.9944 28.2349 59.5444 28.8477 58.9922 29.0167L43.0271 33.8893L58.9978 38.7634C59.5511 38.9324 60 39.5452 60 40.1302V51.9817C60 52.5666 59.5511 52.9056 58.9978 52.7367L21.0022 41.1408C20.6318 41.0277 20.3082 40.7157 20.1347 40.346C20.0491 40.2158 20 40.0491 20 39.8554V39.773V28.005V27.9226C20 27.7289 20.049 27.5623 20.1347 27.4321C20.3081 27.0624 20.6318 26.7503 21.0022 26.6372L58.9922 15.0434Z"
             fill="#FF9800"
           />
-          <defs><linearGradient id="paint0_linearnb0R" x1="42.0438" y1="57.1863" x2="46.2578" y2="46.4748" gradientUnits="userSpaceOnUse"><stop stop-color="#FF9700"/><stop offset="0.53" stop-color="#F48E00"/><stop offset="1" stop-color="#D06F00"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="42.0438" y1="57.1863" x2="46.2578" y2="46.4748" gradientUnits="userSpaceOnUse"><stop stop-color="#FF9700"/><stop offset="0.53" stop-color="#F48E00"/><stop offset="1" stop-color="#D06F00"/></linearGradient></defs>
         </>
       )
     case 'solid':

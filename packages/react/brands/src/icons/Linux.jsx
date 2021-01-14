@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -17,47 +17,47 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           />
           <path
             d="M45.0352 19.4868C44.9533 21.8178 42.4806 23.8425 39.5166 24.0297C36.5527 24.2168 34.2273 22.4473 34.3092 20.1163C34.3911 17.7853 36.8638 15.7606 39.8278 15.5734C42.7918 15.4033 45.1171 17.1558 45.0352 19.4868Z"
-            fill="url(#paint0_linear8xQ8)"
+            fill="url(#paint0_linear)"
           />
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M39.6651 25.1522C39.6887 26.4199 40.2693 27.5006 41.0845 27.9886C38.4247 27.7504 35.129 28.7228 35.129 30.5629C35.088 33.6759 33.3554 37.5489 32.1083 40.3366C31.8627 40.8857 31.6359 41.3928 31.4445 41.8435C30.6724 43.7554 30.2093 45.7999 30.1544 47.8053C28.1096 44.9868 29.5954 41.3711 30.3965 39.8018C31.4626 37.7367 31.442 37.4789 31.0279 37.9629C29.4408 40.662 26.4516 46.0831 30.1946 49.3399C30.3135 50.7942 30.6678 52.2033 31.2972 53.4985C36.3081 63.6052 45.6913 59.4536 48.7862 54.2131C49.198 53.4681 49.5309 52.7472 49.7953 52.0507C49.9502 52.1483 50.1161 52.2238 50.2928 52.2735C51.8485 52.7329 54.1738 50.9804 54.7306 49.8915C55.402 48.4452 54.7142 47.4584 52.4216 46.2844C52.3047 46.2264 52.1892 46.1721 52.0751 46.1214C52.9544 42.4189 50.5316 38.569 48.801 36.9356C48.4783 36.8561 48.4328 37.0391 48.9336 37.5389C50.0235 38.5832 52.3939 42.3071 51.1114 45.7728C50.9002 45.716 50.6969 45.6761 50.5031 45.6541C50.1092 43.2896 49.0587 41.45 48.3245 40.1645C48.1582 39.8733 48.0081 39.6105 47.8856 39.3764C47.6384 38.9043 47.3429 38.4153 47.0295 37.8968C45.8218 35.8985 44.3485 33.4606 44.3485 29.8483C44.1638 29.0535 43.4138 28.5235 42.4154 28.2309C43.5742 27.9971 44.4441 26.6433 44.414 25.0161C44.3812 23.2636 43.284 21.8684 41.974 21.9025C40.664 21.9365 39.6159 23.3997 39.6651 25.1522ZM40.7458 25.5436C40.7295 26.5134 41.188 27.2961 41.7939 27.2961C42.3834 27.2961 42.891 26.5134 42.9074 25.5606C42.9238 24.5908 42.4653 23.8081 41.8594 23.8081C41.2535 23.8081 40.7622 24.5908 40.7458 25.5436Z"
-            fill="url(#paint1_linear8xQ8)"
+            fill="url(#paint1_linear)"
           />
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M36.39 27.8746C37.3397 27.8235 38.0275 26.5474 37.9456 25.0331C37.8638 23.5188 37.0286 22.3448 36.0788 22.3959C35.129 22.4469 34.4413 23.723 34.5231 25.2373C34.605 26.7516 35.4402 27.9256 36.39 27.8746ZM36.9631 25.5606C37.045 26.3603 36.7502 27.0409 36.3244 27.1089C35.8987 27.16 35.4893 26.5645 35.4074 25.7648C35.3255 24.9651 35.6203 24.2845 36.0461 24.2164C36.4718 24.1654 36.8812 24.7609 36.9631 25.5606Z"
-            fill="url(#paint2_linear8xQ8)"
+            fill="url(#paint2_linear)"
           />
           <path
             d="M40.9897 24.9993C40.9405 25.5438 41.1862 25.9862 41.5301 26.0202C41.8739 26.0542 42.2014 25.6288 42.2506 25.1014C42.2997 24.5569 42.0541 24.1146 41.7102 24.0805C41.3663 24.0465 41.0388 24.4719 40.9897 24.9993Z"
-            fill="url(#paint3_linear8xQ8)"
+            fill="url(#paint3_linear)"
           />
           <path
             d="M36.6029 25.1361C36.652 25.5784 36.4719 25.9698 36.2099 26.0038C35.9479 26.0378 35.7022 25.6975 35.6531 25.2382C35.604 24.7958 35.7841 24.4044 36.0461 24.3704C36.3081 24.3364 36.5538 24.6937 36.6029 25.1361Z"
-            fill="url(#paint4_linear8xQ8)"
+            fill="url(#paint4_linear)"
           />
           <path
             d="M46.672 42.8818C46.672 45.8763 43.9046 49.7556 39.1557 49.7216C34.2594 49.7556 32.1797 45.8763 32.1797 42.8818C32.1797 39.8872 35.422 37.4541 39.4177 37.4541C43.4297 37.4711 46.672 39.8872 46.672 42.8818Z"
-            fill="url(#paint5_linear8xQ8)"
+            fill="url(#paint5_linear)"
           />
           <path
             d="M44.0865 33.4732C44.0374 36.5699 42.0887 37.3015 39.6324 37.3015C37.176 37.3015 35.3911 36.8421 35.1782 33.4732C35.1782 31.3634 37.176 30.1384 39.6324 30.1384C42.0887 30.1213 44.0865 31.3464 44.0865 33.4732Z"
-            fill="url(#paint6_linear8xQ8)"
+            fill="url(#paint6_linear)"
           />
           <path
             d="M29.2336 38.2369C30.8384 35.7017 34.2281 31.8053 29.8722 38.7813C26.3351 44.5323 28.5622 48.2244 29.7085 49.2453C33.0163 52.3079 32.8853 54.3667 30.2816 52.7503C24.6976 49.2963 25.8602 43.4773 29.2336 38.2369Z"
-            fill="url(#paint7_linear8xQ8)"
+            fill="url(#paint7_linear)"
           />
           <path
             d="M52.4699 39.2752C51.0779 36.2976 46.6566 28.7432 52.6827 37.5227C58.1686 45.4685 54.3203 50.9982 53.6325 51.5427C52.9448 52.0872 50.6358 53.1931 51.3072 51.2705C51.995 49.3478 55.4011 45.7067 52.4699 39.2752Z"
-            fill="url(#paint8_linear8xQ8)"
+            fill="url(#paint8_linear)"
           />
           <path
             d="M28.0227 62.7549C24.3546 60.7302 19.0326 63.1463 20.9649 57.6676C21.3579 56.4255 20.3917 54.5539 21.014 53.3459C21.7509 51.8656 23.3393 52.1889 24.2891 51.202C25.2225 50.1812 25.812 48.4116 27.5642 48.6839C29.3 48.9561 30.4627 51.168 31.6745 53.8903C32.5751 55.83 35.752 58.5693 35.5391 60.7472C35.2771 64.0821 31.6253 64.7116 28.0227 62.7549Z"
-            fill="url(#paint9_linear8xQ8)"
+            fill="url(#paint9_linear)"
           />
           <path
             fill-rule="evenodd"
@@ -67,7 +67,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           />
           <path
             d="M53.453 61.82C56.1386 58.4341 62.1156 59.1317 58.0872 54.4868C57.2357 53.4829 57.4977 51.3391 56.4497 50.4203C55.2215 49.2973 53.8624 50.2161 52.6178 49.6376C51.3733 49.0081 50.0632 47.8 48.5403 48.6508C47.0174 49.5185 46.8536 51.7644 46.7063 54.725C46.5752 56.8518 44.7084 60.4078 45.7073 62.3645C47.1484 65.3931 50.8984 64.9848 53.453 61.82Z"
-            fill="url(#paint10_linear8xQ8)"
+            fill="url(#paint10_linear)"
           />
           <path
             fill-rule="evenodd"
@@ -77,11 +77,11 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           />
           <path
             d="M52.2885 57.2932C56.4478 50.9128 53.3529 50.9638 52.3048 50.4704C51.2568 49.9599 50.1596 48.9561 48.9315 49.6537C47.7033 50.3683 47.6378 52.2059 47.6051 54.6219C47.5559 56.3574 46.164 59.2669 46.9992 60.8833C48.0144 62.7719 50.4708 60.0326 52.2885 57.2932Z"
-            fill="url(#paint11_linear8xQ8)"
+            fill="url(#paint11_linear)"
           />
           <path
             d="M27.1699 58.2117C20.9472 54.0261 23.8621 52.5969 24.7955 51.9333C25.9254 51.0826 25.9418 49.4492 27.3337 49.6023C28.7256 49.7555 29.5444 51.542 30.4778 53.7539C31.1656 55.3363 33.5564 57.4461 33.3763 59.2666C33.147 61.4105 29.8555 59.9983 27.1699 58.2117Z"
-            fill="url(#paint12_linear8xQ8)"
+            fill="url(#paint12_linear)"
           />
           <path
             d="M54.3698 49.8401C53.8786 50.7249 51.8808 52.1201 50.5543 51.7458C49.1952 51.3885 48.5729 49.3978 48.8513 47.9005C49.0969 46.199 50.5543 46.114 52.3884 46.9647C54.3371 47.8835 54.943 48.6661 54.3698 49.8401Z"
@@ -89,11 +89,11 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           />
           <path
             d="M53.0264 49.3477C52.7153 49.9602 51.4053 50.93 50.4882 50.6748C49.5712 50.4196 49.1127 49.0414 49.2601 48.0035C49.3911 46.8295 50.3736 46.7614 51.6181 47.3399C52.9609 47.9865 53.3867 48.531 53.0264 49.3477Z"
-            fill="url(#paint13_linear8xQ8)"
+            fill="url(#paint13_linear)"
           />
           <path
             d="M36.0925 27.1439C36.7475 26.5143 38.3359 24.5917 41.349 26.5994C41.9058 26.9737 42.3643 27.0078 43.4287 27.4842C45.5739 28.403 44.5586 30.6149 42.2661 31.3635C41.2835 31.6868 40.3993 32.9288 38.6307 32.8097C37.1078 32.7247 36.7148 31.6868 35.7813 31.1253C34.1274 30.1555 33.8818 28.8453 34.7824 28.1477C35.6831 27.4501 36.027 27.1949 36.0925 27.1439Z"
-            fill="url(#paint14_linear8xQ8)"
+            fill="url(#paint14_linear)"
           />
           <path
             fill-rule="evenodd"
@@ -109,9 +109,9 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           />
           <path
             d="M37.1109 26.973C37.4384 26.6667 38.47 25.833 39.8292 26.6837C40.124 26.8539 40.4187 27.041 40.8445 27.2963C41.7124 27.8237 41.2866 28.5894 40.2386 29.0658C39.7637 29.2699 38.9777 29.7123 38.3882 29.6783C37.7331 29.6102 37.291 29.1679 36.8652 28.8786C36.0628 28.3341 36.112 27.8748 36.4886 27.5174C36.767 27.2452 37.0781 26.99 37.1109 26.973Z"
-            fill="url(#paint15_linear8xQ8)"
+            fill="url(#paint15_linear)"
           />
-          <defs><linearGradient id="paint0_linear8xQ8" x1="40.145" y1="15.7659" x2="39.5915" y2="23.2654" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.8"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint1_linear8xQ8" x1="32.2425" y1="56.6804" x2="28.1274" y2="43.1789" gradientUnits="userSpaceOnUse"><stop stop-color="#FFEED7"/><stop offset="1" stop-color="#BDBFC2"/></linearGradient><linearGradient id="paint2_linear8xQ8" x1="32.2425" y1="56.6804" x2="28.1274" y2="43.1789" gradientUnits="userSpaceOnUse"><stop stop-color="#FFEED7"/><stop offset="1" stop-color="#BDBFC2"/></linearGradient><linearGradient id="paint3_linear8xQ8" x1="41.6698" y1="24.1389" x2="41.4365" y2="25.8858" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint4_linear8xQ8" x1="36.0854" y1="24.4578" x2="36.3364" y2="25.8713" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint5_linear8xQ8" x1="39.4029" y1="39.077" x2="39.4444" y2="49.0684" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.8"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint6_linear8xQ8" x1="39.6259" y1="32.812" x2="39.672" y2="36.7848" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint7_linear8xQ8" x1="29.2995" y1="35.2637" x2="29.2995" y2="49.8429" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint8_linear8xQ8" x1="52.5821" y1="33.8401" x2="52.5765" y2="47.0132" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint9_linear8xQ8" x1="28.5719" y1="56.0933" x2="26.339" y2="63.5532" gradientUnits="userSpaceOnUse"><stop stop-color="#FFA63F"/><stop offset="1" stop-color="#FFFF00"/></linearGradient><linearGradient id="paint10_linear8xQ8" x1="49.7044" y1="53.8255" x2="55.6635" y2="61.9508" gradientUnits="userSpaceOnUse"><stop stop-color="#FFA63F"/><stop offset="1" stop-color="#FFFF00"/></linearGradient><linearGradient id="paint11_linear8xQ8" x1="51.2991" y1="47.3331" x2="49.2153" y2="57.151" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint12_linear8xQ8" x1="28.1155" y1="49.7606" x2="28.5287" y2="60.8098" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint13_linear8xQ8" x1="50.9382" y1="47.1545" x2="51.4216" y2="50.456" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint14_linear8xQ8" x1="39.4099" y1="26.9599" x2="39.4503" y2="32.7744" gradientUnits="userSpaceOnUse"><stop stop-color="#FFA63F"/><stop offset="1" stop-color="#FFFF00"/></linearGradient><linearGradient id="paint15_linear8xQ8" x1="38.777" y1="26.4094" x2="38.766" y2="29.4839" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="40.145" y1="15.7659" x2="39.5915" y2="23.2654" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.8"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint1_linear" x1="32.2425" y1="56.6804" x2="28.1274" y2="43.1789" gradientUnits="userSpaceOnUse"><stop stop-color="#FFEED7"/><stop offset="1" stop-color="#BDBFC2"/></linearGradient><linearGradient id="paint2_linear" x1="32.2425" y1="56.6804" x2="28.1274" y2="43.1789" gradientUnits="userSpaceOnUse"><stop stop-color="#FFEED7"/><stop offset="1" stop-color="#BDBFC2"/></linearGradient><linearGradient id="paint3_linear" x1="41.6698" y1="24.1389" x2="41.4365" y2="25.8858" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint4_linear" x1="36.0854" y1="24.4578" x2="36.3364" y2="25.8713" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint5_linear" x1="39.4029" y1="39.077" x2="39.4444" y2="49.0684" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.8"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint6_linear" x1="39.6259" y1="32.812" x2="39.672" y2="36.7848" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint7_linear" x1="29.2995" y1="35.2637" x2="29.2995" y2="49.8429" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint8_linear" x1="52.5821" y1="33.8401" x2="52.5765" y2="47.0132" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint9_linear" x1="28.5719" y1="56.0933" x2="26.339" y2="63.5532" gradientUnits="userSpaceOnUse"><stop stop-color="#FFA63F"/><stop offset="1" stop-color="#FFFF00"/></linearGradient><linearGradient id="paint10_linear" x1="49.7044" y1="53.8255" x2="55.6635" y2="61.9508" gradientUnits="userSpaceOnUse"><stop stop-color="#FFA63F"/><stop offset="1" stop-color="#FFFF00"/></linearGradient><linearGradient id="paint11_linear" x1="51.2991" y1="47.3331" x2="49.2153" y2="57.151" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint12_linear" x1="28.1155" y1="49.7606" x2="28.5287" y2="60.8098" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint13_linear" x1="50.9382" y1="47.1545" x2="51.4216" y2="50.456" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="paint14_linear" x1="39.4099" y1="26.9599" x2="39.4503" y2="32.7744" gradientUnits="userSpaceOnUse"><stop stop-color="#FFA63F"/><stop offset="1" stop-color="#FFFF00"/></linearGradient><linearGradient id="paint15_linear" x1="38.777" y1="26.4094" x2="38.766" y2="29.4839" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.65"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs>
         </>
       )
     case 'solid':

@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -90,7 +90,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
-            d="M8.16779 21L31.8322 21C31.9432 21.6565 32 22.3253 32 23C32 23.6746 31.9432 24.3435 31.8322 25L8.16779 25C8.05681 24.3434 8 23.6746 8 23C8 22.3253 8.05681 21.6566 8.16779 21Z"
+            d="M8.16779 21L31.8322 21C31.9432 21.6565 32 22.3253 32 23C32 23.6746 31.9432 24.3435 31.8322 25L8.16779 25C8.05681 24.3434 8 23.6746 8 23C8 22.3253 8.05681 21.6565 8.16779 21Z"
             fill="#E0E0E0"
           />
         </>
@@ -116,6 +116,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           <path
             d="M56.8995 54.8999L47 64.7994C41.5327 70.2667 32.6683 70.2667 27.201 64.7994C21.7337 59.3321 21.7337 50.4677 27.201 45.0004L37.1005 35.1009M56.8995 54.8999L37.1005 35.1009M56.8995 54.8999L66.799 45.0004C72.2663 39.5331 72.2663 30.6688 66.799 25.2014C61.3316 19.7341 52.4673 19.7341 47 25.2014L37.1005 35.1009M8 23C8 19.8175 9.26426 16.765 11.5146 14.5146C13.765 12.2643 16.8173 11 19.9998 11C23.1824 11 26.2348 12.2644 28.4853 14.5148C30.7356 16.7652 32 19.8175 32 23M8 23C8 26.1825 9.26426 29.235 11.5147 31.4853C13.765 33.7357 16.8173 35 19.9998 35C23.1824 35 26.2348 33.7356 28.4853 31.4852C30.7356 29.2348 32 26.1825 32 23M8 23L32 23"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />

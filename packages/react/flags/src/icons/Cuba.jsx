@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -30,7 +30,6 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             fill="#2F80ED"
           />
           <path
-            opacity="0.9"
             d="M0 0V80L69 40L0 0Z"
             fill="#EB5757"
           />
@@ -66,7 +65,6 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             fill="#2F80ED"
           />
           <path
-            opacity="0.9"
             d="M0 0V80L46 40L0 0Z"
             fill="#EB5757"
           />
@@ -79,8 +77,8 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
     case 'circle':
       return (
         <>
-          <mask id="mask07465" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80"><circle cx="40" cy="40" r="40" fill="#C4C4C4"/></mask>
-          <g mask="url(#mask07465)"><rect width="80" height="80" fill="#F2F2F2"/><rect width="80" height="16" fill="#2F80ED"/><rect y="64" width="80" height="16" fill="#2F80ED"/><rect y="32" width="80" height="16" fill="#2F80ED"/><path opacity="0.9" d="M0 0V80L46 40L0 0Z" fill="#EB5757"/><path d="M15 28L17.6942 36.2918H26.4127L19.3593 41.4164L22.0534 49.7082L15 44.5836L7.94658 49.7082L10.6407 41.4164L3.58732 36.2918H12.3058L15 28Z" fill="#F2F2F2"/></g>
+          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80"><circle cx="40" cy="40" r="40" fill="#C4C4C4"/></mask>
+          <g mask="url(#mask0)"><rect width="80" height="80" fill="#F2F2F2"/><rect width="80" height="16" fill="#2F80ED"/><rect y="64" width="80" height="16" fill="#2F80ED"/><rect y="32" width="80" height="16" fill="#2F80ED"/><path d="M0 0V80L46 40L0 0Z" fill="#EB5757"/><path d="M15 28L17.6942 36.2918H26.4127L19.3593 41.4164L22.0534 49.7082L15 44.5836L7.94658 49.7082L10.6407 41.4164L3.58732 36.2918H12.3058L15 28Z" fill="#F2F2F2"/></g>
         </>
       )
   }

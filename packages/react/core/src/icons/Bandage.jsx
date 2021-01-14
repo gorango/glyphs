@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -136,36 +136,42 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           <path
             d="M4 28C4 25.7909 5.79086 24 8 24H72C74.2091 24 76 25.7909 76 28V52C76 54.2091 74.2091 56 72 56H8C5.79086 56 4 54.2091 4 52V28Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M24 24H56V56H24V24Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M36 33C36 32.4477 35.5523 32 35 32H33C32.4477 32 32 32.4477 32 33V35C32 35.5523 32.4477 36 33 36H35C35.5523 36 36 35.5523 36 35V33Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M48 33C48 32.4477 47.5523 32 47 32H45C44.4477 32 44 32.4477 44 33V35C44 35.5523 44.4477 36 45 36H47C47.5523 36 48 35.5523 48 35V33Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M44 45C44 44.4477 44.4477 44 45 44H47C47.5523 44 48 44.4477 48 45V47C48 47.5523 47.5523 48 47 48H45C44.4477 48 44 47.5523 44 47V45Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M36 45C36 44.4477 35.5523 44 35 44H33C32.4477 44 32 44.4477 32 45V47C32 47.5523 32.4477 48 33 48H35C35.5523 48 36 47.5523 36 47V45Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />

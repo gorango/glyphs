@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -22,16 +22,16 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
     case 'square':
       return (
         <>
-          <g clip-path="url(#clip0OkNQ)"><path d="M80 0V80H0V0H80Z" fill="#EB5757"/><path fill-rule="evenodd" clip-rule="evenodd" d="M-20 80H11L28 72L11 64L28 56L11 48L28 40L11 32L28 24L11 16L28 8L11 0H-20V80Z" fill="#F2F2F2"/></g>
-          <defs><clipPath id="clip0OkNQ"><rect width="80" height="80" fill="white"/></clipPath></defs>
+          <g clip-path="url(#clip0)"><path d="M80 0V80H0V0H80Z" fill="#EB5757"/><path fill-rule="evenodd" clip-rule="evenodd" d="M-20 80H11L28 72L11 64L28 56L11 48L28 40L11 32L28 24L11 16L28 8L11 0H-20V80Z" fill="#F2F2F2"/></g>
+          <defs><clipPath id="clip0"><rect width="80" height="80" fill="white"/></clipPath></defs>
         </>
       )
     case 'circle':
       return (
         <>
-          <mask id="mask0WPQO" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80"><circle cx="40" cy="40" r="40" fill="#C4C4C4"/></mask>
-          <g mask="url(#mask0WPQO)"><g clip-path="url(#clip0WPQO)"><path d="M80 0V80H0V0H80Z" fill="#EB5757"/><path fill-rule="evenodd" clip-rule="evenodd" d="M-20 80H11L28 72L11 64L28 56L11 48L28 40L11 32L28 24L11 16L28 8L11 0H-20V80Z" fill="#F2F2F2"/></g></g>
-          <defs><clipPath id="clip0WPQO"><rect width="80" height="80" fill="white"/></clipPath></defs>
+          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80"><circle cx="40" cy="40" r="40" fill="#C4C4C4"/></mask>
+          <g mask="url(#mask0)"><g clip-path="url(#clip0)"><path d="M80 0V80H0V0H80Z" fill="#EB5757"/><path fill-rule="evenodd" clip-rule="evenodd" d="M-20 80H11L28 72L11 64L28 56L11 48L28 40L11 32L28 24L11 16L28 8L11 0H-20V80Z" fill="#F2F2F2"/></g></g>
+          <defs><clipPath id="clip0"><rect width="80" height="80" fill="white"/></clipPath></defs>
         </>
       )
   }

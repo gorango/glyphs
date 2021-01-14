@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -15,7 +15,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           />
           <path
             d="M70 40C70 56.5685 56.5685 70 40 70C33.6804 70 27.8172 68.046 22.9816 64.7091L12.7273 67.2727L15.4144 57.196C12.0023 52.3267 10 46.3972 10 40C10 23.4315 23.4315 10 40 10C56.5685 10 70 23.4315 70 40Z"
-            fill="url(#paint0_linearB1AK)"
+            fill="url(#paint0_linear)"
           />
           <path
             fill-rule="evenodd"
@@ -27,7 +27,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             d="M31.2501 23.7495C30.4179 22.078 29.1413 22.226 27.8517 22.226C25.5469 22.226 21.9531 24.9867 21.9531 30.1246C21.9531 34.3355 23.8086 38.9448 30.061 45.84C36.0951 52.4945 44.0235 55.9368 50.6055 55.8196C57.1875 55.7024 58.5417 50.0384 58.5417 48.1256C58.5417 47.2777 58.0156 46.8547 57.6532 46.7398C55.4102 45.6634 51.2733 43.6576 50.3321 43.2808C49.3908 42.9039 48.8993 43.4136 48.5938 43.6909C47.7402 44.5044 46.0481 46.9017 45.4688 47.4409C44.8894 47.9801 44.0257 47.7072 43.6663 47.5034C42.3436 46.9726 38.7573 45.3774 35.8987 42.6063C32.3633 39.1792 32.1558 38.0001 31.4898 36.9505C30.9569 36.1109 31.3479 35.5957 31.543 35.3706C32.3047 34.4917 33.3565 33.1347 33.8282 32.4604C34.2999 31.7861 33.9254 30.7623 33.7007 30.1247C32.7344 27.3823 31.9158 25.0866 31.2501 23.7495Z"
             fill="white"
           />
-          <defs><linearGradient id="paint0_linearB1AK" x1="66.25" y1="17.5" x2="10" y2="70" gradientUnits="userSpaceOnUse"><stop stop-color="#5BD066"/><stop offset="1" stop-color="#27B43E"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="66.25" y1="17.5" x2="10" y2="70" gradientUnits="userSpaceOnUse"><stop stop-color="#5BD066"/><stop offset="1" stop-color="#27B43E"/></linearGradient></defs>
         </>
       )
     case 'solid':

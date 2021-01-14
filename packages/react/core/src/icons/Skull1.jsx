@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -109,24 +109,28 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           <path
             d="M48.7326 13.4358C43.0682 11.5214 36.9317 11.5214 31.2673 13.4358L30.231 13.786C24.9108 15.5841 20.3806 19.1749 17.4153 23.944L17.2119 24.2712C14.1338 29.2217 13.029 35.1484 14.1165 40.8755C15.117 46.1441 17.9069 50.8954 22 54.3333V62C22 65.3137 24.6862 68 28 68C31.3137 68 34 65.3137 34 62C34 65.3137 36.6862 68 40 68C43.3137 68 46 65.3137 46 62C46 65.3137 48.6862 68 52 68C55.3137 68 58 65.3137 58 62V54.3333C62.093 50.8954 64.883 46.1441 65.8834 40.8755C66.9709 35.1484 65.8661 29.2217 62.788 24.2712L62.5846 23.944C59.6193 19.1749 55.0891 15.5841 49.7689 13.786L48.7326 13.4358Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M26.4019 30.5C28.0096 29.5718 29.9904 29.5718 31.5981 30.5C33.2058 31.4282 34.1962 33.1436 34.1962 35C34.1962 36.8564 33.2058 38.5718 31.5981 39.5C29.9904 40.4282 28.0096 40.4282 26.4019 39.5C24.7942 38.5718 23.8038 36.8564 23.8038 35C23.8038 33.1436 24.7942 31.4282 26.4019 30.5Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M48.4019 30.5C50.0096 29.5718 51.9904 29.5718 53.5981 30.5C55.2058 31.4282 56.1962 33.1436 56.1962 35C56.1962 36.8564 55.2058 38.5718 53.5981 39.5C51.9904 40.4282 50.0096 40.4282 48.4019 39.5C46.7942 38.5718 45.8038 36.8564 45.8038 35C45.8038 33.1436 46.7942 31.4282 48.4019 30.5Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M40 41L45.1962 50H34.8038L40 41Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
