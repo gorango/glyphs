@@ -1,4 +1,4 @@
-const { createVariants, s, createIndex } = require('../utils/template-utils')
+const { createVariants, s, createIndex } = require('./utils/template-utils')
 
 module.exports.index = createIndex
 

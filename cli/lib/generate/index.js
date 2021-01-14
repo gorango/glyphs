@@ -5,9 +5,9 @@ const { parse, stringify } = require('svgson')
 const { kebabCase, startCase, camelCase, upperFirst } = require('lodash')
 
 const templates = {
-  wc: require('./wc/template'),
-  vue: require('./vue/template'),
-  react: require('./react/template')
+  wc: require('./wc'),
+  vue: require('./vue'),
+  react: require('./react')
 }
 
 module.exports = async function wc ({ target, set, output }) {
