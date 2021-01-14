@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0-alpha.3](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.0-alpha.2...@glyphs/cli-v0.3.0-alpha.3) (2021-01-14)
+
+
+### Bug Fixes
+
+* **cli:** clean up svg strings in components ([4e5593e](https://github.com/gorango/glyphs/commit/4e5593e339502f18dff18878b1fbf116f1f1c7f3))
+* **cli:gen:** cleanup, update templates ([d3d1d26](https://github.com/gorango/glyphs/commit/d3d1d26f05681ac92f1d6cffdaf692d9bf6782f7))
+* **cli:gen:** correct paths ([8f7733a](https://github.com/gorango/glyphs/commit/8f7733a763b53878f9dd769f6cb3929f7b0d654d))
+
 ## [0.3.0-alpha.2](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.0-alpha.1...@glyphs/cli-v0.3.0-alpha.2) (2021-01-13)
 
 
