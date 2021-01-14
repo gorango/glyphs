@@ -19,7 +19,7 @@ After installing, run `glyphs` to view options available and instructions for us
   |_____|_|_  |  _|_|_|___|
           |___|_|
 
-  Running @glyphs/cli v0.0.1
+  Running @glyphs/cli
 
   Example usage
     $ glyphs <command> <options>
@@ -37,6 +37,8 @@ After installing, run `glyphs` to view options available and instructions for us
     get, g        Get details on the icon set config
     list, l       List configured icon sets
     sync, s       Sync an icon set to the current directory
+    preview, p    Preview a local icon set in the browser
+    generate      Generate a JS component set
     help, h       Display this message
 
 ```

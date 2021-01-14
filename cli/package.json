@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/gorango/glyphs/issues"
   },
-  "homepage": "https://glyphs.fyi/cli",
+  "homepage": "https://glyphs.fyi/docs/cli",
   "dependencies": {
     "axios": "^0.21.1",
     "axios-retry": "^3.1.9",
