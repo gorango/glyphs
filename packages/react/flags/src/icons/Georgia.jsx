@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -125,8 +125,8 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
     case 'circle':
       return (
         <>
-          <mask id="mask06zAk" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80"><circle cx="40" cy="40" r="40" fill="#C4C4C4"/></mask>
-          <g mask="url(#mask06zAk)"><path d="M80 0H0V80H80V0Z" fill="#F2F2F2"/><path d="M0 40H80" stroke="#EB5757" stroke-width="16"/><path d="M40 80V0" stroke="#EB5757" stroke-width="16"/><path d="M9 17H25" stroke="#EB5757" stroke-width="6"/><path d="M17 25V9" stroke="#EB5757" stroke-width="6"/><path d="M9 64H25" stroke="#EB5757" stroke-width="6"/><path d="M17 72V56" stroke="#EB5757" stroke-width="6"/><path d="M54.3333 17H70.3333" stroke="#EB5757" stroke-width="6"/><path d="M62.3333 25V9" stroke="#EB5757" stroke-width="6"/><path d="M54.3333 64H70.3333" stroke="#EB5757" stroke-width="6"/><path d="M62.3333 72V56" stroke="#EB5757" stroke-width="6"/></g>
+          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80"><circle cx="40" cy="40" r="40" fill="#C4C4C4"/></mask>
+          <g mask="url(#mask0)"><path d="M80 0H0V80H80V0Z" fill="#F2F2F2"/><path d="M0 40H80" stroke="#EB5757" stroke-width="16"/><path d="M40 80V0" stroke="#EB5757" stroke-width="16"/><path d="M9 17H25" stroke="#EB5757" stroke-width="6"/><path d="M17 25V9" stroke="#EB5757" stroke-width="6"/><path d="M9 64H25" stroke="#EB5757" stroke-width="6"/><path d="M17 72V56" stroke="#EB5757" stroke-width="6"/><path d="M54.3333 17H70.3333" stroke="#EB5757" stroke-width="6"/><path d="M62.3333 25V9" stroke="#EB5757" stroke-width="6"/><path d="M54.3333 64H70.3333" stroke="#EB5757" stroke-width="6"/><path d="M62.3333 72V56" stroke="#EB5757" stroke-width="6"/></g>
         </>
       )
   }

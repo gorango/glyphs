@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -27,15 +27,15 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           />
           <path
             d="M39.9996 45.7692L12.7773 65V27.5L39.9996 45.7692Z"
-            fill="url(#paint0_linearSP5i)"
+            fill="url(#paint0_linear)"
             style="mix-blend-mode:multiply"
           />
           <path
             d="M48.2635 65L5 22.2119L40 45.7696L75 23.1735V59.2307C75 62.417 72.3883 65 69.1667 65H48.2635Z"
-            fill="url(#paint1_linearSP5i)"
+            fill="url(#paint1_linear)"
             style="mix-blend-mode:multiply"
           />
-          <defs><linearGradient id="paint0_linearSP5i" x1="26.3885" y1="27.5" x2="26.3885" y2="65" gradientUnits="userSpaceOnUse"><stop stop-color="#C5C5C5"/><stop offset="1" stop-color="#E2E2E2" stop-opacity="0"/></linearGradient><linearGradient id="paint1_linearSP5i" x1="40" y1="15.4812" x2="40" y2="65.0003" gradientUnits="userSpaceOnUse"><stop stop-color="#BEBEBE"/><stop offset="1" stop-color="#BEBEBE" stop-opacity="0"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="26.3885" y1="27.5" x2="26.3885" y2="65" gradientUnits="userSpaceOnUse"><stop stop-color="#C5C5C5"/><stop offset="1" stop-color="#E2E2E2" stop-opacity="0"/></linearGradient><linearGradient id="paint1_linear" x1="40" y1="15.4812" x2="40" y2="65.0003" gradientUnits="userSpaceOnUse"><stop stop-color="#BEBEBE"/><stop offset="1" stop-color="#BEBEBE" stop-opacity="0"/></linearGradient></defs>
         </>
       )
     case 'solid':

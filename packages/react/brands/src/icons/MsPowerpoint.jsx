@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -11,13 +11,13 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             cx="43.4839"
             cy="40"
             r="32.5161"
-            fill="url(#paint0_linearo8E_)"
+            fill="url(#paint0_linear)"
           />
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M75.9184 42.3226H45.8066V7.56567C62.6808 8.75665 76 22.8229 76 40.0001C76 40.781 75.9725 41.5555 75.9184 42.3226Z"
-            fill="url(#paint1_linearo8E_)"
+            fill="url(#paint1_linear)"
           />
           <path
             fill-rule="evenodd"
@@ -38,7 +38,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="41.8064"
             height="41.8064"
             rx="5"
-            fill="url(#paint2_linearo8E_)"
+            fill="url(#paint2_linear)"
           />
           <rect
             x="4"
@@ -46,13 +46,13 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="41.8064"
             height="41.8064"
             rx="5"
-            fill="url(#paint3_linearo8E_)"
+            fill="url(#paint3_linear)"
           />
           <path
             d="M34.1936 36.4167C34.1936 31.4066 30.8954 28.3872 25.6648 28.3872H17.9355V51.613H22.733V44.5457H25.4649C30.3623 44.5457 34.1936 41.7586 34.1936 36.4167ZM29.3295 36.5162C29.3295 38.7725 27.8969 40.2324 25.5648 40.2324H22.733V32.7338H25.5315C27.8636 32.7338 29.3295 33.9614 29.3295 36.5162Z"
             fill="white"
           />
-          <defs><linearGradient id="paint0_linearo8E_" x1="10.9678" y1="44.485" x2="76" y2="44.485" gradientUnits="userSpaceOnUse"><stop stop-color="#A73A24"/><stop offset="1" stop-color="#F75936"/></linearGradient><linearGradient id="paint1_linearo8E_" x1="77.1615" y1="26.0644" x2="45.8066" y2="26.0644" gradientUnits="userSpaceOnUse"><stop stop-color="#FDB8A3"/><stop offset="1" stop-color="#F1876D"/></linearGradient><linearGradient id="paint2_linearo8E_" x1="4" y1="42.8831" x2="45.8065" y2="42.8831" gradientUnits="userSpaceOnUse"><stop stop-color="#A73A24"/><stop offset="1" stop-color="#F75936"/></linearGradient><linearGradient id="paint3_linearo8E_" x1="4" y1="42.8831" x2="45.8065" y2="42.8831" gradientUnits="userSpaceOnUse"><stop stop-color="#A73A24"/><stop offset="1" stop-color="#F75936"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="10.9678" y1="44.485" x2="76" y2="44.485" gradientUnits="userSpaceOnUse"><stop stop-color="#A73A24"/><stop offset="1" stop-color="#F75936"/></linearGradient><linearGradient id="paint1_linear" x1="77.1615" y1="26.0644" x2="45.8066" y2="26.0644" gradientUnits="userSpaceOnUse"><stop stop-color="#FDB8A3"/><stop offset="1" stop-color="#F1876D"/></linearGradient><linearGradient id="paint2_linear" x1="4" y1="42.8831" x2="45.8065" y2="42.8831" gradientUnits="userSpaceOnUse"><stop stop-color="#A73A24"/><stop offset="1" stop-color="#F75936"/></linearGradient><linearGradient id="paint3_linear" x1="4" y1="42.8831" x2="45.8065" y2="42.8831" gradientUnits="userSpaceOnUse"><stop stop-color="#A73A24"/><stop offset="1" stop-color="#F75936"/></linearGradient></defs>
         </>
       )
     case 'solid':

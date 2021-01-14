@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -15,9 +15,9 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M71.9434 29.3411H50.8946L47.3622 50.637H32.7839L15.5703 71.7361C16.1159 72.2233 16.8115 72.4942 17.5328 72.5004H63.2189C64.3299 72.5152 65.284 71.6876 65.4617 70.555L71.9434 29.3411Z"
-            fill="url(#paint0_linearADpW)"
+            fill="url(#paint0_linear)"
           />
-          <defs><linearGradient id="paint0_linearADpW" x1="76.8103" y1="35.3049" x2="51.44" y2="70.1884" gradientUnits="userSpaceOnUse"><stop offset="0.18" stop-color="#0052CC"/><stop offset="1" stop-color="#2684FF"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="76.8103" y1="35.3049" x2="51.44" y2="70.1884" gradientUnits="userSpaceOnUse"><stop offset="0.18" stop-color="#0052CC"/><stop offset="1" stop-color="#2684FF"/></linearGradient></defs>
         </>
       )
     case 'solid':

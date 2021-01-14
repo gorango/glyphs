@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -30,14 +30,14 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M32.2498 26.2531H64.1699L57.1386 14H39.281L32.2498 26.2531ZM53.7029 38.9852H71.3609L65.0088 28.2887H47.3109"
-            fill="url(#paint0_linear5yR6)"
+            fill="url(#paint0_linear)"
           />
           <path
             opacity="0.95"
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M64.2896 53.7531H32.2097L39.2409 65.9264H57.2185L64.2896 53.7531ZM53.7029 41.021H71.3608L65.0087 51.7176H47.3108"
-            fill="url(#paint1_linear5yR6)"
+            fill="url(#paint1_linear)"
           />
           <path
             fill-rule="evenodd"
@@ -45,7 +45,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             d="M39.2409 65.9258L24.2197 39.9827L39.4407 14.0396H22.9813L8 39.9827L22.9813 65.9258H39.2409Z"
             fill="#010101"
           />
-          <defs><linearGradient id="paint0_linear5yR6" x1="32.2498" y1="26.4926" x2="71.3609" y2="26.4926" gradientUnits="userSpaceOnUse"><stop stop-color="#2A3B8F"/><stop offset="1" stop-color="#29ABE2"/></linearGradient><linearGradient id="paint1_linear5yR6" x1="71.3608" y1="53.4737" x2="32.2097" y2="53.4737" gradientUnits="userSpaceOnUse"><stop stop-color="#B4D44E"/><stop offset="1" stop-color="#E7F716"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="32.2498" y1="26.4926" x2="71.3609" y2="26.4926" gradientUnits="userSpaceOnUse"><stop stop-color="#2A3B8F"/><stop offset="1" stop-color="#29ABE2"/></linearGradient><linearGradient id="paint1_linear" x1="71.3608" y1="53.4737" x2="32.2097" y2="53.4737" gradientUnits="userSpaceOnUse"><stop stop-color="#B4D44E"/><stop offset="1" stop-color="#E7F716"/></linearGradient></defs>
         </>
       )
     case 'solid':

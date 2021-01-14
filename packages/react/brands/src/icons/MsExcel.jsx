@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -17,7 +17,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           />
           <path
             d="M22 55.75H76V66.5C76 69.2614 73.7614 71.5 71 71.5H27C24.2386 71.5 22 69.2614 22 66.5V55.75Z"
-            fill="url(#paint0_linearYP3o)"
+            fill="url(#paint0_linear)"
           />
           <rect
             x="49"
@@ -62,7 +62,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="40.5"
             height="40.5"
             rx="5"
-            fill="url(#paint1_linearYP3o)"
+            fill="url(#paint1_linear)"
           />
           <rect
             x="4"
@@ -70,13 +70,13 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="40.5"
             height="40.5"
             rx="5"
-            fill="url(#paint2_linearYP3o)"
+            fill="url(#paint2_linear)"
           />
           <path
             d="M33.25 51.25L26.9098 39.775L32.9716 28.75H28.0232L24.2809 35.7893L20.6005 28.75H15.4974L21.5902 39.775L15.25 51.25H20.1985L24.1881 43.7929L28.1469 51.25H33.25Z"
             fill="white"
           />
-          <defs><linearGradient id="paint0_linearYP3o" x1="22" y1="63.625" x2="76" y2="63.625" gradientUnits="userSpaceOnUse"><stop stop-color="#163C27"/><stop offset="1" stop-color="#2A6043"/></linearGradient><linearGradient id="paint1_linearYP3o" x1="4" y1="40" x2="44.5" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#185A30"/><stop offset="1" stop-color="#176F3D"/></linearGradient><linearGradient id="paint2_linearYP3o" x1="4" y1="40" x2="44.5" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#185A30"/><stop offset="1" stop-color="#176F3D"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="22" y1="63.625" x2="76" y2="63.625" gradientUnits="userSpaceOnUse"><stop stop-color="#163C27"/><stop offset="1" stop-color="#2A6043"/></linearGradient><linearGradient id="paint1_linear" x1="4" y1="40" x2="44.5" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#185A30"/><stop offset="1" stop-color="#176F3D"/></linearGradient><linearGradient id="paint2_linear" x1="4" y1="40" x2="44.5" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#185A30"/><stop offset="1" stop-color="#176F3D"/></linearGradient></defs>
         </>
       )
     case 'solid':

@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -11,7 +11,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             cx="40"
             cy="40"
             r="35"
-            fill="url(#paint0_linearkQab)"
+            fill="url(#paint0_linear)"
           />
           <path
             fill-rule="evenodd"
@@ -23,7 +23,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             d="M40.1002 43.0441C41.817 43.0441 43.2088 41.668 43.2088 39.9705C43.2088 38.273 41.817 36.8969 40.1002 36.8969C38.3833 36.8969 36.9915 38.273 36.9915 39.9705C36.9915 41.668 38.3833 43.0441 40.1002 43.0441Z"
             fill="white"
           />
-          <defs><linearGradient id="paint0_linearkQab" x1="40" y1="5" x2="40" y2="75" gradientUnits="userSpaceOnUse"><stop stop-color="#B2E299"/><stop offset="1" stop-color="#03A171"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="40" y1="5" x2="40" y2="75" gradientUnits="userSpaceOnUse"><stop stop-color="#B2E299"/><stop offset="1" stop-color="#03A171"/></linearGradient></defs>
         </>
       )
     case 'solid':

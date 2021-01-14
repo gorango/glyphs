@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -100,30 +100,35 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           <path
             d="M26 70C23.7909 70 22 68.2091 22 66L22 18C22 15.7909 23.7909 14 26 14L54 14C56.2091 14 58 15.7909 58 18L58 66C58 68.2091 56.2091 70 54 70H26Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M32.5 14C32.2239 14 32 13.7761 32 13.5C32 11.567 33.567 10 35.5 10L44.5 10C46.433 10 48 11.567 48 13.5C48 13.7761 47.7761 14 47.5 14L32.5 14Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M28.1221 35C28.1221 33.8954 29.0175 33 30.1221 33H50.1221C51.2266 33 52.1221 33.8954 52.1221 35L52.1221 37C52.1221 38.1046 51.2266 39 50.1221 39H30.1221C29.0175 39 28.1221 38.1046 28.1221 37V35Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M30.1221 45C29.0175 45 28.1221 45.8954 28.1221 47V49C28.1221 50.1046 29.0175 51 30.1221 51H50.1221C51.2266 51 52.1221 50.1046 52.1221 49L52.1221 47C52.1221 45.8954 51.2266 45 50.1221 45H30.1221Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M30.1221 57C29.0175 57 28.1221 57.8954 28.1221 59V61C28.1221 62.1046 29.0175 63 30.1221 63H50.1221C51.2266 63 52.1221 62.1046 52.1221 61L52.1221 59C52.1221 57.8954 51.2266 57 50.1221 57H30.1221Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />

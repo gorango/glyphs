@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -9,7 +9,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
         <>
           <path
             d="M46.75 37.5323C46.75 36.4099 47.6599 35.5 48.7823 35.5H73.9677C75.0901 35.5 76 36.4099 76 37.5323V52.375C76 60.4522 69.4522 67 61.375 67C53.2978 67 46.75 60.4522 46.75 52.375V37.5323Z"
-            fill="url(#paint0_linearM_V9)"
+            fill="url(#paint0_linear)"
           />
           <circle
             cx="64.75"
@@ -21,19 +21,19 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             cx="64.75"
             cy="24.25"
             r="6.75"
-            fill="url(#paint1_linearM_V9)"
+            fill="url(#paint1_linear)"
           />
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M25.5586 62.5C28.2288 69.0966 34.6961 73.75 42.2502 73.75C52.1913 73.75 60.2502 65.6911 60.2502 55.75V33.7581C60.2502 32.2348 59.0154 31 57.4921 31H44.5002V57.5C44.5002 60.2614 42.2616 62.5 39.5002 62.5H25.5586Z"
-            fill="url(#paint2_linearM_V9)"
+            fill="url(#paint2_linear)"
           />
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M44.5 28.75C49.4706 28.75 53.5 24.7206 53.5 19.75C53.5 14.7794 49.4706 10.75 44.5 10.75C39.5294 10.75 35.5 14.7794 35.5 19.75C35.5 20.5269 35.5984 21.2809 35.7835 22H39.5C42.2614 22 44.5 24.2386 44.5 27V28.75Z"
-            fill="url(#paint3_linearM_V9)"
+            fill="url(#paint3_linear)"
           />
           <path
             fill-rule="evenodd"
@@ -48,7 +48,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="40.5"
             height="40.5"
             rx="5"
-            fill="url(#paint4_linearM_V9)"
+            fill="url(#paint4_linear)"
           />
           <rect
             x="4"
@@ -56,13 +56,13 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             width="40.5"
             height="40.5"
             rx="5"
-            fill="url(#paint5_linearM_V9)"
+            fill="url(#paint5_linear)"
           />
           <path
             d="M33.25 31H15.25V35.1282H21.9886V53.5H26.5114V35.1282H33.25V31Z"
             fill="white"
           />
-          <defs><linearGradient id="paint0_linearM_V9" x1="46.75" y1="37.1579" x2="76.3579" y2="56.5049" gradientUnits="userSpaceOnUse"><stop stop-color="#364088"/><stop offset="1" stop-color="#6E7EE1"/></linearGradient><linearGradient id="paint1_linearM_V9" x1="58" y1="18.2105" x2="71.0417" y2="27.388" gradientUnits="userSpaceOnUse"><stop stop-color="#364088"/><stop offset="1" stop-color="#6E7EE1"/></linearGradient><linearGradient id="paint2_linearM_V9" x1="25.5586" y1="49.9087" x2="60.2502" y2="49.9087" gradientUnits="userSpaceOnUse"><stop stop-color="#515FC4"/><stop offset="1" stop-color="#7084EA"/></linearGradient><linearGradient id="paint3_linearM_V9" x1="38.0714" y1="13.3214" x2="49.6429" y2="26.8214" gradientUnits="userSpaceOnUse"><stop stop-color="#4858AE"/><stop offset="1" stop-color="#4E60CE"/></linearGradient><linearGradient id="paint4_linearM_V9" x1="4" y1="42.25" x2="44.5" y2="42.25" gradientUnits="userSpaceOnUse"><stop stop-color="#2A3887"/><stop offset="1" stop-color="#4C56B9"/></linearGradient><linearGradient id="paint5_linearM_V9" x1="4" y1="42.25" x2="44.5" y2="42.25" gradientUnits="userSpaceOnUse"><stop stop-color="#2A3887"/><stop offset="1" stop-color="#4C56B9"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="46.75" y1="37.1579" x2="76.3579" y2="56.5049" gradientUnits="userSpaceOnUse"><stop stop-color="#364088"/><stop offset="1" stop-color="#6E7EE1"/></linearGradient><linearGradient id="paint1_linear" x1="58" y1="18.2105" x2="71.0417" y2="27.388" gradientUnits="userSpaceOnUse"><stop stop-color="#364088"/><stop offset="1" stop-color="#6E7EE1"/></linearGradient><linearGradient id="paint2_linear" x1="25.5586" y1="49.9087" x2="60.2502" y2="49.9087" gradientUnits="userSpaceOnUse"><stop stop-color="#515FC4"/><stop offset="1" stop-color="#7084EA"/></linearGradient><linearGradient id="paint3_linear" x1="38.0714" y1="13.3214" x2="49.6429" y2="26.8214" gradientUnits="userSpaceOnUse"><stop stop-color="#4858AE"/><stop offset="1" stop-color="#4E60CE"/></linearGradient><linearGradient id="paint4_linear" x1="4" y1="42.25" x2="44.5" y2="42.25" gradientUnits="userSpaceOnUse"><stop stop-color="#2A3887"/><stop offset="1" stop-color="#4C56B9"/></linearGradient><linearGradient id="paint5_linear" x1="4" y1="42.25" x2="44.5" y2="42.25" gradientUnits="userSpaceOnUse"><stop stop-color="#2A3887"/><stop offset="1" stop-color="#4C56B9"/></linearGradient></defs>
         </>
       )
     case 'solid':

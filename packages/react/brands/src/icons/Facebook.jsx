@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -11,13 +11,13 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             cx="40"
             cy="40"
             r="35"
-            fill="url(#paint0_linearayFj)"
+            fill="url(#paint0_linear)"
           />
           <path
             d="M53.0343 50.7039L54.589 40.8252H44.863V34.4175C44.863 31.7143 46.2192 29.0777 50.5754 29.0777H55V20.6675C55 20.6675 50.9863 20 47.1507 20C39.1371 20 33.9042 24.7323 33.9042 33.2961V40.8252H25V50.7039H33.9042V74.5862C35.6918 74.8599 37.5206 75 39.3836 75C41.2466 75 43.0754 74.8599 44.863 74.5862V50.7039H53.0343Z"
             fill="white"
           />
-          <defs><linearGradient id="paint0_linearayFj" x1="40" y1="5" x2="40" y2="74.7924" gradientUnits="userSpaceOnUse"><stop stop-color="#18ACFE"/><stop offset="1" stop-color="#0163E0"/></linearGradient></defs>
+          <defs><linearGradient id="paint0_linear" x1="40" y1="5" x2="40" y2="74.7924" gradientUnits="userSpaceOnUse"><stop stop-color="#18ACFE"/><stop offset="1" stop-color="#0163E0"/></linearGradient></defs>
         </>
       )
     case 'solid':

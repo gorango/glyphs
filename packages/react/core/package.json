@@ -13,6 +13,6 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@glyphs/core": "^0.7.1"
+    "@glyphs/core": "^0.7.2"
   }
 }

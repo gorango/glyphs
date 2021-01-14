@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -75,18 +75,21 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             fill="currentColor"
             fill-opacity="0.25"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M58 33H22"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M40 17C41.6569 17 43 18.3431 43 20V25C43 26.6569 41.6569 28 40 28C38.3431 28 37 26.6569 37 25V20C37 18.3431 38.3431 17 40 17Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />

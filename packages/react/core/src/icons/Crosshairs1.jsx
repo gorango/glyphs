@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -101,30 +101,35 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           <path
             d="M30.1005 16.1005C36.439 13.475 43.5609 13.475 49.8995 16.1005C56.238 18.726 61.274 23.762 63.8995 30.1005C66.525 36.4391 66.525 43.561 63.8995 49.8995C61.274 56.238 56.238 61.274 49.8995 63.8995C43.5609 66.525 36.439 66.525 30.1005 63.8995C23.7619 61.274 18.726 56.238 16.1005 49.8995C13.475 43.561 13.475 36.4391 16.1005 30.1005C18.726 23.762 23.7619 18.726 30.1005 16.1005Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M40.0015 14.1313L40.0093 25.2179H39.9906L39.9985 14.1313C39.9995 14.1313 40.0005 14.1313 40.0015 14.1313Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M65.8686 39.9985L54.782 39.9906V40.0093L65.8686 40.0015C65.8686 40.0005 65.8686 39.9995 65.8686 39.9985Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M40.0015 65.8686L40.0093 54.782H39.9906L39.9985 65.8686C39.9995 65.8686 40.0005 65.8686 40.0015 65.8686Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M14.1313 40.0015L25.2179 40.0093V39.9906L14.1313 39.9985C14.1313 39.9995 14.1313 40.0005 14.1313 40.0015Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />

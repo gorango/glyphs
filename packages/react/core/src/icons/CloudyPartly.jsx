@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -184,54 +184,63 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
           <path
             d="M27.0211 11.9998L27.0403 18.1597L27.0215 18.1536L27.0019 18.16L27.0211 11.9998Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M18.9019 20.7918L15.2654 15.8194L18.8709 20.8146L18.8829 20.798L18.9019 20.7918Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M13.8648 27.7048L8 25.8194L13.853 27.7414V27.7211L13.8648 27.7048Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M13.853 36.2581L8 38.1801L13.8648 36.2947L13.853 36.2785V36.2581Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M18.8709 43.1849L15.2654 48.1801L18.9019 43.2077L18.8829 43.2015L18.8709 43.1849Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M40.19 27.7411L46.0423 25.8194L40.178 27.7046L40.19 27.7211V27.7411Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M35.1718 20.8141L38.7768 15.8194L35.1405 20.7916L35.1601 20.798L35.1718 20.8141Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M24.3085 23.6504C26.0717 23.0775 27.971 23.0775 29.7342 23.6504C31.4974 24.2233 33.0339 25.3397 34.1237 26.8396C35.1912 28.3089 35.7762 30.0724 35.7996 31.8865C35.4189 32.2083 35.0516 32.5486 34.6993 32.9067C32.7325 34.9056 31.3302 37.3576 30.5887 40.0212C30.3107 40.1449 30.0255 40.2544 29.7342 40.3491C27.971 40.922 26.0717 40.922 24.3085 40.3491C22.5453 39.7762 21.0087 38.6598 19.919 37.1599C18.8293 35.66 18.2423 33.8537 18.2423 31.9998C18.2423 30.1458 18.8293 28.3395 19.919 26.8396C21.0087 25.3397 22.5453 24.2233 24.3085 23.6504Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />
           <path
             d="M46.7183 27.9999C51.1616 27.9999 55.4515 29.7651 58.6438 32.9067C61.836 36.0483 63.6698 40.3093 63.7413 44.7519L63.7671 46.3536C65.6471 46.8422 67.3812 47.8247 68.7782 49.2217C70.8411 51.2846 72 54.0825 72 56.9999C72 59.9173 70.8411 62.7151 68.7782 64.778C66.7153 66.8409 63.9174 67.9999 61 67.9999H54C53.9898 67.9999 53.9796 67.9998 53.9694 67.9998H44.0493C44.0329 68 44.0165 68.0001 44 68.0001H34C30.287 68.0001 26.726 66.5251 24.1005 63.8995C21.475 61.274 20 57.7131 20 54.0001C20 50.287 21.475 46.7261 24.1005 44.1006C25.9441 42.257 28.2489 40.9807 30.7436 40.384C31.456 37.5803 32.895 34.996 34.9507 32.9067C38.0419 29.7651 42.275 27.9999 46.7183 27.9999Z"
             stroke="currentColor"
+            stroke-width={strokeWidth}
             stroke-linecap={strokeLinecap}
             stroke-linejoin={strokeLinejoin}
           />

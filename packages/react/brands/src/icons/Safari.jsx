@@ -1,5 +1,5 @@
 
-import { forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
@@ -9,13 +9,13 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
         <>
           <path
             d="M73.75 40C73.75 58.6396 58.6396 73.75 40 73.75C21.3604 73.75 6.25 58.6396 6.25 40C6.25 21.3604 21.3604 6.25 40 6.25C58.6396 6.25 73.75 21.3604 73.75 40Z"
-            fill="url(#paint0_radialOpGb)"
-            stroke="url(#paint1_linearOpGb)"
+            fill="url(#paint0_radial)"
+            stroke="url(#paint1_linear)"
             stroke-width={strokeWidth}
           />
           <path
             d="M40.1919 72.3476C58.0721 72.3476 72.5669 57.8529 72.5669 39.9727C72.5669 22.0924 58.0721 7.59766 40.1919 7.59766C22.3117 7.59766 7.81689 22.0924 7.81689 39.9727C7.81689 57.8529 22.3117 72.3476 40.1919 72.3476Z"
-            fill="url(#paint2_linearOpGb)"
+            fill="url(#paint2_linear)"
             fill-opacity="0.2"
           />
           <path
@@ -551,7 +551,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
             d="M18.1799 62.1213L40.1915 39.9728L36.3359 36.1719L18.1799 62.1213Z"
             fill="#EEEEEE"
           />
-          <defs><radialGradient id="paint0_radialOpGb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(44.9175 32.3119) scale(42.7224)"><stop stop-color="#2ABCE1"/><stop offset="0.11363" stop-color="#2ABBE1"/><stop offset="1" stop-color="#3375F8"/></radialGradient><linearGradient id="paint1_linearOpGb" x1="40" y1="75" x2="40" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0.25" stop-color="#DBDBDA"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint2_linearOpGb" x1="39.5768" y1="30.7153" x2="24.4661" y2="57.8255" gradientUnits="userSpaceOnUse"><stop stop-opacity="0"/><stop offset="1"/></linearGradient></defs>
+          <defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(44.9175 32.3119) scale(42.7224)"><stop stop-color="#2ABCE1"/><stop offset="0.11363" stop-color="#2ABBE1"/><stop offset="1" stop-color="#3375F8"/></radialGradient><linearGradient id="paint1_linear" x1="40" y1="75" x2="40" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0.25" stop-color="#DBDBDA"/><stop offset="1" stop-color="white"/></linearGradient><linearGradient id="paint2_linear" x1="39.5768" y1="30.7153" x2="24.4661" y2="57.8255" gradientUnits="userSpaceOnUse"><stop stop-opacity="0"/><stop offset="1"/></linearGradient></defs>
         </>
       )
     case 'solid':
