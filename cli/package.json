@@ -13,8 +13,10 @@
     "url": "git+https://github.com/gorango/glyphs.git"
   },
   "keywords": [
-    "icons",
-    "js"
+    "glyphs",
+    "svg icons",
+    "figma",
+    "design"
   ],
   "author": "Goran Spasojevic <gospaso@gmail.com>",
   "bugs": {
