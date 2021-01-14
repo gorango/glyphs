@@ -14,7 +14,7 @@
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "@glyphs/core": "^0.7.1",
+    "@glyphs/core": "^0.7.2",
     "@vue/component-compiler-utils": "^3.2.0",
     "vue-template-compiler": "^2.6.12"
   }

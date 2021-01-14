@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <core-arrow-solid variant="path"></core-arrow-solid>
-    <flags-cuba variant="circle" size="600"></flags-cuba>
+    <flags-cuba variant="rectangle" size="200"></flags-cuba>
+    <core-arrow-solid variant="path" strokeWidth='4' size='200'></core-arrow-solid>
   </div>
 </template>
 
