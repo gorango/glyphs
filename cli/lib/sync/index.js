@@ -263,21 +263,6 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   }, Promise.resolve())
 
   progress.update(90, { stage: 'Saving categories...' })
-  let lastComponents
-
-  if (diffOnly || categories) {
-    const lastComponents = await readJSON(`${dataDir}/components.json`)
-    components.forEach(component => {
-      const ci = components.findIndex(({ name: n }) => n === component.name )
-      const li = lastComponents.findIndex(({ name: n }) => n === component.name )
-      const { variants } = components[ci]
-      Object.entries(variants).forEach(([key, val]) => {
-        if (!val.startsWith('<')) {
-          components[ci].variants[key] = lastComponents[li].variants[key]
-        }
-      })
-    })
-  }
 
   await saveJSON(`${dataDir}/components`, components)
   await saveJSON(`${dataDir}/map`, svgMap)
