@@ -1,9 +1,11 @@
 module.exports = {
-  set: 'core',
-  svg: '.',
-  data: '.',
-  diff: true,
-  preview: true,
-  categories: [],
-  icons: [],
+  sync: {
+    set: 'core',
+    svg: '.',
+    data: '.',
+    diff: true,
+    preview: true,
+    categories: [],
+    icons: [],
+  }
 }
