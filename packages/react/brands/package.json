@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/react-brands",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Glyphs React Brands",
   "homepage": "https://glyphs.fyi/dir?set=brands",
   "license": "MIT",
@@ -13,6 +13,6 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@glyphs/brands": "^0.1.3"
+    "@glyphs/brands": "^0.1.4"
   }
 }

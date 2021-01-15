@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/vue-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Glyphs Vue Core",
   "homepage": "https://glyphs.fyi/dir?set=core",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "@glyphs/core": "^0.7.2",
+    "@glyphs/core": "^0.7.3",
     "@vue/component-compiler-utils": "^3.2.0",
     "vue-template-compiler": "^2.6.12"
   }
