@@ -19,7 +19,6 @@ module.exports = async function wc (genConfig) {
   const componentsPath = path.join(outputPath, 'icons')
   const indexPath = path.join(outputPath, 'index.js')
   const utilsPath = path.join(outputPath, 'utils.js')
-  const ratios = genConfig?.transform?.ratios || {}
 
   if (fs.existsSync(outputPath)) {
     fs.rmdirSync(outputPath, { recursive: true })
@@ -33,7 +32,7 @@ module.exports = async function wc (genConfig) {
     const componentName = upperFirst(camelCase(name))
     const className = startCase(setName) + componentName
     const tagName = `${kebabCase(setName)}-${kebabCase(name)}`
-    const componentString = await templates[target].component({ set, variants, defaultVariant, componentName, className, tagName, ratios })
+    const componentString = await templates[target].component({ ...genConfig, name, variants, componentName, className, tagName })
     try {
       fs.writeFileSync(
         path.join(componentsPath, `${componentName}.${extension}`),
