@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0-alpha.4](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.0-alpha.3...@glyphs/cli-v0.3.0-alpha.4) (2021-01-15)
+
+
+### Bug Fixes
+
+* **cli:gen:** update svg child transformers, templates ([e57d750](https://github.com/gorango/glyphs/commit/e57d7500ed73ef0a7e811df0993b95768d30da6b))
+
 ## [0.3.0-alpha.3](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.0-alpha.2...@glyphs/cli-v0.3.0-alpha.3) (2021-01-14)
 
 
