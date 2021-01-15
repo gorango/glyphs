@@ -3,14 +3,16 @@ const { createVariants, s, createIndex } = require('./utils/template-utils')
 
 module.exports.index = (opts) => createIndex(opts, 'jsx')
 
-module.exports.component = async ({ set, variants, defaultVariant, componentName, className, tagName, ratios }) => `
+module.exports.component = async ({ set, name, variants, defaultVariant, componentName, className, tagName, transform }) => `
 import React, { forwardRef } from 'react'
 import { transform } from '../utils'
 
-const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeLinejoin='round' }) => {
+const renderString = ({ variant, strokeWidth, strokeLinecap='round', strokeLinejoin='round' }) => {
   switch (variant) {\
     ${await createVariants(variants, {
       set,
+      name,
+      transform,
       parent: {
         prepend: variant => `\n${s(4)}case '${variant}':\n${s(6)}return \(\n${s(8)}<>`,
         append: variant => `\n${s(8)}</>\n${s(6)})`
@@ -28,7 +30,7 @@ const renderString = ({ variant, strokeWidth='3', strokeLinecap='round', strokeL
 
 const ${className} = forwardRef((props, ref) => {
   const { size=80, variant='${defaultVariant}', rotate, flip, children } = props
-  const ratios = ${JSON.stringify(ratios, null, 1).replace(/\n\s+/g, ' ')}
+  const ratios = ${JSON.stringify(transform?.ratios || {}, null, 1).replace(/\n\s+/g, ' ')}
   const ratio = ratios?.variants?.[variant] || ratios?.icons?.${componentName} || 1
 
   return (
@@ -43,7 +45,7 @@ const ${className} = forwardRef((props, ref) => {
     >
       {children}
       <g>
-        {renderString({ size, variant, rotate, flip })}
+        {renderString({ variant, rotate, flip })}
       </g>
     </svg>
   )

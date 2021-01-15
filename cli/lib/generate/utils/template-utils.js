@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const pretty = require('pretty')
 const { upperFirst, camelCase, startCase, kebabCase } = require('lodash')
 const { parse, stringify } = require('svgson')
 
@@ -21,46 +22,72 @@ module.exports.s = n => Array(n + 1).fill().join(' ')
 module.exports.createVariants = async function (variants, options) {
   return Object.keys(variants).reduce(async (p, variant) => p.then(async str => {
     const replaceProps = ['path', 'rect', 'circle']
-    const svg = fs.readFileSync(path.join(process.cwd(), options.set, variant, `${kebabCase(name)}.svg`), 'utf-8')
+    const isReact = options?.set === 'react'
+    const icon = fs.readFileSync(path.join(process.cwd(), options.set, variant, `${kebabCase(options.name)}.svg`), 'utf-8')
     // const svgId = variants[variant]
-    const icon = await parse(svg)
+    const svg = await parse(icon, { camelCase: isReact })
     const prepend = options.parent.prepend(variant)
     const append = options.parent.append(variant)
-    const children = await getChildren (icon, options.child.space)
+    const children = await getChildren (svg, options.child.space)
     return str + prepend + children + append
 
     async function getChildren (node, space) {
       return node.children.reduce(async (p, child) => p.then(async str => {
-        const prepend = options.child.prepend(child)
-        const append = options.child.append(child)
-
-        if (!replaceProps.includes(child.name)) {
+        const space = '\n' + options.child.space.split(' ').slice(2).join(' ')
+        if (!replaceProps.includes(child.name) || !options?.transform?.stroke?.[variant]) {
+          if (!(options?.transform?.color || []).includes(variant)) {
+            const body = await stringify(child, {
+              transformAttr: function (key, val) {
+                switch (key) {
+                  case 'stroke':
+                  case 'fill':
+                    if (val.startsWith('url')) {
+                      return options.child.default(key, val.replace(/\((.*?)\)/, (match, p1) => {
+                        return `(${p1 + '_' + options.name})`
+                      }))
+                    } else {
+                      return options.child.default(key, val)
+                    }
+                  case 'id':
+                    return options.child.default(key, val + '_' + options.name)
+                  default:
+                    return options.child.default(key, val)
+                }
+              }
+            })
+            return str + space + body
+          }
           const body = await stringify(child)
-          return str + '\n' + options.child.space.split(' ').slice(2).join(' ') + body
+          return str + space + body
         } else {
-          const children = Object.entries(child.attributes).map(([attr, val]) => {
-            let res = options.child.space
-            switch (attr) {
-              // case 'stroke':
-                // res += options.child.attr(attr, `stroke`); break
-              case 'stroke-width':
-                res += options.child.attr(attr, 'strokeWidth'); break
-              case 'stroke-linecap':
-                res += options.child.attr(attr, 'strokeLinecap'); break
-              case 'stroke-linejoin':
-                res += options.child.attr(attr, 'strokeLinejoin'); break
-              // case 'fill': break
-              // case 'fill-opacity': break
-              default:
-                res += options.child.default(attr, val)
+          const strokeWidth = isReact ? 'strokeWidth' : 'stroke-width'
+          const strokeLinecap = isReact ? 'strokeLinecap' : 'stroke-linecap'
+          const strokeLinejoin = isReact ? 'strokeLinejoin' : 'stroke-linejoin'
+
+          if (child.attributes.stroke && !child.attributes[strokeWidth]) {
+            child.attributes[strokeWidth] = (options.transform?.stroke?.[variant])
+              ? options.transform.stroke[variant]
+              : 1
+          }
+          const body = await stringify(child, {
+            transformAttr: function (key, val) {
+              switch (key) {
+                case strokeLinecap:
+                case strokeLinejoin:
+                  return options.child.attr(key, camelCase(key))
+                case strokeWidth:
+                  return options.child.attr(key, `${camelCase(key)} || ${options.transform?.stroke?.[variant]}`)
+                default:
+                  return options.child.default(key, val)
+              }
             }
-            return res
           })
 
-          const body = children.join('')
-          const res = prepend + body + append
+          // const prepend = options.child.prepend(child)
+          // const append = options.child.append(child)
+          // return str + prepend + body + append
 
-          return str + res
+          return str + space + body
         }
       }), Promise.resolve(''))
     }

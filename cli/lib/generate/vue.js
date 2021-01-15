@@ -2,7 +2,7 @@ const { createVariants, s, createIndex } = require('./utils/template-utils')
 
 module.exports.index = (opts) => createIndex(opts, 'vue')
 
-module.exports.component = async ({ set, variants, defaultVariant, componentName, className, tagName, ratios }) => `
+module.exports.component = async ({ set, name, variants, defaultVariant, componentName, className, tagName, transform }) => `
 <template>
   <svg
     :width="size * ratio"
@@ -16,6 +16,8 @@ module.exports.component = async ({ set, variants, defaultVariant, componentName
     <g>\
       ${await createVariants(variants, {
         set,
+        name,
+        transform,
         parent: {
           prepend: variant => `\n${s(6)}<template v-if="variant === '${variant}'">`,
           append: variant => `\n${s(6)}</template>`
@@ -42,7 +44,7 @@ export default {
   props: {
     size: { type: String, default: '40', },
     variant: { type: String, default: '${defaultVariant}', },
-    strokeWidth: { type: String, default: '4', },
+    strokeWidth: { type: String, default: null, },
     strokeLinecap: { type: String, default: 'round', },
     strokeLinejoin: { type: String, default: 'round', },
     rotate: { type: String, default: '0', },
@@ -54,7 +56,7 @@ export default {
       return transform(this.rotate, this.flip)
     },
     ratio () {
-      const ratios = ${JSON.stringify(ratios, null, 1).replace(/\n\s+/g, ' ')}
+      const ratios = ${JSON.stringify(transform?.ratios || {}, null, 1).replace(/\n\s+/g, ' ')}
       return ratios?.variants?.[this.variant] || ratios?.icons?.${componentName} || 1
     }
   }
