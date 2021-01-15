@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.3](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.2...@glyphs/core-v0.7.3) (2021-01-15)
+
+
+### Bug Fixes
+
+* **core:** fix arrow-sm, minor updates ([c653652](https://github.com/gorango/glyphs/commit/c6536521d352489d32bff22aa89c65480b194928))
+* **pkgs:** ignore generated src files ([45c90ef](https://github.com/gorango/glyphs/commit/45c90ef0f2c5a1cd0e3a79a6798d09c3083754e2))
+* **svg:** update previews ([e56596b](https://github.com/gorango/glyphs/commit/e56596b904e32618cf81091578d2d455924ed7cf))
+
 ### [0.7.2](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.1...@glyphs/core-v0.7.2) (2021-01-13)
 
 ## [0.8.0](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.0...@glyphs/core-v0.7.1) (2021-01-13)

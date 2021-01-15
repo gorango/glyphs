@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.4.2...@glyphs/flags-v0.5.0) (2021-01-15)
+
+
+### Features
+
+* **flags:** 15 new icons; add oceania ([fcbd7eb](https://github.com/gorango/glyphs/commit/fcbd7eb177f8d44d803ce69c580cacf8c8fdf746))
+
+
+### Bug Fixes
+
+* **svg:** update previews ([e56596b](https://github.com/gorango/glyphs/commit/e56596b904e32618cf81091578d2d455924ed7cf))
+
 ### [0.4.2-alpha.0](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.4.1...@glyphs/flags-v0.4.2) (2021-01-13)
 
 
