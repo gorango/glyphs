@@ -1657,6 +1657,100 @@
     }
   },
   {
+    "name": "moon",
+    "id": "109:158",
+    "terms": [
+      "moon",
+      "night"
+    ],
+    "categories": [
+      "shape",
+      "weather"
+    ],
+    "variants": {
+      "path": "3563:70089",
+      "bold": "3563:70091",
+      "poly": "3563:70092",
+      "duo": "3563:70088",
+      "outline": "3563:70090"
+    }
+  },
+  {
+    "name": "sparkle",
+    "id": "109:156",
+    "terms": [
+      "sparkle",
+      "star",
+      "shine"
+    ],
+    "categories": [
+      "shape",
+      "weather"
+    ],
+    "variants": {
+      "path": "3563:70247",
+      "bold": "3563:70249",
+      "poly": "3563:70250",
+      "duo": "3563:70246",
+      "outline": "3563:70248"
+    }
+  },
+  {
+    "name": "cloud",
+    "id": "92:3405",
+    "terms": [
+      "cloud"
+    ],
+    "categories": [
+      "shape",
+      "weather"
+    ],
+    "variants": {
+      "path": "3563:70672",
+      "bold": "3563:70674",
+      "poly": "3563:70675",
+      "duo": "3563:70671",
+      "outline": "3563:70673"
+    }
+  },
+  {
+    "name": "cloud1",
+    "id": "24:0",
+    "terms": [
+      "cloud",
+      "cumulus"
+    ],
+    "categories": [
+      "weather"
+    ],
+    "variants": {
+      "path": "3563:70705",
+      "bold": "3563:70707",
+      "poly": "3563:70708",
+      "duo": "3563:70704",
+      "outline": "3563:70706"
+    }
+  },
+  {
+    "name": "cloudy",
+    "id": "2733:58200",
+    "terms": [
+      "cloudy",
+      "cloud",
+      "cumulus"
+    ],
+    "categories": [
+      "weather"
+    ],
+    "variants": {
+      "path": "3563:70958",
+      "bold": "3563:70960",
+      "poly": "3563:70961",
+      "duo": "3563:70957",
+      "outline": "3563:70959"
+    }
+  },
+  {
     "name": "square",
     "id": "27:366",
     "terms": [
@@ -1783,26 +1877,6 @@
     }
   },
   {
-    "name": "sparkle",
-    "id": "109:156",
-    "terms": [
-      "sparkle",
-      "star",
-      "shine"
-    ],
-    "categories": [
-      "shape",
-      "weather"
-    ],
-    "variants": {
-      "path": "3563:70247",
-      "bold": "3563:70249",
-      "poly": "3563:70250",
-      "duo": "3563:70246",
-      "outline": "3563:70248"
-    }
-  },
-  {
     "name": "badge",
     "id": "11:495",
     "terms": [
@@ -1834,43 +1908,6 @@
       "poly": "3553:139009",
       "duo": "3553:139011",
       "outline": "3553:139007"
-    }
-  },
-  {
-    "name": "moon",
-    "id": "109:158",
-    "terms": [
-      "moon",
-      "night"
-    ],
-    "categories": [
-      "shape",
-      "weather"
-    ],
-    "variants": {
-      "path": "3563:70089",
-      "bold": "3563:70091",
-      "poly": "3563:70092",
-      "duo": "3563:70088",
-      "outline": "3563:70090"
-    }
-  },
-  {
-    "name": "cloud",
-    "id": "92:3405",
-    "terms": [
-      "cloud"
-    ],
-    "categories": [
-      "shape",
-      "weather"
-    ],
-    "variants": {
-      "path": "3563:70672",
-      "bold": "3563:70674",
-      "poly": "3563:70675",
-      "duo": "3563:70671",
-      "outline": "3563:70673"
     }
   },
   {
@@ -11122,24 +11159,6 @@
     }
   },
   {
-    "name": "cloud1",
-    "id": "24:0",
-    "terms": [
-      "cloud",
-      "cumulus"
-    ],
-    "categories": [
-      "weather"
-    ],
-    "variants": {
-      "path": "3563:70705",
-      "bold": "3563:70707",
-      "poly": "3563:70708",
-      "duo": "3563:70704",
-      "outline": "3563:70706"
-    }
-  },
-  {
     "name": "day",
     "id": "2733:58267",
     "terms": [
@@ -11176,25 +11195,6 @@
       "poly": "3563:70850",
       "duo": "3563:70846",
       "outline": "3563:70848"
-    }
-  },
-  {
-    "name": "cloudy",
-    "id": "2733:58200",
-    "terms": [
-      "cloudy",
-      "cloud",
-      "cumulus"
-    ],
-    "categories": [
-      "weather"
-    ],
-    "variants": {
-      "path": "3563:70958",
-      "bold": "3563:70960",
-      "poly": "3563:70961",
-      "duo": "3563:70957",
-      "outline": "3563:70959"
     }
   },
   {
