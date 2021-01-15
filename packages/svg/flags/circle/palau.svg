@@ -3,8 +3,7 @@
     <circle cx="40" cy="40" r="40" fill="#C4C4C4" />
   </mask>
   <g mask="url(#mask0)">
-    <path d="M80 0H0V80H80V0Z" fill="#EB5757" />
-    <path d="M0 40H80" stroke="#F2F2F2" stroke-width="15" />
-    <path d="M25.3334 80V0" stroke="#F2F2F2" stroke-width="15" />
+    <rect width="80" height="80" fill="#56CCF2" />
+    <circle cx="30" cy="40" r="24" fill="#F2C94C" />
   </g>
 </svg>

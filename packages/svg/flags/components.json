@@ -1127,51 +1127,6 @@
     }
   },
   {
-    "name": "chile",
-    "id": "5139:312202",
-    "terms": [
-      "chile"
-    ],
-    "categories": [
-      "south america"
-    ],
-    "variants": {
-      "rectangle": "5139:312298",
-      "square": "5139:312306",
-      "circle": "5139:312314"
-    }
-  },
-  {
-    "name": "colombia",
-    "id": "5139:312203",
-    "terms": [
-      "colombia"
-    ],
-    "categories": [
-      "south america"
-    ],
-    "variants": {
-      "rectangle": "5139:312323",
-      "square": "5139:312330",
-      "circle": "5139:312337"
-    }
-  },
-  {
-    "name": "ecuador",
-    "id": "5139:312204",
-    "terms": [
-      "ecuador"
-    ],
-    "categories": [
-      "south america"
-    ],
-    "variants": {
-      "rectangle": "5139:312345",
-      "square": "5139:312365",
-      "circle": "5139:312385"
-    }
-  },
-  {
     "name": "argentina",
     "id": "5139:312199",
     "terms": [
@@ -1217,6 +1172,66 @@
     }
   },
   {
+    "name": "chile",
+    "id": "5139:312202",
+    "terms": [
+      "chile"
+    ],
+    "categories": [
+      "south america"
+    ],
+    "variants": {
+      "rectangle": "5139:312298",
+      "square": "5139:312306",
+      "circle": "5139:312314"
+    }
+  },
+  {
+    "name": "colombia",
+    "id": "5139:312203",
+    "terms": [
+      "colombia"
+    ],
+    "categories": [
+      "south america"
+    ],
+    "variants": {
+      "rectangle": "5139:312323",
+      "square": "5139:312330",
+      "circle": "5139:312337"
+    }
+  },
+  {
+    "name": "ecuador",
+    "id": "5139:312204",
+    "terms": [
+      "ecuador"
+    ],
+    "categories": [
+      "south america"
+    ],
+    "variants": {
+      "rectangle": "5139:312345",
+      "square": "5139:312365",
+      "circle": "5139:312385"
+    }
+  },
+  {
+    "name": "guyana",
+    "id": "5139:312205",
+    "terms": [
+      "guyana"
+    ],
+    "categories": [
+      "south america"
+    ],
+    "variants": {
+      "rectangle": "5139:312406",
+      "square": "5139:312412",
+      "circle": "5139:312418"
+    }
+  },
+  {
     "name": "paraguay",
     "id": "5139:312206",
     "terms": [
@@ -1247,18 +1262,18 @@
     }
   },
   {
-    "name": "venezuela",
-    "id": "5139:312210",
+    "name": "suriname",
+    "id": "5139:312208",
     "terms": [
-      "venezuela"
+      "suriname"
     ],
     "categories": [
       "south america"
     ],
     "variants": {
-      "rectangle": "5139:312543",
-      "square": "5139:312559",
-      "circle": "5139:312575"
+      "rectangle": "5139:312478",
+      "square": "5139:312484",
+      "circle": "5139:312490"
     }
   },
   {
@@ -1277,33 +1292,18 @@
     }
   },
   {
-    "name": "suriname",
-    "id": "5139:312208",
+    "name": "venezuela",
+    "id": "5139:312210",
     "terms": [
-      "suriname"
+      "venezuela"
     ],
     "categories": [
       "south america"
     ],
     "variants": {
-      "rectangle": "5139:312478",
-      "square": "5139:312484",
-      "circle": "5139:312490"
-    }
-  },
-  {
-    "name": "guyana",
-    "id": "5139:312205",
-    "terms": [
-      "guyana"
-    ],
-    "categories": [
-      "south america"
-    ],
-    "variants": {
-      "rectangle": "5139:312406",
-      "square": "5139:312412",
-      "circle": "5139:312418"
+      "rectangle": "5139:312543",
+      "square": "5139:312559",
+      "circle": "5139:312575"
     }
   },
   {
@@ -2588,6 +2588,22 @@
     }
   },
   {
+    "name": "southKorea",
+    "id": "5034:274177",
+    "terms": [
+      "south",
+      "korea"
+    ],
+    "categories": [
+      "asia"
+    ],
+    "variants": {
+      "rectangle": "5034:274178",
+      "square": "5034:274249",
+      "circle": "5034:274320"
+    }
+  },
+  {
     "name": "sriLanka",
     "id": "5034:274707",
     "terms": [
@@ -2723,6 +2739,232 @@
       "rectangle": "4960:12338",
       "square": "4960:12343",
       "circle": "4960:12348"
+    }
+  },
+  {
+    "name": "australia",
+    "id": "5384:279164",
+    "terms": [
+      "australia",
+      "united",
+      "kingdom"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279191",
+      "square": "5384:279211",
+      "circle": "5384:279231"
+    }
+  },
+  {
+    "name": "federatedStatesOfMicronesia",
+    "id": "5384:279165",
+    "terms": [
+      "federated",
+      "states",
+      "of",
+      "micronesia"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279252",
+      "square": "5384:279259",
+      "circle": "5384:279266"
+    }
+  },
+  {
+    "name": "fiji",
+    "id": "5384:279166",
+    "terms": [
+      "fiji",
+      "united",
+      "kingdom"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279274",
+      "square": "5384:279296",
+      "circle": "5384:279318"
+    }
+  },
+  {
+    "name": "kiribati",
+    "id": "5384:279167",
+    "terms": [
+      "kiribati"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279341",
+      "square": "5384:279356",
+      "circle": "5384:279371"
+    }
+  },
+  {
+    "name": "marshallIslands",
+    "id": "5384:279168",
+    "terms": [
+      "marshall",
+      "islands"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279387",
+      "square": "5384:279395",
+      "circle": "5384:279403"
+    }
+  },
+  {
+    "name": "nauru",
+    "id": "5384:279169",
+    "terms": [
+      "nauru"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279412",
+      "square": "5384:279417",
+      "circle": "5384:279422"
+    }
+  },
+  {
+    "name": "newZealand",
+    "id": "5384:279170",
+    "terms": [
+      "new",
+      "zealand",
+      "united",
+      "kingdom"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279428",
+      "square": "5384:279445",
+      "circle": "5384:279462"
+    }
+  },
+  {
+    "name": "palau",
+    "id": "5384:279171",
+    "terms": [
+      "palau"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279480",
+      "square": "5384:279484",
+      "circle": "5384:279488"
+    }
+  },
+  {
+    "name": "papuaNewGuinea",
+    "id": "5384:279172",
+    "terms": [
+      "papua",
+      "new",
+      "guinea"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279493",
+      "square": "5384:279510",
+      "circle": "5384:279527"
+    }
+  },
+  {
+    "name": "samoa",
+    "id": "5384:279173",
+    "terms": [
+      "samoa"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279545",
+      "square": "5384:279555",
+      "circle": "5384:279565"
+    }
+  },
+  {
+    "name": "solomonIslands",
+    "id": "5384:279174",
+    "terms": [
+      "solomon",
+      "islands"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279576",
+      "square": "5384:279587",
+      "circle": "5384:279598"
+    }
+  },
+  {
+    "name": "tonga",
+    "id": "5384:279175",
+    "terms": [
+      "tonga"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279610",
+      "square": "5384:279615",
+      "circle": "5384:279620"
+    }
+  },
+  {
+    "name": "tuvalu",
+    "id": "5384:279189",
+    "terms": [
+      "tuvalu",
+      "united",
+      "kingdom"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279626",
+      "square": "5384:279639",
+      "circle": "5384:279652"
+    }
+  },
+  {
+    "name": "vanuatu",
+    "id": "5384:279190",
+    "terms": [
+      "vanuatu"
+    ],
+    "categories": [
+      "oceania"
+    ],
+    "variants": {
+      "rectangle": "5384:279666",
+      "square": "5384:279675",
+      "circle": "5384:279684"
     }
   }
 ]

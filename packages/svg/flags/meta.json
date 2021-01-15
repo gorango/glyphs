@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "flags",
-  "unique": 178,
-  "total": 534,
+  "unique": 193,
+  "total": 579,
   "variants": [
     "rectangle",
     "square",
@@ -35,18 +35,18 @@
       "unitedStatesOfAmerica"
     ],
     "southAmerica": [
-      "chile",
-      "colombia",
-      "ecuador",
       "argentina",
       "bolivia",
       "brazil",
+      "chile",
+      "colombia",
+      "ecuador",
+      "guyana",
       "paraguay",
       "peru",
-      "venezuela",
-      "uruguay",
       "suriname",
-      "guyana"
+      "uruguay",
+      "venezuela"
     ],
     "africa": [
       "algeria",
@@ -193,6 +193,7 @@
       "russia",
       "saudiArabia",
       "singapore",
+      "southKorea",
       "sriLanka",
       "syria",
       "tajikistan",
@@ -204,6 +205,21 @@
       "vietnam",
       "yemen"
     ],
-    "oceania": []
+    "oceania": [
+      "australia",
+      "federatedStatesOfMicronesia",
+      "fiji",
+      "kiribati",
+      "marshallIslands",
+      "nauru",
+      "newZealand",
+      "palau",
+      "papuaNewGuinea",
+      "samoa",
+      "solomonIslands",
+      "tonga",
+      "tuvalu",
+      "vanuatu"
+    ]
   }
 }
