@@ -10,9 +10,9 @@
     "build": "parcel build src/index.js"
   },
   "dependencies": {
-    "hybrids": "^4.3.3"
+    "hybrids": "^4.3.4"
   },
   "devDependencies": {
-    "@glyphs/brands": "^0.1.2"
+    "@glyphs/brands": "^0.1.3"
   }
 }

@@ -5,8 +5,12 @@ module.exports = {
     output: 'src',
     defaultVariant: 'path',
     transform: {
-      replaceColor: ['path', 'bold', 'duo', 'outline'],
-      removeStroke: ['path', 'duo', 'outline']
+      color: ['path', 'bold', 'duo', 'outline'],
+      stroke: {
+        path: 3,
+        duo: 4,
+        outline: 1
+      }
     }
   }
 }
