@@ -19,8 +19,8 @@ body
             onmouseenter=`handleMouseEnter('${variant}')`,
             onmouseleave='handleMouseLeave()'
           )
-            - var svg = components.find(({ name }) => name === first).variants[variant]
-            div.icon.text-3xl.active !{svg}
+            - var id = components.find(({ name }) => name === first).variants[variant]
+            div.icon.text-3xl.active !{map[id].replace(/\n?(\s+)/g, ' ')}
       .flex-1
     section
       each icons, category in categories
@@ -33,8 +33,8 @@ body
                 div.w-full.p-1.text-center
                   .truncate.text-xs.text-gray-500(title=name)= name
                 - var variants = components.find(({ name: n }) => n === name).variants
-                each svg, variant in variants
-                  div.icon.text-5xl(class=variant) !{svg}
+                each id, variant in variants
+                  div.icon.text-5xl(class=variant) !{map[id].replace(/\n?(\s+)/g, ' ')}
 
   script.
     const variants = '#{variants}'.split(',')

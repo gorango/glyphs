@@ -3,11 +3,12 @@ const path = require('path')
 const pug = require('pug')
 
 module.exports = async function preview (dataDir) {
-  const metaFile = path.join(dataDir, 'meta.json')
-  const componentsFile = path.join(dataDir, 'components.json')
+  const mapPath = path.join(dataDir, 'map.json')
+  const metaPath = path.join(dataDir, 'meta.json')
+  const componentsPath = path.join(dataDir, 'components.json')
   const filesExist = [
-    fs.existsSync(metaFile),
-    fs.existsSync(componentsFile)
+    fs.existsSync(metaPath),
+    fs.existsSync(componentsPath)
   ].reduce((bool, exists) => bool && exists, true)
 
   if (!filesExist) {
@@ -18,14 +19,15 @@ module.exports = async function preview (dataDir) {
     process.exit(1)
   }
 
-  const meta = require(metaFile)
-  const components = require(componentsFile)
+  const map = require(mapPath)
+  const meta = require(metaPath)
+  const components = require(componentsPath)
 
   const { categories, variants } = meta
   const first = Object.values(categories)[0][0]
   const input = path.join(__dirname, 'template.pug')
   const output = path.join(process.cwd(), 'preview.html')
-  const file = pug.compileFile(input, { pretty: true })({ first, categories, variants, components })
+  const file = pug.compileFile(input, { pretty: true })({ first, categories, variants, components, map })
 
   fs.writeFileSync(output, file)
 }
