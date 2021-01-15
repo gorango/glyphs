@@ -30,13 +30,13 @@ const { camelCase } = require('lodash')
 const inquirer = require('inquirer')
 
 ;(async () => {
-  const config = require(path.join(process.cwd(), 'glyphs.config.js'))
+  const glyphsConfig = require(path.join(process.cwd(), 'glyphs.config.js'))
 
-  if (!config || !config.generate) {
+  if (!glyphsConfig || !glyphsConfig.generate) {
     throw new Error(`A config file wasn't supplied.`)
   }
 
-  const { target } = config.generate
+  const { target } = glyphsConfig.generate
   const targets = ['wc', 'vue', 'react']
 
   console.log()
@@ -62,5 +62,5 @@ const inquirer = require('inquirer')
     key = answers.name
   }
 
-  require('../lib/generate')(config.generate)
+  require('../lib/generate')(glyphsConfig.generate)
 })()

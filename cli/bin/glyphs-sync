@@ -46,13 +46,14 @@ const pkg = require('../package.json')
   const conf = new Configstore(pkg.name)
   const configs = conf.all
   const hasConfig = Object.keys(configs).length
+  // const glyphsConfig = require(path.join(process.cwd(), 'glyphs.config.js'))
   let { _: [query], set, preview: generatePreview } = argv
   let key
 
   if (!hasConfig) {
     console.log()
     console.log(`  You haven't configured any files to sync`)
-    console.log(`  Run "glyphs sync" or "glyphs help" to get started`)
+    console.log(`  Run "glyphs add" or "glyphs help" to get started`)
     console.log()
     process.exit(1)
   }
