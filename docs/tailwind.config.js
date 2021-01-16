@@ -188,6 +188,13 @@ module.exports = {
             borderBottomWidth: '1px',
             borderBottomColor: theme('colors.gray.400')
           },
+          h4: {
+            paddingBottom: theme('padding.2'),
+            marginTop: theme('margin.4'),
+            marginBottom: theme('margin.3'),
+            borderBottomWidth: '1px',
+            borderBottomColor: theme('colors.gray.400')
+          },
           blockquote: {
             fontWeight: '400',
             color: theme('colors.gray.600'),
@@ -259,7 +266,8 @@ module.exports = {
             borderBottomColor: theme('colors.gray.700')
           },
           h4: {
-            color: theme('colors.gray.100')
+            color: theme('colors.gray.100'),
+            borderBottomColor: theme('colors.gray.700')
           },
           'figure figcaption': {
             color: theme('colors.gray.400')

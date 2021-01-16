@@ -13,7 +13,7 @@ html:not(.break-smooth) { scroll-behavior: smooth; }
 .nuxt-content {
   @apply break-words;
 
-  & h2, & h3 {
+  & h2, & h3, & h4 {
     /* Fix anchor scrollTo */
     &::before {
       display: block;

@@ -1,7 +1,7 @@
 ---
 title: Introduction
 category: Overview
-position: 10
+position: 1
 features:
  - Meticulously crafted icons in Figma
  - Full-featured web component with one-line install
@@ -33,5 +33,4 @@ In order to achieve the desired goals, this project consists of several tools:
 - [Figma source file](/docs/figma/overview) for the icon sets
 - [Figma plugin](/docs/plugin/install-plugin) to speed up common design tasks with large icon sets
 - [Command line interface](/docs/cli/install-cli) to download the assets from Figma
-- [Packaged assets](/docs/web/getting-started) to use in development projects and elsewhere
-- [Web components](/docs/web/component) to integrate the icons with additional features
+- [Packaged assets](/docs/web/getting-started) to use in other design and development projects

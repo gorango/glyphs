@@ -1,7 +1,7 @@
 ---
 title: Layout
 category: Figma File
-position: 19
+position: 8
 ---
 
 > This page documents the layout of icon sets along with the architecture for exporting SVGs using the Figma REST API.

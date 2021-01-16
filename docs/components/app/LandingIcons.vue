@@ -38,6 +38,7 @@
 </template>
 
 <script>
+// import kebabCase from 'lodash.kebabcase'
 import { categories as _categories } from '@glyphs/core/meta.json'
 import components from '@glyphs/core'
 
@@ -83,6 +84,7 @@ export default {
   },
 
   methods: {
+    // kebabCase,
     // toggleVariantTimer () {
     //   if (this.randomVariantTimer) {
     //     clearInterval(this.randomVariantTimer)

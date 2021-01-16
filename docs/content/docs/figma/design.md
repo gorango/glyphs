@@ -1,7 +1,7 @@
 ---
 title: Design
 category: Figma File
-position: 18
+position: 6
 ---
 
 > This page documents the design of icon sets and optimizations required for exporting SVGs using the Figma REST API. The guides on this page assume a basic understanding of Figma’s interface, its component system, and vector graphics more broadly.

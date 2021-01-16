@@ -1,7 +1,7 @@
 ---
-title: Install
+title: Install CLI
 category: CLI
-position: 31
+position: 30
 ---
 
 The Glyphs command line utility enables exporting icon sets from a Figma file to any environment. This allows for easy integration with other design or development projects. To quickly get started, install from NPM.
@@ -26,10 +26,10 @@ npm i -g .
 Simply run `glyphs` in your terminal for instructions on how to use the interface.
 
 ```bash
-glyphs  # also glyphs -h or glyphs --help
+glyphs  # or glyphs -h, --help
 ```
 
-This will return a robust set of options and instructions.
+This will return a set of options and instructions.
 
 ```
    _____ _         _
@@ -56,11 +56,8 @@ This will return a robust set of options and instructions.
     list, l       List configured icon sets
     sync, s       Sync an icon set to the current directory
     preview, p    Preview a local icon set in the browser
+    generate      Generate a JS component set
     help, h       Display this message
 ```
 
 To get more information on each command, append `--help` or `-h` to the end:
-
-```
-$ glyphs sync -h
-```

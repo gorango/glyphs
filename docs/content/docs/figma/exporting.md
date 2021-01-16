@@ -1,54 +1,20 @@
 ---
 title: Exporting
 category: Figma File
-position: 20
+position: 10
 ---
 
 <alert>
 
-Figma has known issues when exporting nodes with nested groups (this applies only to the REST API). Read the [common issues](#common-issues) and report any [issues on GitHub](https://github.com/gorango/glyphs/issues) or leave a comment in the [source file](https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7).
+Figma has known issues when exporting nodes with nested groups (this applies only to the REST API). Please report any [issues on GitHub](https://github.com/gorango/glyphs/issues) or leave a comment in the [source file](https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7).
+
+The [Figma plugin](/docs/plugin/install-plugin) can help perform most of the optimizations required for successful exports.
 
 </alert>
-
-## Configuration
-
-<div class="hidden sm_block relative rounded-xl overflow-hidden w-full" style="padding-top: 56.25%">
-  <iframe
-    class="absolute inset-0 w-full h-full"
-    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2TsY9yqFso1zrvF8LNcVE7%2FGlyphs-Icons%3Fnode-id%3D3844%253A75606"
-    allowfullscreen
-  ></iframe>
-</div>
-
-<div class="sm_hidden relative rounded-xl overflow-hidden w-full" style="padding-top: 100%">
-  <iframe
-    class="absolute inset-0 w-full h-full"
-    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2TsY9yqFso1zrvF8LNcVE7%2FGlyphs-Icons%3Fnode-id%3D3844%253A75606"
-    allowfullscreen
-  ></iframe>
-</div>
-
-Above is the configuration <span class="info-tag" title="Figma's layer group">Frame</span> for the [core icon set](https://www.figma.com/file/2TsY9yqFso1zrvF8LNcVE7/?node-id=0%3A1):
-
-Icon sets can be exported with the [Glyphs CLI](/docs/cli/install-cli) without any specified file configuration. However, you can leverage several helpful transformations that are available during export.
-
-### Variants
-
-These values are used by the [plugin](/docs/plugin/install-plugin) when scaffolding new variants and by the [CLI](/docs/cli/install-cli) when generating meta data from the set.
-
-### Replace Color
-
-If a variant is added to this configuration, the CLI will replace all colors in all matching SVGs with `currentColor`. This enables color inheritance in HTML.
-
-### Remove Stroke
-
-If a variant is added to this configuration, the CLI will remove the `stroke-width` on all matching elements. This enable easier control in CSS.
-
 
 
 ## Common Issues
 
-The [Figma plugin](/docs/plugin/install-plugin) can help perform most of the optimizations required for successful exports.
 
 ### Line-only SVGs
 

@@ -1,50 +1,8 @@
 ---
-title: Commands
+title: Sync
 category: CLI
-position: 32
+position: 34
 ---
-
-## `add`
-
-Add a new icon set config. Options that are not supplied as arguments will be prompted.
-
-```bash
-glyphs add [--key <file-key> --token <access-token> --replace]
-```
-
-Options:
-
-- `--key`, `-k`     &nbsp; File key for the Figma file
-- `--token`, `-t`   &nbsp; Personal access token from Figma
-- `--replace`, `-r` &nbsp; Overwrite any existing configuration for `<name>` or `<key>`
-
-## `remove`
-
-Remove an existing icon set config by name
-
-```bash
-glyphs remove <key>
-```
-
-Argements:
-
-- `key` &nbsp; The file key is required
-
-## `get`
-
-Get details on the icon set config
-
-```bash
-glyphs get [<key|name>]
-```
-
-## `list`
-
-List configured icon sets
-
-```bash
-glyphs list
-```
 
 ## `sync`
 

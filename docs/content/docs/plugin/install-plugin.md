@@ -1,5 +1,5 @@
 ---
-title: Install
+title: Install Plugin
 category: Figma Plugin
 position: 21
 ---

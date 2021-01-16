@@ -2,7 +2,7 @@
   .flex.min-w-0.w-full.flex-col.lg_flex-row
     .order-2.lg_order-1.flex-1.min-w-0.px-4.lg_px-8.py-8
       h1.mt-2.mb-8.text-4xl.font-bold {{ document.title }}
-      nuxt-content.prose.dark_prose-dark.docs(:document='document')
+      nuxt-content.prose.dark_prose-dark.docs.pb-16(:document='document')
       div.flex.justify-between.mt-8.text-blue-500.dark_text-blue-300.border-t.border-gray-100.dark_border-gray-700.pt-8
         div.flex.items-center.space-x-3(v-if='prev')
           svg-icon(name='arrow', rotate='w', stroke-width='7')
