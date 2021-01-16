@@ -10,7 +10,6 @@ npm i @glyphs/vue-core
 </template>
 
 <script>
-import { CoreArrowSolid } from '../../core/src'
 import { CoreHeart } from '@glyphs/vue-core'
 
 export default {

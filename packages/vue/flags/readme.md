@@ -10,7 +10,6 @@ npm i @glyphs/vue-flags
 </template>
 
 <script>
-import { CoreArrowSolid } from '../../core/src'
 import { FlagsCanada } from '@glyphs/vue-flags'
 
 export default {

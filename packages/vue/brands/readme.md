@@ -10,7 +10,6 @@ npm i @glyphs/vue-brands
 </template>
 
 <script>
-import { CoreArrowSolid } from '../../core/src'
 import { BrandsFigma } from '@glyphs/vue-brands'
 
 export default {
