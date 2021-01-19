@@ -2,10 +2,11 @@
 
 > Complete icons design system from Figma to web components
 
-<img src="https://img.shields.io/npm/v/%40glyphs/cli.svg?label=@glyphs/cli"> <img src="https://img.shields.io/npm/v/%40glyphs/rounded.svg?label=@glyphs/rounded"> <img src="https://img.shields.io/npm/v/%40glyphs/brands.svg?label=@glyphs/brands"> <img src="https://img.shields.io/npm/v/%40glyphs/flags.svg?label=@glyphs/flags">
-
-[![https://good-labs.github.io/greater-good-affirmation/assets/images/badge.svg](https://good-labs.github.io/greater-good-affirmation/assets/images/badge.svg)](https://good-labs.github.io/greater-good-affirmation)
-
+<a href="https://www.npmjs.com/package/@glyphs/cli"><img src="https://img.shields.io/npm/v/%40glyphs/cli.svg?label=@glyphs/cli"></a>
+<a href="https://www.npmjs.com/package/@glyphs/core"><img src="https://img.shields.io/npm/v/%40glyphs/core.svg?label=@glyphs/core"></a>
+<a href="https://www.npmjs.com/package/@glyphs/brands"><img src="https://img.shields.io/npm/v/%40glyphs/brands.svg?label=@glyphs/brands"></a>
+<a href="https://www.npmjs.com/package/@glyphs/flags"><img src="https://img.shields.io/npm/v/%40glyphs/flags.svg?label=@glyphs/flags"></a>
+<a href="https://good-labs.github.io/greater-good-affirmation"><img src="https://good-labs.github.io/greater-good-affirmation/assets/images/badge.svg"></a>
 
 ## Documentation
 
