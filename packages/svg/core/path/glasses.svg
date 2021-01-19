@@ -1,7 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M36 48C36 45.7909 30.6274 44 24 44C17.3726 44 12 45.7909 12 48V52C12 58.6274 17.3726 64 24 64C30.6274 64 36 58.6274 36 52V48Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M12 47L18.8385 20.5007C19.5223 17.8513 21.9119 16 24.6482 16H28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M36 47H44" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M44 48C44 45.7909 49.3726 44 56 44C62.6274 44 68 45.7909 68 48V52C68 58.6274 62.6274 64 56 64C49.3726 64 44 58.6274 44 52V48Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M68 47L61.1615 20.5007C60.4777 17.8513 58.0881 16 55.3518 16H52" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-</svg>

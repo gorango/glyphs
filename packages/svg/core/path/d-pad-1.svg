@@ -1,8 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M30 30C30 30.0001 30.0001 30 30 30ZM30 30L30.0001 15C30.0001 13.3431 31.3433 12 33.0001 12L45.0001 12C46.657 12 48.0001 13.3432 48.0001 15L48.0001 29.75C48.0001 29.8881 48.112 30 48.2501 30L63 30C64.6569 30 66 31.3432 66 33V45C66 46.6569 64.6569 48 63 48H48.5C48.2239 48 48.0001 48.2239 48.0001 48.5L48.0001 63C48.0001 64.6569 46.657 66 45.0001 66H33.0001C31.3433 66 30.0001 64.6569 30.0001 63L30 48M30 30H15C13.3431 30 12 31.3432 12 33V45C12 46.6569 13.3431 48 15 48L30 48M30 48C30.0001 48 30 47.9999 30 48Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M21 42.9893L21 34.9893L17 38.9893L21 42.9893Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M42.9895 21H34.9895L38.9895 17L42.9895 21Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M57 42.9893L57 34.9893L61 38.9893L57 42.9893Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M42.9893 57H34.9893L38.9893 61L42.9893 57Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M43 39C43 41.2091 41.2091 43 39 43C36.7909 43 35 41.2091 35 39C35 36.7909 36.7909 35 39 35C41.2091 35 43 36.7909 43 39Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-</svg>

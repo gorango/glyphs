@@ -1,6 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M10 23L30 15V57L10 65V23Z" fill="currentColor" fill-opacity="0.25" />
-  <path d="M50 23L30 15V57L50 65V23Z" fill="currentColor" fill-opacity="0.25" />
-  <path d="M50 23L70 15V57L50 65V23Z" fill="currentColor" fill-opacity="0.25" />
-  <path d="M30 15L10 23V65L30 57M30 15V57M30 15L50 23M30 57L50 65M50 23V65M50 23L70 15V57L50 65" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-</svg>

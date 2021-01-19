@@ -1,8 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M28 22C26.8954 22 26 22.8954 26 24C26 25.1046 26.8954 26 28 26H52C53.1046 26 54 25.1046 54 24C54 22.8954 53.1046 22 52 22H28Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M26 40C26 38.8954 26.8954 38 28 38H52C53.1046 38 54 38.8954 54 40C54 41.1046 53.1046 42 52 42H28C26.8954 42 26 41.1046 26 40Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 54C26.8954 54 26 54.8954 26 56C26 57.1046 26.8954 58 28 58H52C53.1046 58 54 57.1046 54 56C54 54.8954 53.1046 54 52 54H28Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M26 32C26 30.8954 26.8954 30 28 30H44C45.1046 30 46 30.8954 46 32C46 33.1046 45.1046 34 44 34H28C26.8954 34 26 33.1046 26 32Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M28 46C26.8954 46 26 46.8954 26 48C26 49.1046 26.8954 50 28 50H44C45.1046 50 46 49.1046 46 48C46 46.8954 45.1046 46 44 46H28Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M22 10C18.6863 10 16 12.6863 16 16V64C16 67.3137 18.6863 70 22 70H58C61.3137 70 64 67.3137 64 64V16C64 12.6863 61.3137 10 58 10H22ZM20 16C20 14.8954 20.8954 14 22 14H58C59.1046 14 60 14.8954 60 16V64C60 65.1046 59.1046 66 58 66H22C20.8954 66 20 65.1046 20 64V16Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-</svg>

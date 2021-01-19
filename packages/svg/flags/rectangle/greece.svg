@@ -1,9 +1,0 @@
-<svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M120 0H0V80H120V0Z" fill="#2F80ED" />
-  <path d="M120 10H44V18H120V10Z" fill="#F2F2F2" />
-  <path d="M120 28H44V36H120V28Z" fill="#F2F2F2" />
-  <path d="M120 46H0V54H120V46Z" fill="#F2F2F2" />
-  <path d="M120 64H0V72H120V64Z" fill="#F2F2F2" />
-  <path d="M0 23H44" stroke="#F2F2F2" stroke-width="8" />
-  <path d="M22 46V0" stroke="#F2F2F2" stroke-width="8" />
-</svg>

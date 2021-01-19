@@ -1,7 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M19 34L16.8787 31.8787L16 32.7574V34H19ZM19 46H16V47.2426L16.8787 48.1213L19 46ZM34 19V16H32.7574L31.8787 16.8787L34 19ZM46 19L48.1213 16.8787L47.2426 16H46V19ZM61 34H64V32.7574L63.1213 31.8787L61 34ZM61 46L63.1213 48.1213L64 47.2426V46H61ZM46 61V64H47.2426L48.1213 63.1213L46 61ZM34 61L31.8787 63.1213L32.7574 64H34V61ZM16 34L16 46H22V34H16ZM31.8787 16.8787L16.8787 31.8787L21.1213 36.1213L36.1213 21.1213L31.8787 16.8787ZM46 16H34V22H46V16ZM63.1213 31.8787L48.1213 16.8787L43.8787 21.1213L58.8787 36.1213L63.1213 31.8787ZM64 46L64 34H58L58 46H64ZM48.1213 63.1213L63.1213 48.1213L58.8787 43.8787L43.8787 58.8787L48.1213 63.1213ZM34 64H46V58L34 58V64ZM16.8787 48.1213L31.8787 63.1213L36.1213 58.8787L21.1213 43.8787L16.8787 48.1213Z" fill="currentColor" />
-  <rect x="34" y="7" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="8" stroke-linecap="square" stroke-linejoin="round" />
-  <rect x="34" y="61" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="8" stroke-linecap="square" stroke-linejoin="round" />
-  <rect x="7" y="34" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="8" stroke-linecap="square" stroke-linejoin="round" />
-  <rect x="61" y="34" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="8" stroke-linecap="square" stroke-linejoin="round" />
-</svg>

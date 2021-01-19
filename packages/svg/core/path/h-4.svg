@@ -1,6 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M10 60V20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M10 40H38" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M38 60V20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M70 47V60M70 47H50.8334C50.4886 47 50.2908 46.6074 50.4961 46.3303L69.504 20.6696C69.6618 20.4565 70 20.5682 70 20.8333V47ZM70 47L73 46.9999" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-</svg>

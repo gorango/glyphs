@@ -1,5 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M33 50C33 48.8954 32.1046 48 31 48C29.8954 48 29 48.8954 29 50V54C29 55.1046 29.8954 56 31 56H49C50.1046 56 51 55.1046 51 54V50C51 48.8954 50.1046 48 49 48C47.8954 48 47 48.8954 47 50V52H33V50Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M33 22C33 20.8954 32.1046 20 31 20C29.8954 20 29 20.8954 29 22V26C29 27.1046 29.8954 28 31 28H49C50.1046 28 51 27.1046 51 26V22C51 20.8954 50.1046 20 49 20C47.8954 20 47 20.8954 47 22V24H33V22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10C10.8954 10 10 10.8954 10 12V68C10 69.1046 10.8954 70 12 70H68C69.1046 70 70 69.1046 70 68V12C70 10.8954 69.1046 10 68 10H12ZM66 42H14V66H66V42ZM66 38V14H14V38H66Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-</svg>

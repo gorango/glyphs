@@ -1,9 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M34.7478 27.6614L37.6531 26.9136L36.1575 21.103L33.2522 21.8508L34.7478 27.6614ZM46.7478 21.8508L43.8425 21.103L42.3469 26.9136L45.2522 27.6614L46.7478 21.8508ZM61 50V53H67V50H61ZM13 50V53H19V50H13ZM19 48C19 38.219 25.6897 29.9928 34.7478 27.6614L33.2522 21.8508C21.6076 24.8479 13 35.415 13 48H19ZM45.2522 27.6614C54.3103 29.9928 61 38.219 61 48H67C67 35.415 58.3924 24.8479 46.7478 21.8508L45.2522 27.6614ZM61 48V50H67V48H61ZM19 50V48H13V50H19Z" fill="currentColor" />
-  <path d="M14 21H11L11 27H14L14 21ZM34 27H37V21H34V27ZM46 21H43V27H46V21ZM66 27H69V21H66V27ZM14 27L34 27V21L14 21L14 27ZM46 27L66 27V21L46 21V27Z" fill="currentColor" />
-  <rect x="58" y="50" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="8" stroke-linecap="square" stroke-linejoin="round" />
-  <rect x="10" y="50" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="8" stroke-linecap="square" stroke-linejoin="round" />
-  <rect x="34" y="18" width="12" height="12" fill="currentColor" stroke="currentColor" stroke-width="8" stroke-linecap="square" stroke-linejoin="round" />
-  <circle cx="10" cy="24" r="4" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" />
-  <circle cx="70" cy="24" r="4" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" />
-</svg>
