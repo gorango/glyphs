@@ -60,7 +60,7 @@ To get started, you only need to provide the tag for the that component you want
 
 
 ```html
-<core-heart></rounded-icon-heart>
+<core-heart></core-heart>
 ```
 
 ### Variant
@@ -68,7 +68,7 @@ To get started, you only need to provide the tag for the that component you want
 Available variants are `path`, `bold`, `duo`, `poly`, and `outline`.
 
 ```html
-<core-arrow variant="duo"></rounded-icon-arrow>
+<core-arrow variant="duo"></core-arrow>
 ```
 
 ### Rotate
@@ -77,7 +77,7 @@ Rotation can be expressed in degrees: `45`, `90`, `135`, `180`, `-135`, `-90`, `
 Or using navigational headings: `ne`, `e`, `se`, `s`, `sw`, `w`, `nw`, `n`
 
 ```html
-<core-arrow-solid-curve" rotate="90"></rounded-icon-arrow-solid-curve>
+<core-arrow-solid-curve" rotate="90"></core-arrow-solid-curve>
 ```
 
 ### Flip
@@ -85,7 +85,7 @@ Or using navigational headings: `ne`, `e`, `se`, `s`, `sw`, `w`, `nw`, `n`
 Flips can be achieved across the `"v"`ertical or `"y"` axis and the `"h"`orizontal or `"x"` axis. The two can also be combined (like `"xy"`, `"hv"`).
 
 ```html
-<core-hand flip="x"></rounded-icon-hand>
+<core-hand flip="x"></core-hand>
 ```
 
 ### Stroke-Width
@@ -93,7 +93,7 @@ Flips can be achieved across the `"v"`ertical or `"y"` axis and the `"h"`orizont
 This property only works when the `variant` is set to `path`, or when the `variant` property is excluded.
 
 ```html
-<core-arrow stroke-width="1.2"></rounded-icon-arrow>
+<core-arrow stroke-width="1.2"></core-arrow>
 ```
 
 ## Developing

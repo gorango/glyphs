@@ -206,7 +206,7 @@ export default {
       const rotate = this.previewRotate ? `\n  rotate="${this.previewRotate}"` : ''
       const flip = this.previewFlip ? `\n  flip="${this.previewFlip}"` : ''
       const stroke = ['path', 'outline'].reduce((b, v) => b || [this.variant, this.previewVariant].includes(v), 0) ? `\n  stroke-width="${this.stroke}"` : ''
-      const end = `\n></${this.selectedSet.label}-icon>`
+      const end = `\n></${this.selectedSet.label}-${this.kebabCase(this.icon)}>`
       return start + (rotate && rotate) + (flip && flip) + (stroke && stroke) + end
     },
     svgCode () {
