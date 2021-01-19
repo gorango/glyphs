@@ -19,6 +19,7 @@ export default {
   plugins: [
     '@/plugins/init.js',
     '@/plugins/clipboard.client.js',
+    '@/plugins/clarity.client.js',
     '@/plugins/click-outside.js',
     '@/plugins/icons.client.js'
   ],
