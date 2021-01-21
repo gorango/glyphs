@@ -959,6 +959,29 @@
   resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.4.2.tgz#dd5265f4d91a07aea7e71d886c0a3e83bdc7a11e"
   integrity sha512-roXB9WuWKEHOK5IIloRvlXbwmAT7WM2yENokbmDeJOMIHI8SQ/ucsm4hpvSfpLC8j64mQGkn0QzClwzY2frLQw==
 
+"@glyphs/vue-brands@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@glyphs/vue-brands/-/vue-brands-0.0.2.tgz#3e67cff2b713bf7b58208f55017ea88b502f06e5"
+  integrity sha512-tGmQea/lL7uJMkg/u/ycgNxfB4s11oKl58YVAlmwNfy+X09pkvGg2HItA8u7qqAO8nAuQ2x+vbldm+rH7NwMLw==
+  dependencies:
+    vue "^2.6.12"
+
+"@glyphs/vue-core@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@glyphs/vue-core/-/vue-core-0.0.2.tgz#284f07d42bd7a9969815cf40647711ef7a35308d"
+  integrity sha512-I2dkqi7Bog2QCvyOce4MqzgW52F1tKTl/K7GMdSGvt62Prhs3xIfx96Ci8QKYLxAe9HHNFZ/MaUrn2qnW7uTEA==
+  dependencies:
+    vue "^2.6.12"
+    vue-hot-reload-api "^2.3.4"
+
+"@glyphs/vue-flags@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@glyphs/vue-flags/-/vue-flags-0.0.2.tgz#c31679e92471847c8649acc9bfefc9f73f1e4414"
+  integrity sha512-1RyZseTFk+nE7A/88EzZbGMGSMul7EfMW5s8d4ESLfyYvxU4ZjLRChrVop9ETUmB4axEtrkhi8TIWbMigD/7zQ==
+  dependencies:
+    vue "^2.6.12"
+    vue-hot-reload-api "^2.3.4"
+
 "@koa/router@^9.0.1":
   version "9.4.0"
   resolved "https://registry.yarnpkg.com/@koa/router/-/router-9.4.0.tgz#734b64c0ae566eb5af752df71e4143edc4748e48"
@@ -1438,6 +1461,21 @@
     serve-static "^1.14.1"
     workbox-cdn "^5.1.4"
 
+"@nuxtjs/sitemap@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/sitemap/-/sitemap-2.4.0.tgz#6a9fa1c35e161f87375d59949d973568cec40614"
+  integrity sha512-TVgIYOtPp7KAfaUo76WRpGbO20j4D/xi/A7shFIGjARHs+FvfAWXNCtBT87dTwe/RoYzAsEKtijFFUTaSu5bUA==
+  dependencies:
+    async-cache "^1.1.0"
+    consola "^2.13.0"
+    etag "^1.8.1"
+    fresh "^0.5.2"
+    fs-extra "^8.1.0"
+    is-https "^2.0.2"
+    lodash.unionby "^4.8.0"
+    minimatch "^3.0.4"
+    sitemap "^4.1.1"
+
 "@nuxtjs/svg@^0.1.12":
   version "0.1.12"
   resolved "https://registry.yarnpkg.com/@nuxtjs/svg/-/svg-0.1.12.tgz#a5b2a66070a36e3c5c5183db9e3d89485ef3eb1c"
@@ -1674,6 +1712,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.8.tgz#fe2012f2355e4ce08bca44aeb3abbb21cf88d33f"
   integrity sha512-KPcKqKm5UKDkaYPTuXSx8wEP7vE9GnuaXIZKijwRYcePpZFDVuy2a57LarFKiORbHOuTOOwYzxVxcUzsh2P2Pw==
 
+"@types/node@^12.0.2":
+  version "12.19.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.19.15.tgz#0de7e978fb43db62da369db18ea088a63673c182"
+  integrity sha512-lowukE3GUI+VSYSu6VcBXl14d61Rp5hA1D+61r16qnwC0lYNSqdxcvRh0pswejorHfS+HgwBasM8jLXz0/aOsw==
+
 "@types/node@^12.12.67":
   version "12.12.67"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.67.tgz#4f86badb292e822e3b13730a1f9713ed2377f789"
@@ -1720,6 +1763,13 @@
   version "0.2.28"
   resolved "https://registry.yarnpkg.com/@types/relateurl/-/relateurl-0.2.28.tgz#6bda7db8653fa62643f5ee69e9f69c11a392e3a6"
   integrity sha1-a9p9uGU/piZD9e5p6facEaOS46Y=
+
+"@types/sax@^1.2.0":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@types/sax/-/sax-1.2.1.tgz#e0248be936ece791a82db1a57f3fb5f7c87e8172"
+  integrity sha512-dqYdvN7Sbw8QT/0Ci5rhjE4/iCMJEM0Y9rHpCu+gGXD9Lwbz28t6HI2yegsB6BoV1sShRMU6lAmAcgRjmFy7LA==
+  dependencies:
+    "@types/node" "*"
 
 "@types/serve-static@*", "@types/serve-static@^1.13.5":
   version "1.13.5"
@@ -2274,6 +2324,11 @@ aproba@^1.1.1:
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
   integrity sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
 
+arg@^4.1.1:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.3.tgz#269fc7ad5b8e42cb63c896d5666017261c144089"
+  integrity sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==
+
 arg@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/arg/-/arg-5.0.0.tgz#a20e2bb5710e82950a516b3f933fee5ed478be90"
@@ -2375,6 +2430,13 @@ astral-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
+
+async-cache@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/async-cache/-/async-cache-1.1.0.tgz#4a9a5a89d065ec5d8e5254bd9ee96ba76c532b5a"
+  integrity sha1-SppaidBl7F2OUlS9nulrp2xTK1o=
+  dependencies:
+    lru-cache "^4.0.0"
 
 async-each@^1.0.1:
   version "1.0.3"
@@ -3279,7 +3341,7 @@ connect@^3.7.0:
     parseurl "~1.3.3"
     utils-merge "1.0.1"
 
-consola@^2.10.0, consola@^2.15.0, consola@^2.6.0, consola@^2.9.0:
+consola@^2.10.0, consola@^2.13.0, consola@^2.15.0, consola@^2.6.0, consola@^2.9.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/consola/-/consola-2.15.0.tgz#40fc4eefa4d2f8ef2e2806147f056ea207fcc0e9"
   integrity sha512-vlcSGgdYS26mPf7qNi+dCisbhiyDnrN1zaRbw3CSuc2wGOMEGGPsp46PdRG5gqXwgtJfjxDkxRNAgRPr1B77vQ==
@@ -5792,6 +5854,11 @@ is-hexadecimal@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-hexadecimal/-/is-hexadecimal-1.0.4.tgz#cc35c97588da4bd49a8eedd6bc4082d44dcb23a7"
   integrity sha512-gyPJuv83bHMpocVYoqof5VDiZveEoGoFL8m3BXNb2VW8Xs+rz9kqO8LOQ5DH6EsuvilT1ApazU0pyl+ytbPtlw==
 
+is-https@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/is-https/-/is-https-2.0.2.tgz#7009d303c72580f15897d5c063d6b6bc1f838fef"
+  integrity sha512-UfUCKVQH/6PQRCh5Qk9vNu4feLZiFmV/gr8DjbtJD0IrCRIDTA6E+d/AVFGPulI5tqK5W45fYbn1Nir1O99rFw==
+
 is-negative-zero@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-negative-zero/-/is-negative-zero-2.0.0.tgz#9553b121b0fac28869da9ed459e20c7543788461"
@@ -6280,6 +6347,11 @@ lodash.toarray@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
   integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
 
+lodash.unionby@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/lodash.unionby/-/lodash.unionby-4.8.0.tgz#883f098ff78f564a727b7508e09cdd539734bb83"
+  integrity sha1-iD8Jj/ePVkpye3UI4JzdU5c0u4M=
+
 lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -6317,7 +6389,7 @@ lower-case@^2.0.1:
   dependencies:
     tslib "^1.10.0"
 
-lru-cache@^4.1.2:
+lru-cache@^4.0.0, lru-cache@^4.1.2:
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.5.tgz#8bbe50ea85bed59bc9e33dcab8235ee9bcf443cd"
   integrity sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==
@@ -9071,7 +9143,7 @@ safe-regex@^2.1.1:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sax@>=0.6.0, sax@~1.2.4:
+sax@>=0.6.0, sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
@@ -9292,6 +9364,17 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+sitemap@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-4.1.1.tgz#c9b459c7d797e629c61f56b86586d4f67dbf250b"
+  integrity sha512-+8yd66IxyIFEMFkFpVoPuoPwBvdiL7Ap/HS5YD7igqO4phkyTPFIprCAE9NMHehAY5ZGN3MkAze4lDrOAX3sVQ==
+  dependencies:
+    "@types/node" "^12.0.2"
+    "@types/sax" "^1.2.0"
+    arg "^4.1.1"
+    sax "^1.2.4"
+    xmlbuilder "^13.0.0"
 
 slash@^3.0.0:
   version "3.0.0"
@@ -10414,7 +10497,7 @@ vue-eslint-parser@^7.1.1:
     esquery "^1.0.1"
     lodash "^4.17.15"
 
-vue-hot-reload-api@^2.3.0:
+vue-hot-reload-api@^2.3.0, vue-hot-reload-api@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
@@ -10747,6 +10830,11 @@ xml2js@^0.4.23:
   dependencies:
     sax ">=0.6.0"
     xmlbuilder "~11.0.0"
+
+xmlbuilder@^13.0.0:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-13.0.2.tgz#02ae33614b6a047d1c32b5389c1fdacb2bce47a7"
+  integrity sha512-Eux0i2QdDYKbdbA6AM6xE4m6ZTZr4G4xF9kahI2ukSEMCzwce2eX9WlTI5J3s+NU7hpasFsr8hWIONae7LluAQ==
 
 xmlbuilder@~11.0.0:
   version "11.0.1"

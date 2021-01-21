@@ -1,11 +1,18 @@
 import tailwindConfig from './tailwind.config'
 
+const getContent = async () => {
+  const { $content } = require('@nuxt/content')
+  const files = await $content({ deep: true }).fetch()
+  return files.map(({ path }) => path)
+}
+
 export default {
   target: 'static',
   head: {
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'description', hid: 'description', content: 'A dynamic design system for creating icon sets in Figma and using them on the web.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -26,6 +33,7 @@ export default {
   components: true,
   modules: [
     '@nuxt/content',
+    '@nuxtjs/sitemap',
     '@nuxtjs/gtm'
   ],
   buildModules: [
@@ -39,11 +47,12 @@ export default {
     prefetchLinks: false
   },
   generate: {
-    async routes () {
-      const { $content } = require('@nuxt/content')
-      const files = (await $content({ deep: true }).where({ path: 'docs' }).fetch()).map(({ path }) => path)
-      return files
-    }
+    routes: getContent,
+    subFolders: false
+  },
+  sitemap: {
+    hostname: 'https://glyphs.fyi',
+    routes: getContent
   },
   build: {
     bable: {

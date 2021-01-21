@@ -30,6 +30,7 @@
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/pwa": "^3.3.4",
+    "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/svg": "^0.1.12",
     "@nuxtjs/tailwindcss": "^3.3.3",
     "@tailwindcss/typography": "0.2.0",
