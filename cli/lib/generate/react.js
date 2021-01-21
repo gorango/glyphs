@@ -5,7 +5,7 @@ module.exports.index = (opts) => createIndex(opts, 'jsx')
 
 module.exports.component = async ({ set, name, variants, defaultVariant, componentName, className, tagName, transform }) => `
 import React, { forwardRef } from 'react'
-import { transform, calcWidth } from '../utils'
+import { transform } from '../utils'
 
 const renderString = ({ variant, strokeWidth, strokeLinecap='round', strokeLinejoin='round' }) => {
   switch (variant) {\
@@ -29,25 +29,34 @@ const renderString = ({ variant, strokeWidth, strokeLinecap='round', strokeLinej
 }
 
 const ${className} = forwardRef((props, ref) => {
-  const { size=80, variant='${defaultVariant}', rotate, flip, children } = props
+  const { size=null, variant='${defaultVariant}', rotate, flip, children } = props
+  const computedStyle = {
+    fontSize: !size ? 'auto' : isNaN(size) ? size : \`\${size}px\`,
+    display: 'inline-block',
+    width: '1em',
+    height: '1em',
+    contain: 'strict',
+    boxSizing: 'content-box'
+  }
   const ratios = ${JSON.stringify(transform?.ratios || {}, null, 1).replace(/\n\s+/g, ' ')}
   const ratio = ratios?.variants?.[variant] || ratios?.icons?.${componentName} || 1
 
   return (
-    <svg
-      ref={ref}
-      width={calcWidth(size, ratio)}
-      height={size}
-      viewBox={\`0 0 \${80 * ratio} 80\`}
-      transform={transform(rotate, flip)}
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-    >
-      {children}
-      <g>
-        {renderString({ variant, rotate, flip })}
-      </g>
-    </svg>
+    <span style={computedStyle}>
+      <svg
+        ref={ref}
+        style="width: auto; height: 100%"
+        viewBox={\`0 0 \${80 * ratio} 80\`}
+        transform={transform(rotate, flip)}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+      >
+        {children}
+        <g>
+          {renderString({ variant, rotate, flip })}
+        </g>
+      </svg>
+    </span>
   )
 })
 
