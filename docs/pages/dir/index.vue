@@ -220,9 +220,7 @@ export default {
 
   computed: {
     setsSelection () {
-      const res = Object.entries(meta).map(([set, { unique }]) => ({ label: set, count: unique }))
-      res.splice(3, 0, { label: 'simple' })
-      return res
+      return Object.entries(meta).map(([set, { unique }]) => ({ label: set, count: unique }))
     },
     set () {
       return this.$route.query.s || 'core'
