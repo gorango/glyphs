@@ -5,7 +5,7 @@ module.exports.index = (opts) => createIndex(opts, 'jsx')
 
 module.exports.component = async ({ set, name, variants, defaultVariant, componentName, className, tagName, transform }) => `
 import React, { forwardRef } from 'react'
-import { transform } from '../utils'
+import { transform, calcWidth } from '../utils'
 
 const renderString = ({ variant, strokeWidth, strokeLinecap='round', strokeLinejoin='round' }) => {
   switch (variant) {\
@@ -36,7 +36,7 @@ const ${className} = forwardRef((props, ref) => {
   return (
     <svg
       ref={ref}
-      width={size * ratio}
+      width={calcWidth(size, ratio)}
       height={size}
       viewBox={\`0 0 \${80 * ratio} 80\`}
       transform={transform(rotate, flip)}

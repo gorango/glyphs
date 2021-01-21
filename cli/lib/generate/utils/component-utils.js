@@ -37,3 +37,19 @@ export const transform = (r, f) => {
   const transform = (rotate && scale) ? `${rotate} ${scale}` : ((rotate || scale) || '')
   return transform
 }
+
+export const calcWidth = (size, ratio) => {
+  if (!isNaN(size)) {
+    return size
+  }
+
+  const regex = /[-]{0,1}[\d]*[.]{0,1}[\d]+/g
+  const [width] = size.match(regex)
+  const startIndex = size.indexOf(width)
+  const endIndex = startIndex + width.length
+
+  const prefix = size.slice(0, startIndex)
+  const suffix = size.slice(endIndex)
+  const newValue = width * ratio
+  return `${prefix}${newValue}${suffix}`
+}

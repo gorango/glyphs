@@ -5,7 +5,7 @@ module.exports.index = (opts) => createIndex(opts, 'vue')
 module.exports.component = async ({ set, name, variants, defaultVariant, componentName, className, tagName, transform }) => `
 <template>
   <svg
-    :width="size * ratio"
+    :width="calcWidth(size, ratio)"
     :height="size"
     :viewBox='\`0 0 \${80 * ratio} 80\`'
     :transform="transform"
@@ -36,7 +36,7 @@ module.exports.component = async ({ set, name, variants, defaultVariant, compone
 
 <script>
 import Vue from 'vue'
-import { transform } from '../utils'
+import { transform, calcWidth } from '../utils'
 
 export default {
   name: '${className}',
@@ -59,6 +59,10 @@ export default {
       const ratios = ${JSON.stringify(transform?.ratios || {}, null, 1).replace(/\n\s+/g, ' ')}
       return ratios?.variants?.[this.variant] || ratios?.icons?.${componentName} || 1
     }
+  },
+
+  methods: {
+    calcWidth
   }
 }
 </script>

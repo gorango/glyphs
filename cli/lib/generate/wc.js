@@ -4,7 +4,7 @@ module.exports.index = createIndex
 
 module.exports.component = async ({ set, name, variants, defaultVariant, componentName, className, tagName, transform }) => `
 import { html, property, svg, define } from 'hybrids'
-import { transform } from '../utils'
+import { transform, calcWidth } from '../utils'
 
 const ${className} = {
   size: '40',
@@ -20,7 +20,7 @@ const ${className} = {
 
     return html\`
       <svg
-        width="\${size * ratio}"
+        width="\${calcWidth(size, ratio)}"
         height="\${size}"
         viewBox="0 0 \${80 * ratio} 80"
         transform="\${transform(rotate, flip)}"
