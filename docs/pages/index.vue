@@ -13,7 +13,7 @@
               a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
                 href='https://www.figma.com/community/file/899031264835768805',
                 target='_blank',
-                ref='noreferrer noopener',
+                rel='noreferrer noopener',
                 :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
               )
                 svg-icon.mr-3.text-3xl.text-gray-800.dark_text-gray-100(set='brands', name='figma', variant='color')
@@ -57,7 +57,7 @@
                 .flex-auto
                 svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path', rotate='90')
 
-      landing-icons.hidden.xl_block
+      lazy-landing-icons.hidden.xl_block
 
     div.py-6
       div.bg-center.bg-repeat-x(
@@ -80,7 +80,7 @@
               }`
               href='https://www.figma.com/community/file/899031264835768805',
               target='_blank',
-              ref='noreferrer noopener',
+              rel='noreferrer noopener',
             )
               svg-icon.mr-3(set='brands', name='figma', size='1.5rem', variant='color')
               span.text-xl Figma File
