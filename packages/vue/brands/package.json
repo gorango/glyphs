@@ -13,6 +13,7 @@
     "vue": "^2.6.12"
   },
   "devDependencies": {
+    "@glyphs/cli": "^0.2.1",
     "@glyphs/brands": "^0.1.4",
     "@vue/component-compiler-utils": "^3.2.0",
     "vue-template-compiler": "^2.6.12"
