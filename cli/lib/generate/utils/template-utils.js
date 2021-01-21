@@ -35,12 +35,13 @@ module.exports.createVariants = async function (variants, options) {
       return node.children.reduce(async (p, child) => p.then(async str => {
         const space = '\n' + options.child.space.split(' ').slice(2).join(' ')
         if (!replaceProps.includes(child.name) || !options?.transform?.stroke?.[variant]) {
-          if (!(options?.transform?.color || []).includes(variant)) {
+          if (!options?.transform?.color?.[variant]) {
             const body = await stringify(child, {
               transformAttr: function (key, val) {
                 switch (key) {
                   case 'stroke':
                   case 'fill':
+                  case 'mask':
                     if (val.startsWith('url')) {
                       return options.child.default(key, val.replace(/\((.*?)\)/, (match, p1) => {
                         return `(${p1 + '_' + options.name})`
