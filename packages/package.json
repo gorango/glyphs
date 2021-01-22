@@ -45,6 +45,9 @@
     "pub:wc:brands": "cd wc/brands && npm publish --access public",
     "pub:wc:core": "cd wc/core && npm publish --access public",
     "pub:wc:flags": "cd wc/flags && npm publish --access public",
+    "sync:brands": "cd svg/brands && glyphs sync -d . -s . -p --set brands --diff",
+    "sync:core": "cd svg/core && glyphs sync -d . -s . -p --set core --diff",
+    "sync:flags": "cd svg/flags && glyphs sync -d . -s . -p --set flags --diff",
     "ncu:react": "(npm run ncu:react:brands);(npm run ncu:react:core);(npm run ncu:react:flags)",
     "ncu:vue": "(npm run ncu:vue:brands);(npm run ncu:vue:core);(npm run ncu:vue:flags)",
     "ncu:wc": "(npm run ncu:wc:brands);(npm run ncu:wc:core);(npm run ncu:wc:flags)",
@@ -65,6 +68,7 @@
     "build": "(npm run build:react);(npm run build:vue);(npm run build:wc)",
     "sv": "(npm run sv:react);(npm run sv:vue);(npm run sv:wc)",
     "pub": "(npm run pub:react);(npm run pub:vue);(npm run pub:wc)",
-    "all": "(npm run ncu);(npm run gen);(npm run build);(npm run sv);(npm run pub)"
+    "all": "(npm run ncu);(npm run gen);(npm run build);(npm run sv);(npm run pub)",
+    "sync": "(npm run sync:brands);(npm run sync:core);(npm run sync:flags)"
   }
 }
