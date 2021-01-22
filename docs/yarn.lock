@@ -944,40 +944,40 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
-"@glyphs/brands@0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@glyphs/brands/-/brands-0.1.4.tgz#2db538d777245542c625aa8f57cd2fc3de86b6f9"
-  integrity sha512-TdNSrZbZtnLce3YjdNWjTo6ljuM9Ztj5F3APP5IQtE+EATTUFrnqrWwPPXcgsr34DnYgGKtplkDA/I+EuXwzxw==
+"@glyphs/brands@0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@glyphs/brands/-/brands-0.1.7.tgz#a65ae87db7878037444b07c461a499e731f61017"
+  integrity sha512-41i/oN5ddeHLYSGjifFCAOk9/2eFRN1PKDcbhrtaYyID4L8BEBo5Tea+wcl2Hml+uGsxkHH3DWrW9/6aWBIPFA==
 
-"@glyphs/core@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.7.3.tgz#69b22ee8ec645c09ffd5704d95efe9690c6c5af2"
-  integrity sha512-k7ZCu2pikVy3SqSa6dW9uBIYG6yQt+g5B0lTum2eUsNppF3I/M8Y6b5V/07uqLkANrE3GY9icldVzQsGtKhBPw==
+"@glyphs/core@^0.7.6":
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.7.6.tgz#3d2a182f8d17d3713efd3802e9712c7842a0a211"
+  integrity sha512-gjQh+hmvLmG99lA1AG9q+rA4TYMDkjuvcByhdRqqakz3VeKuldh87P3wjgFlzEuSPfTMrGH5MNDp8Qkjn6oMSA==
 
-"@glyphs/flags@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.5.0.tgz#2ebf63caec68601aad5eca0a684c79faad1972a3"
-  integrity sha512-kKAwE+Rxzw5rBEblA7JzyMP6A6EbVhsPO3ubrjf0q0LxHvJCOdjm5UqWNG4YXYtykQDRSvL14dcUxTqQKb2Rrw==
+"@glyphs/flags@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.5.3.tgz#34ba5e67a40980c4d204bac7e5f5f090736b51b9"
+  integrity sha512-AZ15hNTw8MWBKUT1ybVkHR11NvpuN0XoYHyedGD+cU+Z6a+F/gwFmJSzmrOsq/oQYu5FInQCzzry/xUNou0Lhg==
 
-"@glyphs/vue-brands@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@glyphs/vue-brands/-/vue-brands-0.0.2.tgz#3e67cff2b713bf7b58208f55017ea88b502f06e5"
-  integrity sha512-tGmQea/lL7uJMkg/u/ycgNxfB4s11oKl58YVAlmwNfy+X09pkvGg2HItA8u7qqAO8nAuQ2x+vbldm+rH7NwMLw==
+"@glyphs/vue-brands@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@glyphs/vue-brands/-/vue-brands-0.0.3.tgz#a79db1671e1ba8c12da2be7c41512d9269d57f6a"
+  integrity sha512-F4EAPjrdRn1tDJGJpakoXAsKzfVx/Nt7cSBawHbGyF/KZsTwR4mz+K0dS905si1im5QmmeRfhp2Nz0a/BLCTUA==
   dependencies:
     vue "^2.6.12"
 
-"@glyphs/vue-core@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@glyphs/vue-core/-/vue-core-0.0.2.tgz#284f07d42bd7a9969815cf40647711ef7a35308d"
-  integrity sha512-I2dkqi7Bog2QCvyOce4MqzgW52F1tKTl/K7GMdSGvt62Prhs3xIfx96Ci8QKYLxAe9HHNFZ/MaUrn2qnW7uTEA==
+"@glyphs/vue-core@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@glyphs/vue-core/-/vue-core-0.0.3.tgz#cb11b68c9d10363aa01075b688dac4a20e886c9a"
+  integrity sha512-KaPa/jlQ5O5O5CtewsDZJtl/nYS/MUWqBS+7B4Yl2btveh0Dc/fHARoHUhfKqNA9PLBinUFdUPxXCG7BBw2nRA==
   dependencies:
     vue "^2.6.12"
     vue-hot-reload-api "^2.3.4"
 
-"@glyphs/vue-flags@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@glyphs/vue-flags/-/vue-flags-0.0.2.tgz#c31679e92471847c8649acc9bfefc9f73f1e4414"
-  integrity sha512-1RyZseTFk+nE7A/88EzZbGMGSMul7EfMW5s8d4ESLfyYvxU4ZjLRChrVop9ETUmB4axEtrkhi8TIWbMigD/7zQ==
+"@glyphs/vue-flags@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@glyphs/vue-flags/-/vue-flags-0.0.3.tgz#56f40e22a0de5a756f0217d0b7af575220e8eb19"
+  integrity sha512-9UaluhkuW2rCR7CGyMf4mW3rqblfFeWKtaVTq7pch0MnBmP6ze1zsRKic9jrLVsHCwjuMAyGc8oxSVKOowwXFA==
   dependencies:
     vue "^2.6.12"
     vue-hot-reload-api "^2.3.4"

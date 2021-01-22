@@ -22,9 +22,9 @@ export default {
     ]
   },
   css: [
+    '@/assets/fonts/fonts.css',
     '@/assets/css/main.css',
-    '@/assets/css/scrollbar.css',
-    '@/assets/fonts/fonts.css'
+    '@/assets/css/scrollbar.css'
   ],
   plugins: [
     '@/plugins/init.js',
@@ -58,6 +58,13 @@ export default {
     routes: getContent
   },
   build: {
+    parallel: true,
+    extractCSS: true,
+    splitChunks: {
+      layouts: true,
+      pages: true,
+      commons: true
+    },
     bable: {
       // Skip modules folder to avoid size errors (The code generator has deoptimised the styling...)
       presets ({ isServer }, [preset, options]) {
