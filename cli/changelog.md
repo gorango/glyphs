@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.0...@glyphs/cli-v0.3.1) (2021-01-22)
+
+
+### Bug Fixes
+
+* **cli:** sync with diff or categories options breaks map.json ([c9198b2](https://github.com/gorango/glyphs/commit/c9198b23f51a035a8907901a2a0c3c2b80f4b6f4))
+
 ## [0.3.0](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.0-alpha.4...@glyphs/cli-v0.3.0) (2021-01-22)
 
 
