@@ -3,7 +3,7 @@ module.exports = {
     target: 'vue',
     set: 'node_modules/@glyphs/brands',
     output: 'src',
-    defaultVariant: 'color',
+    defaultVariant: 'solid',
     transform: {
       color: ['path', 'solid'],
       stroke: {
