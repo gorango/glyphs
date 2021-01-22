@@ -17,8 +17,8 @@ async function createDir (dirName) {
   }
 }
 
-async function saveJSON (fileName, data) {
-  return util.promisify(fs.writeFile)(path.join(process.cwd(), `${fileName}.json`), JSON.stringify(data, false, 2))
+async function saveJSON (fileName, data, space=0) {
+  return util.promisify(fs.writeFile)(path.join(process.cwd(), `${fileName}.json`), JSON.stringify(data, null, space))
 }
 
 async function saveSVG (fileName, svgDir, dirName, data) {

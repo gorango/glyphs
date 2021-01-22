@@ -172,7 +172,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
     }, {})
   }
 
-  await saveJSON(`${dataDir}/meta`, meta)
+  await saveJSON(`${dataDir}/meta`, meta, 2)
   meta.variants.forEach(variant => createDir(`${svgDir}/${variant}`))
 
   const figmaLimit = 400
