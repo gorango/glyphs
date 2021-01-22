@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.4](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.5.3...@glyphs/flags-v0.5.4) (2021-01-22)
+
+
+### Bug Fixes
+
+* **svg:** replace missing maps ([4c6c1dd](https://github.com/gorango/glyphs/commit/4c6c1dd2baa2b51813437e1681554a2c8c0b2e48))
+
 ### [0.5.3](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.5.2...@glyphs/flags-v0.5.3) (2021-01-22)
 
 

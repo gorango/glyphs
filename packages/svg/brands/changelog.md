@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.1.7...@glyphs/brands-v0.1.8) (2021-01-22)
+
+
+### Bug Fixes
+
+* **svg:** replace missing maps ([4c6c1dd](https://github.com/gorango/glyphs/commit/4c6c1dd2baa2b51813437e1681554a2c8c0b2e48))
+
 ### [0.1.7](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.1.6...@glyphs/brands-v0.1.7) (2021-01-22)
 
 
