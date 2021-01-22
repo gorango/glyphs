@@ -1,40 +1,55 @@
 [
   {
-    "name": "subway",
-    "id": "556:103",
+    "name": "rocket",
+    "id": "497:24487",
     "terms": [
-      "subway",
-      "metro"
+      "rocket"
     ],
     "categories": [
       "transport"
     ],
     "variants": {
-      "path": "3563:76131",
-      "bold": "3563:76133",
-      "poly": "3563:76134",
-      "duo": "3563:76130",
-      "outline": "3563:76132"
+      "path": "3563:76247",
+      "bold": "3563:76249",
+      "poly": "3563:76250",
+      "duo": "3563:76246",
+      "outline": "3563:76248"
     }
   },
   {
-    "name": "train",
-    "id": "556:409",
+    "name": "schoolBus",
+    "id": "541:26493",
     "terms": [
-      "train",
-      "travel",
-      "subway",
-      "metro"
+      "school",
+      "bus"
     ],
     "categories": [
       "transport"
     ],
     "variants": {
-      "path": "3563:76162",
-      "bold": "3563:76164",
-      "poly": "3563:76165",
-      "duo": "3563:76161",
-      "outline": "3563:76163"
+      "path": "3563:76092",
+      "bold": "3563:76094",
+      "poly": "3563:76095",
+      "duo": "3563:76091",
+      "outline": "3563:76093"
+    }
+  },
+  {
+    "name": "cog1",
+    "id": "2733:54991",
+    "terms": [
+      "cog",
+      "settings"
+    ],
+    "categories": [
+      "tool"
+    ],
+    "variants": {
+      "path": "3563:81326",
+      "bold": "3563:81328",
+      "poly": "3563:81329",
+      "duo": "3563:81325",
+      "outline": "3563:81327"
     }
   },
   {
@@ -55,20 +70,120 @@
     }
   },
   {
-    "name": "rocket",
-    "id": "497:24487",
+    "name": "mapMarker",
+    "id": "286:25196",
     "terms": [
-      "rocket"
+      "map",
+      "marker"
     ],
     "categories": [
-      "transport"
+      "location"
     ],
     "variants": {
-      "path": "3563:76247",
-      "bold": "3563:76249",
-      "poly": "3563:76250",
-      "duo": "3563:76246",
-      "outline": "3563:76248"
+      "path": "3558:104566",
+      "bold": "3558:104568",
+      "poly": "3558:104569",
+      "duo": "3558:104565",
+      "outline": "3558:104567"
+    }
+  },
+  {
+    "name": "fire1",
+    "id": "920:1856",
+    "terms": [
+      "fire",
+      "heat",
+      "hot",
+      "temp",
+      "lit",
+      "light",
+      "map",
+      "marker"
+    ],
+    "categories": [
+      "nature"
+    ],
+    "variants": {
+      "path": "3563:73262",
+      "bold": "3563:73264",
+      "poly": "3563:73265",
+      "duo": "3563:73261",
+      "outline": "3563:73263"
+    }
+  },
+  {
+    "name": "dollarBillWave",
+    "id": "521:25757",
+    "terms": [
+      "dollar",
+      "bill",
+      "wave"
+    ],
+    "categories": [
+      "business"
+    ],
+    "variants": {
+      "path": "3563:67163",
+      "bold": "3563:67165",
+      "poly": "3563:67166",
+      "duo": "3563:67162",
+      "outline": "3563:67164"
+    }
+  },
+  {
+    "name": "tree",
+    "id": "504:549",
+    "terms": [
+      "tree",
+      "grow"
+    ],
+    "categories": [
+      "nature"
+    ],
+    "variants": {
+      "path": "3563:72821",
+      "bold": "3563:72823",
+      "poly": "3563:72824",
+      "duo": "3563:72820",
+      "outline": "3563:72822"
+    }
+  },
+  {
+    "name": "hourglass",
+    "id": "286:28915",
+    "terms": [
+      "hourglass",
+      "count",
+      "countdown"
+    ],
+    "categories": [
+      "measure"
+    ],
+    "variants": {
+      "path": "3558:103441",
+      "bold": "3558:103443",
+      "poly": "3558:103444",
+      "duo": "3558:103440",
+      "outline": "3558:103442"
+    }
+  },
+  {
+    "name": "queen",
+    "id": "2128:38648",
+    "terms": [
+      "queen",
+      "playing",
+      "card"
+    ],
+    "categories": [
+      "game"
+    ],
+    "variants": {
+      "path": "3563:78716",
+      "bold": "3563:78718",
+      "poly": "3563:78719",
+      "duo": "3563:78715",
+      "outline": "3563:78717"
     }
   },
   {
@@ -149,6 +264,65 @@
     }
   },
   {
+    "name": "subway",
+    "id": "556:103",
+    "terms": [
+      "subway",
+      "metro"
+    ],
+    "categories": [
+      "transport"
+    ],
+    "variants": {
+      "path": "3563:76131",
+      "bold": "3563:76133",
+      "poly": "3563:76134",
+      "duo": "3563:76130",
+      "outline": "3563:76132"
+    }
+  },
+  {
+    "name": "train",
+    "id": "556:409",
+    "terms": [
+      "train",
+      "travel",
+      "subway",
+      "metro"
+    ],
+    "categories": [
+      "transport"
+    ],
+    "variants": {
+      "path": "3563:76162",
+      "bold": "3563:76164",
+      "poly": "3563:76165",
+      "duo": "3563:76161",
+      "outline": "3563:76163"
+    }
+  },
+  {
+    "name": "plus",
+    "id": "30:1921",
+    "terms": [
+      "plus",
+      "add",
+      "more",
+      "in"
+    ],
+    "categories": [
+      "interface",
+      "font"
+    ],
+    "variants": {
+      "path": "3563:82296",
+      "bold": "3563:82298",
+      "poly": "3563:82299",
+      "duo": "3563:82295",
+      "outline": "3563:82297"
+    }
+  },
+  {
     "name": "arrowRound",
     "id": "28:1189",
     "terms": [
@@ -198,11 +372,70 @@
     }
   },
   {
+    "name": "laptop",
+    "id": "129:6922",
+    "terms": [
+      "laptop"
+    ],
+    "categories": [
+      "device"
+    ],
+    "variants": {
+      "path": "3563:64855",
+      "bold": "3563:64857",
+      "poly": "3563:64858",
+      "duo": "3563:64854",
+      "outline": "3563:64856"
+    }
+  },
+  {
+    "name": "code",
+    "id": "878:42863",
+    "terms": [
+      "code",
+      "source",
+      "html",
+      "xml"
+    ],
+    "categories": [
+      "editor"
+    ],
+    "variants": {
+      "path": "3558:111648",
+      "bold": "3558:111650",
+      "poly": "3558:111651",
+      "duo": "3558:111647",
+      "outline": "3558:111649"
+    }
+  },
+  {
+    "name": "laptopCode",
+    "id": "1489:25",
+    "terms": [
+      "laptop",
+      "code",
+      "source",
+      "html",
+      "xml"
+    ],
+    "categories": [
+      "device"
+    ],
+    "variants": {
+      "path": "3563:64871",
+      "bold": "3563:64873",
+      "poly": "3563:64874",
+      "duo": "3563:64870",
+      "outline": "3563:64872"
+    }
+  },
+  {
     "name": "heart",
     "id": "24:304",
     "terms": [
       "heart",
       "love",
+      "health",
       "organ",
       "card",
       "playing"
@@ -469,6 +702,7 @@
     "terms": [
       "heart",
       "love",
+      "health",
       "organ",
       "card",
       "playing"
@@ -510,6 +744,7 @@
       "heartbreak",
       "heart",
       "love",
+      "health",
       "organ",
       "card",
       "playing",
@@ -552,6 +787,7 @@
       "heartbeat",
       "heart",
       "love",
+      "health",
       "organ",
       "card",
       "playing"
@@ -921,6 +1157,7 @@
       "take",
       "receive",
       "love",
+      "health",
       "organ",
       "card",
       "playing"
@@ -1334,27 +1571,6 @@
     }
   },
   {
-    "name": "plus",
-    "id": "30:1921",
-    "terms": [
-      "plus",
-      "add",
-      "more",
-      "in"
-    ],
-    "categories": [
-      "interface",
-      "font"
-    ],
-    "variants": {
-      "path": "3563:82296",
-      "bold": "3563:82298",
-      "poly": "3563:82299",
-      "duo": "3563:82295",
-      "outline": "3563:82297"
-    }
-  },
-  {
     "name": "alarmPlus",
     "id": "4487:3841",
     "terms": [
@@ -1563,25 +1779,6 @@
     }
   },
   {
-    "name": "hourglass",
-    "id": "286:28915",
-    "terms": [
-      "hourglass",
-      "count",
-      "countdown"
-    ],
-    "categories": [
-      "measure"
-    ],
-    "variants": {
-      "path": "3558:103441",
-      "bold": "3558:103443",
-      "poly": "3558:103444",
-      "duo": "3558:103440",
-      "outline": "3558:103442"
-    }
-  },
-  {
     "name": "watch",
     "id": "447:11020",
     "terms": [
@@ -1640,6 +1837,7 @@
       "fitness",
       "heart",
       "love",
+      "health",
       "organ",
       "card",
       "playing"
@@ -1748,6 +1946,87 @@
       "poly": "3563:70961",
       "duo": "3563:70957",
       "outline": "3563:70959"
+    }
+  },
+  {
+    "name": "paintBrush",
+    "id": "2196:59229",
+    "terms": [
+      "paint",
+      "brush"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "path": "3563:59935",
+      "bold": "3563:59937",
+      "poly": "3563:59938",
+      "duo": "3563:59934",
+      "outline": "3563:59936"
+    }
+  },
+  {
+    "name": "palette",
+    "id": "674:31577",
+    "terms": [
+      "palette",
+      "paint",
+      "theme",
+      "color",
+      "colour",
+      "picker"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "path": "3563:60106",
+      "bold": "3563:60108",
+      "poly": "3563:60109",
+      "duo": "3563:60105",
+      "outline": "3563:60107"
+    }
+  },
+  {
+    "name": "cli",
+    "id": "1486:13",
+    "terms": [
+      "cli",
+      "command",
+      "line",
+      "interface"
+    ],
+    "categories": [
+      "editor"
+    ],
+    "variants": {
+      "path": "3558:111670",
+      "bold": "3558:111672",
+      "poly": "3558:111673",
+      "duo": "3558:111669",
+      "outline": "3558:111671"
+    }
+  },
+  {
+    "name": "laptopCli",
+    "id": "1489:68",
+    "terms": [
+      "laptop",
+      "cli",
+      "command",
+      "line",
+      "interface"
+    ],
+    "categories": [
+      "device"
+    ],
+    "variants": {
+      "path": "3563:64895",
+      "bold": "3563:64897",
+      "poly": "3563:64898",
+      "duo": "3563:64894",
+      "outline": "3563:64896"
     }
   },
   {
@@ -2014,6 +2293,25 @@
       "poly": "3563:60228",
       "duo": "3563:60225",
       "outline": "3563:60226"
+    }
+  },
+  {
+    "name": "squircle",
+    "id": "5718:207053",
+    "terms": [
+      "squircle",
+      "square",
+      "circle"
+    ],
+    "categories": [
+      "shape"
+    ],
+    "variants": {
+      "path": "5718:207054",
+      "bold": "5718:207066",
+      "poly": "5718:207078",
+      "duo": "5718:207090",
+      "outline": "5718:207102"
     }
   },
   {
@@ -2817,6 +3115,32 @@
     }
   },
   {
+    "name": "heartSparkles",
+    "id": "5718:207275",
+    "terms": [
+      "heart",
+      "sparkles",
+      "love",
+      "health",
+      "organ",
+      "card",
+      "playing",
+      "sparkle",
+      "star",
+      "shine"
+    ],
+    "categories": [
+      "human"
+    ],
+    "variants": {
+      "path": "5718:207276",
+      "bold": "5718:207289",
+      "poly": "5718:207302",
+      "duo": "5718:207315",
+      "outline": "5718:207328"
+    }
+  },
+  {
     "name": "glasses",
     "id": "3737:66451",
     "terms": [
@@ -2982,48 +3306,6 @@
       "poly": "3558:52687",
       "duo": "3558:52683",
       "outline": "3558:52685"
-    }
-  },
-  {
-    "name": "mapMarker",
-    "id": "286:25196",
-    "terms": [
-      "map",
-      "marker"
-    ],
-    "categories": [
-      "location"
-    ],
-    "variants": {
-      "path": "3558:104566",
-      "bold": "3558:104568",
-      "poly": "3558:104569",
-      "duo": "3558:104565",
-      "outline": "3558:104567"
-    }
-  },
-  {
-    "name": "fire1",
-    "id": "920:1856",
-    "terms": [
-      "fire",
-      "heat",
-      "hot",
-      "temp",
-      "lit",
-      "light",
-      "map",
-      "marker"
-    ],
-    "categories": [
-      "nature"
-    ],
-    "variants": {
-      "path": "3563:73262",
-      "bold": "3563:73264",
-      "poly": "3563:73265",
-      "duo": "3563:73261",
-      "outline": "3563:73263"
     }
   },
   {
@@ -6022,6 +6304,7 @@
       "heart",
       "half",
       "love",
+      "health",
       "organ",
       "card",
       "playing"
@@ -7375,26 +7658,6 @@
     }
   },
   {
-    "name": "code",
-    "id": "878:42863",
-    "terms": [
-      "code",
-      "source",
-      "html",
-      "xml"
-    ],
-    "categories": [
-      "editor"
-    ],
-    "variants": {
-      "path": "3558:111648",
-      "bold": "3558:111650",
-      "poly": "3558:111651",
-      "duo": "3558:111647",
-      "outline": "3558:111649"
-    }
-  },
-  {
     "name": "code1",
     "id": "878:42884",
     "terms": [
@@ -7412,26 +7675,6 @@
       "poly": "3558:111663",
       "duo": "3558:111659",
       "outline": "3558:111661"
-    }
-  },
-  {
-    "name": "cli",
-    "id": "1486:13",
-    "terms": [
-      "cli",
-      "command",
-      "line",
-      "interface"
-    ],
-    "categories": [
-      "editor"
-    ],
-    "variants": {
-      "path": "3558:111670",
-      "bold": "3558:111672",
-      "poly": "3558:111673",
-      "duo": "3558:111669",
-      "outline": "3558:111671"
     }
   },
   {
@@ -7557,24 +7800,6 @@
     }
   },
   {
-    "name": "paintBrush",
-    "id": "2196:59229",
-    "terms": [
-      "paint",
-      "brush"
-    ],
-    "categories": [
-      "design"
-    ],
-    "variants": {
-      "path": "3563:59935",
-      "bold": "3563:59937",
-      "poly": "3563:59938",
-      "duo": "3563:59934",
-      "outline": "3563:59936"
-    }
-  },
-  {
     "name": "pencil1",
     "id": "178:18207",
     "terms": [
@@ -7653,46 +7878,6 @@
     }
   },
   {
-    "name": "palette",
-    "id": "674:31577",
-    "terms": [
-      "palette",
-      "paint",
-      "theme",
-      "color",
-      "colour",
-      "picker"
-    ],
-    "categories": [
-      "design"
-    ],
-    "variants": {
-      "path": "3563:60106",
-      "bold": "3563:60108",
-      "poly": "3563:60109",
-      "duo": "3563:60105",
-      "outline": "3563:60107"
-    }
-  },
-  {
-    "name": "tree",
-    "id": "504:549",
-    "terms": [
-      "tree",
-      "grow"
-    ],
-    "categories": [
-      "nature"
-    ],
-    "variants": {
-      "path": "3563:72821",
-      "bold": "3563:72823",
-      "poly": "3563:72824",
-      "duo": "3563:72820",
-      "outline": "3563:72822"
-    }
-  },
-  {
     "name": "lightbulb2",
     "id": "79:3703",
     "terms": [
@@ -7721,6 +7906,7 @@
       "bubble",
       "heart",
       "love",
+      "health",
       "organ",
       "card",
       "playing",
@@ -7942,7 +8128,6 @@
     "variants": {
       "path": "3563:60430",
       "bold": "3563:60432",
-      "poly": "3563:60433",
       "duo": "3563:60429",
       "outline": "3563:60431"
     }
@@ -9289,65 +9474,6 @@
     }
   },
   {
-    "name": "laptop",
-    "id": "129:6922",
-    "terms": [
-      "laptop"
-    ],
-    "categories": [
-      "device"
-    ],
-    "variants": {
-      "path": "3563:64855",
-      "bold": "3563:64857",
-      "poly": "3563:64858",
-      "duo": "3563:64854",
-      "outline": "3563:64856"
-    }
-  },
-  {
-    "name": "laptopCode",
-    "id": "1489:25",
-    "terms": [
-      "laptop",
-      "code",
-      "source",
-      "html",
-      "xml"
-    ],
-    "categories": [
-      "device"
-    ],
-    "variants": {
-      "path": "3563:64871",
-      "bold": "3563:64873",
-      "poly": "3563:64874",
-      "duo": "3563:64870",
-      "outline": "3563:64872"
-    }
-  },
-  {
-    "name": "laptopCli",
-    "id": "1489:68",
-    "terms": [
-      "laptop",
-      "cli",
-      "command",
-      "line",
-      "interface"
-    ],
-    "categories": [
-      "device"
-    ],
-    "variants": {
-      "path": "3563:64895",
-      "bold": "3563:64897",
-      "poly": "3563:64898",
-      "duo": "3563:64894",
-      "outline": "3563:64896"
-    }
-  },
-  {
     "name": "laptopCog",
     "id": "2208:62962",
     "terms": [
@@ -10352,25 +10478,6 @@
       "poly": "3563:67132",
       "duo": "3563:67128",
       "outline": "3563:67130"
-    }
-  },
-  {
-    "name": "dollarBillWave",
-    "id": "521:25757",
-    "terms": [
-      "dollar",
-      "bill",
-      "wave"
-    ],
-    "categories": [
-      "business"
-    ],
-    "variants": {
-      "path": "3563:67163",
-      "bold": "3563:67165",
-      "poly": "3563:67166",
-      "duo": "3563:67162",
-      "outline": "3563:67164"
     }
   },
   {
@@ -12155,24 +12262,6 @@
     }
   },
   {
-    "name": "schoolBus",
-    "id": "541:26493",
-    "terms": [
-      "school",
-      "bus"
-    ],
-    "categories": [
-      "transport"
-    ],
-    "variants": {
-      "path": "3563:76092",
-      "bold": "3563:76094",
-      "poly": "3563:76095",
-      "duo": "3563:76091",
-      "outline": "3563:76093"
-    }
-  },
-  {
     "name": "stopSign",
     "id": "521:25144",
     "terms": [
@@ -12465,25 +12554,6 @@
       "poly": "3563:78666",
       "duo": "3563:78662",
       "outline": "3563:78664"
-    }
-  },
-  {
-    "name": "queen",
-    "id": "2128:38648",
-    "terms": [
-      "queen",
-      "playing",
-      "card"
-    ],
-    "categories": [
-      "game"
-    ],
-    "variants": {
-      "path": "3563:78716",
-      "bold": "3563:78718",
-      "poly": "3563:78719",
-      "duo": "3563:78715",
-      "outline": "3563:78717"
     }
   },
   {
@@ -13184,24 +13254,6 @@
       "poly": "4343:122339",
       "duo": "4343:122291",
       "outline": "4343:122315"
-    }
-  },
-  {
-    "name": "cog1",
-    "id": "2733:54991",
-    "terms": [
-      "cog",
-      "settings"
-    ],
-    "categories": [
-      "tool"
-    ],
-    "variants": {
-      "path": "3563:81326",
-      "bold": "3563:81328",
-      "poly": "3563:81329",
-      "duo": "3563:81325",
-      "outline": "3563:81327"
     }
   },
   {

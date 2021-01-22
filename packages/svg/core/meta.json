@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 720,
-  "total": 3600,
+  "unique": 722,
+  "total": 3609,
   "variants": [
     "path",
     "bold",
@@ -12,8 +12,9 @@
   ],
   "categories": {
     "shape": [
-      "circle",
       "square",
+      "circle",
+      "squircle",
       "triangle",
       "diamond",
       "hexagon",
@@ -93,6 +94,7 @@
       "heartbreak",
       "heartbeat",
       "heartHands",
+      "heartSparkles",
       "eye",
       "eyeSlash",
       "eye1",
