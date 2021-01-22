@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.5](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.4...@glyphs/core-v0.7.5) (2021-01-22)
+
+
+### Bug Fixes
+
+* **svg:** add .npmignore - missing files in npm ([5d5f138](https://github.com/gorango/glyphs/commit/5d5f1382c2b06c67946b767a638bdb018cce1240))
+
 ### [0.7.4](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.3...@glyphs/core-v0.7.4) (2021-01-22)
 
 

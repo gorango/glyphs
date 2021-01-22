@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.1.5...@glyphs/brands-v0.1.6) (2021-01-22)
+
+
+### Bug Fixes
+
+* **brands:** reorder design, rename os ([bf13b0d](https://github.com/gorango/glyphs/commit/bf13b0d586ba7676fb5dc19323a6ecfbd038f90d))
+* **svg:** add .npmignore - missing files in npm ([5d5f138](https://github.com/gorango/glyphs/commit/5d5f1382c2b06c67946b767a638bdb018cce1240))
+
 ### [0.1.5](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.1.4...@glyphs/brands-v0.1.5) (2021-01-22)
 
 
