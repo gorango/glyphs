@@ -223,6 +223,10 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   progressVal = Math.max(progressVal, 10)
   progress.update(progressVal, { stage: `Setting up ${chunksTotal} icons...` })
 
+  if (diffOnly || (categories && categories.length)) {
+    svgMap = await readJSON(`${dataDir}/map.json`)
+  }
+
   await chunks.reduce((promise, targets, i) => {
     return promise.then(async () => {
       const idMap = targets.reduce((obj, { name, variants }) => ({

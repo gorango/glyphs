@@ -6,8 +6,8 @@ const { kebabCase } = require('lodash')
 module.exports = {
   createDir,
   saveJSON,
-  saveSVG,
   readJSON,
+  saveSVG,
 }
 
 async function createDir (dirName) {
@@ -21,13 +21,13 @@ async function saveJSON (fileName, data, space=0) {
   return util.promisify(fs.writeFile)(path.join(process.cwd(), `${fileName}.json`), JSON.stringify(data, null, space))
 }
 
+async function readJSON (fileName) {
+  const result = await util.promisify(fs.readFile)(path.join(process.cwd(), fileName), 'utf-8')
+  return JSON.parse(result)
+}
+
 async function saveSVG (fileName, svgDir, dirName, data) {
   if (data) {
     return util.promisify(fs.writeFile)(path.join(process.cwd(), `${svgDir}/${dirName}/${kebabCase(fileName)}.svg`), data)
   }
-}
-
-async function readJSON (fileName) {
-  const result = await util.promisify(fs.readFile)(path.join(process.cwd(), fileName), 'utf-8')
-  return JSON.parse(result)
 }
