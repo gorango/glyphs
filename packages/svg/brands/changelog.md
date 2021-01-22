@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.1.4...@glyphs/brands-v0.1.5) (2021-01-22)
+
+
+### Features
+
+* **brands:** make solid primary variant ([cf875ee](https://github.com/gorango/glyphs/commit/cf875ee418ea48696415953f63e00d6e89bc7cb2))
+
 ### [0.1.4](https://github.com/gorango/glyphs/compare/@glyphs/brands-v0.1.3...@glyphs/brands-v0.1.4) (2021-01-15)
 
 
