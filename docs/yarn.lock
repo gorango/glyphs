@@ -944,20 +944,20 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
-"@glyphs/brands@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@glyphs/brands/-/brands-0.1.7.tgz#a65ae87db7878037444b07c461a499e731f61017"
-  integrity sha512-41i/oN5ddeHLYSGjifFCAOk9/2eFRN1PKDcbhrtaYyID4L8BEBo5Tea+wcl2Hml+uGsxkHH3DWrW9/6aWBIPFA==
+"@glyphs/brands@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@glyphs/brands/-/brands-0.1.8.tgz#b65c4ac75cba7103b0e14d4efcaba9a0ca7d4110"
+  integrity sha512-IxyrAilpFixgCc6JflJAKvYEhamNjvFW7zSHr1eWn73GLGBlFNsdlWmge9yRe3NiahsJi+A1zS2pTQnyBxZsug==
 
-"@glyphs/core@^0.7.6":
-  version "0.7.6"
-  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.7.6.tgz#3d2a182f8d17d3713efd3802e9712c7842a0a211"
-  integrity sha512-gjQh+hmvLmG99lA1AG9q+rA4TYMDkjuvcByhdRqqakz3VeKuldh87P3wjgFlzEuSPfTMrGH5MNDp8Qkjn6oMSA==
+"@glyphs/core@^0.7.7":
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.7.7.tgz#dfb628f0d542c429b3f0914aa5f1dd76625a3537"
+  integrity sha512-TBCBgXxTi/6uXDhw/geHZFdnhVzHzW5fjhHQKNqWobDDaqHRm7TdW1RDyICt4b8jEn6Q9LYNsO7bxNOaUSezag==
 
-"@glyphs/flags@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.5.3.tgz#34ba5e67a40980c4d204bac7e5f5f090736b51b9"
-  integrity sha512-AZ15hNTw8MWBKUT1ybVkHR11NvpuN0XoYHyedGD+cU+Z6a+F/gwFmJSzmrOsq/oQYu5FInQCzzry/xUNou0Lhg==
+"@glyphs/flags@^0.5.4":
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.5.4.tgz#36017612f6a1937a6760d5afb8aa878db91a519f"
+  integrity sha512-fAT27emipYLkrDJMmGYkHukX1hT+zd64SiK1wtFMLryMD3B+8pji/izXZRuJOJagKwSMoJSYiP6hGfm/7uZL+Q==
 
 "@glyphs/vue-brands@^0.0.3":
   version "0.0.3"
