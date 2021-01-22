@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.3](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.5.2...@glyphs/flags-v0.5.3) (2021-01-22)
+
+
+### Bug Fixes
+
+* **svg:** minify large JSON files ([4984a8f](https://github.com/gorango/glyphs/commit/4984a8fdc2301c08bc6569f49cd9cb79b86d5b9b))
+
 ### [0.5.2](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.5.1...@glyphs/flags-v0.5.2) (2021-01-22)
 
 ### [0.5.1](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.5.0...@glyphs/flags-v0.5.1) (2021-01-22)
