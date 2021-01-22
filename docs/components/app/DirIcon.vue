@@ -20,7 +20,7 @@
             title='View in Figma',
             target='_blank',
             rel='noreferrer noopener',
-            :href='`https://figma.com/file/${figmaIds[set]}?node-id=${components[icon].variants[variant].id}`',
+            :href='`https://figma.com/file/${figmaIds[set]}?node-id=${components[icon].variants[variant]}`',
           )
             svg-icon(set='brands', name='figma', variant='color', size='1.5rem')
         button.mb-2.flex.items-center.justify-center.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.text-gray-700.dark_text-gray-400.rounded-lg.border-2.border-gray-300.dark_border-gray-700.cursor-pointer(
