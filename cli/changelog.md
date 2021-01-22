@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.0-alpha.4...@glyphs/cli-v0.3.0) (2021-01-22)
+
+
+### Features
+
+* **cli:** generate components - enable font-size-based scaling ([f3216ec](https://github.com/gorango/glyphs/commit/f3216ece1a74f3b0474cab762a34c8ecd42bab25))
+
+
+### Bug Fixes
+
+* **cli:** calculate correct width for components ([bc3af77](https://github.com/gorango/glyphs/commit/bc3af7746c889e5801b24b71d715424e96e44f08)), closes [#26](https://github.com/gorango/glyphs/issues/26)
+* **cli:** minor updates ([ff09e9f](https://github.com/gorango/glyphs/commit/ff09e9fff3b26178a48c64d117f73fe8a7ddafd8))
+* **cli:** parse mask props when transforming colors ([d92dddb](https://github.com/gorango/glyphs/commit/d92dddbc313b57dd09ef1aff20a323a93812612a))
+* **cli:** preview cmd use local map.json in template ([4706aa9](https://github.com/gorango/glyphs/commit/4706aa91886569faa47351c66859cc3d36f82681))
+* **cli:sync:** remove formatting when saving large JSON files ([d73bf7d](https://github.com/gorango/glyphs/commit/d73bf7d21fa8de95eaed1c417569ed962c5afe6d))
+
 ## [0.3.0-alpha.4](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.0-alpha.3...@glyphs/cli-v0.3.0-alpha.4) (2021-01-15)
 
 
