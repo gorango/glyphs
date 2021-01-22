@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.4](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.3...@glyphs/core-v0.7.4) (2021-01-22)
+
+
+### Features
+
+* **core:** 2 new icons; update shapes order ([beb30a2](https://github.com/gorango/glyphs/commit/beb30a2a64e760b36fead466a6b4dc6530a02910))
+
 ### [0.7.3](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.2...@glyphs/core-v0.7.3) (2021-01-15)
 
 
