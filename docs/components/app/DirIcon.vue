@@ -75,14 +75,21 @@
       div.mr-3
         div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Flip
         .flex.space-x-2
-          button.p-1.flex.items-center.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700(@click='handleFlip("y")')
+          button.p-1.flex.items-center.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700(
+            aria-label='Flip icon horizantally',
+            @click='handleFlip("y")'
+          )
             svg-icon.self-center(name='flip-1', variant='path', size='2rem', :rotate='previewRotate + 90')
-          button.p-1.flex.items-center.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700(@click='handleFlip("x")')
+          button.p-1.flex.items-center.bg-gray-200.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700(
+            aria-label='Flip icon vertically',
+            @click='handleFlip("x")'
+          )
             svg-icon.self-center(name='flip-1', variant='path', size='2rem', :rotate='previewRotate')
       div.mr-3
         div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Rotate
         input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
           style='cursor: col-resize; height: 44px',
+          aria-label='Change rotation',
           :value='previewRotate',
           @input='handleRotate',
           :steps='1',
@@ -93,6 +100,7 @@
         div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Stroke
         input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
           style='cursor: col-resize; height: 44px',
+          aria-label='Change stroke width',
           :value='stroke',
           @input='$emit("handleStrokeWidth", $event)',
           :min='0.5',
@@ -104,6 +112,7 @@
         div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Dash
         input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
           style='cursor: col-resize; height: 44px',
+          aria-label='Change dash offset',
           :value='previewOffset',
           @input='previewOffset = $event',
           :min='-2',

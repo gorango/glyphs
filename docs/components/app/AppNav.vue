@@ -2,6 +2,7 @@
   nav.w-full.flex.items-center.p-4.mx-auto(style='max-width: 1440px')
     div.flex.items-center.justify-start.mr-3
       nuxt-link.flex.items-center.text-lg.p-1.rounded-lg.outline-none(
+        aria-label='Home button'
         to='/',
         :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
       )
@@ -12,7 +13,9 @@
           input.w-full.pl-12.pr-2.py-2.bg-gray-200.dark_bg-gray-800.rounded-lg(
             placeholder='Search Icons',
             @input='handleInput($event)',
-            ref='search'
+            ref='search',
+            aria-label='Search',
+            name='search'
           )
           .absolute.left-0.inset-y-0.pl-2.flex.items-center.cursor-text(@click='$refs.search && $refs.search.focus()')
             svg-icon.text-gray-600(name='search', :variant='"path"', size='1.75rem', :stroke-width='5')

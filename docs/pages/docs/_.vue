@@ -7,13 +7,13 @@
         div.flex.items-center.space-x-3(v-if='prev')
           svg-icon(name='arrow', rotate='w', stroke-width='7')
           nuxt-link(:to='prev.path')
-            span.opacity-50.mr-2 {{ prev.category }}
+            span.opacity-75.mr-2 {{ prev.category }}
             br.sm_hidden
             span {{ prev.title }}
         .flex-auto
         div.flex.items-center.space-x-3(v-if='next')
           nuxt-link(:to='next.path')
-            span.opacity-50.mr-2 {{ next.category }}
+            span.opacity-75.mr-2 {{ next.category }}
             br.sm_hidden
             span {{ next.title }}
           svg-icon(name='arrow', rotate='e', stroke-width='7')

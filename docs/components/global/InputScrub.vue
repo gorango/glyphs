@@ -1,5 +1,6 @@
 <template lang="pug">
   input(
+    v-bind='$attrs',
     :value='constrainedValue',
     @mousedown='handleMouseDown',
     @keypress='handleInput',

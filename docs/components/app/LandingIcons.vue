@@ -20,6 +20,7 @@
             template(v-if='icon')
               router-link.rounded-lg.p-1.border-2.border-transparent.flex.items-center.justify-center(
                 :key='icon.name',
+                :aria-label='`Go to ${icon.name} icon`',
                 style='transform: skewX(22.5deg); width: 3.25rem; height: 3.25rem',
                 :class='hover === icon.name && "border-gray-300 dark_border-gray-700"'
                 :to='`/dir?c=${icon.categories[0]}&i=${icon.name}`'

@@ -80,6 +80,7 @@
               template(v-for='variant, i in variants')
                 //- @mouseenter='previewVariant = variant',
                 button.w-11.h-11.p-1.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.rounded-lg.border-2.border-gray-300.dark_border-gray-700.flex.items-center(
+                  :aria-label='`Select ${variant} variant`',
                   @click='resetPreview(); $router.push({ query: { ...$route.query, v: variant, ...(variant === "outline" ? {w: "1"} : ["path", "duo"].includes(variant) ? {w: "3"} : {w: null}) } })',
                   :class=`{
                     'hover_bg-gray-700': $colorMode.value === 'dark',
@@ -98,6 +99,7 @@
             .flex.space-x-2
               input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
                 style='cursor: col-resize; height: 44px',
+                aria-label='Change icon size',
                 :value='gridSize',
                 @input='handleGridSize',
                 :min='24',
@@ -110,6 +112,7 @@
             .flex.space-x-2
               input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
                 style='cursor: col-resize; height: 44px',
+                aria-label='Change stroke width',
                 :value='stroke',
                 @input='handleStrokeWidth',
                 :min='0.5',
@@ -121,6 +124,7 @@
             div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Color
             .relative
               button.p-1.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.flex.items-center.outline-none(
+                aria-label='Select color',
                 @click='showColor = !showColor',
               )
                 svg-icon.text-3xl(name='palette')
@@ -141,6 +145,7 @@
           div.hidden.2xl_block
             div.text-center.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Width
             button.p-1.bg-gray-200.hover_bg-gray-300.dark_bg-gray-800.dark_hover_bg-gray-700.rounded-lg.border-2.border-gray-300.dark_border-gray-700.flex.items-center.outline-none(
+              aria-label='Expand layout',
               @click='expandLayout = !expandLayout'
             )
               svg-icon(:name='expandLayout ? "arrows-compress-duo" : "arrows-expand-duo"', rotate='e', size='2rem', stroke-width='3')
@@ -202,7 +207,7 @@ const components = {
 export default {
   data: () => ({
     expandLayout: false,
-    gridSize: 48,
+    gridSize: 40,
     previewVariant: null,
     scrollLoaded: false,
     showSelect: false,

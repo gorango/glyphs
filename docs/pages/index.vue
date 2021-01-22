@@ -7,7 +7,7 @@
               h1.my-2.font-black.text-3xl.sm_text-4xl.dark_text-gray-400
                 | The Mightiest Icons on the Web
               .my-8.sm_space-y-3
-                h3.pl-2.text-xl.sm_text-2xl.dark_text-gray-400
+                h2.pl-2.text-xl.sm_text-2xl.dark_text-gray-400
                   | Fully editable & truly open source design system
 
               a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
@@ -89,10 +89,10 @@
               :class=`{
                 'bg-white hover_bg-gray-200 text-gray-800': $colorMode.value === 'light',
                 'bg-gray-900 hover_bg-gray-1000 text-white': $colorMode.value === 'dark'
-              }`
+              }`,
               href='https://github.com/gorango/glyphs',
               target='_blank',
-              ref='noreferrer noopener',
+              rel='noreferrer noopener',
             )
               svg-icon.mr-3(set='brands', name='github', size='1.5rem', variant='solid')
               span.text-xl GitHub Repo
