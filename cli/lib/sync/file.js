@@ -23,7 +23,7 @@ async function saveJSON (fileName, data, space=0) {
 
 async function readJSON (fileName) {
   const result = await util.promisify(fs.readFile)(path.join(process.cwd(), fileName), 'utf-8')
-  return JSON.parse(result)
+  return result ? JSON.parse(result) : {}
 }
 
 async function saveSVG (fileName, svgDir, dirName, data) {

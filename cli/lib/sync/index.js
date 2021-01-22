@@ -39,7 +39,6 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
     retryCondition: error => retry.isNetworkOrIdempotentRequestError(error)
   })
 
-  let svgMap = {}
   let progressVal = 0
   progress.start(100, 0)
   setInterval(() => {
@@ -223,9 +222,7 @@ module.exports = async function sync ({ key, set, svg: svgDir, data: dataDir, di
   progressVal = Math.max(progressVal, 10)
   progress.update(progressVal, { stage: `Setting up ${chunksTotal} icons...` })
 
-  if (diffOnly || (categories && categories.length)) {
-    svgMap = await readJSON(`${dataDir}/map.json`)
-  }
+  const svgMap = await readJSON(`${dataDir}/map.json`)
 
   await chunks.reduce((promise, targets, i) => {
     return promise.then(async () => {
