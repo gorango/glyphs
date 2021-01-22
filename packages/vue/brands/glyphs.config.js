@@ -5,7 +5,10 @@ module.exports = {
     output: 'src',
     defaultVariant: 'solid',
     transform: {
-      color: ['path', 'solid'],
+      color: {
+        path: 'stroke',
+        solid: 'all'
+      },
       stroke: {
         path: 2
       }

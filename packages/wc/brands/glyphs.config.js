@@ -3,9 +3,12 @@ module.exports = {
     target: 'wc',
     set: 'node_modules/@glyphs/brands',
     output: 'src',
-    defaultVariant: 'color',
+    defaultVariant: 'solid',
     transform: {
-      color: ['path', 'solid'],
+      color: {
+        path: 'stroke',
+        solid: 'all'
+      },
       stroke: {
         path: 2
       }

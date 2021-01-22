@@ -5,7 +5,13 @@ module.exports = {
     output: 'src',
     defaultVariant: 'path',
     transform: {
-      color: ['path', 'bold', 'duo', 'outline'],
+      color: {
+        path: 'stroke',
+        bold: 'all',
+        duo: 'both',
+        outline: 'both',
+        poly: 'color'
+      },
       stroke: {
         path: 3,
         duo: 4,

@@ -1,8 +1,7 @@
+node_modules
 .cache
 dist
 src
-
-node_modules
 
 yarn.lock
 package-lock.json
