@@ -2,7 +2,7 @@
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "brands",
   "unique": 162,
-  "total": 485,
+  "total": 484,
   "variants": [
     "solid",
     "color",
@@ -10,7 +10,6 @@
   ],
   "categories": {
     "design": [
-      "icons",
       "figma",
       "sketch",
       "zeplin",
@@ -31,7 +30,8 @@
       "adobePhotoshop",
       "adobeIndesign",
       "adobeXd",
-      "adobeDreamweaver"
+      "adobeDreamweaver",
+      "icons"
     ],
     "code": [
       "git",
@@ -72,7 +72,7 @@
       "joomla",
       "drupal"
     ],
-    "os": [
+    "operatingSystem": [
       "ubuntu",
       "apple",
       "microsoft",

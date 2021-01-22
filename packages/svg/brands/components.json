@@ -15,6 +15,83 @@
     }
   },
   {
+    "name": "nodeJs",
+    "id": "3849:67006",
+    "terms": [
+      "node",
+      "js"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "3849:67000",
+      "solid": "3849:67002",
+      "path": "3849:67004"
+    }
+  },
+  {
+    "name": "vue",
+    "id": "5070:265",
+    "terms": [
+      "vue"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1607",
+      "solid": "5110:1612",
+      "path": "5110:1617"
+    }
+  },
+  {
+    "name": "react",
+    "id": "5070:272",
+    "terms": [
+      "react"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1636",
+      "solid": "5110:1639",
+      "path": "5110:1642"
+    }
+  },
+  {
+    "name": "js",
+    "id": "5070:161",
+    "terms": [
+      "js"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1224",
+      "solid": "5110:1228",
+      "path": "5110:1232"
+    }
+  },
+  {
+    "name": "webComponents",
+    "id": "3849:67046",
+    "terms": [
+      "web",
+      "components"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "3849:67023",
+      "solid": "3849:67025",
+      "path": "3849:67028"
+    }
+  },
+  {
     "name": "github",
     "id": "3849:67212",
     "terms": [
@@ -67,7 +144,7 @@
       "ubuntu"
     ],
     "categories": [
-      "os"
+      "operating system"
     ],
     "variants": {
       "color": "5116:11420",
@@ -143,7 +220,7 @@
       "apple"
     ],
     "categories": [
-      "os"
+      "operating system"
     ],
     "variants": {
       "color": "5116:11433",
@@ -218,7 +295,7 @@
       "microsoft"
     ],
     "categories": [
-      "os"
+      "operating system"
     ],
     "variants": {
       "color": "5116:11443",
@@ -294,7 +371,7 @@
       "android"
     ],
     "categories": [
-      "os"
+      "operating system"
     ],
     "variants": {
       "color": "5116:11465",
@@ -369,7 +446,7 @@
       "ios"
     ],
     "categories": [
-      "os"
+      "operating system"
     ],
     "variants": {
       "color": "5116:11475",
@@ -445,7 +522,7 @@
       "macos"
     ],
     "categories": [
-      "os"
+      "operating system"
     ],
     "variants": {
       "color": "5116:11488",
@@ -521,7 +598,7 @@
       "freebsd"
     ],
     "categories": [
-      "os"
+      "operating system"
     ],
     "variants": {
       "color": "5116:11501",
@@ -596,7 +673,7 @@
       "linux"
     ],
     "categories": [
-      "os"
+      "operating system"
     ],
     "variants": {
       "color": "5116:11517",
@@ -757,23 +834,6 @@
     }
   },
   {
-    "name": "icons",
-    "id": "3849:66818",
-    "terms": [
-      "icons",
-      "icons.fyi",
-      "fyicons"
-    ],
-    "categories": [
-      "design"
-    ],
-    "variants": {
-      "color": "3849:66806",
-      "solid": "3849:66808",
-      "path": "3849:66810"
-    }
-  },
-  {
     "name": "sketch",
     "id": "3849:66866",
     "terms": [
@@ -876,8 +936,7 @@
     "variants": {
       "color": "3849:66942",
       "solid": "3849:66946",
-      "path": "3849:66948",
-      "line": "4672:2406"
+      "path": "3849:66948"
     }
   },
   {
@@ -1085,6 +1144,23 @@
     }
   },
   {
+    "name": "icons",
+    "id": "3849:66818",
+    "terms": [
+      "icons",
+      "icons.fyi",
+      "fyicons"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "3849:66806",
+      "solid": "3849:66808",
+      "path": "3849:66810"
+    }
+  },
+  {
     "name": "git",
     "id": "5070:150",
     "terms": [
@@ -1113,22 +1189,6 @@
       "color": "5116:15649",
       "solid": "5116:15655",
       "path": "5116:15661"
-    }
-  },
-  {
-    "name": "nodeJs",
-    "id": "3849:67006",
-    "terms": [
-      "node",
-      "js"
-    ],
-    "categories": [
-      "code"
-    ],
-    "variants": {
-      "color": "3849:67000",
-      "solid": "3849:67002",
-      "path": "3849:67004"
     }
   },
   {
@@ -1177,21 +1237,6 @@
     }
   },
   {
-    "name": "js",
-    "id": "5070:161",
-    "terms": [
-      "js"
-    ],
-    "categories": [
-      "code"
-    ],
-    "variants": {
-      "color": "5110:1224",
-      "solid": "5110:1228",
-      "path": "5110:1232"
-    }
-  },
-  {
     "name": "pwa",
     "id": "3849:67020",
     "terms": [
@@ -1204,22 +1249,6 @@
       "color": "3849:67009",
       "solid": "3849:67011",
       "path": "3849:67013"
-    }
-  },
-  {
-    "name": "webComponents",
-    "id": "3849:67046",
-    "terms": [
-      "web",
-      "components"
-    ],
-    "categories": [
-      "code"
-    ],
-    "variants": {
-      "color": "3849:67023",
-      "solid": "3849:67025",
-      "path": "3849:67028"
     }
   },
   {
@@ -1280,36 +1309,6 @@
       "color": "5110:1307",
       "solid": "5110:1313",
       "path": "5110:1319"
-    }
-  },
-  {
-    "name": "react",
-    "id": "5070:272",
-    "terms": [
-      "react"
-    ],
-    "categories": [
-      "code"
-    ],
-    "variants": {
-      "color": "5110:1636",
-      "solid": "5110:1639",
-      "path": "5110:1642"
-    }
-  },
-  {
-    "name": "vue",
-    "id": "5070:265",
-    "terms": [
-      "vue"
-    ],
-    "categories": [
-      "code"
-    ],
-    "variants": {
-      "color": "5110:1607",
-      "solid": "5110:1612",
-      "path": "5110:1617"
     }
   },
   {
