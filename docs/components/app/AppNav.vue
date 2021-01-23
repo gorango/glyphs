@@ -28,6 +28,7 @@
               nuxt-link.flex.items-center.cursor-pointer(:to='{ query: Object.entries($route.query).filter(([key]) => !["q"].includes(key)).reduce((obj, [key, val]) => ({ ...obj, [key]: val }), {}) }')
                 svg-icon.text-gray-600(name='times', :variant='"path"', size='1.75rem', :stroke-width='5')
       button.flex.items-center.mx-3.p-1.rounded-lg.cursor-pointer.hover_bg-gray-200.focus_bg-gray-200.focus_outline-none(
+        aria-label='Toggle dark mode',
         @click='$colorMode.preference = $colorMode.value === "dark" ? "light" : "dark"'
         :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"',
         tabindex='0'
