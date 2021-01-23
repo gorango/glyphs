@@ -33,7 +33,7 @@
           svg-icon(set='brands', name='figma', size='1.75rem', variant='solid')
         a.flex.items-center.p-1.rounded-lg.outline-none(
           href='https://github.com/gorango/glyphs',
-          aria-label='Github repo',
+          aria-label='Github repository',
           target='_blank',
           rel='noreferrer noopener',
           :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
@@ -45,7 +45,7 @@
 export default {
   head () {
     return {
-      title: 'Glyphs',
+      title: 'Glyphs - The Complete Icon Design System',
       bodyAttrs: {
         class: [...this.bodyClass, 'antialiased leading-normal bg-gray-100 dark_bg-gray-800 text-gray-700 dark_text-gray-300']
       },

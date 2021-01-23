@@ -1,5 +1,5 @@
 <template lang="pug">
-  .flex-1.p-4(style='max-width: 50%')
+  .flex-1.p-4(style='max-width: 50%; min-height: 704px')
     div.flex.space-x-2.relative(
       name='fade-categories',
       tag='div',
@@ -29,7 +29,7 @@
                   :ref='icon.name',
                   set='core',
                   :name='icon.name',
-                  variant='path',
+                  variant='poly',
                   @mouseenter='hover = icon.name'
                   :transition='true',
                   :offset='icon.offset || null',

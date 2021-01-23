@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_OPTIONS=--max-old-space-size=8192 nuxt",
-    "gen": "NODE_OPTIONS=--max-old-space-size=8192 nuxt generate --analyze",
+    "gen": "NODE_OPTIONS=--max-old-space-size=8192 nuxt generate",
     "export": "nuxt export",
     "ncu": "npx npm-check-updates && yarn",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
