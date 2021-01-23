@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.5](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.5.4...@glyphs/flags-v0.5.5) (2021-01-23)
+
+
+### Bug Fixes
+
+* **flags:** fix argentina, paraguay crests ([b13b24d](https://github.com/gorango/glyphs/commit/b13b24da83ea6e8e211a562ffdcd521611c23ac6))
+
 ### [0.5.4](https://github.com/gorango/glyphs/compare/@glyphs/flags-v0.5.3...@glyphs/flags-v0.5.4) (2021-01-22)
 
 
