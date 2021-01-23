@@ -9,7 +9,7 @@
             h2.pl-2.text-xl.sm_text-2xl.dark_text-gray-400
               | Fully editable & truly open source design system
 
-          a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+          a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.cursor-pointer(
             href='https://www.figma.com/community/file/899031264835768805',
             target='_blank',
             rel='noreferrer noopener',
@@ -20,7 +20,7 @@
             .flex-auto
             svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path', rotate='45')
 
-          router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+          router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.cursor-pointer(
             to='docs/web/getting-started',
             :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
           )
@@ -29,7 +29,7 @@
             .flex-auto
             svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path', rotate='90')
 
-          router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+          router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.cursor-pointer(
             to='/docs/cli/install-cli',
             :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
           )
@@ -38,7 +38,7 @@
             .flex-auto
             svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path', rotate='90')
 
-          a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+          a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.cursor-pointer(
             @click='focusSearch(); $router.push("dir")',
             :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
           )
@@ -47,7 +47,7 @@
             .flex-auto
             svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path')
 
-          router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300(
+          router-link.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md(
             to='docs',
             :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
           )
@@ -56,7 +56,7 @@
             .flex-auto
             svg-icon.ml-3.text-3xl.text-gray-800.dark_text-gray-100(set='core', name='angle', variant='path', rotate='90')
 
-          a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.transition-all.duration-300.cursor-pointer(
+          a.feature-line.my-2.sm_my-4.p-2.text-md.sm_text-xl.flex.items-center.flex-no-wrap.rounded-lg.shadow-md.cursor-pointer(
             @click='$colorMode.preference = $colorMode.value === "dark" ? "light" : "dark"'
             :class=`{'bg-gray-900 hover_bg-gray-1000': $colorMode.value === 'dark', 'bg-white hover_bg-gray-200': $colorMode.value === 'light' }`
           )
