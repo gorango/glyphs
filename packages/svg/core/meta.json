@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 722,
-  "total": 3609,
+  "unique": 729,
+  "total": 3644,
   "variants": [
     "path",
     "bold",
@@ -143,6 +143,11 @@
       "building",
       "building1",
       "building2",
+      "building3",
+      "buildings",
+      "buildings1",
+      "hotel",
+      "hotel1",
       "buildingHospital",
       "industry",
       "globe",
@@ -160,6 +165,7 @@
     ],
     "measure": [
       "clock",
+      "clockFast",
       "alarmClock",
       "alarmExclamation",
       "alarmPlus",
@@ -167,6 +173,7 @@
       "alarmSnooze",
       "snooze",
       "timer",
+      "timerFast",
       "timer1",
       "tachometer",
       "tachometer1",
