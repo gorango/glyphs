@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/vue-flags",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Glyphs Vue Flags",
   "homepage": "https://glyphs.fyi/dir?set=flags",
   "license": "MIT",
@@ -14,8 +14,8 @@
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "@glyphs/cli": "^0.2.1",
-    "@glyphs/flags": "^0.5.2",
+    "@glyphs/cli": "^0.3.1",
+    "@glyphs/flags": "^0.5.5",
     "@vue/component-compiler-utils": "^3.2.0",
     "vue-template-compiler": "^2.6.12"
   }

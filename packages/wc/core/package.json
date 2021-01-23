@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/wc-core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Glyphs Web Components Core",
   "homepage": "https://glyphs.fyi/dir?set=core",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "hybrids": "^4.3.4"
   },
   "devDependencies": {
-    "@glyphs/cli": "^0.2.1",
-    "@glyphs/core": "^0.7.5"
+    "@glyphs/cli": "^0.3.1",
+    "@glyphs/core": "^0.7.8"
   }
 }

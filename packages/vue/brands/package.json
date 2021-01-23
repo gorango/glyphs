@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/vue-brands",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Glyphs Vue Brands",
   "homepage": "https://glyphs.fyi/dir?set=brands",
   "license": "MIT",
@@ -13,8 +13,8 @@
     "vue": "^2.6.12"
   },
   "devDependencies": {
-    "@glyphs/cli": "^0.2.1",
-    "@glyphs/brands": "^0.1.6",
+    "@glyphs/cli": "^0.3.1",
+    "@glyphs/brands": "^0.1.9",
     "@vue/component-compiler-utils": "^3.2.0",
     "vue-template-compiler": "^2.6.12"
   }
