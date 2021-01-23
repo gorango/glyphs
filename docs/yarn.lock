@@ -949,38 +949,15 @@
   resolved "https://registry.yarnpkg.com/@glyphs/brands/-/brands-0.1.9.tgz#2f987a521a7a32f6a33fa23d2021393baa645204"
   integrity sha512-yaMFbla3kpCNEmtQtfRhXhhZbfJyY+7QK39I9dHOFl2XivTQEUk/euX9JwVYoAf4VUpTK7EZOKIEidOyireSJw==
 
-"@glyphs/core@^0.7.8":
-  version "0.7.8"
-  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.7.8.tgz#c75933dc70ea4d52740bfcb3c04ccde7d94732a1"
-  integrity sha512-i6HCB1sCyNBoHeBsmqltX5xTW55x0qBbMXGgZmg1+EVQI7n8ZC40tW+S1TgoaarM36Tyw+6FDj4r0FtTBa2gWw==
+"@glyphs/core@^0.7.9":
+  version "0.7.9"
+  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.7.9.tgz#c26bf7f77d44001b039ab1138de9d29200f4eca1"
+  integrity sha512-3+hwJ4z1eOk5XJibIrEEwQhXCvwsdFO2Nzdk0wuYXwasi5TJ5yv6MMpfk5sVWpFmcwp0iA/GF07G43IioTSj7w==
 
 "@glyphs/flags@^0.5.5":
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/@glyphs/flags/-/flags-0.5.5.tgz#abeca111430ed9f6039f990d209ed2b1369cf763"
   integrity sha512-/Tyx3iTji0LOO1+gvd7pl6nJMlwjJdQQn21eNFJ7JMyJMuD7N9UtGO6PY/3TH7lpX3aQLjKc5H817ahbXDWs2g==
-
-"@glyphs/vue-brands@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@glyphs/vue-brands/-/vue-brands-0.0.4.tgz#84244d1ec71bf7988e5cb80ddb9bdbc81f8e7710"
-  integrity sha512-4Q401c8ZIVMcjBNN/be9M8GjCYkvK16ar9vHqc/ByyvxLYoybqvfA67PdelkP3kOBcQjdxK5yYQ5d/Y4LITFeg==
-  dependencies:
-    vue "^2.6.12"
-
-"@glyphs/vue-core@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@glyphs/vue-core/-/vue-core-0.0.4.tgz#ed243d030201a643b6dd611b4df2e3d91b46b848"
-  integrity sha512-CTGFxgtzIih5H0Qg57P8JWMgFciL3Mtb0zFcyYLAc+idtRUu0UMnvvJAXMQFvNsHqUWVz7RLnnA5qZqE7aI1fQ==
-  dependencies:
-    vue "^2.6.12"
-    vue-hot-reload-api "^2.3.4"
-
-"@glyphs/vue-flags@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@glyphs/vue-flags/-/vue-flags-0.0.4.tgz#413682a820e48dc34eadcef591d6e61547852239"
-  integrity sha512-FWD4KN7OPlM/Kae4WYqDcp5l95K/8fH3VE2t3Lre6ejpP4f0Jyu38O6chpu2xyOANSP+uAlVAq4OOUXMc2mNZQ==
-  dependencies:
-    vue "^2.6.12"
-    vue-hot-reload-api "^2.3.4"
 
 "@koa/router@^9.0.1":
   version "9.4.0"
@@ -10497,7 +10474,7 @@ vue-eslint-parser@^7.1.1:
     esquery "^1.0.1"
     lodash "^4.17.15"
 
-vue-hot-reload-api@^2.3.0, vue-hot-reload-api@^2.3.4:
+vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
