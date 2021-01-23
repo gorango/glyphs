@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+const parseArgs = require('minimist')
+
+const args = process.argv.slice(2)
+const argv = parseArgs(args, {
+  alias: {
+    h: 'help'
+  },
+  boolean: ['h']
+})
+
+if (argv.help) {
+  console.log(`
+  Description
+  Generate an icon font from an exported Glyphs icon set. Options must be supplied in a 'glyphs.config.json' file.
+
+  Usage
+    $ glyphs generate
+
+  Options
+    --help, -h     Displays this message
+  `)
+  process.exit()
+}
+
+const fs = require('fs')
+const path = require('path')
+
+;(async () => {
+  const glyphsConfig = require(path.join(process.cwd(), 'glyphs.config.js'))
+
+  if (!glyphsConfig || !glyphsConfig.font) {
+    throw new Error(`A config file wasn't supplied.`)
+  }
+
+  console.log()
+
+  require('../lib/font')(glyphsConfig.font)
+})()
