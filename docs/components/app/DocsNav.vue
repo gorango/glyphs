@@ -2,7 +2,7 @@
   aside.flex.flex-col.px-4.sticky.self-start.py-4(style='top: 72px')
     template(v-for='(docs, category, index) in categories')
       h3.text-grey-900.uppercase.text-xs.tracking-wider.mt-4.mb-3 {{ category }}
-      div.flex.flex-col(style='width: 16rem; min-width: 16rem')
+      div.flex.flex-col.w-full(style='min-width: 16rem')
         template(v-for='doc in docs')
           nuxt-link.px-2.py-1.rounded-lg.capitalize(
             :to='doc.disabled ? $route.path : doc.path',
