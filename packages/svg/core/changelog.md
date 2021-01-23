@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.9](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.8...@glyphs/core-v0.7.9) (2021-01-23)
+
+
+### Features
+
+* **core:** 2 new icons ([abf2c8a](https://github.com/gorango/glyphs/commit/abf2c8a1013bbbdbd6f061ce864755ea160808db))
+
+
+### Bug Fixes
+
+* **core:** fix elevator path; update categories order ([7115707](https://github.com/gorango/glyphs/commit/7115707d90a1a24d2830c5721d7289ce3779b2c2))
+
 ### [0.7.8](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.7...@glyphs/core-v0.7.8) (2021-01-23)
 
 
