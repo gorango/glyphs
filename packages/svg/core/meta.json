@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 729,
-  "total": 3644,
+  "unique": 731,
+  "total": 3654,
   "variants": [
     "path",
     "bold",
@@ -64,6 +64,7 @@
       "arrowsRound",
       "arrowTurn",
       "arrowUTurn",
+      "arrowsSplit",
       "arrowsCross",
       "recycle",
       "repeat",
@@ -189,6 +190,7 @@
       "route",
       "path",
       "path1",
+      "road",
       "binoculars",
       "binoculars1",
       "layerGroup",
