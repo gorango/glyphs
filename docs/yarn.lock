@@ -949,10 +949,10 @@
   resolved "https://registry.yarnpkg.com/@glyphs/brands/-/brands-0.1.9.tgz#2f987a521a7a32f6a33fa23d2021393baa645204"
   integrity sha512-yaMFbla3kpCNEmtQtfRhXhhZbfJyY+7QK39I9dHOFl2XivTQEUk/euX9JwVYoAf4VUpTK7EZOKIEidOyireSJw==
 
-"@glyphs/core@^0.7.9":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.7.9.tgz#c26bf7f77d44001b039ab1138de9d29200f4eca1"
-  integrity sha512-3+hwJ4z1eOk5XJibIrEEwQhXCvwsdFO2Nzdk0wuYXwasi5TJ5yv6MMpfk5sVWpFmcwp0iA/GF07G43IioTSj7w==
+"@glyphs/core@^0.7.10":
+  version "0.7.10"
+  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.7.10.tgz#bff25e82efa3d6b25775601330b80e4b3ce68d3e"
+  integrity sha512-RH+zogAFN0ZsuBBEE28msTzr9ucMzbGoQAcl/wgmOwl9NApKQBQ6d+rd6YhoHb0SdeXBTqHOYXVS2YYmtOzacQ==
 
 "@glyphs/flags@^0.5.5":
   version "0.5.5"
@@ -1385,10 +1385,10 @@
     webpack-node-externals "^2.5.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/color-mode@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-2.0.2.tgz#98292e44b9774262c66aad1782b1430593441492"
-  integrity sha512-j5xsy3R6rWNRon8Rvzut7J4QyGWWsAYfdMS80vp+1u9I+9k/lOeFzwzQW4Sxsan+nhQmsKi9XaWS7o0Vk1g1JA==
+"@nuxtjs/color-mode@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-2.0.3.tgz#6ba5ab0a6364c966b48386867f2660bf0dcd7b5d"
+  integrity sha512-yfTkUbXcq42YW7qCv66kqAttnjr+sLpxY+HIJq7nlLadDQeEyjl+QMR8AHKS2KQMVfMwd7rbJyE+jU2PKjwDcQ==
   dependencies:
     defu "^3.2.2"
     lodash.template "^4.5.0"

@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@glyphs/brands": "0.1.9",
-    "@glyphs/core": "^0.7.9",
+    "@glyphs/core": "^0.7.10",
     "@glyphs/flags": "^0.5.5",
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/gtm": "^2.4.0",
@@ -26,7 +26,7 @@
     "v-clipboard": "^2.2.3"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^2.0.2",
+    "@nuxtjs/color-mode": "^2.0.3",
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/pwa": "^3.3.4",
