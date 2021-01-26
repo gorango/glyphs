@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.10](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.9...@glyphs/core-v0.7.10) (2021-01-26)
+
+
+### Bug Fixes
+
+* **core:** add search terms; minor fixes ([3afae90](https://github.com/gorango/glyphs/commit/3afae9086a48bcb3892af1097f591c57b966be24))
+
 ### [0.7.9](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.8...@glyphs/core-v0.7.9) (2021-01-23)
 
 
