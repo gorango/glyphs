@@ -1,0 +1,5 @@
+docs/* linguist-documentation
+*.vue linguist-language=javascript
+*.ts linguist-language=javascript
+packages/**/*.svg -linguist-detectable
+packages/**/*.html -linguist-detectable
