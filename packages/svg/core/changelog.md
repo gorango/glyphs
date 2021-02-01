@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.11](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.10...@glyphs/core-v0.7.11) (2021-02-01)
+
+
+### Features
+
+* **core:** 37 new icons; emojis + business ([9307566](https://github.com/gorango/glyphs/commit/9307566d0d5b1c8b61daad9d2147fe872d61e233)), closes [#34](https://github.com/gorango/glyphs/issues/34)
+
+
+### Bug Fixes
+
+* **core:** update search terms ([389cfa0](https://github.com/gorango/glyphs/commit/389cfa0939f9ee3defcdd26a97a23c0043c417ba))
+
 ### [0.7.10](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.9...@glyphs/core-v0.7.10) (2021-01-26)
 
 
