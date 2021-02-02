@@ -9,13 +9,16 @@ head
     .icon svg { display: block; width: 100%; height: 100%; }
     .icon:not(.active) { display: none; }
 
-body
+body.bg-gray-800.text-gray-100
   main
-    nav.sticky.top-0.z-20.bg-white.w-full.p-2.space-x-3.flex.flex-no-wrap
+    nav.sticky.top-0.z-20.bg-gray-900.w-full.p-2.space-x-3.flex.flex-no-wrap.items-center
       .flex-1
+        //- button#toggle.flex.px-3.rounded-lg.items-center.p-1.bg-grey-100.border-2.border-gray-700(
+        //-   onclick=`togglePlay()`,
+        //- ) Play
       .flex-1.flex.justify-center.space-x-3
         each variant in variants
-          button.flex.rounded-lg.items-center.p-1.bg-grey-100.border-2.border-gray-300(
+          button.flex.rounded-lg.items-center.p-1.bg-grey-100.border-2.border-gray-700(
             onmouseenter=`handleMouseEnter('${variant}')`,
             onmouseleave='handleMouseLeave()'
           )
@@ -25,11 +28,11 @@ body
     section
       each icons, category in categories
         div.my-6
-          div.sticky.z-10.bg-white.w-full.p-2(style='top: 58px')
+          div.sticky.z-10.bg-gray-900.w-full.p-2(style='top: 58px')
             h5.text-lg.text-center.capitalize= category
           div.flex.flex-wrap.justify-center.mt-2.mb-6.py-4
             each name in icons
-              div.flex.items-center.flex-col.rounded-lg.border-2.border-gray-200.w-24.m-3.pb-2
+              div.flex.items-center.flex-col.rounded-lg.border-2.border-gray-700.w-24.m-3.pb-2
                 div.w-full.p-1.text-center
                   .truncate.text-xs.text-gray-500(title=name)= name
                 - var variants = components.find(({ name: n }) => n === name).variants
@@ -42,7 +45,7 @@ body
     let interval
 
     if (variants[1]) {
-      startInterval()
+      //- startInterval()
     }
 
     function startInterval () {
