@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 768,
-  "total": 3840,
+  "unique": 772,
+  "total": 3860,
   "variants": [
     "path",
     "bold",
@@ -474,6 +474,10 @@
       "stamp",
       "bandage",
       "bandage1",
+      "union",
+      "subtract",
+      "intersect",
+      "exclude",
       "adjust",
       "adjust1",
       "exposure",
