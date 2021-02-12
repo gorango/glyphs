@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 772,
-  "total": 3860,
+  "unique": 778,
+  "total": 3890,
   "variants": [
     "path",
     "bold",
@@ -19,6 +19,7 @@
       "diamond",
       "hexagon",
       "octagon",
+      "line",
       "heart",
       "cross",
       "star",
@@ -340,6 +341,7 @@
       "bellAdd",
       "bellRemove",
       "bellExclamation",
+      "bells",
       "shieldExclamation",
       "alarmClock",
       "timer"
@@ -499,6 +501,9 @@
       "bezierPentagon",
       "bezierHexagon",
       "bezierSquare",
+      "objectSelect",
+      "objectGroup",
+      "objectUngroup",
       "layerGroup",
       "layerPlus",
       "layerMinus",
@@ -537,7 +542,8 @@
       "edit1",
       "box",
       "box1",
-      "boxOpen"
+      "boxOpen",
+      "boxClose"
     ],
     "multimedia": [
       "camera",
