@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.11...@glyphs/core-v0.8.0) (2021-02-12)
+
+
+### Features
+
+* **core:** 4 new icons ([2099416](https://github.com/gorango/glyphs/commit/2099416d4daf1aeef0801e2f93ebae024c7c8d3f))
+* **core:** 6 new icons ([aa610f1](https://github.com/gorango/glyphs/commit/aa610f18b40626925dbaf9b7196da480255bc79e))
+
+
+### Bug Fixes
+
+* **core:** update terms; minor updates to strokes ([c8077d0](https://github.com/gorango/glyphs/commit/c8077d0160b8b73da48874cc694a791a3e9d9a2c))
+
 ### [0.7.11](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.7.10...@glyphs/core-v0.7.11) (2021-02-01)
 
 
