@@ -92,7 +92,7 @@ let { key, token, replace } = argv
       }
     }
 
-    const { client: figma } = figmaClient({ personalAccessToken })
+    const { client: figma } = figmaClient({ personalAccessToken: token })
     const file = await figma.get(`files/${key}`).then(({ data }) => data).catch(err => {
       const error = err.toJSON()
       console.log()
