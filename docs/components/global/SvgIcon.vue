@@ -217,13 +217,13 @@ svg {
   stroke-linecap: round
 } */
 
-.path, .outline, .solid, .bold, .mono {
+.path, .duo, .outline, .solid, .bold, .mono {
   & > svg *[stroke] {
     stroke: currentColor;
   }
 }
 
-.path, .outline, .solid, .bold, .mono {
+.path, .duo, .outline, .solid, .bold, .mono {
   & > svg *[fill] {
     fill: currentColor;
   }

@@ -96,7 +96,7 @@
           :shift='22.5',
           :friction='1',
         )
-      div.mr-3(v-if='["path", "line", "outline"].includes(variant)')
+      div.mr-3(v-if='["path", "duo", "line", "outline"].includes(variant)')
         div.mb-2.uppercase.text-xs.tracking-wider.text-gray-500.dark_text-gray-600 Stroke
         input-scrub.bg-gray-200.dark_bg-gray-900.rounded-lg.p-2.w-16.text-center(
           style='cursor: col-resize; height: 44px',
@@ -214,7 +214,7 @@ export default {
       const start = `<${this.selectedSet.label}-${this.kebabCase(this.icon)}\n  variant="${this.previewVariant || this.variant}"`
       const rotate = this.previewRotate ? `\n  rotate="${this.previewRotate}"` : ''
       const flip = this.previewFlip ? `\n  flip="${this.previewFlip}"` : ''
-      const stroke = ['path', 'outline'].reduce((b, v) => b || [this.variant, this.previewVariant].includes(v), 0) ? `\n  stroke-width="${this.stroke}"` : ''
+      const stroke = ['path', 'duo', 'outline'].reduce((b, v) => b || [this.variant, this.previewVariant].includes(v), 0) ? `\n  stroke-width="${this.stroke}"` : ''
       const end = `\n></${this.selectedSet.label}-${this.kebabCase(this.icon)}>`
       return start + (rotate && rotate) + (flip && flip) + (stroke && stroke) + end
     },
