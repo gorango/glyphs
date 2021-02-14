@@ -253,7 +253,7 @@ export default {
             : this.variant === 'outline'
               ? '1'
               : this.variant === 'duo'
-                ? 4
+                ? '4'
                 : '1.5'
         )
       } else {
