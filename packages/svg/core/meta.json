@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 778,
-  "total": 3890,
+  "unique": 784,
+  "total": 3920,
   "variants": [
     "path",
     "bold",
@@ -526,6 +526,9 @@
       "file",
       "copy",
       "paste",
+      "fileAdd",
+      "fileRemove",
+      "fileRemove1",
       "note",
       "notePad",
       "notePad1",
@@ -765,6 +768,8 @@
       "smoke",
       "fireSmoke",
       "campfire",
+      "camp",
+      "tent",
       "recycle",
       "binoculars",
       "binoculars1"
@@ -878,6 +883,7 @@
       "noteClipboard",
       "noteMedical",
       "pharmacy",
+      "pharmacy1",
       "pill",
       "tablet",
       "pills",
