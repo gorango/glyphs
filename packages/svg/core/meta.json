@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 795,
-  "total": 3975,
+  "unique": 797,
+  "total": 3985,
   "variants": [
     "path",
     "bold",
@@ -322,7 +322,10 @@
       "gridRemove",
       "gridSm",
       "gridLg",
-      "gridList"
+      "gridList",
+      "barcode",
+      "barcodeScan",
+      "barcodeRead"
     ],
     "alert": [
       "spinner",
