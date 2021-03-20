@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 797,
-  "total": 3985,
+  "unique": 799,
+  "total": 3995,
   "variants": [
     "path",
     "bold",
@@ -320,6 +320,7 @@
       "grid",
       "gridAdd",
       "gridRemove",
+      "qr",
       "gridSm",
       "gridLg",
       "gridList",
@@ -830,6 +831,7 @@
       "planeSide",
       "planeDeparture",
       "planeArrival",
+      "helicopter",
       "rocket",
       "ship",
       "shipWater",
