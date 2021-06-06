@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.5](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.8.4...@glyphs/core-v0.8.5) (2021-06-06)
+
+
+### Bug Fixes
+
+* **core:** update broken flat path vectors ([1721877](https://github.com/gorango/glyphs/commit/1721877b3f8b57200baa5986c5cb7e448540dbe8))
+
 ### [0.8.4](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.8.3...@glyphs/core-v0.8.4) (2021-06-06)
 
 
