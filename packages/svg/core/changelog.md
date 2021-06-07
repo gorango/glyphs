@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.6](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.8.5...@glyphs/core-v0.8.6) (2021-06-07)
+
+
+### Features
+
+* **core:** 15 new icons ([aec5270](https://github.com/gorango/glyphs/commit/aec527068e67280cb2622c05d1a6e68ae36dce1d))
+
+
+### Bug Fixes
+
+* **core:** force global opacity update ([c5a7334](https://github.com/gorango/glyphs/commit/c5a7334239c56ae29b93b088ed017097ac9de923))
+* **core:** move location; fix columns spacing ([60ee4be](https://github.com/gorango/glyphs/commit/60ee4bef8a54de64c873ca5af54700f0df7fba14))
+
 ### [0.8.5](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.8.4...@glyphs/core-v0.8.5) (2021-06-06)
 
 
