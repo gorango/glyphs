@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 818,
-  "total": 4090,
+  "unique": 833,
+  "total": 4165,
   "variants": [
     "path",
     "bold",
@@ -199,7 +199,12 @@
       "globeOceania",
       "globeWest",
       "globeMiddle",
-      "globeEast"
+      "globeEast",
+      "bench",
+      "picnicTable",
+      "streetLight",
+      "streetLight1",
+      "streetLight2"
     ],
     "location": [
       "locationArrow",
@@ -336,7 +341,17 @@
       "gridList",
       "barcode",
       "barcodeScan",
-      "barcodeRead"
+      "barcodeRead",
+      "columns1",
+      "columns2",
+      "columns3",
+      "grid1",
+      "layout1",
+      "layout2",
+      "boxLayout",
+      "boxLayout2",
+      "boxLayout3",
+      "boxLayout4"
     ],
     "alert": [
       "spinner",
