@@ -1,8 +1,8 @@
 {
   "key": "2TsY9yqFso1zrvF8LNcVE7",
   "name": "core",
-  "unique": 839,
-  "total": 4195,
+  "unique": 840,
+  "total": 4200,
   "variants": [
     "path",
     "bold",
@@ -36,7 +36,8 @@
       "shield",
       "shield1",
       "shield2",
-      "shapes"
+      "shapes",
+      "venn"
     ],
     "arrow": [
       "caret",
@@ -524,6 +525,7 @@
       "subtract",
       "intersect",
       "exclude",
+      "venn",
       "adjust",
       "adjust1",
       "exposure",
