@@ -28,5 +28,6 @@ console.log(`
     sync, s       Sync an icon set to the current directory
     preview, p    Preview a local icon set in the browser
     generate      Generate a JS component set
+    font          Generate an icon font
     help, h       Display this message
 `)
