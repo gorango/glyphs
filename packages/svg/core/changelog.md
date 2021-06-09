@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.7](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.8.6...@glyphs/core-v0.8.7) (2021-06-09)
+
+
+### Features
+
+* **core:** 6 new icons ([d44359a](https://github.com/gorango/glyphs/commit/d44359a7689ba3d8060257e016b855a4767def1a))
+* **core:** 9 new icons ([bbc2623](https://github.com/gorango/glyphs/commit/bbc26238c2f51e71d049718e76d67e91565b8627))
+* **core:** add design>venn ([462c2b9](https://github.com/gorango/glyphs/commit/462c2b964fb11aa23d5ac21f22efe80a0b3dc10d))
+
+
+### Bug Fixes
+
+* **core:** tachometer naming conflict ([33b516b](https://github.com/gorango/glyphs/commit/33b516b822d05fb72b6bf265e313315bb5409bc7))
+
 ### [0.8.6](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.8.5...@glyphs/core-v0.8.6) (2021-06-07)
 
 
