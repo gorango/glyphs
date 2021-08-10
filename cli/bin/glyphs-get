@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
+const { log } = require('../utils/logger')
 const chalk = require('chalk')
 
 const args = process.argv.slice(2)
@@ -12,7 +13,7 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  console.log(`
+  log(`
   Description
   Get details on the icon set config
 
@@ -38,12 +39,12 @@ const { _: [query] } = argv
   const configs = conf.all
   const hasConfig = Object.keys(configs).length
 
-  console.log()
+  log()
 
   if (!hasConfig) {
-    console.log('  No icon files have been configured')
-    console.log('  Run "glyphs add" to configure a new icon file')
-    console.log()
+    log('No icon files have been configured', 1)
+    log('Run "glyphs add" to configure a new icon file', 1)
+    log()
     process.exit(1)
   }
 
@@ -62,26 +63,26 @@ const { _: [query] } = argv
       }]
 
       const answers = await inquirer.prompt(questions)
-      console.log()
+      log()
       key = answers.name
     }
 
     const setConfig = configs[key]
-    console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.name}`)
-    console.log(`  ${chalk.cyan`File Key`}:      ${key}`)
-    console.log(`  ${chalk.cyan`Access Token`}:  ${setConfig.token}`)
-    console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${key}`)
+    log(`${chalk.cyan`File Name`}:     ${setConfig.name}`, 1)
+    log(`${chalk.cyan`File Key`}:      ${key}`, 1)
+    log(`${chalk.cyan`Access Token`}:  ${setConfig.token}`, 1)
+    log(`${chalk.cyan`Direct Link`}:   https://figma.com/file/${key}`, 1)
   } else if (query) {
     const setConfig = query in configs ? configs[query] : Object.values(configs).find(({ name }) => name.toLowerCase().includes(query.toLowerCase()))
     if (setConfig) {
-      console.log(`  ${chalk.cyan`File Name`}:     ${setConfig.name}`)
-      console.log(`  ${chalk.cyan`File Key`}:      ${setConfig.key}`)
-      console.log(`  ${chalk.cyan`Access Token`}:  ${setConfig.token}`)
-      console.log(`  ${chalk.cyan`Direct Link`}:   https://figma.com/file/${setConfig.key}`)
+      log(`${chalk.cyan`File Name`}:     ${setConfig.name}`, 1)
+      log(`${chalk.cyan`File Key`}:      ${setConfig.key}`, 1)
+      log(`${chalk.cyan`Access Token`}:  ${setConfig.token}`, 1)
+      log(`${chalk.cyan`Direct Link`}:   https://figma.com/file/${setConfig.key}`, 1)
     } else {
-      console.log(`  Can't find the icon set with that name or key`)
+      log(`Can't find the icon set with that name or key`, 1)
     }
   }
-  console.log()
+  log()
   process.exit()
 })();

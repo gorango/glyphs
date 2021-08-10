@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-require('../lib/utils/node-version-check')
+require('../utils/node-version-check')
 
 const updateNotifier = require('update-notifier')
 const pkg = require('../package.json')

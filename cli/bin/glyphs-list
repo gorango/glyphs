@@ -2,6 +2,7 @@
 
 const parseArgs = require('minimist')
 const chalk = require('chalk')
+const { log } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -12,7 +13,7 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  console.log(`
+  log(`
   Description
   List configured icon sets
 
@@ -32,19 +33,19 @@ const conf = new Configstore(pkg.name)
 const configs = conf.all
 const hasConfig = Object.keys(configs).length
 
-console.log()
+log()
 
 if (!hasConfig) {
-  console.log('  No icon files have been configured')
-  console.log('  Run "glyphs add" to configure a new icon file')
+  log('No icon files have been configured', 1)
+  log('Run "glyphs add" to configure a new icon file', 1)
 } else {
   const max = Object.entries(configs).reduce((len, [key, { name }]) => Math.max(len, name.length), 0)
   Object.entries(configs).forEach(([key, { name }]) => {
     const padding = Array(max - name.length).fill(' ').join('')
-    console.log(`  ${chalk.cyan`${name}:`}${padding} https://figma.com/file/${key}`)
+    log(`${chalk.cyan`${name}:`}${padding} https://figma.com/file/${key}`, 1)
   })
-  console.log()
-  console.log('  Run "glyphs sync" to export a set to the current folder')
+  log()
+  log('Run "glyphs sync" to export a set to the current folder', 1)
 }
 
-console.log()
+log()

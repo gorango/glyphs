@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
+const { log } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -16,7 +17,7 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  console.log(`
+  log(`
   Description
   Sync a configured icon set to the current directory. Options that are not supplied as arguments will be prompted.
 
@@ -42,7 +43,7 @@ const inquirer = require('inquirer')
 const pkg = require('../package.json')
 
 ;(async () => {
-  console.log()
+  log()
   const conf = new Configstore(pkg.name)
   const configs = conf.all
   const hasConfig = Object.keys(configs).length
@@ -51,10 +52,10 @@ const pkg = require('../package.json')
   let key
 
   if (!hasConfig) {
-    console.log()
-    console.log(`  You haven't configured any files to sync`)
-    console.log(`  Run "glyphs add" or "glyphs help" to get started`)
-    console.log()
+    log()
+    log(`You haven't configured any files to sync`, 1)
+    log(`Run "glyphs add" or "glyphs help" to get started`, 1)
+    log()
     process.exit(1)
   }
 
@@ -67,8 +68,8 @@ const pkg = require('../package.json')
     if (fileConf) {
       key = fileConf.key
     } else {
-      console.log(`  No file containing "${query}" has been found in your config`)
-      console.log()
+      log(`No file containing "${query}" has been found in your config`, 1)
+      log()
       query = null
     }
   }
@@ -104,7 +105,7 @@ const pkg = require('../package.json')
 
     const answers = await inquirer.prompt(questions)
     set = answers.name
-    console.log()
+    log()
   } else {
     set = choices.find(s => s.toLowerCase().includes(set.toLowerCase()))
   }
@@ -125,7 +126,7 @@ const pkg = require('../package.json')
       const dataDir = path.join(process.cwd(), syncArgs.data)
       require('../lib/preview')(dataDir)
     }
-    console.log()
+    log()
     process.exit()
   }
 
@@ -133,9 +134,9 @@ const pkg = require('../package.json')
 })()
 
 function handleError (err) {
-  console.log()
-  console.log(err.message)
-  process.env.NODE_ENV === 'dev' && console.log(err)
-  console.log()
+  log()
+  log(err.message)
+  process.env.NODE_ENV === 'dev' && log(err)
+  log()
   process.exit(1)
 }

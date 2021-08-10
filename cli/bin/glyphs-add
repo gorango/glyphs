@@ -2,6 +2,7 @@
 
 const parseArgs = require('minimist')
 const chalk = require('chalk')
+const { log } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -16,7 +17,7 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  console.log(`
+  log(`
   Description
   Add a new icon set config. Options that are not supplied as arguments will be prompted.
 
@@ -67,27 +68,27 @@ let { key, token, replace } = argv
       validate
     }]
 
-    console.log()
-    console.log('  Add a new icon set config by providing a file key and access token from Figma')
-    console.log('  Instructions can be found at https://glyphs.fyi/docs/cli')
-    console.log()
+    log()
+    log('Add a new icon set config by providing a file key and access token from Figma', 1)
+    log('Instructions can be found at https://glyphs.fyi/docs/cli', 1)
+    log()
     const answers = await inquirer.prompt(questions)
     key = answers.key
     token = answers.token
   }
 
   if (!token || !key) {
-    console.log()
-    console.log('  Operation failed')
-    console.log('  File key and access token are required to continue')
+    log()
+    log('Operation failed', 1)
+    log('File key and access token are required to continue', 1)
   } else {
     if (hasConfig) {
       const [setEntries] = Object.entries(configs).filter(([name, { key: k }]) => k === key)
       const name = setEntries && setEntries[0]
       if (name && !replace) {
-        console.log()
-        console.log(`  Configuration with that file key already exists: "${name}"`)
-        console.log()
+        log()
+        log(`Configuration with that file key already exists: "${name}"`, 1)
+        log()
         process.exit(1)
       }
     }
@@ -95,9 +96,9 @@ let { key, token, replace } = argv
     const { client: figma } = figmaClient({ personalAccessToken: token })
     const file = await figma.get(`files/${key}`).then(({ data }) => data).catch(err => {
       const error = err.toJSON()
-      console.log()
-      console.log(' ', error.message)
-      console.log()
+      log()
+      log(error.message, 1)
+      log()
       process.exit(1)
     })
     const sets = file.document.children
@@ -110,13 +111,13 @@ let { key, token, replace } = argv
       name: file.name,
       sets: sets
     })
-    console.log()
-    console.log(`  Successfully configured the "${file.name}" file`)
-    console.log()
-    console.log(`  You can run:`)
-    console.log(`    glyphs sync   - to export a set to your current folder`)
-    console.log(`    glyphs get    - to get the configuration settings for your file`)
-    console.log(`    glyphs remove - to remove the file from your config`)
+    log()
+    log(`Successfully configured the "${file.name}" file`, 1)
+    log()
+    log(`You can run:`, 1)
+    log(`glyphs sync   - to export a set to your current folder`, 2)
+    log(`glyphs get    - to get the configuration settings for your file`, 2)
+    log(`glyphs remove - to remove the file from your config`, 2)
   }
-  console.log()
+  log()
 })()

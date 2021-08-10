@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
+const { log, fatal } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -11,7 +12,7 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  console.log(`
+  log(`
   Description
   Generate a component set from an exported Glyphs icon set. Options must be supplied in a 'glyphs.config.json' file.
 
@@ -39,7 +40,7 @@ const inquirer = require('inquirer')
   const { target } = glyphsConfig.generate
   const targets = ['wc', 'vue', 'react']
 
-  console.log()
+  log()
 
   if (target) {
     const isValid = targets.includes(target)
@@ -62,5 +63,9 @@ const inquirer = require('inquirer')
     key = answers.name
   }
 
-  require('../lib/generate')(glyphsConfig.generate)
+  try {
+    require('../lib/generate')(glyphsConfig.generate)
+  } catch (error) {
+    fatal(error)
+  }
 })()

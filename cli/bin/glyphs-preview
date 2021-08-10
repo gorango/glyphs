@@ -2,6 +2,7 @@
 
 const parseArgs = require('minimist')
 const chalk = require('chalk')
+const { log } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -11,7 +12,7 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  console.log(`
+  log(`
   Description
   Preview a local icon set in the browser.
 
@@ -52,7 +53,14 @@ const { _: [data] } = argv
 
   const dataDir = path.join(process.cwd(), data)
   if (fs.existsSync(dataDir)) {
-    await preview(dataDir)
+    const success = preview(dataDir)
+    if (!success) {
+      log()
+      log('The files required to generate the preview have not been found', 1)
+      log('Run "glyphs sync" to generate the required files', 1)
+      log()
+      process.exit(1)
+    }
     process.exit()
   } else {
     printError(data)
@@ -61,8 +69,8 @@ const { _: [data] } = argv
 })()
 
 function printError (data='data') {
-  console.log()
-  console.log(`  No "${data}" folder found in current directory`)
-  console.log(`  Provide the "data" folder location as an argument to "glyphs preview"`)
-  console.log()
+  log()
+  log(`No "${data}" folder found in current directory`, 1)
+  log(`Provide the "data" folder location as an argument to "glyphs preview"`, 1)
+  log()
 }
