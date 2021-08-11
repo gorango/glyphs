@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
-const { log } = require('../utils/logger')
+const { log, PRINT } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -17,45 +17,21 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  log(`
-  Description
-  Sync a configured icon set to the current directory. Options that are not supplied as arguments will be prompted.
-
-  Usage
-    $ glyphs sync [<key|name> --set <set> --data <data-folder> --svg <svg-folder>]
-
-  Options
-    --set, -S      Name of icon set to sync
-    --data, -d     Output folder for icon-set data
-    --svg, -s      Output folder for SVGs
-    --preview, -p  Generate a preview file
-    --diff         Fetch only new and updated assets
-    --categories   Specify categories to include
-    --help, -h     Displays this message
-  `)
+  PRINT.SYNC.HELP()
   process.exit()
 }
 
 const path = require('path')
-const Configstore = require('configstore')
-const { camelCase } = require('lodash')
 const inquirer = require('inquirer')
-const pkg = require('../package.json')
+const { configs, hasConfig } = require('../utils/config')
 
 ;(async () => {
   log()
-  const conf = new Configstore(pkg.name)
-  const configs = conf.all
-  const hasConfig = Object.keys(configs).length
-  // const glyphsConfig = require(path.join(process.cwd(), 'glyphs.config.js'))
   let { _: [query], set, preview: generatePreview } = argv
   let key
 
   if (!hasConfig) {
-    log()
-    log(`You haven't configured any files to sync`, 1)
-    log(`Run "glyphs add" or "glyphs help" to get started`, 1)
-    log()
+    PRINT.SYNC.NO_CONFIG()
     process.exit(1)
   }
 
@@ -68,8 +44,7 @@ const pkg = require('../package.json')
     if (fileConf) {
       key = fileConf.key
     } else {
-      log(`No file containing "${query}" has been found in your config`, 1)
-      log()
+      PRINT.SYNC.NOT_FOUND(({ query }))
       query = null
     }
   }
@@ -78,12 +53,9 @@ const pkg = require('../package.json')
     if (Object.keys(configs).length > 1) {
       const choices = Object.entries(configs)
         .map(([key, { name }]) => ({ value: key, name }))
-      const questions = [{
-        type: 'list',
-        name: 'name',
-        message: 'Select the file to sync',
-        choices,
-      }]
+      const questions = [
+        { type: 'list', name: 'name', message: 'Select the file to sync', choices }
+      ]
 
       const answers = await inquirer.prompt(questions)
       key = answers.name
@@ -96,12 +68,9 @@ const pkg = require('../package.json')
   const choices = Object.keys(fileConf.sets)
 
   if (!set) {
-    const questions = [{
-      type: 'list',
-      name: 'name',
-      message: `Select the icon set to sync from ${fileConf.name}`,
-      choices,
-    }]
+    const questions = [
+      { type: 'list', name: 'name', message: `Select the icon set to sync from ${fileConf.name}`, choices }
+    ]
 
     const answers = await inquirer.prompt(questions)
     set = answers.name

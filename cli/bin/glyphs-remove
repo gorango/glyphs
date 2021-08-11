@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
-const chalk = require('chalk')
-const { log } = require('../utils/logger')
+const { log, PRINT } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -13,31 +12,16 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  log(`
-  Description
-  Remove an existing icon set config by name
-
-  Usage
-    $ glyphs remove <key>
-
-  Options
-    --help, -h    Displays this message
-  `)
+  PRINT.REMOVE.HELP()
   process.exit()
 }
 
-const Configstore = require('configstore')
 const inquirer = require('inquirer')
+const { conf, configs, hasConfig } = require('../utils/config')
 
-const pkg = require('../package.json')
-
-const conf = new Configstore(pkg.name)
 const { _: [key] } = argv
 
 ;(async () => {
-  const configs = conf.all
-  const hasConfig = Object.keys(configs).length
-
   log()
 
   if (!hasConfig) {

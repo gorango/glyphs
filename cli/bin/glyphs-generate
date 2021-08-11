@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
-const { log, fatal } = require('../utils/logger')
+const { log, fatal, PRINT } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -12,22 +12,11 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  log(`
-  Description
-  Generate a component set from an exported Glyphs icon set. Options must be supplied in a 'glyphs.config.json' file.
-
-  Usage
-    $ glyphs generate
-
-  Options
-    --help, -h     Displays this message
-  `)
+  PRINT.GENERATE.HELP()
   process.exit()
 }
 
-const fs = require('fs')
 const path = require('path')
-const { camelCase } = require('lodash')
 const inquirer = require('inquirer')
 
 ;(async () => {
@@ -52,12 +41,9 @@ const inquirer = require('inquirer')
 
   if (!target) {
     const choices = targets
-    const questions = [{
-      type: 'list',
-      name: 'name',
-      message: 'Select the package to create',
-      choices,
-    }]
+    const questions = [
+      { type: 'list', name: 'name', message: 'Select the package to create', choices }
+    ]
 
     const answers = await inquirer.prompt(questions)
     key = answers.name

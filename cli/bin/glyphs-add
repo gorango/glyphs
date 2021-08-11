@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
-const chalk = require('chalk')
-const { log } = require('../utils/logger')
+const { log, PRINT } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -17,35 +16,19 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  log(`
-  Description
-  Add a new icon set config. Options that are not supplied as arguments will be prompted.
-
-  Usage
-    $ glyphs add [--key <file-key> --token <access-token> --replace]
-
-  Options
-    --key, -k      File key for the Figma file
-    --token, -t    Personal access token from Figma
-    --replace, -r  Overwrite any existing configuration for <name> or <key>
-    --help, -h     Displays this message
-  `)
+  PRINT.ADD.HELP()
   process.exit()
 }
 
-const Configstore = require('configstore')
 const { Client: figmaClient } = require('figma-js')
 const inquirer = require('inquirer')
+const { conf, configs, hasConfig } = require('../utils/config')
+const { snakeCase } = require('lodash')
 
-const pkg = require('../package.json')
-
-const conf = new Configstore(pkg.name)
 let { key, token, replace } = argv
 
 ;(async () => {
-  const configs = conf.all
-  const hasConfig = Object.keys(configs).length
-
+  // no key or token provided to console - give prompt
   if (!key || !token) {
     if (hasConfig) {
       const firstSet = Object.values(configs)[0] || {}
@@ -53,42 +36,27 @@ let { key, token, replace } = argv
     }
 
     const validate = (input) => !!(input && input.length) || 'Input value is required'
+    const questions = [
+      { message: 'Figma File Key:', default: key, type: 'input', name: 'key', validate },
+      { message: 'Figma Personal Access Token:', default: token, type: 'input', name: 'token', validate }
+    ]
 
-    const questions = [{
-      type: 'input',
-      name: 'key',
-      message: 'Figma File Key:',
-      default: key,
-      validate
-    }, {
-      type: 'input',
-      name: 'token',
-      message: 'Figma Personal Access Token:',
-      default: token,
-      validate
-    }]
+    PRINT.ADD.INFO()
 
-    log()
-    log('Add a new icon set config by providing a file key and access token from Figma', 1)
-    log('Instructions can be found at https://glyphs.fyi/docs/cli', 1)
-    log()
     const answers = await inquirer.prompt(questions)
+
     key = answers.key
     token = answers.token
   }
 
-  if (!token || !key) {
-    log()
-    log('Operation failed', 1)
-    log('File key and access token are required to continue', 1)
+  if (!key || !token) {
+    PRINT.ADD.FAIL()
   } else {
     if (hasConfig) {
       const [setEntries] = Object.entries(configs).filter(([name, { key: k }]) => k === key)
       const name = setEntries && setEntries[0]
       if (name && !replace) {
-        log()
-        log(`Configuration with that file key already exists: "${name}"`, 1)
-        log()
+        PRINT.ADD.CONFLICT({ name })
         process.exit(1)
       }
     }
@@ -102,22 +70,10 @@ let { key, token, replace } = argv
       process.exit(1)
     })
     const sets = file.document.children
-      .filter(({ name }) => name.startsWith('->'))
-      .map(({ name }) => name.split(' ')[1].toLowerCase())
+      .reduce((obj, { name }) => ({ ...obj, [name]: null }), {})
 
-    conf.set(key, {
-      token,
-      key,
-      name: file.name,
-      sets: sets
-    })
-    log()
-    log(`Successfully configured the "${file.name}" file`, 1)
-    log()
-    log(`You can run:`, 1)
-    log(`glyphs sync   - to export a set to your current folder`, 2)
-    log(`glyphs get    - to get the configuration settings for your file`, 2)
-    log(`glyphs remove - to remove the file from your config`, 2)
+    conf.set(key, { token, key, name: file.name, sets: sets })
+    PRINT.ADD.SUCCESS(({ name: file.name }))
   }
   log()
 })()

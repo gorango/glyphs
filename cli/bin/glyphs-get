@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
-const { log } = require('../utils/logger')
-const chalk = require('chalk')
+const { log, PRINT } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -13,38 +12,20 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  log(`
-  Description
-  Get details on the icon set config
-
-  Usage
-    $ glyphs get [<key|name>]
-
-  Options
-    --help, -h     Displays this message
-  `)
+  PRINT.GET.HELP()
   process.exit()
 }
 
-const Configstore = require('configstore')
-const { camelCase } = require('lodash')
 const inquirer = require('inquirer')
+const { configs, hasConfig } = require('../utils/config')
 
-const pkg = require('../package.json')
-
-const conf = new Configstore(pkg.name)
 const { _: [query] } = argv
 
 ;(async () => {
-  const configs = conf.all
-  const hasConfig = Object.keys(configs).length
-
   log()
 
   if (!hasConfig) {
-    log('No icon files have been configured', 1)
-    log('Run "glyphs add" to configure a new icon file', 1)
-    log()
+    PRINT.GET.NO_CONFIG()
     process.exit(1)
   }
 
@@ -68,17 +49,19 @@ const { _: [query] } = argv
     }
 
     const setConfig = configs[key]
-    log(`${chalk.cyan`File Name`}:     ${setConfig.name}`, 1)
-    log(`${chalk.cyan`File Key`}:      ${key}`, 1)
-    log(`${chalk.cyan`Access Token`}:  ${setConfig.token}`, 1)
-    log(`${chalk.cyan`Direct Link`}:   https://figma.com/file/${key}`, 1)
+    PRINT.GET.CONFIG({
+      name: setConfig.name,
+      key,
+      token: setConfig.token
+    })
   } else if (query) {
     const setConfig = query in configs ? configs[query] : Object.values(configs).find(({ name }) => name.toLowerCase().includes(query.toLowerCase()))
     if (setConfig) {
-      log(`${chalk.cyan`File Name`}:     ${setConfig.name}`, 1)
-      log(`${chalk.cyan`File Key`}:      ${setConfig.key}`, 1)
-      log(`${chalk.cyan`Access Token`}:  ${setConfig.token}`, 1)
-      log(`${chalk.cyan`Direct Link`}:   https://figma.com/file/${setConfig.key}`, 1)
+      PRINT.GET.CONFIG({
+        name: setConfig.name,
+        key: setConfig.key,
+        token: setConfig.token
+      })
     } else {
       log(`Can't find the icon set with that name or key`, 1)
     }

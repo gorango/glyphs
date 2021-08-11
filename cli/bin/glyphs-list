@@ -2,7 +2,7 @@
 
 const parseArgs = require('minimist')
 const chalk = require('chalk')
-const { log } = require('../utils/logger')
+const { log, PRINT } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -13,25 +13,11 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  log(`
-  Description
-  List configured icon sets
-
-  Usage
-    $ glyphs list
-
-  Options
-    --help, -h       Displays this message
-  `)
+  PRINT.LIST.HELP()
   process.exit()
 }
 
-const Configstore = require('configstore')
-const pkg = require('../package.json')
-
-const conf = new Configstore(pkg.name)
-const configs = conf.all
-const hasConfig = Object.keys(configs).length
+const { configs, hasConfig } = require('../utils/config')
 
 log()
 

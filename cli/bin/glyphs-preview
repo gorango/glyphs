@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
-const chalk = require('chalk')
-const { log } = require('../utils/logger')
+const { PRINT } = require('../utils/logger')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -12,41 +11,24 @@ const argv = parseArgs(args, {
 })
 
 if (argv.help) {
-  log(`
-  Description
-  Preview a local icon set in the browser.
-
-  Usage
-    $ glyphs preview [<data-dir>]
-
-  Options
-    --help, -h     Displays this message
-  `)
+  PRINT.PREVIEW.HELP()
   process.exit()
 }
 
 const fs = require('fs')
 const path = require('path')
-const Configstore = require('configstore')
-const inquirer = require('inquirer')
-
 const preview = require('../lib/preview')
-const pkg = require('../package.json')
 
-const conf = new Configstore(pkg.name)
 const { _: [data] } = argv
 
 ;(async () => {
-  const configs = conf.all
-  const hasConfig = Object.keys(configs).length
-
   if (!data) {
     const dataDir = path.join(process.cwd(), 'data')
     if (fs.existsSync(dataDir)) {
       await preview(dataDir)
       process.exit()
     } else {
-      printError()
+      PRINT.PREVIEW.ERROR()
       process.exit(1)
     }
   }
@@ -55,22 +37,12 @@ const { _: [data] } = argv
   if (fs.existsSync(dataDir)) {
     const success = preview(dataDir)
     if (!success) {
-      log()
-      log('The files required to generate the preview have not been found', 1)
-      log('Run "glyphs sync" to generate the required files', 1)
-      log()
+      PRINT.PREVIEW.FAIL()
       process.exit(1)
     }
     process.exit()
   } else {
-    printError(data)
+    PRINT.PREVIEW.ERROR(data)
     process.exit(1)
   }
 })()
-
-function printError (data='data') {
-  log()
-  log(`No "${data}" folder found in current directory`, 1)
-  log(`Provide the "data" folder location as an argument to "glyphs preview"`, 1)
-  log()
-}
