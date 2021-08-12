@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/wc-brands",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Glyphs Web Components Brands",
   "homepage": "https://glyphs.fyi/dir?set=brands",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "hybrids": "^4.3.4"
   },
   "devDependencies": {
-    "@glyphs/cli": "^0.3.1",
+    "@glyphs/cli": "^0.3.2",
     "@glyphs/brands": "^0.1.9"
   }
 }
