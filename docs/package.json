@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@glyphs/brands": "0.1.9",
-    "@glyphs/core": "^0.8.7",
+    "@glyphs/core": "^0.8.11",
     "@glyphs/flags": "^0.5.5",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/gtm": "^2.4.0",
@@ -21,7 +21,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.groupby": "^4.6.0",
     "lodash.kebabcase": "^4.1.1",
-    "nuxt": "^2.15.7",
+    "nuxt": "^2.15.8",
     "prismjs": "^1.24.1",
     "v-clipboard": "^2.2.3"
   },
