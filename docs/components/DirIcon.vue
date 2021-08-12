@@ -291,9 +291,10 @@ export default {
     downloadIcon () {
       const component = this.components[this.icon]
       const variant = this.previewVariant || this.variant
-      const icon = component && component.variants[variant]
-      if (icon) {
-        const blob = new Blob([icon.svg], { type: 'image/svg+xml' })
+      const id = component && component.variants[variant]
+      const svg = svgs[this.set][id]
+      if (svg) {
+        const blob = new Blob([svg], { type: 'image/svg+xml' })
         const link = document.createElement('a')
         link.href = URL.createObjectURL(blob)
         link.download = `${kebabCase(this.icon)}_${variant}`
