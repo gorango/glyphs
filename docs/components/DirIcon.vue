@@ -147,9 +147,9 @@ import kebabCase from 'lodash.kebabcase'
 import debounce from 'lodash.debounce'
 
 const figmaIds = {
-  core: '2TsY9yqFso1zrvF8LNcVE7',
-  brands: 'vuadSjKf4P4foe0E5rCURn',
-  flags: 'VyB7exNgbMB7EmOwAFF9jZ'
+  core: 'wyQQBVAU7cNf2eb5qGI9EK',
+  brands: 'PVl3fCowhWp7nqIyGBrqCq',
+  flags: 'zOm4MinTTApgF6q8mpjs41'
 }
 
 const svgs = {
