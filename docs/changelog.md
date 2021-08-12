@@ -2,7 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### 0.1.0 (2021-01-07)
+### [0.1.1](https://github.com/gorango/glyphs/compare/@glyphs/docs-v0.1.0...@glyphs/docs-v0.1.1) (2021-08-12)
+
+
+### Features
+
+* **docs:** add clarity ([1745b2f](https://github.com/gorango/glyphs/commit/1745b2faa760adf4e35484c931a1814964c13eff))
+* **docs:** add meta description, nuxt/sitemap for search ([dcdd578](https://github.com/gorango/glyphs/commit/dcdd5780b40711b3dbaf5499f656f4c4f65cd3b2))
+* **docs:** add open analytics plausible.io/glyphs.fyi ([b5612ef](https://github.com/gorango/glyphs/commit/b5612ef7e5712f36a782fd54e4f0c449fcaaec25))
+* **docs:** add web components, cli generate ([47c9eec](https://github.com/gorango/glyphs/commit/47c9eec433a0c28a30271a5101d2f7033d42c07b))
+* **docs:** update docs content ([8702117](https://github.com/gorango/glyphs/commit/87021177948c28e6078335de56dbe92b07c0042e))
+* **docs:** update select/copy in icon preview ([9623820](https://github.com/gorango/glyphs/commit/962382055454b7b3a5e5ba324cafa8d759393092))
+
+
+### Bug Fixes
+
+* **docs:** add stroke, color control for core>duo variants ([a4e40db](https://github.com/gorango/glyphs/commit/a4e40dbaac3371dc67342b0bf3cc0402a1af8456))
+* **docs:** broken link to component node in figma ([f77b822](https://github.com/gorango/glyphs/commit/f77b822445b5197d537638765311fdbe1adcd0ed)), closes [#28](https://github.com/gorango/glyphs/issues/28)
+* **docs:** change typo on homepage ([8159b71](https://github.com/gorango/glyphs/commit/8159b71b00df1eb12c79632a2d4438957b307cfc))
+* **docs:** fix broken svg codes in icon previews ([ffe2023](https://github.com/gorango/glyphs/commit/ffe202393e4b5d6f5888dd728aed5c4a68332683))
+* **docs:** fix typos ([6639658](https://github.com/gorango/glyphs/commit/6639658c995247627814dfb7f16ac93cf5c70cfe))
+* **docs:** fix undefined icon downloads ([115d191](https://github.com/gorango/glyphs/commit/115d191ea1004caed614779191e73fca8521e0a3)), closes [#42](https://github.com/gorango/glyphs/issues/42)
+* **docs:** fix unsafe links ([88c243d](https://github.com/gorango/glyphs/commit/88c243da2bb343ed5c7bdba0d5763cc9de4eeaaf))
+* **docs:** migrate icon components; minor updates ([221f102](https://github.com/gorango/glyphs/commit/221f102abe25e720922b5bbe068dcdc3f913471a))
+* **docs:** minor content updates ([490454a](https://github.com/gorango/glyphs/commit/490454a13121ec13091a9eebbf11995f790261ea))
+* **docs:** mobile docs nav full-width links ([53622a1](https://github.com/gorango/glyphs/commit/53622a1fe063945c0a57ec8de0f8eb9e4de6019b))
+* **docs:** nuxt-content requires settings obj ([3971e3f](https://github.com/gorango/glyphs/commit/3971e3fbe153fa88209c7877f878a98e129f972f))
+* **docs:** remove landing buttons transitions ([6a9f046](https://github.com/gorango/glyphs/commit/6a9f046ddfaa64daca7cc7664b29eadd8c5dd9b0))
+* **docs:** remove simple icon set placeholder ([a49c47b](https://github.com/gorango/glyphs/commit/a49c47b90c0411bc3bbc98224ade7eef195111ea))
+* **docs:** remove unused ([dda35d2](https://github.com/gorango/glyphs/commit/dda35d2a7fb6188c645ac2ba9670bc3079acd06c))
+* **docs:** remove unused ([2ca1e62](https://github.com/gorango/glyphs/commit/2ca1e62e19274ce3339c9e6bf11285bbd8c859fe))
+* **docs:** remove unused ([a76f476](https://github.com/gorango/glyphs/commit/a76f47631978ca4a36f3c0e4e9b95cb846238f40))
+* **docs:** typo in anchor tags with target _blank ([21f1b24](https://github.com/gorango/glyphs/commit/21f1b2459c7cba32ba97b5e0363e7f47f4ae999a))
+* **docs:** update icon sets; mv rounded>core ([8a6a6ef](https://github.com/gorango/glyphs/commit/8a6a6efada9d2e02240545ec73f0195a21f4514e))
+* **docs:** update icons direct links to figma ([47ad4a6](https://github.com/gorango/glyphs/commit/47ad4a65860ed7f2e05a21bb988e110f5d4ae9f1))
+* **docs:** update landing content, responsive; other ([86ff04b](https://github.com/gorango/glyphs/commit/86ff04b72cfc89ca352bc8f8c9db2f69a358d3f5))
+
+### [0.1.0](https://github.com/gorango/glyphs/compare/@glyphs/docs-v0.0.0...@glyphs/docs-v0.1.0) (2021-01-07)
 
 
 ### Features
