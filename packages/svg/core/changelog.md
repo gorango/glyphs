@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.10](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.8.9...@glyphs.core-v0.8.10) (2021-08-12)
+
+
+### Bug Fixes
+
+* **core:** fix naming conflict (signal) ([0780621](https://github.com/gorango/glyphs/commit/0780621e6c8e903584079abfbdc6e2d8d90d6262))
+
 ### [0.8.9](https://github.com/gorango/glyphs/compare/@glyphs/core-v0.8.8...@glyphs/core-v0.8.9) (2021-08-12)
 
 
