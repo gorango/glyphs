@@ -1,6 +1,6 @@
 {
   "name": "@glyphs/wc-flags",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Glyphs Web Components Flags",
   "homepage": "https://glyphs.fyi/dir?set=flags",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "hybrids": "^4.3.4"
   },
   "devDependencies": {
-    "@glyphs/cli": "^0.3.2",
+    "@glyphs/cli": "^0.4.0",
     "@glyphs/flags": "^0.5.5"
   }
 }
