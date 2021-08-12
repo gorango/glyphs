@@ -1,8 +1,8 @@
 {
-  "key": "2TsY9yqFso1zrvF8LNcVE7",
-  "name": "core",
-  "unique": 849,
-  "total": 4245,
+  "key": "wyQQBVAU7cNf2eb5qGI9EK",
+  "name": "Main",
+  "unique": 860,
+  "total": 4300,
   "variants": [
     "path",
     "bold",
@@ -142,6 +142,7 @@
       "frown",
       "sadTear",
       "angry",
+      "grin",
       "grinBeam",
       "grinBeamSweat",
       "grinTears",
@@ -192,6 +193,7 @@
       "globe",
       "globeEarth",
       "globeAfrica",
+      "planetMoon",
       "globeAmericas",
       "globeAsia",
       "globeEurope",
@@ -243,6 +245,7 @@
     ],
     "measure": [
       "clock",
+      "clock1",
       "clockFast",
       "alarmClock",
       "alarmExclamation",
@@ -251,8 +254,8 @@
       "alarmSnooze",
       "snooze",
       "timer",
-      "timerFast",
       "timer1",
+      "timerFast",
       "tachometer",
       "tachometer1",
       "tachometer2",
@@ -264,13 +267,15 @@
       "tachometer8",
       "tachometer9",
       "speedometer3",
-      "hourglass",
-      "hourglass1",
       "watch",
       "watch1",
       "watch2",
       "watchFitness",
-      "history"
+      "history",
+      "hourglass",
+      "hourglass0",
+      "hourglass1",
+      "hourglass2"
     ],
     "contact": [
       "at",
@@ -297,7 +302,13 @@
       "phoneAdd",
       "phoneRemove",
       "mobile",
-      "mobile1"
+      "mobile1",
+      "signal",
+      "signal1",
+      "signalTower",
+      "stream",
+      "satelliteDish",
+      "satellite"
     ],
     "system": [
       "battery",
@@ -980,7 +991,10 @@
       "starAndCrescent",
       "starOfDavid",
       "yingYang",
-      "peace"
+      "peace",
+      "mushroom",
+      "spa",
+      "cannabis"
     ],
     "font": [
       "a",
