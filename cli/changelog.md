@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.2...@glyphs/cli-v0.4.0) (2021-08-12)
+
+
+### Features
+
+* **cli,lib:** upgrade api to new figma file format ([a9db3bd](https://github.com/gorango/glyphs/commit/a9db3bdd6eb6e148b232eab99e0db0fa2cb5ebb6))
+* **lib:** extract cli lib for testing and reuse ([61e811b](https://github.com/gorango/glyphs/commit/61e811b045f6ffa6813cb185534aa42327d60d0b))
+
+
+### Bug Fixes
+
+* **cli:** error parsing initialized commands ([609789e](https://github.com/gorango/glyphs/commit/609789e2fc958bc270f2f65cb7c2b576350e1df4))
+* **cli,lib:** add symlink, refactor logs ([b275ca7](https://github.com/gorango/glyphs/commit/b275ca735a6cc98cc24d306a8c2cffb647c5b709))
+
 ### [0.3.2](https://github.com/gorango/glyphs/compare/@glyphs/cli-v0.3.1...@glyphs/cli-v0.3.2) (2021-02-13)
 
 
