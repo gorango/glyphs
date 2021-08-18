@@ -1264,10 +1264,10 @@
   resolved "https://registry.yarnpkg.com/@glyphs/brands/-/brands-0.1.9.tgz#2f987a521a7a32f6a33fa23d2021393baa645204"
   integrity sha512-yaMFbla3kpCNEmtQtfRhXhhZbfJyY+7QK39I9dHOFl2XivTQEUk/euX9JwVYoAf4VUpTK7EZOKIEidOyireSJw==
 
-"@glyphs/core@^0.8.11":
-  version "0.8.11"
-  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.8.11.tgz#e7433d5003687161754f41ab847382e55b070ab9"
-  integrity sha512-BF12aPfKKancwWubVLI1LYAPmCXZN3F13vtABBED3rb5ukmxK9BlfdG1yLJACiq15tcqjbQGoGE3kYgB7MG94g==
+"@glyphs/core@^0.8.12":
+  version "0.8.12"
+  resolved "https://registry.yarnpkg.com/@glyphs/core/-/core-0.8.12.tgz#7ae7121a268ed486a24033791a747aefee7ca370"
+  integrity sha512-eYa+UTlOdtaiFJQmfkfEJj0gpnlQ2mnzSAMPXDP5vqB2WC2nxK8gDE9Cr2H3uBq64HcVLCr9SKHXBe9hZxlZeA==
 
 "@glyphs/flags@^0.5.5":
   version "0.5.5"

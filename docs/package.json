@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@glyphs/brands": "0.1.9",
-    "@glyphs/core": "^0.8.11",
+    "@glyphs/core": "^0.8.12",
     "@glyphs/flags": "^0.5.5",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/gtm": "^2.4.0",

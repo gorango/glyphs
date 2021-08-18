@@ -37,7 +37,6 @@
           svg-icon(v-if='$colorMode.value === "light"' name='sun-1', :variant='"path"', size='2rem')
           svg-icon(v-else, name='moon', rotate='-45', :variant='"path"', size='2rem')
     //- (class='w-1/3')
-    .flex-auto
     div.hidden.md_flex.items-center.justify-end
       template(v-for='{path, label} in nav')
         nuxt-link.text-lg.rounded-lg.px-4.py-1.ml-1.outline-none(
@@ -48,7 +47,24 @@
           :active-class='`bg-gray-200 dark_bg-gray-800 text-gray-700 dark_text-gray-400`'
           :to='path'
         ) {{ label }}
-    div.md_hidden
+    .flex-auto
+    a.flex.items-center.p-1.rounded-lg.outline-none.ml-2(
+      href='https://www.figma.com/community/file/899031264835768805',
+      aria-label='Figma file',
+      target='_blank',
+      rel='noreferrer noopener',
+      :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
+    )
+      svg-icon(set='brands', name='figma', size='1.75rem', variant='solid')
+    a.flex.items-center.p-1.rounded-lg.outline-none.ml-2(
+      href='https://github.com/gorango/glyphs',
+      aria-label='Github repository',
+      target='_blank',
+      rel='noreferrer noopener',
+      :class='$colorMode.value === "dark" ? "hover_bg-gray-800 focus_bg-gray-800" : "hover_bg-gray-200 focus_bg-gray-200"'
+    )
+      svg-icon(set='brands', name='github', size='2rem', variant='solid')
+    div.md_hidden.ml-2
       a.flex.items-center.justify-end.cursor-pointer.p-1(@click='menu = !menu')
         svg-icon.text-3xl(:name='menu ? "times" : "bars-offset-2"', stroke-width='4')
 </template>

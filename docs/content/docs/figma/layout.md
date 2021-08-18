@@ -33,7 +33,7 @@ Explore the embedded Figma file to learn more about the grid.
 <div class="hidden sm_block relative rounded-xl overflow-hidden w-full" style="padding-top: 56.25%">
   <iframe
     class="absolute inset-0 w-full h-full"
-    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2TsY9yqFso1zrvF8LNcVE7%2FGlyphs-Icons%3Fnode-id%3D4856%253A37"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbmX3gfeRMAP2wJ9wpCPT8q%2FGlyphs-Archive%3Fnode-id%3D5588%3A206873"
     allowfullscreen
   ></iframe>
 </div>
@@ -41,7 +41,7 @@ Explore the embedded Figma file to learn more about the grid.
 <div class="sm_hidden relative rounded-xl overflow-hidden w-full" style="padding-top: 120%">
   <iframe
     class="absolute inset-0 w-full h-full"
-    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2TsY9yqFso1zrvF8LNcVE7%2FGlyphs-Icons%3Fnode-id%3D4856%253A37"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbmX3gfeRMAP2wJ9wpCPT8q%2FGlyphs-Archive%3Fnode-id%3D5588%3A206873"
     allowfullscreen
   ></iframe>
 </div>
