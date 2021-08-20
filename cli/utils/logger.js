@@ -166,6 +166,12 @@ const PRINT = {
     --help, -h     Displays this message`)
       log()
     },
+    SUCCESS: (dataDir) => {
+      log()
+      log('A preview page has been generated:')
+      log(`${dataDir}/preview.html`)
+      log()
+    },
     FAIL: () => {
       log()
       log('The files required to generate the preview have not been found', 1)

@@ -20,29 +20,21 @@ const path = require('path')
 const preview = require('../lib/preview')
 
 const { _: [data] } = argv
+const dataDir = path.join(process.cwd(), data || 'data')
 
 ;(async () => {
-  if (!data) {
-    const dataDir = path.join(process.cwd(), 'data')
-    if (fs.existsSync(dataDir)) {
-      await preview(dataDir)
-      process.exit()
-    } else {
-      PRINT.PREVIEW.ERROR()
-      process.exit(1)
-    }
-  }
-
-  const dataDir = path.join(process.cwd(), data)
-  if (fs.existsSync(dataDir)) {
-    const success = preview(dataDir)
-    if (!success) {
-      PRINT.PREVIEW.FAIL()
-      process.exit(1)
-    }
-    process.exit()
-  } else {
+  if (!fs.existsSync(dataDir)) {
     PRINT.PREVIEW.ERROR(data)
     process.exit(1)
+  }
+
+  const success = preview(dataDir)
+
+  if (!success) {
+    PRINT.PREVIEW.FAIL()
+    process.exit(1)
+  } else {
+    PRINT.PREVIEW.SUCCESS(dataDir)
+    process.exit()
   }
 })()
