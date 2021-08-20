@@ -18,12 +18,13 @@ body.bg-gray-800.text-gray-100
         //- ) Play
       .flex-1.flex.justify-center.space-x-3
         each variant in variants
-          button.flex.rounded-lg.items-center.p-1.bg-grey-100.border-2.border-gray-700(
-            onmouseenter=`handleMouseEnter('${variant}')`,
-            onmouseleave='handleMouseLeave()'
-          )
-            - var id = components.find(({ name }) => name === first).variants[variant]
-            div.icon.text-3xl.active !{map[id].replace(/\n?(\s+)/g, ' ')}
+          if variant
+            button.flex.rounded-lg.items-center.p-1.bg-grey-100.border-2.border-gray-700(
+              onmouseenter=`handleMouseEnter('${variant}')`,
+              onmouseleave='handleMouseLeave()'
+            )
+              - var id = components.find(({ name }) => name === first).variants[variant]
+              div.icon.text-3xl.active !{map[id].replace(/\n?(\s+)/g, ' ')}
       .flex-1
     section
       each icons, category in categories
@@ -35,9 +36,10 @@ body.bg-gray-800.text-gray-100
               div.flex.items-center.flex-col.rounded-lg.border-2.border-gray-700.w-24.m-3.pb-2
                 div.w-full.p-1.text-center
                   .truncate.text-xs.text-gray-500(title=name)= name
-                - var variants = components.find(({ name: n }) => n === name).variants
-                each id, variant in variants
-                  div.icon.text-5xl(class=variant) !{map[id].replace(/\n?(\s+)/g, ' ')}
+                - var variants = (components.find(({ name: n }) => n === name) || {}).variants
+                if variants
+                  each id, variant in variants
+                    div.icon.text-5xl(class=variant) !{map[id].replace(/\n?(\s+)/g, ' ')}
 
   script.
     const variants = '#{variants}'.split(',')
