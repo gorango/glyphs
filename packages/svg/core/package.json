@@ -18,8 +18,8 @@
     "rounded icons",
     "color icons"
   ],
-  "main": "components.json",
-  "unpkg": "components.json",
+  "main": "icons-meta.json",
+  "unpkg": "icons-meta.json",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gorango/glyphs/issues"

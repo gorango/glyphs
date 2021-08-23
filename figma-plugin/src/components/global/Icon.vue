@@ -1,7 +1,7 @@
 <script>
 import kebabCase from 'lodash/kebabcase'
 import camelCase from 'lodash/camelcase'
-// import components from '@glyphs/rounded/components.json'
+// import components from '@glyphs/rounded/icons-meta.json'
 import {
   questionCircle,
   eye,
