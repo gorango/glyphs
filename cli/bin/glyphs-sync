@@ -6,7 +6,6 @@ const { log, PRINT } = require('../utils/logger')
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
   alias: {
-    S: 'set',
     d: 'data',
     s: 'svg',
     p: 'preview',
@@ -27,7 +26,7 @@ const { configs, hasConfig } = require('../utils/config')
 
 ;(async () => {
   log()
-  let { _: [query], set, preview: generatePreview } = argv
+  let { _: [query], preview: generatePreview } = argv
   let key
 
   if (!hasConfig) {
@@ -64,27 +63,11 @@ const { configs, hasConfig } = require('../utils/config')
     }
   }
 
-  const fileConf = configs[key]
-  const choices = Object.keys(fileConf.sets)
-
-  if (!set) {
-    const questions = [
-      { type: 'list', name: 'name', message: `Select the icon set to sync from ${fileConf.name}`, choices }
-    ]
-
-    const answers = await inquirer.prompt(questions)
-    set = answers.name
-    log()
-  } else {
-    set = choices.find(s => s.toLowerCase().includes(set.toLowerCase()))
-  }
-
   const syncArgs = {
     data: 'data',
     svg: 'svg',
     ...argv,
-    key,
-    set
+    key
   }
 
   const sync = require('../lib/sync')
