@@ -1,8 +1,8 @@
 module.exports = {
   sync: {
     set: 'core',
-    svg: '.',
-    data: '.',
+    svg: 'svg',
+    data: 'data',
     diff: true,
     preview: true,
     categories: [],

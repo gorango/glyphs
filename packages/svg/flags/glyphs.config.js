@@ -1,7 +1,7 @@
 module.exports = {
   set: 'flags',
-  svg: '.',
-  data: '.',
+  svg: 'svg',
+  data: 'data',
   diff: false,
   preview: true,
   categories: [],

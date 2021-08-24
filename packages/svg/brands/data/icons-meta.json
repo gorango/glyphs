@@ -1,0 +1,2457 @@
+[
+  {
+    "name": "figma",
+    "id": "3849:66845",
+    "terms": [
+      "figma"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "3849:66852",
+      "solid": "3849:66854",
+      "path": "3849:66856"
+    }
+  },
+  {
+    "name": "sketch",
+    "id": "3849:66866",
+    "terms": [
+      "sketch"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "3849:66879",
+      "solid": "3849:66881",
+      "path": "3849:66886"
+    }
+  },
+  {
+    "name": "zeplin",
+    "id": "3849:66900",
+    "terms": [
+      "zeplin"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "3849:66913",
+      "solid": "3849:66915",
+      "path": "3849:66917"
+    }
+  },
+  {
+    "name": "framer",
+    "id": "5110:4",
+    "terms": [
+      "framer"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:14",
+      "solid": "5110:19",
+      "path": "5110:24"
+    }
+  },
+  {
+    "name": "framerCircle",
+    "id": "5070:633",
+    "terms": [
+      "framer",
+      "circle"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:34",
+      "solid": "5110:41",
+      "path": "5110:48"
+    }
+  },
+  {
+    "name": "marvel",
+    "id": "5070:639",
+    "terms": [
+      "marvel"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:57",
+      "solid": "5110:61",
+      "path": "5110:65"
+    }
+  },
+  {
+    "name": "invision",
+    "id": "3849:66924",
+    "terms": [
+      "invision"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "3849:66928",
+      "solid": "3849:66930",
+      "path": "3849:66934"
+    }
+  },
+  {
+    "name": "dribbble",
+    "id": "3849:66938",
+    "terms": [
+      "dribbble"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "3849:66942",
+      "solid": "3849:66946",
+      "path": "3849:66948"
+    }
+  },
+  {
+    "name": "behance",
+    "id": "3849:66952",
+    "terms": [
+      "behance"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "3849:66957",
+      "solid": "3849:66955",
+      "path": "3849:66959"
+    }
+  },
+  {
+    "name": "behanceCircle",
+    "id": "5070:564",
+    "terms": [
+      "behance",
+      "circle"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:71",
+      "solid": "5110:75",
+      "path": "5110:79"
+    }
+  },
+  {
+    "name": "deviantArt",
+    "id": "5110:85",
+    "terms": [
+      "deviant",
+      "art"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:86",
+      "solid": "5110:89",
+      "path": "5110:92"
+    }
+  },
+  {
+    "name": "procreate",
+    "id": "5070:550",
+    "terms": [
+      "procreate"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:301",
+      "solid": "5110:314",
+      "path": "5110:327"
+    }
+  },
+  {
+    "name": "autodesk",
+    "id": "5070:570",
+    "terms": [
+      "autodesk"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:341",
+      "solid": "5110:347",
+      "path": "5110:353"
+    }
+  },
+  {
+    "name": "adobe",
+    "id": "5070:630",
+    "terms": [
+      "adobe"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:474",
+      "solid": "5110:478",
+      "path": "5110:482"
+    }
+  },
+  {
+    "name": "adobeLightroom",
+    "id": "5070:575",
+    "terms": [
+      "adobe",
+      "lightroom"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:360",
+      "solid": "5110:366",
+      "path": "5110:372"
+    }
+  },
+  {
+    "name": "adobeIllustrator",
+    "id": "5070:580",
+    "terms": [
+      "adobe",
+      "illustrator"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:379",
+      "solid": "5110:385",
+      "path": "5110:391"
+    }
+  },
+  {
+    "name": "adobeAfterEffects",
+    "id": "5070:585",
+    "terms": [
+      "adobe",
+      "after_effects"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:398",
+      "solid": "5110:404",
+      "path": "5110:410"
+    }
+  },
+  {
+    "name": "adobePhotoshop",
+    "id": "5070:590",
+    "terms": [
+      "adobe",
+      "photoshop"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:417",
+      "solid": "5110:423",
+      "path": "5110:429"
+    }
+  },
+  {
+    "name": "adobeIndesign",
+    "id": "5070:595",
+    "terms": [
+      "adobe",
+      "indesign"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:436",
+      "solid": "5110:442",
+      "path": "5110:448"
+    }
+  },
+  {
+    "name": "adobeXd",
+    "id": "5070:600",
+    "terms": [
+      "adobe",
+      "xd"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:455",
+      "solid": "5110:461",
+      "path": "5110:467"
+    }
+  },
+  {
+    "name": "adobeDreamweaver",
+    "id": "5070:642",
+    "terms": [
+      "adobe",
+      "dreamweaver"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "5110:487",
+      "solid": "5110:493",
+      "path": "5110:499"
+    }
+  },
+  {
+    "name": "icons",
+    "id": "3849:66818",
+    "terms": [
+      "icons",
+      "icons.fyi",
+      "fyicons"
+    ],
+    "categories": [
+      "design"
+    ],
+    "variants": {
+      "color": "3849:66806",
+      "solid": "3849:66808",
+      "path": "3849:66810"
+    }
+  },
+  {
+    "name": "discord",
+    "id": "5070:128",
+    "terms": [
+      "discord"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16283",
+      "solid": "5116:16287",
+      "path": "5116:16291"
+    }
+  },
+  {
+    "name": "telegram",
+    "id": "5070:78",
+    "terms": [
+      "telegram"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16085",
+      "solid": "5116:16089",
+      "path": "5116:16093"
+    }
+  },
+  {
+    "name": "whatsapp",
+    "id": "5070:117",
+    "terms": [
+      "whatsapp"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16238",
+      "solid": "5116:16244",
+      "path": "5116:16250"
+    }
+  },
+  {
+    "name": "viber",
+    "id": "5070:81",
+    "terms": [
+      "viber"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16098",
+      "solid": "5116:16104",
+      "path": "5116:16110"
+    }
+  },
+  {
+    "name": "slack",
+    "id": "5070:86",
+    "terms": [
+      "slack"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16117",
+      "solid": "5116:16124",
+      "path": "5116:16131"
+    }
+  },
+  {
+    "name": "fbMessenger",
+    "id": "5070:92",
+    "terms": [
+      "fb",
+      "messenger"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16139",
+      "solid": "5116:16143",
+      "path": "5116:16147"
+    }
+  },
+  {
+    "name": "wechat",
+    "id": "5070:102",
+    "terms": [
+      "wechat"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16177",
+      "solid": "5116:16180",
+      "path": "5116:16183"
+    }
+  },
+  {
+    "name": "msSkype",
+    "id": "5070:108",
+    "terms": [
+      "ms",
+      "skype"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16203",
+      "solid": "5116:16210",
+      "path": "5116:16217"
+    }
+  },
+  {
+    "name": "googleHangouts",
+    "id": "5070:114",
+    "terms": [
+      "google",
+      "hangouts"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16225",
+      "solid": "5116:16229",
+      "path": "5116:16233"
+    }
+  },
+  {
+    "name": "messages",
+    "id": "5070:122",
+    "terms": [
+      "messages"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16257",
+      "solid": "5116:16261",
+      "path": "5116:16265"
+    }
+  },
+  {
+    "name": "spectrum",
+    "id": "5070:125",
+    "terms": [
+      "spectrum"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16270",
+      "solid": "5116:16274",
+      "path": "5116:16278"
+    }
+  },
+  {
+    "name": "zoom",
+    "id": "5070:131",
+    "terms": [
+      "zoom"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16296",
+      "solid": "5116:16303",
+      "path": "5116:16310"
+    }
+  },
+  {
+    "name": "facetime",
+    "id": "5070:147",
+    "terms": [
+      "facetime"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16352",
+      "solid": "5116:16356",
+      "path": "5116:16360"
+    }
+  },
+  {
+    "name": "googleMeet",
+    "id": "5070:137",
+    "terms": [
+      "google",
+      "meet"
+    ],
+    "categories": [
+      "communication"
+    ],
+    "variants": {
+      "color": "5116:16318",
+      "solid": "5116:16329",
+      "path": "5116:16340"
+    }
+  },
+  {
+    "name": "twitter",
+    "id": "5070:1",
+    "terms": [
+      "twitter"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11658",
+      "solid": "5116:11661",
+      "path": "5116:11664"
+    }
+  },
+  {
+    "name": "linkedin",
+    "id": "5070:3",
+    "terms": [
+      "linkedin"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11668",
+      "solid": "5116:11671",
+      "path": "5116:11674"
+    }
+  },
+  {
+    "name": "instagram",
+    "id": "5070:6",
+    "terms": [
+      "instagram"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11678",
+      "solid": "5116:11684",
+      "path": "5116:11690"
+    }
+  },
+  {
+    "name": "snapchat",
+    "id": "5070:11",
+    "terms": [
+      "snapchat"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11697",
+      "solid": "5116:11702",
+      "path": "5116:11707"
+    }
+  },
+  {
+    "name": "quora",
+    "id": "5070:15",
+    "terms": [
+      "quora"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11713",
+      "solid": "5116:11716",
+      "path": "5116:11719"
+    }
+  },
+  {
+    "name": "tinder",
+    "id": "5070:17",
+    "terms": [
+      "tinder"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11723",
+      "solid": "5116:11728",
+      "path": "5116:11733"
+    }
+  },
+  {
+    "name": "reddit",
+    "id": "5070:21",
+    "terms": [
+      "reddit"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11739",
+      "solid": "5116:11743",
+      "path": "5116:11747"
+    }
+  },
+  {
+    "name": "weibo",
+    "id": "5070:24",
+    "terms": [
+      "weibo"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11752",
+      "solid": "5116:11759",
+      "path": "5116:11766"
+    }
+  },
+  {
+    "name": "tumbler",
+    "id": "5070:36",
+    "terms": [
+      "tumbler"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11796",
+      "solid": "5116:11803",
+      "path": "5116:11810"
+    }
+  },
+  {
+    "name": "stackOverflow",
+    "id": "5070:42",
+    "terms": [
+      "stack_overflow"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11818",
+      "solid": "5116:11822",
+      "path": "5116:11826"
+    }
+  },
+  {
+    "name": "foursquare",
+    "id": "5070:45",
+    "terms": [
+      "foursquare"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11831",
+      "solid": "5116:11835",
+      "path": "5116:11839"
+    }
+  },
+  {
+    "name": "tiktok",
+    "id": "5070:48",
+    "terms": [
+      "tiktok"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11844",
+      "solid": "5116:11851",
+      "path": "5116:11858"
+    }
+  },
+  {
+    "name": "pinterest",
+    "id": "5070:54",
+    "terms": [
+      "pinterest"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11866",
+      "solid": "5116:11870",
+      "path": "5116:11874"
+    }
+  },
+  {
+    "name": "badoo",
+    "id": "5070:57",
+    "terms": [
+      "badoo"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11879",
+      "solid": "5116:11884",
+      "path": "5116:11889"
+    }
+  },
+  {
+    "name": "facebook",
+    "id": "5070:61",
+    "terms": [
+      "facebook"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11895",
+      "solid": "5116:11899",
+      "path": "5116:11903"
+    }
+  },
+  {
+    "name": "ok",
+    "id": "5070:64",
+    "terms": [
+      "ok"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11908",
+      "solid": "5116:11912",
+      "path": "5116:11916"
+    }
+  },
+  {
+    "name": "vk",
+    "id": "5070:70",
+    "terms": [
+      "vk"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11921",
+      "solid": "5116:11925",
+      "path": "5116:11929"
+    }
+  },
+  {
+    "name": "patreon",
+    "id": "5070:73",
+    "terms": [
+      "patreon"
+    ],
+    "categories": [
+      "social"
+    ],
+    "variants": {
+      "color": "5116:11934",
+      "solid": "5116:11939",
+      "path": "5116:11944"
+    }
+  },
+  {
+    "name": "google",
+    "id": "3849:67351",
+    "terms": [
+      "google"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "3849:67359",
+      "solid": "3849:67361",
+      "path": "3849:67363"
+    }
+  },
+  {
+    "name": "dropbox",
+    "id": "5070:312",
+    "terms": [
+      "dropbox"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6250",
+      "solid": "5116:6254",
+      "path": "5116:6258"
+    }
+  },
+  {
+    "name": "evernote",
+    "id": "5070:315",
+    "terms": [
+      "evernote"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6263",
+      "solid": "5116:6267",
+      "path": "5116:6271"
+    }
+  },
+  {
+    "name": "amazon",
+    "id": "5070:318",
+    "terms": [
+      "amazon"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6276",
+      "solid": "5116:6279",
+      "path": "5116:6282"
+    }
+  },
+  {
+    "name": "asana",
+    "id": "5070:321",
+    "terms": [
+      "asana"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6286",
+      "solid": "5116:6290",
+      "path": "5116:6294"
+    }
+  },
+  {
+    "name": "basecamp",
+    "id": "5070:324",
+    "terms": [
+      "basecamp"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6299",
+      "solid": "5116:6306",
+      "path": "5116:6313"
+    }
+  },
+  {
+    "name": "atlassian",
+    "id": "5070:331",
+    "terms": [
+      "atlassian"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6321",
+      "solid": "5116:6326",
+      "path": "5116:6331"
+    }
+  },
+  {
+    "name": "bitbucket",
+    "id": "5070:166",
+    "terms": [
+      "bitbucket"
+    ],
+    "categories": [
+      "productivity",
+      "code"
+    ],
+    "variants": {
+      "color": "5116:15649",
+      "solid": "5116:15655",
+      "path": "5116:15661"
+    }
+  },
+  {
+    "name": "confluence",
+    "id": "5070:335",
+    "terms": [
+      "confluence"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6337",
+      "solid": "5116:6342",
+      "path": "5116:6347"
+    }
+  },
+  {
+    "name": "jira",
+    "id": "5070:339",
+    "terms": [
+      "jira"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6353",
+      "solid": "5116:6359",
+      "path": "5116:6365"
+    }
+  },
+  {
+    "name": "trello",
+    "id": "5070:344",
+    "terms": [
+      "trello"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6372",
+      "solid": "5116:6375",
+      "path": "5116:6378"
+    }
+  },
+  {
+    "name": "jiraServiceDesk",
+    "id": "5070:346",
+    "terms": [
+      "jira_service_desk"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6382",
+      "solid": "5116:6387",
+      "path": "5116:6392"
+    }
+  },
+  {
+    "name": "jiraOps",
+    "id": "5070:350",
+    "terms": [
+      "jira_ops"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6398",
+      "solid": "5116:6403",
+      "path": "5116:6408"
+    }
+  },
+  {
+    "name": "jiraCore",
+    "id": "5070:354",
+    "terms": [
+      "jira_core"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6414",
+      "solid": "5116:6419",
+      "path": "5116:6424"
+    }
+  },
+  {
+    "name": "statuspage",
+    "id": "5070:358",
+    "terms": [
+      "statuspage"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6430",
+      "solid": "5116:6435",
+      "path": "5116:6440"
+    }
+  },
+  {
+    "name": "opsgenie",
+    "id": "5070:362",
+    "terms": [
+      "opsgenie"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6446",
+      "solid": "5116:6452",
+      "path": "5116:6458"
+    }
+  },
+  {
+    "name": "bamboo",
+    "id": "5070:367",
+    "terms": [
+      "bamboo"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6465",
+      "solid": "5116:6472",
+      "path": "5116:6479"
+    }
+  },
+  {
+    "name": "sourcetree",
+    "id": "5070:373",
+    "terms": [
+      "sourcetree"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6487",
+      "solid": "5116:6492",
+      "path": "5116:6497"
+    }
+  },
+  {
+    "name": "flowmapp",
+    "id": "5070:377",
+    "terms": [
+      "flowmapp"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6503",
+      "solid": "5116:6507",
+      "path": "5116:6511"
+    }
+  },
+  {
+    "name": "mailchimp",
+    "id": "5070:380",
+    "terms": [
+      "mailchimp"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6516",
+      "solid": "5116:6520",
+      "path": "5116:6524"
+    }
+  },
+  {
+    "name": "gmail",
+    "id": "5070:383",
+    "terms": [
+      "gmail"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6529",
+      "solid": "5116:6540",
+      "path": "5116:6551"
+    }
+  },
+  {
+    "name": "msExcel",
+    "id": "5070:393",
+    "terms": [
+      "ms_excel"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:8510",
+      "solid": "5116:8526",
+      "path": "5116:8542"
+    }
+  },
+  {
+    "name": "msWord",
+    "id": "5070:405",
+    "terms": [
+      "ms_word"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:8559",
+      "solid": "5116:8571",
+      "path": "5116:8583"
+    }
+  },
+  {
+    "name": "msOnenote",
+    "id": "5070:414",
+    "terms": [
+      "ms_onenote"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:8596",
+      "solid": "5116:8608",
+      "path": "5116:8620"
+    }
+  },
+  {
+    "name": "msOutlook",
+    "id": "5070:423",
+    "terms": [
+      "ms_outlook"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:8633",
+      "solid": "5116:8655",
+      "path": "5116:8677"
+    }
+  },
+  {
+    "name": "msPowerpoint",
+    "id": "5070:438",
+    "terms": [
+      "ms_powerpoint"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:8700",
+      "solid": "5116:8716",
+      "path": "5116:8732"
+    }
+  },
+  {
+    "name": "msSharepoint",
+    "id": "5070:448",
+    "terms": [
+      "ms_sharepoint"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:8749",
+      "solid": "5116:8762",
+      "path": "5116:8775"
+    }
+  },
+  {
+    "name": "teams",
+    "id": "5070:458",
+    "terms": [
+      "teams"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:8789",
+      "solid": "5116:8801",
+      "path": "5116:8813"
+    }
+  },
+  {
+    "name": "msYammer",
+    "id": "5070:469",
+    "terms": [
+      "ms_yammer"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:8826",
+      "solid": "5116:8835",
+      "path": "5116:8844"
+    }
+  },
+  {
+    "name": "zendesk",
+    "id": "5070:484",
+    "terms": [
+      "zendesk"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6872",
+      "solid": "5116:6875",
+      "path": "5116:6878"
+    }
+  },
+  {
+    "name": "kayako",
+    "id": "5070:486",
+    "terms": [
+      "kayako"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6882",
+      "solid": "5116:6893",
+      "path": "5116:6904"
+    }
+  },
+  {
+    "name": "intercom",
+    "id": "5070:496",
+    "terms": [
+      "intercom"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6916",
+      "solid": "5116:6920",
+      "path": "5116:6924"
+    }
+  },
+  {
+    "name": "treehouse",
+    "id": "5070:499",
+    "terms": [
+      "treehouse"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6929",
+      "solid": "5116:6933",
+      "path": "5116:6937"
+    }
+  },
+  {
+    "name": "zapier",
+    "id": "5070:506",
+    "terms": [
+      "zapier"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6958",
+      "solid": "5116:6961",
+      "path": "5116:6964"
+    }
+  },
+  {
+    "name": "notion",
+    "id": "5070:508",
+    "terms": [
+      "notion"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:6968",
+      "solid": "5116:6972",
+      "path": "5116:6976"
+    }
+  },
+  {
+    "name": "googleDrive",
+    "id": "5070:528",
+    "terms": [
+      "google_drive"
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "variants": {
+      "color": "5116:7040",
+      "solid": "5116:7050",
+      "path": "5116:7060"
+    }
+  },
+  {
+    "name": "applePay",
+    "id": "3849:67483",
+    "terms": [
+      "apple",
+      "pay"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "3849:67472",
+      "solid": "3849:67474",
+      "path": "3849:67476"
+    }
+  },
+  {
+    "name": "amex",
+    "id": "3849:67505",
+    "terms": [
+      "amex"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "3849:67499",
+      "solid": "3849:67501",
+      "path": "3849:67503"
+    }
+  },
+  {
+    "name": "mastercard",
+    "id": "3849:67535",
+    "terms": [
+      "mastercard"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "3849:67529",
+      "solid": "3849:67531",
+      "path": "3849:67533"
+    }
+  },
+  {
+    "name": "paypal",
+    "id": "3849:67551",
+    "terms": [
+      "paypal"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "3849:67545",
+      "solid": "3849:67547",
+      "path": "3849:67549"
+    }
+  },
+  {
+    "name": "visa",
+    "id": "3849:67568",
+    "terms": [
+      "visa"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "3849:67562",
+      "solid": "3849:67564",
+      "path": "3849:67566"
+    }
+  },
+  {
+    "name": "dinersClub",
+    "id": "5116:15769",
+    "terms": [
+      "diners",
+      "club"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15934",
+      "solid": "5116:15942",
+      "path": "5116:15950"
+    }
+  },
+  {
+    "name": "bitcoin",
+    "id": "5116:15770",
+    "terms": [
+      "bitcoin"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15830",
+      "solid": "5116:15841",
+      "path": "5116:15852"
+    }
+  },
+  {
+    "name": "etherium",
+    "id": "5116:15771",
+    "terms": [
+      "etherium"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15864",
+      "solid": "5116:15873",
+      "path": "5116:15882"
+    }
+  },
+  {
+    "name": "googlePay",
+    "id": "5116:15102",
+    "terms": [
+      "google",
+      "pay"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15103",
+      "solid": "5116:15119",
+      "path": "5116:15135"
+    }
+  },
+  {
+    "name": "paypalP",
+    "id": "5070:1183",
+    "terms": [
+      "paypal",
+      "p"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15154",
+      "solid": "5116:15160",
+      "path": "5116:15166"
+    }
+  },
+  {
+    "name": "stripe",
+    "id": "5070:1192",
+    "terms": [
+      "stripe"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:12223",
+      "solid": "5116:12231",
+      "path": "5116:12239"
+    }
+  },
+  {
+    "name": "visaV",
+    "id": "5070:1203",
+    "terms": [
+      "visa",
+      "v"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15892",
+      "solid": "5116:15896",
+      "path": "5116:15900"
+    }
+  },
+  {
+    "name": "qiwi",
+    "id": "5070:1206",
+    "terms": [
+      "qiwi"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15772",
+      "solid": "5116:15776",
+      "path": "5116:15780"
+    }
+  },
+  {
+    "name": "shopify",
+    "id": "5070:1212",
+    "terms": [
+      "shopify"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:12248"
+    }
+  },
+  {
+    "name": "swift",
+    "id": "5070:1277",
+    "terms": [
+      "swift"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15905",
+      "solid": "5116:15909",
+      "path": "5116:15913"
+    }
+  },
+  {
+    "name": "worldPay",
+    "id": "5070:1280",
+    "terms": [
+      "world_pay"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15785",
+      "solid": "5116:15789",
+      "path": "5116:15793"
+    }
+  },
+  {
+    "name": "webmoney",
+    "id": "5070:1292",
+    "terms": [
+      "webmoney"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15798",
+      "solid": "5116:15802",
+      "path": "5116:15806"
+    }
+  },
+  {
+    "name": "jcb",
+    "id": "5070:1295",
+    "terms": [
+      "jcb"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15811",
+      "solid": "5116:15817",
+      "path": "5116:15823"
+    }
+  },
+  {
+    "name": "westernUnion",
+    "id": "5070:1300",
+    "terms": [
+      "western_union"
+    ],
+    "categories": [
+      "finance"
+    ],
+    "variants": {
+      "color": "5116:15918",
+      "solid": "5116:15923",
+      "path": "5116:15928"
+    }
+  },
+  {
+    "name": "git",
+    "id": "5070:150",
+    "terms": [
+      "git"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1156",
+      "solid": "5110:1160",
+      "path": "5110:1164"
+    }
+  },
+  {
+    "name": "github",
+    "id": "3849:67212",
+    "terms": [
+      "github"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "3849:67215",
+      "solid": "3849:67217",
+      "path": "3849:67219"
+    }
+  },
+  {
+    "name": "nodeJs",
+    "id": "3849:67006",
+    "terms": [
+      "node",
+      "js"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "3849:67000",
+      "solid": "3849:67002",
+      "path": "3849:67004"
+    }
+  },
+  {
+    "name": "node",
+    "id": "3849:66980",
+    "terms": [
+      "node"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "3849:66967",
+      "solid": "3849:66969",
+      "path": "3849:66971"
+    }
+  },
+  {
+    "name": "css3",
+    "id": "5070:153",
+    "terms": [
+      "css_3"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1192",
+      "solid": "5110:1197",
+      "path": "5110:1202"
+    }
+  },
+  {
+    "name": "html5",
+    "id": "5070:157",
+    "terms": [
+      "html_5"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1208",
+      "solid": "5110:1213",
+      "path": "5110:1218"
+    }
+  },
+  {
+    "name": "js",
+    "id": "5070:161",
+    "terms": [
+      "js"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1224",
+      "solid": "5110:1228",
+      "path": "5110:1232"
+    }
+  },
+  {
+    "name": "pwa",
+    "id": "3849:67020",
+    "terms": [
+      "pwa"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "3849:67009",
+      "solid": "3849:67011",
+      "path": "3849:67013"
+    }
+  },
+  {
+    "name": "webComponents",
+    "id": "3849:67046",
+    "terms": [
+      "web",
+      "components"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "3849:67023",
+      "solid": "3849:67025",
+      "path": "3849:67028"
+    }
+  },
+  {
+    "name": "stencil",
+    "id": "3849:67066",
+    "terms": [
+      "stencil"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "3849:67054",
+      "solid": "3849:67056",
+      "path": "3849:67058"
+    }
+  },
+  {
+    "name": "atom",
+    "id": "5070:177",
+    "terms": [
+      "atom"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1275",
+      "solid": "5110:1279",
+      "path": "5110:1283"
+    }
+  },
+  {
+    "name": "vsCode",
+    "id": "5070:180",
+    "terms": [
+      "vs_code"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1288",
+      "solid": "5110:1294",
+      "path": "5110:1300"
+    }
+  },
+  {
+    "name": "sublimeText",
+    "id": "5070:185",
+    "terms": [
+      "sublime_text"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1307",
+      "solid": "5110:1313",
+      "path": "5110:1319"
+    }
+  },
+  {
+    "name": "react",
+    "id": "5070:272",
+    "terms": [
+      "react"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1636",
+      "solid": "5110:1639",
+      "path": "5110:1642"
+    }
+  },
+  {
+    "name": "vue",
+    "id": "5070:265",
+    "terms": [
+      "vue"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1607",
+      "solid": "5110:1612",
+      "path": "5110:1617"
+    }
+  },
+  {
+    "name": "angular",
+    "id": "5070:260",
+    "terms": [
+      "angular"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1588",
+      "solid": "5110:1594",
+      "path": "5110:1600"
+    }
+  },
+  {
+    "name": "codepen",
+    "id": "5070:171",
+    "terms": [
+      "codepen"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1249",
+      "solid": "5110:1253",
+      "path": "5110:1257"
+    }
+  },
+  {
+    "name": "jquery",
+    "id": "5070:174",
+    "terms": [
+      "jquery"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1262",
+      "solid": "5110:1266",
+      "path": "5110:1270"
+    }
+  },
+  {
+    "name": "weebly",
+    "id": "5070:190",
+    "terms": [
+      "weebly"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1326",
+      "solid": "5110:1329",
+      "path": "5110:1332"
+    }
+  },
+  {
+    "name": "yii1",
+    "id": "5070:192",
+    "terms": [
+      "yii"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1336",
+      "solid": "5110:1343",
+      "path": "5110:1350"
+    }
+  },
+  {
+    "name": "jbKotlin",
+    "id": "5070:198",
+    "terms": [
+      "jb_kotlin"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1358",
+      "solid": "5110:1364",
+      "path": "5110:1370"
+    }
+  },
+  {
+    "name": "cPlusPlus",
+    "id": "5070:203",
+    "terms": [
+      "c",
+      "plus"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1377",
+      "solid": "5110:1386",
+      "path": "5110:1395"
+    }
+  },
+  {
+    "name": "java",
+    "id": "5070:211",
+    "terms": [
+      "java"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1405",
+      "solid": "5110:1410",
+      "path": "5110:1415"
+    }
+  },
+  {
+    "name": "python",
+    "id": "5070:215",
+    "terms": [
+      "python"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1421",
+      "solid": "5110:1426",
+      "path": "5110:1431"
+    }
+  },
+  {
+    "name": "ruby",
+    "id": "5070:219",
+    "terms": [
+      "ruby"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1437",
+      "solid": "5110:1458",
+      "path": "5110:1479"
+    }
+  },
+  {
+    "name": "php",
+    "id": "5070:239",
+    "terms": [
+      "php"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1501",
+      "solid": "5110:1505",
+      "path": "5110:1509"
+    }
+  },
+  {
+    "name": "swiftLang",
+    "id": "5070:242",
+    "terms": [
+      "swift",
+      "lang"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1514",
+      "solid": "5110:1517",
+      "path": "5110:1520"
+    }
+  },
+  {
+    "name": "rLang",
+    "id": "5070:244",
+    "terms": [
+      "r_lang"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1524",
+      "solid": "5110:1529",
+      "path": "5110:1534"
+    }
+  },
+  {
+    "name": "go",
+    "id": "5070:248",
+    "terms": [
+      "go"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1540",
+      "solid": "5110:1543",
+      "path": "5110:1546"
+    }
+  },
+  {
+    "name": "cSharp",
+    "id": "5070:250",
+    "terms": [
+      "c",
+      "sharp"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1550",
+      "solid": "5110:1558",
+      "path": "5110:1566"
+    }
+  },
+  {
+    "name": "docker",
+    "id": "5070:257",
+    "terms": [
+      "docker"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1575",
+      "solid": "5110:1579",
+      "path": "5110:1583"
+    }
+  },
+  {
+    "name": "wordpress",
+    "id": "5070:269",
+    "terms": [
+      "wordpress"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1623",
+      "solid": "5110:1627",
+      "path": "5110:1631"
+    }
+  },
+  {
+    "name": "npm",
+    "id": "5070:274",
+    "terms": [
+      "npm"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1646",
+      "solid": "5110:1650",
+      "path": "5110:1654"
+    }
+  },
+  {
+    "name": "redux",
+    "id": "5070:277",
+    "terms": [
+      "redux"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1659",
+      "solid": "5110:1662",
+      "path": "5110:1665"
+    }
+  },
+  {
+    "name": "joomla",
+    "id": "5070:279",
+    "terms": [
+      "joomla"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1669",
+      "solid": "5110:1676",
+      "path": "5110:1683"
+    }
+  },
+  {
+    "name": "drupal",
+    "id": "5070:285",
+    "terms": [
+      "drupal"
+    ],
+    "categories": [
+      "code"
+    ],
+    "variants": {
+      "color": "5110:1691",
+      "solid": "5110:1695",
+      "path": "5110:1699"
+    }
+  },
+  {
+    "name": "chrome",
+    "id": "3849:67289",
+    "terms": [
+      "chrome"
+    ],
+    "categories": [
+      "browser"
+    ],
+    "variants": {
+      "color": "3849:67308",
+      "solid": "3849:67310",
+      "path": "3849:67312"
+    }
+  },
+  {
+    "name": "firefox",
+    "id": "3849:67318",
+    "terms": [
+      "firefox"
+    ],
+    "categories": [
+      "browser"
+    ],
+    "variants": {
+      "color": "3849:67334",
+      "solid": "3849:67336",
+      "path": "3849:67338"
+    }
+  },
+  {
+    "name": "edge",
+    "id": "5116:0",
+    "terms": [
+      "edge"
+    ],
+    "categories": [
+      "browser"
+    ],
+    "variants": {
+      "color": "5116:516",
+      "solid": "5116:524",
+      "path": "5116:532"
+    }
+  },
+  {
+    "name": "edge1",
+    "id": "5070:1465",
+    "terms": [
+      "edge"
+    ],
+    "categories": [
+      "browser"
+    ],
+    "variants": {
+      "color": "5116:434",
+      "solid": "5116:437",
+      "path": "5116:440"
+    }
+  },
+  {
+    "name": "ie",
+    "id": "5070:1463",
+    "terms": [
+      "ie"
+    ],
+    "categories": [
+      "browser"
+    ],
+    "variants": {
+      "color": "5116:424",
+      "solid": "5116:427",
+      "path": "5116:430"
+    }
+  },
+  {
+    "name": "opera",
+    "id": "5070:1467",
+    "terms": [
+      "opera"
+    ],
+    "categories": [
+      "browser"
+    ],
+    "variants": {
+      "color": "5116:444",
+      "solid": "5116:449",
+      "path": "5116:454"
+    }
+  },
+  {
+    "name": "safari",
+    "id": "5070:1316",
+    "terms": [
+      "safari"
+    ],
+    "categories": [
+      "browser"
+    ],
+    "variants": {
+      "color": "5116:9",
+      "solid": "5116:147",
+      "path": "5116:285"
+    }
+  },
+  {
+    "name": "tor",
+    "id": "5070:1486",
+    "terms": [
+      "tor"
+    ],
+    "categories": [
+      "browser"
+    ],
+    "variants": {
+      "color": "5116:460",
+      "solid": "5116:474",
+      "path": "5116:488"
+    }
+  },
+  {
+    "name": "yandex",
+    "id": "5070:1499",
+    "terms": [
+      "yandex"
+    ],
+    "categories": [
+      "browser"
+    ],
+    "variants": {
+      "color": "5116:503",
+      "solid": "5116:507",
+      "path": "5116:511"
+    }
+  },
+  {
+    "name": "ubuntu",
+    "id": "5070:1044",
+    "terms": [
+      "ubuntu"
+    ],
+    "categories": [
+      "operating system"
+    ],
+    "variants": {
+      "color": "5116:11420",
+      "solid": "5116:11424",
+      "path": "5116:11428"
+    }
+  },
+  {
+    "name": "apple",
+    "id": "5070:1047",
+    "terms": [
+      "apple"
+    ],
+    "categories": [
+      "operating system"
+    ],
+    "variants": {
+      "color": "5116:11433",
+      "solid": "5116:11436",
+      "path": "5116:11439"
+    }
+  },
+  {
+    "name": "microsoft",
+    "id": "5070:1050",
+    "terms": [
+      "microsoft"
+    ],
+    "categories": [
+      "operating system"
+    ],
+    "variants": {
+      "color": "5116:11443",
+      "solid": "5116:11450",
+      "path": "5116:11457"
+    }
+  },
+  {
+    "name": "android",
+    "id": "5070:1056",
+    "terms": [
+      "android"
+    ],
+    "categories": [
+      "operating system"
+    ],
+    "variants": {
+      "color": "5116:11465",
+      "solid": "5116:11468",
+      "path": "5116:11471"
+    }
+  },
+  {
+    "name": "ios",
+    "id": "5070:1058",
+    "terms": [
+      "ios"
+    ],
+    "categories": [
+      "operating system"
+    ],
+    "variants": {
+      "color": "5116:11475",
+      "solid": "5116:11479",
+      "path": "5116:11483"
+    }
+  },
+  {
+    "name": "macos",
+    "id": "5070:1061",
+    "terms": [
+      "macos"
+    ],
+    "categories": [
+      "operating system"
+    ],
+    "variants": {
+      "color": "5116:11488",
+      "solid": "5116:11492",
+      "path": "5116:11496"
+    }
+  },
+  {
+    "name": "freebsd",
+    "id": "5070:1064",
+    "terms": [
+      "freebsd"
+    ],
+    "categories": [
+      "operating system"
+    ],
+    "variants": {
+      "color": "5116:11501",
+      "solid": "5116:11506",
+      "path": "5116:11511"
+    }
+  },
+  {
+    "name": "linux",
+    "id": "5070:1068",
+    "terms": [
+      "linux"
+    ],
+    "categories": [
+      "operating system"
+    ],
+    "variants": {
+      "color": "5116:11517",
+      "solid": "5116:11541",
+      "path": "5116:11565"
+    }
+  }
+]

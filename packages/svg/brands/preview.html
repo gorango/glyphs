@@ -8,7 +8,7 @@
     .icon { inline-display: block; width: 1em; height: 1em; contain: strict; box-sizing: content-box; }
     .icon svg { display: block; width: 100%; height: 100%; }
     .icon:not(.active) { display: none; }
-    
+
   </style>
 </head>
 <body>
@@ -1392,19 +1392,19 @@
   <script>const variants = 'solid,color,path'.split(',')
     let variant = variants[0]
     let interval
-    
+
     if (variants[1]) {
-      startInterval()
+      // startInterval()
     }
-    
+
     function startInterval () {
       interval = setInterval(cycleVariants, 500)
     }
-    
+
     function stopInterval () {
       clearInterval(interval)
     }
-    
+
     cycleVariants()
     function cycleVariants () {
       document.querySelectorAll('.icon:not(.text-3xl)').forEach(el => el.classList.remove('active'))
@@ -1413,16 +1413,16 @@
       const next = curr === variants.length - 1 ? 0 : curr + 1
       variant = variants[next]
     }
-    
+
     function handleMouseEnter (v) {
       stopInterval()
       variant = v
       document.querySelectorAll('.icon:not(.text-3xl)').forEach(el => el.classList.remove('active'))
       document.querySelectorAll(`.icon.${variant}`).forEach(el => el.classList.add('active'))
     }
-    
+
     function handleMouseLeave () {
-      startInterval()
+      // startInterval()
     }
   </script>
 </body>
