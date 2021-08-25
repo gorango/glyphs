@@ -1,13 +1,17 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
+const path = require('path')
+const inquirer = require('inquirer')
 const { log, PRINT } = require('../utils/logger')
+const { localConfigs, hasConfig } = require('../utils/config')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
   alias: {
     d: 'data',
     s: 'svg',
+    j: 'json',
     p: 'preview',
     h: 'help'
   },
@@ -20,10 +24,6 @@ if (argv.help) {
   process.exit()
 }
 
-const path = require('path')
-const inquirer = require('inquirer')
-const { configs, hasConfig } = require('../utils/config')
-
 ;(async () => {
   log()
   let { _: [query], preview: generatePreview } = argv
@@ -35,9 +35,9 @@ const { configs, hasConfig } = require('../utils/config')
   }
 
   if (query) {
-    const fileConf = query in configs
-      ? configs[query]
-      : Object.values(configs).find(({ name }) =>
+    const fileConf = query in localConfigs
+      ? localConfigs[query]
+      : Object.values(localConfigs).find(({ name }) =>
         name.toLowerCase().includes(query.toLowerCase()))
 
     if (fileConf) {
@@ -49,8 +49,8 @@ const { configs, hasConfig } = require('../utils/config')
   }
 
   if (!query) {
-    if (Object.keys(configs).length > 1) {
-      const choices = Object.entries(configs)
+    if (Object.keys(localConfigs).length > 1) {
+      const choices = Object.entries(localConfigs)
         .map(([key, { name }]) => ({ value: key, name }))
       const questions = [
         { type: 'list', name: 'name', message: 'Select the file to sync', choices }
@@ -59,13 +59,14 @@ const { configs, hasConfig } = require('../utils/config')
       const answers = await inquirer.prompt(questions)
       key = answers.name
     } else {
-      key = Object.keys(configs)[0]
+      key = Object.keys(localConfigs)[0]
     }
   }
 
   const syncArgs = {
     data: 'data',
     svg: 'svg',
+    json: 'json',
     ...argv,
     key
   }
@@ -73,6 +74,7 @@ const { configs, hasConfig } = require('../utils/config')
   const sync = require('../lib/sync')
 
   const run = async () => {
+    log()
     await sync(syncArgs).catch(handleError)
     if (generatePreview) {
       const dataDir = path.join(process.cwd(), syncArgs.data)

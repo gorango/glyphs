@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
+const path = require('path')
+const inquirer = require('inquirer')
 const { log, fatal, PRINT } = require('../utils/logger')
 
 const args = process.argv.slice(2)
@@ -16,9 +18,6 @@ if (argv.help) {
   process.exit()
 }
 
-const path = require('path')
-const inquirer = require('inquirer')
-
 ;(async () => {
   const glyphsConfig = require(path.join(process.cwd(), 'glyphs.config.js'))
 
@@ -27,7 +26,7 @@ const inquirer = require('inquirer')
   }
 
   const { target } = glyphsConfig.generate
-  const targets = ['wc', 'vue', 'react']
+  const targets = ['json', 'font', 'symbols', 'wc', 'vue', 'react']
 
   log()
 
@@ -46,7 +45,7 @@ const inquirer = require('inquirer')
     ]
 
     const answers = await inquirer.prompt(questions)
-    key = answers.name
+    glyphsConfig.generate.target = answers.name
   }
 
   try {

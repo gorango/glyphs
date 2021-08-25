@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
+const { Client: figmaClient } = require('figma-js')
+const inquirer = require('inquirer')
 const { log, PRINT } = require('../utils/logger')
+const { conf, localConfigs, hasConfig } = require('../utils/config')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -20,18 +23,13 @@ if (argv.help) {
   process.exit()
 }
 
-const { Client: figmaClient } = require('figma-js')
-const inquirer = require('inquirer')
-const { conf, configs, hasConfig } = require('../utils/config')
-const { snakeCase } = require('lodash')
-
 let { key, token, replace, _: [query] } = argv
 
 ;(async () => {
   // no key or token provided to console - give prompt
   if (!key || !token) {
     if (hasConfig) {
-      const firstSet = Object.values(configs)[0] || {}
+      const firstSet = Object.values(localConfigs)[0] || {}
       token = firstSet.token
     }
 
@@ -56,7 +54,7 @@ let { key, token, replace, _: [query] } = argv
   }
 
   if (hasConfig) {
-    const [sets] = Object.entries(configs).filter(([name, { key: k }]) => k === key)
+    const [sets] = Object.entries(localConfigs).filter(([name, { key: k }]) => k === key)
     const name = sets && sets[0]
     if (name && !replace) {
       PRINT.ADD.CONFLICT({ name })
@@ -73,7 +71,7 @@ let { key, token, replace, _: [query] } = argv
     process.exit(1)
   })
 
-  const choices = file.document.children.map(({ id: value, name }) => ({ value, name })})
+  const choices = file.document.children.map(({ id: value, name }) => ({ value, name }))
   const pageQuestion = [{ type: 'list', name: 'name', message: 'Select the page containing your icons', choices }]
   const { name: page } = await inquirer.prompt(pageQuestion)
 

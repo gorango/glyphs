@@ -17,7 +17,7 @@ if (argv.help) {
 }
 
 const inquirer = require('inquirer')
-const { configs, hasConfig } = require('../utils/config')
+const { localConfigs, hasConfig } = require('../utils/config')
 
 const { _: [query] } = argv
 
@@ -31,9 +31,9 @@ const { _: [query] } = argv
 
   if (!query && hasConfig) {
     let key
-    const choices = Object.entries(configs).map(([key, { name }]) => ({ value: key, name }))
+    const choices = Object.entries(localConfigs).map(([key, { name }]) => ({ value: key, name }))
 
-    if (Object.keys(configs).length === 1) {
+    if (Object.keys(localConfigs).length === 1) {
       key = choices[0].value
     } else {
       const questions = [{
@@ -48,14 +48,14 @@ const { _: [query] } = argv
       key = answers.name
     }
 
-    const setConfig = configs[key]
+    const setConfig = localConfigs[key]
     PRINT.GET.CONFIG({
       name: setConfig.name,
       key,
       token: setConfig.token
     })
   } else if (query) {
-    const setConfig = query in configs ? configs[query] : Object.values(configs).find(({ name }) => name.toLowerCase().includes(query.toLowerCase()))
+    const setConfig = query in localConfigs ? localConfigs[query] : Object.values(localConfigs).find(({ name }) => name.toLowerCase().includes(query.toLowerCase()))
     if (setConfig) {
       PRINT.GET.CONFIG({
         name: setConfig.name,

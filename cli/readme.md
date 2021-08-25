@@ -10,7 +10,7 @@ npm install --global @glyphs/cli
 
 ## Usage
 
-After installing, run `glyphs` to view options available and instructions for using the interfacre
+After installing, run `glyphs` to view available options and instructions for using the interfacre
 
 ```
    _____ _         _
