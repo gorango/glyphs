@@ -9,14 +9,14 @@
     "build-prod": "parcel build src/index.html"
   },
   "dependencies": {
-    "vue": "^2.6.12",
+    "vue": "^2.6.14",
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@vue/component-compiler-utils": "^3.2.0",
-    "parcel-bundler": "^1.12.4",
-    "vue-template-compiler": "^2.6.12"
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@vue/component-compiler-utils": "^3.2.2",
+    "parcel-bundler": "^1.12.5",
+    "vue-template-compiler": "^2.6.14"
   }
 }
