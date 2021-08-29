@@ -3,8 +3,22 @@
 const parseArgs = require('minimist')
 const path = require('path')
 const inquirer = require('inquirer')
+const chalk = require('chalk')
+const Progress = require('cli-progress')
+const Configstore = require('configstore')
+
 const { log, PRINT } = require('../utils/logger')
 const { localConfigs, hasConfig } = require('../utils/config')
+const { createDir, saveSVG, saveJSON, readJSON } = require('../utils/file')
+
+const conf = new Configstore('@glyphs/cli')
+
+const progress = new Progress.SingleBar({
+  format: '|' + chalk.cyan('{bar}') + '| {percentage}% || {stage}',
+  barCompleteChar: '\u2588',
+  barIncompleteChar: '\u2591',
+  hideCursor: true
+}, Progress.Presets.shades_classic)
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -13,10 +27,11 @@ const argv = parseArgs(args, {
     s: 'svg',
     j: 'json',
     p: 'preview',
+    c: 'categories',
     h: 'help'
   },
   boolean: ['h', 'p'],
-  string: ['S', 'd', 's']
+  string: ['S', 'd', 's', 'j', 'c']
 })
 
 if (argv.help) {
@@ -26,7 +41,7 @@ if (argv.help) {
 
 ;(async () => {
   log()
-  let { _: [query], preview: generatePreview } = argv
+  let { _: [query], preview: generatePreview, categories } = argv
   let key
 
   if (!hasConfig) {
@@ -35,13 +50,13 @@ if (argv.help) {
   }
 
   if (query) {
-    const fileConf = query in localConfigs
+    const localConfig = query in localConfigs
       ? localConfigs[query]
       : Object.values(localConfigs).find(({ name }) =>
         name.toLowerCase().includes(query.toLowerCase()))
 
-    if (fileConf) {
-      key = fileConf.key
+    if (localConfig) {
+      key = localConfig.key
     } else {
       PRINT.SYNC.NOT_FOUND(({ query }))
       query = null
@@ -73,18 +88,56 @@ if (argv.help) {
 
   const sync = require('../lib/sync')
 
-  const run = async () => {
+  ;(async () => {
     log()
-    await sync(syncArgs).catch(handleError)
+
+    createDir(syncArgs.svg)
+    createDir(syncArgs.data)
+    createDir(syncArgs.json)
+
+    const localConfig = conf.get(syncArgs.key)
+    const localIconsMap = await readJSON(`${syncArgs.data}/icons-map.json`).catch(() => ({}))
+    const syncParams = {
+      iconsMap: localIconsMap,
+      args: syncArgs,
+      localConfig,
+      progress
+    }
+
+    const { setMeta, iconsMeta, iconsMap, file } = await sync(syncParams).catch(handleError)
+
+    conf.set(`${key}.updatedAt`, new Date())
+    conf.set(`${key}.name`, file.name)
+    // await saveJSON('file', file, 2)
+    await saveJSON(`${syncArgs.data}/icons-meta`, iconsMeta)
+    await saveJSON(`${syncArgs.data}/icons-map`, iconsMap)
+    await saveJSON(`${syncArgs.data}/set-meta`, setMeta, 2)
+
+    setMeta.variants.forEach(variant => {
+      createDir(`${syncArgs.svg}/${variant}`)
+      createDir(`${syncArgs.json}/${variant}`)
+    })
+
+    const idMap = iconsMeta.reduce((obj, { name, variants }) =>
+      ({ ...obj, ...Object.entries(variants).reduce((obj, [variant, id]) =>
+        ({ ...obj, [id]: [name, variant] }), {}) }), {})
+
+    await Object.entries(iconsMap).reduce(async (promise, [id, svg]) => {
+      await promise
+      const [name, variant] = idMap[id]
+      await saveSVG(name, syncArgs.svg, variant, svg)
+      return Promise.resolve()
+    }, Promise.resolve())
+
     if (generatePreview) {
       const dataDir = path.join(process.cwd(), syncArgs.data)
       require('../lib/preview')(dataDir)
     }
+
     log()
     process.exit()
-  }
+  })()
 
-  run()
 })()
 
 function handleError (err) {
