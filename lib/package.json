@@ -1,21 +1,11 @@
 {
   "name": "@glyphs/lib",
   "description": "Extract Glyphs icons from Figma",
+  "author": "Goran Spasojevic <gospaso@gmail.com>",
   "version": "0.1.0",
   "license": "MIT",
   "main": "index.js",
-  "bin": {
-    "glyphs": "./bin/glyphs"
-  },
   "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gorango/glyphs.git"
-  },
-  "author": "Goran Spasojevic <gospaso@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gorango/glyphs/issues"
-  },
   "homepage": "https://glyphs.fyi/docs/cli",
   "dependencies": {
     "axios": "^0.21.1",
