@@ -148,8 +148,8 @@ import debounce from 'lodash.debounce'
 
 const figmaIds = {
   core: 'wyQQBVAU7cNf2eb5qGI9EK',
-  brands: 'PVl3fCowhWp7nqIyGBrqCq',
-  flags: 'zOm4MinTTApgF6q8mpjs41'
+  brands: 'zOm4MinTTApgF6q8mpjs41',
+  flags: 'PVl3fCowhWp7nqIyGBrqCq'
 }
 
 const svgs = {
