@@ -7,10 +7,6 @@
     "build": "cross-env NODE_ENV=production webpack --mode=production --progress",
     "dev": "webpack --mode=development --progress --watch"
   },
-  "engines": {
-    "node": "^14.0.0",
-    "npm": ">= 6.0.0"
-  },
   "devDependencies": {
     "@figma/plugin-typings": "^1.19.0",
     "add": "^2.0.6",

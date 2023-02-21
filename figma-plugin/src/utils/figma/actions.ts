@@ -166,8 +166,8 @@ function sortSelected () {
   })
   const startIndex = Math.min(...indices.map(([node, index]) => index))
   indices.sort(([an, ai, ax, ay], [bn, bi, bx, by]) => {
-    const ydiff = ay - by
-    const xdiff = ax - bx
+    const ydiff = by - ay
+    const xdiff = bx - ax
     if (Math.abs(xdiff) > 40) {
       return xdiff
     }
