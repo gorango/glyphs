@@ -3,7 +3,7 @@ const pkg = require('../package.json')
 
 const conf = new Configstore(pkg.name)
 const localConfigs = conf.all
-const hasConfig = Object.keys(localConfigs).length
+const hasConfig = Boolean(Object.keys(localConfigs).length)
 
 module.exports.conf = conf
 module.exports.localConfigs = localConfigs

@@ -25,10 +25,10 @@ log(`
   Commands
     add, a        Configure a new icon set
     remove, r     Remove an existing icon set config
-    get, g        Get details on the icon set config
+    get           Get details on the icon set config
     list, l       List configured icon sets
     sync, s       Sync an icon set to the current directory
     preview, p    Preview a local icon set in the browser
-    generate      Generate a JS component set
+    generate, g   Generate components, fonts, and more
     help, h       Display this message
 `)

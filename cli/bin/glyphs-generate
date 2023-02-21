@@ -19,14 +19,10 @@ if (argv.help) {
 }
 
 ;(async () => {
-  const glyphsConfig = require(path.join(process.cwd(), 'glyphs.config.js'))
-
-  if (!glyphsConfig || !glyphsConfig.generate) {
-    throw new Error(`A config file wasn't supplied.`)
-  }
+  const glyphsConfig = { generate: {} }
 
   const { target } = glyphsConfig.generate
-  const targets = ['json', 'font', 'symbols', 'wc', 'vue', 'react']
+  const targets = ['json', 'font', 'symbols', 'components']
 
   log()
 
