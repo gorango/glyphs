@@ -34,7 +34,7 @@ class Component extends React.Component {
   render() {
     return (
       <>
-        <CoreArrow variant='path' strokeWidth='6', flip='x'></CoreArrow>
+        <CoreArrow variant='path' strokeWidth='6' flip='x'></CoreArrow>
         <BrandsFigma variant='color' size='100'></BrandsFigma>
         <FlagsCanada variant='circle' rotate='15'></FlagsCanada>
       </>
@@ -58,7 +58,7 @@ Import and inject the required components into your files:
 ```vue
 <template>
   <div id="app">
-    <CoreArrow variant='path' strokeWidth='6', flip='x'></CoreArrow>
+    <CoreArrow variant='path' strokeWidth='6' flip='x'></CoreArrow>
     <BrandsFigma variant='color' size='100'></BrandsFigma>
     <FlagsCanada variant='circle' rotate='15'></FlagsCanada>
   </div>
