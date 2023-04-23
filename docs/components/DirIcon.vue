@@ -153,9 +153,9 @@ const figmaIds = {
 }
 
 const svgs = {
-  core: require('@glyphs/core/map.json'),
-  brands: require('@glyphs/brands/map.json'),
-  flags: require('@glyphs/flags/map.json')
+  core: require('@glyphs/core/icons-map.json'),
+  brands: require('@glyphs/brands/icons-map.json'),
+  flags: require('@glyphs/flags/icons-map.json')
 }
 
 export default {

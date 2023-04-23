@@ -1,0 +1,22 @@
+{
+  "name": "@glyphs/vue-core",
+  "version": "0.0.8",
+  "description": "Glyphs Vue Core",
+  "homepage": "https://glyphs.fyi/dir?set=core",
+  "license": "MIT",
+  "main": "src/entry.js",
+  "unpkg": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/index.js"
+  },
+  "dependencies": {
+    "vue": "^2.6.14",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@glyphs/cli": "^0.4.0",
+    "@glyphs/core": "^0.8.12",
+    "@vue/component-compiler-utils": "^3.2.2",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

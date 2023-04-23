@@ -189,13 +189,17 @@ const PRINT = {
     HELP: () => {
       log(`
   Description
-  Generate a component set from an exported Glyphs icon set. Options must be supplied in a 'glyphs.config.json' file.
+  Generate a variety of assets with transformations using the extracted SVGs from Figma
 
   Usage
-    $ glyphs generate
+    $ glyphs generate <target> [--config <file>]
 
   Options
-    --help, -h     Displays this message`)
+    --config, -c   Location of the config file
+    --help, -h     Displays this message
+
+  Details
+    <target> must be one of: [json|font|symbols|components]`)
       log()
     }
   }

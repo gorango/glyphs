@@ -3,6 +3,7 @@
 const parseArgs = require('minimist')
 const chalk = require('chalk')
 const { log, PRINT } = require('../utils/logger')
+const { localConfigs, hasConfig } = require('../utils/config')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -17,16 +18,14 @@ if (argv.help) {
   process.exit()
 }
 
-const { configs, hasConfig } = require('../utils/config')
-
 log()
 
 if (!hasConfig) {
   log('No icon files have been configured', 1)
   log('Run "glyphs add" to configure a new icon file', 1)
 } else {
-  const max = Object.entries(configs).reduce((len, [key, { name }]) => Math.max(len, name.length), 0)
-  Object.entries(configs).forEach(([key, { name }]) => {
+  const max = Object.entries(localConfigs).reduce((len, [key, { name }]) => Math.max(len, name.length), 0)
+  Object.entries(localConfigs).forEach(([key, { name }]) => {
     const padding = Array(max - name.length).fill(' ').join('')
     log(`${chalk.cyan`${name}:`}${padding} https://figma.com/file/${key}`, 1)
   })

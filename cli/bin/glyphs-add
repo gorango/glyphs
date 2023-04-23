@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
 const parseArgs = require('minimist')
+const { Client: figmaClient } = require('figma-js')
+const inquirer = require('inquirer')
 const { log, PRINT } = require('../utils/logger')
+const { conf, localConfigs, hasConfig } = require('../utils/config')
 
 const args = process.argv.slice(2)
 const argv = parseArgs(args, {
@@ -20,18 +23,13 @@ if (argv.help) {
   process.exit()
 }
 
-const { Client: figmaClient } = require('figma-js')
-const inquirer = require('inquirer')
-const { conf, configs, hasConfig } = require('../utils/config')
-const { snakeCase } = require('lodash')
-
-let { key, token, replace } = argv
+let { key, token, replace, _: [query] } = argv
 
 ;(async () => {
   // no key or token provided to console - give prompt
   if (!key || !token) {
     if (hasConfig) {
-      const firstSet = Object.values(configs)[0] || {}
+      const firstSet = Object.values(localConfigs)[0] || {}
       token = firstSet.token
     }
 
@@ -51,29 +49,40 @@ let { key, token, replace } = argv
 
   if (!key || !token) {
     PRINT.ADD.FAIL()
-  } else {
-    if (hasConfig) {
-      const [setEntries] = Object.entries(configs).filter(([name, { key: k }]) => k === key)
-      const name = setEntries && setEntries[0]
-      if (name && !replace) {
-        PRINT.ADD.CONFLICT({ name })
-        process.exit(1)
-      }
-    }
-
-    const { client: figma } = figmaClient({ personalAccessToken: token })
-    const file = await figma.get(`files/${key}`).then(({ data }) => data).catch(err => {
-      const error = err.toJSON()
-      log()
-      log(error.message, 1)
-      log()
-      process.exit(1)
-    })
-    const sets = file.document.children
-      .reduce((obj, { name }) => ({ ...obj, [name]: null }), {})
-
-    conf.set(key, { token, key, name: file.name, sets: sets })
-    PRINT.ADD.SUCCESS(({ name: file.name }))
+    log()
+    process.exit(1)
   }
+
+  if (hasConfig) {
+    const [sets] = Object.entries(localConfigs).filter(([name, { key: k }]) => k === key)
+    const name = sets && sets[0]
+    if (name && !replace) {
+      PRINT.ADD.CONFLICT({ name })
+      process.exit(1)
+    }
+  }
+
+  const { client: figma } = figmaClient({ personalAccessToken: token })
+  const file = await figma.get(`files/${key}`).then(({ data }) => data).catch(err => {
+    const error = err.toJSON()
+    log()
+    log(error.message, 1)
+    log()
+    process.exit(1)
+  })
+
+  const choices = file.document.children.map(({ id: value, name }) => ({ value, name }))
+  const pageQuestion = [{ type: 'list', name: 'name', message: 'Select the page containing your icons', choices }]
+  const { name: page } = await inquirer.prompt(pageQuestion)
+
+  const saveConfig = {
+    name: file.name,
+    key,
+    token,
+    page,
+    updatedAt: null
+  }
+  conf.set(key, saveConfig)
+  PRINT.ADD.SUCCESS(({ name: file.name }))
   log()
 })()

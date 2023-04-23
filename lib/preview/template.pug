@@ -2,7 +2,7 @@ doctype html
 head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0')
-  title Icons Preview
+  title list Preview
   link(href='https://unpkg.com/tailwindcss/dist/tailwind.min.css', rel='stylesheet')
   style.
     .icon { inline-display: block; width: 1em; height: 1em; contain: strict; box-sizing: content-box; }
@@ -23,23 +23,23 @@ body.bg-gray-800.text-gray-100
               onmouseenter=`handleMouseEnter('${variant}')`,
               onmouseleave='handleMouseLeave()'
             )
-              - var id = components.find(({ name }) => name === first).variants[variant]
-              div.icon.text-3xl.active !{map[id].replace(/\n?(\s+)/g, ' ')}
+              - var id = meta.find(({ name }) => name === first).variants[variant]
+              div.icon.text-3xl.active !{icons[id]}
       .flex-1
     section
-      each icons, category in categories
+      each list, category in categories
         div.my-6
           div.sticky.z-10.bg-gray-900.w-full.p-2(style='top: 58px')
             h5.text-lg.text-center.capitalize= category
           div.flex.flex-wrap.justify-center.mt-2.mb-6.py-4
-            each name in icons
+            each name in list
               div.flex.items-center.flex-col.rounded-lg.border-2.border-gray-700.w-24.m-3.pb-2
                 div.w-full.p-1.text-center
                   .truncate.text-xs.text-gray-500(title=name)= name
-                - var variants = (components.find(({ name: n }) => n === name) || {}).variants
+                - var variants = (meta.find(({ name: n }) => n === name) || {}).variants
                 if variants
                   each id, variant in variants
-                    div.icon.text-5xl(class=variant) !{map[id].replace(/\n?(\s+)/g, ' ')}
+                    div.icon.text-5xl(class=variant) !{icons[id]}
 
   script.
     const variants = '#{variants}'.split(',')

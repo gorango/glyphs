@@ -1,0 +1,19 @@
+{
+  "name": "@glyphs/wc-flags",
+  "version": "0.0.8",
+  "description": "Glyphs Web Components Flags",
+  "homepage": "https://glyphs.fyi/dir?set=flags",
+  "license": "MIT",
+  "main": "src/index.js",
+  "unpkg": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/index.js"
+  },
+  "dependencies": {
+    "hybrids": "^6.0.0"
+  },
+  "devDependencies": {
+    "@glyphs/cli": "^0.4.0",
+    "@glyphs/flags": "^0.5.5"
+  }
+}
